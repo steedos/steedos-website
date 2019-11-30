@@ -15,7 +15,9 @@
     "GraphQL": ["graphql", "graphql_auth", "graphql_query", "graphql_add", "graphql_edit", "graphql_delete"],
     "插件": ["plugins", "plugin_server", "plugin_webapp", "plugin_config"]
   },
-  "手册": {
-    "审批": ["workflow/instance_add", "workflow/instance_approve"]
+  "审批王": {
+    "审批王": ["workflow/index"],
+    "用户手册": ["workflow/instance_add", "workflow/instance_approve"],
+    "管理员手册": ["workflow/admin_workflow", "workflow/admin_form"]
   }
 }
