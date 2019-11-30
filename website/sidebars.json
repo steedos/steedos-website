@@ -14,5 +14,8 @@
     "OData": ["odata", "odata_auth", "odata_query", "odata_get", "odata_add", "odata_edit", "odata_delete", "odata_functions", "odata_metadata", "api_jwt"],
     "GraphQL": ["graphql", "graphql_auth", "graphql_query", "graphql_add", "graphql_edit", "graphql_delete"],
     "插件": ["plugins", "plugin_server", "plugin_webapp", "plugin_config"]
+  },
+  "手册": {
+    "审批": ["workflow/index", "workflow/instance_add", "workflow/instance_approve"]
   }
 }
