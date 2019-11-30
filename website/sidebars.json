@@ -16,6 +16,6 @@
     "插件": ["plugins", "plugin_server", "plugin_webapp", "plugin_config"]
   },
   "手册": {
-    "审批": ["workflow/index", "workflow/instance_add", "workflow/instance_approve"]
+    "审批": ["workflow/instance_add", "workflow/instance_approve"]
   }
 }
