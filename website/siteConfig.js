@@ -21,8 +21,8 @@ const users = [
 ];
 
 const siteConfig = {
-  title: '华炎', // Title for your website.
-  tagline: '开源企业管理软件供应商：流程审批、即时通讯、合同管理、开发平台',
+  title: '华炎办公', // Title for your website.
+  tagline: '开源企业管理软件：数据建模、流程审批、统计分析、权限管控。',
   url: 'https://steedos.github.io/', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -39,7 +39,7 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'products/index', label: '产品'},
-    {doc: 'workflow/index', label: '审批王'},
+    {doc: 'workflow/index', label: '审批'},
     {doc: 'developer/index', label: '开发'},
     //{doc: 'record_list', label: '用户手册'},
     //{doc: 'api', label: 'API'},

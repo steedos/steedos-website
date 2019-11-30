@@ -1,8 +1,8 @@
 ---
-title: 华炎办公解决方案
+title: 华炎协同管理平台
 ---
 
-华炎协同办公平台，内置华炎三大核心产品，协助企业建立三大管理价值，包括知识管理 ( Knowledge Management )、流程管理( Workflow Management )、信息门户（ Collaboration Portal ），结合各式可持续扩展的功能模块，快速建立完整的企业协同管理平台，并以全方位的角色设计，满足企业在权限管理上的各式需求。
+华炎协同管理平台，内置知识管理 ( Knowledge Management )、流程管理( Workflow Management )、信息门户（ Collaboration Portal ），结合各式可持续扩展的功能模块，快速建立完整的企业协同管理平台，并以全方位的角色设计，满足企业在权限管理上的各式需求。
 
 ## 360°弹性设计，灵活应对企业多变的组织和需求
 
