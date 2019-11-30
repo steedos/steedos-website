@@ -38,11 +38,9 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'about/index', label: '关于'},
+    {doc: 'products/index', label: '产品'},
     {doc: 'workflow/index', label: '审批王'},
-    {doc: 'guide', label: '开发'},
-    {doc: 'api', label: 'API'},
-    {doc: 'projects', label: '案例'},
+    {doc: 'developer/index', label: '开发'},
     //{doc: 'record_list', label: '用户手册'},
     //{doc: 'api', label: 'API'},
     //{blog: true, label: '动态'},

@@ -1,5 +1,5 @@
 ---
-title: Steedos“低代码”开发平台
+title: 华炎“低代码”开发平台
 sidebar_label: 关于
 ---
 
