@@ -1,5 +1,5 @@
 ---
-title: 定义数据源
+title: 数据源
 ---
 
 数据源用于定义数据库连接方式，业务对象通过对应的数据源保存数据。Steedos系统层使用MongoDB数据库，Steedos的标准对象都保存在默认数据源中。开发人员也可以通过配置文件连接其他常用的数据源，包括SQL Server、Oracle、MySQL、PostgreSQL。
