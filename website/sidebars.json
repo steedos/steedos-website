@@ -1,21 +1,20 @@
 {
   "平台": {
-    "协同管理平台": ["platform/index"],
+    "企业应用平台": ["platform/index"],
     "业务台账": ["platform/record_list", "platform/record_view", "platform/record_edit", "platform/record_search", "platform/record_attachment", "platform/record_chatter", "platform/record_task", "platform/notifications"],
     "移动办公": ["platform/app_mobile", "platform/app_ipad"],
-    "用户管理": ["organization","space_user"],
-    "权限管理": ["permission_set", "permission_share"]
+    "用户管理": ["platform/organization","platform/space_user"],
+    "权限管理": ["platform/permission_set", "platform/permission_share"]
   },
-  "开发": {
+  "应用开发平台": {
     "应用开发平台": ["developer/index"],
-    "快速向导": ["guide", "guide_create", "guide_object", "guide_app", "guide_run", "steedos_config"],
-    "配置": ["datasource", "object", "object_field", "listview", "object_permission", "app", "reports"],
+    "快速向导": ["guide", "guide_create", "guide_object", "guide_app", "guide_run"],
+    "配置": ["datasource", "object", "object_field", "listview", "object_permission", "app", "reports", "steedos_config"],
     "高级": ["object_trigger", "object_action", "object_form", "object_filter_conditions", "object_field_formula", "standard_objects", "object_workflow", "report_jsreport"],
-    "插件": ["plugins", "plugin_server", "plugin_webapp", "plugin_config"],
-    "ObjectQL": ["developer/objectql_connection", "developer/objectql_datasource", "developer/objectql_object"]
-  }, 
+    "ObjectQL": ["developer/objectql_connection", "developer/objectql_datasource", "developer/objectql_object"],
+    "插件": ["plugins/index", "plugins/plugin_server", "plugins/plugin_webapp", "plugins/plugin_config"]
+  },  
   "API": {
-    "华炎 API": ["api/index"],
     "OData": ["api/odata", "api/odata_auth", "api/odata_query", "api/odata_get", "api/odata_add", "api/odata_edit", "api/odata_delete", "api/odata_functions", "api/odata_metadata"],
     "GraphQL": ["api/graphql", "api/graphql_auth", "api/graphql_query", "api/graphql_add", "api/graphql_edit", "api/graphql_delete"],
     "单点登录": ["api/api_jwt"]

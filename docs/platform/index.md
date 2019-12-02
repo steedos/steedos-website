@@ -1,9 +1,9 @@
 ---
-title: 华炎协同管理平台
+title: 华炎应用开发平台
 sidebar_label: 特色
 ---
 
-华炎协同管理平台，内置数据建模 ( Object Management )、流程管理 ( Workflow Management )、信息门户（ Collaboration Portal ），结合新一代“低代码”开发平台，快速满足业务部门的个性化需求，构建全方位的协同管理平台。
+华炎应用开发平台是全球最专业的开源企业应用开发工具，内置业务对象建模 ( Object Management )、流程管理 ( Workflow Management )、信息门户（ Collaboration Portal ），快速满足业务部门的个性化需求，构建全方位的协同管理信息系统。
 
 ## 360°弹性设计，灵活应对企业多变的组织和需求
 
