@@ -92,6 +92,14 @@ article p img[src*="#bordered"]{
   border: 1px solid #DDD;
 }
 
+article p img[src*="#medium"]{
+  width: 50%;
+}
+
+article p img[src*="#small"]{
+  width: 25%;
+}
+
 .fixedHeaderContainer {
   background: rgba(0,0,0,0.8);
 }

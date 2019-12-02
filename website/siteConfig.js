@@ -25,6 +25,7 @@ const siteConfig = {
   tagline: '开源企业管理软件：数据建模、流程审批、统计分析、权限管控。',
   url: 'https://steedos.github.io/', // Your website URL
   baseUrl: '/', // Base URL for your project */
+  docsUrl: 'docs',
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
@@ -41,6 +42,8 @@ const siteConfig = {
     {doc: 'products/index', label: '产品'},
     {doc: 'workflow/index', label: '审批'},
     {doc: 'developer/index', label: '开发'},
+    {search: true},
+    {href: 'https://cn.steedos.com/', label: '登录'},
     //{doc: 'record_list', label: '用户手册'},
     //{doc: 'api', label: 'API'},
     //{blog: true, label: '动态'},
