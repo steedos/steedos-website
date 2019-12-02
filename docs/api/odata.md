@@ -1,5 +1,5 @@
 ---
-title: 简介
+title: OData 简介
 ---
 
 开放数据协议（Open Data Protocol，缩写OData）是一种描述如何创建和访问Restful服务的OASIS标准。该标准由微软发起，前三个版本1.0、2.0、3.0都是微软开放标准。第四个版本4.0于2014年3月17日在OASIS投票通过成为开放工业标准。

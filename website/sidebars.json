@@ -15,9 +15,10 @@
     "ObjectQL": ["developer/objectql_connection", "developer/objectql_datasource", "developer/objectql_object"]
   }, 
   "API": {
-    "身份验证": ["api_jwt"],
-    "OData": ["odata", "odata_auth", "odata_query", "odata_get", "odata_add", "odata_edit", "odata_delete", "odata_functions", "odata_metadata"],
-    "GraphQL": ["graphql", "graphql_auth", "graphql_query", "graphql_add", "graphql_edit", "graphql_delete"]
+    "华炎 API": ["api/index"],
+    "OData": ["api/odata", "api/odata_auth", "api/odata_query", "api/odata_get", "api/odata_add", "api/odata_edit", "api/odata_delete", "api/odata_functions", "api/odata_metadata"],
+    "GraphQL": ["api/graphql", "api/graphql_auth", "api/graphql_query", "api/graphql_add", "api/graphql_edit", "api/graphql_delete"],
+    "单点登录": ["api/api_jwt"]
   },
   "审批王": {
     "审批王": ["workflow/index", "workflow/download"],

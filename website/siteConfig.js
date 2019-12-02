@@ -42,6 +42,7 @@ const siteConfig = {
     {doc: 'platform/index', label: '平台'},
     {doc: 'workflow/index', label: '审批'},
     {doc: 'developer/index', label: '开发'},
+    {doc: 'api/index', label: 'API'},
     {search: true},
     {href: 'https://cn.steedos.com/', label: '登录'},
     //{doc: 'record_list', label: '用户手册'},

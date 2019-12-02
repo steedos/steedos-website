@@ -1,5 +1,5 @@
 ---
-title: GraphQL API
+title: GraphQL 简介
 ---
 
 当你在 Steedos 中配置了对象以后，Steedos 为你自动生成 [GraphQL](http://www.graphql.org/) API。
