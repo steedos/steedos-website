@@ -21,7 +21,7 @@
   },
   "审批王": {
     "审批王": ["workflow/index", "workflow/download"],
-    "业务人员": ["workflow/instance_add", "workflow/instance_approve"],
+    "业务人员": ["workflow/instance_add", "workflow/instance_approve", "workflow/instance_carboncopy", "workflow/instance_distribute", "workflow/instance_forward", "workflow/instance_print", "workflow/instance_search"],
     "管理员": ["workflow/admin_workflow", "workflow/admin_form"]
   }
 }
