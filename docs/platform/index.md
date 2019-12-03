@@ -3,13 +3,13 @@ title: 华炎应用引擎
 sidebar_label: 简介
 ---
 
-> 华炎应用引擎 (Steedos App Engine) 是新一代人工智能开发工具，开发人员只需配置业务需求，华炎应用引擎会理解并运行你的业务。
+> 华炎应用引擎 (Steedos App Engine) 是新一代人工智能开发工具，开发人员只需描述业务需求，华炎应用引擎会理解并运行你的业务。
 
 ## 系统架构
 
-以下案例为一套功能完备的合同管理系统，开发人员只需要定义其中绿色部分的业务对象，剩下的都交给华炎应用引擎。
+以合同管理需求为例，开发人员只需要配置下图 <span style='color:green'>绿色</span> 部分的业务对象，华炎应用引擎即可生成一套全功能的合同管理系统。
 
-![合同管理案例](assets/overview-contracts.jpg)
+![合同管理案例](assets/platform/engine-overview.png)
 
 ## 描述业务对象
 
