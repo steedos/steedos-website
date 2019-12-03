@@ -1,30 +1,116 @@
 ---
-title: 华炎应用开发平台
-sidebar_label: 特色
+title: 华炎应用引擎
+sidebar_label: 简介
 ---
 
-华炎应用开发平台是全球最专业的开源企业应用开发工具，内置业务对象建模 ( Object Management )、流程管理 ( Workflow Management )、信息门户（ Collaboration Portal ），快速满足业务部门的个性化需求，构建全方位的协同管理信息系统。
+> 华炎应用引擎 (Steedos App Engine) 是新一代人工智能开发工具，开发人员只需配置业务需求，华炎应用引擎会理解并运行你的业务。
 
-## 360°弹性设计，灵活应对企业多变的组织和需求
+## 系统架构
 
-常常企业进行系统规划时，通常取决于功能是否能够一次到位的选择，但往往容易忽略随着时间的改变，企业组织或需求而有所变化时，如何在不同阶段满足不同需求的增减功能，因此系统是否符合多公司多组织的应用，而相关系统架构与扩充的弹性是否符合需求，这些都是非常关键的考量点，而不再只是强调功能越多越好的系统设计，应该是为未来做好充分准备的扩充弹性！
+以下案例为一套功能完备的合同管理系统，开发人员只需要定义其中绿色部分的业务对象，剩下的都交给华炎应用引擎。
 
-Steedos的多元化功能模块，如同IKEA 卖场所提供的各式各样完美房型设计般，您可依需求快速寻求符合企业的应用模块，每个模块同时也整合Steedos的优势与特色，保留功能上的弹性设计，企业无须花费更多资金打造梦想成屋，随时都可以拥有具备未来高扩充价值的信息系统。
+![合同管理案例](assets/overview-contracts.jpg)
 
-## 360°流程管理，快速部署、有效监控并持续优化各类业务流程
+## 描述业务对象
 
-Steedos提供360°的零代码流程管理平台，涵盖流程设计 (Process Design)、流程运行 (Process Execution)、管理维护 (Administration) 与流程优化 (Optimization)等各类工具，使您能够快速部署、有效监控并持续优化各类业务流程，以适应不断变化的业务需求，从而实现更好的业务绩效，战胜竞争对手，保持可持续的竞争优势。
+华炎应用引擎通过业务对象配置文件描述业务需求。包括
 
-凭借优化的NodeJS核心搭配先进的AJAX技术，即使面对成千部门、上万人员的大型企业，所有的功能仍如行云流水般的流畅。
+- 业务对象名称
+- 功能开关
+- 字段
+- 列表视图
+- 用户权限
 
-## 360°精确管理，涵盖企业每个工作角色的设计
+```yaml
+name: accounts
+label: 单位
+icon: person_account
+description: 统一保存客户、合作伙伴、供应商数据
+enable_files: true
+enable_search: true
+enable_tasks: true
+enable_notes: false
+enable_api: true
+enable_share: true
+enable_chatter: true
+fields:
+  name: 
+    type: text
+    label: 标题 
+  priority:
+    type: text
+    label: 优先级
+    options:
+      - label: 高
+        value: high
+      - label: 中
+        value: normal
+      - label: 低
+        value: low
+  owner:
+    label: 所有人
+    type: lookup
+    reference_to: users
+list_views:
+  recent:
+    label: 最近查看
+  all:
+    label: 所有单位
+    columns:
+      - name
+      - priority
+      - owner
+      - modified
+    filter_fields:
+      - priority
+  high_priority:
+    label: 重点关注
+    filters: [["priority", "=", "high"]]
+permission_set:
+  user:
+    allowCreate: true
+    allowDelete: true
+    allowEdit: true
+    allowRead: true
+    modifyAllRecords: false
+    viewAllRecords: false
+  admin:
+    allowCreate: true
+    allowDelete: true
+    allowEdit: true
+    allowRead: true
+    modifyAllRecords: true
+    viewAllRecords: true
+```
 
-考虑到每位参与企业活动的员工，都扮演着团队运作的重要关键，因此为企业设计出覆盖每个工作角色的协同管理平台，并且结合HotOA的安全性服务，依照不同的使用者特性或使用者群组，提供不同的岗位权限管理机制，不仅满足企业在资料授权上的各样需求，也能够轻松掌握系统内容的运作方式，让系统的弹性充分发挥。
+## 界面展示
 
-|使用者 | 产品优势 | 效益|
-|--- | --- | ---|
-|决策者   （CIO） | 分层严谨的权限控制 完整的平台扩展能力 开放式系统整合架构 | 严密确保信息安全 完整配合企业IT平台建设策略 确保过去与未来的IT投资|
-|业务主管   （Process Manager） | 所见即所得的流程设计工具 灵巧的组织结构管理 清晰的流程分析报告 完善的例外处理机制 | 消除业务部门与IT部门沟通隔阂 在流程中体现管理思路 完正掌握每个环节的流程效率 适时及时的重新指派工作|
-|系统分析&开发人员   （System Analyst & Developer） | 所见即所得的流程设计工具 完善的流程节点类型 流程设计与文件运行体系独立 方便的表单设计工具 | 业务部门与IT部门沟通无阻 缩短流程开发设计时间 降低审批规则变更对系统的影响 降低制作表单的时间和成本|
-|系统管理员   （System Administrator） | 严格的权限监控机制 完善的例外处理机制 强化的系统预警功能 主动式的管理系统 | 可随时追踪系统运作过程 主动而快速的排出异常 提供稳定可抗的监控环境 集中管理、掌控全局|
-|最终用户   （End User） | 灵活弹性的Web 2.0工作界面 优化的用户体验界面 主动追踪文件进度 | 兼顾统一规划管理与个性化需求 操作简单，降低学习成本 减少对IT部门的依赖性|
+只需这样简单定义了你的业务需求，华炎应用引擎就可以为你生成功能完整的业务管理系统。
+
+![对象显示效果](assets/object_guide.png#bordered)
+
+## 业务管控
+
+华炎不仅可以实现业务对象的数据查询与修改。还能实现许多企业应用必备的管控功能。
+
+- 流程审批
+- 权限管控
+- 统计报表
+- 通知消息
+- 上传附件
+- 安排任务
+- 添加到日历
+- 字段修改历史
+- 数据导入导出
+- API 接口
+- ...
+
+## 编写业务逻辑
+
+如果华炎内置的功能还不能满足你的业务需求，你还可以编写自定义代码，扩展现有功能，实现定制化的业务逻辑。
+
+- 触发器
+- 操作按钮
+- 表单事件
+- 服务端API
+- 客户端插件

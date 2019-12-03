@@ -1,6 +1,6 @@
 {
   "平台": {
-    "应用开发平台": ["developer/index", "platform/index"],
+    "华炎应用引擎": ["platform/index", "platform/why"],
     "业务台账": ["platform/record_list", "platform/record_view", "platform/record_edit", "platform/record_search", "platform/record_attachment", "platform/record_chatter", "platform/record_task", "platform/notifications"],
     "业务审批": ["workflow/instance_add", "workflow/instance_approve", "workflow/instance_carboncopy", "workflow/instance_distribute", "workflow/instance_forward", "workflow/instance_print", "workflow/instance_search"],
     "移动办公": ["platform/app_mobile", "platform/app_ipad"],
@@ -8,13 +8,15 @@
     "权限管理": ["platform/permission_set", "platform/permission_share"]
   },
   "开发": {
-    "快速向导": ["guide", "guide_create", "guide_object", "guide_app", "guide_run"],
+    "应用开发平台": ["developer/index"],
+    "快速向导": ["developer/guide", "developer/guide_create", "developer/guide_object", "developer/guide_app", "developer/guide_run"],
     "配置": ["datasource", "object", "object_field", "listview", "object_permission", "app", "reports", "steedos_config"],
     "高级": ["object_trigger", "object_action", "object_form", "object_filter_conditions", "object_field_formula", "standard_objects", "object_workflow", "report_jsreport"],
     "ObjectQL": ["developer/objectql_connection", "developer/objectql_datasource", "developer/objectql_object"],
     "插件": ["plugins/index", "plugins/plugin_server", "plugins/plugin_webapp", "plugins/plugin_config"]
   },  
-  "API": {
+  "API": {    
+    "应用集成": ["api/index"],
     "OData": ["api/odata", "api/odata_auth", "api/odata_query", "api/odata_get", "api/odata_add", "api/odata_edit", "api/odata_delete", "api/odata_functions", "api/odata_metadata"],
     "GraphQL": ["api/graphql", "api/graphql_auth", "api/graphql_query", "api/graphql_add", "api/graphql_edit", "api/graphql_delete"],
     "单点登录": ["api/api_jwt"]
