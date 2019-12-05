@@ -62,7 +62,7 @@ function Home() {
                 'button button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/overview')}
+              to={useBaseUrl('docs/developer/index')}
             >
               快速向导
             </Link>
@@ -104,9 +104,9 @@ function Home() {
                 width="100%"
                 height="315"
                 src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts-demo.mp4"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen="true"
+                allowFullScreen
               />
               <div className="text--center padding-vert--lg">
                 <Link

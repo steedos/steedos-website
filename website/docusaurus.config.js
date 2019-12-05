@@ -1,9 +1,9 @@
 // docusaurus.config.js
 module.exports = {
 
-  title: '华炎', // Title for your website.
-  tagline: '开源应用开发引擎：数据建模、流程审批、统计分析、权限管控。',
-  url: 'https://steedos.github.io/', // Your website URL
+  title: '华炎应用引擎', // Title for your website.
+  tagline: '开源企业管理软件开发工具：数据建模、流程审批、统计分析、权限管控。',
+  url: 'https://developer.steedos.com/', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -114,6 +114,68 @@ module.exports = {
         },
         {to: 'docs/api/index', label: 'API', position: 'left'},
       ],
+    },
+    footer: {
+      style: 'dark',
+      // logo: {
+      //   alt: 'Facebook Open Source Logo',
+      //   src: 'img/icon_blue.png',
+      // },
+
+      links: [
+        {
+          title: '华炎应用引擎',
+          items: [
+            {
+              label: '关于',
+              to: 'docs/developer/index',
+            },
+            {
+              label: '快速向导',
+              to: 'docs/developer/guide',
+            },
+            {
+              label: '我的应用',
+              to: 'docs/platform/index',
+            },
+          ],
+        },
+        {
+          title: '应用案例',
+          items: [
+            {
+              label: '合同管理',
+              href: 'https://github.com/steedos/steedos-contracts-app',
+            },
+            {
+              label: '会议管理',
+              href: 'https://github.com/steedos/steedos-meeting-app',
+            },
+            {
+              label: '档案管理',
+              href: 'https://github.com/steedos/steedos-records-app',
+            },
+          ],
+        },
+        {
+          title: '技术支持',
+          items: [
+            {
+              label: '客服热线',
+              to: 'tel:4008201612',
+            },
+            {
+              label: 'QQ',
+              href: 'https://developer.steedos.com/docs/assets/support_qq.jpg',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/steedos/object-server/issues',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} 上海华炎软件科技有限公司.`,
     },
     algolia: {
       apiKey: 'eaa8e1c86ac084b5cac664d9d996856c',
