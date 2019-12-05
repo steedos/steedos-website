@@ -2,7 +2,7 @@
 module.exports = {
 
   title: '华炎', // Title for your website.
-  tagline: '开源企业管理软件：数据建模、流程审批、统计分析、权限管控。',
+  tagline: '开源应用开发引擎：数据建模、流程审批、统计分析、权限管控。',
   url: 'https://steedos.github.io/', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -99,16 +99,16 @@ module.exports = {
 
   themeConfig: {
     navbar: {
-      title: '华炎',
+      title: '华炎应用引擎',
       logo: {
         alt: '华炎',
         src: 'img/icon_blue.png',
       },
       links: [
-        {to: 'docs/platform/index', label: '关于', position: 'left'},
-        {to: 'docs/developer/guide', label: '快速向导', position: 'left'},
+        {to: 'docs/developer/index', label: '快速向导', position: 'left'},
+        {to: 'docs/platform/index', label: '我的应用', position: 'left'},
         {
-          href: 'https://github.com/',
+          href: 'https://github.com/steedos/',
           label: 'GitHub',
           position: 'right',
         },
