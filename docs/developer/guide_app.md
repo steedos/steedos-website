@@ -6,7 +6,7 @@ title: 配置应用
 
 管理员可以针对应用进行授权，授权给具体的业务人员或是部门使用。
 
-![电脑、手机界面展示](assets/mac_mobile_list.png)
+![电脑、手机界面展示](/assets/mac_mobile_list.png)
 
 模板项目内置了一个 [应用](./app.md) 描述文件 src/crm.app.yml ，您可以尝试修改此文件。
 

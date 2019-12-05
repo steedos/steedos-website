@@ -6,7 +6,7 @@ title: 列表视图
 
 最终用户在界面上可以很方便的切换列表视图，增加新的筛选条件，也可以自定义自己的列表视图。
 
-![列表视图效果](assets/listview_guide.png)
+![列表视图效果](/assets/listview_guide.png)
 ```yaml
 list_views:
   priority_high:

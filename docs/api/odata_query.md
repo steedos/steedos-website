@@ -20,7 +20,7 @@ GET /api/v4/{object_name}/
 指定数据的查询条件，可以使用括号表示分组。
 
 以下列出 odata query支持的运算符。
-	![](assets/filter.png)
+	![](/assets/filter.png)
 
 时间值的必须使用以下格式：2010-07-15T16:19:54Z。
 

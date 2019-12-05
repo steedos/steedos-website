@@ -8,4 +8,4 @@ title: 附件
 - 可以为一条记录添加多个附件
 - 附件支持版本控制，系统会保留附件的每一个版本备查
 
-![电脑、手机界面展示](assets/car_object.png)
+![电脑、手机界面展示](/assets/car_object.png)

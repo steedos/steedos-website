@@ -8,4 +8,4 @@ title: 如何打印
 - 以及调整横向或纵向打印、是否需要打印签核历程以及附件；
 - 最后点击“打印”。
 
-![打印](assets/workflow/打印.png)
+![打印](/assets/workflow/打印.png)

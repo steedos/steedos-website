@@ -10,7 +10,7 @@ title: 华炎产品
 
 [了解审批王](../workflow/)
 
-![审批王](assets/products/workflow.png#medium)
+![审批王](/assets/products/workflow.png#medium)
 
 ## 低代码开发平台
 
@@ -18,4 +18,4 @@ title: 华炎产品
 
 [了解开发平台](../developer/)
 
-![开发平台](assets/overview-contracts.jpg#medium)
+![开发平台](/assets/overview-contracts.jpg#medium)

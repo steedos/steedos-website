@@ -7,9 +7,9 @@ sidebar_label: 简介
 
 ## 系统架构
 
-以合同管理需求为例，开发人员只需要配置下图 <span style='color:green'>绿色</span> 部分的业务对象，华炎应用引擎即可生成一套全功能的合同管理系统。
+以合同管理需求为例，开发人员只需要配置下图 <span style={{color:'green'}}>绿色</span> 部分的业务对象，华炎应用引擎即可生成一套全功能的合同管理系统。
 
-![合同管理案例](assets/platform/engine-overview.png)
+![合同管理案例](/assets/platform/engine-overview.png)
 
 ## 描述业务对象
 
@@ -87,7 +87,7 @@ permission_set:
 
 只需这样简单定义了你的业务需求，华炎应用引擎就可以为你生成功能完整的业务管理系统。
 
-![对象显示效果](assets/object_guide.png#bordered)
+![对象显示效果](/assets/object_guide.png#bordered)
 
 ## 业务管控
 

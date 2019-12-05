@@ -15,9 +15,9 @@ title: 下载客户端
 ## iOS 客户端
 
 扫描以下二维码下载：
-![苹果客户端](assets/workflow/download-ios.png)
+![苹果客户端](/assets/workflow/download-ios.png)
 
 ## Android 客户端
 
 扫描以下二维码下载：
-![安卓客户端](assets/workflow/download-android.png)
+![安卓客户端](/assets/workflow/download-android.png)

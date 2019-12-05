@@ -11,7 +11,7 @@ yarn start
 使用浏览器访问地址 [http://127.0.0.1:5000/](http://127.0.0.1:5000/) ，即可访问用户界面。
 第一次使用时，数据库为空。点击“企业注册”，可以在本地数据库中创建一家新的企业账户。
 
-![界面展示](assets/object_guide.png#bordered)
+![界面展示](/assets/object_guide.png#bordered)
 
 
 ## 调试项目

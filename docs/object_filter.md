@@ -16,7 +16,7 @@ filters: [["age", "between", [20,30]]]
 
 ### 运算符 operation
 - "=": 等于
-- "<>": 不等于
+- "!=": 不等于
 - ">": 大于
 - ">=": 大于等于
 - "<": 小于
@@ -49,9 +49,9 @@ filters: [["age", "between", [20,30]]]
 - [["status", "in", ["closed","open"]]]
 - [ [ "status", "=", "closed" ], "or", [ "status", "=", "open" ] ]
 
-运算符为"<>"时，条件自动按"and"裂变连接成多个过滤条件，所以下两种写法结果相同：
+运算符为"!="时，条件自动按"and"裂变连接成多个过滤条件，所以下两种写法结果相同：
 - [["status", "not in", ["closed","open"]]]
-- [ [ "status", "<>", "closed" ], "and", [ "status", "<>", "open" ] ]
+- [ [ "status", "!=", "closed" ], "and", [ "status", "!=", "open" ] ]
 
 运算符为"between"时，条件自动转换成">="及"<="运算符对应的过滤条件，以下各组效果相同：
 - [["age", "between", [20,30]]] 等效于 [ [ "age", ">=", 20 ], "and", [ "age", "<=", 30 ] ]

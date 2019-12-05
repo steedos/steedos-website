@@ -138,4 +138,4 @@ permission_set:
 
 如果未配置，可见操作按钮默认值为 ['ALL_ACTIONS'] ，表示可以查看所有操作按钮。此时界面上操作按钮的显示顺序以业务对象中定义的顺序为准。
 
-![对象权限设置页面](assets/permission_objects.png)
+![对象权限设置页面](/assets/permission_objects.png)

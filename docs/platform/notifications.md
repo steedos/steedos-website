@@ -4,11 +4,11 @@ title: 推送通知
 
 有新消息到达时，Steedos 在页面右上角显示推送通知提醒。
 
-![推送通知](assets/notification_unread.png)
+![推送通知](/assets/notification_unread.png)
 
 点击推送通知图标，可以查看通知中心。通知中心只显示最新的20条通知。
 
-![推送通知](assets/notification_list.png)
+![推送通知](/assets/notification_list.png)
 
 ## 标准业务对象
 

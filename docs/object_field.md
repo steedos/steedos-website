@@ -18,7 +18,7 @@ Steedos支持以下字段类型。
 - 邮件地址(email): 在只读时，点击会自动打开邮件客户端，并将字段值带入收件人中
 - 主表/子表(master_detail): 主表子表字段类型是引用字段类型的一种扩展，将当前记录链接到主表成为子记录。
 
-![表单编辑效果](assets/field_guide.png)
+![表单编辑效果](/assets/field_guide.png)
 
 例如以下例子定义了一个owner字段:
 
@@ -192,7 +192,7 @@ deadline:
   type: 'date'
 ```
 
-![日期类型字段](assets/field_date.png#bordered)
+![日期类型字段](/assets/field_date.png#bordered)
 
 ### 日期时间 datetime
 
@@ -204,7 +204,7 @@ starttime:
   type: 'datetime'
 ```
 
-![日期时间类型字段](assets/field_datetime.png#bordered)
+![日期时间类型字段](/assets/field_datetime.png#bordered)
 
 ### 布尔 boolean
 
@@ -287,7 +287,7 @@ tags:
   multiple: true
 ```
 
-![select类型字段多选](assets/field_select_multiple.png#bordered)
+![select类型字段多选](/assets/field_select_multiple.png#bordered)
 
 ### 可选项 options
 
@@ -381,7 +381,7 @@ account_id:
   filters: [["priority", "=", "normal"]]
 ```
 
-![lookup类型字段](assets/field_lookup.png#bordered)
+![lookup类型字段](/assets/field_lookup.png#bordered)
 
 ### 引用对象(reference_to)
 
@@ -404,7 +404,7 @@ contract_type:
   multiple: true
 ```
 
-![lookup类型字段多选](assets/field_lookup_multiple.png#bordered)
+![lookup类型字段多选](/assets/field_lookup_multiple.png#bordered)
 
 多选字段在MongoDB数据库中保存为数组，值为选中记录的ID：
 
@@ -444,7 +444,7 @@ contract_type: ["id-1111111","id-2222222"]
     filterable: true
 ```
 
-![master_detail类型字段多选](assets/field_master_detail_guide.png#bordered)
+![master_detail类型字段多选](/assets/field_master_detail_guide.png#bordered)
 
 ## 表格类型字段 grid
 

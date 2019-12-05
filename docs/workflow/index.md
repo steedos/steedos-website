@@ -7,11 +7,11 @@ sidebar_label: 特色
 
 借助于华炎强大的多数据源和业务对象自定义功能，审批王可以快速实现和现有业务系统的接口，包括从业务系统中抽取数据或是将审批结果写入业务系统中。
 
-![审批王](assets/products/workflow.png)
+![审批王](/assets/products/workflow.png)
 
 审批王提供完善的零代码流程管理平台，涵盖：流程设计 (Process Design)、流程运行 (Process Execution)、管理维护 (Administration) 与流程优化 (Optimization)等各类工具，是最具效率的流程管理开发工具。凭借优化的NodeJS核心搭配先进的AJAX技术，即使面对成千部门、上万人员的大型企业，所有的功能仍如行云流水般的流畅。
 
-![审批王](assets/products/workflow_overview.png)
+![审批王](/assets/products/workflow_overview.png)
 
 ## 全新专家专家智能（Expert Intelligent）核心、零代码设计
 

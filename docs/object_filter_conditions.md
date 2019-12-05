@@ -34,7 +34,7 @@ filter_conditions:
 ### 运算符 operation
 
 - "=": 等于
-- "<>": 不等于
+- "!=": 不等于
 - ">": 大于
 - ">=": 大于等于
 - "<": 小于
@@ -92,13 +92,13 @@ filter_conditions:
 ```yml
 filter_conditions:
   - field: priority
-    operation: <>
+    operation: !=
     value:
       - high
       - normal
 ```
 
-其中的 <> 替换为 notcontains，效果相同。
+其中的 != 替换为 notcontains，效果相同。
 
 以下筛选条件用于查询 age 在 20～30 之间的数据。
 
