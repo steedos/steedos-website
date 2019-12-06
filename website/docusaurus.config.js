@@ -108,6 +108,7 @@ module.exports = {
         {to: 'docs/developer/index', label: '快速向导', position: 'left'},
         {to: 'docs/platform/index', label: '我的应用', position: 'left'},
         {to: 'docs/api/index', label: 'API', position: 'left'},
+        {to: 'docs/pricing/index', label: '报价', position: 'left'},
         {
           label: '开发人员社区',
           position: 'right',
