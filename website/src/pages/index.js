@@ -19,25 +19,25 @@ const features = [
     imageUrl: 'img/undraw_building_blocks.svg',
     description: (
       <>
-        华炎应用引擎是一套企业管理软件开发工具，开发人员只需编写少量代码，就能构建功能强大的企业管理软件。
+        华炎应用引擎是一套管理软件开发工具，开发人员只需编写业务配置文件，描述业务对象，就能生成全功能的业务管理系统。
       </>
     ),
   },
   {
-    title: <>华炎应用引擎能做什么？</>,
+    title: <>华炎应用引擎可以做什么？</>,
     imageUrl: 'img/undraw_react.svg',
     description: (
       <>
-        华炎应用引擎内置了企业管理软件常用的数十项功能，包括用户登录、组织管理、流程审批、权限控制、统计分析等。
+        开发人员只需要描述业务逻辑，剩下的都交给华炎应用引擎，包括用户登录、业务台账、流程审批、权限控制、统计分析、手机客户端。
       </>
     ),
   },
   {
-    title: <>我如何使用？</>,
+    title: <>需求变更怎么办？</>,
     imageUrl: 'img/undraw_programming.svg',
     description: (
       <>
-        你可以参考我们的项目模版，或是按照快速向导，创建一个空项目，定义业务对象，就可以快速生成功能强大的管理系统。
+        当业务需求发生变更时，开发人员只需修改配置文件，华炎应用引擎会重新编译和运行配置文件，自动生成变更后的业务系统。
       </>
     ),
   },
@@ -100,14 +100,13 @@ function Home() {
           <div className="row">
             <div className="col col--6 col--offset-3 padding-vert--lg">
               <h2>如何快速开发合同管理系统</h2>
-              <iframe
+              <video 
                 width="100%"
                 height="315"
                 src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts-demo.mp4"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+                controls="controls">
+              您的浏览器不支持 video 标签。
+              </video>
               <div className="text--center padding-vert--lg">
                 <Link
                   className="button button--primary button--lg"

@@ -2,7 +2,7 @@
 module.exports = {
 
   title: '华炎应用引擎', // Title for your website.
-  tagline: '开源企业管理软件开发工具：数据建模、流程审批、统计分析、权限管控。',
+  tagline: '只需编写配置文件，就能生成功能强大的企业管理软件。',
   url: 'https://developer.steedos.com/', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -99,7 +99,7 @@ module.exports = {
 
   themeConfig: {
     navbar: {
-      title: '华炎应用引擎',
+      title: '华炎',
       logo: {
         alt: '华炎',
         src: 'img/icon_blue.png',
@@ -107,12 +107,12 @@ module.exports = {
       links: [
         {to: 'docs/developer/index', label: '快速向导', position: 'left'},
         {to: 'docs/platform/index', label: '我的应用', position: 'left'},
-        {
-          href: 'https://github.com/steedos/',
-          label: 'GitHub',
-          position: 'right',
-        },
         {to: 'docs/api/index', label: 'API', position: 'left'},
+        {
+          label: '开发人员社区',
+          position: 'right',
+          href: 'https://messenger.steedos.cn/',
+        },
       ],
     },
     footer: {
@@ -161,15 +161,14 @@ module.exports = {
           title: '技术支持',
           items: [
             {
-              label: '客服热线',
-              to: 'tel:4008201612',
+              label: '销售热线：400-820-1612',
             },
             {
-              label: 'QQ',
-              href: 'https://developer.steedos.com/docs/assets/support_qq.jpg',
+              label: '开发人员社区',
+              to: 'https://messenger.steedos.cn/',
             },
             {
-              label: 'GitHub',
+              label: '问题提交',
               href: 'https://github.com/steedos/object-server/issues',
             },
           ],
