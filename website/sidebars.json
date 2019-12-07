@@ -4,6 +4,7 @@
     "业务台账": ["platform/record_list", "platform/record_view", "platform/record_edit", "platform/record_search", "platform/record_attachment", "platform/record_chatter", "platform/record_tasks", "platform/notifications"],
     "业务审批": ["workflow/instance_add", "workflow/instance_approve", "workflow/instance_carboncopy", "workflow/instance_distribute", "workflow/instance_forward", "workflow/instance_print", "workflow/instance_search"],
     "移动办公": ["platform/app_mobile", "platform/app_ipad"],
+    "流程管理": [],
     "用户管理": ["platform/organization","platform/space_user"],
     "权限管理": ["platform/permission_set", "platform/permission_share"]
   },
@@ -20,8 +21,5 @@
     "OData": ["api/odata", "api/odata_auth", "api/odata_query", "api/odata_get", "api/odata_add", "api/odata_edit", "api/odata_delete", "api/odata_functions", "api/odata_metadata"],
     "GraphQL": ["api/graphql", "api/graphql_auth", "api/graphql_query", "api/graphql_add", "api/graphql_edit", "api/graphql_delete"],
     "单点登录": ["api/api_jwt"]
-  },
-  "审批王": {
-    "审批王": ["workflow/index", "workflow/download"]
   }
 }
