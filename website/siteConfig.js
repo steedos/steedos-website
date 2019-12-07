@@ -42,6 +42,7 @@ const siteConfig = {
     {doc: 'platform/index', label: '应用引擎'},
     {doc: 'developer/guide', label: '开始使用'},
     {doc: 'api/index', label: 'API'},
+    {doc: 'workflow/index', label: '审批王'},
     {search: true},
     {href: 'https://cn.steedos.com/', label: '华炎云'},
     //{doc: 'record_list', label: '用户手册'},

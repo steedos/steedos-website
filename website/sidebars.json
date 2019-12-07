@@ -23,6 +23,6 @@
   },
   "审批王": {
     "审批王": ["workflow/index", "workflow/download"],
-    "管理员": ["workflow/admin_workflow", "workflow/admin_form"]
+    "管理员": ["workflow/admin_workflow", "workflow/admin_form", "workflow/admin_monitor", "workflow/admin_export", "workflow/admin_organizations"]
   }
 }
