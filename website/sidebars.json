@@ -2,11 +2,10 @@
   "平台": {
     "我的应用": ["platform/index"],
     "业务台账": ["platform/record_list", "platform/record_view", "platform/record_edit", "platform/record_search", "platform/record_attachment", "platform/record_chatter", "platform/record_tasks", "platform/notifications"],
-    "业务审批": ["workflow/instance_add", "workflow/instance_approve", "workflow/instance_carboncopy", "workflow/instance_distribute", "workflow/instance_forward", "workflow/instance_print", "workflow/instance_search"],
+    "业务审批": ["workflow/instance_add", "workflow/instance_approve", "workflow/instance_carboncopy", "workflow/instance_distribute", "workflow/instance_forward", "workflow/instance_print", "workflow/instance_search", "workflow/admin_monitor", "workflow/admin_export" ],
     "移动办公": ["platform/app_mobile", "platform/app_ipad"],
-    "流程管理": [],
-    "用户管理": ["platform/organization","platform/space_user"],
-    "权限管理": ["platform/permission_set", "platform/permission_share"]
+    "流程管理": ["workflow/admin_positions"],
+    "系统设置": ["platform/organization", "platform/permission_set", "platform/permission_share"]
   },
   "开发": {
     "华炎应用引擎": ["developer/index", "developer/why"],
