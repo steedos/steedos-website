@@ -1,8 +1,8 @@
 // docusaurus.config.js
 module.exports = {
 
-  title: '华炎应用引擎', // Title for your website.
-  tagline: '只需编写配置文件，就能生成功能强大的企业管理软件。',
+  title: '华炎开发', // Title for your website.
+  tagline: '只需编写配置文件，就能生成功能强大的业务管理系统',
   url: 'https://developer.steedos.com/', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -99,13 +99,13 @@ module.exports = {
 
   themeConfig: {
     navbar: {
-      title: '华炎',
+      title: '华炎开发',
       logo: {
         alt: '华炎',
         src: 'img/icon_blue.png',
       },
       links: [
-        {to: 'docs/developer/index', label: '快速向导', position: 'left'},
+        {to: 'docs/developer/index', label: '开发向导', position: 'left'},
         {to: 'docs/platform/index', label: '我的应用', position: 'left'},
         {to: 'docs/api/index', label: 'API', position: 'left'},
         {to: 'docs/pricing/index', label: '报价', position: 'left'},
