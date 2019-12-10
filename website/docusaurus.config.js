@@ -2,7 +2,7 @@
 module.exports = {
 
   title: '华炎开发', // Title for your website.
-  tagline: '只需编写配置文件，就能生成功能强大的业务管理系统',
+  tagline: '只需编写配置文件，就能生成功能强大的业务系统',
   url: 'https://developer.steedos.com/', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
