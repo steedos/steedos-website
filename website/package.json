@@ -4,7 +4,7 @@
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "dep": "GITHUB_USER=hotlong && yarn deploy"
+    "dep": "GIT_USER=hotlong && yarn deploy"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.37",
