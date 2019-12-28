@@ -8,7 +8,7 @@ title: 数据报表
 
 用户进入系统后，点击“报表”进入到系统报表界面。用户可以看到自己有权限的报表，同时也可以创建自己的数据报表。
 
-![数据报表](/assets/record_report_create.png)
+![数据报表](/assets/record_report_create.jpg)
 
 
 
