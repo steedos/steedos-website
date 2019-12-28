@@ -1,7 +1,7 @@
 {
   "平台": {
     "我的应用": ["platform/index"],
-    "业务台账": ["platform/record_list", "platform/record_view", "platform/record_attachment", "platform/record_chatter", "platform/record_tasks", "platform/notifications"],
+    "业务台账": ["platform/record_list", "platform/record_view", "platform/notifications"],
     "业务审批": ["workflow/instance_add", "workflow/instance_approve", "workflow/instance_carboncopy", "workflow/instance_distribute", "workflow/instance_forward", "workflow/instance_print", "workflow/instance_search", "workflow/admin_monitor", "workflow/admin_export" ],
     "移动办公": ["platform/app_mobile", "platform/app_ipad"],
     "流程管理": ["workflow/admin_positions" , "workflow/admin_form", "workflow/admin_flow"],
