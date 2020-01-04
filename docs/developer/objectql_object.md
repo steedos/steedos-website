@@ -96,6 +96,9 @@ const connection: Connection = await createConnection({
       likesCount: 100
   });
 ```
+## 插入 directInsert
+
+调用方式同 insert，但不执行触发器
 
 ## 更新单条记录 updateOne
 
@@ -128,9 +131,15 @@ const connection: Connection = await createConnection({
   // WHERE likesCount > 20
 ```
 
+## 更新记录 directUpdate
+调用方式同 updateMany，但不执行触发器
+
 ## 删除单条记录 delete
 
 ```typescript
   const posts = await connection.getObject("posts").delete('5dcbb48f735bba40b3ebbe1a');
   // DELETE FROM posts WHERE _id = '5dcbb48f735bba40b3ebbe1a'
 ```
+
+## 删除记录 directDelete
+调用方式同 directDelete，但不执行触发器
