@@ -167,7 +167,7 @@ group值相同的字段被分到同一组，分组标题为group的值，分组�
 
 ### 选项列表值集 picklist
 
-适用于select类型字段
+指定字段的选择项，适用于select类型字段。指定的picklist记录存在时，覆盖字段定义的options属性
 
 ```yaml
 country:
