@@ -6,7 +6,7 @@ title: 自定义函数
 
 ### 接口信息
 
- - 请求方法：POST
+ - 请求方法：GET | POST | PUT | DELETE
 
  - 请求接口：/api/v4/{object_name}/{record_id}/{method_name}
 
