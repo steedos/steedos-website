@@ -26,6 +26,6 @@ yarn build
 
 ```bash
 cd website
-set GIT_USER=hotlong 
+set GIT_USER=hotlong
 yarn deploy
 ```
