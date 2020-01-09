@@ -21,3 +21,11 @@ yarn start
 cd website
 yarn build
 ```
+
+## 发布
+
+```bash
+cd website
+set GIT_USER=hotlong 
+yarn deploy
+```
