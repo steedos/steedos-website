@@ -70,27 +70,35 @@ Steedos 为每个业务对象内置了 所属单位(company_ids) 字段，默认
 
 值为字段名数组。数组中字段的先后顺序也是查看界面上字段显示的先后顺序。
 
-如果未配置，可见字段默认值为 ['ALL_FIELDS'] ，表示可以查看所有字段。此时界面上字段的显示顺序以业务对象中定义的顺序为准。
+如果未配置，表示可以查看所有字段。此时界面上字段的显示顺序以业务对象中定义的顺序为准。
 
 ```yml
 permission_set:
   user:
-    fields: ['amount', 'owner', 'created']
+    fields:
+      - amount
+      - owner
+      - created
 ```
 
 以上配置表示：普通用户只能查看三个字段。
 
-### 可编辑字段 fieldsEditable
-
-默认情况下，可见字段均可编辑。如果特殊指定，可以配置此属性。
+高级配置
 
 ```yml
 permission_set:
   user:
-    fieldsEditable: ['amount']
+    fields:
+      - owner
+      - name: amount
+        readonly: true
+        omit: true
+      - created
+      - name: company_id
+        hidden: true
 ```
 
-以上配置表示：用户可以查看所有字段（未配置自动取默认值），但是只能修改 amount 字段。
+以上配置表示：用户可以查看所有字段（未配置自动取默认值），但是不能修改 amount 字段。
 
 ## 可见列表视图 listViews
 
@@ -104,9 +112,9 @@ permission_set:
     listViews: ['all', 'mine', 'recent']
 ```
 
-如果未配置，列表视图默认值为 ['ALL_LISTVIEWS'] ，表示可以查看所有列表视图。此时界面上列表视图的显示顺序以业务对象中定义的顺序为准。
+如果未配置，表示可以查看所有列表视图。此时界面上列表视图的显示顺序以业务对象中定义的顺序为准。
 
-## 可见相关对象 relatedObjects
+## 相关对象 relatedList
 
 设定记录查看界面，用户可以查看到的相关记录列表。
 
@@ -115,12 +123,26 @@ permission_set:
 ```yml
 permission_set:
   user:
-    relatedObjects: ['files', 'tasks', 'payments']
+    relatedList: ['files', 'tasks', 'payments']
 ```
 
 以上配置表示：普通用户在查看记录时，可以查看到相关的 文件(files)、任务(tasks)、付款(payments) 记录。
 
-如果未配置，可见相关对象默认值为 ['ALL_RELATED_OBJECTS'] ，表示可以查看所有相关对象。此时界面上相关对象的显示顺序以业务对象中定义的顺序为准。
+如果未配置，表示可以查看所有相关对象。此时界面上相关对象的显示顺序以业务对象中定义的顺序为准。
+
+高级配置
+
+```yml
+permission_set:
+  user:
+    relatedList:
+      - files
+      - name: tasks
+        readonly: true
+      - payments
+```
+
+以上配置额外设置 tasks 子表为只读状态，不能新增、修改、删除记录。
 
 ## 可见操作按钮 actions
 
@@ -136,6 +158,6 @@ permission_set:
 
 以上配置表示：普通用户在查看记录时，可以查看到标准的编辑(standard_edit)按钮和自定义的升级(updade)按钮。
 
-如果未配置，可见操作按钮默认值为 ['ALL_ACTIONS'] ，表示可以查看所有操作按钮。此时界面上操作按钮的显示顺序以业务对象中定义的顺序为准。
+如果未配置，表示可以查看所有操作按钮。此时界面上操作按钮的显示顺序以业务对象中定义的顺序为准。
 
-![对象权限设置页面](/assets/permission_objects.png)
+![对象权限设置页面](assets/permission_objects.png)
