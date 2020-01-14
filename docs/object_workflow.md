@@ -75,6 +75,13 @@ Steedos中定义的业务对象，可以与[审批王](../workflow)系统集成�
 ```yaml
 cron:
   instancerecordqueue_interval: 10000
+public:
+  webservices:
+    workflow:
+      url: "http://127.0.0.1:3000/"
+    creator:
+      url: ${ENV_CREATOR_URL}
 ```
+其中，public.webservices.workflow.url与env.ROOT_URL相一致。
 
 项目配置文件修改后，重启服务即可。
