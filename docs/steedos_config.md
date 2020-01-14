@@ -38,8 +38,14 @@ tenant:
   enable_register: true
   enable_forget_password: true
   enable_create_tenant: true
+  enable_mobile: false
 ```
 
+- enable_register: 启用注册功能
+- enable_forget_password: 启用忘记密码功能
+- enable_create_tenant: 启用工作区注册功能
+- enable_mobile: 启用手机端界面
+ 
 ## Web服务URL
 
 ```yml
