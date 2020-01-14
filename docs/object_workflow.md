@@ -78,10 +78,10 @@ cron:
 public:
   webservices:
     workflow:
-      url: "http://127.0.0.1:3000/"
+      url: "http://127.0.0.1:5000/"
     creator:
-      url: ${ENV_CREATOR_URL}
+      url: "http://127.0.0.1:5000/"
 ```
-其中，public.webservices.workflow.url与env.ROOT_URL相一致。
+其中，public.webservices.workflow.url及public.webservices.creator.url需与env.ROOT_URL相一致。
 
 项目配置文件修改后，重启服务即可。
