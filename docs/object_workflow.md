@@ -67,3 +67,14 @@ Steedos中定义的业务对象，可以与[审批王](../workflow)系统集成�
 - 脚本
   - 对象至表单
   - 表单至对象
+
+## 启用对象流程映射
+
+请注意，如果您要启用对象流程映射，还需在项目配置文件（steedos-config.yml）中进行设置。
+
+```yaml
+cron:
+  instancerecordqueue_interval: 10000
+```
+
+项目配置文件修改后，重启服务即可。

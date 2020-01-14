@@ -40,4 +40,16 @@ mobile_objects:
 
 其中，tasks, events, reports 属于 steedos 内置的[标准业务对象](./standard_objects.md)，无需在项目中定义即可使用。
 
+建议您增加引用instances，这样，在这个默认应用中就可以使用审批王系统来进行流程审批了。
+
+```yaml
+objects:
+  - accounts
+  - contacts
+  - tasks
+  - events  
+  - reports
+  - instances
+```
+
 修改应用描述文件之后，只需重新启动服务，即可生效。
