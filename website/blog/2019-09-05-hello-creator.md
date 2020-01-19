@@ -1,7 +1,8 @@
 ---
 title: 华炎发布低代码开发平台Creator
-author: 庄建国
+author: steedos
 authorURL: http://steedos.github.io/
+tags: [低代码, creator]
 ---
 
 低代码开发平台，是指无需编码或很少代码（No Code or Low Code）就可以快速生成应用程序的工具，提供可视化的设计工具来快速搭建界面、设计数据模型、创建业务逻辑和工作流。
