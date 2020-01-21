@@ -107,10 +107,15 @@ module.exports = {
       links: [
         {to: 'workflow', label: '审批王', position: 'left'},
         {to: 'developer', label: '开发平台', position: 'left'},
-        {to: 'docs/platform/index', label: '文档', position: 'left'},
-        {to: 'docs/api/index', label: 'API', position: 'left'},
+        {to: 'docs/platform/index', label: '文档', position: 'left',
+          items: [
+           {to: 'docs/developer/index', label: '开发文档'},
+           {to: 'docs/platform/index', label: '应用手册'},
+           {to: 'docs/api/index', label: 'API'}
+          ]
+        },
         // {to: 'docs/pricing/index', label: '报价', position: 'left'},
-        // {to: 'blog', label: '博客', position: 'left'},
+        {to: 'blog', label: '博客', position: 'left'},
         {
           label: '社区',
           position: 'right',
