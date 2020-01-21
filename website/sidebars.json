@@ -8,7 +8,7 @@
     "系统设置": ["platform/organization", "platform/permission_set", "platform/permission_share"]
   },
   "开发": {
-    "华炎应用引擎": ["developer/index", "developer/why"],
+    "华炎开发平台": ["developer/index", "developer/why"],
     "快速向导": ["developer/guide", "developer/guide_create", "developer/guide_object", "developer/guide_app", "developer/guide_run"],
     "配置": ["datasource", "object", "object_field", "listview", "object_permission", "app", "reports", "steedos_config"],
     "高级": ["object_trigger", "object_action", "object_form", "object_filter_conditions", "object_field_formula", "standard_objects", "object_workflow", "report_jsreport"],

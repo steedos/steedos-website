@@ -105,21 +105,21 @@ module.exports = {
         src: 'img/icon_blue.png',
       },
       links: [
-        {to: 'docs/platform/index', label: '应用引擎', position: 'left'},
         {to: 'workflow', label: '审批王', position: 'left'},
-        {to: 'developer', label: '开发', position: 'left'},
+        {to: 'developer', label: '开发平台', position: 'left'},
+        {to: 'docs/platform/index', label: '文档', position: 'left'},
         {to: 'docs/api/index', label: 'API', position: 'left'},
-        {to: 'docs/pricing/index', label: '报价', position: 'left'},
-        {to: 'blog', label: '博客', position: 'left'},
+        // {to: 'docs/pricing/index', label: '报价', position: 'left'},
+        // {to: 'blog', label: '博客', position: 'left'},
         {
           label: '社区',
-          position: 'left',
+          position: 'right',
           href: 'https://messenger.steedos.cn/',
         },
-        {label: 'Login', position: 'right',
+        {label: '客户登录', position: 'right',
          items: [
-          {href: 'https://cn.steedos.com', label: '中国区域 / Chinese Region'},
-          {href: 'https://us.steedos.com', label: '美国区域 / US Region'}
+          {href: 'https://cn.steedos.com', label: '中国区域'},
+          {href: 'https://us.steedos.com', label: '美国区域'}
          ]
         },
       ],
@@ -201,6 +201,9 @@ module.exports = {
           path: '../docs',
           // sidebars file relative to website dir.
           sidebarPath: require.resolve('./sidebars.json'),
+        },
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],

@@ -54,7 +54,7 @@ function Home() {
     >
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">华炎“低代码”开发平台”</h1>
+          <h1 className="hero__title">华炎“低代码”开发平台</h1>
           <p className="hero__subtitle">只需编写配置文件，就能生成功能强大的业务系统</p>
           <div className={styles.buttons}>
             <Link
