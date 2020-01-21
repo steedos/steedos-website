@@ -7,14 +7,20 @@
     "dep": "GIT_USER=hotlong && yarn deploy"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.37",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.37",
+    "@docusaurus/core": "^2.0.0-alpha.40",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.40",
+    "@salesforce-ux/design-system": "^2.11.0",
+    "@salesforce/design-system-react": "^0.10.17",
     "classnames": "^2.2.6",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",

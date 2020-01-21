@@ -1,9 +1,9 @@
 // docusaurus.config.js
 module.exports = {
 
-  title: '华炎开发', // Title for your website.
-  tagline: '只需编写配置文件，就能生成功能强大的业务系统',
-  url: 'https://developer.steedos.com/', // Your website URL
+  title: '华炎', // Title for your website.
+  tagline: '随需定制的企业管理软件，快速满足业务部门的个性化需求。',
+  url: 'https://www.steedos.com/', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -99,21 +99,28 @@ module.exports = {
 
   themeConfig: {
     navbar: {
-      title: '华炎开发',
+      title: '华炎',
       logo: {
         alt: '华炎',
         src: 'img/icon_blue.png',
       },
       links: [
-        {to: 'docs/developer/index', label: '开发向导', position: 'left'},
-        {to: 'docs/platform/index', label: '我的应用', position: 'left'},
+        {to: 'docs/platform/index', label: '应用引擎', position: 'left'},
+        {to: 'workflow', label: '审批王', position: 'left'},
+        {to: 'developer', label: '开发', position: 'left'},
         {to: 'docs/api/index', label: 'API', position: 'left'},
         {to: 'docs/pricing/index', label: '报价', position: 'left'},
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {to: 'blog', label: '博客', position: 'left'},
         {
-          label: '开发人员社区',
-          position: 'right',
+          label: '社区',
+          position: 'left',
           href: 'https://messenger.steedos.cn/',
+        },
+        {label: 'Login', position: 'right',
+         items: [
+          {href: 'https://cn.steedos.com', label: '中国区域 / Chinese Region'},
+          {href: 'https://us.steedos.com', label: '美国区域 / US Region'}
+         ]
         },
       ],
     },
