@@ -2,6 +2,15 @@
   "审批王": {
     "审批王": ["workflow/index"]
   },
+  "审批王": {
+    "如何使用审批王": ["workflow/help/guide_sign", "workflow/help/instance_download","workflow/help/instance_add"],
+    "手机客户端": ["workflow/help/instance_download"],
+    "专业版功能": ["workflow/help/instance_download"],
+    "企业版功能": ["workflow/help/instance_download"],
+    "如何设置工作区": ["workflow/help/instance_download"],
+    "如何设计表单": ["workflow/help/instance_download"],
+    "如何设计流程": ["workflow/help/instance_download"]
+  },
   "平台": {
     "我的应用": ["platform/index"],
     "业务台账": ["platform/record_list", "platform/record_view", "platform/record_report", "platform/notifications"],
