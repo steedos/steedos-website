@@ -110,7 +110,8 @@ module.exports = {
         {to: 'developer', label: '开发平台', position: 'left'},
         {to: 'docs/platform/index', label: '文档', position: 'left',
           items: [
-           {to: 'docs/developer/index', label: '开发文档'},
+            {to: 'docs/workflow/help/guide_sign', label: '审批王'},
+            {to: 'docs/developer/index', label: '开发文档'},
            {to: 'docs/platform/index', label: '应用手册'},
            {to: 'docs/api/index', label: 'API'}
           ]
