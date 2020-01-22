@@ -3,7 +3,7 @@
     "审批王": ["workflow/index"]
   },
   "审批王": {
-    "如何使用审批王": ["workflow/help/guide_sign", "workflow/help/instance_download","workflow/help/instance_add"],
+    "如何使用审批王": ["workflow/help/guide_sign", "workflow/help/instance_download","workflow/help/instance_add","workflow/help/instance_approve","workflow/help/instance_attachment","workflow/help/instance_suggest","workflow/help/instance_search"],
     "手机客户端": ["workflow/help/instance_download"],
     "专业版功能": ["workflow/help/instance_download"],
     "企业版功能": ["workflow/help/instance_download"],
