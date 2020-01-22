@@ -1,10 +1,13 @@
 {
+  "审批王": {
+    "审批王": ["workflow/index"]
+  },
   "平台": {
     "我的应用": ["platform/index"],
     "业务台账": ["platform/record_list", "platform/record_view", "platform/record_report", "platform/notifications"],
-    "业务审批": ["workflow/instance_add", "workflow/instance_approve", "workflow/instance_carboncopy", "workflow/instance_distribute", "workflow/instance_forward", "workflow/instance_print", "workflow/instance_search", "workflow/admin_monitor", "workflow/admin_export" ],
+    "业务审批": ["platform/instance_add", "platform/instance_approve", "platform/instance_carboncopy", "platform/instance_distribute", "platform/instance_forward", "platform/instance_print", "platform/instance_search", "platform/instance_monitor", "platform/instance_export" ],
     "移动办公": ["platform/app_mobile", "platform/app_ipad"],
-    "流程管理": ["workflow/admin_positions" , "workflow/admin_form", "workflow/admin_flow"],
+    "流程管理": ["platform/admin_positions" , "platform/admin_form", "platform/admin_flow"],
     "系统设置": ["platform/organization", "platform/permission_set", "platform/permission_share"]
   },
   "开发": {
