@@ -99,6 +99,7 @@ module.exports = {
 
   themeConfig: {
     navbar: {
+      hideOnScroll: true,
       title: '华炎',
       logo: {
         alt: '华炎',
@@ -115,7 +116,7 @@ module.exports = {
           ]
         },
         // {to: 'docs/pricing/index', label: '报价', position: 'left'},
-        {to: 'blog', label: '博客', position: 'left'},
+        {to: 'blog', label: '动态', position: 'left'},
         {
           label: '社区',
           position: 'right',
