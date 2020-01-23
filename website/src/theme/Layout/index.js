@@ -38,10 +38,6 @@ function Layout(props) {
   const metaImageUrl = siteUrl + useBaseUrl(metaImage);
   const faviconUrl = useBaseUrl(favicon);
 
-  // 默认设置为 dark theme
-  if (localStorage.getItem("theme") == null)
-    localStorage.setItem("theme", "dark")
-
   return (
     <>
       <Head>
