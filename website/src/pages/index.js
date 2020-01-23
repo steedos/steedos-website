@@ -17,7 +17,7 @@ const features = [
   {
     title: <>业务审批</>,
     imageUrl: 'img/svg-icons/workflow.svg',
-    href: 'workflow',
+    href: 'docs/workflow/index',
     description: (
       <>
         审批王可以快速的将公司的各类审批业务转换为可严格执行的电子流程。
@@ -25,18 +25,19 @@ const features = [
     ),
   },
   {
-    title: <>业务开发和集成</>,
-    imageUrl: 'img/svg-icons/developer.svg',
-    href: 'developer',
+    title: <>业务数据</>,
+    imageUrl: 'img/svg-icons/data.svg',
+    href: 'docs/platform/index',
     description: (
       <>
-        华炎业务开发平台支持你大规模开展创新、实现互联和构建智能。
+        借助不断改进的内置企业人工智能和信息管理功能，实现数据智能。
       </>
     ),
   },
   {
-    title: <>商业分析</>,
-    imageUrl: 'img/svg-icons/report.svg',
+    title: <>业务开发</>,
+    imageUrl: 'img/svg-icons/developer.svg',
+    href: 'docs/developer/index',
     description: (
       <>
         发现深入的洞察，简化对关键信息的访问，并赋能企业中的每一个人。

@@ -41,7 +41,7 @@ function Layout(props) {
     <>
       <Head>
         {/* TODO: Do not assume that it is in english language */}
-        <html lang="en" />
+        <html lang="en" data-theme="dark"/>
 
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         {metaTitle && <title>{metaTitle}</title>}

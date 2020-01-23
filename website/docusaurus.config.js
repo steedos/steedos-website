@@ -106,16 +106,17 @@ module.exports = {
         src: 'img/icon_blue.png',
       },
       links: [
-        {to: '/', label: '业务开发', position: 'left'},
-        {to: 'workflow', label: '业务审批', position: 'left'},
-        {to: 'docs/platform/index', label: '文档', position: 'left',
-          items: [
-            {to: 'docs/workflow/help/guide_sign', label: '审批王'},
-            {to: 'docs/developer/index', label: '开发文档'},
-           {to: 'docs/platform/index', label: '应用手册'},
-           {to: 'docs/api/index', label: 'API'}
-          ]
-        },
+        {to: 'docs/workflow/index', label: '业务审批', position: 'left'},
+        {to: 'docs/platform/index', label: '业务数据', position: 'left'},
+        {to: 'docs/developer/index', label: '开发文档', position: 'left'},
+        // {to: 'docs/platform/index', label: '文档', position: 'left',
+        //   items: [
+        //     {to: 'docs/workflow/help/guide_sign', label: '审批王'},
+        //     {to: 'docs/developer/index', label: '开发文档'},
+        //    {to: 'docs/platform/index', label: '应用手册'},
+        //    {to: 'docs/api/index', label: 'API'}
+        //   ]
+        // },
         // {to: 'docs/pricing/index', label: '报价', position: 'left'},
         {to: 'blog', label: '动态', position: 'left'},
         {
