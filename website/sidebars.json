@@ -5,8 +5,9 @@
     "如何使用审批王": ["workflow/help/instance_download","workflow/help/guide_sign", "workflow/help/instance_add", "workflow/help/instance_approve", "workflow/help/instance_carboncopy", "workflow/help/instance_distribute", "workflow/help/instance_forward", "workflow/help/instance_print", "workflow/help/instance_search", "workflow/help/instance_monitor", "workflow/help/instance_export" ],
     "如何设置审批王": ["workflow/help/organization", "workflow/help/admin_positions" , "workflow/help/admin_form", "workflow/help/admin_flow"]
   },
-  "业务数据": {
-    "业务数据": ["platform/index", "platform/record_list", "platform/record_view", "platform/record_report", "platform/notifications"],
+  "业务开发平台": {
+    "业务开发平台": ["platform/index"],
+    "业务数据": ["platform/record_list", "platform/record_view", "platform/record_report", "platform/notifications"],
     "业务审批": ["platform/instance_add", "platform/instance_approve", "platform/instance_carboncopy", "platform/instance_distribute", "platform/instance_forward", "platform/instance_print", "platform/instance_search", "platform/instance_monitor", "platform/instance_export" ],
     "移动办公": ["platform/app_mobile", "platform/app_ipad"],
     "流程管理": ["platform/admin_positions" , "platform/admin_form", "platform/admin_flow"],
