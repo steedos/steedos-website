@@ -37,11 +37,16 @@ function Layout(props) {
   const metaImage = image || defaultImage;
   const metaImageUrl = siteUrl + useBaseUrl(metaImage);
   const faviconUrl = useBaseUrl(favicon);
+
+  // 默认设置为 dark theme
+  if (localStorage.getItem("theme") == null)
+    localStorage.setItem("theme", "dark")
+
   return (
     <>
       <Head>
         {/* TODO: Do not assume that it is in english language */}
-        <html lang="en" data-theme="dark"/>
+        <html lang="en"/>
 
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         {metaTitle && <title>{metaTitle}</title>}
