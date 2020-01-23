@@ -11,10 +11,12 @@
  */
 
  .heroBanner {
-    padding: 4rem 0;
+    padding: 6rem 0;
     text-align: center;
     position: relative;
-    overflow: hidden;
+    overflow: hidden;    
+    background: url('https://www.sap.cn/dam/application/imagelibrary/photos/285000/285369.jpg.adapt.1920_824.false.false.false.false.height.jpg/1565225346512.jpg');
+    background-size: cover;
   }
   
   @media screen and (max-width: 966px) {
@@ -37,6 +39,6 @@
   }
   
   .featureImage {
-    height: 200px;
-    width: 200px;
+    height: 60px;
+    width: 60px;
   }

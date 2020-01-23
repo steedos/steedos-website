@@ -12,7 +12,7 @@
     --ifm-color-primary-darkest: rgb(26, 136, 112);
     --ifm-color-primary-light: rgb(70, 203, 174);
     --ifm-color-primary-lighter: rgb(102, 212, 189);
-    --ifm-color-primary-lightest: rgb(146, 224, 208); */
+    --ifm-color-primary-lightest: rgb(146, 224, 208);  */
     --ifm-color-feedback-background: #fff;
   }
   
@@ -42,3 +42,27 @@
   html[data-theme='dark'] .docusaurus-highlight-code-line {
     background-color: rgb(0, 0, 0, 0.3);
   }
+
+  /* .navbar {
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  } 
+
+  .navbar .navbar__link {
+    color: #f5f5f7;
+    opacity: 0.8
+  }
+
+  .navbar .navbar__link:hover, .navbar .navbar__link.navbar__link--active {
+    color: #fff;
+    opacity: 1
+  }
+
+  .navbar .navbar__brand {
+    color: #fff;
+  }
+
+  .dropdown .dropdown__menu {
+    background-color: #1e2125;
+  } */

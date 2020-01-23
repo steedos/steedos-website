@@ -15,32 +15,43 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>什么是华炎应用引擎?</>,
-    imageUrl: 'img/undraw_building_blocks.svg',
+    title: <>业务审批</>,
+    imageUrl: 'img/svg-icons/workflow.svg',
+    href: 'workflow',
     description: (
       <>
-        华炎应用引擎是一套管理软件开发工具，开发人员只需编写业务配置文件，描述业务对象，就能生成全功能的业务管理系统。
+        审批王可以快速的将公司的各类审批业务转换为可严格执行的电子流程。
       </>
     ),
   },
   {
-    title: <>华炎应用引擎可以做什么？</>,
-    imageUrl: 'img/undraw_react.svg',
+    title: <>业务开发和集成</>,
+    imageUrl: 'img/svg-icons/developer.svg',
+    href: 'developer',
     description: (
       <>
-        开发人员只需编写业务配置文件，华炎应用引擎自动生成手机、平板、电脑三合一的业务台账，包括用户登录、查询统计、流程审批、权限控制等。
+        华炎业务开发平台支持你大规模开展创新、实现互联和构建智能。
       </>
     ),
   },
   {
-    title: <>需求变更怎么办？</>,
-    imageUrl: 'img/undraw_programming.svg',
+    title: <>商业分析</>,
+    imageUrl: 'img/svg-icons/report.svg',
     description: (
       <>
-        当业务需求发生变更时，开发人员只需修改配置文件，华炎应用引擎会重新编译和运行，业务系统界面与功能也会自动随之调整。
+        发现深入的洞察，简化对关键信息的访问，并赋能企业中的每一个人。
       </>
     ),
   },
+  // {
+  //   title: <>智能技术</>,
+  //   imageUrl: 'img/svg-icons/ai.svg',
+  //   description: (
+  //     <>
+  //       借助不断改进的内置企业人工智能和信息管理功能，实现数据智能。
+  //     </>
+  //   ),
+  // },
 ];
 
 function Home() {
@@ -71,13 +82,13 @@ function Home() {
       </header>
       <main>
         {features && features.length && (
-          <section className={styles.features}>
+          <section className={classnames('hero hero--dark', styles.features)}>
             <div className="container">
               <div className="row">
-                {features.map(({ imageUrl, title, description }, idx) => (
+                {features.map(({ imageUrl, title, description, href }, idx) => (
                   <div
                     key={idx}
-                    className={classnames('col col--4', styles.feature)}
+                    className={classnames('col col--4 text--center', styles.feature)}
                   >
                     {imageUrl && (
                       <div className="text--center">
@@ -90,34 +101,23 @@ function Home() {
                     )}
                     <h3>{title}</h3>
                     <p>{description}</p>
+
+                    <Link
+                      className={classnames(
+                        'button button--secondary button--lg',
+                        styles.getStarted,
+                      )}
+                      to={useBaseUrl(href)}
+                    >
+                    了解更多
+                  </Link>
                   </div>
                 ))}
               </div>
             </div>
           </section>
         )}
-        <div className="container">
-          <div className="row">
-            <div className="col col--6 col--offset-3 padding-vert--lg">
-              <h2>如何快速开发合同管理系统</h2>
-              <video 
-                width="100%"
-                height="315"
-                src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts-demo.mp4"
-                controls="controls">
-              您的浏览器不支持 video 标签。
-              </video>
-              <div className="text--center padding-vert--lg">
-                <Link
-                  className="button button--primary button--lg"
-                  to={useBaseUrl('docs/developer/index')}
-                >
-                  了解更多
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </main>
     </Layout>
   );
