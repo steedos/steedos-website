@@ -42,8 +42,9 @@ filter_conditions:
 - "startswith": 以...开始
 - "contains": 包含...
 - "notcontains": 不包含...
+- "in": 属于数组，"in array" 等效于"= array"
+- "notin": 不属于数组，"notin array" 等效于"<> array"
 - "between": 范围
-- "in": 属于数组
 
 ### 只读 readonly
 
