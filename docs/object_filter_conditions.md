@@ -34,7 +34,7 @@ filter_conditions:
 ### 运算符 operation
 
 - "=": 等于
-- "!=": 不等于
+- "!="/"<>": 不等于
 - ">": 大于
 - ">=": 大于等于
 - "<": 小于
@@ -43,6 +43,7 @@ filter_conditions:
 - "contains": 包含...
 - "notcontains": 不包含...
 - "between": 范围
+- "in": 属于数组
 
 ### 只读 readonly
 
