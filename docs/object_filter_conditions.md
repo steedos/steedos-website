@@ -34,7 +34,7 @@ filter_conditions:
 ### 运算符 operation
 
 - "=": 等于
-- "!="/"<>": 不等于
+- "!="/"&lt;&gt;": 不等于
 - ">": 大于
 - ">=": 大于等于
 - "<": 小于
@@ -46,7 +46,7 @@ filter_conditions:
 - "contains": 包含...
 - "notcontains": 不包含...
 - "in": 属于数组，"in array" 等效于"= array"
-- "notin": 不属于数组，"notin array" 等效于"<> array"
+- "notin": 不属于数组，"notin array" 等效于"&lt;&gt; array"
 - "between": 范围
 
 ### 只读 readonly
