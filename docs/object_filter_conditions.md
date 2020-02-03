@@ -40,6 +40,9 @@ filter_conditions:
 - "<": 小于
 - "<=": 小于等于
 - "startswith": 以...开始
+- "notstartswith": 不以...开始
+- "endswith": 以...结束
+- "notendswith": 不以...结束
 - "contains": 包含...
 - "notcontains": 不包含...
 - "in": 属于数组，"in array" 等效于"= array"
