@@ -63,6 +63,52 @@ datasources:
       url: mongodb://192.168.0.21/steedos
 ```
 
+配置指定数据库用户名和密码，例如给steedos数据库配置用户：steedos  密码：pwd，具有读写权限
+
+```
+use steedos
+db.createUser({user: "steedos", pwd: "pwd", roles: [ { role: "readWrite", db: "steedos" } ] } )
+```
+
+用户权限配置：
+
+```
+Read：允许用户读取指定数据库
+readWrite：允许用户读写指定数据库
+dbAdmin：允许用户在指定数据库中执行管理函数，如索引创建、删除，查看统计或访问system.profile
+userAdmin：允许用户向system.users集合写入，可以找指定数据库里创建、删除和管理用户
+clusterAdmin：只在admin数据库中可用，赋予用户所有分片和复制集相关函数的管理权限。
+readAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的读权限
+readWriteAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的读写权限
+userAdminAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的userAdmin权限
+dbAdminAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的dbAdmin权限。
+root：只在admin数据库中可用。超级账号，超级权限
+```
+
+通过修改数据库配置文件mongod.conf，设置auth=true，开启用户验证
+
+```
+auth=true
+```
+
+当数据库配置了用户验证时，需要在连接时配置用户名和密码
+
+```yaml
+datasources:
+  default:
+    connection:
+      url: mongodb://user:password@192.168.0.21/steedos
+```
+
+当数据库是以集群方式起服务时，连接时还需要配置replicaSet名称，例如replicaSet为steedos
+
+```yaml
+datasources:
+  default:
+    connection:
+      url: mongodb://user:password@192.168.0.21/steedos?replicaSet=steedos
+```
+
 ## 加载业务对象
 
 在定义数据源时，通过配置 objectFiles 属性，可以加载[业务对象](./object.md)到数据源中。
