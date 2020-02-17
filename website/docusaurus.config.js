@@ -34,7 +34,6 @@ module.exports = {
 
   // If you have users set above, you add it here:
   //users,
-  // editUrl: 'https://github.com/steedos/object-server/edit/develop/docs/',
   /* path to images for header/footer */
   // headerIcon: 'img/icon_blue.png',
   // footerIcon: 'img/icon_blue.png',
@@ -209,6 +208,7 @@ module.exports = {
           path: '../docs',
           // sidebars file relative to website dir.
           sidebarPath: require.resolve('./sidebars.json'),
+          editUrl: 'https://github.com/steedos/steedos-website/edit/master/website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
