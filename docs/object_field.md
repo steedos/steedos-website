@@ -491,6 +491,29 @@ contract_type: ["id-1111111","id-2222222"]
 
 表格字段与子表不同，在数据库中不会生成一个新的表，而是作为一个对象数组字段保存在记录中。所以只适用于表格行数(小于100行)比较少的业务场景。
 
+## 自动编号类型字段 autonumber
+
+可设定编号公式: {YYYY}-{MM}-{DD}-{0000}
+YYYY表示年，MM表示月，DD表示日
+示例contract对象中配置serial_number字段：
+```yaml
+  serial_number:
+    type: autonumber
+    formula: "{YYYY}-{0000}" # 则此字段值为2020-0001、2020-0002、2020-0003以此类推，如自动编号表中配置了当前编号值为1000，则此字段值为2020-1001、2020-1002、2020-1003以此类推
+    label: 流水号
+    filterable: true
+    omit: true
+    readonly: true
+    searchable: true
+```
+自动编号当前编号表 object_autonumber， 在`设置-高级-自动编号`中配置：
+- object_name: 对象名，如contracts
+- field_name: 自动编号字段，如serial_number
+- current_no: 当前编号值，如1000
+- date_from: 日期范围开始日期，即编号规则生效开始时间，为空则表示不限制
+- date_to：日期范围截止日期，即编号规则生效结束时间，为空则表示不限制
+计算字段新编号时，首先查此表，如果此表无记录，自动插入一条记录
+
 ## 系统内置字段
 
 如果使用Steedos默认数据源，每个Steedos对象都会自动创建一些系统字段。
