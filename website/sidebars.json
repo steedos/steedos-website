@@ -1,13 +1,12 @@
 {
   "审批王": {
-    "审批王": ["workflow/index"],
-    "快速试用审批王": ["workflow/help/guide","workflow/help/mp4","workflow/help/features","workflow/help/faq"],
-    "常见需求实现": ["workflow/help/question_title","workflow/help/question_sum","workflow/help/question_mydep","workflow/help/question_myboss","workflow/help/question_conditional","workflow/help/question_forbidden","workflow/help/question_importAndexport","workflow/help/question_replace","workflow/help/question_autonum","workflow/help/question_permission"],
-    "如何使用审批王": ["workflow/help/instance_download","workflow/help/guide_sign", "workflow/help/instance_add", "workflow/help/instance_approve", "workflow/help/instance_carboncopy", "workflow/help/instance_distribute", "workflow/help/instance_forward", "workflow/help/instance_print", "workflow/help/instance_search", "workflow/help/instance_monitor", "workflow/help/instance_export" ],
-    "如何设置审批王": ["workflow/help/organization", "workflow/help/admin_positions" , "workflow/help/admin_form", "workflow/help/admin_flow"]
+    "审批王": ["workflow/index", "workflow/help/guide","workflow/help/mp4","workflow/help/features","workflow/help/faq"],
+    "如何使用": ["workflow/help/instance_download","workflow/help/guide_sign", "workflow/help/instance_add", "workflow/help/instance_approve", "workflow/help/instance_carboncopy", "workflow/help/instance_distribute", "workflow/help/instance_forward", "workflow/help/instance_print", "workflow/help/instance_search", "workflow/help/instance_monitor", "workflow/help/instance_export" ],
+    "如何设置": ["workflow/help/organization", "workflow/help/admin_positions" , "workflow/help/admin_form", "workflow/help/admin_flow"],
+    "使用技巧": ["workflow/help/question_title","workflow/help/question_sum","workflow/help/question_mydep","workflow/help/question_myboss","workflow/help/question_conditional","workflow/help/question_forbidden","workflow/help/question_importAndexport","workflow/help/question_replace","workflow/help/question_autonum","workflow/help/question_permission"]
   },
   "业务开发平台": {
-    "业务开发平台": ["platform/index"],
+    "华炎应用引擎": ["platform/index"],
     "业务数据": ["platform/record_list", "platform/record_view", "platform/record_report", "platform/notifications"],
     "业务审批": ["platform/instance_add", "platform/instance_approve", "platform/instance_carboncopy", "platform/instance_distribute", "platform/instance_forward", "platform/instance_print", "platform/instance_search", "platform/instance_monitor", "platform/instance_export" ],
     "移动办公": ["platform/app_mobile", "platform/app_ipad"],
@@ -15,8 +14,7 @@
     "系统设置": ["platform/organization", "platform/permission_set", "platform/permission_share"]
   },
   "开发": {
-    "华炎开发平台": ["developer/index", "developer/why"],
-    "快速向导": ["developer/guide", "developer/guide_create", "developer/guide_object", "developer/guide_app", "developer/guide_run"],
+    "快速向导": ["developer/index", "developer/guide", "developer/guide_create", "developer/guide_object", "developer/guide_app", "developer/guide_run"],
     "配置": ["datasource", "object", "object_field", "listview", "object_permission", "app", "reports", "steedos_config"],
     "高级": ["object_trigger", "object_action", "object_form", "object_filter_conditions", "object_field_formula", "standard_objects", "object_workflow", "report_jsreport"],
     "ObjectQL": ["developer/objectql_connection", "developer/objectql_datasource", "developer/objectql_object"],
