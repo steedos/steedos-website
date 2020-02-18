@@ -8,4 +8,4 @@ sidebar_label: 不同部门不同经理
  可参考下图实例：
 
  差旅费用报销单，流程第一个审批环节为“部门审批”即“部门经理”，“处理人”类型是“指定审批岗位”，“审批岗位”设置为“部门经理”即可。
- ![部门经理]](/assets/help/manager.png)
+ ![部门经理]](/assets/workflow/manager.png)

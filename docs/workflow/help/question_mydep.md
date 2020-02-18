@@ -11,4 +11,4 @@ sidebar_label: 自动显示申请人所在部门
  可参考下图实例：
 
  岗位招聘申请表，“申请部门”设置为系统最底层部门名，{applicant.organization.name}。
- ![部门公式](/assets/help/department.png)
+ ![部门公式](/assets/workflow/department.png)

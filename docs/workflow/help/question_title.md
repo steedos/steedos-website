@@ -15,4 +15,4 @@ sidebar_label: 自定义申请单标题
  可参考下图实例：
 
  请假申请，取多个表单字段、系统字段以及默认值组合为标题，{applicant_name}+"申请"+{请假类别}+{tianshu}+"天"；当张三选择请假类别为“年假”，请假天数为5天，则在请假申请列表显示的标题为“张三申请年假5天”。
- ![标题公式](/assets/help/Title_formulas.png)
+ ![标题公式](/assets/workflow/Title_formulas.png)
