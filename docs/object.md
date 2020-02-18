@@ -188,6 +188,18 @@ permission_set:
     viewAllRecords: false
 ```
 
+### 相关子表
+
+开发人员可以配置对象的相关子表。如果有定义此属性则按照此属性定义的对象显示相关子表，包括显示顺序，子表对象与主表必须通过一个 lookup 或 master_detail 字段关联。
+
+```yaml
+relatedList:
+  - {objectName}
+  - cms_files
+  - tasks
+  - payments
+```
+
 ## 标准对象
 
 为了支撑 Steedos 的内核的业务功能，Steedos预定义了一些 [标准对象](standard_objects)。
