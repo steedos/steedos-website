@@ -1,6 +1,6 @@
 ---
 title: 打通各部门、各系统审批业务
-sidebar_label: 特色
+sidebar_label: 关于审批王
 hide_table_of_contents: true
 ---
 
