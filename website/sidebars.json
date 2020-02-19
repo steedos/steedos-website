@@ -1,9 +1,9 @@
 {
   "审批王": {
     "审批王": ["workflow/index", "workflow/help/guide","workflow/help/mp4","workflow/help/features","workflow/help/faq"],
-    "如何使用": ["workflow/help/instance_download","workflow/help/guide_sign", "workflow/help/instance_add", "workflow/help/instance_approve", "workflow/help/instance_carboncopy", "workflow/help/instance_distribute", "workflow/help/instance_forward", "workflow/help/instance_print", "workflow/help/instance_search", "workflow/help/instance_monitor", "workflow/help/instance_export" ],
+    "如何使用": ["workflow/help/instance_download","workflow/help/guide_sign", "workflow/help/instance_add", "workflow/help/instance_approve", "workflow/help/instance_carboncopy", "workflow/help/instance_distribute", "workflow/help/instance_forward", "workflow/help/instance_print", "workflow/help/instance_search", "workflow/help/instance_monitor", "workflow/help/instance_export"],
     "如何设置": ["workflow/help/organization", "workflow/help/admin_positions" , "workflow/help/admin_form", "workflow/help/admin_flow"],
-    "使用技巧": ["workflow/help/question_title","workflow/help/question_sum","workflow/help/question_mydep","workflow/help/question_myboss","workflow/help/question_conditional","workflow/help/question_forbidden","workflow/help/question_importAndexport","workflow/help/question_replace","workflow/help/question_autonum","workflow/help/question_permission"]
+    "使用技巧": ["workflow/help/question_title","workflow/help/question_sum","workflow/help/question_mydep","workflow/help/question_myboss","workflow/help/question_conditional","workflow/help/question_forbidden","workflow/help/question_importAndexport","workflow/help/question_replace","workflow/help/question_autonum","workflow/help/question_permission","workflow/help/question_comments"]
   },
   "业务开发平台": {
     "华炎应用引擎": ["platform/index"],
