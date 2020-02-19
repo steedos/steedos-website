@@ -1,6 +1,6 @@
 ---
 title:  如何实现申请单的自动文件编号？
-sidebar_label: 自动编号
+sidebar_label: 公文编号自动生成
 --- 
 
  - 进入系统‘设置-高级-自动编号’中；
@@ -9,7 +9,7 @@ sidebar_label: 自动编号
  可参考下图实例：
 
  contracts对象中配置serial_number字段：
- - object_name: 对象名，如contracts;
+ - object_name: 对象名，如contracts;c
  - field_name: 自动编号字段，如serial_number;
  - current_no: 当前编号值，如1000;
  - date_from: 日期范围开始日期，即编号规则生效开始时间，为空则表示不限制;
