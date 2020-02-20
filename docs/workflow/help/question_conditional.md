@@ -21,4 +21,4 @@ sidebar_label: 判断是否发总经理
 
 这么设置后，当流转到“部门经理审批”这一步时，系统会根据申请单的不同来自动指定下一步骤：如果请假天数大于或等于3天，则下一步为“总经理审批”；如果小于3天，则下一步为“人事部备案”，这就跳过了“总经理审批”这一步。
 
-关于如何设置条件节点，可参考 [审批王流程设计-条件节点](https://developer.steedos.com/docs/workflow/help/admin_flow#%E6%9D%A1%E4%BB%B6%E8%8A%82%E7%82%B9)
+关于如何设置条件节点，可参考 [审批王流程设计-条件节点](https://developer.steedos.com/docs/workflow/help/admin_flow#%E6%9D%A1%E4%BB%B6%E8%8A%82%E7%82%B9) 。

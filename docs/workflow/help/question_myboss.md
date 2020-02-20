@@ -11,4 +11,4 @@ sidebar_label: 自动发给各自的经理
 
  ![部门经理](/assets/workflow/manager.png)
 
- 可参考 [审批王审批岗位](https://developer.steedos.com/docs/workflow/help/admin_positions)
+ 可参考 [审批王审批岗位](https://developer.steedos.com/docs/workflow/help/admin_positions) 。
