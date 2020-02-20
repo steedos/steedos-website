@@ -15,7 +15,7 @@ sidebar_label: 自定义申请单标题
 
  - 当选中某个流程，系统默认显示的是流程步骤设计页面，在窗口上方选择“表单”，进入表单编辑页面，在标题公式一栏中可填写标题显示的内容。
  
- ![标题公式](/assets/workflow/Title_formulas.png)
+![标题公式](/assets/workflow/Title_formulas.png)
 
 如上图，在标题公式里输入：{applicant_name}+"申请"+{请假类别}+{tianshu}+"天" 。这样，当陈磊提交请假申请时，如果请假类别为“年假”、请假天数为2天，则列表显示的标题就是“陈磊申请年假2天”。
 

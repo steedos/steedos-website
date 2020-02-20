@@ -5,7 +5,7 @@ sidebar_label: 数值字段自动求和
 
 申请单经常会有数值型的字段，例如下图表单上的的餐费、办公费、业务费、其他费用、合计等都是数值。其中，合计应为餐费等费用的数值之和。
 
- ![自动求和](/assets/workflow/sum.png)
+![自动求和](/assets/workflow/sum.png)
 
 合计的数由系统自动计算得出，既简化了填单的工作，数值也会更加准确。
 
@@ -14,9 +14,11 @@ sidebar_label: 数值字段自动求和
 通过设置“合计”字段的公式，可实现自动求和的想法。具体操作如下：
 
 - 管理员进入系统后，切换“设置-审批-流程”，点击“流程设计器”按钮，进入到流程设计界面。
+
 - 切换进入“表单”设计，点击这个数值型的字段“合计”，并在右侧栏里切换到“属性”栏。
- ![累加计算值](/assets/workflow/cal_value.png)
+
+![累加计算值](/assets/workflow/cal_value.png)
+
 - “公式”栏里输入：{train_fee}+{traffic_fee}+{vehicle_fee}+{stay_fee}+{meals}+{office_fee}+{business_fee}+{o_fee}，所有费用字段累加，保存即可。其中的“train_fee”等分别是交通费字段的字段名。
 
-
-设置字段公式时，除了数值型的加减乘除，您还可以使用其他函数，具体使用方法，可参考[审批王表单设计-字段公式](https://developer.steedos.com/docs/workflow/help/admin_form/#%E5%AD%97%E6%AE%B5%E5%85%AC%E5%BC%8F)
+设置字段公式时，除了数值型的加减乘除，您还可以使用其他函数，具体使用方法，可参考 [审批王表单设计-字段公式](https://developer.steedos.com/docs/workflow/help/admin_form/#%E5%AD%97%E6%AE%B5%E5%85%AC%E5%BC%8F)
