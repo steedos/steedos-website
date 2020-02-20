@@ -8,6 +8,7 @@ sidebar_label: 自动发给各自的经理
  示例如下：
 
  差旅费用报销单，流程第一个审批环节为“部门审批”即“部门经理”，“处理人”类型是“指定审批岗位”，“审批岗位”设置为“部门经理”即可。
+ 
  ![部门经理]](/assets/workflow/manager.png)
 
  可参考[审批王审批岗位](https://developer.steedos.com/docs/workflow/help/admin_positions)
