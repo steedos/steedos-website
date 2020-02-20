@@ -3,16 +3,26 @@ title:  申请人的所在部门如何自动显示在申请单上？
 sidebar_label: 自动显示申请人所在部门
 --- 
 
- 给字段增加公式之后，填写审批单的时候，无需录入此字段的值，而是由系统根据公式得到相应的值。
+很多申请单都有申请部门这一字段，用于录入申请人所在的部门。如下图：
 
- 示例如下：
 
- 岗位招聘申请表，“申请部门”设置为系统最底层部门名，{applicant.organization.name}。
- ![部门公式](/assets/workflow/department.png)
 
- 字段公式
+申请部门，除了由申请人自行录入之外，也可以给这一字段增加公式。这样，在填写审批单的时候，就无需录入此字段的值，系统自动得出申请人的所在部门。
 
- - 申请人所在部门（当申请人属于多个部门时，为所在主部门的全路径）： {applicant.organization.fullname}
- - 申请人所在部门（最底层部门名）： {applicant.organization.name}
+设置方法如下：
 
- 可参考[审批王表单设计-字段公式](https://developer.steedos.com/docs/workflow/help/admin_form#%E5%AD%97%E6%AE%B5%E5%85%AC%E5%BC%8F)
+- 管理员进入系统后，切换“设置-审批-流程”，点击“流程设计器”按钮，进入到流程设计界面。
+
+- 点击具体流程（这里是岗位招聘申请表），切换进入“表单”设计，点击字段“申请部门”，并在右侧栏里切换到“属性”栏。
+
+![部门公式](/assets/workflow/department.png)
+
+- 在公式中录入：{applicant.organization.name}。然后保存即可。
+
+请注意，所在部门的公式有两种，可根据需要来进行设置。
+
+ - {applicant.organization.fullname}：是指申请人所在部门的全路径名。形如"华炎软件/客户服务事业部/大客户服务部”。当申请人同时隶属于多个部门时，则为所在主部门的全路径。 
+
+ - {applicant.organization.name}：是指申请人所在部门的名称。形如“大客户服务部”，这是最底层的部门名，不包含上级组织名。当申请人同时隶属于多个部门时，则为所在主部门的名称。
+
+字段公式的设置，可参考 [审批王表单设计-字段公式](https://developer.steedos.com/docs/workflow/help/admin_form#%E5%AD%97%E6%AE%B5%E5%85%AC%E5%BC%8F)
