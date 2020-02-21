@@ -46,7 +46,7 @@
 
   .main-wrapper {
     background-image: url(/img/banner/what-is-background01a.png);
-    background-repeat: no-repeat;
+    background-repeat-y: no-repeat;
     background-size: contain;
   }
 
