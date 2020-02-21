@@ -20,6 +20,9 @@ Steedos 支持SAAS多租户的运行模式。
   - address 邮件
   - verified 邮件已验证
 - email
+- phone 
+  - number 手机号
+  - verified 手机号已验证
 - mobile
 - username
 - utcOffset
@@ -72,14 +75,14 @@ Steedos 支持SAAS多租户的运行模式。
 ### 修改邮件
 
 - space_user.email 字段唯一，修改时同时更新 user.emails 字段
-- 如果邮件有修改，email_verified 设置为 false
+- 如果邮件有修改，user.emails.verified及space_user.email_verified 设置为 false
 - 如果新邮件地址未验证，给用户邮箱发送邮件，验证邮件地址。
 - 如果邮件地址验证通过，则更新 user.email 字段
 
 ### 修改手机
 
-- space_user.mobile 字段唯一，修改时同时更新 user.mobile 字段
-- 如果手机号有修改，mobile_verified 设置为 false
+- space_user.mobile 字段唯一，修改时同时更新 user.phone 字段
+- 如果手机号有修改，user.phone.verified及space_user.mobile_verified 设置为 false
 - 如果手机号码验证通过，则更新 user.mobile 字段
 
 ### 修改用户名
