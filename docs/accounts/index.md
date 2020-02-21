@@ -23,6 +23,7 @@ Steedos 支持SAAS多租户的运行模式。
 - mobile
 - username
 - utcOffset
+- locale 语言: zh-cn, en-us
 
 ### space_user 工作区用户
 
