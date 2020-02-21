@@ -27,6 +27,6 @@
     "单点登录": ["api/api_jwt"]
   },
   "华信": {
-    "华信": ["messenger/index"]
+    "华信": ["messenger/index", "messenger/download"]
   }
 }
