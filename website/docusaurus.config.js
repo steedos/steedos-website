@@ -107,8 +107,8 @@ module.exports = {
       links: [
         {to: 'docs/workflow/index', label: '审批王', position: 'left'},
         {to: 'docs/platform/index', label: '应用引擎', position: 'left'},
+        {to: 'docs/messenger/index', label: '即时通讯', position: 'left'},
         {to: 'docs/developer/index', label: '开发文档', position: 'left'},
-        {to: 'docs/messenger/index', label: '华信', position: 'left'},
         // {to: 'docs/platform/index', label: '文档', position: 'left',
         //   items: [
         //     {to: 'docs/workflow/help/guide_sign', label: '审批王'},
@@ -118,7 +118,7 @@ module.exports = {
         //   ]
         // },
         // {to: 'docs/pricing/index', label: '报价', position: 'left'},
-        {to: 'blog', label: '动态', position: 'left'},
+        // {to: 'blog', label: '动态', position: 'left'},
         {
           label: '社区',
           position: 'right',
@@ -141,19 +141,19 @@ module.exports = {
 
       links: [
         {
-          title: '华炎业务开发平台',
+          title: '华炎产品',
           items: [
             {
-              label: '关于',
-              to: 'docs/developer/index',
+              label: '审批王',
+              to: 'docs/workflow/index',
             },
             {
-              label: '快速向导',
-              to: 'docs/developer/guide',
+              label: '应用引擎',
+              to: 'docs/platform/guide',
             },
             {
-              label: '我的应用',
-              to: 'docs/platform/index',
+              label: '即时通讯',
+              to: 'docs/messenger/index',
             },
           ],
         },
@@ -169,8 +169,8 @@ module.exports = {
               href: 'https://github.com/steedos/steedos-meeting-app',
             },
             {
-              label: '档案管理',
-              href: 'https://github.com/steedos/steedos-records-app',
+              label: '华炎云',
+              href: 'https://github.com/steedos/steedos-project-saas',
             },
           ],
         },
@@ -181,12 +181,12 @@ module.exports = {
               label: '销售热线：400-820-1612',
             },
             {
-              label: '开发人员社区',
+              label: '在线客服',
               to: 'https://messenger.steedos.cn/',
             },
             {
-              label: '问题提交',
-              href: 'https://github.com/steedos/object-server/issues',
+              label: '最新动态',
+              to: 'blog',
             },
           ],
         },
