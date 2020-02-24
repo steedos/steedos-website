@@ -1,6 +1,7 @@
 ---
 title:  申请人的所在部门如何自动显示在申请单上？
 sidebar_label: 自动显示申请人所在部门
+hide_table_of_contents: true
 --- 
 
 很多申请单都有申请部门这一字段，用于录入申请人所在的部门。如下图：

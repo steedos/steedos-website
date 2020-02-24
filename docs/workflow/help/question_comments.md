@@ -1,6 +1,7 @@
 ---
 title: 如何在表单里增加领导意见栏？
 sidebar_label: 表单添加领导意见栏
+hide_table_of_contents: true
 --- 
 
 下图为两种不同的请假申请单。

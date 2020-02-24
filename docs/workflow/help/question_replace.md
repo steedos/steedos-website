@@ -1,6 +1,7 @@
 ---
 title:  如何替他人代填申请单？
 sidebar_label: 代他人填写申请单
+hide_table_of_contents: true
 --- 
 
 申请单一般为本人填写并提交。如果需要帮别人代填，该怎么操作了？

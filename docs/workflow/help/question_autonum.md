@@ -1,6 +1,7 @@
 ---
 title:  如何实现申请单的自动文件编号？
 sidebar_label: 公文编号自动生成
+hide_table_of_contents: true
 --- 
 
 以发文流程为典型，很多申请单都需要自动编号功能。

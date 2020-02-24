@@ -1,6 +1,7 @@
 ---
 title: 如何设置申请单在列表显示时的标题？
 sidebar_label: 自定义申请单标题
+hide_table_of_contents: true
 --- 
  
 在本系统中，待审核、已审核、监控箱的列表显示时，会显示每个申请单的“标题”。
