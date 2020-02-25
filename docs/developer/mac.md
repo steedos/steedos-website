@@ -25,6 +25,7 @@ sudo n 10.0.0
 ## 安装数据库服务器 ##
 请安装 [MongoDB Community Server v3.6 版本](https://www.mongodb.com/download-center/community) <br/>
 具体操作如下:<br/>
+#### 方法一： ####
 1. 下载下来之后将文件移入 /usr/local里面
 2. 新建终端  输入
 ```bash
@@ -36,6 +37,16 @@ source .bash_profile
 3. 打开终端，进入到mongodb目录，执行以下代码开启服务:
 ```bash
 mongod —path —log path log/mongod.log —logappend —port=27017 —fork
+```
+#### 方法二： ####
+1. 终端输入：
+```bash
+brew tap mongodb/brew
+brew install mongodb-community@3.6
+```
+2. mongo作为服务运行
+```bash
+brew services start mongodb-community@3.6
 ```
 ## 安装 steedos 客户端工具
 ```bash
