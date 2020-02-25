@@ -20,10 +20,18 @@ Steedos 支持SAAS多租户的运行模式。
   - address 邮件
   - verified 邮件已验证
 - email
+- email_verified
+- phone 
+   - number 手机号
+   - verified 手机号已验证
 - mobile
-- username
-- utcOffset
+- mobile_verified
 - locale 语言: zh-cn, en-us
+- avatar
+- last_logon
+- email_notification
+- sms_notification
+- utcOffset
 
 ### space_user 工作区用户
 
@@ -34,9 +42,12 @@ Steedos 支持SAAS多租户的运行模式。
 - mobile 手机
 - mobile_verified 手机已校验
 - locale 语言: zh-cn, en-us
+- avatar
+- last_logon: 最近登录时间，用户登录时，所有工作区同步设置。
+- email_notification: 开启邮件通知
+- sms_notification: 开启短信通知
 - user_accepted: 有效。工作区管理员可以修改
 - invite_state: pending/refused/accepted 接受邀请，加入此工作区
-- last_logon: 最近登录时间，用户登录时，所有工作区同步设置。
 
 ## 用户注册
 
