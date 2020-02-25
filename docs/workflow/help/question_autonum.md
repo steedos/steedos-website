@@ -39,4 +39,4 @@ hide_table_of_contents: true
 
 编号规则：河北港口党办字[{YYYY}]{NUMBER}号，在表单上显示的标号样式为：河北港口党办字[2017]392号。
 
-可参考 [审批王流程设计-流程编号设置](docs/workflow/help/admin_flow#%E6%B5%81%E7%A8%8B%E7%BC%96%E5%8F%B7%E8%AE%BE%E7%BD%AE) 。
+可参考 [审批王流程设计-流程编号设置](/docs/workflow/help/admin_flow#%E6%B5%81%E7%A8%8B%E7%BC%96%E5%8F%B7%E8%AE%BE%E7%BD%AE) 。
