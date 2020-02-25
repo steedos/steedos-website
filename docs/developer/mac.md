@@ -39,7 +39,7 @@ mongod —path —log path log/mongod.log —logappend —port=27017 —fork
 ```
 ## 安装 steedos 客户端工具
 ```bash
-yarn global add speedos-cli
+yarn global add steedos-cli
 ```
 ## 安装版本管理工具（可选） ##
 请安装 [ Github Desktop](https://desktop.github.com/) ,用于管理项目源码。如果您还没有Github账户，建议您先注册一个。
