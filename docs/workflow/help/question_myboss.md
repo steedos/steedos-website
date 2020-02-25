@@ -50,4 +50,4 @@ hide_table_of_contents: true
 
 ![部门经理](/assets/workflow/manager.png)
 
-关于审批岗位，具体可参考 [审批王审批岗位](https://developer.steedos.com/docs/workflow/help/admin_positions) 。
+关于审批岗位，具体可参考 [审批王审批岗位](/docs/workflow/help/admin_positions) 。
