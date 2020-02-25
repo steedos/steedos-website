@@ -1,6 +1,6 @@
 # MAC安装开发环境
 ## 安装NodeJS
-请安装与操作系统对应的NodeJS v10.x版本</br>
+请安装与操作系统对应的NodeJS v10.x版本<br/>
 具体操作如下：<br/>
 ##### 安装brew
 ```bash
