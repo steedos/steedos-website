@@ -12,7 +12,7 @@ Steedos项目基于NodeJS开发，默认使用MongoDB数据库。您可以在 Wi
 具体操作如下：<br/>
 ##### 安装brew
 ```bash
-/usr/bin/ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 ##### 安装nvm
 ```bash
