@@ -22,13 +22,10 @@ brew install nvm
 ```bash
 brew install yarn
 ```
-##### 查看NodeJS版本
-```bash
-brew install nvm
-```
 ##### 下载NodeJS v10.x版本
 ```bash
-sudo n 10.0.0
+npm install -g n
+sudo n 10.17.0
 ```
 ## 安装数据库服务器
 请安装 [MongoDB Community Server v3.6 版本](https://www.mongodb.com/download-center/community) <br/>

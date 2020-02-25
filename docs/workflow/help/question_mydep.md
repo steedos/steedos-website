@@ -26,4 +26,4 @@ hide_table_of_contents: true
 
  - {applicant.organization.name}：是指申请人所在部门的名称。形如“大客户服务部”，这是最底层的部门名，不包含上级组织名。当申请人同时隶属于多个部门时，则为所在主部门的名称。
 
-字段公式的设置，可参考 [审批王表单设计-字段公式](https://developer.steedos.com/docs/workflow/help/admin_form#%E5%AD%97%E6%AE%B5%E5%85%AC%E5%BC%8F) 。
+字段公式的设置，可参考 [审批王表单设计-字段公式](/docs/workflow/help/admin_form#%E5%AD%97%E6%AE%B5%E5%85%AC%E5%BC%8F) 。
