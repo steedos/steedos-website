@@ -4,9 +4,11 @@ title: 账务系统
 
 Steedos 支持SAAS多租户的运行模式。
 
-## 数据结构
+- 一个公司对应一个工作区。
+- 每个人对应一个用户，一个用户可以属于多个工作区。
+- 用户可以编辑自己的信息，工作区管理员可以编辑工作区中的所有用户信息。
 
-通常一个公司对应一个工作区。一个用户可以属于多个工作区，也就是每个用户可能有多条 space_user 记录。
+## 数据结构
 
 ### spaces 工作区（租户）
 
@@ -16,17 +18,22 @@ Steedos 支持SAAS多租户的运行模式。
 
 - name 姓名
 - username 用户名
-- emails 
+- emails
   - address 邮件
   - verified 邮件已验证
 - email
+- email_verified
 - phone 
-  - number 手机号
-  - verified 手机号已验证
+   - number 手机号
+   - verified 手机号已验证
 - mobile
-- username
-- utcOffset
+- mobile_verified
 - locale 语言: zh-cn, en-us
+- avatar
+- last_logon
+- email_notification
+- sms_notification
+- utcOffset
 
 ### space_user 工作区用户
 
@@ -37,7 +44,12 @@ Steedos 支持SAAS多租户的运行模式。
 - mobile 手机
 - mobile_verified 手机已校验
 - locale 语言: zh-cn, en-us
-- user_accepted 接受邀请，加入此工作区
+- avatar
+- last_logon: 最近登录时间，用户登录时，所有工作区同步设置。
+- email_notification: 开启邮件通知
+- sms_notification: 开启短信通知
+- user_accepted: 有效。工作区管理员可以修改
+- invite_state: pending/refused/accepted 接受邀请，加入此工作区
 
 ## 用户注册
 
@@ -54,23 +66,26 @@ Steedos 支持SAAS多租户的运行模式。
 ## 工作区邀请用户注册
 
 工作区可以生成邀请用户的链接，通过邮件或微信发送，邀请本公司员工注册。使用邀请链接注册的用户会自动加入此工作区，接受邀请字段自动为true。
+/accounts/a/#/space_invite?X-Space-Id=xxx
+
+- 如果当前用户已登录，自动加入此工作区，并显示 Steedos 首页，选中此工作区。
+- 如果当前用户未登录
+  - 如果你已有账户？[登录]，登录后自动加入此工作区
+  - 显示用户注册界面，注册后自动加入此工作区
 
 ## 管理员添加用户
 
-管理员可以输入邮件地址添加用户。
-
-- SAAS 版本：自动发送确认邮件到用户邮箱中。用户点击确认链接，才正式加入此工作区。
-- 标准版本：用户自动加入此工作区。
+- 自动给用户邮箱发送邀请确认邮件：XXX邀请你加入华炎工作区：YYY
+- 对于邮件地址未验证的用户，
 
 ## 修改用户
 
-对于已经接受邀请的用户，管理员可以修改用户的所有信息，包括姓名、用户名、手机、邮箱、密码等。本人也可以在设置界面中自己修改。
+- 对于 SAAS 版，只有 invite_state == accepted ，管理员才能修改用户信息，否则提示：正在等待此用户加入此工作区，请提示对方查收邮件。
+- 对于落地版，管理员可以随时修改用户信息。
+
+管理员可以修改用户的所有信息，包括姓名、用户名、手机、邮箱、密码等。本人也可以在设置界面中自己修改。
 
 管理员/用户修改的都是 space_user 表，users 表由系统自动维护，不提供修改界面。
-
-## 管理员删除用户
-
-管理员可以随时删除用户，无论对方是否接受邀请。
 
 ### 修改邮件
 
@@ -98,3 +113,11 @@ Steedos 支持SAAS多租户的运行模式。
 ### 手机验证
 
 同邮件验证
+
+### 重置密码
+
+管理员选择一个人员，可以点击重置密码按钮，系统自动发送重置密码链接到对应的邮箱中。
+
+## 管理员删除用户
+
+管理员禁止删除用户，只能设置为无效。
