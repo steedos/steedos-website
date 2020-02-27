@@ -13,7 +13,9 @@
     "系统设置": ["platform/organization", "platform/permission_set", "platform/permission_share"]
   },
   "开发": {
-    "快速向导": ["developer/index", "developer/guide", "developer/mac", "developer/guide_create", "developer/guide_object", "developer/guide_app", "developer/guide_run"],
+    "系统简介": ["developer/index"],   
+    "安装开发环境": [ "developer/guide", "developer/mac"],  
+    "快速向导": ["developer/guide_create", "developer/guide_object", "developer/guide_app", "developer/guide_run"],
     "配置": ["datasource", "object", "object_field", "listview", "object_permission", "app", "reports", "steedos_config"],
     "高级": ["object_trigger", "object_action", "object_form", "object_filter_conditions", "object_field_formula", "standard_objects", "object_workflow", "report_jsreport"],
     "ObjectQL": ["developer/objectql_connection", "developer/objectql_datasource", "developer/objectql_object"],
