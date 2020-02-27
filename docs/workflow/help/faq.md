@@ -1,25 +1,38 @@
 ﻿---
-title: 常见问题FAQ
+title: 常见问题处理
 ---
 
-##  什么是审批王?
+这里，针对一些常见的需求问题（包括管理员设置时碰到的，以及不同用户在审批时可能提到的），我们一起看下在审批王系统中，究竟如何实现？
 
-审批王是全新的企业级在线审批系统，可以快速的将公司的各类审批业务转换为可严格执行的电子流程。常见的审批业务包括：出差申请、差旅报销、请假销假、物品采购、付款申请、固定资产报废、会议室预约、退库管理、客服投诉、工作报告、合同审批、费用报销等均可通过审批王处理。
+##  流程设计类
 
-##  如何开始使用审批王？
+- <a href="/docs/workflow/help/question_myboss" target="_blank">同部门的员工有不同的部门经理，审批时如何按提交者的不同自动发给对应的部门经理？</a> 
 
-审批王是云端企业应用软件，类似企业邮箱，不需要安装和维护自己的服务器，下载安装审批王或打开浏览器就能使用。只需简单的几个步骤，就可以为您的企业开通审批王：
+- <a href="/docs/workflow/help/question_conditional" target="_blank">请假天数较多时须请总经理审批、较少时无需总经理审批，如何实现？</a>
 
-- 注册审批王账号
-- 创建企业(工作区)，自动加入默认的模板流程
-- 将您的同事加入您创建的企业(工作区)
-- 提交申请单，并开始审批
+- <a href="/docs/workflow/help/question_skipApproval" target="_blank">员工提交申请需先发部门经理审批，那么部门经理自己提交申请时，如何自动跳过“部门经理审批”这一步？</a>
 
-##  为什么审批王比传统企业软件更安全？
+- <a href="/docs/workflow/help/question_forbidden" target="_blank">可以让某一步的人员无法修改某个字段吗？</a>
 
-作为专业的审批服务提供商，我们采用了行业最高级别的标准，保障您的数据安全：
+##  表单设计类
 
-- 审批王采用阿里云服务，您的数据加密后储存在阿里云服务器，即使审批王的开发工程师也无权访问。
-- 所有审批王服务的登录与数据传输，均采用基于https的256位SSL加密传输协议，与网上银行的安全标准相同。
-- 审批王所有数据每小时同步备份到美国节点，即使出现重大故障，我们也能及时恢复您的关键业务数据。
-- 审批王提供数据导出接口，您还可以定期将您的业务数据备份到本地。
+- <a href="/docs/workflow/help/question_title" target="_blank">如何设置申请单在列表显示时的标题？</a>
+
+- <a href="/docs/workflow/help/question_sum" target="_blank">申请单上，如何自动得到几个数值字段的和？</a>
+
+- <a href="/docs/workflow/help/question_autonum" target="_blank">如何实现申请单的自动文件编号？</a>
+
+- <a href="/docs/workflow/help/question_mydep" target="_blank">申请人的所在部门如何自动显示在申请单上？</a>
+
+- <a href="/docs/workflow/help/question_comments" target="_blank">如何在申请单里增加领导意见栏？</a>
+
+
+##  系统使用类
+
+- <a href="/docs/workflow/help/question_permission" target="_blank">办公室主任可以随时查看所有的发文进展吗？怎么设置？</a>
+
+- <a href="/docs/workflow/help/question_assignApprover" target="_blank">想由提交者在提交表单的时候，就把后续节点的处理人指定好，如何设置？</a>
+
+- <a href="/docs/workflow/help/question_replace" target="_blank">如何替他人代填申请单？</a>
+
+- <a href="/docs/workflow/help/question_importAndexport" target="_blank">如何方便地把已在其他工作区定义好的流程迁移到现在的工作区？</a>
