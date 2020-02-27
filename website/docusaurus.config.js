@@ -107,7 +107,6 @@ module.exports = {
       links: [
         {to: 'docs/workflow/index', label: '审批王', position: 'left'},
         {to: 'docs/platform/index', label: '应用引擎', position: 'left'},
-        {to: 'docs/messenger/index', label: '即时通讯', position: 'left'},
         {to: 'docs/developer/index', label: '开发文档', position: 'left'},
         // {to: 'docs/platform/index', label: '文档', position: 'left',
         //   items: [
