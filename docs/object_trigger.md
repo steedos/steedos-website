@@ -20,7 +20,7 @@ module.exports = {
 }
 ```
 
-文件内容说明：
+### 文件内容说明：
 
 - `listenTo`: 对象名称，必填
 - `beforeInsert`: 数据新增前执行, 选填
@@ -30,21 +30,21 @@ module.exports = {
 - `afterUpdate`: 数据修改后执行, 选填
 - `afterDelete`: 数据删除后执行, 选填
 
-参数说明：
+### 参数说明：
 所有脚本函数均为无参函数，所属数据可从`this`中获取，`this`结构如下
 
-- id?: 记录的唯一标识[string],
-- userId?: 当前用户唯一标识[string],
-- doc?: 需要新增/修改的记录内容[json],
-- previousDoc?: 修改/删除前的记录[json],  //仅afterUpdate, afterDelete时存在此属性
-- object_name: 当前对象名称[string],
-- datasource_name: 数据源名称[string],
-- getObject: function(object_name: string)
+- `id`: 记录的唯一标识[string],
+- `userId`: 当前用户唯一标识[string],
+- `doc`: 需要新增/修改的记录内容[json],
+- `previousDoc`: 修改/删除前的记录[json],  //仅afterUpdate, afterDelete时存在此属性
+- `object_name`: 当前对象名称[string],
+- `datasource_name`: 数据源名称[string],
+- `getObject`: function(object_name: string)
 
-脚本返回值：
+### 脚本返回值：
 - 如果return的是false，则中断操作，如在before.insert里return false,则不执行insert操作。
 
-例如，文件名称picklists.trigger.js
+### 触发器实例picklists.trigger.js
 
 ```javascript
 module.exports = {
