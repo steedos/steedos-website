@@ -4,10 +4,8 @@ title: 注册企业账户
 
 
 ## 注册
-- 打开浏览器，进入 [审批王](https://www.steedos.com/cn/)
+- 打开浏览器， [点击这里进行注册](https://cn.steedos.com/accounts/a/signup#/login)
    
-    ![](/assets/help/试用.png)
-- 点击“注册试用”按钮，或右上角的注册按钮。
 - 进入注册界面,输入用户名、邮箱、密码等即可完成注册。
 	![](/assets/注册.png)
 
