@@ -4,6 +4,14 @@ title: 对象权限
 
 可以为[权限组](permission_set.md)对应的用户设定对象级别的权限。当一个用户属于多个权限组时，实际拥有的权限为各权限组权限的叠加。
 
+如下图，就是对于某个具体对象的权限设置样例。
+
+![权限设置](/assets/platform/permisson_set.png)
+
+对象权限的主要选项包括：
+
+![权限设置](/assets/platform/permisson_options.png)
+
 ## 基本属性
 
 ### 对象名 object_name
