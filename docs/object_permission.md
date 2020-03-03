@@ -2,7 +2,7 @@
 title: 对象权限
 ---
 
-可以为[权限组](permission_set.md)对应的用户设定对象级别的权限。如下图，就是对于某个具体对象的权限设置示意。
+可以为[权限组](platform/permission_set)对应的用户设定对象级别的权限。如下图，就是对于某个具体对象的权限设置示意。
 
 ![权限设置](/assets/platform/permisson_set.png)
 
@@ -148,5 +148,3 @@ permission_set:
 以上配置表示：普通用户在查看记录时，可以查看到标准的编辑(standard_edit)按钮和自定义的升级(updade)按钮。
 
 如果未配置，表示可以查看所有操作按钮。此时界面上操作按钮的显示顺序以业务对象中定义的顺序为准。
-
-![对象权限设置页面](assets/permission_objects.png)
