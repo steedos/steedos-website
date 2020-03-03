@@ -12,6 +12,12 @@ title: 对象权限
 
 ![权限设置](/assets/platform/permisson_options.png)
 
+拥有某些权限后，可能会默认自动拥有别的一些权限，具体如下表：
+
+![权限设置](/assets/platform/permisson_extend.png)
+
+上图中的每一行表示一种情况：如果拥有红勾的权限，则自动拥有了灰勾的权限。以第一行为例，如果允许创建（allowCreate），则自动允许查看自己的记录（allowRead）。这样的设置就更精简 。
+
 ## 基本属性
 
 ### 对象名 object_name
