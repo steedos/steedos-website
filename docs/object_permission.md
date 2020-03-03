@@ -2,11 +2,13 @@
 title: 对象权限
 ---
 
-可以为[权限组](permission_set.md)对应的用户设定对象级别的权限。当一个用户属于多个权限组时，实际拥有的权限为各权限组权限的叠加。
-
-如下图，就是对于某个具体对象的权限设置样例。
+可以为[权限组](permission_set.md)对应的用户设定对象级别的权限。如下图，就是对于某个具体对象的权限设置示意。
 
 ![权限设置](/assets/platform/permisson_set.png)
+
+当一个用户属于多个权限组时，实际拥有的权限为各权限组权限的叠加。
+
+![权限设置](/assets/platform/permisson_multiple.png)
 
 对象权限的主要选项包括：
 
@@ -17,6 +19,10 @@ title: 对象权限
 ![权限设置](/assets/platform/permisson_extend.png)
 
 上图中的每一行表示一种情况：如果拥有红勾的权限，则自动拥有了灰勾的权限。以第一行为例，如果允许创建（allowCreate），则自动允许查看自己的记录（allowRead）。这样的设置就更精简 。
+
+设置后，系统页面会按照相应权限显示全部或部分记录，并显示相应操作按钮。
+
+![权限设置](/assets/platform/permisson_display.png)
 
 ## 基本属性
 
