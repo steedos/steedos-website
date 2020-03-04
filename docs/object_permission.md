@@ -2,17 +2,49 @@
 title: 对象权限
 ---
 
-可以为[权限组](platform/permission_set)对应的用户设定对象级别的权限。如下图，就是对于某个具体对象的权限设置示意。
+## 基本概念
+
+### 对象权限
+
+在以 .object.yml 结尾的[业务对象](object)描述文件中，可以为[权限组](platform/permission_set)对应的用户设定对象级别的权限。
+
+```yml
+permission_set:
+  user:
+    allowCreate: true
+    allowRead: true
+    allowEdit: true
+    allowDelete: false
+  admin:
+    allowCreate: false
+    allowRead: true
+    allowEdit: true
+    allowDelete: true
+    modifyCompanyRecords: true
+    viewCompanyRecords: true 
+    modifyAllRecords: true
+    viewAllRecords: true 
+```
+
+在上面的yml文件中，就给user、admin这两个权限组指定了对象权限。主要选项的意义如下：
+
+![权限设置](/assets/platform/permisson_options.png)
+
+配置后，系统前台显示这一业务对象的列表视图时，会根据用户所属权限组找到对象权限集，并依此显示全部或部分记录、显示/隐藏部分操作按钮。显示对象记录详情时，也是如此。
+
+![权限设置](/assets/platform/permisson_display.png)
+
+某个权限组对于某个对象的对象权限的概念，可参考如下的示意图。
 
 ![权限设置](/assets/platform/permisson_set.png)
+
+### 对象权限叠加
 
 当一个用户属于多个权限组时，实际拥有的权限为各权限组权限的叠加。
 
 ![权限设置](/assets/platform/permisson_multiple.png)
 
-对象权限的主要选项包括：
-
-![权限设置](/assets/platform/permisson_options.png)
+### 对象权限扩展
 
 拥有某些权限后，可能会默认自动拥有别的一些权限，具体如下表：
 
@@ -20,29 +52,17 @@ title: 对象权限
 
 上图中的每一行表示一种情况：如果拥有红勾的权限，则自动拥有了灰勾的权限。以第一行为例，如果允许创建（allowCreate），则自动允许查看自己的记录（allowRead）。这样的设置就更精简 。
 
-设置后，系统页面会按照相应权限显示全部或部分记录，并显示相应操作按钮。
-
-![权限设置](/assets/platform/permisson_display.png)
-
-## 基本属性
-
-### 对象名 object_name
-
-此对象权限适用的对象名。
+## 对象权限的配置项
 
 ### 权限组 permission_set
 
-此业务对象对应的权限组。
-
-## 记录创建
+对象对应的权限组。
 
 ### 允许创建 allowCreate
 
 用户可以创建记录。在列表视图的右上角，显示新建按钮。调用API接口创建记录时，服务端也会判断此权限。
 
-## 所有者权限
-
-Steedos 为每个业务对象内置了 所有者(owner) 字段，默认值为记录的创建人。
+> Steedos 为每个业务对象内置了 所有者(owner) 字段，默认值为记录的创建人。下面3个配置项，即为所有者权限。
 
 ### 允许查看 allowRead
 
@@ -56,9 +76,7 @@ Steedos 为每个业务对象内置了 所有者(owner) 字段，默认值为记
 
 用户可以查看、编辑并删除所有者是自己的记录。
 
-## 单位级权限
-
-Steedos 为每个业务对象内置了 所属单位(company_ids) 字段，默认值为记录创建人的所属单位。
+> Steedos 为每个业务对象内置了 所属单位(company_ids) 字段，默认值为记录创建人的所属单位。下面2个配置项，即为单位级权限。
 
 ### 查看本单位 viewCompanyRecords
 
@@ -68,9 +86,7 @@ Steedos 为每个业务对象内置了 所属单位(company_ids) 字段，默认
 
 用户可以查看并修改本单位的记录，也可以执行删除操作。
 
-## 全局管理权限
-
-通过配置以下权限，授权用户查看/修改所有单位的业务记录。
+> 通过配置以下2个权限，授权用户查看/修改所有单位的业务记录，即为全局管理权限
 
 ### 查看所有记录 viewAllRecords
 
@@ -80,11 +96,9 @@ Steedos 为每个业务对象内置了 所属单位(company_ids) 字段，默认
 
 用户可以查看并修改对象中所有单位的所有记录。
 
-## 字段级权限
+> 上述配置项最为常用。后面列出的配置项，可根据实际需要进行选配。
 
-可以配置用户对指定字段的查看与编辑权限。
-
-### 字段 fields
+### 可见字段 fields
 
 指定用户在界面上可以查看的字段。
 
@@ -102,7 +116,7 @@ permission_set:
         editable: true
 ```
 
-## 列表视图 listViews
+### 可见列表视图 listViews
 
 设定用户可以查看的[列表视图](./listview.md)。
 
@@ -119,7 +133,7 @@ permission_set:
 
 如果未配置，表示可以查看所有列表视图。此时界面上列表视图的显示顺序以业务对象中定义的顺序为准。
 
-## 相关对象 relatedList
+### 可见相关对象 relatedList
 
 设定记录查看界面，用户可以查看到的相关记录列表。
 
@@ -133,7 +147,7 @@ permission_set:
 
 以上配置表示：普通用户在查看记录时，可以查看到相关的 文件(files)、任务(tasks)、付款(payments) 记录。
 
-## 可见操作按钮 actions
+### 可见操作按钮 actions
 
 设定记录查看界面，用户可以查看到的 [操作按钮](./object_action.md)。
 
