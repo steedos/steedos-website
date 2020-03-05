@@ -77,6 +77,11 @@ function DocItem(props) {
 
   const metaImageUrl = siteUrl + useBaseUrl(metaImage);
 
+  let backgroundImage = 'url(/img/banner/sales-cloud-overview-lg.png)'
+  if (props.content.frontMatter.background) {
+    backgroundImage = 'url(' + props.content.frontMatter.background + ')';
+  }
+
   return (
     <>
       <Head>
@@ -99,7 +104,7 @@ function DocItem(props) {
         )}
         {permalink && <meta property="og:url" content={siteUrl + permalink} />}
       </Head>
-      <div className="padding-vert--lg">
+      <div className={classnames("padding-vert--lg", styles.docItemWrapper)} style={{backgroundImage: backgroundImage}}>
         <div className="container">
           <div className="row">
             <div className={classnames('col', styles.docItemCol)}>

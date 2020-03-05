@@ -99,16 +99,16 @@ module.exports = {
   themeConfig: {
     navbar: {
       hideOnScroll: false,
-      title: '华炎',
+      title: '',
       logo: {
         alt: '华炎',
         src: 'img/icon_blue.png',
       },
       links: [
-        {to: 'docs/products/index', label: '产品', position: 'left'},
-        {to: 'docs/workflow/index', label: '审批王', position: 'left'},
-        {to: 'docs/platform/index', label: '文档', position: 'left'},
-        {to: 'docs/developer/index', label: '开发人员', position: 'left'},
+        {to: 'docs/products/workflow', label: '产品', position: 'left'},
+        {to: 'docs/apps/contract', label: '解决方案', position: 'left'},
+        // {to: 'docs/workflow/index', label: '审批王', position: 'left'},
+        {to: 'docs/platform/index', label: '帮助', position: 'left'},
         // {to: 'docs/platform/index', label: '文档', position: 'left',
         //   items: [
         //     {to: 'docs/workflow/help/guide_sign', label: '审批王'},
@@ -119,17 +119,13 @@ module.exports = {
         // },
         // {to: 'docs/pricing/index', label: '报价', position: 'left'},
         // {to: 'blog', label: '动态', position: 'left'},
-        {
-          label: '社区',
-          position: 'right',
-          href: 'https://messenger.steedos.cn/',
-        },
-        {label: '客户登录', position: 'right',
-         items: [
-          {href: 'https://cn.steedos.com', label: '中国区域'},
-          {href: 'https://us.steedos.com', label: '美国区域'}
-         ]
-        },
+        // {
+        //   label: '技术支持',
+        //   position: 'left',
+        //   href: 'https://messenger.steedos.cn/',
+        // },
+        {to: 'docs/developer/index', label: '开发人员', position: 'left'},
+        {label: '登录', position: 'right', href: 'https://cn.steedos.com'},
       ],
     },
     footer: {
@@ -209,7 +205,7 @@ module.exports = {
           path: '../docs',
           // sidebars file relative to website dir.
           sidebarPath: require.resolve('./sidebars.json'),
-          editUrl: 'https://github.com/steedos/steedos-website/edit/master/website/',
+          // editUrl: 'https://github.com/steedos/steedos-website/edit/master/website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

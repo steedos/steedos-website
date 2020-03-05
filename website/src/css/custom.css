@@ -65,3 +65,8 @@
 .markdown .hero {
   background-color: transparent;
 }
+
+.navbar {
+  border-bottom: 3px solid #00a1e0;
+  box-shadow: none;
+}

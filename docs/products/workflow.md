@@ -1,14 +1,23 @@
 ---
 title: 快速部署、有效监控并持续优化各类业务流程
-sidebar_label: 流程管理
+sidebar_label: 业务审批
 hide_table_of_contents: true
+background: /img/banner/sales-cloud-overview-lg.png
 ---
 
-审批王是全新的企业级在线审批系统，可以快速的将公司的各类审批业务转换为可严格执行的电子流程。
+审批王是全新的企业级在线审批系统，可以快速的将公司的各类审批业务转换为可严格执行的电子流程。出差申请、差旅报销、请假销假、物品采购、付款申请、固定资产报废、会议室预约、退库管理、客服投诉、工作报告等均可通过审批王处理。
 
-出差申请、差旅报销、请假销假、物品采购、付款申请、固定资产报废、会议室预约、退库管理、客服投诉、工作报告等均可通过审批王处理。
+<a class="button button--primary" href="http://oss.steedos.com/videos/case/%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E8%AF%B7%E5%81%87%E6%B5%81%E7%A8%8B.mp4" target="_blank">
+查看视频演示
+</a>
+&nbsp;&nbsp;
+<a class="button button--primary" href="./download" target="_blank">
+下载客户端
+</a>
 
 ![审批王](/assets/products/workflow.png)
+
+借助于华炎强大的多数据源和业务对象自定义功能，审批王可以快速实现和现有业务系统的接口，包括从业务系统中抽取数据或是将审批结果写入业务系统中。
 
 审批王提供完善的零代码流程管理平台，涵盖：流程设计 (Process Design)、流程运行 (Process Execution)、管理维护 (Administration) 与流程优化 (Optimization)等各类工具，是最具效率的流程管理开发工具。凭借优化的NodeJS核心搭配先进的AJAX技术，即使面对成千部门、上万人员的大型企业，所有的功能仍如行云流水般的流畅。
 

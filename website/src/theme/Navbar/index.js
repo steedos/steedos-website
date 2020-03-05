@@ -15,31 +15,14 @@ import Toggle from '@theme/Toggle';
 
 import classnames from 'classnames';
 
-import useTheme from '@theme/hooks/useTheme';
+import useThemeContext from '@theme/hooks/useThemeContext';
 import useHideableNavbar from '@theme/hooks/useHideableNavbar';
+import useLockBodyScroll from '@theme/hooks/useLockBodyScroll';
 
 import styles from './styles.module.css';
 
 function NavLink({to, href, label, position, ...props}) {
   const toUrl = useBaseUrl(to);
-  
-  if (props.items) {
-    return (
-      <div class="navbar__item dropdown dropdown--hoverable">
-        <a class="navbar__link" href="#url">
-          {label}
-        </a>
-        <ul class="dropdown__menu">
-          {props.items.map((subItem, j) => (
-            <li>
-              <NavLink {...subItem} key={j} />
-            </li>
-          ))}
-        </ul>
-      </div>
-    )
-  }
-  else 
   return (
     <Link
       className="navbar__item navbar__link"
@@ -65,27 +48,38 @@ function Navbar() {
   const {baseUrl, themeConfig = {}} = siteConfig;
   const {navbar = {}, disableDarkMode = false} = themeConfig;
   const {title, logo = {}, links = [], hideOnScroll = false} = navbar;
+
   const [sidebarShown, setSidebarShown] = useState(false);
   const [isSearchBarExpanded, setIsSearchBarExpanded] = useState(false);
-  const [theme, setTheme] = useTheme();
 
+  const {isDarkTheme, setLightTheme, setDarkTheme} = useThemeContext();
   const {navbarRef, isNavbarVisible} = useHideableNavbar(hideOnScroll);
 
+  useLockBodyScroll(sidebarShown);
+
   const showSidebar = useCallback(() => {
-    document.body.style.overflow = 'hidden';
     setSidebarShown(true);
   }, [setSidebarShown]);
   const hideSidebar = useCallback(() => {
-    document.body.style.overflow = 'visible';
     setSidebarShown(false);
   }, [setSidebarShown]);
 
   const onToggleChange = useCallback(
-    e => setTheme(e.target.checked ? 'dark' : ''),
-    [setTheme],
+    e => (e.target.checked ? setDarkTheme() : setLightTheme()),
+    [setLightTheme, setDarkTheme],
   );
 
-  const logoUrl = useBaseUrl(logo.src);
+  const logoLink = logo.href || baseUrl;
+  const isExternalLogoLink = /http/.test(logoLink);
+  const logoLinkProps = isExternalLogoLink
+    ? {
+        rel: 'noopener noreferrer',
+        target: '_blank',
+      }
+    : null;
+  const logoSrc = logo.srcDark && isDarkTheme ? logo.srcDark : logo.src;
+  const logoImageUrl = useBaseUrl(logoSrc);
+
   return (
     <nav
       ref={navbarRef}
@@ -120,9 +114,9 @@ function Navbar() {
               />
             </svg>
           </div>
-          <Link className="navbar__brand" to={baseUrl}>
+          <Link className="navbar__brand" to={logoLink} {...logoLinkProps}>
             {logo != null && (
-              <img className="navbar__logo" src={logoUrl} alt={logo.alt} />
+              <img className="navbar__logo" src={logoImageUrl} alt={logo.alt} />
             )}
             {title != null && (
               <strong
@@ -147,7 +141,7 @@ function Navbar() {
             <Toggle
               className={styles.displayOnlyInLargeViewport}
               aria-label="Dark mode toggle"
-              checked={theme === 'dark'}
+              checked={isDarkTheme}
               onChange={onToggleChange}
             />
           )}
@@ -164,16 +158,20 @@ function Navbar() {
       />
       <div className="navbar-sidebar">
         <div className="navbar-sidebar__brand">
-          <Link className="navbar__brand" onClick={hideSidebar} to={baseUrl}>
+          <Link
+            className="navbar__brand"
+            onClick={hideSidebar}
+            to={logoLink}
+            {...logoLinkProps}>
             {logo != null && (
-              <img className="navbar__logo" src={logoUrl} alt={logo.alt} />
+              <img className="navbar__logo" src={logoImageUrl} alt={logo.alt} />
             )}
             {title != null && <strong>{title}</strong>}
           </Link>
           {!disableDarkMode && sidebarShown && (
             <Toggle
               aria-label="Dark mode toggle in sidebar"
-              checked={theme === 'dark'}
+              checked={isDarkTheme}
               onChange={onToggleChange}
             />
           )}

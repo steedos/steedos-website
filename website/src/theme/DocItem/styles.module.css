@@ -5,12 +5,21 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+.docItemWrapper {
+  /*background-image: url(/img/banner/what-is-background01a.png);*/
+  background-repeat: repeat-x;
+  padding-left: 300px;
+}
+
 .docTitle {
   font-size: 3rem;
   margin-bottom: 3rem;
 }
 
 @media only screen and (max-width: 996px) {
+  .docItemWrapper {
+    padding-left: 0;
+  }
   .docTitle {
     font-size: 2rem;
     margin-bottom: 2rem;
