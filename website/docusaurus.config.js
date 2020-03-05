@@ -105,9 +105,10 @@ module.exports = {
         src: 'img/icon_blue.png',
       },
       links: [
+        {to: 'docs/products/index', label: '产品', position: 'left'},
         {to: 'docs/workflow/index', label: '审批王', position: 'left'},
-        {to: 'docs/platform/index', label: '应用引擎', position: 'left'},
-        {to: 'docs/developer/index', label: '开发文档', position: 'left'},
+        {to: 'docs/platform/index', label: '文档', position: 'left'},
+        {to: 'docs/developer/index', label: '开发人员', position: 'left'},
         // {to: 'docs/platform/index', label: '文档', position: 'left',
         //   items: [
         //     {to: 'docs/workflow/help/guide_sign', label: '审批王'},

@@ -44,14 +44,24 @@
     background-color: rgb(0, 0, 0, 0.3);
   }
 
-  .main-wrapper {
-    background-image: url(/img/banner/what-is-background01a.png);
-    background-repeat-y: no-repeat;
-    background-size: contain;
-  }
-
   html[data-theme='dark'] .main-wrapper {
     background-image: none;
     background-repeat: no-repeat;
     background-size: contain;
   }
+
+.container p img[src*="#bordered"]{
+  border: 1px solid #DDD;
+}
+
+.container p img[src*="#medium"]{
+  width: 50%;
+}
+
+.container p img[src*="#small"]{
+  width: 25%;
+}
+
+.markdown .hero {
+  background-color: transparent;
+}

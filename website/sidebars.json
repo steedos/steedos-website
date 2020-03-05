@@ -1,4 +1,7 @@
 {
+  "产品": {
+    "华炎产品": ["products/index", "products/workflow", "products/knowledge", "products/developer"]
+  },
   "审批王": {
     "审批王": ["workflow/index", "workflow/help/guide","workflow/download","workflow/help/mp4","workflow/help/faq","workflow/price/index"],
     "如何使用": ["workflow/help/instance_download","workflow/help/guide_sign", "workflow/help/instance_add", "workflow/help/instance_approve", "workflow/help/instance_carboncopy", "workflow/help/instance_distribute", "workflow/help/instance_forward", "workflow/help/instance_print", "workflow/help/instance_search", "workflow/help/instance_monitor", "workflow/help/instance_export"],

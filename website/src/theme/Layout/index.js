@@ -38,6 +38,7 @@ function Layout(props) {
   const metaImageUrl = siteUrl + useBaseUrl(metaImage);
   const faviconUrl = useBaseUrl(favicon);
 
+  console.log(props)
   return (
     <>
       <Head>
