@@ -99,17 +99,16 @@ module.exports = {
   themeConfig: {
     navbar: {
       hideOnScroll: false,
-      title: '',
+      title: '华炎',
       logo: {
         alt: '华炎',
         src: 'img/icon_blue.png',
       },
       links: [
-        {to: 'docs/products/workflow', label: '产品', position: 'left'},
-        {to: 'docs/apps/contract', label: '解决方案', position: 'left'},
+        {to: 'docs/products/home', label: '产品', position: 'left'},
         // {to: 'docs/workflow/index', label: '审批王', position: 'left'},
-        {to: 'docs/platform/index', label: '帮助', position: 'left'},
-        // {to: 'docs/platform/index', label: '文档', position: 'left',
+        {to: 'docs/platform/index', label: '文档', position: 'left'},
+        {to: 'docs/developer/index', label: '开发', position: 'left'},
         //   items: [
         //     {to: 'docs/workflow/help/guide_sign', label: '审批王'},
         //     {to: 'docs/developer/index', label: '开发文档'},
@@ -119,12 +118,11 @@ module.exports = {
         // },
         // {to: 'docs/pricing/index', label: '报价', position: 'left'},
         // {to: 'blog', label: '动态', position: 'left'},
-        // {
-        //   label: '技术支持',
-        //   position: 'left',
-        //   href: 'https://messenger.steedos.cn/',
-        // },
-        {to: 'docs/developer/index', label: '开发人员', position: 'left'},
+        {
+          label: '社区',
+          position: 'left',
+          href: 'https://messenger.steedos.cn/',
+        },
         {label: '登录', position: 'right', href: 'https://cn.steedos.com'},
       ],
     },

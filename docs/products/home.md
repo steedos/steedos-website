@@ -1,6 +1,6 @@
 ---
-title: 高效协同，赋能员工新体验
-sidebar_label: 产品简介
+title: 无论海角天边，华炎总在你身边
+sidebar_label: 移动办公
 hide_table_of_contents: true
 background: /img/banner/sales-cloud-overview-lg.png
 ---
@@ -8,7 +8,7 @@ background: /img/banner/sales-cloud-overview-lg.png
 帮助企业集成所有业务流程，将实时数据转化为行动，并提高员工的工作效率。
 
 <a class="button button--primary" href="http://oss.steedos.com/videos/case/%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E8%AF%B7%E5%81%87%E6%B5%81%E7%A8%8B.mp4" target="_blank">
-查看视频演示
+视频演示
 </a>
 
 ![审批王](/assets/products/workflow.png)

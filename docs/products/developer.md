@@ -1,6 +1,6 @@
 ---
 title: 快速构建企业需要的应用程序
-sidebar_label: 业务开发
+sidebar_label: 应用开发
 hide_table_of_contents: true
 ---
 

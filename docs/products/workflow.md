@@ -1,6 +1,6 @@
 ---
 title: 快速部署、有效监控并持续优化各类业务流程
-sidebar_label: 业务审批
+sidebar_label: 流程管理
 hide_table_of_contents: true
 background: /img/banner/sales-cloud-overview-lg.png
 ---

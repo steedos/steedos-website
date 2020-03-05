@@ -1,9 +1,7 @@
 {
   "产品": {
-    "华炎产品": ["products/workflow", "products/developer", "products/messenger"]
-  },
-  "解决方案": {
-    "报价": ["apps/contract","apps/meeting"]
+    "华炎产品": ["products/home", "products/workflow", "products/developer", "products/messenger", "products/knowledge"],
+    "解决方案": ["solutions/contract"]
   },
   "审批王": {
     "审批王": ["workflow/index", "workflow/help/guide","workflow/help/mp4","workflow/help/faq"],
