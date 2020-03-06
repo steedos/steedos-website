@@ -5,8 +5,8 @@ title: 安装开发环境(Windows)
 Steedos项目基于NodeJS开发，默认使用MongoDB数据库。您可以在 Windows、Mac 或 Linux 环境中创建、开发和运行Steedos项目。
 
 - 如果您是Windows环境，请继续阅读本文，完成开发环境的安装。
-- 如果您是Mac环境，请参考 [安装开发环境(Mac)](/docs/developer/mac.md) 。
-- 如果您是Linux环境，请参考[安装开发环境(Linux)](/docs/developer/linux.md)。
+- 如果您是Mac环境，请参考 [安装开发环境(Mac)](/docs/developer/mac) 。
+- 如果您是Linux环境，请参考[安装开发环境(Linux)](/docs/developer/linux)。
 
 ## 安装NodeJS
 
