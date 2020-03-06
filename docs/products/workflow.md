@@ -2,7 +2,7 @@
 title: 快速部署、有效监控并持续优化各类业务流程
 sidebar_label: 流程管理
 hide_table_of_contents: true
-background: https://www.salesforce.org/wp-content/uploads/2018/06/philanthropy-cloud-workplace-giving-hero.jpg
+background: /img/banner/sf-mountain.jpg
 ---
 
 审批王是全新的企业级在线审批系统，可以快速地将公司的各类审批业务转换为可严格执行的电子流程。
