@@ -37,7 +37,6 @@ function DocPage(props) {
     return <NotFound {...props} />;
   }
 
-  console.log(props)
   return (
     <Layout version={version} key={isClient}>
       <div className={styles.docPage}>
