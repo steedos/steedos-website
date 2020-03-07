@@ -99,7 +99,7 @@ module.exports = {
   themeConfig: {
     navbar: {
       hideOnScroll: false,
-      title: '华炎',
+      title: '华炎办公',
       logo: {
         alt: '华炎',
         src: 'img/icon_blue.png',
