@@ -97,6 +97,7 @@ module.exports = {
   // useEnglishUrl: false,
 
   themeConfig: {
+    disableDarkMode: true,
     navbar: {
       hideOnScroll: false,
       title: '华炎办公',
@@ -123,6 +124,7 @@ module.exports = {
           position: 'left',
           href: 'https://messenger.steedos.cn/',
         },
+        {search: true},
         {label: '登录', position: 'right', href: 'https://cn.steedos.com'},
       ],
     },

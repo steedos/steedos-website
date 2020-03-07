@@ -132,11 +132,6 @@ function Navbar() {
             ))}
         </div>
         <div className="navbar__items navbar__items--right">
-          {links
-            .filter(linkItem => linkItem.position === 'right')
-            .map((linkItem, i) => (
-              <NavLink {...linkItem} key={i} />
-            ))}
           {!disableDarkMode && (
             <Toggle
               className={styles.displayOnlyInLargeViewport}
@@ -149,6 +144,11 @@ function Navbar() {
             handleSearchBarToggle={setIsSearchBarExpanded}
             isSearchBarExpanded={isSearchBarExpanded}
           />
+          {links
+            .filter(linkItem => linkItem.position === 'right')
+            .map((linkItem, i) => (
+              <NavLink {...linkItem} key={i} />
+            ))}
         </div>
       </div>
       <div

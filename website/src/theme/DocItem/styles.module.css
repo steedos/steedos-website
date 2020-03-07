@@ -7,13 +7,18 @@
 
 .docItemWrapper {
   /*background-image: url(/img/banner/what-is-background01a.png);*/
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
   padding-left: 300px;
 }
 
 .docTitle {
-  font-size: 3rem;
-  margin-bottom: 3rem;
+  /* font-size: 3rem; */
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
 }
 
 @media only screen and (max-width: 996px) {

@@ -12,9 +12,10 @@
 .docSidebarContainer {
   border-right: 1px solid var(--ifm-contents-border-color);
   box-sizing: border-box;
-  width: 300px;
+  width: 250px;
   position: relative;
   top: calc(-1 * var(--ifm-navbar-height));
+  left: 30px;
 
 }
 
@@ -31,8 +32,8 @@
 /* 自定义界面 */
 @media (min-width: 996px) {
   .docSidebarContainer {
-    position: absolute;
+    position: fixed;
     top: 0;
-    background: rgba(255, 255, 255, 0.7);
+    background: hsla(0,0%,98%,.9)
   }
 }
