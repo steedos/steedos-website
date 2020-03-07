@@ -2,6 +2,7 @@
 title: 企业级即时通讯私有云解决方案
 sidebar_label: 即时通讯
 hide_table_of_contents: true
+background: /img/banner/overview-jumbotron-sm-desktop.jpg
 ---
 
 华信，企业级即时通讯私有云解决方案，团队通讯一站式解决，随时随地可搜索和访问。

@@ -2,7 +2,7 @@
 title: 低代码，极速构建企业应用
 sidebar_label: 应用开发
 hide_table_of_contents: true
-background: /img/banner/sf-hill&grass.jpg
+background: /img/banner/clouds-large-desktop.png
 ---
 
 华炎应用引擎，创新的使用配置文件描述业务模型和业务功能，开发人员只需要编写简单的配置文件就可以构建企业级应用程序，并极速部署到电脑、安卓、苹果三个平台。

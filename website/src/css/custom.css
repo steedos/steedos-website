@@ -70,3 +70,51 @@
   border-bottom: 3px solid #00a1e0;
   box-shadow: none;
 }
+
+@import './salesforce-lightning-design-system.css' 
+
+/* @import './sfds/common/index.css';
+@import './sfds/accordion/base/index.css';
+@import './sfds/avatar/base/index.css';
+@import './sfds/badges/base/index.css';
+@import './sfds/breadcrumbs/base/index.css';
+@import './sfds/button-groups/base/index.css';
+@import './sfds/button-groups/row/index.css';
+@import './sfds/button-icons/base/index.css';
+@import './sfds/button-icons/stateful/index.css';
+@import './sfds/buttons/base/index.css';
+@import './sfds/buttons/stateful/index.css';
+@import './sfds/cards/base/index.css';
+@import './sfds/carousel/base/index.css';
+@import './sfds/checkbox/base/index.css';
+@import './sfds/checkbox/form-element/index.css';
+@import './sfds/combobox/base/index.css';
+@import './sfds/data-tables/base/index.css';
+@import './sfds/data-tables/hidden-header/index.css';
+@import './sfds/data-tables/inline-edit/index.css';
+@import './sfds/dueling-picklist/base/index.css';
+@import './sfds/file-selector/base/index.css';
+@import './sfds/form-element/base/index.css';
+@import './sfds/form-element/compound/index.css';
+@import './sfds/form-element/horizontal/index.css';
+@import './sfds/form-element/record-detail/index.css';
+@import './sfds/form-element/stacked/index.css';
+@import './sfds/icons/base/index.css';
+@import './sfds/input/base/index.css';
+@import './sfds/map/base/index.css';
+@import './sfds/menus/dropdown/index.css';
+@import './sfds/pills/base/index.css';
+@import './sfds/progress-bar/base/index.css';
+@import './sfds/progress-bar/vertical/index.css';
+@import './sfds/radio-group/base/index.css';
+@import './sfds/rich-text-editor/base/index.css';
+@import './sfds/slider/base/index.css';
+@import './sfds/tabs/base/index.css';
+@import './sfds/tabs/mobile-stack/index.css';
+@import './sfds/textarea/base/index.css';
+@import './sfds/tiles/base/index.css';
+@import './sfds/tree-grid/base/index.css';
+@import './sfds/trees/base/index.css';
+@import './sfds/vertical-navigation/list/index.css';
+@import './sfds/vertical-tabs/base/index.css';
+ */

@@ -14,6 +14,8 @@ import ThemeProvider from '@theme/ThemeProvider';
 import Navbar from '@theme/Navbar';
 import Footer from '@theme/Footer';
 
+import {IconSettings} from '@salesforce/design-system-react';
+
 import './styles.css';
 
 function Layout(props) {
@@ -40,6 +42,8 @@ function Layout(props) {
   const faviconUrl = useBaseUrl(favicon);
 
   return (
+    <IconSettings iconPath="/assets/sfds/icons">
+
     <ThemeProvider>
       <Head>
         {/* TODO: Do not assume that it is in english language */}
@@ -69,6 +73,7 @@ function Layout(props) {
       <div className="main-wrapper">{children}</div>
       {!noFooter && <Footer />}
     </ThemeProvider>
+    </IconSettings>
   );
 }
 

@@ -1,6 +1,6 @@
 {
   "产品": {
-    "华炎产品": ["products/home", "products/workflow", "products/developer", "products/messenger", "products/knowledge"],
+    "华炎产品": ["products/home", "products/workflow", "products/developer", "products/messenger"],
     "解决方案": ["solutions/contract"]
   },
   "审批王": {
