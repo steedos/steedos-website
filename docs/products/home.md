@@ -1,6 +1,6 @@
 ---
 title: 无论海角天边，华炎总在你身边
-sidebar_label: 华炎云
+sidebar_label: 概览
 hide_table_of_contents: true
 background: /img/banner/mytrailhead-overview-lg.jpg
 ---

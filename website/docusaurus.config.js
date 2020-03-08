@@ -1,8 +1,8 @@
 // docusaurus.config.js
 module.exports = {
 
-  title: '高效协同，赋能员工新体验', // Title for your website.
-  tagline: '帮助企业集成所有业务流程，将实时数据转化为行动，并提高员工的工作效率。',
+  title: '随需定制的企业管理解决方案', // Title for your website.
+  tagline: '华炎应用引擎，创新的使用配置文件描述业务模型和业务功能，开发人员只需要编写简单的配置文件就可以构建企业级应用程序，并极速部署到电脑、安卓、苹果三个平台。',
   url: 'https://www.steedos.com/', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -100,16 +100,16 @@ module.exports = {
     disableDarkMode: true,
     navbar: {
       hideOnScroll: false,
-      title: '华炎办公',
+      title: '华炎',
       logo: {
         alt: '华炎',
         src: 'img/icon_blue.png',
       },
       links: [
-        {to: 'docs/products/home', label: '产品', position: 'left'},
-        // {to: 'docs/workflow/index', label: '审批王', position: 'left'},
-        {to: 'docs/platform/index', label: '文档', position: 'left'},
-        {to: 'docs/developer/index', label: '开发', position: 'left'},
+        {to: 'docs/products/home', label: '华炎办公', position: 'left'},
+        {to: 'docs/workflow/home', label: '审批王', position: 'left'},
+        {to: 'docs/platform/home', label: '应用引擎', position: 'left'},
+        {to: 'docs/developer/index', label: '开发人员', position: 'left'},
         //   items: [
         //     {to: 'docs/workflow/help/guide_sign', label: '审批王'},
         //     {to: 'docs/developer/index', label: '开发文档'},

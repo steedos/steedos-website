@@ -1,0 +1,10 @@
+.slds ol, .slds ul{
+  list-style:none;
+}
+
+
+[class*='slds-'] ol, [class*='slds-'] ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

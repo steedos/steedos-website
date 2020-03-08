@@ -81,4 +81,5 @@ footer {
   }
 }
 
-@import './salesforce-lightning-design-system.css' 
+@import './salesforce-lightning-design-system.css';
+@import './salesforce-customize.css';

@@ -12,11 +12,13 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import { Icon } from '@salesforce/design-system-react';
+import SteedosAppLauncher from '../components/AppLauncher';
 
 const features = [
   {
     title: <>业务审批</>,
-    imageUrl: 'img/svg-icons/workflow.svg',
+    iconName: 'accounts',
     href: 'docs/workflow/index',
     description: (
       <>
@@ -26,7 +28,7 @@ const features = [
   },
   {
     title: <>业务数据</>,
-    imageUrl: 'img/svg-icons/data.svg',
+    iconName: 'accounts',
     href: 'docs/platform/index',
     description: (
       <>
@@ -36,7 +38,7 @@ const features = [
   },
   {
     title: <>业务开发</>,
-    imageUrl: 'img/svg-icons/developer.svg',
+    iconName: 'account',
     href: 'docs/developer/index',
     description: (
       <>
@@ -64,7 +66,7 @@ function Home() {
       title={siteConfig.title}
       description={siteConfig.tagline}
     >
-      <header className={classnames('hero hero--primary', styles.heroBanner)}>
+      <header className={classnames('hero', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
@@ -82,43 +84,12 @@ function Home() {
         </div>
       </header>
       <main>
-        {features && features.length && (
-          <section className={classnames('hero hero--dark', styles.features)}>
-            <div className="container">
-              <div className="row">
-                {features.map(({ imageUrl, title, description, href }, idx) => (
-                  <div
-                    key={idx}
-                    className={classnames('col col--4 text--center', styles.feature)}
-                  >
-                    {imageUrl && (
-                      <div className="text--center">
-                        <img
-                          className={styles.featureImage}
-                          src={useBaseUrl(imageUrl)}
-                          alt={title}
-                        />
-                      </div>
-                    )}
-                    <h3>{title}</h3>
-                    <p>{description}</p>
 
-                    <Link
-                      className={classnames(
-                        'button button--secondary button--lg',
-                        styles.getStarted,
-                      )}
-                      to={useBaseUrl(href)}
-                    >
-                    了解更多
-                  </Link>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-
+        <div className={classnames('hero')}>
+          <div className="container">
+            <SteedosAppLauncher/>
+          </div>
+        </div>
       </main>
     </Layout>
   );

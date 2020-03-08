@@ -15,7 +15,7 @@
     text-align: center;
     position: relative;
     overflow: hidden;    
-    background: url('https://www.sap.cn/dam/application/imagelibrary/photos/285000/285369.jpg.adapt.1920_824.false.false.false.false.height.jpg/1565225346512.jpg');
+    background: url("/img/banner/clouds-large-desktop.png");
     background-size: cover;
   }
   

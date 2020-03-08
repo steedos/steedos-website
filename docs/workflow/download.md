@@ -1,8 +1,10 @@
 ---
-title: 下载客户端
+title: 下载
 ---
 
 审批王桌面客户端提供文档在线编辑、待办文件弹出提醒等扩展功能。
+
+![审批王](/assets/products/workflow.png)
 
 ## Windows 客户端
 
