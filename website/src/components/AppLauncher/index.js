@@ -14,7 +14,7 @@ class SteedosAppLauncher extends React.Component {
 							<AppLauncherExpandableSection title="华炎应用" nonCollapsible={true}>
 								<AppLauncherTile
 									description="华炎云是深受公司员工喜爱的云端企业管理软件。"
-                                    title="华炎办公"
+                                    title="华炎云"
                                     href="/docs/products/home"
                                     iconNode={<Icon
                                         assistiveText=""
@@ -35,8 +35,19 @@ class SteedosAppLauncher extends React.Component {
                                     />}
                                 />
                                 <AppLauncherTile
-                                    description="华炎应用引擎是配置式的应用开发平台"
-                                    title="应用引擎"
+                                    description="私有云即时通讯解决方案"
+                                    title="即时通讯"
+                                    href="/docs/products/messenger"
+                                    iconNode={<Icon
+                                        assistiveText=""
+                                        category="standard"
+                                        name="messaging_conversation"
+                                        size="large"
+                                    />}
+                                />
+                                <AppLauncherTile
+                                    description="低代码，极速构建企业应用"
+                                    title="开发平台"
                                     href="/docs/platform/home"
                                     iconNode={<Icon
                                         assistiveText=""

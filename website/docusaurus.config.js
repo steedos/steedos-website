@@ -2,7 +2,7 @@
 module.exports = {
 
   title: '随需定制的企业管理解决方案', // Title for your website.
-  tagline: '华炎应用引擎，创新的使用配置文件描述业务模型和业务功能，开发人员只需要编写简单的配置文件就可以构建企业级应用程序，并极速部署到电脑、安卓、苹果三个平台。',
+  tagline: '华炎开发平台，创新的使用配置文件描述业务模型和业务功能，开发人员只需要编写简单的配置文件就可以构建企业级应用程序，并极速部署到电脑、安卓、苹果三个平台。',
   url: 'https://www.steedos.com/', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -18,7 +18,7 @@ module.exports = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   // headerLinks: [
-  //   {doc: 'platform/index', label: '应用引擎'},
+  //   {doc: 'platform/index', label: '开发平台'},
   //   {doc: 'developer/guide', label: '开始使用'},
   //   {doc: 'api/index', label: 'API'},
   //   {search: true},
@@ -100,16 +100,16 @@ module.exports = {
     disableDarkMode: true,
     navbar: {
       hideOnScroll: false,
-      title: '华炎',
+      title: '华炎办公',
       logo: {
         alt: '华炎',
         src: 'img/icon_blue.png',
       },
       links: [
-        {to: 'docs/products/home', label: '华炎办公', position: 'left'},
+        {to: 'docs/products/home', label: '华炎云', position: 'left'},
         {to: 'docs/workflow/home', label: '审批王', position: 'left'},
-        {to: 'docs/platform/home', label: '应用引擎', position: 'left'},
-        {to: 'docs/developer/index', label: '开发人员', position: 'left'},
+        {to: 'docs/platform/home', label: '开发平台', position: 'left'},
+        {to: 'docs/help/home', label: '帮助', position: 'left'},
         //   items: [
         //     {to: 'docs/workflow/help/guide_sign', label: '审批王'},
         //     {to: 'docs/developer/index', label: '开发文档'},
@@ -144,7 +144,7 @@ module.exports = {
               to: 'docs/workflow/index',
             },
             {
-              label: '应用引擎',
+              label: '开发平台',
               to: 'docs/platform/guide',
             },
             {

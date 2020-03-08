@@ -1,17 +1,17 @@
 {
-  "产品": {
-    "华炎办公": ["products/home", "products/workflow", "products/developer", "products/messenger"],
-    "解决方案": ["solutions/contract"]
-  },
   "审批王": {
     "审批王": ["workflow/home", "workflow/features", "workflow/price", "workflow/download"]
   },
-  "业务开发平台": {
-    "华炎应用引擎": ["platform/home"],
-    "业务台账": ["platform/record_list", "platform/record_view", "platform/record_report", "platform/notifications"],
-    "业务审批": ["platform/instance_add", "platform/instance_approve", "platform/instance_carboncopy", "platform/instance_distribute", "platform/instance_forward", "platform/instance_print", "platform/instance_search", "platform/instance_monitor", "platform/instance_export" ],
-    "系统设置": ["platform/admin_positions" , "platform/admin_form", "platform/admin_flow", "platform/organization", "platform/permission_set", "platform/permission_share"],
-    "使用技巧": ["platform/workflow/faq"]
+  "开发平台": {
+    "华炎开发平台": ["platform/home", "platform/features", "platform/pricing"],
+    "应用案例": ["solutions/contract"]
+  },
+  "帮助": {
+    "华炎办公": ["help/home"],
+    "业务台账": ["help/record_list", "help/record_view", "help/record_report", "help/notifications"],
+    "业务审批": ["help/instance_add", "help/instance_approve", "help/instance_carboncopy", "help/instance_distribute", "help/instance_forward", "help/instance_print", "help/instance_search", "help/instance_monitor", "help/instance_export" ],
+    "系统设置": ["help/admin_positions" , "help/admin_form", "help/admin_flow", "help/organization", "help/permission_set", "help/permission_share"],
+    "使用技巧": ["help/workflow/faq"]
   },
   "开发": {
     "系统简介": ["developer/index"],   

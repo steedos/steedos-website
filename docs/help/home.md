@@ -1,8 +1,7 @@
 ---
-title: 无论海角天边，华炎总在你身边
+title: 华炎办公概览
 sidebar_label: 概览
 hide_table_of_contents: true
-background: /img/banner/mytrailhead-overview-lg.jpg
 ---
 
 import { Icon } from '@salesforce/design-system-react';
@@ -95,4 +94,3 @@ import { Icon } from '@salesforce/design-system-react';
 
   </div>
 </div>
-
