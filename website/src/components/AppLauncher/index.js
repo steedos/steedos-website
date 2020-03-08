@@ -13,18 +13,18 @@ class SteedosAppLauncher extends React.Component {
 						<div class="slds-app-launcher-container">
 							<AppLauncherExpandableSection title="华炎应用" nonCollapsible={true}>
 								<AppLauncherTile
-									description="华炎云是深受公司员工喜爱的云端企业管理软件。"
+									description="SAAS 云端企业管理软件"
                                     title="华炎云"
                                     href="/docs/products/home"
                                     iconNode={<Icon
                                         assistiveText=""
                                         category="standard"
-                                        name="customers"
+                                        name="apps"
                                         size="large"
                                     />}
 								/>
                                 <AppLauncherTile
-                                    description="审批王是企业级的在线审批系统。"
+                                    description="BPM 业务流程管理工具"
                                     title="审批王"
                                     href="/docs/workflow/home"
                                     iconNode={<Icon
