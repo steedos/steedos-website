@@ -1,6 +1,6 @@
 {
   "审批王": {
-    "审批王": ["workflow/home", "workflow/features", "workflow/price", "workflow/download"]
+    "审批王": ["workflow/home", "workflow/features", "workflow/price", "workflow/cases", "workflow/download"]
   },
   "开发平台": {
     "华炎开发平台": ["platform/home", "platform/features", "platform/pricing"],
