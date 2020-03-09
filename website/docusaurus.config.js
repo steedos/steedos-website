@@ -1,8 +1,8 @@
 // docusaurus.config.js
 module.exports = {
 
-  title: '随需定制的企业管理解决方案', // Title for your website.
-  tagline: '华炎开发平台，创新的使用配置文件描述业务模型和业务功能，开发人员只需要编写简单的配置文件就可以构建企业级应用程序，并极速部署到电脑、安卓、苹果三个平台。',
+  title: '随需定制的移动办公解决方案', // Title for your website.
+  tagline: '华炎办公平台，创新的使用配置文件描述业务模型和业务功能，开发人员只需要修改配置文件就可以满足个性化需求，并极速部署到电脑、安卓、苹果三个平台。',
   url: 'https://www.steedos.com/', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
