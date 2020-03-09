@@ -41,7 +41,7 @@ class SteedosAppLauncher extends React.Component {
 									iconNode={<Icon
 										assistiveText=""
 										category="standard"
-										name="lead_list"
+										name="contract_line_item"
 										size="large"
 									/>}
 								/>

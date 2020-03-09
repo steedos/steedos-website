@@ -106,9 +106,9 @@ module.exports = {
         src: 'img/icon_blue.png',
       },
       links: [
-        {to: 'docs/workflow/home', label: '审批王', position: 'left'},
-        {to: 'docs/solutions/contract', label: '合同管理', position: 'left'},
-        {to: 'docs/platform/home', label: '开发平台', position: 'left'},
+        {to: 'docs/workflow/home', label: '审批', position: 'left'},
+        {to: 'docs/solutions/contract', label: '合同', position: 'left'},
+        {to: 'docs/platform/home', label: '开发', position: 'left'},
         {to: 'docs/help/home', label: '帮助', position: 'left'},
         //   items: [
         //     {to: 'docs/workflow/help/guide_sign', label: '审批王'},
@@ -119,12 +119,12 @@ module.exports = {
         // },
         // {to: 'docs/pricing/index', label: '报价', position: 'left'},
         // {to: 'blog', label: '动态', position: 'left'},
-        {
-          label: '社区',
-          position: 'left',
-          href: 'https://messenger.steedos.cn/',
-        },
-        {search: true},
+        // {
+        //   label: '社区',
+        //   position: 'left',
+        //   href: 'https://messenger.steedos.cn/',
+        // },
+        // {search: true},
         {label: '登录', position: 'right', href: 'https://cn.steedos.com'},
       ],
     },
@@ -141,15 +141,15 @@ module.exports = {
           items: [
             {
               label: '审批王',
-              to: 'docs/workflow/index',
+              to: 'docs/workflow/home',
             },
             {
-              label: '开发平台',
-              to: 'docs/platform/guide',
+              label: '华炎开发平台',
+              to: 'docs/platform/home',
             },
             {
-              label: '即时通讯',
-              to: 'docs/messenger/index',
+              label: '华信',
+              to: 'docs/products/messenger',
             },
           ],
         },
