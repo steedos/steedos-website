@@ -106,8 +106,8 @@ module.exports = {
         src: 'img/icon_blue.png',
       },
       links: [
-        {to: 'docs/products/home', label: '华炎云', position: 'left'},
         {to: 'docs/workflow/home', label: '审批王', position: 'left'},
+        {to: 'docs/solutions/contract', label: '合同管理', position: 'left'},
         {to: 'docs/platform/home', label: '开发平台', position: 'left'},
         {to: 'docs/help/home', label: '帮助', position: 'left'},
         //   items: [
