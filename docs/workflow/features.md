@@ -14,7 +14,7 @@ background: /img/banner/clouds-large-desktop.png
 
 <p></p>
 
-![表单设计](/assets/workflow/表单设计.png)
+![表单设计](/assets/workflow/designer.png)
 
 ## 流程版本控制
 
@@ -24,10 +24,6 @@ background: /img/banner/clouds-large-desktop.png
 视频演示
 </a>
 
-<p></p>
-
-![版本控制](/assets/workflow/version.png)
-
 ## 纸质表单样式
 
 审批王显示的表单样式与传统纸质审批单样式相同，办公人员无需复杂操作培训即可快速上手使用。
@@ -35,10 +31,6 @@ background: /img/banner/clouds-large-desktop.png
 <a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="http://oss.steedos.com/videos/cn/%E7%BA%B8%E8%B4%A8%E8%A1%A8%E5%8D%95%E6%A0%B7%E5%BC%8F.mp4" target="_blank">
 视频演示
 </a>
-
-<p></p>
-
-![纸质表单](/assets/workflow/paper.png)
 
 ## 在线编辑Office文档
 
