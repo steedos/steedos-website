@@ -10,7 +10,7 @@ Steedos项目基于NodeJS开发，默认使用MongoDB数据库。您可以在 Wi
 
 ## 安装NodeJS
 
-请安装与操作系统对应的 [NodeJS v10.x 版本](https://nodejs.org/dist/latest-v10.x/) ，具体操作请参考 [通过包管理器方式安装Node.js](https://nodejs.org/zh-cn/download/package-manager/#macos)
+请安装与操作系统对应的 [NodeJS v10.x 版本](https://nodejs.org/dist/latest-v10.x/) ，具体操作请参考 [通过包管理器方式安装Node.js](https://nodejs.org/zh-cn/download/package-manager/)
 
 ## 安装数据库服务器
 
