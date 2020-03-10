@@ -1,12 +1,8 @@
 ---
-title: 安装开发环境(Windows)
+title: 安装开发环境
 ---
 
 Steedos项目基于NodeJS开发，默认使用MongoDB数据库。您可以在 Windows、Mac 或 Linux 环境中创建、开发和运行Steedos项目。
-
-- 如果您是Windows环境，请继续阅读本文，完成开发环境的安装。
-- 如果您是Mac环境，请参考 [安装开发环境(Mac)](/docs/developer/mac) 。
-- 如果您是Linux环境，请参考[安装开发环境(Linux)](/docs/developer/linux)。
 
 ## 安装NodeJS
 
@@ -14,7 +10,7 @@ Steedos项目基于NodeJS开发，默认使用MongoDB数据库。您可以在 Wi
 
 ## 安装数据库服务器
 
-请安装 [MongoDB Community Server v3.6 版本](https://www.mongodb.com/download-center/community)，安装完成之后，请启动mongodb服务。
+请安装 [MongoDB Community Server v3.6 版本](https://www.mongodb.com/download-center/community)，具体操作请参考 [Install MongoDB Community Edition](https://docs.mongodb.com/manual/administration/install-community/)，安装完成之后，请启动mongodb服务。
 
 ## 安装 yarn 包管理工具
 
