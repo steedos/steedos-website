@@ -27,6 +27,7 @@ function Layout(props) {
     url: siteUrl,
   } = siteConfig;
   const {
+    route,
     children,
     title,
     noFooter,
@@ -69,7 +70,7 @@ function Layout(props) {
         {permalink && <meta property="og:url" content={siteUrl + permalink} />}
         <meta name="twitter:card" content="summary" />
       </Head>
-      <Navbar />
+      <Navbar route={route}/>
       <div className="main-wrapper">{children}</div>
       {!noFooter && <Footer />}
     </ThemeProvider>

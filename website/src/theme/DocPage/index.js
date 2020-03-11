@@ -38,7 +38,7 @@ function DocPage(props) {
   }
 
   return (
-    <Layout version={version} key={isClient}>
+    <Layout version={version} key={isClient} route={currentRoute}>
       <div className={styles.docPage}>
         {sidebar && (
           <div className={styles.docSidebarContainer}>
