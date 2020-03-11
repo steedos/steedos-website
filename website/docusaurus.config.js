@@ -114,7 +114,8 @@ module.exports = {
       ],
       links_us: [
         {to: 'docs/us/home', label: 'Workflow', position: 'left'},
-        {label: 'Login', position: 'right', href: 'https://us.steedos.com'},
+        {to: '/cn/', label: '中国区域', position: 'right'},
+        {to: 'docs/us/login', label: 'US Region', position: 'right'}
       ],
     },
     footer: {

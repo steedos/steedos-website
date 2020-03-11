@@ -8,15 +8,8 @@
 import React from 'react';
 import {Redirect} from '@docusaurus/router';
 
-
-function Home() {
-
-  var userLang = navigator.language || navigator.userLanguage; 
-  if (userLang == 'zh-CN')
-    return <Redirect to="/cn/" />;
-  else
-    return <Redirect to="/us/" />;
-
+function USHome() {
+  return <Redirect to="/docs/us/home" />;
 }
 
-export default Home;
+export default USHome;

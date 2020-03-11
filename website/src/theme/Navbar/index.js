@@ -21,6 +21,7 @@ import useHideableNavbar from '@theme/hooks/useHideableNavbar';
 import useLockBodyScroll from '@theme/hooks/useLockBodyScroll';
 
 import styles from './styles.module.css';
+import {useLocation} from '@docusaurus/router';
 
 function NavLink({activeBasePath, to, href, label, position, ...props}) {
   const toUrl = useBaseUrl(to);
@@ -52,11 +53,10 @@ function NavLink({activeBasePath, to, href, label, position, ...props}) {
 }
 
 function Navbar(props) {
-  const {route} = props;
   const {siteConfig = {}, isClient} = useDocusaurusContext();
   const {baseUrl, themeConfig = {}} = siteConfig;
   const {navbar = {}, disableDarkMode = false} = themeConfig;
-  const {title, logo = {}, links = [], hideOnScroll = false} = navbar;
+  let {title, logo = {}, links = [], hideOnScroll = false} = navbar;
 
   const [sidebarShown, setSidebarShown] = useState(false);
   const [isSearchBarExpanded, setIsSearchBarExpanded] = useState(false);
@@ -78,7 +78,7 @@ function Navbar(props) {
     [setLightTheme, setDarkTheme],
   );
 
-  const logoLink = logo.href || baseUrl;
+  let logoLink = logo.href || baseUrl;
   let logoLinkProps = {};
 
   if (logo.target) {
@@ -92,6 +92,14 @@ function Navbar(props) {
 
   const logoSrc = logo.srcDark && isDarkTheme ? logo.srcDark : logo.src;
   const logoImageUrl = useBaseUrl(logoSrc);
+
+  // 支持英文网站
+  const location = useLocation();
+  if (location && location.pathname.indexOf('/us/')>=0){
+    links = navbar.links_us
+    title = 'Steedos'
+    logoLink = '/docs/us/home'
+  }
 
   return (
     <nav
