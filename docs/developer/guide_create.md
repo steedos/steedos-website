@@ -21,18 +21,7 @@ yarn
 
 项目创建后，您的项目文件夹内容如下：
 
-```bash
-my-app/
-  README.md
-  node_modules/
-  package.json
-  src/
-    accounts.object.yml
-    contacts.object.yml
-    crm.app.yml
-  server.js
-  steedos-config.yml
-```
+![文件夹结构图](https://github.com/steedos/steedos-website/blob/master/website/static/assets/文件夹结构.png)
 
 其中
 
