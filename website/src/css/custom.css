@@ -75,11 +75,5 @@ footer {
   z-index: 2;
 }
 
-@media screen and (min-width: 997px) {
-  .navbar {
-    padding: 0 30px;
-  }
-}
-
 @import './salesforce-lightning-design-system.css';
 @import './salesforce-customize.css';
