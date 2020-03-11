@@ -21,7 +21,7 @@ yarn
 
 项目创建后，您的项目文件夹内容如下：
 
-![文件夹结构图](https://github.com/steedos/steedos-website/blob/master/website/static/assets/文件夹结构.png)
+![文件夹结构图](/assets/文件夹结构1.png)
 
 其中
 
