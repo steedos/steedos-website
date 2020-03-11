@@ -9,12 +9,12 @@ background: /img/banner/service-overview-lg.png
 
 出差申请、差旅报销、请假销假、物品采购、付款申请、固定资产报废、会议室预约、客服投诉、工作报告......等均可通过审批王处理。
 
-<a class="button button--primary" href="http://oss.steedos.com/videos/case/%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E8%AF%B7%E5%81%87%E6%B5%81%E7%A8%8B.mp4" target="_blank">
-查看视频演示
+<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="http://oss.steedos.com/videos/case/%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E8%AF%B7%E5%81%87%E6%B5%81%E7%A8%8B.mp4" target="_blank">
+视频演示
 </a>
-&nbsp;&nbsp;
-<a class="button button--primary" href="../workflow/download" target="_blank">
-下载客户端
+
+<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="http://cn.steedos.com" target="_blank">
+注册试用
 </a>
 
 ![审批王](/assets/products/workflow.png)
