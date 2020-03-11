@@ -8,19 +8,18 @@ Steedos 的神奇之处正在于此，你只需要修改业务对象配置文件
 
 如果你不需要相关的业务对象，直接删除即可。
 
-## accounts.object.yml
+## 创建 业务伙伴  object
 
-```yaml
+在src项目源码中创建一个名为accounts.object.yml文件，
+开头配置以下内容：
+```bash
 name: accounts
-label: 单位
-icon: account
-enable_files: true
-enable_search: true
-enable_tasks: true
-enable_notes: false
-enable_api: true
-enable_share: true
-enable_chatter: true
+lable: 业务伙伴
+icon: accounts
+```
+## 添加字段：名称、电话、邮箱...
+配置相关字段:
+```bash
 fields:
   name:
     label: 名称
@@ -36,13 +35,6 @@ fields:
     label: 统一社会信用代码
     inlineHelpText: '系统按照此字段校验重复，避免重复录入单位信息。'
     required: true
-  owner:
-    label: 责任人
-    omit: false
-    readonly: false
-    hidden: false
-    type: lookup
-    reference_to: users
   priority:
     label: 优先级
     type: select
@@ -74,44 +66,47 @@ fields:
     type: textarea
     is_wide: true
     name: description
+ ```
+
+## 设置视图：所有业务伙伴
+```bash
 list_views:
   all:
-    label: 所有单位
+    label: 所有业务伙伴
     columns:
       - name
       - priority
       - owner
       - modified
     filter_scope: space
-  recent:
-    label: 最近查看
-    columns:
-      - name
-      - priority
-      - owner
-      - modified
-    filter_scope: space
-  mine:
-    label: 我的单位
-    columns:
-      - name
-      - priority
-      - owner
-      - modified
-    filter_scope: mine
-permission_set:
-  user:
-    allowCreate: false
-    allowDelete: false
-    allowEdit: false
-    allowRead: true
-    modifyAllRecords: false
-    viewAllRecords: false
-  admin:
-    allowCreate: true
-    allowDelete: true
-    allowEdit: true
-    allowRead: true
-    modifyAllRecords: true
-    viewAllRecords: true
 ```
+
+## 定义权限：所有人都能增删改
+```bash
+permission_set:
+	user:
+		allowCreate: true
+		allowDelete: true
+		allowEdit: true
+		allowRead: true
+		modifyAllRecords: true
+		viewAllRecords: true
+```
+
+## 在 app中配置新创建的业务对象
+
+修改src下的oa.app.yml,增加：业务伙伴 accounts
+```bash
+objects: 
+  - instances
+  - accounts
+  - cms_posts
+  - announcements
+  - space_users
+  - tasks
+  - events
+```
+
+## 运行并查看效果
+
+![业务伙伴](/website/static/assets/guide_3.png)

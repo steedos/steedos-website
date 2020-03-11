@@ -14,9 +14,7 @@
     "使用技巧": ["help/workflow/faq"]
   },
   "开发": {
-    "系统简介": ["developer/index"],   
-    "安装开发环境": [ "developer/guide", "developer/mac","developer/linux"],  
-    "快速向导": ["developer/guide_create", "developer/guide_object", "developer/guide_app", "developer/guide_run"],
+    "快速向导": ["developer/home","developer/install","developer/guide_create", "developer/guide_object","developer/relationship", "developer/guide_app", "developer/guide_run"],
     "配置": ["datasource", "object", "object_field", "listview", "object_permission", "app", "reports", "steedos_config"],
     "高级": ["object_trigger", "object_action", "object_form", "object_filter_conditions", "object_field_formula", "standard_objects", "object_workflow", "report_jsreport"],
     "ObjectQL": ["developer/objectql_connection", "developer/objectql_datasource", "developer/objectql_object"],
