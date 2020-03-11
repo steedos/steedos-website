@@ -106,26 +106,15 @@ module.exports = {
         src: 'img/icon_blue.png',
       },
       links: [
-        {to: 'docs/workflow/home', label: '审批', position: 'left'},
-        {to: 'docs/solutions/contract', label: '合同', position: 'left'},
-        {to: 'docs/platform/home', label: '开发', position: 'left'},
-        {to: 'docs/help/home', label: '帮助', position: 'left'},
-        //   items: [
-        //     {to: 'docs/workflow/help/guide_sign', label: '审批王'},
-        //     {to: 'docs/developer/index', label: '开发文档'},
-        //    {to: 'docs/platform/index', label: '应用手册'},
-        //    {to: 'docs/api/index', label: 'API'}
-        //   ]
-        // },
-        // {to: 'docs/pricing/index', label: '报价', position: 'left'},
-        // {to: 'blog', label: '动态', position: 'left'},
-        // {
-        //   label: '社区',
-        //   position: 'left',
-        //   href: 'https://messenger.steedos.cn/',
-        // },
-        // {search: true},
+        {to: 'docs/workflow/home', label: '审批', position: 'left', activeBasePath: 'docs/workflow/'},
+        {to: 'docs/solutions/contract', label: '合同', position: 'left', activeBasePath: 'docs/solutions/contract'},
+        {to: 'docs/platform/home', label: '开发', position: 'left', activeBasePath: 'docs/platform'},
+        {to: 'docs/help/home', label: '帮助', position: 'left', activeBasePath: 'docs/help'},
         {label: '登录', position: 'right', href: 'https://cn.steedos.com'},
+      ],
+      links_us: [
+        {to: 'docs/us/home', label: 'Workflow', position: 'left'},
+        {label: 'Login', position: 'right', href: 'https://us.steedos.com'},
       ],
     },
     footer: {
