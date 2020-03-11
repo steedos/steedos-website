@@ -32,6 +32,10 @@ background: /img/banner/clouds-large-desktop.png
 视频演示
 </a>
 
+<p></p>
+
+![纸质表单](/assets/workflow/paper_mac.png)
+
 ## 在线编辑Office文档
 
 对于Office类型的附件，无需下载上传，点击文件名即可在线编辑，编辑完成之后自动上传并生成新版本。
