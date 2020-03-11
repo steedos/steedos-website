@@ -7,15 +7,23 @@
 
 import React from 'react';
 import {Redirect} from '@docusaurus/router';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 
 function Home() {
 
-  var userLang = navigator.language || navigator.userLanguage; 
-  if (userLang == 'zh-CN')
+  const context  = useDocusaurusContext();
+
+  if (context.isClient) {
+    var userLang = navigator.language || navigator.userLanguage; 
+    if (userLang == 'zh-CN')
+      return <Redirect to="/cn/" />;
+    else
+      return <Redirect to="/us/" />;
+  } else {
     return <Redirect to="/cn/" />;
-  else
-    return <Redirect to="/us/" />;
+  }
+
 
 }
 
