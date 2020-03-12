@@ -30,6 +30,10 @@
     }
   }
   
+  h1 {
+    font-weight: 400;
+  }
+  
   html[data-theme='dark'] {
     --ifm-color-feedback-background: #f0f8ff;
   }
