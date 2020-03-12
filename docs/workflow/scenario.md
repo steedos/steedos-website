@@ -173,14 +173,10 @@ hide_table_of_contents: false
             <h3>客户服务</h3>
             </div>
             <div class="card__body">
+                <p>客户意见管理</p>
                 <p>客户投诉管理</p>
                 <p>客户技术支持管理</p>
                 <p>客户服务质量跟踪管理</p>
-            </div>
-            <div class="card__footer">
-            <a class="button button--secondary button--block" href="./cases">
-                    了解更多
-                </a>
             </div>
         </div>
     </div>
