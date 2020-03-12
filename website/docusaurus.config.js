@@ -114,6 +114,9 @@ module.exports = {
       ],
       links_us: [
         {to: 'docs/us/home', label: 'Workflow', position: 'left'},
+        {to: 'docs/us/training', label: 'Tutorial', position: 'left'},
+        {to: 'docs/us/price', label: 'Pricing', position: 'left'},
+        {to: 'docs/us/download', label: 'Downloads', position: 'left'},
         {to: '/cn/', label: '中国区域', position: 'right'},
         {to: 'docs/us/login', label: 'US Region', position: 'right'}
       ],
