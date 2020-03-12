@@ -17,6 +17,13 @@
     "系统设置": ["help/admin_positions" , "help/admin_form", "help/admin_flow", "help/organization", "help/permission_set", "help/permission_share"],
     "使用技巧": ["help/workflow/faq"]
   },
+  "开发": {
+    "快速向导": ["developer/home","developer/install","developer/guide_create", "developer/guide_object","developer/guide_relationship", "developer/guide_app", "developer/guide_run"],
+    "配置": ["datasource", "object", "object_field", "listview", "object_permission", "app", "reports", "steedos_config"],
+    "高级": ["object_trigger", "object_action", "object_form", "object_filter_conditions", "object_field_formula", "standard_objects", "object_workflow", "report_jsreport"],
+    "ObjectQL": ["developer/objectql_connection", "developer/objectql_datasource", "developer/objectql_object"],
+    "插件": ["plugins/index", "plugins/plugin_server", "plugins/plugin_webapp", "plugins/plugin_config"]
+  },  
   "API": {    
     "应用集成": ["api/index"],
     "OData": ["api/odata", "api/odata_auth", "api/odata_query", "api/odata_get", "api/odata_add", "api/odata_edit", "api/odata_delete", "api/odata_functions", "api/odata_metadata"],
