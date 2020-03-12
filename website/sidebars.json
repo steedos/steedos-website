@@ -5,9 +5,8 @@
   "开发平台": {
     "华炎开发平台": ["platform/home", "platform/features", "platform/pricing"],
     "快速向导": ["developer/home","developer/install","developer/guide_create", "developer/guide_object","developer/guide_relationship", "developer/guide_app", "developer/guide_run"],
-    "配置": ["datasource", "object", "object_field", "listview", "object_permission", "app", "reports", "steedos_config"],
-    "高级": ["object_trigger", "object_action", "object_form", "object_filter_conditions", "object_field_formula", "standard_objects", "object_workflow", "report_jsreport"],
-    "ObjectQL": ["developer/objectql_connection", "developer/objectql_datasource", "developer/objectql_object"],
+    "配置": ["steedos_config", "datasource", "object", "object_field", "listview", "object_permission", "app", "reports", "object_filter_conditions", "object_field_formula", "standard_objects", "object_workflow"],
+    "开发": ["object_trigger", "object_action", "object_form", "developer/objectql_connection", "developer/objectql_object", "report_jsreport"],
     "插件": ["plugins/index", "plugins/plugin_server", "plugins/plugin_webapp", "plugins/plugin_config"],
     "应用案例": ["solutions/contract"]
   },
