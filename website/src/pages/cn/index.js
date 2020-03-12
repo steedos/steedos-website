@@ -67,7 +67,7 @@ function Home() {
       description={siteConfig.tagline}
     >
       <header className={classnames('', styles.heroBanner)}>
-        <div class="slds-p-top_xx-large"></div>
+        <div class="slds-p-top_x-large"></div>
         <div className="container">
           <h1 className="">{siteConfig.title}</h1>
           <p className="">{siteConfig.tagline}</p>
@@ -111,6 +111,7 @@ function Home() {
               </a>
             </footer>
           </article>
+          <div class="slds-p-top_x-large"></div>
         </div>
         
       </header>

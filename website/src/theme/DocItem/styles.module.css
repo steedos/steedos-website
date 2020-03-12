@@ -23,6 +23,7 @@
 @media only screen and (max-width: 996px) {
   .docItemWrapper {
     padding-left: 0;
+    background-size: auto;
   }
   .docTitle {
     /* font-size: 2rem; */
