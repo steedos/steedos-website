@@ -66,7 +66,8 @@ function Home() {
       title={siteConfig.title}
       description={siteConfig.tagline}
     >
-      <header className={classnames('slds-p-around_x-large', styles.heroBanner)}>
+      <header className={classnames('', styles.heroBanner)}>
+        <div class="slds-p-top_xx-large"></div>
         <div className="container">
           <h1 className="">{siteConfig.title}</h1>
           <p className="">{siteConfig.tagline}</p>
