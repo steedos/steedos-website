@@ -21,14 +21,15 @@ function Home() {
 
   return (
     <Layout
-      title={siteConfig.title}
+      title="OA移动办公平台, 办公自动化系统"
+      keywords={['OA, 华炎, 办公协同, 企业安全, 移动办公, 移动办公解决方案, 移动办公平台, 移动办公软件, 移动办公系统, 移动审批, 云办公平台, 手机办公, 手机审批']}
       description={siteConfig.tagline}
     >
       <header className={classnames('', styles.heroBanner)}>
         <div class="slds-p-top_x-large"></div>
         <div className="container">
-          <h1 className="">{siteConfig.title}</h1>
-          <p className="">{siteConfig.tagline}</p>
+          <h1 className="">欢迎使用华炎云</h1>
+          <p className="">作为一家创新型公司，我们开发了全球广受好评的移动办公平台，企业员工可以通过互联网访问华炎云平台，无需购买、设置或管理任何基础架构，您只需登录即可开始开展审批、销售、采购、客户服务、人力资源等工作。</p>
           <a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="http://oss.steedos.com/videos/case/%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E8%AF%B7%E5%81%87%E6%B5%81%E7%A8%8B.mp4" target="_blank">
           视频演示
           </a>

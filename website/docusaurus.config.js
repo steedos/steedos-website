@@ -1,8 +1,8 @@
 // docusaurus.config.js
 module.exports = {
 
-  title: '欢迎使用华炎云', // Title for your website.
-  tagline: '作为一家创新型公司，我们开发了全球广受好评的移动办公平台，企业员工完全可以通过互联网访问华炎云平台。无需购买、设置或管理任何基础架构，您只需登录即可开始开展审批、销售、采购、客户服务、人力资源等工作。',
+  title: '华炎云', // Title for your website.
+  tagline: '华炎云是真正的一站式企业沟通与协作平台，整合审批、销售、采购、客户服务等功能于一体，打造高效的办公方式，加速企业成长。',
   url: 'https://www.steedos.com/', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -134,7 +134,7 @@ module.exports = {
               to: 'docs/workflow/home',
             },
             {
-              label: '华炎开发平台',
+              label: '开发平台',
               to: 'docs/platform/home',
             },
             {
