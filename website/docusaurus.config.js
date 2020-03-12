@@ -113,7 +113,7 @@ module.exports = {
         {label: '登录', position: 'right', href: 'https://cn.steedos.com'},
       ],
       links_us: [
-        {to: 'docs/us/home', label: 'Workflow', position: 'left'},
+        {to: 'docs/us/home', label: 'Features', position: 'left'},
         {to: 'docs/us/training', label: 'Tutorial', position: 'left'},
         {to: 'docs/us/price', label: 'Pricing', position: 'left'},
         {to: 'docs/us/download', label: 'Downloads', position: 'left'},
