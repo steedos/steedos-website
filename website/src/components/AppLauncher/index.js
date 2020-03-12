@@ -11,7 +11,7 @@ class SteedosAppLauncher extends React.Component {
 
 		return (
 						<div className="slds-app-launcher-container">
-							<AppLauncherExpandableSection title="华炎应用" nonCollapsible={true}>
+							<AppLauncherExpandableSection title="应用程序" nonCollapsible={true}>
 								{/* <AppLauncherTile
 									description="SAAS 云端企业管理软件"
 									title="华炎云"
