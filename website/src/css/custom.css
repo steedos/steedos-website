@@ -26,6 +26,12 @@
   
   @media screen and (max-width: 996px) {
     :root {
+      --ifm-h1-font-size: 2.0rem;
+      --ifm-h2-font-size: 1.5rem;
+      --ifm-h3-font-size: 1.25rem;
+      --ifm-h4-font-size: 1.1rem;
+      --ifm-h5-font-size: 1rem;
+      --ifm-h6-font-size: 1rem;
       --ifm-font-size-base: 17px;
     }
   }
@@ -33,7 +39,7 @@
   h1 {
     font-weight: 400;
   }
-  
+
   html[data-theme='dark'] {
     --ifm-color-feedback-background: #f0f8ff;
   }
