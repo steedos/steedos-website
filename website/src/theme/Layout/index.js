@@ -43,7 +43,7 @@ function Layout(props) {
   const faviconUrl = useBaseUrl(favicon);
 
   return (
-    <IconSettings iconPath="/assets/sfds/icons">
+    <IconSettings iconPath="/assets/icons">
 
     <ThemeProvider>
       <Head>
