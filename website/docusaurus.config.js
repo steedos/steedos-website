@@ -1,8 +1,8 @@
 // docusaurus.config.js
 module.exports = {
 
-  title: '随需定制的移动办公解决方案', // Title for your website.
-  tagline: '华炎办公平台，创新的使用配置文件描述业务模型和业务功能，开发人员只需要修改配置文件就可以满足个性化需求，并极速部署到电脑、安卓、苹果三个平台。',
+  title: '欢迎使用华炎云', // Title for your website.
+  tagline: '作为一家创新型公司，我们开发了全球广受好评的移动办公平台，企业员工完全可以通过互联网访问华炎云平台。无需购买、设置或管理任何基础架构，您只需登录即可开始开展审批、销售、采购、客户服务、人力资源等工作。',
   url: 'https://www.steedos.com/', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -100,7 +100,7 @@ module.exports = {
     disableDarkMode: true,
     navbar: {
       hideOnScroll: false,
-      title: '华炎办公',
+      title: '华炎云',
       logo: {
         alt: '华炎',
         src: 'img/icon_blue.png',
@@ -109,7 +109,7 @@ module.exports = {
         {to: 'docs/workflow/home', label: '审批', position: 'left', activeBasePath: 'docs/workflow/'},
         {to: 'docs/solutions/contract', label: '合同', position: 'left', activeBasePath: 'docs/solutions/contract'},
         {to: 'docs/platform/home', label: '开发', position: 'left', activeBasePath: 'docs/platform'},
-        {to: 'docs/help/home', label: '帮助', position: 'left', activeBasePath: 'docs/help'},
+        {to: 'docs/help/home', label: '帮助', position: 'right', activeBasePath: 'docs/help'},
         {label: '登录', position: 'right', href: 'https://cn.steedos.com'},
       ],
       links_us: [

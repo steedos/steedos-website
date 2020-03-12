@@ -1,12 +1,12 @@
 ---
-title: 华炎办公概览
+title: 什么是华炎云？
 sidebar_label: 概览
 hide_table_of_contents: true
 ---
 
 import { Icon } from '@salesforce/design-system-react';
 
-华炎云是华炎办公平台的云端版本，你无需部署本地服务器，即可快速建立三大管理价值，包括流程管理( Workflow Management )、知识管理 ( Knowledge Management )、协同门户（ Collaboration Portal ），结合各式可持续扩展的功能模块，构建完整的企业协同管理平台。
+华炎云是云端的移动办公软件，你无需部署本地服务器，即可快速建立三大管理价值，包括流程管理( Workflow Management )、知识管理 ( Knowledge Management )、协同门户（ Collaboration Portal ），结合各式可持续扩展的功能模块，构建完整的企业协同管理平台。
 
 <a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="http://oss.steedos.com/videos/case/%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E8%AF%B7%E5%81%87%E6%B5%81%E7%A8%8B.mp4" target="_blank">
 视频演示

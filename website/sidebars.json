@@ -11,7 +11,7 @@
     "应用案例": ["solutions/contract"]
   },
   "帮助": {
-    "华炎办公": ["help/home"],
+    "华炎云": ["help/home"],
     "业务台账": ["help/record_list", "help/record_view", "help/record_report", "help/notifications"],
     "业务审批": ["help/instance_add", "help/instance_approve", "help/instance_carboncopy", "help/instance_distribute", "help/instance_forward", "help/instance_print", "help/instance_search", "help/instance_monitor", "help/instance_export" ],
     "系统设置": ["help/organization", "help/permission_set", "help/admin_positions" , "help/admin_form", "help/admin_flow", "help/permission_share"],
