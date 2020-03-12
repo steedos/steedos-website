@@ -278,4 +278,4 @@ mobile_objects:
 
 ## 重启服务运行并查看效果
 
-![合同应用](/website/static/assets/guide_4.png)
+![合同应用](/assets/guide_4.png)

@@ -4,7 +4,7 @@ title: 创建项目
 
 ## 创建Steedos项目
 
-创建Steedos项目前，请[安装开发环境](https://developer.steedos.com/docs/developer/guide)
+创建Steedos项目前，请[安装开发环境](https://developer.steedos.com/docs/developer/install)
 
 创建一个名为test的空项目
 
@@ -50,7 +50,7 @@ yarn start
 
 ![PC界面展示](/assets/主页面.png)
 
-![移动端界面展示](/website/static/assets/guide_2.png)
+![移动端界面展示](/assets/guide_2.png)
 
 
 

@@ -109,4 +109,4 @@ objects:
 
 ## 运行并查看效果
 
-![业务伙伴](/website/static/assets/guide_3.png)
+![业务伙伴](/assets/guide_3.png)
