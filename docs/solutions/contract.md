@@ -4,7 +4,7 @@ title: 合同管理
 
 华炎合同管理系统，是国内首款全周期、全功能的企业级合同管理系统，涵盖合同订立、执行、跟踪、变更、验收、付款、监督、统计的整个管理过程，并打通了合同管理系统与财务管理系统的数据与流程联动，实现企业合同的全闭环、自动化、一体化管理。
 
-<p><a class="button button--primary" href="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts-demo.mp4" target="_blank">
+<p><a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts-demo.mp4" target="_blank">
 视频演示
 </a></p>
 

@@ -10,7 +10,7 @@ class SteedosAppLauncher extends React.Component {
 		const headerButton = <Button label="App Exchange" />;
 
 		return (
-						<div class="slds-app-launcher-container">
+						<div className="slds-app-launcher-container">
 							<AppLauncherExpandableSection title="华炎应用" nonCollapsible={true}>
 								{/* <AppLauncherTile
 									description="SAAS 云端企业管理软件"
@@ -28,7 +28,6 @@ class SteedosAppLauncher extends React.Component {
 									title="审批王"
 									href="/docs/workflow/home"
 									iconNode={<Icon
-										assistiveText=""
 										category="standard"
 										name="lead_list"
 										size="large"
@@ -39,7 +38,6 @@ class SteedosAppLauncher extends React.Component {
 									title="合同管理"
 									href="/docs/solutions/contract"
 									iconNode={<Icon
-										assistiveText=""
 										category="standard"
 										name="contract_line_item"
 										size="large"
@@ -50,7 +48,6 @@ class SteedosAppLauncher extends React.Component {
 									title="即时通讯"
 									href="/docs/products/messenger"
 									iconNode={<Icon
-										assistiveText=""
 										category="standard"
 										name="messaging_conversation"
 										size="large"
@@ -61,7 +58,6 @@ class SteedosAppLauncher extends React.Component {
 									title="开发平台"
 									href="/docs/platform/home"
 									iconNode={<Icon
-										assistiveText=""
 										category="standard"
 										name="system_and_global_variable"
 										size="large"

@@ -70,7 +70,7 @@ function Layout(props) {
         {permalink && <meta property="og:url" content={siteUrl + permalink} />}
         <meta name="twitter:card" content="summary" />
       </Head>
-      <Navbar route={route}/>
+      <Navbar/>
       <div className="main-wrapper">{children}</div>
       {!noFooter && <Footer />}
     </ThemeProvider>
