@@ -66,7 +66,7 @@ function Home() {
       title={siteConfig.title}
       description={siteConfig.tagline}
     >
-      <header className={classnames('slds-p-around_large', styles.heroBanner)}>
+      <header className={classnames('slds-p-around_x-large', styles.heroBanner)}>
         <div className="container">
           <h1 className="">{siteConfig.title}</h1>
           <p className="">{siteConfig.tagline}</p>
@@ -78,8 +78,7 @@ function Home() {
           注册试用
           </a>
 
-          <div class="slds-p-top_large"></div>
-          <div class="slds-p-top_large"></div>
+          <div class="slds-p-top_xx-large"></div>
           <article class="slds-card">
             <div class="slds-card__header slds-grid">
               <header class="slds-media slds-media_center slds-has-flexi-truncate">

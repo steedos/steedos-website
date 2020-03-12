@@ -16,12 +16,12 @@
     --ifm-color-feedback-background: #fff;
     --ifm-contents-border-color: rgba(255, 255, 255, 0.3);
     --ifm-h1-font-size: 2.5rem;
-    --ifm-h2-font-size: 2rem;
+    --ifm-h2-font-size: 1.75rem;
     --ifm-h3-font-size: 1.5rem;
-    --ifm-h4-font-size: 1rem;
-    --ifm-h5-font-size: 0.875rem;
-    --ifm-h6-font-size: 0.85rem;
-    --ifm-font-size-base: 19px;
+    --ifm-h4-font-size: 1.25rem;
+    --ifm-h5-font-size: 1rem;
+    --ifm-h6-font-size: 1rem;
+    --ifm-font-size-base: 17px;
   }
   
   @media screen and (max-width: 996px) {
