@@ -1,14 +1,14 @@
 ---
-title: 低代码，极速构建企业应用
+title: 构建自定义应用程序并扩展华炎云，以满足任何业务需求。
 sidebar_label: 概览
 hide_table_of_contents: true
 background: /img/banner/clouds-large-desktop.png
 ---
 
-华炎开发平台，创新的使用配置文件描述业务模型和业务功能，开发人员只需要编写简单的配置文件就可以构建企业级应用程序，并极速部署到电脑、安卓、苹果三个平台。
+华炎云开发平台，创新的使用配置文件描述业务模型和业务功能，开发人员只需要编写简单的配置文件就可以构建自定义应用程序，并部署到电脑、平板、手机三个平台。
 
-<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/docs/developer/home">
-开发指南
+<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/docs/developer/home" >
+免费教程
 </a>
 
 ![界面展示](/assets/mac_ipad_iphone_list.png)

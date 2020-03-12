@@ -4,14 +4,14 @@
   },
   "开发平台": {
     "华炎开发平台": ["platform/home", "platform/features", "platform/pricing"],
-    "快速向导": ["developer/home","developer/install","developer/guide_create", "developer/guide_object","developer/guide_relationship", "developer/guide_app", "developer/guide_run"],
+    "培训教程": ["developer/home","developer/install","developer/guide_create", "developer/guide_object","developer/guide_relationship"],
     "配置": ["steedos_config", "datasource", "object", "object_field", "listview", "object_permission", "app", "reports", "object_filter_conditions", "object_field_formula", "standard_objects", "object_workflow"],
     "开发": ["object_trigger", "object_action", "object_form", "developer/objectql_connection", "developer/objectql_object", "report_jsreport"],
     "插件": ["plugins/index", "plugins/plugin_server", "plugins/plugin_webapp", "plugins/plugin_config"],
     "应用案例": ["solutions/contract"]
   },
   "帮助": {
-    "华炎办公": ["help/home"],
+    "华炎云": ["help/home"],
     "业务台账": ["help/record_list", "help/record_view", "help/record_report", "help/notifications"],
     "业务审批": ["help/instance_add", "help/instance_approve", "help/instance_carboncopy", "help/instance_distribute", "help/instance_forward", "help/instance_print", "help/instance_search", "help/instance_monitor", "help/instance_export" ],
     "系统设置": ["help/organization", "help/permission_set", "help/admin_positions" , "help/admin_form", "help/admin_flow", "help/permission_share"],
