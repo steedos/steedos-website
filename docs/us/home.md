@@ -4,6 +4,12 @@ title: Steedos Workflow
 
 Steedos Workflow is a cloud platform makes it super easy to turn your business processes into engaging, responsive, social software applications.
 
+<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="http://oss.steedos.com/videos/SteedOS_Guide_en_US.mp4" target="_blank">
+视频演示
+</a>
+
+<p></p>
+
 ![Steedos Workflow](/assets/us/home.png)
 
 Steedos Workflow makes it easy to automate your business processes and workflows. Draw a flow diagram, click a button, and your business process comes to life as an application. What’s more, your workflows run across all your devices, they’re real-time and social.
