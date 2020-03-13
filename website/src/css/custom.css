@@ -5,6 +5,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+
+ @import './salesforce-lightning-design-system.css';
+ @import './salesforce-customize.css';
+ 
  :root {
     /* --ifm-color-primary: #25c2a0;
     --ifm-color-primary-dark: rgb(33, 175, 144);
@@ -83,5 +87,7 @@
   min-height: 60px;
 }
 
-@import './salesforce-lightning-design-system.css';
-@import './salesforce-customize.css';
+.markdown table {
+  width: fit-content;
+  background: white;
+}
