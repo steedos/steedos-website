@@ -7,7 +7,7 @@ Here comes to space user settings.
 
 In the pop-up interface, you can do more settings.
 
-![](static/assets/us/workflow/user.png)
+![](/assets/us/workflow/user.png)
 #### Add a new user
 - Click the “Invite Users” button.
 - Enter user’s name, email address, parent organizations and manager.

@@ -1,6 +1,6 @@
 ## Attachments management
 Users can upload, download, delete attachments or preview attachments when they initiate or approve requests.
-![](static/assets/us/workflow/attachment1.png)
+![](/assets/us/workflow/attachment1.png)
 
 #### Upload attachments
 - Click the paper clip icon at the top of this form, and select a file path. Thus, you can upload one or more attachments
@@ -22,6 +22,6 @@ Users can upload, download, delete attachments or preview attachments when they 
 New attachments should be uploaded once previous attachments have been modified in approval process. Detailed steps are listed below.
 - Click “Versions” next to the displayed attachment name.
 - Click the “+” button to upload modified attachments in the new pop-up window.
-![](static/assets/us/workflow/attachment2.png)
+![](/assets/us/workflow/attachment2.png)
 - The latest versions of attachments will be displayed by default.
 - Click the magnifying glass icon behind the attachment name to preview the attachment.

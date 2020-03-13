@@ -7,7 +7,7 @@ Admins can regularly export finished requests of the same flow to excels based o
 - Click the funnel-shaped icon to search for forms according to flow categories.
 - Click the icon next to the “U”-shaped icon to export forms based on time horizons. “Last Month”, “This Month”, “This Year” or “All” can be selected.
 
-![](static/assets/us/workflow/excel1.png)
+![](/assets/us/workflow/excel1.png)
 #### Notice:
 - Admins cannot export forms in Standard versi on.
 - All fields in forms are visible in exported excels.

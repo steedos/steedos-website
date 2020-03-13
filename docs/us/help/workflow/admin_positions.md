@@ -1,9 +1,9 @@
 ### Flow Positions
 The administrator needs to set "Flow Positions" and "Positions Users" when designing the approval process. Because the option in the "Role Name" is the "Flow Positions" set by the administrator when the "handler" type of a processing step of the approval process is the "Role of initiator"; <br/>
 For example, when "Department Manager", "Chief" is created in "Flow Positions", the "Role manager" option in the approval process includes "Department Manager", "Chief".
- ![](static/assets/us/workflow/positions1.png)
+ ![](/assets/us/workflow/positions1.png)
  
- ![](static/assets/us/workflow/positions2.png)
+ ![](/assets/us/workflow/positions2.png)
  Note: For the design of the approval process, please refer to the "flow_design" help documentation.
  
 #### Detailed steps for Flow Positions:
@@ -14,13 +14,13 @@ For example, when "Department Manager", "Chief" is created in "Flow Positions", 
 ### Positions Users
 "Positions Users" is similar to the position of an employee in a real job. Assuming "Position" is "department manager", "Positions Users" correspond to the department manager of the specific department, such as the "department manager" of the personnel department, the "department manager of the finance department", the "department manager" of the technical department.
 
-![](static/assets/us/workflow/positions3.png)
+![](/assets/us/workflow/positions3.png)
 - in the figure you can see that each "Department Manager" position, the corresponding "jurisdiction" is the specific sector (such as: Technology, Finance, Ministry of Personnel), and "Positions Users" is appointed department manager The
 - Note: The appointed department manager can also be multiplier.
  
 #### Detailed steps for Positions Users:
 - set the interface, click on "workflow", click "Positions Users", then click the new, will pop up "Positions Users" pop-up box.
- ![](static/assets/us/workflow/positions4.png)
+ ![](/assets/us/workflow/positions4.png)
 - Select an established approval position, such as "Department Manager", specify the post member (which can be multiple people), jurisdiction.
 - Click the "Create" button to complete.
 - In the post list page, click on the post name on the right side of the "pen shape" button, "×" button, you can edit the job, modify.

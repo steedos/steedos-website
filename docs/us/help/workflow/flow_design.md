@@ -12,7 +12,7 @@ We set “Daily Reimbursement” as an example to demonstrate the flow design pr
   - Flow name and flow description can be modified in “Flow Info”.
   - Click “Draw” to add different nodes, including “Approve Request”, “CounterSign”, “Provide Input”, “Condition”. Here is a brief introduction for different nodes.
   
-![](static/assets/us/workflow/17.png)
+![](/assets/us/workflow/17.png)
 
     - **Approve Request**: Approvers must select “Approve” or “Reject”.
     - **CounterSign**: In the node, several users can approve applications. Then applications flow to next step automatically according to system conditions.

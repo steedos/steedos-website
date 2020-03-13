@@ -5,7 +5,7 @@ Initiators can cancel the requests for further modification by clicking the canc
 - Click “In Progress” after entering “Workflow”.
 - Select the form expected to be cancelled.
 - Click the upper right corner of the instance button, "Cancel Request" will appear.
-![](static/assets/us/workflow/cancel.png)
+![](/assets/us/workflow/cancel.png)
 - Input reasons for cancelling the application in the pop-up interface.
 - Click “OK”.
 

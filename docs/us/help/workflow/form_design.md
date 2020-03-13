@@ -11,7 +11,7 @@ The following steps illustrate how to design a “Reimbursement” form.
   - Click on “Add Fields” in “Form” page. Then select “Text” under “Input” and move it to appropriate place in the left region of the page.
   - Then select the previous “Text”. Click on “Properties” and all properties of the “Text” will be displayed. You can modify the properties if necessary. For instance, in the “Reimbursement” form, we modify field name from “Text” to “Organization”. What’s more, you can input “(applicant.organization.fullname)” in the formula box. After that, the system will find the organization automatically once an applicant submits a request. You can refer to “[Field Formula](form_formula.md)” for more details.
   
-![](static/assets/us/workflow/14.png)
+![](/assets/us/workflow/14.png)
   - Then we should add more detailed information to the “Reimbursement” form. So we add a “Table” field. The adding method is the same as adding a “Text” field.
   - Next, we can modify the properties of “table” field. All properties of the “Table” will be displayed after clicking on “Properties”. For instance, we can modify the field name from “Table” to “Expense Reports”. Input “please enter the actual use of all invoices” in description box.
 - Then we can add “Expense Category”, “Amount”, “Date” and “Total Amounts” in the “Expense Report”.

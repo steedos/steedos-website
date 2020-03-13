@@ -8,7 +8,7 @@ The flows can be classified into several categories for better management. As a 
 - Click on “Add Category” and then enter the category name in the pop-up window. 
 - Click “OK”.
 
-![](static/assets/us/workflow/13.png)
+![](/assets/us/workflow/13.png)
 
 After categories having been added, you can add workflow belonging to a specific category.
 

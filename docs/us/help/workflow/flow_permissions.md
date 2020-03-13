@@ -17,7 +17,7 @@ Here are the two methods to set flow permissions.
 - Click “Flow Info” => “Setting flow permissions”.
 - Select departments and users who can initiate this request in the pop-up window.
 
-![](static/assets/us/workflow/18.png)
+![](/assets/us/workflow/18.png)
 
 Then users selected and in selected departments can initiate this request in Steedos Workflow.
 
