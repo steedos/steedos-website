@@ -1,4 +1,6 @@
-## Formula of form name
+---
+title: Formula of form name
+---
 
 Each form submitted has a system name consisting of random name and serial number. We can use proper formulas to modify form names so that we can easily find specific forms.
 

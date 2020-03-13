@@ -1,4 +1,7 @@
-## Approve the requests
+---
+title: Approve the requests
+---
+
 You will receive notifications when the flow runs to your step if you are an approver in the flow. So you need to login Steeods and approve the requests. After that, the flow will go running according to system settings.
 
 #### Approval notifications

@@ -1,4 +1,6 @@
-## Export forms
+---
+title: Export forms
+---
 
 Admins can regularly export finished requests of the same flow to excels based on time horizons. As a result, admins can make a summary. The detailed steps on how to export forms are listed below.
 

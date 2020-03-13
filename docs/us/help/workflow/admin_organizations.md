@@ -1,4 +1,6 @@
-## Organization settings
+---
+title: Organization settings
+---
 
 In Steedos Workflow，space admins should finish settings previously, including organization settings, user settings and flow role settings. Here comes to organization settings.
 

@@ -1,4 +1,6 @@
-## How to design a flow
+---
+title: How to design a flow
+---
 
 Admins need to design the flow after having finished form designs.
 In Steedos Workflow, a node represents a step , and all nodes are connected with straight lines. A node can concatenate one or more nodes according to following approval process. The flowing nodes can be decided by assigned by approver or by conditions automatically.

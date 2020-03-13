@@ -1,4 +1,6 @@
-## Search for forms
+---
+title: Search for forms
+---
 
 #### As an applicant
 After submitting a request, you can keep track of the approval progress by taking the steps as follows: 

@@ -1,4 +1,7 @@
-## Cancel the requests
+---
+title: Cancel the requests
+---
+
 
 Initiators can cancel the requests for further modification by clicking the cancel  button at the top of the page after having submitted it . Detailed steps are listed below.
 

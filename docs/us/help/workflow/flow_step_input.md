@@ -1,4 +1,6 @@
-## Input Node
+---
+title: Input Node
+---
 
 - The full information in a form should be input by the same user.
 - Users can enter comments, but cannot select “Approve” or “Reject”. 

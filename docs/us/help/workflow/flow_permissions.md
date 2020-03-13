@@ -1,4 +1,6 @@
-## Flow permissions
+---
+title: Flow permissions
+---
 
 ### Who can initiate requests?
 

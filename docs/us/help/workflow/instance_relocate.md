@@ -1,4 +1,6 @@
-## Relocate the requests
+---
+title: Relocate the requests
+---
 
 You could contact with flow administrators to relocate the requests and select corresponding approvers if necessary. Then the flow will continue to run after approval of others. The detailed steps are listed below.
 

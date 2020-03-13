@@ -1,4 +1,6 @@
-## Settings
+---
+title: Settings
+---
 
 Users are able to submit and approve various requests online once they have done the settings below.
 

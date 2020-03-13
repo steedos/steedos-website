@@ -1,4 +1,6 @@
-## Form tables
+---
+title: Form tables
+---
 
 We usually need to insert a table in a form in daily work. Such a table, which consists of several arrays, is similar to a list. As a result, initiators can input arrays of information when they fill in forms. For instance, “Expense Reports”in reimbursement is a table.
 

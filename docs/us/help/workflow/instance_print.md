@@ -1,4 +1,6 @@
-## Print the forms
+---
+title: Print the forms
+---
 
 In Steedos Workflow, users can print forms easily for archiving in the transition process from paper-based stage to paperless stage. Approval History and all contents are visible in printed forms. 
 

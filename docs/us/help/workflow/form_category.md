@@ -1,4 +1,6 @@
-## Form categories
+---
+title: Form categories
+---
 
 Here comes to form design and flow design after having finished organization and role settings.
 

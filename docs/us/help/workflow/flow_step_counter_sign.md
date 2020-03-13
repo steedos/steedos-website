@@ -1,4 +1,6 @@
-## Countersignature Node
+---
+title: Countersignature Node
+---
 
 - Two or more users can approve the requests at the node. They must select “Approve” or “Reject”.
 - Even though someone select to reject the request, it will flow to next step according to flow settings. Next step approver will take all countersignature opinions into consideration and select following step.

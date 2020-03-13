@@ -1,4 +1,7 @@
-## Attachments management
+---
+title: Attachments management
+---
+
 Users can upload, download, delete attachments or preview attachments when they initiate or approve requests.
 ![](/assets/us/workflow/attachment1.png)
 

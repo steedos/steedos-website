@@ -2,11 +2,8 @@
   "审批王": {
     "审批王": ["workflow/home", "workflow/features", "workflow/scenario", "workflow/cases", "workflow/price", "workflow/download"]
   },
-  "Features": {
-    "Features": ["us/home"],
-    "Tutorial": ["us/training"],
-    "Pricing": ["us/price"],
-    "Downloads": ["us/download"]
+  "Workflow": {
+    "Steedos Workflow": ["us/home", "us/training", "us/price", "us/download"]
   },
   "开发平台": {
     "华炎开发平台": ["platform/home", "platform/features", "platform/pricing"],

@@ -1,4 +1,7 @@
-## Retrieve
+---
+title: Retrieve
+---
+
 Retrieve is to get back the intance that has been submitted or approved to reprocess.
 
 There are two types of people that can retrieve an instance: one is the creator of instance, the other is the approver of intance.

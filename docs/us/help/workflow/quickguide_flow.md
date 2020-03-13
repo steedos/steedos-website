@@ -1,4 +1,6 @@
-## How to design a flow
+---
+title: How to design a form
+---
 
 Admins need to design forms previously. In other words, admins need to add kinds of fields such as ”input box” and “selection box” to the forms. 
 

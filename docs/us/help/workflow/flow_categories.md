@@ -1,4 +1,7 @@
-### Flow Categories
+---
+title: Flow Categories
+---
+
 Administrators can modify the name and sort number in the "Flow categories" so that the name and sort number in the pop-up box of "New Request" will change;<br/>
 ![](/assets/us/workflow/category1.png)
 

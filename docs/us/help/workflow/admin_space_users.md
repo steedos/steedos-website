@@ -1,4 +1,6 @@
-## User Settings
+---
+title: User Settings
+---
 
 Here comes to space user settings.
 - Enter the workspace.

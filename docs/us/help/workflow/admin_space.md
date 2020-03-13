@@ -1,4 +1,7 @@
-### Space settings
+---
+title: Space settings
+---
+
 Because the owner (for the company to open the king of the user) and the administrator of the work area of the different permissions, both on the work area settings are not the same, the owner of the largest authority.<br/>
 - In the "Admin" interface, click on "Spaces" under the "Space Info", you can view the work area Name, Owner and Admins (Note: the administrator can set multiple).
 - The owner can "Edit Space", "Creat Space".<br/>

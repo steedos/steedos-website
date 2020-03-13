@@ -1,4 +1,6 @@
-## Flow role and position settings
+---
+title: Flow role and position settings
+---
 
 Here comes to flow role and position settings, which will attribute to the flow design. For example, admins can create a role called organization manager, and then select several users to play the role. And they will automatically be the approver when initiators are in their organizations. As a result, it’s important to select a corresponding organization for a role.
 

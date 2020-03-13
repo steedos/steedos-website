@@ -1,4 +1,6 @@
-## Carbon Copy
+---
+title: Carbon Copy
+---
 
   Carbon copy refers to distributing instances of "Inbox" to others for viewing.Recipients can view this intance in "Inbox" and sign comments.This intance is approved by the distributor, continue to the next step. Even if the process has been completed and archived, the recipient can still view this intance.
  - In the "Inbox", select the instance of carbon copy, click on the top right corner of the instance button, carbon copy button will appear.

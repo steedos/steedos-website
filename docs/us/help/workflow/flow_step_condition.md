@@ -1,4 +1,6 @@
-## Condition node
+---
+title: Condition node
+---
 
 System can select next step automatically according to the condition in condition node.
 

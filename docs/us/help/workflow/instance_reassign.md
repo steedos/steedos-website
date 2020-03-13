@@ -1,4 +1,6 @@
-## How to reassign approvers
+---
+title: How to reassign approvers
+---
 
 Request initiators could contact with flow admins to reassign other approvers when the requests are still in one step for long time. Then the flow will continue to run after approval of others.
 Only space admins and flow admins have permissions to reassign approvers. The detailed steps are given below.

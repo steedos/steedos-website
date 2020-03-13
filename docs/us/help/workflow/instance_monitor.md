@@ -1,4 +1,6 @@
-## Search for forms
+---
+title: Search for forms
+---
 
 As the admin of a workspace or authorized flows, you can monitor the flows and intervene, such as reassigning approvers, relocating or deleting the forms. Flow permissions have been set in background.
 

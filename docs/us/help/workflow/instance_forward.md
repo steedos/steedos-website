@@ -1,4 +1,7 @@
-##Intance Forward 
+---
+title: Intance Forward
+---
+ 
   Intance forward can copy the contents of one intance, and achieve the jump between processes.For example, you have submitted an intance, this intance of the process has ended, but you can still forward this intance, and forwarded after the application is a new intance, where the contents of the same field will be copied to the new intance, so you You can save time to fill in intance.
   
  - You can select any file to be copied in "Inbox", "Outbox", "In Progress", "Finished", "Monitor" and then click the button in the upper right corner of this intance. The File Selection Forwarding button will appear.

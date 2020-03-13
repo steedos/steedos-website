@@ -1,4 +1,6 @@
-## Enable the flow
+---
+title: Enable the flow
+---
 
 Users cannot initiate the request if the flow hasn’t been enabled, even though the form and flow designs are finished.
 

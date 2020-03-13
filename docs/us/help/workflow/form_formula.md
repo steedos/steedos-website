@@ -1,4 +1,6 @@
-## Formulas of form field
+---
+title: Formulas of form field
+---
 
 If the field formula is added, the system can automatically calculate the value of the field when applicants fill in the forms.
 

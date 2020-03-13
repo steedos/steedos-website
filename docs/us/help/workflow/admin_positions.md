@@ -1,4 +1,7 @@
-### Flow Positions
+---
+title: Flow Positions
+---
+
 The administrator needs to set "Flow Positions" and "Positions Users" when designing the approval process. Because the option in the "Role Name" is the "Flow Positions" set by the administrator when the "handler" type of a processing step of the approval process is the "Role of initiator"; <br/>
 For example, when "Department Manager", "Chief" is created in "Flow Positions", the "Role manager" option in the approval process includes "Department Manager", "Chief".
  ![](/assets/us/workflow/positions1.png)

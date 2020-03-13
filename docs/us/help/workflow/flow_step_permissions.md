@@ -1,4 +1,6 @@
-## Input permissions
+---
+title: Input permissions
+---
 
 Users involved in the flow can read the whole information of the requests. But input and modification permissions vary with nodes. Admins can take following steps to set input permissions.
 
