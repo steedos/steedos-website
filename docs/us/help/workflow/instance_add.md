@@ -9,7 +9,7 @@
 - If you are not eager to submit this intntance after the fill, click the upper right corner of this intance button, there will be "save" option, click the option to save this intance.
 - Submit your application form.
 
-![](static/assets/us/workflow/add.png)
+![](/assets/us/workflow/add.png)
 
 #### Notice：
 - You are supposed to change the initiator if you submit the application for others. The system set the account owner to be the initiator defaultly.

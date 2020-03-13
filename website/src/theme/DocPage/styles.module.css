@@ -32,8 +32,6 @@
 /* 自定义界面 */
 @media (min-width: 996px) {
   .docSidebarContainer {
-    position: fixed;
-    top: 0;
     background: hsla(0,0%,98%,.9)
   }
 }

@@ -1,4 +1,7 @@
-## How to use Steedos Workflow
+---
+title: How to use Steedos Workflow
+---
+
 Workflow users can initiate a request, select to approve or reject, search for records and print the application forms.
 
 - Initiate a request

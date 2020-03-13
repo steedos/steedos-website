@@ -1,4 +1,6 @@
-## Steedos API
+---
+title: Steedos API
+---
 
 With Steedos API
 - Enterprise data can synchronize with your Steedos account.

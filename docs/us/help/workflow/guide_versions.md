@@ -1,4 +1,6 @@
-## Versions comprision
+---
+title: Versions comprision
+---
 
 Steedos Workflow offers 3 versions, include standard version, professional version and enterprise version. 
 
