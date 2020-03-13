@@ -36,6 +36,7 @@ background: /img/banner/clouds-large-desktop.png
 
  - 自定义跨部门、多维度的业务统计报表。 
 
+![界面展示](/assets/platform/apps.png)
 	
 ### 低代码开发平台，快速简单而又不凡
 
