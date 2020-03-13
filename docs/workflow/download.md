@@ -8,11 +8,11 @@ title: 下载
 
 ## Windows 客户端
 
-[下载Windows 客户端](http://oss.steedos.com/apps/steedos/windows/cn/steedos-desktop.exe)
+[下载Windows 客户端](http://oss.steedos.com/apps/messenger/desktop/4.3.1/messenger-setup-4.3.1-win.exe)
 
 ## Mac 客户端
 
-[下载Mac 客户端](http://oss.steedos.com/apps/steedos/mac/steedos.dmg)
+[下载Mac 客户端](http://oss.steedos.com/apps/messenger/desktop/4.3.1/messenger-4.3.1-mac.dmg)
 
 ## iOS 客户端
 
