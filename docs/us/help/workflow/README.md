@@ -32,5 +32,3 @@ With Steedos API
 
 #### Notice：
 Users in Professional version of Steedos Workflow cannot get access to Steedos API.
-
-- [Steedos API Help](api.md)
