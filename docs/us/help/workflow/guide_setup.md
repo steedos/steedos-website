@@ -1,4 +1,6 @@
-## How to get access to Steedos Workflow
+---
+title: How to get access to Steedos Workflow
+---
 
 #### PC client:
 - Download : https://www.steedos.com/us/workflow/downloads/

@@ -1,4 +1,6 @@
-# Trainning videos
+---
+title: Trainning videos
+---
 
 - Quick Guide
 
