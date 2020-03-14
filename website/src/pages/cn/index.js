@@ -29,7 +29,7 @@ function Home() {
         <div class="slds-p-top_x-large"></div>
         <div className="container">
           <h1 className="">欢迎使用华炎云平台</h1>
-          <p className="">华炎云平台是下一代智能PAAS开发平台，提供数据管理、流程引擎、数据分析、人工智能、以及应用开发和集成服务，能帮助企业连接流程和体验，从而自信地作出决策。</p>
+          <p className="">华炎云平台是下一代人工智能开发平台，提供数据管理、流程审批、业务分析、人工智能以及系统集成服务，帮助企业高效率的集成所有业务流程，将实时数据转化为行动，并提高员工的工作效率。</p>
           <p>根据你的 IT 架构需求，华炎云可以采用混合部署、云部署或本地部署模式。</p>
           <a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="http://oss.steedos.com/videos/case/%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E8%AF%B7%E5%81%87%E6%B5%81%E7%A8%8B.mp4" target="_blank">
           视频演示
