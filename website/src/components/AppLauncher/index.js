@@ -25,7 +25,7 @@ class SteedosAppLauncher extends React.Component {
 								/> */}
 								<AppLauncherTile
 									description="BPM 业务流程管理工具"
-									title="审批王"
+									title="流程审批"
 									href="/docs/workflow/home"
 									iconNode={<Icon
 										category="standard"
