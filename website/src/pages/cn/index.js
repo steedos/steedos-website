@@ -28,8 +28,8 @@ function Home() {
       <header className={classnames('', styles.heroBanner)}>
         <div class="slds-p-top_x-large"></div>
         <div className="container">
-          <h1 className="">欢迎使用华炎云</h1>
-          <p className="">作为一家创新型公司，我们开发了全球广受好评的移动办公平台，企业员工可以通过互联网访问华炎云平台，无需购买、设置或管理任何基础架构，您只需登录即可开始开展审批、销售、采购、客户服务、人力资源等工作。</p>
+          <h1 className="">欢迎使用华炎云平台</h1>
+          <p className="">华炎云平台是下一代智能PAAS开发平台，提供数据管理、流程引擎、数据分析、人工智能、以及应用开发和集成服务，能帮助企业连接流程和体验，从而自信地作出决策。根据你的 IT 架构需求，华炎云可以采用混合部署、云部署或本地部署模式。</p>
           <a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="http://oss.steedos.com/videos/case/%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E8%AF%B7%E5%81%87%E6%B5%81%E7%A8%8B.mp4" target="_blank">
           视频演示
           </a>
@@ -39,8 +39,9 @@ function Home() {
           </a>
 
           <div class="slds-p-top_xx-large"></div>
+
           <article class="slds-card">
-            <div class="slds-card__header slds-grid">
+            {/* <div class="slds-card__header slds-grid">
               <header class="slds-media slds-media_center slds-has-flexi-truncate">
                 <div class="slds-media__figure">
                   <span class="slds-icon_container slds-icon-standard-apps" title="account">
@@ -61,7 +62,7 @@ function Home() {
                   <a class="slds-button slds-button_neutral" href="/docs/help/home">使用手册</a>
                 </div>
               </header>
-            </div>
+            </div> */}
             <div class="slds-card__body slds-card__body_inner">
               <SteedosAppLauncher/>
             </div>
