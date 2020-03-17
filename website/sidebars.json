@@ -1,6 +1,6 @@
 {
   "审批王": {
-    "审批王": ["workflow/home", "workflow/features", "workflow/scenario", "workflow/cases", "workflow/price", "workflow/download"],
+    "审批王": ["workflow/home", "workflow/function", "workflow/scenario", "workflow/cases", "workflow/price", "workflow/download"],
     "费控": ["workflow/costcontrol","workflow/cases"]
   },
   "Workflow": {
