@@ -106,20 +106,20 @@ module.exports = {
         src: 'img/icon_blue.png',
       },
       links: [
-        {to: 'docs/products/home', label: '产品', position: 'left',
+        {to: '', label: '产品', position: 'left',
           items: [
             {to: 'docs/workflow/home', label: '流程审批', position: 'left', activeBasePath: 'docs/workflow/'},
             {to: 'docs/products/messenger', label: '即时通讯', position: 'left', activeBasePath: 'docs/messenger/'},
             {to: 'docs/platform/home', label: '开发平台', position: 'left', activeBasePath: 'docs/platform'}
               ]
         },
-        {to: 'docs/solutions/home', label: '解决方案', position: 'left',
+        {to: '', label: '解决方案', position: 'left',
           items: [
             {to: 'docs/group_management/home', label:'集团管控',position: 'left', activeBasePath: 'docs/group_management'},
             {to: 'docs/cost_control/home', label: '费控管理', position: 'left', activeBasePath: 'docs/cost_control/'},
           ]
         },
-        {to: 'docs/support/home', label: '技术支持', position: 'left',
+        {to: '', label: '技术支持', position: 'left',
           items: [
             {href: 'tel://4008201612', label: '400-820-1612'},
             {to: 'docs/help/home', label: '帮助文档', activeBasePath: 'docs/help'},
