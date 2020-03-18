@@ -50,6 +50,8 @@
   overflow-y: auto;
   position: sticky;
   top: calc(var(--ifm-navbar-height) + 2rem);
+  background: hsla(0,0%,98%,.9);
+  border-radius: 5px;
 }
 
 .tableOfContents::-webkit-scrollbar {
