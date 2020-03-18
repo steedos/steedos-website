@@ -108,8 +108,7 @@ module.exports = {
       links: [
         {to: 'docs/workflow/home', label: '审批', position: 'left', activeBasePath: 'docs/workflow/'},
         {to: 'docs/management/summary', label:'管控',position: 'left', activeBasePath: 'docs/management'},
-        {to: 'docs/solutions/contract', label: '合同', position: 'left', activeBasePath: 'docs/solutions/contract'},
-        {to: 'docs/workflow/costcontrol', label: '费控', position: 'left', activeBasePath: 'docs/workflow/'},
+        {to: 'docs/costcontrol/home', label: '费控', position: 'left', activeBasePath: 'docs/costcontrol/'},
         {to: 'docs/platform/home', label: '开发', position: 'left', activeBasePath: 'docs/platform'},
         {to: 'docs/help/home', label: '帮助', position: 'right', activeBasePath: 'docs/help'},
         {label: '登录', position: 'right', href: 'https://cn.steedos.com'},
