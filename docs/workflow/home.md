@@ -7,7 +7,7 @@ background: /img/banner/service-overview-lg.png
 
 审批王是全新的企业级在线审批系统，可以快速地将公司各类审批业务转换为可严格执行的电子流程。
 
-- [图形化设计](/docs/workflow/features)
+- 图形化设计
 - 灵活配置
 - 数据集成
 - 移动应用

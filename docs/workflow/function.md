@@ -1,7 +1,7 @@
 ---
 title: 功能
 hide_table_of_contents: false
-background: /img/banner/clouds-large-desktop.png
+background: /img/banner/service-overview-lg.png
 ---
 
 ## 表单设计
@@ -56,13 +56,11 @@ background: /img/banner/clouds-large-desktop.png
 
 ## 系统集成
 
-### 数据集成
-
-- 基础数据集成
+### 基础数据集成
 
 提供现有的人员、组织集成配置功能，流程引擎平台可快速实现与第三方系统的人员、岗位、组织信息的集成整合，如eHR人事管理系统、基于LDAP协议的域控系统；在完成基础信息同步的同时，实现用户的单点登录和统一认证功能。
 
-- 业务数据集成
+### 业务数据集成
 
 主要是针对第三方业务系统中的业务主数据（MDM，如供应商、客户、产品和财务科目）以及日常业务数据的集成整合，可以快速构建核心业务基础数据的管控体系。
 
