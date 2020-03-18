@@ -1,17 +1,12 @@
 ---
-title: 提供高质量财务管理解决方案
+title: 提供高质量费控管理解决方案
 sidebar_label: 概述
 background: /img/banner/einstein-analytics-overview-sm.png
 ---
 
 华炎费控管理带来全新协同办公体验，围绕报账平台（含合同管理模块），实现与核算、资金、影像、HR、ERP、PT等周边系统的业务集成应用和业务数据整合。
 
-- 预算费控
-- 方案融合
-- 流程驱动
-- 全面集成
-
-![费控](/assets/mac_mobile_view.jpg)
+![费控](/assets/mac_ipad_iphone_list.png)
 
 ## 费控管理现状
 
