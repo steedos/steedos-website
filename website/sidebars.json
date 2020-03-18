@@ -3,6 +3,9 @@
     "审批王": ["workflow/home", "workflow/function", "workflow/scenario", "workflow/cases", "workflow/price", "workflow/download"],
     "费控管理": ["workflow/costcontrol","workflow/project","workflow/costcases"]
   },
+  "集团管控":{
+    "集团管控": ["management/summary","management/features"]
+  },
   "Workflow": {
     "Steedos Workflow": ["us/home", "us/training", "us/price", "us/download"]
   },
