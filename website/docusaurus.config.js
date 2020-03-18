@@ -109,9 +109,9 @@ module.exports = {
         {to: '', label: '产品', position: 'left',
           items: [
             {to: 'docs/workflow/home', label: '流程审批', position: 'left', activeBasePath: 'docs/workflow/'},
-            {to: 'docs/products/messenger', label: '即时通讯', position: 'left', activeBasePath: 'docs/messenger/'},
+            //{to: 'docs/products/messenger', label: '即时通讯', position: 'left', activeBasePath: 'docs/messenger/'},
             {to: 'docs/platform/home', label: '开发平台', position: 'left', activeBasePath: 'docs/platform'}
-              ]
+          ]
         },
         {to: '', label: '解决方案', position: 'left',
           items: [
