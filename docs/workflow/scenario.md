@@ -1,6 +1,7 @@
 ---
 title: 场景
 hide_table_of_contents: false
+background: /img/banner/service-overview-lg.png
 ---
 
 ## 个人办公类

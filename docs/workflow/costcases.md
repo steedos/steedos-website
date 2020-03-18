@@ -2,7 +2,7 @@
 title: 满足企业的实际管理需要
 sidebar_label: 费控案例
 hide_table_of_contents: false
-background: /img/banner/service-overview-lg.png
+background: /img/banner/clouds-large-desktop.png
 ---
 
 ## 典型客户

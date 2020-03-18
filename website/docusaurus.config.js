@@ -109,6 +109,7 @@ module.exports = {
         {to: 'docs/workflow/home', label: '审批', position: 'left', activeBasePath: 'docs/workflow/'},
         {to: 'docs/management/summary', label:'管控',position: 'left', activeBasePath: 'docs/management'},
         {to: 'docs/solutions/contract', label: '合同', position: 'left', activeBasePath: 'docs/solutions/contract'},
+        {to: 'docs/workflow/costcontrol', label: '费控', position: 'left', activeBasePath: 'docs/workflow/'},
         {to: 'docs/platform/home', label: '开发', position: 'left', activeBasePath: 'docs/platform'},
         {to: 'docs/help/home', label: '帮助', position: 'right', activeBasePath: 'docs/help'},
         {label: '登录', position: 'right', href: 'https://cn.steedos.com'},
@@ -146,7 +147,7 @@ module.exports = {
           ],
         },
         {
-          title: '应用案例',
+          title: '开源项目',
           items: [
             {
               label: '合同管理',
@@ -170,7 +171,7 @@ module.exports = {
             },
             {
               label: '在线客服',
-              to: 'https://messenger.steedos.cn/',
+              href: 'https://messenger.steedos.cn/',
             },
             {
               label: '最新动态',
