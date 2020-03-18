@@ -1,19 +1,27 @@
 ---
 title: 提供高质量财务管理解决方案
 sidebar_label: 概述
-background: /img/banner/clouds-large-desktop.png
+background: /img/banner/einstein-analytics-overview-sm.png
 ---
+
+华炎费控管理带来全新协同办公体验，围绕报账平台（含合同管理模块），实现与核算、资金、影像、HR、ERP、PT等周边系统的业务集成应用和业务数据整合。
+
+- 预算费控
+- 方案融合
+- 流程驱动
+- 全面集成
+
+![费控](/assets/mac_mobile_view.jpg)
 
 ## 费控管理现状
 
-### 管理现状
 企业在实际管理过程中，涉及的费用类型多、对应的管理制度多、费用管控的方案多、每天的处理量大。
 
 <br/>
 
 ![费控管理现状](/assets/workflow/费控.png)
 
-### 管理难点
+## 费控管理难点
 现状背后，存在很大的可以改善的需求，尤其是在人工处理，核算与审批没有分离的情况下，管理效率提升的问题点比较多
 <div class="row">
     <div class="col col--4">
@@ -80,7 +88,7 @@ background: /img/banner/clouds-large-desktop.png
     </div>
 </div>
 
-### 解决方案
+## 费控解决方案
 建立全面融合的费控管理体系：从全流程驱动到全面的集成功能，将多管控方案融合，达到预算与费用一体化的目的，泛微提供核心的费控解决方案。
 
 建立可持续扩展的费控管理体系：结合财务制度升级，通过借支管理、条码管理、信用管理等扩展功能，完善费控管理体系。
@@ -179,5 +187,3 @@ background: /img/banner/clouds-large-desktop.png
     </div>
 </div> -->
 
-## 案例
-![案例](/assets/workflow/案例.png)
