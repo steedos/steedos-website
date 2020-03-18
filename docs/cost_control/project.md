@@ -4,14 +4,9 @@ sidebar_label: 解决方案
 background: /img/banner/einstein-analytics-overview-sm.png
 ---
 
-多维度、多样化、多模式、可视化的解决方案。
+多维度、多样化、多模式、可视化的解决方案。主要包含：预算费控、方案融合、流程驱动以及全面集成。
 
-- 预算费控
-- 方案融合
-- 流程驱动
-- 全面集成
-
-![费控](/assets/mac_mobile_search.jpg)
+![费控](/assets/mac_mobile_list.png)
 
 ## 预算与费用执行一体化
 
