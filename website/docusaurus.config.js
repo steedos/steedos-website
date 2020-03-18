@@ -106,11 +106,26 @@ module.exports = {
         src: 'img/icon_blue.png',
       },
       links: [
-        {to: 'docs/workflow/home', label: '审批', position: 'left', activeBasePath: 'docs/workflow/'},
-        {to: 'docs/group_management/home', label:'管控',position: 'left', activeBasePath: 'docs/group_management'},
-        {to: 'docs/cost_control/home', label: '费控', position: 'left', activeBasePath: 'docs/cost_control/'},
-        {to: 'docs/platform/home', label: '开发', position: 'left', activeBasePath: 'docs/platform'},
-        {to: 'docs/help/home', label: '帮助', position: 'right', activeBasePath: 'docs/help'},
+        {to: 'docs/products/home', label: '产品', position: 'left',
+          items: [
+            {to: 'docs/workflow/home', label: '流程审批', position: 'left', activeBasePath: 'docs/workflow/'},
+            {to: 'docs/products/messenger', label: '即时通讯', position: 'left', activeBasePath: 'docs/messenger/'},
+            {to: 'docs/platform/home', label: '开发平台', position: 'left', activeBasePath: 'docs/platform'}
+              ]
+        },
+        {to: 'docs/solutions/home', label: '解决方案', position: 'left',
+          items: [
+            {to: 'docs/group_management/home', label:'集团管控',position: 'left', activeBasePath: 'docs/group_management'},
+            {to: 'docs/cost_control/home', label: '费控管理', position: 'left', activeBasePath: 'docs/cost_control/'},
+          ]
+        },
+        {to: 'docs/support/home', label: '技术支持', position: 'left',
+          items: [
+            {href: 'tel://4008201612', label: '400-820-1612'},
+            {to: 'docs/help/home', label: '帮助文档', activeBasePath: 'docs/help'},
+            {href: 'http://messenger.steedos.cn', label: '在线客服'},
+          ]
+        },
         {label: '登录', position: 'right', href: 'https://cn.steedos.com'},
       ],
       links_us: [

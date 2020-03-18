@@ -155,9 +155,24 @@ function Navbar(props) {
           </Link>
           {links
             .filter(linkItem => linkItem.position !== 'right')
-            .map((linkItem, i) => (
-              <NavLink {...linkItem} key={i} />
-            ))}
+            .map((linkItem, i) => {
+              const hasSubItems = typeof linkItem.items !== 'undefined' && linkItem.items.length > 0;
+              if (!hasSubItems) return (
+                <NavLink {...linkItem} key={i}/>
+              )
+              else return (
+                <div class="dropdown dropdown--hoverable">
+                <NavLink {...linkItem} key={i}/>
+                <ul class="dropdown__menu">
+                {
+                  linkItem.items.map((subItem, j) => (
+                    <NavLink {...subItem} key={i+'-'+j}/>
+                  ))
+                }
+                </ul>
+                </div>
+              )
+            })}
         </div>
         <div className="navbar__items navbar__items--right">
           {links
@@ -215,6 +230,7 @@ function Navbar(props) {
           <div className="menu">
             <ul className="menu__list">
               {links.map((linkItem, i) => (
+                <>
                 <li className="menu__list-item" key={i}>
                   <NavLink
                     className="menu__link"
@@ -222,6 +238,19 @@ function Navbar(props) {
                     onClick={hideSidebar}
                   />
                 </li>
+              
+                {typeof linkItem.items !== 'undefined' && linkItem.items.length > 0 && 
+                  linkItem.items.map((subItem, j) => (
+                    <li className="menu__list-item" key={i+'-'+j}>
+                      <NavLink
+                        className="menu__link" 
+                        style={{paddingLeft: '3rem'}}
+                        {...subItem} 
+                        onClick={hideSidebar}/>
+                    </li>
+                  ))
+                }
+                </>
               ))}
             </ul>
           </div>
