@@ -1,7 +1,7 @@
 ---
 title: 管理、业务、财务共享一体化实现之道
 sidebar_label: 解决方案
-background: /img/banner/sfdc-quip-overview.jpg
+background: /img/banner/clouds-large-desktop.png
 ---
 
 ## 预算与费用执行一体化
@@ -32,7 +32,7 @@ background: /img/banner/sfdc-quip-overview.jpg
 
 ## 预算费控全流程驱动
 
-![费控驱动](/assets/flowchart.png)
+![费控驱动](/assets/workflow/flowchart.png)
 
 ### 流程驱动费用执行
 通过流程覆盖所有的费用相关的流程，实现管理制度的有效落地，并在审批过程中真正将管控方案有效执行，强化公司的管理规则，提升组织效率。
@@ -74,7 +74,7 @@ background: /img/banner/sfdc-quip-overview.jpg
 ## 全面集成应用系统
 
 ### 集成体系
-泛微系统平台可建立分类清晰、条线合理、授权有度的费用、共享管控模式，同时与核算、资金、影像、ERP等多种业务、辅助系统间无缝集成。
+华炎开发平台可建立分类清晰、条线合理、授权有度的费用、共享管控模式，同时与核算、资金、影像、ERP等多种业务、辅助系统间无缝集成。
 
 ### 核算集成
 支持与用友、浪潮、ORACLE等主流财务系统的集成，同时支持自定义集成接口。

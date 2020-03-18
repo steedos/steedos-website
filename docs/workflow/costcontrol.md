@@ -11,7 +11,7 @@ background: /img/banner/clouds-large-desktop.png
 
 <br/>
 
-![费控管理现状](/assets/费控.png)
+![费控管理现状](/assets/workflow/费控.png)
 
 ### 管理难点
 现状背后，存在很大的可以改善的需求，尤其是在人工处理，核算与审批没有分离的情况下，管理效率提升的问题点比较多
@@ -86,10 +86,10 @@ background: /img/banner/clouds-large-desktop.png
 建立可持续扩展的费控管理体系：结合财务制度升级，通过借支管理、条码管理、信用管理等扩展功能，完善费控管理体系。
 
 ## 费控管理解决方案特点
-![解决方案特点](/assets/费控1.png)
+![解决方案特点](/assets/workflow/费控1.png)
 
 ## 华炎费控管理应用领域
-![领域](/assets/费控3.png)
+![领域](/assets/workflow/费控3.png)
 <!-- <div class="row">
     <div class="col col--4">
         <div class="card">
@@ -180,4 +180,4 @@ background: /img/banner/clouds-large-desktop.png
 </div> -->
 
 ## 案例
-![案例](/assets/案例.png)
+![案例](/assets/workflow/案例.png)

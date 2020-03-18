@@ -2,6 +2,7 @@
 title: 版本与报价
 sidebar_label: 报价
 hide_table_of_contents: true
+background: /img/banner/service-overview-lg.png
 ---
 
 审批王提供了三个不同的版本，请选择适合您的版本。
