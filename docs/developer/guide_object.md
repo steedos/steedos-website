@@ -8,17 +8,19 @@ Steedos 的神奇之处正在于此，你只需要修改业务对象配置文件
 
 如果你不需要相关的业务对象，直接删除即可。
 
-## 创建 业务伙伴  object
+## 创建业务对象：业务伙伴
 
-在src项目源码中创建一个名为accounts.object.yml文件，
-开头配置以下内容：
+在src项目源码中创建一个名为accounts.object.yml文件，开头配置以下内容：
+
 ```bash
 name: accounts
 lable: 业务伙伴
 icon: accounts
 ```
 ## 添加字段：名称、电话、邮箱...
-配置相关字段:
+
+在accounts.object.yml中，继续配置相关字段:
+
 ```bash
 fields:
   name:
@@ -69,6 +71,9 @@ fields:
  ```
 
 ## 设置视图：所有业务伙伴
+
+在accounts.object.yml中，继续配置业务对象的视图:
+
 ```bash
 list_views:
   all:
@@ -82,6 +87,9 @@ list_views:
 ```
 
 ## 定义权限：所有人都能增删改
+
+在accounts.object.yml中，继续配置业务对象的权限集:
+
 ```bash
 permission_set:
 	user:
@@ -93,9 +101,10 @@ permission_set:
 		viewAllRecords: true
 ```
 
-## 在 app中配置新创建的业务对象
+## 修改应用：增加业务伙伴
 
-修改src下的oa.app.yml,增加：业务伙伴 accounts
+修改src下的oa.app.yml，增加：业务伙伴 accounts
+
 ```bash
 objects: 
   - instances
