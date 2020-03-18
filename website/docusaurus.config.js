@@ -145,7 +145,7 @@ module.exports = {
           ],
         },
         {
-          title: '应用案例',
+          title: '开源项目',
           items: [
             {
               label: '合同管理',
@@ -169,7 +169,7 @@ module.exports = {
             },
             {
               label: '在线客服',
-              to: 'https://messenger.steedos.cn/',
+              href: 'https://messenger.steedos.cn/',
             },
             {
               label: '最新动态',
