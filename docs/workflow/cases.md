@@ -40,6 +40,9 @@ background: /img/banner/service-overview-lg.png
 
 ## 更多服务客户
 
+<div className="slds-grid slds-wrap">
+<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+
 #### 集团
 
 - 上海大众交通集团
@@ -51,6 +54,9 @@ background: /img/banner/service-overview-lg.png
 - 北京北人集团
 - 四川川化集团
 - 西安航空发动机(集团)有限公司
+
+</div>
+<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
 
 #### 上市公司
 
@@ -67,6 +73,9 @@ background: /img/banner/service-overview-lg.png
 - 青海华鼎（600243）
 - 交大博通（600455）
 
+</div>
+<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+
 #### 交通运输
 
 - 宁波港北仑第二集装箱有限公司
@@ -78,6 +87,9 @@ background: /img/banner/service-overview-lg.png
 - 哈尔滨大众交通
 - 崇明大众公司
 
+</div>
+<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+
 #### 政府机关
 
 - 江苏省水利厅
@@ -85,6 +97,9 @@ background: /img/banner/service-overview-lg.png
 - 江苏省卫生厅
 - 上海市城市交通管理局
 - 张家港市人事局
+
+</div>
+<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
 
 #### 能源
 
@@ -102,6 +117,9 @@ background: /img/banner/service-overview-lg.png
 - 镇海炼油化工股份有限公司
 - 镇海石化工程公司
 
+</div>
+<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+
 #### 汽车与配件
 
 - 东风康明斯发动机有限公司
@@ -110,6 +128,9 @@ background: /img/banner/service-overview-lg.png
 - 西安航空发动机(集团)有限公司
 - 北京卡达克汽车技术开发有限公司
 - 吉林众诚汽车服务有限责任公司
+
+</div>
+<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
 
 #### 房产
 
@@ -121,11 +142,17 @@ background: /img/banner/service-overview-lg.png
 - 金融街控股股份有限公司
 - 北京鲁艺房地产开发有限责任公司
 
+</div>
+<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+
 #### 电力
 
 - 上海电力安装第二工程公司
 - 上海协鑫电力营运有限公司
 - 上海阜通电力实业有限公司
+
+</div>
+<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
 
 #### 金融
 
@@ -135,8 +162,14 @@ background: /img/banner/service-overview-lg.png
 - 北京元亨利贞投资管理有限公司
 - 长信基金管理有限公司
 
+</div>
+<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+
 #### 教育及非盈利机构
 
 - 上海财经大学
 - 湖南文理学院
 - 清华大学出版社
+
+</div>
+</div>
