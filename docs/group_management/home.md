@@ -20,7 +20,8 @@ sidebar_label: 概述
 风险合规执行：建立集团统一的风险评估机制、风险预警机制、风险应对机制及风险整改机制，确保集团经营安全
 ![多管控模式融合](/static/groupimg/m4_l.png)
 
-![模式](/assets/groupimg/mode.png)
+#### 集团管控平台逻辑框架
+![多管控模式融合](/static/groupimg/logic.png)
 
 ## 逻辑框架
 
