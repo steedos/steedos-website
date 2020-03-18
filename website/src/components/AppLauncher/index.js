@@ -61,15 +61,6 @@ class SteedosAppLauncher extends React.Component {
 									/>}
 								/>
 								<AppLauncherTile
-									description="全面了解并主动管理员工支出。"
-									title="差旅和费用"
-									iconNode={<Icon
-										category="standard"
-										name="client"
-										size="large"
-									/>}
-								/>
-								<AppLauncherTile
 									description="私有云即时通讯解决方案"
 									title="即时通讯"
 									href="/docs/products/messenger"
@@ -94,7 +85,7 @@ class SteedosAppLauncher extends React.Component {
 								<AppLauncherTile
 									description="提供高质量财务管理解决方案"
 									title="费控管理"
-									href="/docs/costcontrol/home"
+									href="/docs/cost_control/home"
 									iconNode={<Icon
 										category="standard"
 										name="partner_marketing_budget"
