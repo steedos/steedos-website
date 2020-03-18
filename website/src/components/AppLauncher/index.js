@@ -11,18 +11,7 @@ class SteedosAppLauncher extends React.Component {
 
 		return (
 						<div className="slds-app-launcher-container">
-							<AppLauncherExpandableSection title="华炎云平台" nonCollapsible={true}>
-								{/* <AppLauncherTile
-									description="SAAS 云端企业管理软件"
-									title="华炎云"
-									href="/docs/products/home"
-									iconNode={<Icon
-										assistiveText=""
-										category="standard"
-										name="apps"
-										size="large"
-									/>}
-								/> */}
+							<AppLauncherExpandableSection title="华炎产品" nonCollapsible={true}>
 								<AppLauncherTile
 									description="BPM 业务流程管理工具"
 									title="流程审批"
@@ -72,21 +61,34 @@ class SteedosAppLauncher extends React.Component {
 									/>}
 								/>
 								<AppLauncherTile
-									description="全面了解并主动管理员工支出。"
-									title="差旅和费用"
-									iconNode={<Icon
-										category="standard"
-										name="client"
-										size="large"
-									/>}
-								/>
-								<AppLauncherTile
 									description="私有云即时通讯解决方案"
 									title="即时通讯"
 									href="/docs/products/messenger"
 									iconNode={<Icon
 										category="standard"
 										name="messaging_conversation"
+										size="large"
+									/>}
+								/>
+							</AppLauncherExpandableSection>
+							<AppLauncherExpandableSection title="解决方案" nonCollapsible={true}>
+								<AppLauncherTile
+									description="构建集团集权与分权的管理平台"
+									title="集团管控"
+									href="/docs/group_management/home"
+									iconNode={<Icon
+										category="standard"
+										name="hierarchy"
+										size="large"
+									/>}
+								/>
+								<AppLauncherTile
+									description="提供高质量财务管理解决方案"
+									title="费控管理"
+									href="/docs/cost_control/home"
+									iconNode={<Icon
+										category="standard"
+										name="partner_marketing_budget"
 										size="large"
 									/>}
 								/>

@@ -2,6 +2,9 @@
   "审批王": {
     "审批王": ["workflow/home", "workflow/function", "workflow/scenario", "workflow/cases", "workflow/price", "workflow/download"]
   },
+  "集团管控":{
+    "集团管控": ["management/summary","management/features"]
+  },
   "Workflow": {
     "Steedos Workflow": ["us/home", "us/training", "us/price", "us/download"]
   },
