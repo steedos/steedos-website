@@ -14,7 +14,7 @@ title: 应用
 
 管理员可以在权限集中配置应用的访问权限，如果一个用户属于多个权限集，则最终可访问的应用为个权限集的叠加。
 
-## 应用
+## 基本配置项
 
 ```yaml
 _id: crm
@@ -59,11 +59,63 @@ mobile_objects:
 
 除了可以配置当前项目中的业务对象，也可以配置系统内置的[标准业务对象](standard_objects.md)。
 
-## 手机端菜单 mobile_objects
+### 手机端菜单 mobile_objects
 
 使用数组格式定义在手机端主菜单中显示的对象清单，系统按照定义的先后顺序显示为业务对象菜单。
 
-## 门户 dashboard
+## 可选配置项- 设置菜单 admin_menus
+
+如果配置了此参数，在“设置”模块，就会自动加上这些业务对象，可进行数据维护。
+
+> 在所有的业务对象中，由一部分主要由管理员进行配置，而不是用户的日常操作。建议将此类业务对象配置到设置菜单。
+
+```yaml
+admin_menus:
+  - _id: crm
+    name: 客户
+    permission_sets:
+      - admin
+    expanded: false
+  - _id: account_types
+    name: 客户类别
+    object_name: account_types
+    parent: crm
+  - _id: contact_types
+    name: 联系人类别
+    object_name: contact_types
+    parent: crm
+```
+
+其中包含了3组内容。第1组为设置中的节点“客户”，第2、3组则为“客户”下的子节点、并对应1个业务对象。
+
+### id
+
+设置节点的ID。
+
+### 节点名称 name
+
+设置节点的名称。
+
+### 权限组 permission_sets
+
+可见此节点的权限组。
+
+### 可扩展选项 expanded
+
+- true ：可以有子节点
+- false ：不可以有子节点
+
+### 父节点 parent
+
+节点的ID 。
+
+### 业务对象 object_name
+
+对应1个业务对象。在设置模块中，点击即进入该业务对象的默认视图，可进行数据维护。
+
+如上述的配置，管理员可以在设置模块中看到“客户”，其下包含客户类别、联系人类别的数据维护入口。
+
+## 可选配置项- 门户 dashboard
 
 如果配置了此参数，在电脑端会自动加上“首页”Tab，按照配置自动生成应用首页。
 
