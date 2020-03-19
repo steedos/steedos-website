@@ -7,7 +7,7 @@ sidebar_label: 目录
 
 ## [准备：安装开发环境](/docs/developer/install)
 
-## [教程1:创建项目](/docs/developer/guide_create)
+## [教程1：创建项目](/docs/developer/guide_create)
 
 - 创建steedos项目
 - 安装依赖包
@@ -17,24 +17,28 @@ sidebar_label: 目录
 - 创建企业/工作区
 - 系统主页面
 
-## [教程2:配置业务对象](/docs/developer/guide_object)
+## [教程2：配置业务对象](/docs/developer/guide_object)
 
-- 创建业务伙伴object
+- 创建业务对象：业务伙伴
 - 添加字段
 - 设置视图：所有业务伙伴
-- 定义权限
-- 在app中配置新创建的业务对象
+- 定义权限：所有人都能增删改
+- 修改应用：增加业务伙伴
+- 重启服务运行并查看效果
 
-## [教程3:业务对象关联](/docs/developer/relationship)
+## [教程3：业务对象关联](/docs/developer/guide_relationship)
 
-- 创建合同object
+- 创建业务对象：合同
 - 添加字段
 - 配置视图：我的合同、所有合同
 - 定义权限：普通用户只能查看自己的合同，合同管理员和系统管理员可以查看所有合同
-- 在华炎办公app中去掉业务伙伴
-- 新建合同app，配置包括的业务对象
+- 修改默认应用：去掉业务伙伴
+- 新建自定义应用：合同，配置包括的业务对象
 - 重启服务运行并查看效果
 
-## [教程4:触发器]()
+## [教程4：配置触发器](/docs/developer/guide_trigger)
 
-- 合同已收金额修改后，自动更新待收金额
+- 修改业务对象的字段
+- 创建触发器
+- 编写触发的执行代码：自动更新待收金额
+- 重启服务运行并查看效果
