@@ -14,6 +14,9 @@
   "销售管理":{
     "销售管理": ["sales_management/home","sales_management/functions","sales_management/contacts","sales_management/business","sales_management/clue","sales_management/mobile","sales_management/libraries","sales_management/report","sales_management/forecast","sales_management/email","sales_management/mobile_office"]
   },
+  "知识管理": {
+    "知识管理": ["docs_management/home"]
+  },
   "开发平台": {
     "华炎开发平台": ["platform/home", "platform/features", "platform/pricing"],
     "培训教程": ["developer/home","developer/install","developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report"],
