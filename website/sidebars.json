@@ -12,7 +12,7 @@
     "费控管理": ["cost_control/home","cost_control/project","cost_control/costcases"]
   },
   "销售":{
-    "销售": ["sales_management/home","sales_management/functions"]
+    "销售": ["sales_management/home","sales_management/functions","sales_management/contacts","sales_management/business","sales_management/clue","sales_management/mobile"]
   },
   "开发平台": {
     "华炎开发平台": ["platform/home", "platform/features", "platform/pricing"],
