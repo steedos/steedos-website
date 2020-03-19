@@ -48,7 +48,7 @@ module.exports = {
 ```
 上述2个触发器分别在新建合同和修改合同时触发，执行caculateAmount 。
 
-## 新建触发的执行代码
+## 编写触发的执行代码
 
 在scontracts.trigger.js文件中，编写caculateAmount的处理逻辑代码。
 
