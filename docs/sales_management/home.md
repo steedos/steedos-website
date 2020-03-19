@@ -19,7 +19,9 @@ sidebar_label: 概述
 无论您想进入新行业、新市场抑或新社区，都需要不断改进您的销售策略。规划区域、查看团队绩效、跟踪销售代表执行情况等。
 
 ## 您有业务需求，我们有可满足您需求的工具。
+
 ![报价](/static/assets/sales/销售.png)
+
 详细报价信息请查看 [审批王报价](http://localhost:3000/docs/workflow/price)
 
 #### 销售团队在 Customer 360 Platform 充分发挥工作能力。
