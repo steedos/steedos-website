@@ -77,13 +77,13 @@ admin_menus:
       - admin
     expanded: false
   - _id: account_types
+    parent: crm
     name: 客户类别
     object_name: account_types
-    parent: crm
   - _id: contact_types
+    parent: crm
     name: 联系人类别
     object_name: contact_types
-    parent: crm
 ```
 
 其中包含了3组内容。第1组为设置中的节点“客户”，第2、3组则为“客户”下的子节点、并对应1个业务对象。
@@ -92,28 +92,30 @@ admin_menus:
 
 设置节点的ID。
 
+### 父节点 parent
+
+父节点的ID 。默认为根节点。
+
 ### 节点名称 name
 
 设置节点的名称。
+
+### 默认展开 expanded
+
+- true ：默认展开子节点。
+- false ：默认不展开子节点。
 
 ### 权限组 permission_sets
 
 可见此节点的权限组。
 
-### 可扩展选项 expanded
-
-- true ：可以有子节点
-- false ：不可以有子节点
-
-### 父节点 parent
-
-节点的ID 。
-
 ### 业务对象 object_name
 
-对应1个业务对象。在设置模块中，点击即进入该业务对象的默认视图，可进行数据维护。
+关联对应1个业务对象。在设置模块中，点击即进入该业务对象的默认视图，可进行数据维护。如果不配置此项，则仅为节点、而不进入任何业务对象。
 
 如上述的配置，管理员可以在设置模块中看到“客户”，其下包含客户类别、联系人类别的数据维护入口。
+
+
 
 ## 可选配置项- 门户 dashboard
 
