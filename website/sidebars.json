@@ -11,6 +11,9 @@
   "费控管理": {
     "费控管理": ["cost_control/home","cost_control/project","cost_control/costcases"]
   },
+  "销售":{
+    "销售": ["sales_management/home"]
+  },
   "开发平台": {
     "华炎开发平台": ["platform/home", "platform/features", "platform/pricing"],
     "培训教程": ["developer/home","developer/install","developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger"],
