@@ -98,3 +98,7 @@ async function caculateAmount(contractId) {
 
 ## 重启服务运行并查看效果
 
+![触发器](/assets/trigger0.png)
+
+![触发器](/assets/trigger1.png)
+

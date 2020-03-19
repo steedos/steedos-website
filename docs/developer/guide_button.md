@@ -114,3 +114,7 @@ Creator.Objects.accounts.methods = {
 
 ## 重启服务运行并查看效果
 
+![按钮](/assets/button1.png)
+
+![按钮](/assets/button2.png)
+
