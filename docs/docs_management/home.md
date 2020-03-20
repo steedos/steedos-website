@@ -3,7 +3,7 @@ title: 内容创造价值，知识驱动进步
 sidebar_label: 概览
 
 background: /img/banner/clouds-large-desktop.png
-
+---
 
 华炎知识管理拥有多级目录、分权管理、全文检索、内容集成、移动应用，协助企业提升知识管理水平。
 
