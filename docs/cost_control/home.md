@@ -1,6 +1,6 @@
 ---
 title: 提供高质量费控管理解决方案
-sidebar_label: 概述
+sidebar_label: 概览
 background: /img/banner/einstein-analytics-overview-sm.png
 ---
 
