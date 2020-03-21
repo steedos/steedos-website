@@ -6,7 +6,7 @@ title: 下载客户端
 
 ## Windows 客户端
 
-[下载Windows 客户端](https://www-steedos-com.oss-cn-beijing.aliyuncs.com/apps/messenger/desktop/4.3.1/messenger-setup-4.3.1-win.exe)
+[下载Windows 客户端](https://www-steedos-com.oss-cn-beijing.aliyuncs.com/apps/messenger/desktop/4.3.2/messenger-setup-4.3.2-win.exe)
 
 ## Mac 客户端
 
