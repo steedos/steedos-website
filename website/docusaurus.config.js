@@ -123,9 +123,8 @@ module.exports = {
         },
         {to: '', label: '技术支持', position: 'left',
           items: [
-            {href: 'tel://4008201612', label: '400-820-1612'},
             {to: 'docs/help/home', label: '帮助文档', activeBasePath: 'docs/help'},
-            {href: 'http://messenger.steedos.cn', label: '在线客服'},
+            {to: 'docs/contact_us', label: '联系我们'},
           ]
         },
         {label: '登录', position: 'right', href: 'https://cn.steedos.com'},
