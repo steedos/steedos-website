@@ -7,7 +7,11 @@ background: /img/banner/einstein-analytics-overview-sm.png
 
 华炎为客户提升组织绩效创造价值，为新一代用户全面改进客户支持服务，永无止境。
 
-## 大众公用
+## 大众公用集团
+
+<br/>
+
+![logo](/assets/workflow/logo-dzug.png)
 
 #### 案例背景
 
@@ -23,7 +27,11 @@ background: /img/banner/einstein-analytics-overview-sm.png
 
 该项目的主要目标是通过打通审批系统、NC财务系统、合同管理系统的数据与流程联动，实现业务系统和财务系统在事前、事中、事后的全闭环、全自动、一体化管理。主要功能包括：合同审批流程、合同变更管理、收付款登记流程、合同台账、收付款管理、签约对象、统计分析、数据联查、数据交互接口、信息推送等。
 
-## 河北港口
+## 河北港口集团
+
+<br/>
+
+![logo](/assets/workflow/logo-qhd.png)
 
 #### 案例背景
 
@@ -31,6 +39,6 @@ background: /img/banner/einstein-analytics-overview-sm.png
 
 ![结构图](/assets/workflow/home_intro.png)
 
-#### 集团应用
+#### 费控管理应用
 
 河北港口集团综合移动办公系统，以华炎移动办公解决方案为基础构建，强化了安卓版、iOS版的手机、Pad等智能终端的访问功能。面向全集团50余职能部室及中心、80余基层单位的近万名用户，系统核心的流程审批涵盖公文处理、督察督办、会议管理、信访处理、合同审批、法律咨询、行政事务等各方面。自正式上线以来，年平均处理各类文件/事务10万余件，用户反响强烈，系统的稳定运行为集团事业的改革与发展提供了有力的支撑。
