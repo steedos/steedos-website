@@ -12,7 +12,7 @@
     "费控管理": ["cost_control/home","cost_control/project","cost_control/costcases"]
   },
   "销售管理":{
-    "销售管理": ["sales_management/home","sales_management/functions","sales_management/contacts","sales_management/business","sales_management/clue","sales_management/mobile","sales_management/libraries","sales_management/report","sales_management/forecast","sales_management/email","sales_management/mobile_office"]
+    "销售管理": ["sales_management/home","sales_management/functions","sales_management/contacts","sales_management/business","sales_management/clue","sales_management/mobile","sales_management/im","sales_management/mobile_office","sales_management/libraries","sales_management/report","sales_management/forecast"]
   },
   "知识管理": {
     "知识管理": ["knowledge_management/home","knowledge_management/management","knowledge_management/case"]

@@ -1,6 +1,6 @@
 ---
 title: 销售流程管理
-sidebar_label: 工作流和审批
+sidebar_label: 销售流程自动化
 ---
 
 
