@@ -1,6 +1,6 @@
 ---
 title: 协助企业提升知识管理水平
-sidebar_label: 知识管理
+sidebar_label: 功能
 background: /img/banner/clouds-large-desktop.png
 ---
 借助华炎知识管理，您可以知识积累、知识分享、知识利用、知识创新。

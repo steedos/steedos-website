@@ -118,7 +118,7 @@ module.exports = {
             {to: 'docs/group_management/home', label:'集团管控',position: 'left', activeBasePath: 'docs/group_management'},
             {to: 'docs/cost_control/home', label: '费控管理', position: 'left', activeBasePath: 'docs/cost_control/'},
             {to: 'docs/sales_management/home', label: '销售管理', position: 'left', activeBasePath: 'docs/sales_management'},
-            {to: 'docs/docs_management/home', label: '知识管理', position: 'left', activeBasePath: 'docs/docs_management'}
+            {to: 'docs/knowledge_management/home', label: '知识管理', position: 'left', activeBasePath: 'docs/knowledge_management'}
           ]
         },
         {to: '', label: '技术支持', position: 'left',
