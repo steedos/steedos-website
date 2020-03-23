@@ -109,6 +109,8 @@ module.exports = {
         {to: '', label: '产品', position: 'left',
           items: [
             {to: 'docs/workflow/home', label: '流程审批', position: 'left', activeBasePath: 'docs/workflow/'},
+            // {to: 'docs/sales_management/home', label: '销售管理', position: 'left', activeBasePath: 'docs/sales_management'},
+            {to: 'docs/knowledge_management/home', label: '知识管理', position: 'left', activeBasePath: 'docs/knowledge_management'},
             //{to: 'docs/products/messenger', label: '即时通讯', position: 'left', activeBasePath: 'docs/messenger/'},
             {to: 'docs/platform/home', label: '开发平台', position: 'left', activeBasePath: 'docs/platform'}
           ]
@@ -116,15 +118,19 @@ module.exports = {
         {to: '', label: '解决方案', position: 'left',
           items: [
             {to: 'docs/group_management/home', label:'集团管控',position: 'left', activeBasePath: 'docs/group_management'},
-            {to: 'docs/cost_control/home', label: '费控管理', position: 'left', activeBasePath: 'docs/cost_control/'},
-            {to: 'docs/sales_management/home', label: '销售管理', position: 'left', activeBasePath: 'docs/sales_management'},
-            {to: 'docs/knowledge_management/home', label: '知识管理', position: 'left', activeBasePath: 'docs/knowledge_management'}
+            {to: 'docs/cost_control/home', label: '费控管理', position: 'left', activeBasePath: 'docs/cost_control/'}
+          ]
+        },
+        {to: '', label: '开发人员', position: 'left',
+          items: [
+            {to: 'docs/platform/home', label:'华炎开发平台',position: 'left', activeBasePath: 'docs/platform/'},
+            {to: 'docs/developer/home', label: '培训教程', position: 'left', activeBasePath: 'docs/developer/'}
           ]
         },
         {to: '', label: '技术支持', position: 'left',
           items: [
             {to: 'docs/help/home', label: '帮助文档', activeBasePath: 'docs/help'},
-            {to: 'docs/contact_us', label: '联系我们'},
+            {to: 'docs/contact_us', label: '在线咨询'},
           ]
         },
         {label: '登录', position: 'right', href: 'https://cn.steedos.com'},
@@ -185,8 +191,8 @@ module.exports = {
               label: '销售热线：400-820-1612',
             },
             {
-              label: '在线客服',
-              href: 'https://messenger.steedos.cn/',
+              label: '在线咨询',
+              to: 'docs/contact_us',
             },
             {
               label: '最新动态',
