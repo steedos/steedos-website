@@ -54,7 +54,7 @@ function Headings({headings, isChild}) {
 
 function DocItem(props) {
   const {siteConfig = {}} = useDocusaurusContext();
-  const {url: siteUrl, title: siteTitle} = siteConfig;
+  let {url: siteUrl, title: siteTitle} = siteConfig;
   const {content: DocContent} = props;
   const {metadata} = DocContent;
   const {
@@ -65,6 +65,7 @@ function DocItem(props) {
     lastUpdatedAt,
     lastUpdatedBy,
     version,
+    sidebar
   } = metadata;
   const {
     frontMatter: {
@@ -80,6 +81,10 @@ function DocItem(props) {
   let backgroundImage = 'url(/img/banner/sales-cloud-overview-lg.png)'
   if (props.content.frontMatter.background) {
     backgroundImage = 'url(' + props.content.frontMatter.background + ')';
+  }
+
+  if (sidebar) {
+    siteTitle = sidebar;
   }
 
   return (
