@@ -11,4 +11,4 @@ background: /img/banner/service-overview-lg.png
 
 ## 微信公众号
 
-请在微信中，搜索公众号“华炎软件”，获取更多华炎云的信息。
+请在微信中，搜索公众号“华炎办公”，获取更多华炎云的信息。
