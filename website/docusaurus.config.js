@@ -100,7 +100,7 @@ module.exports = {
     disableDarkMode: true,
     navbar: {
       hideOnScroll: false,
-      title: '华炎云',
+      title: '华炎',
       logo: {
         alt: '华炎',
         src: 'img/icon_blue.png',
