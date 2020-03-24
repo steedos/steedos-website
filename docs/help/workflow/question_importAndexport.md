@@ -24,4 +24,4 @@ hide_table_of_contents: true
 
 ![导入](/assets/workflow/import.png)
 
-可参考 [审批王流程设计-流程导入导出](/docs/workflow/help/admin_flow#%E6%B5%81%E7%A8%8B%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA)。
+可参考 [审批王流程设计-流程导入导出](/workflow/help/admin_flow#%E6%B5%81%E7%A8%8B%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA)。

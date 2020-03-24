@@ -35,7 +35,7 @@ sidebar_label: 市场营销主管
 
 显示营销活动对销售管道的影响并将时间用于最重要的销售线索。
 
-[了解详情](/docs/sales_management/clue)
+[了解详情](/sales_management/clue)
 
 #### Pardot
 

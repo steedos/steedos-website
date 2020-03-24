@@ -113,7 +113,7 @@ function Home() {
                 'button button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/developer/index')}
+              to={useBaseUrl('developer/index')}
             >
               快速向导
             </Link>

@@ -9,7 +9,7 @@ import React from 'react';
 import {Redirect} from '@docusaurus/router';
 
 function USHome() {
-  return <Redirect to="/docs/us/home" />;
+  return <Redirect to="/us/home" />;
 }
 
 export default USHome;

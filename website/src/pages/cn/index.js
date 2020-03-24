@@ -60,7 +60,7 @@ function Home() {
                   </h2>
                 </div>
                 <div class="slds-no-flex">
-                  <a class="slds-button slds-button_neutral" href="/docs/help/home">使用手册</a>
+                  <a class="slds-button slds-button_neutral" href="/help/home">使用手册</a>
                 </div>
               </header>
             </div> */}

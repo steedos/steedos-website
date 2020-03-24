@@ -26,4 +26,4 @@ hide_table_of_contents: true
 - 全部设置完成后，保存即可。
 
 
-关于字段填写权限，请参考 [审批王流程设计-表单字段](/docs/workflow/help/admin_flow#%E8%A1%A8%E5%8D%95%E5%AD%97%E6%AE%B5)。
+关于字段填写权限，请参考 [审批王流程设计-表单字段](/workflow/help/admin_flow#%E8%A1%A8%E5%8D%95%E5%AD%97%E6%AE%B5)。

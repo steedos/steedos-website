@@ -30,4 +30,4 @@ hide_table_of_contents: true
 
  - 含有系统字段的文件标题：常用的系统字段如提交日期{submit_date},申请人名称{applicant_name}，审批单编号{insname}。如工作周报的文件标题为{applicant.name}+"周报 "+{submit.date}。
 
-关于标题公式的设置，可以参考 [审批王表单设计-标题公式](/docs/workflow/help/admin_form/#%E6%A0%87%E9%A2%98%E5%85%AC%E5%BC%8F)
+关于标题公式的设置，可以参考 [审批王表单设计-标题公式](/workflow/help/admin_form/#%E6%A0%87%E9%A2%98%E5%85%AC%E5%BC%8F)

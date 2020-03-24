@@ -15,7 +15,7 @@ class SteedosAppLauncher extends React.Component {
 								<AppLauncherTile
 									description="BPM 业务流程管理工具"
 									title="流程审批"
-									href="/docs/workflow/home"
+									href="/workflow/home"
 									iconNode={<Icon
 										category="standard"
 										name="lead_list"
@@ -25,7 +25,7 @@ class SteedosAppLauncher extends React.Component {
 								<AppLauncherTile
 									description="PAAS 企业应用开发平台"
 									title="开发平台"
-									href="/docs/platform/home"
+									href="/platform/home"
 									iconNode={<Icon
 										category="standard"
 										name="system_and_global_variable"
@@ -35,7 +35,7 @@ class SteedosAppLauncher extends React.Component {
 								<AppLauncherTile
 									description="合同审批、合同台账、统计分析"
 									title="合同管理"
-									href="/docs/solutions/contract"
+									href="/solutions/contract"
 									iconNode={<Icon
 										category="standard"
 										name="contract_line_item"
@@ -63,7 +63,7 @@ class SteedosAppLauncher extends React.Component {
 								<AppLauncherTile
 									description="私有云即时通讯解决方案"
 									title="即时通讯"
-									href="/docs/products/messenger"
+									href="/products/messenger"
 									iconNode={<Icon
 										category="standard"
 										name="messaging_conversation"
@@ -75,7 +75,7 @@ class SteedosAppLauncher extends React.Component {
 								<AppLauncherTile
 									description="构建集团集权与分权的管理平台"
 									title="集团管控"
-									href="/docs/group_management/home"
+									href="/group_management/home"
 									iconNode={<Icon
 										category="standard"
 										name="hierarchy"
@@ -85,7 +85,7 @@ class SteedosAppLauncher extends React.Component {
 								<AppLauncherTile
 									description="提供高质量财务管理解决方案"
 									title="费控管理"
-									href="/docs/cost_control/home"
+									href="/cost_control/home"
 									iconNode={<Icon
 										category="standard"
 										name="partner_marketing_budget"

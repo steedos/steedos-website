@@ -22,4 +22,4 @@ hide_table_of_contents: true
 
 - “公式”栏里输入：{train_fee}+{traffic_fee}+{vehicle_fee}+{stay_fee}+{meals}+{office_fee}+{business_fee}+{o_fee}，所有费用字段累加，保存即可。其中的“train_fee”等分别是交通费字段的字段名。
 
-设置字段公式时，除了数值型的加减乘除，您还可以使用其他函数，具体使用方法，可参考 [审批王表单设计-字段公式](/docs/workflow/help/admin_form/#%E5%AD%97%E6%AE%B5%E5%85%AC%E5%BC%8F)
+设置字段公式时，除了数值型的加减乘除，您还可以使用其他函数，具体使用方法，可参考 [审批王表单设计-字段公式](/workflow/help/admin_form/#%E5%AD%97%E6%AE%B5%E5%85%AC%E5%BC%8F)

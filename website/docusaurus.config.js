@@ -108,38 +108,38 @@ module.exports = {
       links: [
         {to: '', label: '产品', position: 'left',
           items: [
-            {to: 'docs/workflow/home', label: '流程审批', position: 'left', activeBasePath: 'docs/workflow/'},
-            // {to: 'docs/sales_management/home', label: '销售管理', position: 'left', activeBasePath: 'docs/sales_management'},
-            {to: 'docs/knowledge/home', label: '知识管理', position: 'left', activeBasePath: 'docs/knowledge'},
-            //{to: 'docs/products/messenger', label: '即时通讯', position: 'left', activeBasePath: 'docs/messenger/'},
-            {to: 'docs/platform/home', label: '开发平台', position: 'left', activeBasePath: 'docs/platform'}
+            {to: 'workflow/home', label: '流程审批', position: 'left', activeBasePath: 'workflow/'},
+            // {to: 'sales_management/home', label: '销售管理', position: 'left', activeBasePath: 'sales_management'},
+            {to: 'knowledge/home', label: '知识管理', position: 'left', activeBasePath: 'knowledge'},
+            //{to: 'products/messenger', label: '即时通讯', position: 'left', activeBasePath: 'messenger/'},
+            {to: 'platform/home', label: '开发平台', position: 'left', activeBasePath: 'platform'}
           ]
         },
         {to: '', label: '解决方案', position: 'left',
           items: [
-            {to: 'docs/group_management/home', label:'集团管控',position: 'left', activeBasePath: 'docs/group_management'},
-            {to: 'docs/cost_control/home', label: '费控管理', position: 'left', activeBasePath: 'docs/cost_control/'}
+            {to: 'group_management/home', label:'集团管控',position: 'left', activeBasePath: 'group_management'},
+            {to: 'cost_control/home', label: '费控管理', position: 'left', activeBasePath: 'cost_control/'}
           ]
         },
         {to: '', label: '开发人员', position: 'left',
           items: [
-            {to: 'docs/platform/home', label:'华炎开发平台',position: 'left', activeBasePath: 'docs/platform/'},
-            {to: 'docs/developer/home', label: '培训教程', position: 'left', activeBasePath: 'docs/developer/'}
+            {to: 'platform/home', label:'华炎开发平台',position: 'left', activeBasePath: 'platform/'},
+            {to: 'developer/home', label: '培训教程', position: 'left', activeBasePath: 'developer/'}
           ]
         },
         {to: '', label: '技术支持', position: 'left',
           items: [
-            {to: 'docs/help/home', label: '帮助文档', activeBasePath: 'docs/help'},
-            {to: 'docs/contact_us', label: '在线咨询'},
+            {to: 'help/home', label: '帮助文档', activeBasePath: 'help'},
+            {to: 'contact_us', label: '在线咨询'},
           ]
         },
         {label: '登录', position: 'right', href: 'https://cn.steedos.com'},
       ],
       links_us: [
-        {to: 'docs/us/home', label: 'Workflow', position: 'left'},
-        {to: 'docs/us/help/workflow/README', label: 'Help', position: 'right'},
+        {to: 'us/home', label: 'Workflow', position: 'left'},
+        {to: 'us/help/workflow/README', label: 'Help', position: 'right'},
         {to: '/cn/', label: '中国区域', position: 'right'},
-        {to: 'docs/us/login', label: 'US Region', position: 'right'}
+        {to: 'us/login', label: 'US Region', position: 'right'}
       ],
     },
     footer: {
@@ -155,15 +155,15 @@ module.exports = {
           items: [
             {
               label: '审批王',
-              to: 'docs/workflow/home',
+              to: 'workflow/home',
             },
             {
               label: '开发平台',
-              to: 'docs/platform/home',
+              to: 'platform/home',
             },
             {
               label: '华信',
-              to: 'docs/products/messenger',
+              to: 'products/messenger',
             },
           ],
         },
@@ -192,7 +192,7 @@ module.exports = {
             },
             {
               label: '在线咨询',
-              to: 'docs/contact_us',
+              to: 'contact_us',
             },
             {
               label: '最新动态',
@@ -217,6 +217,7 @@ module.exports = {
         docs: {
           // docs folder path relative to website dir.
           path: '../docs',
+          routeBasePath: '/', // Set this value to '/'.
           // sidebars file relative to website dir.
           sidebarPath: require.resolve('./sidebars.json'),
           // editUrl: 'https://github.com/steedos/steedos-website/edit/master/website/',

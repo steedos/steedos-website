@@ -4,7 +4,7 @@ title: 创建项目
 
 ## 创建Steedos项目
 
-创建Steedos项目前，请[安装开发环境](https://developer.steedos.com/docs/developer/install)
+创建Steedos项目前，请[安装开发环境](https://developer.steedos.com/developer/install)
 
 创建一个名为test的空项目
 
@@ -38,7 +38,7 @@ yarn start
 ## 注册一个新账户
 
 使用浏览器访问地址 [http://127.0.0.1:5000/](http://127.0.0.1:5000/) ，即可访问用户界面。
-第一次使用时，数据库为空。点击“注册”，用邮箱注册一个新账户。具体操作步骤，请参照[审批王-注册企业账户](https://developer.steedos.com/docs/workflow/help/guide)
+第一次使用时，数据库为空。点击“注册”，用邮箱注册一个新账户。具体操作步骤，请参照[审批王-注册企业账户](https://developer.steedos.com/workflow/help/guide)
 ![注册](/assets/注册.png)
 
 ## 创建一个企业

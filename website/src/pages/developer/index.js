@@ -62,7 +62,7 @@ function Home() {
                 'button button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/developer/index')}
+              to={useBaseUrl('developer/index')}
             >
               快速向导
             </Link>
@@ -110,7 +110,7 @@ function Home() {
               <div className="text--center padding-vert--lg">
                 <Link
                   className="button button--primary button--lg"
-                  to={useBaseUrl('docs/developer/index')}
+                  to={useBaseUrl('developer/index')}
                 >
                   了解更多
                 </Link>

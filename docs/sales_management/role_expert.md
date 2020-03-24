@@ -24,7 +24,7 @@ sidebar_label: IT专家
 #### 工作流和审批
 轻松点击即可设计并运行任何业务流程。 通过灵活的审批流程迈向成功。
 
-[了解详情 >](/docs/sales_management/mobile_office)
+[了解详情 >](/sales_management/mobile_office)
 
 #### Lightning 平台
 

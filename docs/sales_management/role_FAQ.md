@@ -103,4 +103,4 @@ Sales Cloud 用 Lightning Experience 是一种全新的用户体验，可帮助�
 
 询问有关华炎产品、定价、实施或任何其他方面的问题，我们的销售代表经过专业培训，将随时准备为您提供帮助。
 
-[联系我们](/docs/contact_us)
+[联系我们](/contact_us)
