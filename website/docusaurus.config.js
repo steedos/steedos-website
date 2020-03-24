@@ -110,7 +110,7 @@ module.exports = {
           items: [
             {to: 'docs/workflow/home', label: '流程审批', position: 'left', activeBasePath: 'docs/workflow/'},
             // {to: 'docs/sales_management/home', label: '销售管理', position: 'left', activeBasePath: 'docs/sales_management'},
-            {to: 'docs/knowledge_management/home', label: '知识管理', position: 'left', activeBasePath: 'docs/knowledge_management'},
+            {to: 'docs/knowledge/home', label: '知识管理', position: 'left', activeBasePath: 'docs/knowledge'},
             //{to: 'docs/products/messenger', label: '即时通讯', position: 'left', activeBasePath: 'docs/messenger/'},
             {to: 'docs/platform/home', label: '开发平台', position: 'left', activeBasePath: 'docs/platform'}
           ]
