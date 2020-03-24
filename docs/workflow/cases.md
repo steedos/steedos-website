@@ -1,5 +1,5 @@
 ---
-title: 案例
+title: 成功案例
 hide_table_of_contents: false
 background: /img/banner/service-overview-lg.png
 ---

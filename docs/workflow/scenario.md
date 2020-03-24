@@ -1,5 +1,5 @@
 ---
-title: 场景
+title: 应用场景
 hide_table_of_contents: false
 background: /img/banner/service-overview-lg.png
 ---
