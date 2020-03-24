@@ -1,5 +1,5 @@
 {
-  "华炎审批王": {
+  "审批王": {
     "审批王": ["workflow/home", "workflow/function", "workflow/scenario", "workflow/cases", "workflow/price", "workflow/download"]
   },
   "华炎集团管控":{
@@ -17,7 +17,7 @@
     "按角色": ["sales_management/role_professional","sales_management/role_supervisor","sales_management/role_operate","sales_management/role_manager","sales_management/role_expert","sales_management/role_service","sales_management/role_FAQ"]
   },
   "华炎知识管理": {
-    "知识管理": ["knowledge_management/home","knowledge_management/management","knowledge_management/case"]
+    "知识管理": ["knowledge/home","knowledge/management","knowledge/case"]
   },
   "华炎开发平台": {
     "华炎开发平台": ["platform/home", "platform/features", "platform/pricing"],
