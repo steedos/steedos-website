@@ -16,7 +16,7 @@ function Home() {
 
   if (context.isClient) {
     var userLang = navigator.language || navigator.userLanguage; 
-    if (userLang == 'zh-CN')
+    if (userLang == 'zh-CN' || userLang == 'zh-cn')
       return <Redirect to="/cn/" />;
     else
       return <Redirect to="/us/" />;
