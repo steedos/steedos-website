@@ -26,6 +26,7 @@
     --ifm-h5-font-size: 1rem;
     --ifm-h6-font-size: 1rem;
     --ifm-font-size-base: 16px;
+    --ifm-container-width: 1140px;
   }
   
   @media screen and (max-width: 996px) {
@@ -81,12 +82,6 @@
   background-color: transparent;
 }
 
-.navbar {
-  border-bottom: 3px solid #00a1e0;
-  box-shadow: none;
-  min-height: 60px;
-}
-
 .markdown table {
   width: fit-content;
   background: white;
@@ -95,4 +90,30 @@
 .markdown h4, .markdown h5, .markdown h6 {
   color: #032e61;
   font-weight: 400;
+}
+
+.navbar {
+  border-bottom: 3px solid #00a1e0;
+  box-shadow: none;
+  min-height: 60px;
+  justify-content: center;
+}
+
+.navbar .navbar__title {
+  font-size: 1.2rem;
+}
+
+.navbar .navbar__inner {
+  max-width: 1390px;
+}
+
+.main-wrapper {
+  justify-content: center;
+  display: flex;
+}
+
+@media (min-width: 996px) {
+  .container {
+    padding-left: 4rem;
+  }
 }
