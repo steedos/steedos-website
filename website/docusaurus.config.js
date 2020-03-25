@@ -1,7 +1,7 @@
 // docusaurus.config.js
 module.exports = {
 
-  title: '华炎云', // Title for your website.
+  title: '华炎', // Title for your website.
   tagline: '华炎云是真正的一站式企业沟通与协作平台，整合审批、销售、采购、客户服务等功能于一体，打造高效的办公方式，加速企业成长。',
   url: 'https://www.steedos.com/', // Your website URL
   baseUrl: '/', // Base URL for your project */
