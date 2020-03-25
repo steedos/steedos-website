@@ -2,31 +2,31 @@
   "审批王": {
     "审批王": ["workflow/home", "workflow/function", "workflow/scenario", "workflow/cases", "workflow/price", "workflow/download"]
   },
-  "华炎集团管控":{
+  "集团管控":{
     "集团管控": ["group_management/home","group_management/features","group_management/scenario","group_management/case"]
   },
   "Steedos Workflow": {
     "Steedos Workflow": ["us/home", "us/training", "us/price", "us/download"]
   },
-  "华炎费控管理": {
+  "费控管理": {
     "费控管理": ["cost_control/home","cost_control/project","cost_control/costcases"]
   },
-  "华炎销售管理":{
+  "销售管理":{
     "销售管理": ["sales_management/home","sales_management/reason"],
     "功能": ["sales_management/contacts","sales_management/business","sales_management/clue","sales_management/mobile","sales_management/im","sales_management/mobile_office","sales_management/libraries","sales_management/report","sales_management/forecast"],
     "按角色": ["sales_management/role_professional","sales_management/role_supervisor","sales_management/role_operate","sales_management/role_manager","sales_management/role_expert","sales_management/role_service","sales_management/role_FAQ"]
   },
-  "华炎知识管理": {
+  "知识管理": {
     "知识管理": ["knowledge/home","knowledge/management","knowledge/case"]
   },
-  "华炎开发平台": {
+  "开发平台": {
     "华炎开发平台": ["platform/home", "platform/features", "platform/pricing"],
     "培训教程": ["developer/home","developer/install","developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report"],
     "配置": ["developer/steedos_config", "developer/datasource", "developer/object", "developer/object_field", "developer/listview", "developer/object_permission", "developer/app", "developer/reports", "developer/object_filter_conditions", "developer/object_field_formula", "developer/standard_objects", "developer/object_workflow"],
     "开发": ["developer/object_trigger", "developer/object_action", "developer/object_form", "developer/objectql_connection", "developer/objectql_object", "developer/report_jsreport"],
     "插件": ["plugins/index", "plugins/plugin_server", "plugins/plugin_webapp", "plugins/plugin_config"]
   },
-  "华炎帮助": {
+  "帮助": {
     "华炎云": ["help/home"],
     "业务台账": ["help/record_list", "help/record_view", "help/record_report", "help/notifications"],
     "业务审批": ["help/instance_add", "help/instance_approve", "help/instance_carboncopy", "help/instance_distribute", "help/instance_forward", "help/instance_print", "help/instance_search", "help/instance_monitor", "help/instance_export" ],
@@ -40,7 +40,7 @@
     "How to design a form": ["us/help/workflow/quickguide_flow", "us/help/workflow/form_category", "us/help/workflow/form_design", "us/help/workflow/form_fields", "us/help/workflow/form_table", "us/help/workflow/form_formula", "us/help/workflow/form_name_formula", "us/help/workflow/form_scripts"],
     "How to design a flow": ["us/help/workflow/flow_design", "us/help/workflow/flow_permissions", "us/help/workflow/flow_step_approve", "us/help/workflow/flow_step_input", "us/help/workflow/flow_step_counter_sign", "us/help/workflow/flow_step_condition", "us/help/workflow/flow_step_user", "us/help/workflow/flow_step_permissions", "us/help/workflow/flow_state"]
   },
-  "华炎开发平台 API": {    
+  "API": {    
     "应用集成": ["api/index"],
     "OData": ["api/odata", "api/odata_auth", "api/odata_query", "api/odata_get", "api/odata_add", "api/odata_edit", "api/odata_delete", "api/odata_functions", "api/odata_metadata"],
     "GraphQL": ["api/graphql", "api/graphql_auth", "api/graphql_query", "api/graphql_add", "api/graphql_edit", "api/graphql_delete"],

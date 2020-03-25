@@ -130,14 +130,19 @@
   }
   .menu.menu--responsive .menu__button {
     bottom: auto;
-    top: 12px;
+    top: 10px;
     right: 0;
     font-size: 1.2rem;
   }
   .menu.menu--show {
     top: 60px;
+    overflow: initial;
   }
   .navbar.navbar--fixed-top.navbar-sidebar--show {
     z-index: 300;
   }
+}
+
+.navbar .navbar__brand {
+  margin-right: 2rem;
 }

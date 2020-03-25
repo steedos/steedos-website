@@ -83,16 +83,17 @@ function DocItem(props) {
     background = 'url(' + props.content.frontMatter.background + ')';
   }
 
-  if (sidebar) {
-    siteTitle = sidebar;
+  let metaTitle = title;
+  if (sidebar && metaTitle) {
+    metaTitle = sidebar + ' - ' + title;
   }
 
   return (
     <>
       <Head>
-        {title && (
+        {metaTitle && (
           <title>
-            {title} - {siteTitle}
+            {metaTitle} - {siteTitle}
           </title>
         )}
         {description && <meta name="description" content={description} />}
