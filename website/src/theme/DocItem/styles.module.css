@@ -13,18 +13,6 @@
   /* line-height: 52px; */
 }
 
-@media only screen and (max-width: 996px) {
-  .docItemWrapper {
-    padding-left: 0;
-    margin-left: 0;
-    background-size: auto;
-  }
-  .docTitle {
-    /* font-size: 2rem; */
-    /* margin-bottom: 2rem; */
-  }
-}
-
 .docItemContainer {
   margin: 0 auto;
   padding: 0 0.5rem;

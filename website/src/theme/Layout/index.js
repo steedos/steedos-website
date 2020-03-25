@@ -51,6 +51,7 @@ function Layout(props) {
         <html lang="en" />
 
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"></meta>
         {metaTitle && <title>{metaTitle}</title>}
         {metaTitle && <meta property="og:title" content={metaTitle} />}
         {favicon && <link rel="shortcut icon" href={faviconUrl} />}
