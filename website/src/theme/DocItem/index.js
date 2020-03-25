@@ -82,7 +82,7 @@ function DocItem(props) {
   if (props.content.frontMatter.background) {
     backgroundImage = 'url(' + props.content.frontMatter.background + ')';
   }
-
+  
   if (sidebar) {
     siteTitle = sidebar;
   }
@@ -109,7 +109,16 @@ function DocItem(props) {
         )}
         {permalink && <meta property="og:url" content={siteUrl + permalink} />}
       </Head>
-      <div className={classnames("padding-vert--lg", styles.docItemWrapper)} style={{backgroundImage: backgroundImage}}>
+
+      <style dangerouslySetInnerHTML={{__html: `
+          .main-wrapper {
+            background: ${backgroundImage};  
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: contain;
+          }
+        `}}></style>
+      <div className={classnames("padding-vert--lg", styles.docItemWrapper)}>
         <div className="container">
           <div className="row">
             <div className={classnames('col', styles.docItemCol)}>
