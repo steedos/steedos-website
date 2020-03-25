@@ -114,9 +114,6 @@ function DocItem(props) {
       <style dangerouslySetInnerHTML={{__html: `
           .main-wrapper {
             background: ${background};  
-            background-repeat: no-repeat;
-            background-position: top;
-            background-size: contain;
           }
         `}}></style>
       <div className={classnames("padding-vert--lg", styles.docItemWrapper)}>

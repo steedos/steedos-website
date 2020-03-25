@@ -111,6 +111,9 @@
   justify-content: center;
   display: flex;
   min-height: 1390px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
 }
 
 @media (min-width: 996px) {
