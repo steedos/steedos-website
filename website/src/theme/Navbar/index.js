@@ -188,10 +188,11 @@ function Navbar(props) {
               onChange={onToggleChange}
             />
           )}
+          {!sidebarShown &&(
           <SearchBar
             handleSearchBarToggle={setIsSearchBarExpanded}
             isSearchBarExpanded={isSearchBarExpanded}
-          />
+          />)}
         </div>
       </div>
       <div
@@ -225,6 +226,11 @@ function Navbar(props) {
               onChange={onToggleChange}
             />
           )}
+
+          <SearchBar
+            handleSearchBarToggle={setIsSearchBarExpanded}
+            isSearchBarExpanded={isSearchBarExpanded}
+          />
         </div>
         <div className="navbar-sidebar__items">
           <div className="menu">

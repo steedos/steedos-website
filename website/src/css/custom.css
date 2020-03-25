@@ -122,3 +122,22 @@
   width: 100%;
   max-width: 1390px;
 }
+
+/* 手机上显示在右上角 */
+@media (max-width: 996px) {
+  .navbar__inner .navbar__search {
+    display: none;
+  }
+  .menu.menu--responsive .menu__button {
+    bottom: auto;
+    top: 12px;
+    right: 0;
+    font-size: 1.2rem;
+  }
+  .menu.menu--show {
+    top: 60px;
+  }
+  .navbar.navbar--fixed-top.navbar-sidebar--show {
+    z-index: 300;
+  }
+}

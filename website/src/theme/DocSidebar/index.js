@@ -118,7 +118,6 @@ function DocSidebar(props) {
     siteConfig: {themeConfig: {navbar: {title, logo = {}} = {}}} = {},
   } = useDocusaurusContext();
   const logoUrl = useBaseUrl(logo.src);
-
   const {
     docsSidebars,
     path,
@@ -156,41 +155,42 @@ function DocSidebar(props) {
         className={classnames('menu', 'menu--responsive', styles.menu, {
           'menu--show': showResponsiveSidebar,
         })}>
+        <div class=" menu__button">
+        <span>{currentSidebar}</span>
         <button
           aria-label={showResponsiveSidebar ? 'Close Menu' : 'Open Menu'}
-          className="button button--secondary button--sm menu__button"
+          className="button button--link button--sm"
           type="button"
           onClick={() => {
             setShowResponsiveSidebar(!showResponsiveSidebar);
           }}>
           {showResponsiveSidebar ? (
-            <span
-              className={classnames(
-                styles.sidebarMenuIcon,
-                styles.sidebarMenuCloseIcon,
-              )}>
-              &times;
-            </span>
-          ) : (
             <svg
-              className={styles.sidebarMenuIcon}
+              className='{styles.sidebarMenuIcon}'
               xmlns="http://www.w3.org/2000/svg"
               height={MOBILE_TOGGLE_SIZE}
               width={MOBILE_TOGGLE_SIZE}
-              viewBox="0 0 32 32"
+              viewBox="0 0 24 24"
+              role="img"
+              focusable="false">
+              <title>Close</title>
+              <path d="M14.3 11.7l6-6c.3-.3.3-.7 0-1l-.9-1c-.3-.2-.7-.2-1 0l-6 6.1c-.2.2-.5.2-.7 0l-6-6.1c-.3-.3-.7-.3-1 0l-1 1c-.2.2-.2.7 0 .9l6.1 6.1c.2.2.2.4 0 .6l-6.1 6.1c-.3.3-.3.7 0 1l1 1c.2.2.7.2.9 0l6.1-6.1c.2-.2.4-.2.6 0l6.1 6.1c.2.2.7.2.9 0l1-1c.3-.3.3-.7 0-1l-6-6c-.2-.2-.2-.5 0-.7z"></path>
+            </svg>
+          ) : (
+            <svg
+              className='{styles.sidebarMenuIcon}'
+              xmlns="http://www.w3.org/2000/svg"
+              height={MOBILE_TOGGLE_SIZE}
+              width={MOBILE_TOGGLE_SIZE}
+              viewBox="0 0 24 24"
               role="img"
               focusable="false">
               <title>Menu</title>
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                strokeWidth="2"
-                d="M4 7h22M4 15h22M4 23h22"
-              />
+              <path d="M22 8.2l-9.5 9.6c-.3.2-.7.2-1 0L2 8.2c-.2-.3-.2-.7 0-1l1-1c.3-.3.8-.3 1.1 0l7.4 7.5c.3.3.7.3 1 0l7.4-7.5c.3-.2.8-.2 1.1 0l1 1c.2.3.2.7 0 1z"></path>
             </svg>
           )}
         </button>
+        </div>
         <ul className="menu__list">
           {sidebarData.map(item => (
             <DocSidebarItem
