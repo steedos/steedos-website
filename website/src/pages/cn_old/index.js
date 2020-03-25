@@ -21,16 +21,16 @@ function Home() {
 
   return (
     <Layout
-      title="OA移动办公平台, 办公自动化系统"
-      keywords={['OA, 华炎, 办公协同, 企业安全, 移动办公, 移动办公解决方案, 移动办公平台, 移动办公软件, 移动办公系统, 移动审批, 云办公平台, 手机办公, 手机审批']}
-      description={siteConfig.tagline}
+      title="华炎开发 - PaaS平台、低代码快速开发工具"
+      keywords={['aPaaS,hpaPaaS,RAD,数据库应用,快速开发工具']}
+      description='华炎开发平台是新一代人工智能开发工具，开发人员只需要编写简单的配置文件就可以构建自定义应用程序，实现数据管理、权限控制、流程审批、统计分析，并与现有业务系统集成。'
     >
       <header className={classnames('', styles.heroBanner)}>
         <div class="slds-p-top_x-large"></div>
         <div className="container">
-          <h1 className="">欢迎使用华炎云平台</h1>
-          <p className="">华炎云平台是下一代人工智能开发平台，提供数据管理、流程审批、业务分析、人工智能以及系统集成服务，帮助企业高效率的集成所有业务流程，将实时数据转化为行动，并提高员工的工作效率。</p>
-          <p>根据你的 IT 架构需求，华炎云可以采用混合部署、云部署或本地部署模式。</p>
+          <h1 className="">欢迎使用华炎开发平台</h1>
+          <p className="">华炎开发平台是新一代人工智能开发工具，开发人员只需要编写简单的配置文件就可以构建自定义应用程序，实现数据管理、权限控制、流程审批、统计分析，并与现有业务系统集成。</p>
+          <p>根据你的 IT 架构需求，自定义应用程序可以采用混合部署、云部署或本地部署模式。</p>
           <a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="http://oss.steedos.com/videos/case/%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E8%AF%B7%E5%81%87%E6%B5%81%E7%A8%8B.mp4" target="_blank">
           视频演示
           </a>

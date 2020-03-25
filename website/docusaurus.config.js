@@ -1,8 +1,8 @@
 // docusaurus.config.js
 module.exports = {
 
-  title: '华炎', // Title for your website.
-  tagline: '华炎云是真正的一站式企业沟通与协作平台，整合审批、销售、采购、客户服务等功能于一体，打造高效的办公方式，加速企业成长。',
+  title: '华炎开发', // Title for your website.
+  tagline: '华炎开发平台是新一代人工智能开发工具，开发人员只需要编写简单的配置文件就可以构建自定义应用程序，实现数据管理、权限控制、流程审批、统计分析，并与现有业务系统集成。',
   url: 'https://www.steedos.com/', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -102,29 +102,24 @@ module.exports = {
       hideOnScroll: false,
       title: '华炎',
       logo: {
-        alt: '华炎',
+        alt: '华炎开发',
         src: 'img/icon_blue.png',
       },
       links: [
-        {to: '', label: '产品', position: 'left',
+
+        {to: '', label: '开发平台', position: 'left' ,
           items: [
-            {to: 'workflow/home', label: '流程审批', position: 'left', activeBasePath: 'workflow/'},
-            // {to: 'sales_management/home', label: '销售管理', position: 'left', activeBasePath: 'sales_management'},
-            {to: 'knowledge/home', label: '知识管理', position: 'left', activeBasePath: 'knowledge'},
-            //{to: 'products/messenger', label: '即时通讯', position: 'left', activeBasePath: 'messenger/'},
-            {to: 'platform/home', label: '开发平台', position: 'left', activeBasePath: 'platform'}
+            {to: 'platform/home', label: '什么是华炎？', position: 'left', activeBasePath: 'platform'},
+            {to: 'developer/home', label: '培训教程', position: 'left'}
           ]
         },
         {to: '', label: '解决方案', position: 'left',
           items: [
+            {to: 'workflow/home', label: '流程审批', position: 'left', activeBasePath: 'workflow/'},
+            // {to: 'sales_management/home', label: '销售管理', position: 'left', activeBasePath: 'sales_management'},
+            {to: 'knowledge/home', label: '知识管理', position: 'left', activeBasePath: 'knowledge'},
             {to: 'group_management/home', label:'集团管控',position: 'left', activeBasePath: 'group_management'},
             {to: 'cost_control/home', label: '费控管理', position: 'left', activeBasePath: 'cost_control/'}
-          ]
-        },
-        {to: '', label: '开发人员', position: 'left',
-          items: [
-            {to: 'platform/home', label:'华炎开发平台',position: 'left', activeBasePath: 'platform/'},
-            {to: 'developer/home', label: '培训教程', position: 'left', activeBasePath: 'developer/'}
           ]
         },
         {to: '', label: '技术支持', position: 'left',

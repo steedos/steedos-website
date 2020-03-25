@@ -1,11 +1,13 @@
 ---
-title: 构建自定义应用程序并扩展华炎云，以满足任何业务需求。
-sidebar_label: 概览
+title: 首屈一指的开发平台，快速满足数字化转型各种需求。
+sidebar_label: 什么是华炎？
 hide_table_of_contents: true
 background: /img/banner/clouds-large-desktop.png
 ---
 
-华炎开发平台，创新的使用配置文件描述业务模型和业务功能，开发人员只需要编写简单的配置文件就可以构建自定义应用程序，并部署到电脑、平板、手机三个平台。
+华炎开发平台是新一代人工智能开发工具，开发人员只需要编写简单的配置文件就可以构建自定义应用程序，实现数据管理、权限控制、流程审批、统计分析，并与现有业务系统集成。
+
+根据你的 IT 架构需求，自定义应用程序可以采用混合部署、云部署或本地部署模式。
 
 <a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/developer/home" >
 免费教程
