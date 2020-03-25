@@ -78,11 +78,11 @@ function DocItem(props) {
 
   const metaImageUrl = siteUrl + useBaseUrl(metaImage);
 
-  let backgroundImage = 'url(/img/banner/sales-cloud-overview-lg.png)'
+  let background = '#f4f4f4'; //'url(/img/banner/sales-cloud-overview-lg.png)'
   if (props.content.frontMatter.background) {
-    backgroundImage = 'url(' + props.content.frontMatter.background + ')';
+    background = 'url(' + props.content.frontMatter.background + ')';
   }
-  
+
   if (sidebar) {
     siteTitle = sidebar;
   }
@@ -112,7 +112,7 @@ function DocItem(props) {
 
       <style dangerouslySetInnerHTML={{__html: `
           .main-wrapper {
-            background: ${backgroundImage};  
+            background: ${background};  
             background-repeat: no-repeat;
             background-position: top;
             background-size: contain;

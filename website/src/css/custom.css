@@ -114,6 +114,11 @@
 
 @media (min-width: 996px) {
   .container {
-    padding-left: 4rem;
+    padding-left: 3rem;
   }
+}
+
+.docPage_src-theme-DocPage- {
+  width: 100%;
+  max-width: 1390px;
 }

@@ -1,5 +1,5 @@
 ---
-title: 桌面客户端
+title: 下载客户端
 sidebar_label: 下载
 background: /img/banner/service-overview-lg.png
 ---
