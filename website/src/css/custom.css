@@ -119,11 +119,6 @@
   }
 }
 
-.docPage_src-theme-DocPage- {
-  width: 100%;
-  max-width: 1390px;
-}
-
 @media (max-width: 996px) {
   /* 手机上在右上角显示站点菜单 */
   .navbar__inner .navbar__title {
@@ -152,4 +147,8 @@
 
 .navbar .navbar__brand {
   margin-right: 2rem;
+}
+
+.dropdown .dropdown__menu {
+  left: 0px;
 }
