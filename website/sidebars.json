@@ -20,7 +20,7 @@
     "知识管理": ["knowledge/home","knowledge/management","knowledge/case"]
   },
   "华炎开发": {
-    "华炎开发": ["platform", "platform/features", "platform/lowcode", "platform/opensource", "platform/pricing"]
+    "华炎开发": ["platform", "platform/features", "platform/lowcode", "platform/opensource"]
   },
   "开发文档": {
     "培训教程": ["developer","developer/install","developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report"],

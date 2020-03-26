@@ -120,8 +120,8 @@ module.exports = {
             // {to: 'sales_management/home', label: '销售管理', position: 'left', activeBasePath: 'sales_management'},
             {to: 'knowledge/home', label: '知识管理', position: 'left', activeBasePath: 'knowledge'},
             {to: 'group_management/home', label:'集团管控',position: 'left', activeBasePath: 'group_management'},
-            {to: 'cost_control/home', label: '费控管理', position: 'left', activeBasePath: 'cost_control/'},
-            {to: 'contract', label: '合同管理', position: 'left', activeBasePath: 'cost_control/'}
+            {to: 'cost_control/home', label: '费控管理', position: 'left', activeBasePath: 'cost_control'},
+            {to: 'contract/', label: '合同管理', position: 'left', activeBasePath: 'contract'}
           ]
         },
         {to: '', label: '技术支持', position: 'left',

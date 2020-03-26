@@ -5,9 +5,9 @@ sidebar_label: 目录
 
 本教程以合同管理为例，指导你如何使用华炎开发平台创建项目，配置业务对象，编程脚本，处理业务部门的各种个性化需求。
 
-## [准备：安装开发环境](/developer/install)
+#### [准备：安装开发环境](/developer/install)
 
-## [教程1：创建项目](/developer/guide_create)
+#### [教程1：创建项目](/developer/guide_create)
 
 - 创建steedos项目
 - 安装依赖包
@@ -17,7 +17,7 @@ sidebar_label: 目录
 - 创建企业/工作区
 - 系统主页面
 
-## [教程2：配置业务对象](/developer/guide_object)
+#### [教程2：配置业务对象](/developer/guide_object)
 
 - 创建业务对象：业务伙伴
 - 添加字段
@@ -26,7 +26,7 @@ sidebar_label: 目录
 - 修改应用：增加业务伙伴
 - 重启服务运行并查看效果
 
-## [教程3：业务对象关联](/developer/guide_relationship)
+#### [教程3：业务对象关联](/developer/guide_relationship)
 
 - 创建业务对象：合同
 - 添加字段
@@ -36,19 +36,19 @@ sidebar_label: 目录
 - 新建自定义应用：合同，配置包括的业务对象
 - 重启服务运行并查看效果
 
-## [教程4：配置触发器](/developer/guide_trigger)
+#### [教程4：配置触发器](/developer/guide_trigger)
 
 - 修改业务对象的字段
 - 创建触发器
 - 编写触发的执行代码：自动更新待收金额
 - 重启服务运行并查看效果
 
-## [教程5：自定义操作按钮](/developer/guide_button)
+#### [教程5：自定义操作按钮](/developer/guide_button)
 - 创建自定义操作按钮
 - 编写按钮的执行代码：发送邮件
 - 重启服务运行并查看效果
 
-## [教程6：设置报表](/developer/guide_report)
+#### [教程6：设置报表](/developer/guide_report)
 - 修改合同应用：增加报表reports
 - 重启服务运行并查看效果
 - 定义矩阵型报表：合同年度统计
