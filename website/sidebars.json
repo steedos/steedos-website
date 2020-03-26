@@ -3,24 +3,24 @@
     "审批王": ["workflow", "workflow/function", "workflow/scenario", "workflow/cases", "workflow/price", "workflow/download"]
   },
   "集团管控":{
-    "集团管控": ["group/home","group/features","group/scenario","group/case"]
+    "集团管控": ["solutions/group/home","solutions/group/features","solutions/group/scenario","solutions/group/case"]
   },
   "Steedos": {
     "Steedos Workflow": ["us", "us/training", "us/price", "us/download"]
   },
   "费控管理": {
-    "费控管理": ["cost/home","cost/project","cost/costcases"]
+    "费控管理": ["solutions/cost/home","solutions/cost/project","solutions/cost/costcases"]
   },
   "销售管理":{
-    "销售管理": ["sales/home","sales/reason"],
-    "功能": ["sales/contacts","sales/business","sales/clue","sales/mobile","sales/im","sales/mobile_office","sales/libraries","sales/report","sales/forecast"],
-    "按角色": ["sales/role_professional","sales/role_supervisor","sales/role_operate","sales/role_manager","sales/role_expert","sales/role_service","sales/role_FAQ"]
+    "销售管理": ["solutions/sales/home","solutions/sales/reason"],
+    "功能": ["solutions/sales/contacts","solutions/sales/business","solutions/sales/clue","solutions/sales/mobile","solutions/sales/im","solutions/sales/mobile_office","solutions/sales/libraries","solutions/sales/report","solutions/sales/forecast"],
+    "按角色": ["solutions/sales/role_professional","solutions/sales/role_supervisor","solutions/sales/role_operate","solutions/sales/role_manager","solutions/sales/role_expert","solutions/sales/role_service","solutions/sales/role_FAQ"]
   },
   "知识管理": {
     "知识管理": ["knowledge/home","knowledge/management","knowledge/case"]
   },
   "开发平台": {
-    "华炎开发": ["platform", "platform/features", "platform/lowcode", "platform/opensource"]
+    "华炎开发平台": ["platform", "platform/features", "platform/lowcode", "platform/opensource"]
   },
   "开发文档": {
     "培训教程": ["developer","developer/install","developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report"],

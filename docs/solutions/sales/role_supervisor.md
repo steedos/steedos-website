@@ -26,13 +26,13 @@ sidebar_label: 销售主管
 
 您可以实时获得整个团队的预测结果，包括插入式预测调整、掌控所有管理层级的可见性。
 
-[了解详情 >](/sales/forecast)
+[了解详情 >](/solutions/sales/forecast)
 
 #### 报表和仪表盘
 
 轻松追踪销售线索数量、转换率以及您管道的每一部分，实时查看业务状态。
 
-[了解详情 >](/sales/report)
+[了解详情 >](/solutions/sales/report)
 
 #### 区域管理
 

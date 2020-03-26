@@ -108,22 +108,22 @@ module.exports = {
       },
       links: [
 
-        {to: '', label: '开发平台', position: 'left' ,
+        {to: '', label: '产品', position: 'left' ,
           items: [
             {to: 'platform/', label: '什么是华炎？', position: 'left', activeBasePath: 'platform'},
-            {to: 'developer/', label: '培训教程', position: 'left'}
+            {to: 'workflow/', label: '流程审批', position: 'left', activeBasePath: 'workflow/'},
+            {to: 'knowledge/home', label: '知识管理', position: 'left', activeBasePath: 'knowledge'}
           ]
         },
         {to: '', label: '解决方案', position: 'left',
           items: [
-            {to: 'workflow/', label: '流程审批', position: 'left', activeBasePath: 'workflow/'},
-            // {to: 'sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
-            {to: 'knowledge/home', label: '知识管理', position: 'left', activeBasePath: 'knowledge'},
-            {to: 'group/home', label:'集团管控',position: 'left', activeBasePath: 'group'},
-            {to: 'cost/home', label: '费控管理', position: 'left', activeBasePath: 'cost'},
+            // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
+            {to: 'solutions/group/home', label:'集团管控',position: 'left', activeBasePath: 'group'},
+            {to: 'solutions/cost/home', label: '费控管理', position: 'left', activeBasePath: 'cost'},
             {to: 'contract/', label: '合同管理', position: 'left', activeBasePath: 'contract'}
           ]
         },
+        {to: 'developer/', label: '开发文档', position: 'left'},
         {to: '', label: '技术支持', position: 'left',
           items: [
             {to: 'help/home', label: '帮助文档', activeBasePath: 'help'},

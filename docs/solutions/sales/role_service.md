@@ -24,22 +24,22 @@ sidebar_label: 客服专业人员
 #### 客户和联系人
 全面洞察您的客户，包括个案记录、联系人、内部和客户通讯。
 
-[了解详情 >](/sales/contacts)
+[了解详情 >](/solutions/sales/contacts)
 
 #### 报表和仪表盘
 
 轻松追踪销售线索数量、转换率以及您管道的每一部分，实时查看业务状态。
 
-[了解详情 >](/sales/report)
+[了解详情 >](/solutions/sales/report)
 
 #### 工作流和审批
 
 只需点击几下即可设计并运行任何业务流程，包括升级、案例安排以及灵活的审批流程。
 
-[了解详情 >](/sales/mobile_office)
+[了解详情 >](/solutions/sales/mobile_office)
 
 #### 文件同步和共享
 
 借助该功能，您可随时随地共享文件，协作处理文件，操作轻松，超乎以往。 可在任何设备上跟踪文件修改，迅速找到所需内容。
 
-[了解详情 >](/sales/libraries)
+[了解详情 >](/solutions/sales/libraries)
