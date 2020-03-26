@@ -117,7 +117,6 @@ module.exports = {
             {to: 'solutions/cost/', label: '费控管理', position: 'left', activeBasePath: 'solutions/cost/'},
             {to: 'solutions/contract/', label: '合同管理', position: 'left', activeBasePath: 'solutions/contract/'},
             {to: 'solutions/knowledge/', label: '知识管理', position: 'left', activeBasePath: 'solutions/knowledge/'},
-            {to: 'solutions/oa/', label: '办公自动化', position: 'left', activeBasePath: 'solutions/oa/'},
           ]
         },
         {to: '', label: '服务与支持', position: 'left',
