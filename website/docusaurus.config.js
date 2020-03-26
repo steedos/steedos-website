@@ -108,26 +108,29 @@ module.exports = {
       },
       links: [
 
-        {to: '', label: '产品', position: 'left' ,
+        {to: '', label: '产品', position: 'left',
           items: [
-            {to: 'platform/', label: '什么是华炎？', position: 'left', activeBasePath: 'platform'},
-            {to: 'workflow/', label: '流程审批', position: 'left', activeBasePath: 'workflow/'},
-            {to: 'knowledge/home', label: '知识管理', position: 'left', activeBasePath: 'knowledge'}
+            {to: 'platform/', label: '华炎开发平台', position: 'left', activeBasePath: 'platform/'},
+            {to: 'solutions/workflow/', label: '审批王', position: 'left', activeBasePath: 'solutions/workflow/'},
+            // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
           ]
         },
         {to: '', label: '解决方案', position: 'left',
           items: [
             // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
-            {to: 'solutions/group/home', label:'集团管控',position: 'left', activeBasePath: 'group'},
-            {to: 'solutions/cost/home', label: '费控管理', position: 'left', activeBasePath: 'cost'},
-            {to: 'contract/', label: '合同管理', position: 'left', activeBasePath: 'contract'}
+            {to: 'solutions/workflow/', label: '审批王', position: 'left', activeBasePath: 'solutions/workflow/'},
+            {to: 'solutions/group/home', label:'集团管控',position: 'left', activeBasePath: 'solutions/group/'},
+            {to: 'solutions/cost/home', label: '费控管理', position: 'left', activeBasePath: 'solutions/cost/'},
+            {to: 'solutions/knowledge/', label: '知识管理', position: 'left', activeBasePath: 'solutions/knowledge'},
+            {to: 'solutions/contract/', label: '合同管理', position: 'left', activeBasePath: 'solutions/contract/'},
+            {to: 'solutions/oa/', label: '办公自动化', position: 'left', activeBasePath: 'solutions/oa/'},
           ]
         },
-        {to: 'developer/', label: '开发文档', position: 'left'},
-        {to: '', label: '技术支持', position: 'left',
+        {to: '', label: '服务与支持', position: 'left',
           items: [
-            {to: 'help/home', label: '帮助文档', activeBasePath: 'help'},
-            {to: 'contact_us', label: '在线咨询'},
+            {to: 'help/downloads', label: '下载客户端'},
+            {to: 'help/home', label: '帮助文档'},
+            {to: 'contact_us', label: '在线咨询'}
           ]
         },
         {to: '/us/', label: 'English', position: 'right'},

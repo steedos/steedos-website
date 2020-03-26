@@ -1,6 +1,6 @@
 ---
-title: 华炎开发平台可以做什么？
-sidebar_label: 功能
+title: 为什么选择华炎？
+sidebar_label: 为什么选择华炎？
 hide_table_of_contents: true
 background: /img/banner/clouds-large-desktop.png
 ---
