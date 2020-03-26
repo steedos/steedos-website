@@ -108,13 +108,8 @@ module.exports = {
       },
       links: [
 
-        {to: '', label: '产品', position: 'left',
-          items: [
-            // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
-            {to: 'platform/', label: '华炎开发平台', position: 'left', activeBasePath: 'platform/'},
-            {to: 'solutions/workflow/', label: '审批王', position: 'left', activeBasePath: 'solutions/workflow/'},
-          ]
-        },
+        {to: 'oa/', label: '华炎云', position: 'left', activeBasePath: 'oa/'},
+        {to: 'platform/', label: '开发平台', position: 'left', activeBasePath: 'platform/'},
         {to: '', label: '解决方案', position: 'left',
           items: [
             // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
@@ -125,10 +120,10 @@ module.exports = {
             {to: 'solutions/oa/', label: '办公自动化', position: 'left', activeBasePath: 'solutions/oa/'},
           ]
         },
-        {to: 'developer/', label: '开发文档', position: 'left', activeBasePath: 'developer/'},
         {to: '', label: '服务与支持', position: 'left',
           items: [
             {to: 'help/home', label: '帮助文档'},
+            {to: 'developer/', label: '开发文档', position: 'left', activeBasePath: 'developer/'},
             {to: 'contact_us', label: '在线咨询'}
           ]
         },

@@ -5,9 +5,7 @@ hide_table_of_contents: true
 background: /img/banner/service-overview-lg.png
 ---
 
-审批王是开源业务流程开发工具，提供图形化的表单与流程设计界面，可以快速地将公司各类审批业务转换为可严格执行的电子流程。
-
-您可以租用我们的云服务，或是将审批王部署到本地。
+华炎云是华炎应用开发平台的云端版本，提供图形化的表单与流程设计界面，可以快速地将公司各类审批业务转换为可严格执行的电子流程。
 
 <a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="http://oss.steedos.com/videos/case/%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E8%AF%B7%E5%81%87%E6%B5%81%E7%A8%8B.mp4" target="_blank">
 视频演示
