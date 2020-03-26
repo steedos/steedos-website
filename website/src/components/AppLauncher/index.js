@@ -35,7 +35,7 @@ class SteedosAppLauncher extends React.Component {
 								<AppLauncherTile
 									description="合同审批、合同台账、统计分析"
 									title="合同管理"
-									href="/solutions/contract"
+									href="/contract/"
 									iconNode={<Icon
 										category="standard"
 										name="contract_line_item"

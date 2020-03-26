@@ -80,7 +80,10 @@ function DocItem(props) {
 
   let background = '#f4f4f4'; //'url(/img/banner/sales-cloud-overview-lg.png)'
   if (props.content.frontMatter.background) {
-    background = 'url(' + props.content.frontMatter.background + ')';
+    if (props.content.frontMatter.background.startsWith('/') || props.content.frontMatter.background.startsWith('http'))
+      background = 'url(' + props.content.frontMatter.background + ')';
+    else
+      background = props.content.frontMatter.background;
   }
 
   let metaTitle = title;
@@ -114,6 +117,14 @@ function DocItem(props) {
       <style dangerouslySetInnerHTML={{__html: `
           .main-wrapper {
             background: ${background};  
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: contain;
+          }
+          @media (max-width: 996px) {
+            .main-wrapper {
+              background-size: auto;
+            }
           }
         `}}></style>
       <div className={classnames("padding-vert--lg", styles.docItemWrapper)}>
