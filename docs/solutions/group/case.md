@@ -1,5 +1,6 @@
 ---
 title: 应用案例
+background: /img/banner/health-cloud.png
 hide_table_of_contents: false
 ---
 

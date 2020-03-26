@@ -1,5 +1,6 @@
 ---
 title: 技术特点
+background: /img/banner/health-cloud.png
 ---
 ## 多管控模式融合
 

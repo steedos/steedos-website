@@ -107,22 +107,27 @@ module.exports = {
         href: '/cn/'
       },
       links: [
-        {to: 'platform/', label: '开发平台', position: 'left', activeBasePath: 'platform/'},
 
+        {to: '', label: '产品', position: 'left',
+          items: [
+            // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
+            {to: 'platform/', label: '华炎开发平台', position: 'left', activeBasePath: 'platform/'},
+            {to: 'solutions/oa/', label: '华炎办公', position: 'left', activeBasePath: 'solutions/oa/'},
+          ]
+        },
         {to: '', label: '解决方案', position: 'left',
           items: [
             // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
-            {to: 'solutions/workflow/', label: '审批王', position: 'left', activeBasePath: 'solutions/workflow/'},
-            {to: 'solutions/group/home', label:'集团管控',position: 'left', activeBasePath: 'solutions/group/'},
-            {to: 'solutions/cost/home', label: '费控管理', position: 'left', activeBasePath: 'solutions/cost/'},
-            {to: 'solutions/knowledge/', label: '知识管理', position: 'left', activeBasePath: 'solutions/knowledge'},
+            {to: 'solutions/group/', label:'集团管控',position: 'left', activeBasePath: 'solutions/group/'},
+            {to: 'solutions/cost/', label: '费控管理', position: 'left', activeBasePath: 'solutions/cost/'},
             {to: 'solutions/contract/', label: '合同管理', position: 'left', activeBasePath: 'solutions/contract/'},
-            {to: 'solutions/oa/', label: '办公自动化', position: 'left', activeBasePath: 'solutions/oa/'},
+            {to: 'solutions/workflow/', label: '流程审批', position: 'left', activeBasePath: 'solutions/workflow/'},
+            {to: 'solutions/knowledge/', label: '知识管理', position: 'left', activeBasePath: 'solutions/knowledge/'},
           ]
         },
+        {to: 'developer/', label: '开发文档', position: 'left', activeBasePath: 'developer/'},
         {to: '', label: '服务与支持', position: 'left',
           items: [
-            {to: 'help/downloads', label: '下载客户端'},
             {to: 'help/home', label: '帮助文档'},
             {to: 'contact_us', label: '在线咨询'}
           ]

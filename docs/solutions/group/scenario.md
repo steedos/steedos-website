@@ -1,5 +1,6 @@
 ---
 title: 应用场景
+background: /img/banner/health-cloud.png
 ---
 ## 集团统一管理
 
