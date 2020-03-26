@@ -12,6 +12,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import DocPaginator from '@theme/DocPaginator';
 import useTOCHighlight from '@theme/hooks/useTOCHighlight';
+import {useLocation} from '@docusaurus/router';
 
 import classnames from 'classnames';
 import styles from './styles.module.css';
@@ -86,17 +87,18 @@ function DocItem(props) {
       background = props.content.frontMatter.background;
   }
 
-  let metaTitle = title;
-  if (sidebar && metaTitle) {
-    metaTitle = sidebar + ' - ' + title;
+  // 支持英文网站
+  const location = useLocation();
+  if (location && location.pathname.indexOf('/us')>=0){
+    siteTitle = 'Steedos'
   }
 
   return (
     <>
       <Head>
-        {metaTitle && (
+        {title && (
           <title>
-            {metaTitle} - {siteTitle}
+            {title} - {siteTitle}
           </title>
         )}
         {description && <meta name="description" content={description} />}

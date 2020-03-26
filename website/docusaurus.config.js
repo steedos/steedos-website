@@ -1,7 +1,7 @@
 // docusaurus.config.js
 module.exports = {
 
-  title: '华炎开发', // Title for your website.
+  title: '华炎', // Title for your website.
   tagline: '华炎开发平台是新一代人工智能开发工具，开发人员只需要编写简单的配置文件就可以构建自定义应用程序，实现数据管理、权限控制、流程审批、统计分析，并与现有业务系统集成。',
   url: 'https://www.steedos.com/', // Your website URL
   baseUrl: '/', // Base URL for your project */

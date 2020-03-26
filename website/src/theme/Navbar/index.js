@@ -95,7 +95,7 @@ function Navbar(props) {
 
   // 支持英文网站
   const location = useLocation();
-  if (location && location.pathname.indexOf('/us/')>=0){
+  if (location && location.pathname.indexOf('/us')>=0){
     links = navbar.links_us
     title = 'Steedos'
     logoLink = '/us/'
