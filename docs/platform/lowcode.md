@@ -1,5 +1,5 @@
 ---
-title: 使用低代码开发平台有什么好处？
+title: 什么是低代码开发平台？
 sidebar_label: 什么是低代码？
 hide_table_of_contents: true
 background: /img/banner/clouds-large-desktop.png

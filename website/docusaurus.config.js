@@ -107,14 +107,8 @@ module.exports = {
         href: '/cn/'
       },
       links: [
+        {to: 'platform/', label: '开发平台', position: 'left', activeBasePath: 'platform/'},
 
-        {to: '', label: '产品', position: 'left',
-          items: [
-            {to: 'platform/', label: '华炎开发平台', position: 'left', activeBasePath: 'platform/'},
-            {to: 'solutions/workflow/', label: '审批王', position: 'left', activeBasePath: 'solutions/workflow/'},
-            // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
-          ]
-        },
         {to: '', label: '解决方案', position: 'left',
           items: [
             // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
