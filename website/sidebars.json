@@ -3,23 +3,23 @@
     "审批王": ["workflow", "workflow/function", "workflow/scenario", "workflow/cases", "workflow/price", "workflow/download"]
   },
   "集团管控":{
-    "集团管控": ["group_management/home","group_management/features","group_management/scenario","group_management/case"]
+    "集团管控": ["group/home","group/features","group/scenario","group/case"]
   },
   "Steedos": {
     "Steedos Workflow": ["us", "us/training", "us/price", "us/download"]
   },
   "费控管理": {
-    "费控管理": ["cost_control/home","cost_control/project","cost_control/costcases"]
+    "费控管理": ["cost/home","cost/project","cost/costcases"]
   },
   "销售管理":{
-    "销售管理": ["sales_management/home","sales_management/reason"],
-    "功能": ["sales_management/contacts","sales_management/business","sales_management/clue","sales_management/mobile","sales_management/im","sales_management/mobile_office","sales_management/libraries","sales_management/report","sales_management/forecast"],
-    "按角色": ["sales_management/role_professional","sales_management/role_supervisor","sales_management/role_operate","sales_management/role_manager","sales_management/role_expert","sales_management/role_service","sales_management/role_FAQ"]
+    "销售管理": ["sales/home","sales/reason"],
+    "功能": ["sales/contacts","sales/business","sales/clue","sales/mobile","sales/im","sales/mobile_office","sales/libraries","sales/report","sales/forecast"],
+    "按角色": ["sales/role_professional","sales/role_supervisor","sales/role_operate","sales/role_manager","sales/role_expert","sales/role_service","sales/role_FAQ"]
   },
   "知识管理": {
     "知识管理": ["knowledge/home","knowledge/management","knowledge/case"]
   },
-  "华炎开发": {
+  "开发平台": {
     "华炎开发": ["platform", "platform/features", "platform/lowcode", "platform/opensource"]
   },
   "开发文档": {

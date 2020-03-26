@@ -75,7 +75,7 @@ class SteedosAppLauncher extends React.Component {
 								<AppLauncherTile
 									description="构建集团集权与分权的管理平台"
 									title="集团管控"
-									href="/group_management/home"
+									href="/group/home"
 									iconNode={<Icon
 										category="standard"
 										name="hierarchy"
@@ -85,7 +85,7 @@ class SteedosAppLauncher extends React.Component {
 								<AppLauncherTile
 									description="提供高质量财务管理解决方案"
 									title="费控管理"
-									href="/cost_control/home"
+									href="/cost/home"
 									iconNode={<Icon
 										category="standard"
 										name="partner_marketing_budget"

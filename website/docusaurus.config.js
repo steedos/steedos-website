@@ -117,10 +117,10 @@ module.exports = {
         {to: '', label: '解决方案', position: 'left',
           items: [
             {to: 'workflow/', label: '流程审批', position: 'left', activeBasePath: 'workflow/'},
-            // {to: 'sales_management/home', label: '销售管理', position: 'left', activeBasePath: 'sales_management'},
+            // {to: 'sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
             {to: 'knowledge/home', label: '知识管理', position: 'left', activeBasePath: 'knowledge'},
-            {to: 'group_management/home', label:'集团管控',position: 'left', activeBasePath: 'group_management'},
-            {to: 'cost_control/home', label: '费控管理', position: 'left', activeBasePath: 'cost_control'},
+            {to: 'group/home', label:'集团管控',position: 'left', activeBasePath: 'group'},
+            {to: 'cost/home', label: '费控管理', position: 'left', activeBasePath: 'cost'},
             {to: 'contract/', label: '合同管理', position: 'left', activeBasePath: 'contract'}
           ]
         },

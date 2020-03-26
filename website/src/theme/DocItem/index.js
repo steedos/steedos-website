@@ -92,7 +92,7 @@ function DocItem(props) {
   if (location && location.pathname.indexOf('/us')>=0){
     siteTitle = 'Steedos'
   }
-
+  
   return (
     <>
       <Head>

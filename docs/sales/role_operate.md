@@ -23,13 +23,13 @@ sidebar_label: 销售运营人员
 
 显示营销活动对销售管道的影响并将时间用于最重要的销售线索。
 
-[了解详情 >](/sales_management/clue)
+[了解详情 >](/sales/clue)
 
 #### 工作流和审批
 
 轻松点击即可设计并运行任何业务流程。 通过灵活的审批流程迈向成功。
 
-[了解详情 >](/sales_management/mobile_office)
+[了解详情 >](/sales/mobile_office)
 
 #### 华炎云
 

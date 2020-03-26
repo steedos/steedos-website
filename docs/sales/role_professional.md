@@ -26,13 +26,13 @@ hide_table_of_contents: true
 
 随时随地联系完成销售需要的人员，获取所需信息。
 
-[了解详情 >](/sales_management/business)
+[了解详情 >](/sales/business)
 
 #### 客户和联系人
 
 全面洞察您的客户，包括活动历史记录、联系人、内部和客户通讯等。
 
-[了解详情 >](/sales_management/contacts)
+[了解详情 >](/sales/contacts)
 
 #### 销售数据和智能功能
 
@@ -42,4 +42,4 @@ hide_table_of_contents: true
 
 轻松追踪销售线索数量、转换率以及您管道的每一部分，实时查看业务状态。
 
-[了解详情 >](/sales_management/report)
+[了解详情 >](/sales/report)
