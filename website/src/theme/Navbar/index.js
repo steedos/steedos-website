@@ -98,7 +98,7 @@ function Navbar(props) {
   if (location && location.pathname.indexOf('/us/')>=0){
     links = navbar.links_us
     title = 'Steedos'
-    logoLink = '/us/home'
+    logoLink = '/us/'
   }
 
   return (

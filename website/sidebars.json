@@ -1,12 +1,12 @@
 {
   "审批王": {
-    "审批王": ["workflow/home", "workflow/function", "workflow/scenario", "workflow/cases", "workflow/price", "workflow/download"]
+    "审批王": ["workflow", "workflow/function", "workflow/scenario", "workflow/cases", "workflow/price", "workflow/download"]
   },
   "集团管控":{
     "集团管控": ["group_management/home","group_management/features","group_management/scenario","group_management/case"]
   },
-  "Steedos Workflow": {
-    "Steedos Workflow": ["us/home", "us/training", "us/price", "us/download"]
+  "Steedos": {
+    "Steedos Workflow": ["us", "us/training", "us/price", "us/download"]
   },
   "费控管理": {
     "费控管理": ["cost_control/home","cost_control/project","cost_control/costcases"]
@@ -20,18 +20,18 @@
     "知识管理": ["knowledge/home","knowledge/management","knowledge/case"]
   },
   "华炎开发": {
-    "华炎开发": ["platform/home", "platform/features", "platform/lowcode", "platform/opensource", "platform/pricing"]
+    "华炎开发": ["platform", "platform/features", "platform/lowcode", "platform/opensource", "platform/pricing"]
   },
   "开发文档": {
-    "培训教程": ["developer/home","developer/install","developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report"],
+    "培训教程": ["developer","developer/install","developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report"],
     "配置文档": ["developer/steedos_config", "developer/datasource", "developer/object", "developer/object_field", "developer/listview", "developer/object_permission", "developer/app", "developer/reports", "developer/object_filter_conditions", "developer/object_field_formula", "developer/standard_objects", "developer/object_workflow"],
     "开发文档": ["developer/object_trigger", "developer/object_action", "developer/object_form", "developer/objectql_connection", "developer/objectql_object", "developer/report_jsreport"],
     "插件": ["plugins/index", "plugins/plugin_server", "plugins/plugin_webapp", "plugins/plugin_config"]
   },
   "帮助": {
     "帮助文档": ["help/home"],
-    "业务台账": ["help/record_list", "help/record_view", "help/record_report", "help/notifications"],
-    "业务审批": ["help/instance_add", "help/instance_approve", "help/instance_carboncopy", "help/instance_distribute", "help/instance_forward", "help/instance_print", "help/instance_search", "help/instance_monitor", "help/instance_export" ],
+    "流程审批": ["help/instance_add", "help/instance_approve", "help/instance_carboncopy", "help/instance_distribute", "help/instance_forward", "help/instance_print", "help/instance_search", "help/instance_monitor", "help/instance_export" ],
+    "数据台账": ["help/record_list", "help/record_view", "help/record_report", "help/notifications"],
     "系统设置": ["help/organization", "help/permission_set", "help/admin_positions" , "help/admin_form", "help/admin_flow", "help/permission_share"],
     "使用技巧": ["help/workflow/faq"]
   },

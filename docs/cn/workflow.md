@@ -7,4 +7,4 @@ background: /img/banner/service-overview-lg.png
 
 import {Redirect} from '@docusaurus/router';
 
-<Redirect to="/workflow/home" />;
+<Redirect to="/workflow/" />;

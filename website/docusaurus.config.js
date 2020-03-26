@@ -104,18 +104,19 @@ module.exports = {
       logo: {
         alt: '华炎开发',
         src: 'img/icon_blue.png',
+        href: '/cn/'
       },
       links: [
 
         {to: '', label: '开发平台', position: 'left' ,
           items: [
-            {to: 'platform/home', label: '什么是华炎？', position: 'left', activeBasePath: 'platform'},
-            {to: 'developer/home', label: '培训教程', position: 'left'}
+            {to: 'platform/', label: '什么是华炎？', position: 'left', activeBasePath: 'platform'},
+            {to: 'developer/', label: '培训教程', position: 'left'}
           ]
         },
         {to: '', label: '解决方案', position: 'left',
           items: [
-            {to: 'workflow/home', label: '流程审批', position: 'left', activeBasePath: 'workflow/'},
+            {to: 'workflow/', label: '流程审批', position: 'left', activeBasePath: 'workflow/'},
             // {to: 'sales_management/home', label: '销售管理', position: 'left', activeBasePath: 'sales_management'},
             {to: 'knowledge/home', label: '知识管理', position: 'left', activeBasePath: 'knowledge'},
             {to: 'group_management/home', label:'集团管控',position: 'left', activeBasePath: 'group_management'},
@@ -128,13 +129,14 @@ module.exports = {
             {to: 'contact_us', label: '在线咨询'},
           ]
         },
+        {to: '/us/', label: 'English', position: 'right'},
         {label: '登录', position: 'right', href: 'https://cn.steedos.com'},
       ],
       links_us: [
-        {to: 'us/home', label: 'Workflow', position: 'left'},
-        {to: 'us/help/workflow/README', label: 'Help', position: 'right'},
-        {to: '/cn/', label: '中国区域', position: 'right'},
-        {to: 'us/login', label: 'US Region', position: 'right'}
+        {to: '/us/', label: 'Home', position: 'left'},
+        {to: '/us/help/workflow/README', label: 'Docs', position: 'left'},
+        {to: '/cn', label: '中文', position: 'right'},
+        {to: '/us/login', label: 'Login', position: 'right'}
       ],
     },
     footer: {
@@ -154,7 +156,7 @@ module.exports = {
             },
             {
               label: '开发平台',
-              to: 'platform/home',
+              to: 'platform/',
             },
             {
               label: '华信',

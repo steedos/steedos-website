@@ -9,7 +9,7 @@ background: /img/banner/clouds-large-desktop.png
 
 根据你的 IT 架构需求，自定义应用程序可以采用混合部署、云部署或本地部署模式。
 
-<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/developer/home" >
+<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/developer/" >
 免费教程
 </a>
 
