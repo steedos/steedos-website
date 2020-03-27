@@ -110,7 +110,7 @@ module.exports = {
 
         {to: '', label: '产品', position: 'left',
           items: [
-            {to: 'platform/', label: '华炎aPaaS平台', position: 'left', activeBasePath: 'platform/'},
+            {to: 'platform/', label: '华炎aPaaS', position: 'left', activeBasePath: 'platform/'},
             {to: 'oa/', label: '华炎办公', position: 'left', activeBasePath: 'oa/'},
           ]
         },
@@ -153,33 +153,29 @@ module.exports = {
           title: '华炎产品',
           items: [
             {
-              label: '审批王',
-              to: 'workflow/home',
+              label: '华炎办公',
+              to: 'oa/',
             },
             {
-              label: '开发平台',
+              label: '华炎aPaaS开发平台',
               to: 'platform/',
-            },
-            {
-              label: '华信',
-              to: 'products/messenger',
             },
           ],
         },
         {
-          title: '开源项目',
+          title: '解决方案',
           items: [
             {
-              label: '合同管理',
-              href: 'https://github.com/steedos/steedos-contracts-app',
+              label: '集团管控',
+              href: '/solutions/group/',
             },
             {
-              label: '会议管理',
-              href: 'https://github.com/steedos/steedos-meeting-app',
+              label: '费控管理',
+              href: '/solutions/cost/',
             },
             {
-              label: '华炎云',
-              href: 'https://github.com/steedos/steedos-project-saas',
+              label: '流程审批',
+              href: '/solutions/workflow/',
             },
           ],
         },
