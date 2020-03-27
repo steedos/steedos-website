@@ -102,7 +102,7 @@ module.exports = {
       hideOnScroll: false,
       title: '华炎云',
       logo: {
-        alt: '华炎aPAAS',
+        alt: '华炎云平台',
         src: 'img/icon_blue.png',
         href: '/cn/'
       },
@@ -110,7 +110,7 @@ module.exports = {
 
         {to: '', label: '产品', position: 'left',
           items: [
-            {to: 'platform/', label: '华炎aPaaS', position: 'left', activeBasePath: 'platform/'},
+            {to: 'platform/', label: '华炎云平台', position: 'left', activeBasePath: 'platform/'},
             {to: 'oa/', label: '华炎办公', position: 'left', activeBasePath: 'oa/'},
           ]
         },
@@ -157,7 +157,7 @@ module.exports = {
               to: 'oa/',
             },
             {
-              label: '华炎aPaaS开发平台',
+              label: '华炎云平台',
               to: 'platform/',
             },
           ],
