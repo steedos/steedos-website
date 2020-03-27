@@ -79,7 +79,7 @@ function DocItem(props) {
 
   const metaImageUrl = siteUrl + useBaseUrl(metaImage);
 
-  let background = '#f4f4f4'; //'url(/img/banner/sales-cloud-overview-lg.png)'
+  let background = 'url(/img/banner/default.png)'; //'url(/img/banner/sales-cloud-overview-lg.png)'
   if (props.content.frontMatter.background) {
     if (props.content.frontMatter.background.startsWith('/') || props.content.frontMatter.background.startsWith('http'))
       background = 'url(' + props.content.frontMatter.background + ')';

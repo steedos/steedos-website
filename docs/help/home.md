@@ -2,6 +2,7 @@
 title: 帮助文档
 sidebar_label: 概览
 hide_table_of_contents: true
+background: /img/banner/default.png
 ---
 
 import { Icon } from '@salesforce/design-system-react';

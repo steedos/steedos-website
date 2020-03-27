@@ -1,7 +1,7 @@
 // docusaurus.config.js
 module.exports = {
 
-  title: '华炎', // Title for your website.
+  title: '华炎云', // Title for your website.
   tagline: '华炎开发平台是新一代人工智能开发工具，开发人员只需要编写简单的配置文件就可以构建自定义应用程序，实现数据管理、权限控制、流程审批、统计分析，并与现有业务系统集成。',
   url: 'https://www.steedos.com/', // Your website URL
   baseUrl: '/', // Base URL for your project */
@@ -100,22 +100,27 @@ module.exports = {
     disableDarkMode: true,
     navbar: {
       hideOnScroll: false,
-      title: '华炎',
+      title: '华炎云',
       logo: {
-        alt: '华炎开发',
+        alt: '华炎aPAAS',
         src: 'img/icon_blue.png',
         href: '/cn/'
       },
       links: [
 
-        {to: 'oa/', label: '华炎云', position: 'left', activeBasePath: 'oa/'},
-        {to: 'platform/', label: '开发平台', position: 'left', activeBasePath: 'platform/'},
+        {to: '', label: '产品', position: 'left',
+          items: [
+            {to: 'platform/', label: '华炎aPaaS平台', position: 'left', activeBasePath: 'platform/'},
+            {to: 'oa/', label: '华炎办公', position: 'left', activeBasePath: 'oa/'},
+          ]
+        },
         {to: '', label: '解决方案', position: 'left',
           items: [
             // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
             {to: 'solutions/group/', label:'集团管控',position: 'left', activeBasePath: 'solutions/group/'},
             {to: 'solutions/cost/', label: '费控管理', position: 'left', activeBasePath: 'solutions/cost/'},
             {to: 'solutions/contract/', label: '合同管理', position: 'left', activeBasePath: 'solutions/contract/'},
+            {to: 'solutions/workflow/', label:'流程审批',position: 'left', activeBasePath: 'solutions/group/'},
             {to: 'solutions/knowledge/', label: '知识管理', position: 'left', activeBasePath: 'solutions/knowledge/'},
           ]
         },
