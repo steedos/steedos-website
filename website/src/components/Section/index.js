@@ -7,7 +7,13 @@ class Section extends React.Component {
   
   constructor(props) {
     super(props);
-    this.state = {height: '50'};
+    const randomId =  Math.random().toString(36).substring(5);
+    this.state = {
+      height: '50',
+      sectionId: 'section-' + randomId,
+      backgroundId: 'section-background-' + randomId
+    };
+    console.log(this.state.id)
   }
 
   componentDidMount() {
@@ -20,7 +26,7 @@ class Section extends React.Component {
   }
 
   updateHeight() {
-    const height = this.refs.sectionRef.clientHeight;
+    const height = this.refs[this.state.sectionId].clientHeight;
     if (this.state.height !== height) {
       this.setState({ height });
     }
@@ -37,14 +43,14 @@ class Section extends React.Component {
     
     return (
       <>
-      <div className={styles.sectionBackground}></div>
-      <div className={styles.section} ref="sectionRef">
+      <div className={styles.sectionBackground} id={this.state.backgroundId}></div>
+      <div className={styles.section} ref={this.state.sectionId} id={this.state.sectionId}>
         <style dangerouslySetInnerHTML={{__html: `
-          .${styles.section} {
+          #${this.state.sectionId} {
             min-height: ${height}px;
             color: ${color};
           }
-          .${styles.sectionBackground} {
+          #${this.state.backgroundId} {
             background: ${background};  
             background-repeat: no-repeat;
             background-position: top;
