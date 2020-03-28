@@ -33,9 +33,9 @@
   },
   "帮助": {
     "帮助文档": ["help", "help/download", "help/workflow/faq"],
-    "流程审批": ["help/instance_add", "help/instance_approve", "help/instance_carboncopy", "help/instance_distribute", "help/instance_forward", "help/instance_print", "help/instance_search", "help/instance_monitor", "help/instance_export" ],
+    "流程审批": ["help/workflow/instance_add", "help/workflow/instance_approve", "help/workflow/instance_carboncopy", "help/workflow/instance_distribute", "help/workflow/instance_forward", "help/workflow/instance_print", "help/workflow/instance_search", "help/workflow/instance_monitor", "help/workflow/instance_export" ],
     "数据台账": ["help/record_list", "help/record_view", "help/record_report", "help/notifications"],
-    "系统设置": ["help/organization", "help/permission_set", "help/admin_positions" , "help/admin_form", "help/admin_flow", "help/permission_share"]
+    "系统设置": ["help/organization", "help/permission_set", "help/workflow/admin_positions" , "help/workflow/admin_form", "help/workflow/admin_flow", "help/permission_share"]
   },
   "Steedos Help": {
     "Quick Guide": ["us/help/workflow/README", "us/help/workflow/guide_setup", "us/help/workflow/guide_user", "us/help/workflow/guide_admin", "us/help/workflow/guide_permissions", "us/help/workflow/guide_versions", "us/help/workflow/mp4", "us/help/workflow/faq"],
