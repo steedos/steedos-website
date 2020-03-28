@@ -28,7 +28,7 @@
     display: inherit;
   }
   .docSidebarContainer {
-    z-index: 300;
+    z-index: 250;
   }
 }
 
