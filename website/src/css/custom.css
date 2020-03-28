@@ -137,6 +137,9 @@
     top: 60px;
     overflow: initial;
   }
+  .navbar.navbar--fixed-top {
+    position: fixed;
+  }
   .navbar.navbar--fixed-top.navbar-sidebar--show {
     z-index: 300;
   }

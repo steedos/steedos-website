@@ -16,7 +16,7 @@
   box-sizing: border-box;
   position: relative;
   top: calc(-1 * var(--ifm-navbar-height));
-  z-index: var(--ifm-z-index-fixed);
+  z-index: 100;
 }
 
 .docMainContainer {
@@ -26,6 +26,9 @@
 @media (max-width: 996px) {
   .docPage {
     display: inherit;
+  }
+  .docSidebarContainer {
+    z-index: 300;
   }
 }
 
