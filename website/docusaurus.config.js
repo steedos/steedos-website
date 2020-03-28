@@ -124,14 +124,14 @@ module.exports = {
             {to: 'solutions/knowledge/', label: '知识管理', position: 'left', activeBasePath: 'solutions/knowledge/'},
           ]
         },
-        {to: '', label: '服务与支持', position: 'left',
+        {to: '', label: '文档', position: 'left',
           items: [
-            {to: 'help/', label: '使用帮助'},
+            {to: 'help/', label: '如何使用华炎云？'},
             {to: 'developer/', label: '开发文档', position: 'left', activeBasePath: 'developer/'},
             {to: 'developer/api/', label: 'API', position: 'left', activeBasePath: 'developer/api/'},
-            {to: 'contact_us', label: '在线咨询'}
           ]
         },
+        {to: 'contact_us', label: '在线咨询'},
         {to: '/us/', label: 'English', position: 'right'},
         {label: '登录', position: 'right', href: 'https://cn.steedos.com'},
       ],
