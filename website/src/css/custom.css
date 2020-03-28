@@ -116,6 +116,9 @@
 }
 
 @media (max-width: 996px) {
+  .main-wrapper {
+    margin-top: 60px;
+  }
   .container {
     padding-left: 16px;
     padding-right: 16px;
