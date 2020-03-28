@@ -21,3 +21,8 @@ background: /img/banner/default.png
 - [如何设计表单？](/help/workflow/admin_form)
 - [如何配置岗位？](/help/workflow/admin_positions)
 - [使用技巧](/help/workflow/faq)
+
+#### 开发人员
+
+- <a href="/platform/" target="_blank">华炎云平台简介</a>
+- <a href="/developer/" target="_blank">如何使用华炎云，开发自定义应用？</a>
