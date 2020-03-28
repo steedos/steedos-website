@@ -126,8 +126,9 @@ module.exports = {
         },
         {to: '', label: '服务与支持', position: 'left',
           items: [
-            {to: 'help/home', label: '帮助文档'},
+            {to: 'help/', label: '使用帮助'},
             {to: 'developer/', label: '开发文档', position: 'left', activeBasePath: 'developer/'},
+            {to: 'developer/api/', label: 'API', position: 'left', activeBasePath: 'developer/api/'},
             {to: 'contact_us', label: '在线咨询'}
           ]
         },
