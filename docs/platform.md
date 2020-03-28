@@ -19,6 +19,7 @@ background: /img/banner/clouds-large-desktop.png
 
 ![界面展示](/assets/platform/apps.png)
 
+
 ## 新一代企业aPaaS平台，内置数百项企业应用基础服务
 
 作为一款企业aPaaS平台，华炎云内置账户管理、权限控制、协作工具、流程审批、统计分析等企业应用程序必备的基础服务，开发人员只需专注于核心业务逻辑，就能快速构建功能强大的应用程序，从而加速数字化转型进程，实现向智慧企业的华丽蜕变!
@@ -27,11 +28,17 @@ background: /img/banner/clouds-large-desktop.png
 
 华炎不仅可以用于开发新系统，还可以轻松连接到现有的业务系统，进行功能扩展与集成开发。您只需配置数据库连接，就可以连接到 SQL Server, Oracle, Mysql, PostgresQL, Sqlite 等常用数据库。
 
+import Section from '@site/src/components/Section';
+
+<Section background="/img/banner/service-overview-lg.png">
+
 ## 迭代式项目开发流程, 快速响应需求变更
 
 华炎云平台非常适合于客户无法具体描述需求、需要在开发过程中深度参与的项目，它可以帮助我们在几周，甚至几天内，搭建出应用程序的框架并交付客户试用。然后，根据客户的反馈，我们确定把前期开发的程序作为抛弃式的原型，只用于收集用户需求；或者是在当前程序的基础上通过迭代式的开发不断丰富其功能。
 
 ![迭代式项目开发流程](/assets/overview-dev.jpg)
+
+</Section>
 
 ## 更安全的私有云部署模式
 

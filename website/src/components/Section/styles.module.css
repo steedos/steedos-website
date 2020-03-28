@@ -1,0 +1,16 @@
+.section {
+}
+.section > * {
+    z-index: 50;
+    position: relative;
+}
+
+.sectionBackground {
+    content: ""; 
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+    z-index: 1;
+}
