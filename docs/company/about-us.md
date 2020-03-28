@@ -7,8 +7,12 @@ background: /img/banner/company.png
 
 华炎云平台是一款低代码企业应用开发工具。开发人员只需编写配置文件，即可构建功能强大的企业级应用程序。应用程序可部署在移动设备、平板电脑和 Web 上，可以实现简单功能也可以编写复杂业务逻辑，并且可以连接到任何数据源。
 
+<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/platform/" >
+了解我们的产品
+</a>
+
 <a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/developer/" >
-免费教程
+开发教程
 </a>
 
 ![界面展示](/assets/mac_ipad_iphone_list.png)

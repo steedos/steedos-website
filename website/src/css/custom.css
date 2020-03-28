@@ -27,6 +27,7 @@
     --ifm-h6-font-size: 1rem;
     --ifm-font-size-base: 16px;
     --ifm-container-width: 1140px;
+    --ifm-spacing-horizontal: 2rem;
   }
   
   @media screen and (max-width: 996px) {

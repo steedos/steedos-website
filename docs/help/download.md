@@ -17,7 +17,7 @@ sidebar_label: 下载客户端
 
 <br/>
 
-<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="http://oss.steedos.com/apps/steedos/windows/cn/steedos-desktop.exe" target="_blank">
+<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/apps/messenger/desktop/4.3.2/messenger-setup-4.3.2-win.exe" target="_blank">
 下载
 </a>
 
