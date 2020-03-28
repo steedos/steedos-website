@@ -27,7 +27,7 @@ class Section extends React.Component {
   };
 
   render() {
-    let {background, height, padding} = this.props;
+    let {background, height, padding, color} = this.props;
     if (this.state.height !== height) {
       height = this.state.height;
     }
@@ -42,6 +42,7 @@ class Section extends React.Component {
         <style dangerouslySetInnerHTML={{__html: `
           .${styles.section} {
             min-height: ${height}px;
+            color: ${color};
           }
           .${styles.sectionBackground} {
             background: ${background};  
@@ -62,7 +63,8 @@ class Section extends React.Component {
 
 Section.defaultProps = {
   padding: 30,
-  height: 200
+  height: 200,
+  color: 'black'
 }
 
 
