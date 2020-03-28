@@ -2,7 +2,7 @@
 module.exports = {
 
   title: '华炎云', // Title for your website.
-  tagline: '华炎开发平台是新一代人工智能开发工具，开发人员只需要编写简单的配置文件就可以构建自定义应用程序，实现数据管理、权限控制、流程审批、统计分析，并与现有业务系统集成。',
+  tagline: '华炎云平台是新一代人工智能开发工具，开发人员只需要编写简单的配置文件就可以构建自定义应用程序，实现数据管理、权限控制、流程审批、统计分析，并与现有业务系统集成。',
   url: 'https://www.steedos.com/', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -127,11 +127,16 @@ module.exports = {
         {to: '', label: '文档', position: 'left',
           items: [
             {to: 'help/', label: '如何使用华炎云？'},
-            {to: 'developer/', label: '开发文档', position: 'left', activeBasePath: 'developer/'},
-            {to: 'developer/api/', label: 'API', position: 'left', activeBasePath: 'developer/api/'},
+            {to: 'developer/', label: '定制开发', position: 'left', activeBasePath: 'developer/'},
+            {to: 'developer/api/', label: '系统集成', position: 'left', activeBasePath: 'developer/api/'},
           ]
         },
-        {to: 'contact_us', label: '在线咨询'},
+        {to: '', label: '关于我们',
+          items: [
+            {to: '/company/about-us/', label: '关于华炎'},
+            {to: '/company/contact-us/', label: '联系我们'},
+          ]
+        },
         {to: '/us/', label: 'English', position: 'right'},
         {label: '登录', position: 'right', href: 'https://cn.steedos.com'},
       ],
@@ -188,7 +193,7 @@ module.exports = {
             },
             {
               label: '在线咨询',
-              to: 'contact_us',
+              to: 'company/contact-us',
             },
             {
               label: '最新动态',

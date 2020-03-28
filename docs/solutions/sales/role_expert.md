@@ -24,7 +24,7 @@ sidebar_label: IT专家
 
 [了解详情 >](/solutions/sales/mobile_office)
 
-#### 华炎开发平台
+#### 华炎云平台
 
 可以在任意屏幕上迅速提供现代应用程序和出色的用户体验，从而推动业务。
 
