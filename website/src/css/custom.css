@@ -28,6 +28,7 @@
     --ifm-font-size-base: 16px;
     --ifm-container-width: 1140px;
     --ifm-spacing-horizontal: 2rem;
+    --ifm-z-index-fixed: 200;
   }
   
   @media screen and (max-width: 996px) {
@@ -115,6 +116,10 @@
 }
 
 @media (max-width: 996px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   /* 手机上在右上角显示站点菜单 */
   .navbar__inner .navbar__title {
     display: none;
