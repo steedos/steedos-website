@@ -127,6 +127,7 @@ module.exports = {
         {to: '', label: '文档', position: 'left',
           items: [
             {to: 'help/', label: '如何使用华炎云？'},
+            {to: 'help/download', label: '下载客户端'},
             {to: 'developer/', label: '定制开发', position: 'left', activeBasePath: 'developer/'},
             {to: 'developer/api/', label: '系统集成', position: 'left', activeBasePath: 'developer/api/'},
           ]

@@ -1,6 +1,6 @@
 {
   "关于我们": {
-    "关于华炎": ["company/about-us", "company/contact-us"]
+    "关于华炎": ["company/about-us", "company/customers", "company/contact-us"]
   },
   "华炎办公": {
     "华炎办公": ["oa", "oa/function", "oa/scenario", "oa/cases", "oa/price", "oa/download"]

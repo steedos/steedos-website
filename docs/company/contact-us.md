@@ -1,7 +1,12 @@
 ---
-title: 在线咨询
-background: /img/banner/service-overview-lg.png
+title: 联系我们
+hide_table_of_contents: true
+background: /img/banner/company.png
 ---
+
+#### 有问题？ 请致电400-820-1612
+
+## 在线咨询
 
 使用微信中扫描下面的二维码，获取您的专属顾问，并加入华炎客户服务群。
 
