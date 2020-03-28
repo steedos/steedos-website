@@ -146,3 +146,7 @@
 .dropdown .dropdown__menu {
   left: 0px;
 }
+
+.dropdown .dropdown__menu .navbar__link {
+  white-space: nowrap;
+}

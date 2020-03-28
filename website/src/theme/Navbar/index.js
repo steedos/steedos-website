@@ -166,7 +166,9 @@ function Navbar(props) {
                 <ul class="dropdown__menu">
                 {
                   linkItem.items.map((subItem, j) => (
+                    <li>
                     <NavLink {...subItem} key={i+'-'+j}/>
+                    </li>
                   ))
                 }
                 </ul>
