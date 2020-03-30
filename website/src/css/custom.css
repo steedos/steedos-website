@@ -27,7 +27,7 @@
     --ifm-h6-font-size: 1rem;
     --ifm-font-size-base: 16px;
     --ifm-container-width: 1140px;
-    --ifm-spacing-horizontal: 2rem;
+    --ifm-spacing-horizontal: 1rem;
     --ifm-z-index-fixed: 200;
   }
   
@@ -161,4 +161,8 @@
 
 .dropdown .dropdown__menu .navbar__link {
   white-space: nowrap;
+}
+
+.markdown {
+  max-width: 800px;
 }
