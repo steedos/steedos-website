@@ -13,7 +13,6 @@ class Section extends React.Component {
       sectionId: 'section-' + randomId,
       backgroundId: 'section-background-' + randomId
     };
-    console.log(this.state.id)
   }
 
   componentDidMount() {
