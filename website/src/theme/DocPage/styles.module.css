@@ -21,6 +21,7 @@
 
 .docMainContainer {
   flex-grow: 1;
+  max-width: 100%;
 }
 
 @media (max-width: 996px) {
