@@ -118,10 +118,10 @@ module.exports = {
         {to: '', label: '解决方案', position: 'left',
           items: [
             // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
+            {to: 'solutions/workflow/', label:'审批王',position: 'left', activeBasePath: 'solutions/workflow/'},
             {to: 'solutions/group/', label:'集团管控',position: 'left', activeBasePath: 'solutions/group/'},
             {to: 'solutions/cost/', label: '费控管理', position: 'left', activeBasePath: 'solutions/cost/'},
             {to: 'solutions/contract/', label: '合同管理', position: 'left', activeBasePath: 'solutions/contract/'},
-            {to: 'solutions/workflow/', label:'流程审批',position: 'left', activeBasePath: 'solutions/workflow/'},
             {to: 'solutions/knowledge/', label: '知识管理', position: 'left', activeBasePath: 'solutions/knowledge/'},
           ]
         },

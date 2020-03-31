@@ -6,9 +6,9 @@ hide_table_of_contents: true
 background: /img/banner/service-overview-lg.png
 ---
 
-# 快速部署、有效监控并持续优化各类业务流程
+# 无论海角天边，华炎总在你身边
 
-华炎云是华炎应用开发平台的云端版本，提供图形化的表单与流程设计界面，可以快速地将公司各类审批业务转换为可严格执行的电子流程。
+华炎办公是深受公司员工喜爱的云端企业管理软件，可以帮助您的团队随时随地的沟通与协作。
 
 <a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="http://oss.steedos.com/videos/case/%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E8%AF%B7%E5%81%87%E6%B5%81%E7%A8%8B.mp4" target="_blank">
 视频演示
