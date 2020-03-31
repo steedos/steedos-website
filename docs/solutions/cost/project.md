@@ -1,7 +1,7 @@
 ---
 title: 管理、业务、财务共享一体化实现之道
 sidebar_label: 解决方案
-background: /img/banner/einstein-analytics-overview-sm.png
+background: /img/banner/finance-cloud.jpg
 ---
 
 多维度、多样化、多模式、可视化的解决方案。主要包含：预算费控、方案融合、流程驱动以及全面集成。

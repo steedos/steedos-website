@@ -2,7 +2,7 @@
 title: 满足企业的实际管理需要
 sidebar_label: 费控案例
 hide_table_of_contents: false
-background: /img/banner/einstein-analytics-overview-sm.png
+background: /img/banner/finance-cloud.jpg
 ---
 
 华炎为客户提升组织绩效创造价值，为新一代用户全面改进客户支持服务，永无止境。
