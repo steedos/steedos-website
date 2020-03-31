@@ -110,8 +110,8 @@ module.exports = {
 
         {to: '', label: '产品', position: 'left',
           items: [
-            {to: 'platform/', label: '华炎云平台', position: 'left', activeBasePath: 'platform/'},
             {to: 'oa/', label: '华炎办公', position: 'left', activeBasePath: 'oa/'},
+            {to: 'platform/', label: '华炎云平台', position: 'left', activeBasePath: 'platform/'},
           ]
         },
         {to: '', label: '解决方案', position: 'left',
@@ -120,19 +120,19 @@ module.exports = {
             {to: 'solutions/group/', label:'集团管控',position: 'left', activeBasePath: 'solutions/group/'},
             {to: 'solutions/cost/', label: '费控管理', position: 'left', activeBasePath: 'solutions/cost/'},
             {to: 'solutions/contract/', label: '合同管理', position: 'left', activeBasePath: 'solutions/contract/'},
-            {to: 'solutions/workflow/', label:'流程审批',position: 'left', activeBasePath: 'solutions/group/'},
+            {to: 'solutions/workflow/', label:'流程审批',position: 'left', activeBasePath: 'solutions/workflow/'},
             {to: 'solutions/knowledge/', label: '知识管理', position: 'left', activeBasePath: 'solutions/knowledge/'},
           ]
         },
-        {to: '', label: '文档', position: 'left',
+        {to: 'help/', label: '技术支持', position: 'left',
           items: [
             {to: 'help/', label: '如何使用华炎云？'},
             {to: 'help/download', label: '下载客户端'},
-            {to: 'developer/', label: '定制开发', position: 'left', activeBasePath: 'developer/'},
-            {to: 'developer/api/', label: '系统集成', position: 'left', activeBasePath: 'developer/api/'},
+            {to: 'developer/', label: '开发教程', position: 'left'},
+            {to: 'developer/api/', label: 'API', position: 'left'},
           ]
         },
-        {to: '', label: '关于我们',
+        {to: '/company/about-us/', label: '关于我们',
           items: [
             {to: '/company/about-us/', label: '关于华炎'},
             {to: '/company/contact-us/', label: '联系我们'},

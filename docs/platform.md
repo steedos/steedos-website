@@ -1,11 +1,16 @@
 ---
-title: 首屈一指的开发平台，快速构建企业应用程序
+title: 快速开发和部署下一代企业云服务
 sidebar_label: 概述
 hide_table_of_contents: true
 background: /img/banner/clouds-large-desktop.png
+keywords:
+  - paas
+  - 应用开发
 ---
 
-华炎云平台是一款低代码企业应用开发工具。开发人员只需编写配置文件，即可构建功能强大的企业级应用程序。应用程序可部署在移动设备、平板电脑和 Web 上，可以实现简单功能也可以编写复杂业务逻辑，并且可以连接到任何数据源。
+华炎云平台（Steedos Cloud Platform) 是一个开放的业务平台，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
+
+作为一款开放的企业平台即服务 (PaaS) 产品，Steedos Cloud Platform将开源技术和商业类组件结合在同一平台上，从而使开发人员能够利用各种各样的内置功能，轻松便捷地创建企业级应用程序。
 
 <a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/developer/" >
 免费教程
