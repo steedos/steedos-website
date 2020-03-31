@@ -112,6 +112,7 @@ module.exports = {
           items: [
             {to: 'oa/', label: '华炎办公', position: 'left', activeBasePath: 'oa/'},
             {to: 'platform/', label: '华炎云平台', position: 'left', activeBasePath: 'platform/'},
+            {to: 'developer/', label: '开发教程', position: 'left', activeBasePath: 'developer/'},
           ]
         },
         {to: '', label: '解决方案', position: 'left',
