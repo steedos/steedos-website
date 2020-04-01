@@ -8,6 +8,9 @@ keywords:
   - 华炎办公
   - 华炎云
   - 审批王
+  - OA
+  - 免费OA
+  - 开源OA
   - PaaS
   - aPaaS
   - HpaPaas

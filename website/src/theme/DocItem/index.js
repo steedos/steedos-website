@@ -55,7 +55,7 @@ function Headings({headings, isChild}) {
 
 function DocItem(props) {
   const {siteConfig = {}} = useDocusaurusContext();
-  let {url: siteUrl, title: siteTitle} = siteConfig;
+  let {url: siteUrl, title: siteTitle, customFields: customFields} = siteConfig;
   const {content: DocContent} = props;
   const {metadata} = DocContent;
   const {
@@ -68,7 +68,7 @@ function DocItem(props) {
     version,
     sidebar
   } = metadata;
-  const {
+  let {
     frontMatter: {
       image: metaImage,
       keywords,
@@ -91,6 +91,14 @@ function DocItem(props) {
   const location = useLocation();
   if (location && location.pathname.indexOf('/us')>=0){
     siteTitle = 'Steedos'
+  }
+
+  // 网页关键词 + 站点关键词
+  if (customFields && customFields.keywords && customFields.keywords.length) {
+    if (keywords && keywords.length)
+      keywords = keywords.concat(customFields.keywords)
+    else
+      keywords = customFields.keywords
   }
   
   return (
