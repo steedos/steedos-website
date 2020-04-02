@@ -1,7 +1,7 @@
 ---
-title: 快速开发和部署智能化、移动化的企业应用
+title: 快速开发智能化、移动化的管理软件
 hide_table_of_contents: true
-description: 华炎云平台（Steedos Cloud Platform) 是一个开放的业务平台，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
+description: 华炎云平台（Steedos Cloud Platform) 是一个开放的管理软件开发平台，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
 background: /img/banner/cold.jpg
 keywords:
   - 华炎
@@ -16,7 +16,7 @@ keywords:
   - HpaPaas
 ---
 
-华炎云平台（Steedos Cloud Platform) 是一个开放的业务平台，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
+华炎云平台（Steedos Cloud Platform) 是一个开放的管理软件开发平台，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
 
 <a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/platform/" >
 查看详情
@@ -52,7 +52,7 @@ import Section from '@site/src/components/Section';
 
 #### 什么是华炎云平台？
 
-华炎云平台是一款低代码企业应用开发工具。开发人员只需编写配置文件，即可构建功能强大的企业级应用程序。应用程序可部署在移动设备、平板电脑和 Web 上，可以实现简单功能也可以编写复杂业务逻辑，并且可以连接到任何数据源。
+华炎云平台（Steedos Cloud Platform) 是一个开放的管理软件开发平台，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
 
 #### 什么是华炎办公？
 
