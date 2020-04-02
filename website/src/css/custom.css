@@ -85,7 +85,7 @@
 }
 
 .markdown table {
-  width: fit-content;
+  display: table;
   background: white;
 }
 
