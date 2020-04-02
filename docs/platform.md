@@ -1,5 +1,5 @@
 ---
-title: 快速开发和部署下一代企业云服务
+title: 快速开发和部署智能化、移动化的企业应用
 sidebar_label: 概述
 hide_table_of_contents: true
 background: /img/banner/clouds-large-desktop.png
