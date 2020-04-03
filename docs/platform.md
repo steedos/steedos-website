@@ -1,5 +1,5 @@
 ---
-title: 快速开发智能化、移动化的管理软件
+title: 华炎魔方：快速开发随需应变的企业管理软件
 sidebar_label: 概述
 hide_table_of_contents: true
 background: /img/banner/clouds-large-desktop.png
@@ -8,9 +8,9 @@ keywords:
   - 应用开发
 ---
 
-华炎云平台（Steedos Cloud Platform) 是一个开放的管理软件开发平台，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
+华炎魔方是一个随需应变的管理软件开发平台，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
 
-作为一款开放的企业平台即服务 (PaaS) 产品，Steedos Cloud Platform将开源技术和商业类组件结合在同一平台上，从而使开发人员能够利用各种各样的内置功能，轻松便捷地创建企业级应用程序。
+作为一款开放的企业平台即服务 (PaaS) 产品，华炎魔方将开源技术和商业类组件结合在同一平台上，从而使开发人员能够利用各种各样的内置功能，轻松便捷地创建企业级应用程序。
 
 <a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/developer/" >
 免费教程

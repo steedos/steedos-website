@@ -1,11 +1,11 @@
 // docusaurus.config.js
 module.exports = {
 
-  title: '华炎云', // Title for your website.
-  tagline: '华炎云平台是新一代人工智能开发工具，开发人员只需要编写简单的配置文件就可以构建自定义应用程序，实现数据管理、权限控制、流程审批、统计分析，并与现有业务系统集成。',
+  title: '华炎', // Title for your website.
+  tagline: '华炎魔方是一个随需应变的管理软件开发平台，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。',
   url: 'https://www.steedos.com', // Your website URL
   customFields: {
-    keywords: ['steedos', 'oa', '华炎', '开发平台'], 
+    keywords: ['steedos', 'oa', '华炎'], 
   },
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -103,9 +103,9 @@ module.exports = {
     disableDarkMode: true,
     navbar: {
       hideOnScroll: false,
-      title: '华炎云',
+      title: '华炎',
       logo: {
-        alt: '华炎云平台',
+        alt: '华炎魔方',
         src: 'img/icon_blue.png',
         href: '/cn/'
       },
@@ -114,7 +114,7 @@ module.exports = {
         {to: '', label: '产品', position: 'left',
           items: [
             {to: 'oa/', label: '华炎办公', position: 'left', activeBasePath: 'oa/'},
-            {to: 'platform/', label: '华炎云平台', position: 'left', activeBasePath: 'platform/'},
+            {to: 'platform/', label: '华炎魔方', position: 'left', activeBasePath: 'platform/'},
             {to: 'developer/', label: '开发教程', position: 'left', activeBasePath: 'developer/'},
           ]
         },
@@ -130,7 +130,7 @@ module.exports = {
         },
         {to: 'help/', label: '技术支持', position: 'left',
           items: [
-            {to: 'help/', label: '如何使用华炎云？'},
+            {to: 'help/', label: '使用帮助'},
             {to: 'help/download', label: '下载客户端'},
             {to: 'developer/', label: '开发教程', position: 'left'},
             {to: 'developer/api/', label: 'API', position: 'left'},
@@ -168,7 +168,7 @@ module.exports = {
               to: 'oa/',
             },
             {
-              label: '华炎云平台',
+              label: '华炎魔方',
               to: 'platform/',
             },
           ],

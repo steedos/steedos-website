@@ -1,11 +1,11 @@
 ---
-title: 如何使用华炎云？
+title: 使用帮助
 sidebar_label: 概览
 hide_table_of_contents: true
 background: /img/banner/default.png
 ---
 
-华炎云平台是一款低代码企业应用开发工具。开发人员只需编写配置文件，即可构建功能强大的企业级应用程序。应用程序可部署在移动设备、平板电脑和 Web 上，可以实现简单功能也可以编写复杂业务逻辑，并且可以连接到任何数据源。
+华炎魔方是一个随需应变的管理软件开发平台，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
 
 #### 使用入门
 
@@ -24,5 +24,5 @@ background: /img/banner/default.png
 
 #### 开发人员
 
-- <a href="/platform/" target="_blank">华炎云平台简介</a>
-- <a href="/developer/" target="_blank">如何使用华炎云，开发自定义应用？</a>
+- <a href="/platform/" target="_blank">华炎魔方简介</a>
+- <a href="/developer/" target="_blank">如何使用华炎魔方，开发自定义应用？</a>
