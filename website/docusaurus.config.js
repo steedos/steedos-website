@@ -139,6 +139,7 @@ module.exports = {
         {to: '/company/about-us/', label: '关于我们',
           items: [
             {to: '/company/about-us/', label: '关于华炎'},
+            {to: '/company/customers/', label: '成功案例'},
             {to: '/company/contact-us/', label: '联系我们'},
           ]
         },

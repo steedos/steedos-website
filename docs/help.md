@@ -5,9 +5,9 @@ hide_table_of_contents: true
 background: /img/banner/default.png
 ---
 
-华炎魔方是一个随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
+浏览华炎帮助文档，点击右上角可以搜索。
 
-#### 使用入门
+#### 华炎云
 
 - [如何下载客户端？](/help/download)
 - [如何管理人员？](/help/organization)
