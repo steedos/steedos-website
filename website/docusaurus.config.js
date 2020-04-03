@@ -2,7 +2,7 @@
 module.exports = {
 
   title: '华炎', // Title for your website.
-  tagline: '华炎魔方是一个随需应变的管理软件开发平台，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。',
+  tagline: '华炎魔方是一个随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。',
   url: 'https://www.steedos.com', // Your website URL
   customFields: {
     keywords: ['steedos', 'oa', '华炎'], 
