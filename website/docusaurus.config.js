@@ -131,7 +131,7 @@ module.exports = {
         {to: 'help/', label: '技术支持', position: 'left',
           items: [
             {to: 'help/', label: '使用帮助'},
-            {to: 'help/download', label: '下载客户端'},
+            {to: 'help/download/', label: '下载客户端'},
             {to: 'developer/', label: '开发教程', position: 'left'},
             {to: 'developer/api/', label: 'API', position: 'left'},
           ]
@@ -166,7 +166,7 @@ module.exports = {
           items: [
             {
               label: '什么是OA?',
-              to: 'oa/what-is-oa',
+              to: 'oa/what-is-oa/',
             },
             {
               label: '华炎办公',
