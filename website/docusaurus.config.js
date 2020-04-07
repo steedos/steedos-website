@@ -162,8 +162,12 @@ module.exports = {
 
       links: [
         {
-          title: '华炎产品',
+          title: '初识华炎？',
           items: [
+            {
+              label: '什么是OA?',
+              to: 'oa/what-is-oa',
+            },
             {
               label: '华炎办公',
               to: 'oa/',
