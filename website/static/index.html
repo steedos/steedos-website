@@ -8,6 +8,12 @@
         <link rel="alternate" hreflang="zh-HK" href="https://www.steedos.com/cn/" />
         <link rel="alternate" hreflang="x-default" href="https://www.steedos.com/us/" />
         <script type="text/javascript">
+            if (location.host == 'www.hotoa.com')
+                window.location.href = '/oa/'
+            else if (location.host == 'www.steedos.cn')
+                window.location.href = '/cn/'
+            else if (location.host == 'www.steedos.com.cn')
+                window.location.href = '/cn/'
             var userLang = navigator.language || navigator.userLanguage; 
             if (userLang == 'zh-CN' || userLang == 'zh-cn')
                 window.location.href = '/cn/'
