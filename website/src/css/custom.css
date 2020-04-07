@@ -166,3 +166,11 @@
 .markdown {
   max-width: 800px;
 }
+
+.pagination-nav .pagination-nav__link--sublabel {
+  font-size: 0.8rem;
+}
+
+.pagination-nav .pagination-nav__link--label {
+  font-size: 1rem;
+}
