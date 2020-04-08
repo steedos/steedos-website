@@ -36,4 +36,4 @@ hide_table_of_contents: true
 
 - 配置默认意见：“{yijianlan:{step:"领导批示", default:"已阅"}}”，处理人在提交申请单后，在意见栏为空的情况下，系统会默认为您签下“已阅”的意见。
 
-具体设置，请参考 [审批王表单设计-签字意见设置](/workflow/help/admin_form/#%E7%AD%BE%E5%AD%97%E6%84%8F%E8%A7%81%E8%AE%BE%E7%BD%AE)。
+具体设置，请参考 [审批王表单设计-签字意见设置](/help/workflow/admin_form/#%E7%AD%BE%E5%AD%97%E6%84%8F%E8%A7%81%E8%AE%BE%E7%BD%AE)。

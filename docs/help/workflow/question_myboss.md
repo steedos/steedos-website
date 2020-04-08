@@ -50,4 +50,4 @@ hide_table_of_contents: true
 
 ![部门经理](/assets/workflow/manager.png)
 
-关于审批岗位，具体可参考 [审批王审批岗位](/workflow/help/admin_positions) 。
+关于审批岗位，具体可参考 [审批王审批岗位](/help/workflow/admin_positions) 。
