@@ -1,6 +1,7 @@
 ---
 title: 什么是OA系统？
 description: OA（办公自动化）是指办公人员借助先进的管理软件，实现办公处理业务的自动化，最大限度地提高办公效率，减少或避免各种差错和弊端，缩短办公处理周期。并用科学的管理方法，借助各种先进技术，提高管理和决策的科学化水平。
+hide_table_of_contents: true
 sidebar_label: 什么是OA？
 background: /img/banner/oa.jpg
 ---
