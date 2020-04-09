@@ -35,10 +35,12 @@
   .sidebarLogo {
     display: flex !important;
     align-items: center;
-    position: absolute;
+    /* position: absolute; 
     top: 0;
     margin: 0 var(--ifm-navbar-padding-horizontal);
-    height: var(--ifm-navbar-height);
+    height: var(--ifm-navbar-height); */
+    font-size: 1.2rem;
+    margin: 48px 24px 12px 24px;
   }
 
   .sidebarLogo img {

@@ -148,8 +148,8 @@ function DocSidebar(props) {
   return (
     <div className={styles.sidebar}>
       <div className={styles.sidebarLogo}>
-        {logo != null && <img src={logoUrl} alt={logo.alt} />}
-        {title != null && <strong>{title}</strong>}
+        {/* {logo != null && <img src={logoUrl} alt={logo.alt} />} */}
+        {currentSidebar != null && <strong>{currentSidebar}</strong>}
       </div>
       <div
         className={classnames('menu', 'menu--responsive', styles.menu, {

@@ -1,38 +1,27 @@
 {
-  "关于我们": {
-    "关于华炎": ["company/about-us", "company/customers", "company/contact-us"]
-  },
-  "华炎办公": {
-    "华炎办公": ["oa", "oa/function", "oa/scenario", "oa/cases", "oa/price", "oa/download"]
-  },
-  "审批王": {    
-    "审批王": ["solutions/workflow", "solutions/workflow/function", "solutions/workflow/scenario", "solutions/workflow/cases", "solutions/workflow/price", "solutions/workflow/download"]
-  },
-  "集团管控":{
-    "集团管控": ["solutions/group","solutions/group/features","solutions/group/scenario","solutions/group/case"]
-  },
-  "Steedos": {
-    "Steedos Workflow": ["us", "us/training", "us/price", "us/download"]
-  },
-  "费控管理": {
-    "费控管理": ["solutions/cost","solutions/cost/project","solutions/cost/costcases"]
-  },
+  "关于华炎": ["company/about-us", "company/customers", "company/contact-us"],
+  "华炎办公": ["oa", "oa/function", "oa/scenario", "oa/cases", "oa/price", "oa/download"],
+  "审批王": ["solutions/workflow", "solutions/workflow/function", "solutions/workflow/scenario", "solutions/workflow/cases", "solutions/workflow/price", "solutions/workflow/download"],
+  "集团管控":["solutions/group","solutions/group/features","solutions/group/scenario","solutions/group/case"],
+  "Steedos Workflow": ["us", "us/training", "us/price", "us/download"],
+  "费控管理": ["solutions/cost","solutions/cost/project","solutions/cost/costcases"],
   "销售管理":{
     "销售管理": ["solutions/sales/home","solutions/sales/reason"],
     "功能": ["solutions/sales/contacts","solutions/sales/business","solutions/sales/clue","solutions/sales/mobile","solutions/sales/im","solutions/sales/mobile_office","solutions/sales/libraries","solutions/sales/report","solutions/sales/forecast"],
     "按角色": ["solutions/sales/role_professional","solutions/sales/role_supervisor","solutions/sales/role_operate","solutions/sales/role_manager","solutions/sales/role_expert","solutions/sales/role_service","solutions/sales/role_FAQ"]
   },
-  "知识管理": {
-    "知识管理": ["solutions/knowledge","solutions/knowledge/management","solutions/knowledge/case"]
-  },
-  "华炎魔方": {
-    "华炎魔方": ["platform", "platform/features", "platform/cases"],
+  "知识管理": ["solutions/knowledge","solutions/knowledge/management","solutions/knowledge/case"],
+  "华炎魔方": ["platform", "platform/features", "platform/cases", 
+    {
+      "type": "link",
+      "href": "/developer",
+      "label": "开发文档"
+    }],
+  "开发文档": {
     "开发教程": ["developer","developer/install","developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report","developer/guide_flow","developer/guide_sync","developer/guide_companies"],
     "配置文档": ["developer/steedos_config", "developer/datasource", "developer/object", "developer/object_field", "developer/listview", "developer/object_permission", "developer/app", "developer/reports", "developer/object_filter_conditions", "developer/object_field_formula", "developer/standard_objects", "developer/object_workflow"],
     "开发文档": ["developer/object_trigger", "developer/object_action", "developer/object_form", "developer/objectql_connection", "developer/objectql_object", "developer/report_jsreport"],
     "插件": ["plugins/index", "plugins/plugin_server", "plugins/plugin_webapp", "plugins/plugin_config"]
-  },
-  "开发文档": {
   },
   "帮助": {
     "帮助文档": ["help", "help/download", "help/workflow/faq"],
@@ -64,7 +53,5 @@
     "GraphQL": ["developer/api/graphql", "developer/api/graphql_auth", "developer/api/graphql_query", "developer/api/graphql_add", "developer/api/graphql_edit", "developer/api/graphql_delete"],
     "单点登录": ["developer/api/api_jwt"]
   },
-  "华信": {
-    "华信": ["messenger/index", "messenger/download"]
-  }
+  "华信": ["messenger/index", "messenger/download"]
 }
