@@ -29,7 +29,9 @@ your browser does not support the video tag
 
 华炎云平台的流程审批引擎十分强劲，可以将审批中的流程表单及正文附件实时同步为业务对象记录，实现业务数据的统一管理。
 
-![纸质表单](/assets/workflow/paper_mac.png)
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_design.mp4" controls="controls" poster="/assets/workflow_design.png" width="100%" autoplay="autoplay" muted="muted" loop="loop">
+your browser does not support the video tag
+</video>
 
 ## 统计报表
 
