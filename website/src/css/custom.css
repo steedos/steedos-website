@@ -10,63 +10,67 @@
  @import './salesforce-customize.css';
  
  :root {
-    /* --ifm-color-primary: #25c2a0;
-    --ifm-color-primary-dark: rgb(33, 175, 144);
-    --ifm-color-primary-darker: rgb(31, 165, 136);
-    --ifm-color-primary-darkest: rgb(26, 136, 112);
-    --ifm-color-primary-light: rgb(70, 203, 174);
-    --ifm-color-primary-lighter: rgb(102, 212, 189);
-    --ifm-color-primary-lightest: rgb(146, 224, 208);  */
-    --ifm-color-feedback-background: #fff;
-    --ifm-contents-border-color: rgba(255, 255, 255, 0.3);
-    --ifm-h1-font-size: 2.5rem;
-    --ifm-h2-font-size: 2.0rem;
+  /* --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: rgb(33, 175, 144);
+  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);  */
+  --ifm-color-feedback-background: #fff;
+  --ifm-contents-border-color: rgba(255, 255, 255, 0.3);
+  --ifm-h1-font-size: 2.5rem;
+  --ifm-h2-font-size: 2.0rem;
+  --ifm-h3-font-size: 1.5rem;
+  --ifm-h4-font-size: 1.35rem;
+  --ifm-h5-font-size: 1rem;
+  --ifm-h6-font-size: 1rem;
+  --ifm-font-size-base: 16px;
+  --ifm-container-width: 1140px;
+  --ifm-spacing-horizontal: 1rem;
+  --ifm-z-index-fixed: 200;
+}
+
+@media screen and (max-width: 996px) {
+  :root {
+    --ifm-h1-font-size: 2.0rem;
+    --ifm-h2-font-size: 1.7rem;
     --ifm-h3-font-size: 1.5rem;
     --ifm-h4-font-size: 1.35rem;
     --ifm-h5-font-size: 1rem;
     --ifm-h6-font-size: 1rem;
     --ifm-font-size-base: 16px;
-    --ifm-container-width: 1140px;
-    --ifm-spacing-horizontal: 1rem;
-    --ifm-z-index-fixed: 200;
   }
-  
-  @media screen and (max-width: 996px) {
-    :root {
-      --ifm-h1-font-size: 2.0rem;
-      --ifm-h2-font-size: 1.7rem;
-      --ifm-h3-font-size: 1.5rem;
-      --ifm-h4-font-size: 1.35rem;
-      --ifm-h5-font-size: 1rem;
-      --ifm-h6-font-size: 1rem;
-      --ifm-font-size-base: 16px;
-    }
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-  }
+}
 
-  html[data-theme='dark'] {
-    --ifm-color-feedback-background: #f0f8ff;
-  }
-  
-  .docusaurus-highlight-code-line {
-    background-color: rgb(0, 0, 0, 0.1);
-    display: block;
-    margin: 0 calc(-1 * var(--ifm-pre-padding));
-    padding: 0 var(--ifm-pre-padding);
-  }
-  
-  html[data-theme='dark'] .docusaurus-highlight-code-line {
-    background-color: rgb(0, 0, 0, 0.3);
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
 
-  html[data-theme='dark'] .main-wrapper {
-    background-image: none;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+html[data-theme='dark'] {
+  --ifm-color-feedback-background: #f0f8ff;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgb(0, 0, 0, 0.3);
+}
+
+html[data-theme='dark'] .main-wrapper {
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+}  
+
+.container {
+  width: 85%;
+}  
 
 .container p img[src*="#bordered"]{
   border: 1px solid #DDD;
@@ -120,8 +124,7 @@
     margin-top: 60px;
   }
   .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    width: 100%;
   }
   /* 手机上在右上角显示站点菜单 */
   .navbar__inner .navbar__title {

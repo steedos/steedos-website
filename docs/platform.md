@@ -1,5 +1,5 @@
 ---
-title: 华炎魔方：快速开发随需应变的企业管理软件
+title: 快速开发随需应变的企业管理软件
 sidebar_label: 概述
 hide_table_of_contents: true
 background: /img/banner/clouds-large-desktop.png

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2017-present, Facebook, Inc.
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -8,6 +8,7 @@
 import React from 'react';
 
 import Head from '@docusaurus/Head';
+import isInternalUrl from '@docusaurus/isInternalUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import DocPaginator from '@theme/DocPaginator';
@@ -76,9 +77,7 @@ function DocItem(props) {
       hide_table_of_contents: hideTableOfContents,
     },
   } = DocContent;
-
-  const metaImageUrl = siteUrl + useBaseUrl(metaImage);
-
+  
   let background = 'url(/img/banner/default.png)'; //'url(/img/banner/sales-cloud-overview-lg.png)'
   if (props.content.frontMatter.background) {
     if (props.content.frontMatter.background.startsWith('/') || props.content.frontMatter.background.startsWith('http'))
@@ -87,6 +86,9 @@ function DocItem(props) {
       background = props.content.frontMatter.background;
   }
 
+  if (sidebar)
+    siteTitle = sidebar;
+    
   // 支持英文网站
   const location = useLocation();
   if (location && location.pathname.indexOf('/us')>=0){
@@ -100,15 +102,18 @@ function DocItem(props) {
     else
       keywords = customFields.keywords
   }
-  
+
+  const metaTitle = title ? `${title} | ${siteTitle}` : siteTitle;
+  let metaImageUrl = siteUrl + useBaseUrl(metaImage);
+  if (!isInternalUrl(metaImage)) {
+    metaImageUrl = metaImage;
+  }
+
   return (
     <>
       <Head>
-        {title && (
-          <title>
-            {title} - {siteTitle}
-          </title>
-        )}
+        <title>{metaTitle}</title>
+        <meta property="og:title" content={metaTitle} />
         {description && <meta name="description" content={description} />}
         {description && (
           <meta property="og:description" content={description} />
@@ -144,18 +149,17 @@ function DocItem(props) {
               <div className={styles.docItemContainer}>
                 <article>
                   {version && (
-                    <span
-                      style={{verticalAlign: 'top'}}
-                      className="badge badge--info">
-                      Version: {version}
-                    </span>
+                    <div>
+                      <span className="badge badge--secondary">
+                        Version: {version}
+                      </span>
+                    </div>
                   )}
                   {!hideTitle && (
                     <header>
                       <h1 className={styles.docTitle}>{title}</h1>
                     </header>
                   )}
-
                   <div className="markdown">
                     <DocContent />
                   </div>

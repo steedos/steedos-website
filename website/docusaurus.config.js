@@ -101,6 +101,7 @@ module.exports = {
 
   themeConfig: {
     disableDarkMode: true,
+    image: 'img/icon_blue.png',
     navbar: {
       hideOnScroll: false,
       title: '华炎',
