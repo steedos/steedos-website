@@ -18,33 +18,48 @@ keywords:
 
 ![界面展示](/assets/mac_ipad_iphone_list.png)
 
-## 无与伦比的开发速度，唯一的制约因素只有您的创意
+## 数据建模
 
-华炎魔方，创新的使用配置文件描述业务模型和业务功能，开发人员只需要编写简单的配置文件就可以构建企业级应用程序，一方面可以降低企业应用开发人力成本，另一方面可以将原有数月甚至数年的开发时间成倍缩短，从而帮助企业实现降本增效的价值。
+创新的使用配置文件描述业务模型和业务功能，开发人员只需要编写简单的配置文件就可以构建企业级应用程序，包括可自定义的列表界面、根据业务对象配置文件自动生成的记录查看与编辑界面、查找与筛选界面、统计分析界面等。
 
-![界面展示](/assets/platform/apps.png)
+一方面可以降低企业应用开发人力成本，另一方面可以将原有数月甚至数年的开发时间成倍缩短，从而帮助企业实现降本增效的价值。
 
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/creator_object.mp4" controls="controls" poster="/assets/creator_object.png" width="100%" autoplay="autoplay" muted="muted" loop="loop">
+your browser does not support the video tag
+</video>
 
-## 新一代企业aPaaS平台，内置数百项企业应用基础服务
+## 数据管理
 
-作为一款企业aPaaS平台，华炎云内置账户管理、权限控制、协作工具、流程审批、统计分析等企业应用程序必备的基础服务，开发人员只需专注于核心业务逻辑，就能快速构建功能强大的应用程序，从而加速数字化转型进程，实现向智慧企业的华丽蜕变!
+对数据进行集中数字化管理，包括主表的基本信息，以及附件、任务、审批单及其他自定义子表等详细信息。可以通过授权，来限定不同层级的人员能查看、维护全部或是部分内容。也可以通过关键字，来模糊检索数据记录。
 
-## 与现有业务系统连通，无缝集成业务数据
+同时，针对苹果和安卓手机用户，自动生成在小屏幕设备上易于查看与操作的手机版界面，用户即使不在办公室，也能随时登录业务系统，进行业务操作。
 
-华炎不仅可以用于开发新系统，还可以轻松连接到现有的业务系统，进行功能扩展与集成开发。您只需配置数据库连接，就可以连接到 SQL Server, Oracle, Mysql, PostgresQL, Sqlite 等常用数据库。
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts_operation.mp4" controls="controls" poster="/assets/contract_list.png" width="100%" autoplay="autoplay" muted="muted" loop="loop">
+your browser does not support the video tag
+</video>
 
-import Section from '@site/src/components/Section';
+## 流程审批
 
-<Section background="/img/banner/service-overview-lg.png">
+对于需要审批的业务数据，例如合同、付款、请假等，系统管理员可通过图形化的工具来配置审批流程，并与业务数据实现互通。
 
-## 迭代式项目开发流程, 快速响应需求变更
+提供图形化的表单与流程设计界面，所见即所得。您可以设计条件判断，支持处理数百个节点的复杂流程，即使是数万人的大型集团企业，也能轻松设计出符合需求的业务流程。
 
-华炎魔方非常适合于客户无法具体描述需求、需要在开发过程中深度参与的项目，它可以帮助我们在几周，甚至几天内，搭建出应用程序的框架并交付客户试用。然后，根据客户的反馈，我们确定把前期开发的程序作为抛弃式的原型，只用于收集用户需求；或者是在当前程序的基础上通过迭代式的开发不断丰富其功能。
+华炎魔方的流程审批引擎十分强劲，可以将审批中的流程表单及正文附件实时同步为业务对象记录，实现业务数据的统一管理。
 
-![迭代式项目开发流程](/assets/overview-dev.jpg)
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_design.mp4" controls="controls" poster="/assets/workflow_design.png" width="100%" autoplay="autoplay" muted="muted" loop="loop">
+your browser does not support the video tag
+</video>
 
-</Section>
+## 统计分析
 
-## 更安全的私有云部署模式
+华炎魔方内置功能强大的报表统计与分析功能，业务人员可通过简单设定，配置出列表、分组报表、二维表进行统计分析，并可自动生成图形化报表。
 
-华炎魔方 是Salesforce、Zoho、OutSystems等云端低代码开发平台的的私有云替代方案，使用华炎开发的应用可运行于您的防火墙或VPN后，使您对公司的业务数据拥有完整所有权和控制权。虽然华炎与其他云端工具都具有灵活性，效率和创新优势，但华炎应用的私有云部署模式独特地提供了顶级企业所需的控制，隐私，法律合规性，可定制性和可扩展性。
+在报表顶部用图形化方式显示统计数据，可以显示为柱状图、折线图、饼图。设置时，还可以对特定的字段进行计数、小计、合计等统计处理。
+
+通过设定报表的查询条件，可以将统计范围缩小，提高报表的运行速度。例如可以设定只统计某个时间段的数据。
+
+平台会自动根据后台配置的用户权限，只对用户权限范围内的数据进行汇总统计。
+
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts_report.mp4" controls="controls" poster="/assets/contract_chart.png" width="100%" autoplay="autoplay" muted="muted" loop="loop">
+your browser does not support the video tag
+</video>
