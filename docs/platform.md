@@ -16,6 +16,10 @@ keywords:
 免费教程
 </a>
 
+<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/platform/try/" >
+试用
+</a>
+
 ![界面展示](/assets/mac_ipad_iphone_list.png)
 
 ## 数据建模
