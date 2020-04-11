@@ -13,13 +13,13 @@ hide_table_of_contents: true
 your browser does not support the video tag
 </video>
 
-#### 查看培训教程
+## 查看培训教程
 
 本教程以合同管理为例，指导你如何使用华炎魔方创建项目，配置业务对象，编程脚本，处理业务部门的各种个性化需求。您开发的新业务系统可以部署在本地运行。
 
 [如何使用华炎魔方，快速开发随需定制的管理系统？](/developer/)
 
-#### 项目效果演示
+## 项目效果演示
 
 华炎办公是使用华炎魔方开发的SaaS版本办公平台，内置审批、公告、知识、任务、日程等常用办公管理功能，并嵌入了合同管理、CRM等标准模块。
 
@@ -27,7 +27,7 @@ your browser does not support the video tag
 - 下载并运行[项目源码](https://github.com/steedos/steedos-project-saas)。
 - 查看[系统帮助](/help/)
 
-#### 项目源码
+## 项目源码
 
 华炎魔方是[开源低代码开发平台](https://github.com/steedos/)，我们将所有源码开源，与合作伙伴一起共建低代码开发平台生态体系。
 
