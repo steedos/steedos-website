@@ -174,6 +174,10 @@ module.exports = {
               to: 'oa/',
             },
             {
+              label: '什么是低代码?',
+              to: 'platform/lowcode/',
+            },
+            {
               label: '华炎魔方',
               to: 'platform/',
             },
