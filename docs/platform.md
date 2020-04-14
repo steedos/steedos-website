@@ -69,7 +69,7 @@ your browser does not support the video tag
 
 同时，针对苹果和安卓手机用户，自动生成在小屏幕设备上易于查看与操作的手机版界面，用户即使不在办公室，也能随时登录业务系统，进行业务操作。
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_mobile.mov" controls="controls" poster="/assets/contract_list.png" width="40%" autoplay="autoplay" muted="muted" loop="loop">
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_mobile.mov" controls="controls" poster="/assets/workflow_mobile.png" width="40%" autoplay="autoplay" muted="muted" loop="loop">
 your browser does not support the video tag
 </video>
 
