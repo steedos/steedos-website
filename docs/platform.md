@@ -35,11 +35,9 @@ keywords:
 your browser does not support the video tag
 </video>
 
-# 自动生成电脑、手机、平板一体化的操作界面
+# 自动生成功能强大的数据中台
 
 对数据进行集中数字化管理，包括主表的基本信息，以及附件、任务、审批单及其他自定义子表等详细信息。可以通过授权，来限定不同层级的人员能查看、维护全部或是部分内容。也可以通过关键字，来模糊检索数据记录。
-
-同时，针对苹果和安卓手机用户，自动生成在小屏幕设备上易于查看与操作的手机版界面，用户即使不在办公室，也能随时登录业务系统，进行业务操作。
 
 <video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts_operation.mp4" controls="controls" poster="/assets/contract_list.png" width="100%" autoplay="autoplay" muted="muted" loop="loop">
 your browser does not support the video tag
@@ -64,6 +62,14 @@ your browser does not support the video tag
 华炎魔方的流程审批引擎十分强劲，可以将审批中的流程表单及正文附件实时同步为业务对象记录，实现业务数据的统一管理。
 
 <video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_design.mp4" controls="controls" poster="/assets/workflow_design.png" width="100%" autoplay="autoplay" muted="muted" loop="loop">
+your browser does not support the video tag
+</video>
+
+# 自动生成苹果、安卓移动客户端
+
+同时，针对苹果和安卓手机用户，自动生成在小屏幕设备上易于查看与操作的手机版界面，用户即使不在办公室，也能随时登录业务系统，进行业务操作。
+
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_mobile.mov" controls="controls" poster="/assets/contract_list.png" width="40%" autoplay="autoplay" muted="muted" loop="loop">
 your browser does not support the video tag
 </video>
 
