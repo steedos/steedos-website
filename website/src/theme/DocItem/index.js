@@ -109,6 +109,9 @@ function DocItem(props) {
     metaImageUrl = metaImage;
   }
 
+  let mainColStyles = "col";
+  if (!hideTableOfContents && DocContent.rightToc)
+    mainColStyles = "col col--9"
   return (
     <>
       <Head>
@@ -145,7 +148,7 @@ function DocItem(props) {
       <div className={classnames("padding-vert--lg", styles.docItemWrapper)}>
         <div className="container">
           <div className="row">
-            <div className={classnames('col', styles.docItemCol)}>
+            <div className={classnames(mainColStyles, styles.docItemCol)}>
               <div className={styles.docItemContainer}>
                 <article>
                   {version && (
