@@ -70,8 +70,6 @@ function Layout(props) {
         )}
         {permalink && <meta property="og:url" content={siteUrl + permalink} />}
         <meta name="twitter:card" content="summary" />
-        <script type="text/javascript" src="https://tajs.qq.com/stats?sId=66541925" charset="UTF-8"></script>
-        <script src="https://hm.baidu.com/hm.js?8e30e1c152eed21154e2090d348e7dec"></script>
       </Head>
       <Navbar/>
       <div className="main-wrapper">{children}</div>

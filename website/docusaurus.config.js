@@ -1,3 +1,5 @@
+var path = require('path');
+
 // docusaurus.config.js
 module.exports = {
 
@@ -224,6 +226,9 @@ module.exports = {
       indexName: 'steedos',
       algoliaOptions: {} // Optional, if provided by Algolia
     },
+    baiduAnalytics: {
+      trackingID: '8e30e1c152eed21154e2090d348e7dec',
+    }
   },
 
   presets: [
@@ -244,4 +249,5 @@ module.exports = {
       },
     ],
   ],
+  plugins: [path.resolve(__dirname, './src/plugins/plugin-baidu-analytics')],
 };
