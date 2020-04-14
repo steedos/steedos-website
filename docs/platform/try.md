@@ -27,7 +27,7 @@ your browser does not support the video tag
 - 下载并运行[项目源码](https://github.com/steedos/steedos-project-saas)。
 - 查看[系统帮助](/help/)
 
-## 项目源码
+## 克隆项目源码
 
 华炎魔方是[开源低代码开发平台](https://github.com/steedos/)，我们将所有源码开源，与合作伙伴一起共建低代码开发平台生态体系。
 
