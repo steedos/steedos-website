@@ -25,11 +25,11 @@ keywords:
 
 ![界面展示](/assets/mac_ipad_iphone_list.png)
 
-# 创新使用配置文件管理业务模型
+# 只编写核心业务逻辑，减少代码量99%
 
-创新的使用配置文件描述业务模型和业务功能，开发人员只需要编写简单的配置文件就可以构建企业级应用程序，包括可自定义的列表界面、根据业务对象配置文件自动生成的记录查看与编辑界面、查找与筛选界面、统计分析界面等。
+华炎魔方创新的使用配置文件描述业务模型和业务功能，开发人员只需要编写简单的配置文件就可以构建企业级应用程序，数百项系统功能都可以通过设置参数进行配置。
 
-一方面可以降低企业应用开发人力成本，另一方面可以将原有数月甚至数年的开发时间成倍缩短，从而帮助企业实现降本增效的价值。
+配置文件和与业务逻辑相关的触发脚本，就构成了一个项目的核心源代码，简单易懂，易于维护。对于大型项目，源码可以轻松保存到Github，可以随时追踪到开发人员的修改历史。
 
 <video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/creator_object.mp4" controls="controls" poster="/assets/creator_object.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
@@ -87,8 +87,6 @@ import Section from '@site/src/components/Section';
 
 ![在线咨询](/assets/contact_by_weixin.png)
 
-或致电 400-820-1612
-
 </div>
 
 </Section>
@@ -117,7 +115,7 @@ import Section from '@site/src/components/Section';
 
 华炎魔方是[开源低代码开发平台](https://github.com/steedos/)，我们将所有源码开源，与合作伙伴一起共建低代码开发平台生态体系。
 
-- [华炎魔方内核源码](https://github.com/steedos/object-server)
+- [华炎魔方内核源码](https://github.com/steedos/steedos-platform)
 - [合同管理系统源码](https://github.com/steedos/steedos-contracts-app)
 - [费控管理系统源码](https://github.com/steedos/steedos-project-dzug)
 

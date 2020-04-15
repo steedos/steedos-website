@@ -1,17 +1,12 @@
 ---
 title: 如何快速开发随需定制的管理系统？
-sidebar_label: 目录
-background: /img/banner/cold.jpg
+sidebar_label: 概览
 hide_table_of_contents: true
 ---
 
-华炎魔方是一款随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
+华炎魔方是[开源低代码开发工具](https://github.com/steedos/steedos-platform)，基于NodeJS开发，使用yml文件定义[业务对象](/developer/object/)，使用 javascript 语法编写前端和后端业务逻辑脚本。系统内核（业务对象管理、账户管理、权限管理、流程引擎、报表引擎）需运行于 MongoDB 数据库，开发人员可以定义[第三方数据源](/developer/datasource/)，连接SQL Server、Oracle等现有的业务系统数据库。
 
 本教程以合同管理为例，指导你如何使用华炎魔方创建项目，配置业务对象，编程脚本，处理业务部门的各种个性化需求。您开发的新业务系统可以部署在本地运行。
-
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts_operation.mp4" controls="controls" poster="/assets/contract_list.png" width="100%" autoplay="autoplay" muted="muted" loop="loop">
-your browser does not support the video tag
-</video>
 
 #### [准备：安装开发环境](/developer/install)
 
@@ -82,3 +77,20 @@ your browser does not support the video tag
 - 重启服务
 - 配置单位权限对应人员
 - 确认多单位权限控制效果
+
+
+import Section from '@site/src/components/Section';
+
+<Section background="#215ca0" padding="50">
+<div style={{color:"#FFFFFF"}}>
+
+# 开发过程中有疑问？？
+# 扫描以下二维码，我们的技术专家会为您解答。
+
+我们的技术专家拥有十年以上的管理软件开发经验，无论您询问有关华炎魔方开发平台的功能、定价、实施或任何其他方面的问题，他们都将随时准备为您提供帮助。
+
+![在线咨询](/assets/contact_by_weixin.png)
+
+</div>
+
+</Section>

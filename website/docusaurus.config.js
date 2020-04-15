@@ -92,7 +92,7 @@ module.exports = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  // repoUrl: 'https://github.com/steedos/object-server',
+  // repoUrl: 'https://github.com/steedos/steedos-platform',
   // scrollToTop: true,
   // enableUpdateTime: true,
   // enableUpdateBy: true,
