@@ -113,10 +113,9 @@ import Section from '@site/src/components/Section';
 
 #### 克隆项目源码
 
-华炎魔方是[开源低代码开发平台](https://github.com/steedos/)，我们将所有源码开源，与合作伙伴一起共建低代码开发平台生态体系。
+华炎魔方是[开源低代码开发平台](https://www.steedos.com/platform/)，我们将所有源码开源，与合作伙伴一起共建低代码开发平台生态体系。
 
-- [华炎魔方内核源码](https://github.com/steedos/steedos-platform)
-- [合同管理系统源码](https://github.com/steedos/steedos-contracts-app)
-- [费控管理系统源码](https://github.com/steedos/steedos-project-dzug)
+- [华炎魔方源码](https://github.com/steedos/steedos-platform)
+- [合同管理系统实例](https://github.com/steedos/steedos-contracts-app)
 
 </Section>
