@@ -13,4 +13,4 @@ keywords:
 
 import {Redirect} from '@docusaurus/router';
 
-<Redirect to="/platform/" />;
+<Redirect to="/help/download/" />;
