@@ -20,14 +20,6 @@ yarn 是 Facebook 开发的 Nodejs 包管理工具（替代npm），可以更快
 npm i yarn -g
 ```
 
-## 安装 steedos 客户端工具
-
-steedos客户端工具用于创建和运行项目，还可以从现有数据库自动导入初始业务对象。
-
-```bash
-npm i --global steedos-cli
-```
-
 ## 安装版本管理工具 (可选)
 
 请安装 [Github Desktop](https://desktop.github.com/)，用于管理项目源码。如果您还没有Github账户，建议您先注册一个。
