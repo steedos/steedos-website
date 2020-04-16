@@ -89,3 +89,41 @@ enable_workflow: true
 ![合同记录](/assets/guide_sc_contract2.png)
 
 可以看到，合同状态已同步为“已核准”了，同时合同文本也是审批过程中的最新版本。
+
+## 教程源码及下载运行
+
+本教程的系列代码在 [steedos-lesson-contracts](https://github.com/steedos/steedos-lesson-contracts) 项目下，我们已将代码开源，供您下载运行，及做参考。本教程为 [教程8、合同审批自动进入合同台账](https://github.com/steedos/steedos-lesson-contracts/tree/master/lesson8) 。
+
+### 下载源码
+
+请在 [steedos-lesson-contracts](https://github.com/steedos/steedos-lesson-contracts) 页面，点击“Clone or download”，并选择“Open in Desktop”，即可在GitHub Desktop中clone这个项目到本地文件夹。
+
+![clone源码](/assets/clone.png)
+
+如之前已下载此项目源码，无须再次下载。
+
+### 安装依赖包
+源码clone到本地文件夹后，在终端执行以下代码：
+```bash
+# 进入实际的本地文件夹
+cd d:\github\steedos-lesson-contracts
+cd lesson8
+yarn
+```
+
+### 启动教程8项目
+yarn完成后，继续执行：
+```bash
+yarn start
+```
+
+### 使用教程8项目
+
+在浏览器中，访问地址 [http://127.0.0.1:5000/](http://127.0.0.1:5000/) ，即可访问本项目的前台页面。
+
+### 停止教程8项目
+如果要停止项目，在终端上同时按住键盘上的Ctrl + C，
+```bash
+终止批处理操作吗(Y/N)? y
+```
+输入y即停止服务。

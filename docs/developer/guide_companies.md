@@ -55,7 +55,7 @@ permission_set:
  - 合同管理员（contract_manager），可以查看并修改所有合同，也可以新建、修改、删除自己的合同。
  - 其他的普通用户（user），可以查看、新建、修改、删除自己的合同，但不能查看/修改其他人的合同。
 
-### 目标：不同单位管控各自的合同
+### 目标：各单位管控各自合同
 
 按现状，特殊权限的人员（合同管理员、系统管理员）可以看到公司的所有合同。如果组织相对复杂，总公司下辖多个分公司（单位），这时，所有的账户要看到自己的合同、要么看到整个公司的合同。如果能实现按分公司（单位）的管控，更合理也更方便。
 
@@ -281,9 +281,9 @@ permission_set:
 
 新建合同时，所属单位默认为本人的所属单位。
 
-### 确认单位的合同管理员的权限
+### 确认合同管理员的权限
 
-合同管理员登陆后，可看到本单位的合作伙伴和合同。
+各单位的合同管理员登陆后，可看到本单位的合作伙伴和合同。
 
 ![合作伙伴](/assets/lesson_accounts_cm.png)
 
@@ -296,3 +296,41 @@ permission_set:
 ![合作伙伴](/assets/lesson_accounts_m.png)
 
 ![合同](/assets/lesson_contracts_m.png)
+
+## 教程源码及下载运行
+
+本教程的系列代码在 [steedos-lesson-contracts](https://github.com/steedos/steedos-lesson-contracts) 项目下，我们已将代码开源，供您下载运行，及做参考。本教程为 [教程9、多单位权限控制](https://github.com/steedos/steedos-lesson-contracts/tree/master/lesson9) 。
+
+### 下载源码
+
+请在 [steedos-lesson-contracts](https://github.com/steedos/steedos-lesson-contracts) 页面，点击“Clone or download”，并选择“Open in Desktop”，即可在GitHub Desktop中clone这个项目到本地文件夹。
+
+![clone源码](/assets/clone.png)
+
+如之前已下载此项目源码，无须再次下载。
+
+### 安装依赖包
+源码clone到本地文件夹后，在终端执行以下代码：
+```bash
+# 进入实际的本地文件夹
+cd d:\github\steedos-lesson-contracts
+cd lesson9
+yarn
+```
+
+### 启动教程9项目
+yarn完成后，继续执行：
+```bash
+yarn start
+```
+
+### 使用教程9项目
+
+在浏览器中，访问地址 [http://127.0.0.1:5000/](http://127.0.0.1:5000/) ，即可访问本项目的前台页面。
+
+### 停止教程9项目
+如果要停止项目，在终端上同时按住键盘上的Ctrl + C，
+```bash
+终止批处理操作吗(Y/N)? y
+```
+输入y即停止服务。
