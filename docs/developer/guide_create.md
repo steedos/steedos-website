@@ -9,7 +9,7 @@ title: 创建项目
 创建一个名为test的空项目
 
 ```bash
-npx steedos create test
+steedos create test
 ```
 
 ## 安装依赖包
