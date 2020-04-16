@@ -56,3 +56,19 @@ your browser does not support the video tag
 与其他只提供图形化界面的“低代码”开发平台不同，华炎中所有的开发内容均以源码的方式保存在项目文件夹中，开发人员可以充分利用现有的版本管理工具（推荐使用github.com）进行源代码的版本管理，系统的每一次修订均可清晰的记录在版本库中。
 
 这一点对于大型项目尤为有用，当系统出现任何故障时，开发人员都可以迅速回溯到之前稳定的版本。
+
+
+import Section from '@site/src/components/Section';
+
+<Section background="#215ca0" padding="50">
+<div style={{color:"#FFFFFF"}}>
+
+# 对于我们的快速开发工具有疑问？？
+# 扫描以下二维码，我们的技术专家会为您解答。
+
+我们的技术专家拥有十年以上的管理软件开发经验，无论您询问有关华炎魔方开发平台的功能、定价、实施或任何其他方面的问题，他们都将随时准备为您提供帮助。
+
+![在线咨询](/assets/contact_by_weixin.png)
+
+</div>
+</Section>
