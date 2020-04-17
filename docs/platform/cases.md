@@ -13,61 +13,11 @@ keywords:
   - 费控管理
 ---
 
-# 费控管理现状
+2020年的疫情危机，让全体企业主们都意识到成本控制和费用管理的重要性。裁员降薪、缩减业务、申请企业贷款……接连被动战略性调整下，企业对内管理陷入了一种未知的焦虑中。如何对预算进行实时监控，如何严格控制企业支出？
 
-企业在实际管理过程中，涉及的费用类型多、对应的管理制度多、费用管控的方案多、每天的处理量大。
-
-<br/>
-
-![费控管理现状](/assets/workflow/费控.png)
-
-# 费控管理难点
-
-现状背后，存在很大的可以改善的需求，尤其是在人工处理，核算与审批没有分离的情况下，管理效率提升的问题点比较多。
-<div className="slds-grid slds-wrap">
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
-
-#### 员工报销周期长
-
-- 手工报销模式下员工为处理报销需多次找业务领导进行审批，审批之后还需要到财务进行报账，大量占用有效工作时间。
-
-</div>
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
-
-#### 财务人员工作量大
-
-- 财务部门需要对于员工提供的报销单据进行审批，验证票据真伪，同时还需要进行编制记账凭证，输入到会计核算系统，工作量大。
-
-</div>
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
-
-#### 单据审批耗费精力
-
-- 各个员工的审批最终都需要汇总到业务领导，领导外出，会议等情况容易导致费用审批出现瓶颈，造成领导工作精力分散。
-
-</div>
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
-
-#### 制度落地难度大
-
-- 不同的费用有不同管理制度，在审批过程中由于依赖人为的判断，大量制度无法有效执行，一旦变更，审批过程很难快速调整。
-
-</div>
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
-
-#### 费用统计分析难度大
-
-- 在审批过程中，由于大量的数据没有电子化、系统化，费用的发生的汇总与统计分析往往滞后，无法做到实时的报销数据反馈。
-
-</div>
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
-
-#### 业务系统集成困难
-
-- 对于和很多外部第三方提供的财务、费用相关的各类应用没有相应接口，无法实现高效的统一登录、数据多点应用等。
-
-</div>
-</div>
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts_report.mp4" controls="controls" poster="/assets/contract_chart.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
+your browser does not support the video tag
+</video>
 
 
 import Section from '@site/src/components/Section';
