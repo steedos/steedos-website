@@ -1,7 +1,7 @@
 ---
 title: 试用华炎魔方
 sidebar_label: 试用
-background: /img/banner/cold.jpg
+background: /img/banner/clouds-large-desktop.png
 hide_table_of_contents: true
 ---
 

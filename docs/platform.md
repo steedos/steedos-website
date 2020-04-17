@@ -2,7 +2,7 @@
 title: 快速开发随需应变的企业管理软件
 sidebar_label: 概述
 hide_table_of_contents: true
-background: /img/banner/cold.jpg
+background: /img/banner/clouds-large-desktop.png
 keywords:
   - paas
   - 低代码
@@ -25,6 +25,8 @@ keywords:
 
 ![界面展示](/assets/mac_ipad_iphone_list.png)
 
+import Section from '@site/src/components/Section';
+
 # 只编写核心业务逻辑，减少代码量99%
 
 华炎魔方创新的使用配置文件描述业务模型和业务功能，开发人员只需要编写简单的配置文件就可以构建企业级应用程序，数百项系统功能都可以通过设置参数进行配置。
@@ -35,6 +37,10 @@ keywords:
 your browser does not support the video tag
 </video>
 
+<p></p>
+
+<Section background="#f4f4f4" padding="50">
+
 # 自动生成功能强大的数据中台
 
 对数据进行集中数字化管理，包括主表的基本信息，以及附件、任务、审批单及其他自定义子表等详细信息。可以通过授权，来限定不同层级的人员能查看、维护全部或是部分内容。也可以通过关键字，来模糊检索数据记录。
@@ -42,6 +48,8 @@ your browser does not support the video tag
 <video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts_operation.mp4" controls="controls" poster="/assets/contract_list.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
 </video>
+
+</Section>
 
 # 内置报表引擎，随需配置用户所需的统计报表。
 
@@ -52,6 +60,10 @@ your browser does not support the video tag
 <video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts_report.mp4" controls="controls" poster="/assets/contract_chart.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
 </video>
+
+<p></p>
+
+<Section background="#f4f4f4" padding="50">
 
 # 内置专业的流程引擎，随需绘制各种审批流程
 
@@ -65,6 +77,8 @@ your browser does not support the video tag
 your browser does not support the video tag
 </video>
 
+</Section>
+
 # 自动生成苹果、安卓移动客户端
 
 同时，针对苹果和安卓手机用户，自动生成在小屏幕设备上易于查看与操作的手机版界面，用户即使不在办公室，也能随时登录业务系统，进行业务操作。
@@ -75,7 +89,28 @@ your browser does not support the video tag
 
 <p></p>
 
-import Section from '@site/src/components/Section';
+
+<Section background="#f4f4f4" padding="50">
+
+# 免费试用华炎魔方
+
+### 查看培训教程
+
+本教程以合同管理为例，指导你如何使用华炎魔方创建项目，配置业务对象，编程脚本，处理业务部门的各种个性化需求。您开发的新业务系统可以部署在本地运行。
+
+- [什么是低代码开发平台？](/platform/lowcode/)
+- [程序员该如何选择低代码开发平台？](/platform/why/)
+- [如何使用华炎魔方，快速开发随需定制的管理系统？](/developer/)
+
+### 克隆项目源码
+
+华炎魔方是[开源低代码开发平台](https://www.steedos.com/platform/)，我们将所有源码开源，与合作伙伴一起共建低代码开发平台生态体系。
+
+- [华炎魔方源码](https://github.com/steedos/steedos-platform)
+- [华炎办公实例](https://github.com/steedos/steedos-project-saas)
+- [合同管理系统实例](https://github.com/steedos/steedos-contracts-app)
+
+</Section>
 
 <Section background="#215ca0" padding="50">
 <div style={{color:"#FFFFFF"}}>
@@ -88,34 +123,5 @@ import Section from '@site/src/components/Section';
 ![在线咨询](/assets/contact_by_weixin.png)
 
 </div>
-
-</Section>
-
-<Section background="#f4f4f4" padding="50">
-
-# 免费试用华炎魔方
-
-你可以通过以下方式体验华炎魔方对管理软件开发模式的颠覆性改变。
-
-#### 查看培训教程
-
-本教程以合同管理为例，指导你如何使用华炎魔方创建项目，配置业务对象，编程脚本，处理业务部门的各种个性化需求。您开发的新业务系统可以部署在本地运行。
-
-[如何使用华炎魔方，快速开发随需定制的管理系统？](/developer/)
-
-#### 项目效果演示
-
-华炎办公是使用华炎魔方开发的SaaS版本办公平台，内置审批、公告、知识、任务、日程等常用办公管理功能，并嵌入了合同管理、CRM等标准模块。
-
-- 注册华炎云账户，在线试用[华炎办公](https://cn.steedos.com/)
-- 下载并运行[项目源码](https://github.com/steedos/steedos-project-saas)。
-- 查看[系统帮助](/help/)
-
-#### 克隆项目源码
-
-华炎魔方是[开源低代码开发平台](https://www.steedos.com/platform/)，我们将所有源码开源，与合作伙伴一起共建低代码开发平台生态体系。
-
-- [华炎魔方源码](https://github.com/steedos/steedos-platform)
-- [合同管理系统实例](https://github.com/steedos/steedos-contracts-app)
 
 </Section>

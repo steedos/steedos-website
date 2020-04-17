@@ -4,13 +4,12 @@ hide_table_of_contents: true
 background: /img/banner/clouds-large-desktop.png
 ---
 
-华炎魔方为您提供完全免费的开源社区版。并为商业用户提供了功能更强大的版本。
+华炎魔方是[开源的低代码开发平台](/platform/)，对于个人开发者完全免费，并为商业用户提供了商业版本及技术服务。
 
 <div style={{textAlign:'center'}}>
 
 |  | 开源社区版 | 专业版 | 企业版|
 |--- | --- | --- | ---|
-| | [华炎魔方开源低代码开发平台](https://github.com/steedos/steedos-platform/)，完全免费。 | 为业务搭建自定义管理系统，满足个性化需求 | 构建公司数据中台，覆盖到每一个业务部门 |
 |单价 | <h2 class='slds-m-around_medium'>免费</h2> <br/>| <h2 class='slds-m-around_medium'>¥ 20</h2> 元/用户/月<br/>（按年付费）| <h2 class='slds-m-around_medium'>¥ 80</h2> 元/用户/月<br/>（按年付费）|
 |自定义业务对象 | 20个 | 100个 | 不限数量 |
 |自定义审批流程 | 20个 | 100个 | 不限数量 |

@@ -1,7 +1,7 @@
 ---
 title: 成功案例
 hide_table_of_contents: false
-background: /img/banner/cold.jpg
+background: /img/banner/clouds-large-desktop.png
 ---
 
 华炎用心对待每一个用户，时刻将最优异的解决之道与之分享，全球持续发展的优质客户已经证明彼此的互惠之利。

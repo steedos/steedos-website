@@ -172,15 +172,15 @@ module.exports = {
               to: 'oa/what-is-oa/',
             },
             {
-              label: '华炎办公',
-              to: 'oa/',
-            },
-            {
               label: '什么是低代码?',
               to: 'platform/lowcode/',
             },
             {
-              label: '华炎魔方',
+              label: '如何选择低代码开发平台?',
+              to: 'platform/why/',
+            },
+            {
+              label: '什么是华炎魔方？',
               to: 'platform/',
             },
           ],
@@ -188,6 +188,10 @@ module.exports = {
         {
           title: '解决方案',
           items: [
+            {
+              label: '华炎办公',
+              to: 'oa/',
+            },
             {
               label: '集团管控',
               href: '/solutions/group/',
