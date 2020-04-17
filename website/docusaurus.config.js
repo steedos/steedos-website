@@ -172,7 +172,7 @@ module.exports = {
               to: 'oa/what-is-oa/',
             },
             {
-              label: '什么是低代码?',
+              label: '什么是低代码开发平台?',
               to: 'platform/lowcode/',
             },
             {
