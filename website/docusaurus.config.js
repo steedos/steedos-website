@@ -168,11 +168,7 @@ module.exports = {
           title: '初识华炎？',
           items: [
             {
-              label: '什么是OA?',
-              to: 'oa/what-is-oa/',
-            },
-            {
-              label: '什么是低代码开发平台?',
+              label: '什么是低代码开发?',
               to: 'platform/lowcode/',
             },
             {
@@ -182,6 +178,10 @@ module.exports = {
             {
               label: '什么是华炎魔方？',
               to: 'platform/',
+            },
+            {
+              label: '零代码开发平台更好吗?',
+              to: 'platform/no-code/',
             },
           ],
         },
@@ -203,6 +203,10 @@ module.exports = {
             {
               label: '流程审批',
               href: '/solutions/workflow/',
+            },
+            {
+              label: '什么是OA?',
+              to: 'oa/what-is-oa/',
             },
           ],
         },
