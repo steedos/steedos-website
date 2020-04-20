@@ -168,20 +168,16 @@ module.exports = {
           title: '初识华炎？',
           items: [
             {
-              label: '什么是低代码开发?',
+              label: '低代码开发平台',
               to: 'platform/lowcode/',
             },
             {
-              label: '如何选择低代码开发平台?',
-              to: 'platform/why/',
-            },
-            {
-              label: '什么是华炎魔方？',
-              to: 'platform/',
-            },
-            {
-              label: '零代码开发平台更好吗?',
+              label: '零代码/无代码',
               to: 'platform/no-code/',
+            },
+            {
+              label: '华炎魔方',
+              to: 'platform/',
             },
           ],
         },
@@ -189,7 +185,7 @@ module.exports = {
           title: '解决方案',
           items: [
             {
-              label: '华炎办公',
+              label: 'OA办公系统',
               to: 'oa/',
             },
             {
@@ -205,7 +201,7 @@ module.exports = {
               href: '/solutions/workflow/',
             },
             {
-              label: '什么是OA?',
+              label: '什么是OA系统?',
               to: 'oa/what-is-oa/',
             },
           ],
