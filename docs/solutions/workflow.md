@@ -39,6 +39,10 @@ background: /img/banner/service-overview-lg.png
 
 审批王更是内嵌了有华炎多年来为大型企业开发流程管理系统所累积的专家数据库，采用零代码设计，无须撰写一行程序，就能设计出高效率、高弹性的企业流程。
 
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_approve.mp4" controls="controls" poster="/assets/workflow_basic.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
+your browser does not support the video tag
+</video>
+
 ## 技术架构
 
 #### 国际标准化流程引擎架构
