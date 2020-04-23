@@ -1,5 +1,5 @@
 ---
-title: 在线租用，或是本地化部署
+title: 免费合同管理系统，可在线租用或是私有云部署
 sidebar_label: 版本与报价
 background: /img/banner/contract.jpg
 hide_table_of_contents: true
@@ -18,19 +18,19 @@ keywords:
 
 <div style={{textAlign:'center'}}>
 
-|  | 云服务 | 专业版 | 企业版|
+|  | 开源社区版 | 在线租用版 | 私有云部署版|
 |--- | --- | --- | ---|
-|单价 |  <h2 class='slds-m-around_medium'>¥ 2</h2> 元/用户/月<br/>（按年付费）| <h2 class='slds-m-around_medium'>¥ 20</h2> 元/用户/月<br/>（按年付费）| <h2 class='slds-m-around_medium'>¥ 80</h2> 元/用户/月<br/>（按年付费）|
+|单价 |  <h2 class='slds-m-around_medium'>免费</h2> <br/>| <h2 class='slds-m-around_medium'>¥ 2</h2> 元/用户/月<br/>（按年付费）| <h2 class='slds-m-around_medium'>¥ 20</h2> 元/用户/月<br/>（按年付费）|
 |合同管理 | √ | √ | √ |
 |收付款管理 | √ | √ | √ |
 |收付款预测 | √ | √ | √ |
 |签约对象管理 | √ | √ | √ |
 |合同审批流程 | √ | √ | √ |
 |收付款审批流程 | √ | √ | √ |
-|私有化部署 |  | √ | √|
+|私有化部署 | √ |  | √|
 |手机客户端 | √ | √ | √|
 |桌面客户端 | √ | √ | √|
-|数据建模 |  | √ | √|
+|数据建模 |√ |  | √|
 |业务台账 | √ | √ | √|
 |流程引擎 | √ | √ | √|
 |报表引擎 | √ | √ | √|
@@ -39,12 +39,6 @@ keywords:
 |OData API | √ | √ | √|
 |GraphQL API | √ | √ | √|
 |单点登录 API | √ | √ | √|
-|集成短信服务 |   | √ | √|
-|集成S3/阿里云存储服务 |   | √ | √|
-|集团多公司权限控制 |   |   | √|
-|流程效率统计 |   |   | √|
-|集群部署 |   |   | √|
-|集群性能监控 |   |   | √|
 
 </div>
 
