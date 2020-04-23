@@ -118,7 +118,7 @@ module.exports = {
           items: [
             {to: 'oa/', label: '华炎办公', position: 'left', activeBasePath: 'oa/'},
             {to: 'solutions/workflow/', label:'流程审批',position: 'left', activeBasePath: 'solutions/workflow/'},
-            {to: 'solutions/contract/', label: '合同管理', position: 'left', activeBasePath: 'solutions/contract/'},
+            {to: 'products/contract/', label: '合同管理', position: 'left', activeBasePath: 'products/contract/'},
             {to: 'platform/', label: '开发平台', position: 'left', activeBasePath: 'platform/'},
             {to: 'help/', label: '使用帮助'},
           ]
@@ -133,7 +133,7 @@ module.exports = {
         // },
         {to: 'platform/', label: '开发人员', position: 'left',
           items: [
-            {to: 'platform/', label: '开源低代码开发平台', position: 'left', activeBasePath: 'platform/home'},
+            {to: 'platform/', label: '华炎魔方', position: 'left', activeBasePath: 'platform/home'},
             {to: 'developer/', label: '开发教程', position: 'left'},
             {to: 'platform/try/', label: '下载试用', position: 'left'},
             {to: 'developer/api/', label: 'API', position: 'left'},
@@ -168,7 +168,7 @@ module.exports = {
           title: '初识华炎？',
           items: [
             {
-              label: '低代码开发平台',
+              label: '低代码',
               to: 'platform/lowcode/',
             },
             {
@@ -176,7 +176,7 @@ module.exports = {
               to: 'platform/no-code/',
             },
             {
-              label: '华炎魔方',
+              label: '开源低代码开发平台',
               to: 'platform/',
             },
             {
@@ -198,7 +198,7 @@ module.exports = {
             },
             {
               label: '合同管理',
-              href: '/solutions/contract/',
+              href: '/products/contract/',
             },
             {
               label: '流程审批',
