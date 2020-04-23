@@ -5,7 +5,7 @@
   "集团管控":["solutions/group","solutions/group/features","solutions/group/scenario","solutions/group/case"],
   "Steedos Workflow": ["us", "us/training", "us/price", "us/download"],
   "华炎费控": ["solutions/cost","solutions/cost/project","solutions/cost/costcases"],
-  "合同管理": ["solutions/contract","solutions/contract/case"],
+  "华炎合同": ["solutions/contract","solutions/contract/features","solutions/contract/opensource", "solutions/contract/pricing","solutions/contract/case"],
   "销售管理":{
     "销售管理": ["solutions/sales/home","solutions/sales/reason"],
     "功能": ["solutions/sales/contacts","solutions/sales/business","solutions/sales/clue","solutions/sales/mobile","solutions/sales/im","solutions/sales/mobile_office","solutions/sales/libraries","solutions/sales/report","solutions/sales/forecast"],

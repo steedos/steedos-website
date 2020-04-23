@@ -1,12 +1,18 @@
 ---
-title: 应用案例
-background: /img/banner/health-cloud.png
+title: 华炎合同管理解决方案在集团控股公司的应用案例
+sidebar_label: 应用案例
+background: /img/banner/contract.jpg
 hide_table_of_contents: true
 keywords:
+  - 合同
   - 合同管理
+  - 合同管理软件
+  - 免费合同管理软件
+  - 开源合同管理软件
+  - 合同管理系统
+  - 免费合同管理系统
+  - 开源合同管理系统
 ---
-
-## 典型案例
 
 2019年，以 “华炎魔方”为研发基础的某集团业财一体化项目正式上线。上线后，用户反响强烈。
 
@@ -47,3 +53,19 @@ keywords:
 通过系统接口，可以将合同的相关信息集中体现在企业的EIP门户(电脑端和手机端)中，便于企业用户及时接收消息、处理工作。例如，将重要的信息提醒（如收付款计划、已收款、已付款等信息）推送给执行人，将重大的信息提醒（如延迟收款等）在第一时间推送给相关领导。
 
 开源项目网址：[https://github.com/steedos/steedos-contracts-app](https://github.com/steedos/steedos-contracts-app)
+
+import Section from '@site/src/components/Section';
+
+<Section background="#215ca0" padding="50">
+<div style={{color:"#FFFFFF"}}>
+
+# 对于我们的合同管理系统有疑问？？
+# 扫描以下二维码，我们的技术专家会为您解答。
+
+我们的专家拥有十年以上的管理软件开发经验，无论您询问有关合同管理系统的功能、定价、实施或任何其他方面的问题，他们都将随时准备为您提供帮助。
+
+![在线咨询](/assets/contact_by_weixin.png)
+
+</div>
+
+</Section>
