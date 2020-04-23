@@ -227,7 +227,9 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} 上海华炎软件科技有限公司.`,
+      copyright: `Copyright © ${new Date().getFullYear()} 上海华炎软件科技有限公司. `,
+      icp: ` 沪ICP备09089283号`,
+      icpURL: ` http://www.beian.miit.gov.cn/`,
     },
     algolia: {
       apiKey: 'eaa8e1c86ac084b5cac664d9d996856c',

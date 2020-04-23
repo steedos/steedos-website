@@ -43,7 +43,7 @@ function Footer() {
   const {themeConfig = {}} = siteConfig;
   const {footer} = themeConfig;
 
-  const {copyright, links = [], logo = {}} = footer || {};
+  const {copyright, icp, icpURL, links = [], logo = {}} = footer || {};
   const logoUrl = useBaseUrl(logo.src);
 
   if (!footer) {
@@ -105,6 +105,7 @@ function Footer() {
               </div>
             )}
             {copyright}
+            <a href={icpURL} target="_blank" className="footer__link-item">{icp}</a>
           </div>
         )}
       </div>

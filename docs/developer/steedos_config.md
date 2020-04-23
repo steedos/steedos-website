@@ -124,3 +124,26 @@ password:
   uppercase: true
   symbol: true
 ```
+
+## 定时任务配置
+
+配置定时任务的属性。
+
+```yml
+cron:
+  statistics: 0 0 0 * * *
+  mailqueue_interval: 1000
+  push_interval: 1000
+  calendar_dav_interval: 30000
+  calendar_remind: 60000
+  webhookqueue_interval: 1000
+  instancerecordqueue_interval: 10000
+```
+
+- statistics: 流程统计的执行时间，如上面的“0 0 0 * * *”意为每天的00:00:00 
+- mailqueue_interval: 邮件队列的轮询间隔(单位毫秒)
+- push_interval: 消息推送的轮询间隔(单位毫秒)
+- calendar_dav_interval: 日历同步的轮询间隔(单位毫秒)
+- calendar_remind: 日程提醒的轮询间隔(单位毫秒)
+- webhookqueue_interval: 流程触发器队列的轮询间隔(单位毫秒)
+- instancerecordqueue_interval: 对象流程队列的轮询间隔(单位毫秒)
