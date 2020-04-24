@@ -493,26 +493,47 @@ contract_type: ["id-1111111","id-2222222"]
 
 ## 自动编号类型字段 autonumber
 
-可设定编号公式: {YYYY}-{MM}-{DD}-{0000}
-YYYY表示年，MM表示月，DD表示日
-示例contract对象中配置serial_number字段：
+对于用途为编号的字段，可以设置其字段类型为自动编号类型autonumber， 并设置公式formula。如此设置后，这个字段无需手动输入，而由系统直接得到编号值。
+
+比如示例contracts合同对象中，配置了serial_number字段：
+
 ```yaml
   serial_number:
     type: autonumber
-    formula: "{YYYY}-{0000}" # 则此字段值为2020-0001、2020-0002、2020-0003以此类推，如自动编号表中配置了当前编号值为1000，则此字段值为2020-1001、2020-1002、2020-1003以此类推
-    label: 流水号
+    formula: "{YYYY}-{0000}" 
+    label: 合同编号
     filterable: true
     omit: true
     readonly: true
     searchable: true
 ```
-自动编号当前编号表 object_autonumber， 在`设置-高级-自动编号`中配置：
+
+### formula属性
+
+如上，公式formula设置为“{YYYY}-{0000}”，合同对象记录的合同编号会自动生成，其形式类似于“2020-0001”。
+
+在编号公式formula中， “{YYYY}”表示4位的年份，“{0000}”表示4位的流水号（不足4位会补足4位）。同样，还可以采用“{MM}”表示2位的月、“{DD}”表示2位的日。
+
+也可以加入其他的字符串，例如“SN{YYYY}{MM}{DD}{000}” 或是“采购合同[{YYYY}]{000}号”。
+
+### autonumber对象
+
+对于自动编号字段，系统是通过autonumber对象记录来取得编号值的。
+
+autonumber对象的字段包括：
 - object_name: 对象名，如contracts
 - field_name: 自动编号字段，如serial_number
 - current_no: 当前编号值，如1000
 - date_from: 日期范围开始日期，即编号规则生效开始时间，为空则表示不限制
 - date_to：日期范围截止日期，即编号规则生效结束时间，为空则表示不限制
-计算字段新编号时，首先查此表，如果此表无记录，自动插入一条记录
+
+当系统为自动编号字段取值时，首先会查询对象autonumber：
+- 如果没有查询到本字段的记录，则自动插入一条记录：当前编号值记为1，同时将1作为流水号、按formula格式赋值给自动编号字段；
+- 如果查询到本字段的记录，则当前编号值+1，并作为流水号、按formula格式赋值给此自动编号字段。
+
+对于autonumber对象，管理员可以在前台页面的`设置-业务对象-自动编号`中进行维护。
+
+![自动编号](/assets/autonumber_set.png)
 
 ## 系统内置字段
 
