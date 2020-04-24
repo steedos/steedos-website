@@ -7,7 +7,7 @@ background: /img/banner/clouds-large-desktop.png
 
 #### 开发平台源码
 
-- [华炎云平台服务端](https://github.com/steedos/creator)
+- [华炎魔方服务端](https://github.com/steedos/creator)
 - [服务端 node_modules](https://github.com/steedos/steedos-platform)
 - [客户端 node_modules](https://github.com/steedos/steedos-webapp)
 - [身份认证与账户登录](https://github.com/steedos/steedos-accounts)
