@@ -1,110 +1,113 @@
 ---
-title: Terms of Service
+title: 使用条款与隐私政策
 ---
 
-Last updated: June 19, 2013
+### 约定
 
-These Terms of Service (“Terms“) govern your access to and use of SteedOS (“SteedOS”, “we” or “our”) websites, services, and applications (collectively the “Service“). Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
+1. 本合约是华炎云用户（包括个人及其代表企业）与华炎云服务的运营企业上海华炎软件科技有限公司之间的法律契约。用户注册华炎云服务（包括但不限于华炎办公、华炎魔方）即代表接受本条款的约束，并自注册成功之时即成为本合约一方。付费版（包括基础版、专业版、企业版）用户完成费用支付或签署本合约并回传（包括使用传真，电子邮件等电子通信手段）给华炎云即代表接受本合约中的计费和支付条款，并接受条款约束。
 
-Your Use of the Service
+2. 本合约受中华人民共和国法律管辖，签约地为上海市。
 
-By accessing or using the Service you agree to be bound by these Terms. If you are using the Services on behalf of an organization or entity (“Organization”), then you are agreeing to these Terms on behalf of that Organization and you represent and warrant that you have the authority to bind the Organization to these Terms. In that case, “you” and “your” refers to you and that Organization.
+### 知识产权
 
-You may use the Service only if you can form a binding contract with SteedOS, and only in compliance with these Terms and all applicable local, state, national, and international laws, rules and regulations. The Service may change from time to time as we evolve, refine or add more features to the Service, often without prior notice to you. In addition, SteedOS may temporarily or permanently stop providing the Service, or any features within the Service, to you or to users generally and may not be able to provide you with prior notice.
+1. 用户在华炎云平台创建的独创性数据归属客户所有，客户有权进行任何形式的处置，包括从平台中导出和删除。
 
-Your Content
+2. 华炎云的所关联的知识产权均归属上海华炎软件科技有限公司。华炎云产品及网站，包括但不限于著作、图片、档案、资讯、资料、应用程序、源代码、LOGO、界面设计、应用程序接口（API）等，均由上海华炎软件科技有限公司依法拥有其知识产权，包括但不限于商标权、专利权、著作权、商业秘密等。
 
-Some areas of the Service allow you to post or upload information, text, graphics, or other material (“Content” or, when posted by you, “your Content”), and to share your Content with others. You retain ownership of your Content, but there are many things that users may do with your Content, for example, copy it, modify it, re-share it, or broadcast it. SteedOS has no responsibility for that activity. You understand that publishing your Content on the Service is not a substitute for registering it with any rights organization. Please consider carefully what you choose to upload.
+### 合法使用
 
-You agree not to post Content that: (i) may create a risk of harm, loss, physical or mental injury, emotional distress, death, disability, disfigurement, or physical or mental illness to you, to any other person, or to any animal; (ii) may create a risk of any other loss or damage to any person or property; (iii) seeks to harm or exploit children by exposing them to inappropriate content, asking for personally identifiable details or otherwise; (iv) may constitute or contribute to a crime or tort; (v) contains any information or content that we deem to be unlawful, harmful, abusive, racially or ethnically offensive, defamatory, infringing, invasive of personal privacy or publicity rights, harassing, humiliating to other people (publicly or otherwise), libelous, threatening, profane, or otherwise objectionable; (vi) contains any information or content that is illegal (including, without limitation, the disclosure of insider information under securities law or of another party’s trade secrets); (vii) contains any information or content that you do not have a right to make available under any law or under contractual or fiduciary relationships; or (viii) contains any information or content that you know is not correct and current. You agree that any Content that you post does not and will not violate rights of any kind, including without limitation any intellectual property rights or rights of privacy. We reserve the right, but are not obligated, to reject and/or remove any Content that we believe, in our sole discretion, violates these provisions.
+1. 华炎云服务使用客户拥有的手机号作为用户权证的识别信息。当客户不再拥有已登记的手机号时，应及时修改并验证新的手机号，否则，华炎云有权删除该用户的数据信息。
 
-You retain full ownership to your Content, but you agree to grant us a worldwide, non-exclusive, irrevocable, transferable, perpetual, royalty-free license (with the right to sublicense) to use, copy, reproduce, process, adapt, modify, publish, transmit, edit, translate, make derivatives, display and distribute such Content in connection with providing the Service to you and other users in accordance with your settings on the Service. In connection with providing the Service, we may modify or adapt your Content in order to transmit, display or distribute it over computer networks and in various media and/or make changes to your Content as are necessary to conform and adapt that Content to any requirements or limitations of any networks, devices, services or media.
+2. 用户账户及密码进行的一切操作均视为用户的行为，并对该账户的操作及言论负完全责任。因此，用户需妥善保管账户及密码，不向其他任何人泄露，亦不使用其他任何人的账户及密码。
 
-We reserve the right at all times, but are not obligated, to remove or refuse to distribute any Content on the Service including your Content. We also reserve the right to access, read, preserve, and disclose any information as we reasonably believe is necessary to (i) satisfy any applicable law, regulation, legal process or governmental request, (ii) enforce the Terms, including investigation of potential violations, (iii) detect, prevent, or otherwise address fraud, security or technical issues, (iv) respond to user support requests, or (v) protect the rights, property or safety of SteedOS, its users and the public.
+3. 华炎云服务限于提供给客户用作正常和合法业务工具，客户如果使用华炎云产品从事以下行为，将导致根本性违约，华炎云有权随时停止服务、解除合约，并追讨因此带来的损失:
 
-Your Account
+  1) 有明确证据表明客户使用华炎云用于违反法律的业务。
 
-You must provide us accurate information when you create your SteedOS account. Your SteedOS account gives you access to the Services and functionality that we may establish and maintain from time to time and in our sole discretion. We may maintain different types of accounts for different types of users or organizations. If you connect to SteedOS with a third-party service, you give us permission to access and use your information from that service as permitted by that service, and to store your log-in credentials for that service. You may never use another user’s account without permission.
+  2) 对华炎云产品进行了任何形式的对其他第三方的再授权使用、销售或转让。
 
-Account Security
+  3) 为设计开发竞争产品对华炎云产品进行任何形式的反向工程，或在竞争产品抄袭模仿华炎云的设计。
 
-You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with SteedOS or a third-party service. We encourage you to use “strong” passwords that use a combination of upper and lower case letters, numbers and symbols with your account. You agree not to disclose your password to any third party. SteedOS cannot and will not be liable for any loss or damage arising from your failure to comply with the above requirements. You must notify SteedOS immediately upon becoming aware of any breach of security or unauthorized use of your account.
+  4) 滥用华炎云产品的通信功能发送垃圾邮件和短信。
 
-SteedOS’s License to You
+  5) 对华炎云的连续服务和商誉构成损害的其他行为，包括对华炎云服务器的攻击。
 
-Subject to these Terms, SteedOS gives you a personal, worldwide, royalty-free, non-assignable, non-sublicensable and non-exclusive license to use the Service. We reserve all rights not expressly granted in these Terms in the Service. We can terminate this license at any time for any reason or for no reason.
+### 计费和支付
 
-We may make available software to access the Service via a mobile device (“Mobile Software”). To use the Mobile Software you must have a mobile device that is compatible with the Mobile Service. We do not warrant that the Mobile Software will be compatible with your mobile device. We give you a non-exclusive, non-transferable, revocable license to use a compiled code copy of the Mobile Software for one account on one mobile device owned or leased solely by you, for your personal use. You may not: (i) modify, disassemble, decompile or reverse engineer the Mobile Software, except to the extent that such restriction is expressly prohibited by law; (ii) rent, lease, loan, resell, sublicense, distribute or otherwise transfer the Mobile Software to any third party or use the Mobile Software to provide time sharing or similar services for any third party; (iii) make any copies of the Mobile Software; (iv) remove, circumvent, disable, damage or otherwise interfere with security-related features of the Mobile Software, features that prevent or restrict use or copying of any content accessible through the Mobile Software, or features that enforce limitations on use of the Mobile Software; or (v) delete the copyright and other proprietary rights notices on the Mobile Software. You agree that we may from time to time issue upgraded versions of the Mobile Software, and may automatically electronically upgrade the version of the Mobile Software that you are using on your mobile device. You agree to the automatic upgrading on your mobile device, and agree that the terms and conditions of these Terms will apply to any upgrades. Any third-party code that may be incorporated in the Mobile Software is covered by the applicable open source or third-party license EULA, if any, authorizing use of such code. This license is not a sale of the Mobile Software or any copy thereof, and SteedOS or its third party partners or suppliers retain all right, title, and interest in the Mobile Software (and any copy thereof). We reserve all rights not expressly granted under these Terms.
+1. 用户应当按照本合约载明的支付义务及时支付价款。
 
-SteedOS Property, Copyrights and Feedback
+2. 华炎云付费版用户包中所限定的用户数是指客户工作区中所有生效的用户总数。
 
-All right, title, and interest in and to the Service (excluding Content provided by users) are and will remain the exclusive property of SteedOS and its licensors. Nothing in the Terms gives you a right to use the SteedOS name or any of the SteedOS trademarks, logos, domain names, and other distinctive brand features. Any feedback, comments, or suggestions you may provide regarding SteedOS, or the Service is entirely voluntary and we will be free to use such feedback, comments or suggestions as we see fit and without any obligation to you.
+3. 用户在华炎云授权期限到期后，如需继续使用付费版，请在授权到期前至少三个工作日内完成续约事宜。如果未能及时购买续约包，用户的付费版将自动终止、而转入免费版模式，用户在付费版下的设定数据可能因此丢失或恢复为默认设置。
 
-Use of Content
+4. 任何未支付的账单均会作为客户的欠款，华炎云保留追讨欠款及滞纳金的权利，滞纳金将根据拖欠天数，每天按欠款金额的万分之五计收。
 
-All Content in or on the Service, whether publicly posted or privately transmitted by users, is the sole responsibility of the person who originated such Content. We do not endorse, support, represent or guarantee the completeness, truthfulness, accuracy, or reliability of any Content or communications posted via the Service or endorse any opinions expressed via the Service. We may not monitor or control the Content posted via the Service and, we cannot take responsibility for such Content. If you use or rely on any Content or materials posted via the Service or obtained by you through the Service, it is at your own risk. Under no circumstances will SteedOS be liable in any way for any Content, or any loss or damage of any kind incurred as a result of the use of any Content in the Service.
+### 用户隐私权
 
-You agree that you are responsible for your use of the Service, for any Content you provide, and for any consequences thereof, including the use of your Content by other users and third parties. You understand that if you do not have the right to submit Content to the Service, doing so may subject you to liability. SteedOS will not be responsible or liable for any use of your Content by SteedOS in accordance with these Terms. You represent and warrant that you have all the rights, power and authority necessary to grant the rights granted herein to any Content that you submit including all necessary rights to upload your Content for use in accordance with these terms and conditions.
+1. 华炎云仅在特定情形下会收集和处理用户的以下个人信息：
 
-Acceptable Use of SteedOS
+  1) 处理姓名和联系信息，以便向用户提供产品信息、活动报名、技术支持服务等；
 
-SteedOS is trusted by its users, and we trust you to use our Service responsibly. You agree not to misuse the Service. For example, you must not, and must not attempt to do the following things:
+  2) 处理设备和使用数据，以便改进华炎云服务及网站，保证其安全性、持续性和稳定性；
 
-use the Service for any unlawful purposes or for promotion of illegal activities;
-post any Content on the Service in violation of any applicable law, including intellectual property laws and right of privacy or publicity laws, or any contractual obligation;
-impersonate others through the Service or otherwise misrepresent your affiliation with a person or entity in a manner that does or is intended to mislead, confuse, or deceive others;
-publish or post other people’s private or personally identifiable information, such as credit card numbers, street address or Social Security/National Identity numbers, without their express authorization and permission;
-send unsolicited communications, promotions or advertisements, or spam;
-publish or link to malicious content intended to damage or disrupt another user’s browser or computer or to compromise a user’s privacy;
-access, tamper with, or use non-public areas of the Service, SteedOS’s computer systems, or the technical delivery systems of SteedOS’s providers;
-probe, scan, or test the vulnerability of any system or network or breach or circumvent any security or authentication measures;
-access or search the Services by any means other than our publicly supported interfaces (for example, “scraping”);
-forge any TCP/IP packet header or any part of the header information in any email or posting, or in any way use the Service to send altered, deceptive or false source-identifying information;
-interfere with, or disrupt, the access of any user, host or network, including, without limitation, sending a virus, overloading, flooding, spamming, mail-bombing the Service, or by scripting the creation of Content in such a manner as to interfere with or create an undue burden on the Service. International users agree to comply with all local laws regarding online conduct and acceptable content.
-We may investigate and/or suspend your account if you violate any of the above rules. Furthermore, we reserve the right to immediately terminate your account without further notice in the event that, in our sole and absolute judgment, you violate these Terms, or abuse the use of our Service.
+  3) 处理账单及支付信息，以便完成产品或服务的购买及续约交易；
 
-Privacy
+  4) 配合政府部门及公立机构工作，履行法律法规的应尽义务。
 
-We care about the privacy of our users. We collect, use and share personally identifiable information and non-personally identifiable information as described in our Privacy Policy. You are agree that by using the Service, you agree to the collection of such information, and to have your personal data collected, and used.
+2. 华炎云不会将用户产生的具体数据提供任何无关第三方，但可能在特定情形下与以下第三方共享用户个人信息或其汇总数据：
 
-DMCA Notice
+  1) 因IT系统管理与托管、信用卡处理、研究与分析、市场营销、客户支援、数据扩充而代表华炎云处理个人数据的服务提供商；
 
-We respect others’ intellectual property rights and we ask that you do too. We will respond to notices of alleged copyright infringement if they comply with the law and are properly provided to us through our DMCA Policy.
+  2) 因客户支援、市场营销、技术运营、帐户管理而处理个人数据的华炎云的关联公司；
 
-Third-Party Links
+  3) 用户报名参加的研讨会等活动的组织方、赞助方；
 
-The Service may have links to third-party websites, advertisers, services, special offers, or other events or activities that are not owned or controlled by us. We do not endorse or assume any responsibility for any of these third-party sites, information, materials, products, or services. If you access a third party website from the Service, you do so at your own risk, and you understand that these Terms and our Privacy Policy do not apply to your use of those sites. You expressly relieve SteedOS from any and all liability arising from your use of any third-party website, service, or content and agree that your dealings with any third-party website, service, or content is only between you and such third parties. You agree that we are not responsible for any loss or damage of any sort in your dealings with such advertisers.
+  4) 第三方的社交媒体和广告网络，以便在这些平台上发布华炎云的广告；
 
-Indemnification
+  5) 特别情况，例如参与合并或资产重组等业务时，提供相关咨询、法律、银行、保险、会计服务的专业顾问；
 
-You agree to defend, indemnify and hold harmless SteedOS and its licensee and licensors, and their employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney’s fees) arising from your use of and access to the Service, including any data or Content transmitted or received by you, any other party’s access or use of the Service with your username and password, or your violation of these Terms, applicable law, rule or regulation.
+  6) 为履行法律义务而须披露个人信息情形时，相关的政府部门及公立机构。
 
-Modifications
+3. 在以下情形中，用户可向华炎云提出删除用户信息的申请：
 
-We may revise these Terms from time to time and the most current version will always be posted on our website. If a revision, in our sole discretion, is material we will notify you (for example via email to the email address associated with your account). Other changes may be posted to our blog or Terms page, so please check those pages regularly. By continuing to access or use the Service after revisions become effective, you agree to be bound by the revised Terms. If you do not agree to the new terms, please stop using the Services.
+  1) 如果华炎云处理用户信息的行为违反法律法规；
 
-No Warranty
+  2) 如果华炎云收集、使用用户信息，却未征得用户的明确同意；
 
-THE SERVICE IS PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS. USE OF THE SERVICE IS AT YOUR OWN RISK. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SERVICE IS PROVIDED WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. WITHOUT LIMITING THE FOREGOING, STEEDOS AND ITS LICENSORS DO NOT WARRANT THAT THE CONTENT IS ACCURATE, RELIABLE OR CORRECT; THAT THE SERVICE WILL MEET YOUR REQUIREMENTS; THAT THE SERVICE WILL BE AVAILABLE AT ANY PARTICULAR TIME OR LOCATION, UNINTERRUPTED OR SECURE; THAT ANY DEFECTS OR ERRORS WILL BE CORRECTED; OR THAT THE SERVICE IS FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. ANY CONTENT DOWNLOADED OR OTHERWISE OBTAINED THROUGH THE USE OF THE SERVICE IS DOWNLOADED AT YOUR OWN RISK AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR MOBILE DEVICE OR LOSS OF DATA THAT RESULTS FROM SUCH DOWNLOAD OR YOUR USE OF THE SERVICE. WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE OUR SERVICE OR ANY HYPERLINKED WEBSITE OR SERVICE, AND WE WILL NOT BE A PARTY TO OR IN ANY WAY MONITOR ANY TRANSACTION BETWEEN YOU AND THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES.
+  3) 如果华炎云处理个人信息的行为严重违反了与用户的约定。
 
-Limitation of Liability
+为保障安全，用户需要提供书面请求，并以公章或其他方式证明合法身份。
 
-TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL STEEDOS, ITS AFFILIATES, AGENTS, DIRECTORS, EMPLOYEES OR SUPPLIERS BE LIABLE FOR ANY DIRECT, INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES, INCLUDING WITHOUT LIMITATION DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, DATA OR OTHER INTANGIBLE LOSSES, THAT RESULT FROM THE USE OF, OR INABILITY TO USE, THIS SERVICE. UNDER NO CIRCUMSTANCES WILL STEEDOS BE RESPONSIBLE FOR ANY DAMAGE, LOSS OR INJURY RESULTING FROM HACKING, TAMPERING OR OTHER UNAUTHORIZED ACCESS OR USE OF THE SERVICE OR YOUR ACCOUNT OR THE INFORMATION CONTAINED THEREIN.
+### 免责声明
 
-TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, STEEDOS ASSUMES NO LIABILITY OR RESPONSIBILITY FOR ANY (I) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT; (II) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO OR USE OF OUR SERVICE; (III) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SECURE SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION STORED THEREIN; (IV) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM THE SERVICE; (V) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE THAT MAY BE TRANSMITTED TO OR THROUGH OUR SERVICE BY ANY THIRD PARTY; (VI) ANY ERRORS OR OMISSIONS IN ANY CONTENT OR FOR ANY LOSS OR DAMAGE INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED, EMAILED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE THROUGH THE SERVICE; AND/OR (VII) USER CONTENT OR THE DEFAMATORY, OFFENSIVE, OR ILLEGAL CONDUCT OF ANY THIRD PARTY. IN NO EVENT SHALL STEEDOS ITS AGENTS, DIRECTORS, EMPLOYEES, SUPPLIERS, OR LICENSORS BE LIABLE TO YOU FOR ANY CLAIMS, PROCEEDINGS, LIABILITIES, OBLIGATIONS, DAMAGES, LOSSES OR COSTS IN AN AMOUNT EXCEEDING THE AMOUNT YOU PAID TO COMPANY HEREUNDER.
+1. 华炎云因下列状况无法正常运作，导致用户无法使用各项服务的，华炎云不承担损害赔偿责任，该状况包括但不限于：
 
-THIS LIMITATION OF LIABILITY SECTION APPLIES WHETHER THE ALLEGED LIABILITY IS BASED ON CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY, OR ANY OTHER BASIS, EVEN IF STEEDOS HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THE FOREGOING LIMITATION OF LIABILITY SHALL APPLY TO THE FULLEST EXTENT PERMITTED BY LAW IN THE APPLICABLE JURISDICTION.
+  1) 华炎云在官网公告之系统停机维护期间；
 
-SOME STATES DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATIONS OR EXCLUSIONS MAY NOT APPLY TO YOU. THIS AGREEMENT GIVES YOU SPECIFIC LEGAL RIGHTS, AND YOU MAY ALSO HAVE OTHER RIGHTS WHICH VARY FROM STATE TO STATE. THE DISCLAIMERS, EXCLUSIONS, AND LIMITATIONS OF LIABILITY UNDER THIS AGREEMENT WILL NOT APPLY TO THE EXTENT PROHIBITED BY APPLICABLE LAW.
+  2) 电信设备出现故障不能进行数据传输的；
 
-Miscellaneous Legal Terms
+  3) 因台风、地震、海啸、洪水、停电、战争、恐怖袭击等不可抗力之因素，造成华炎云系统障碍不能执行业务的；
 
-These Terms and any rights and licenses granted hereunder, may not be transferred or assigned by you, but may be assigned by us without restriction. Any attempted transfer or assignment by you will be null and void.
+  4) 由于黑客攻击、电信部门技术调整或故障、网站升级等原因而造成的服务中断或者延迟。
 
-These Terms, together with any amendments and any additional agreements you may enter into with SteedOS in connection with the Service, will constitute the entire agreement between you and SteedOS concerning the Service. If any provision of these Terms is deemed invalid by a court of competent jurisdiction, the invalidity of such provision shall not affect the validity of the remaining provisions of this Agreement, which shall remain in full force and effect.
+2. 对下列情形，华炎云不承担任何责任：
 
-No waiver of any sections of these Terms shall be deemed a further or continuing waiver of such term or any other term, and SteedOS’s failure to assert any right or provision under these Terms shall not constitute a waiver of such right or provision.
+  1) 并非由于华炎云的故意而导致华炎云服务未能提供的；
 
-We may provide notifications, whether these are required by law of are for marketing or other business related purposes, to you via email notice, written or hard copy notice, or through posting of such notice on our website, as determined by us in our sole discretion. You can opt out of certain types of notifications through your settings page.
+  2) 由于用户的故意或过失导致用户及/或任何第三方遭受损失的；
 
-Please contact us at support@steedos.com with any questions regarding these Terms.
+  3) 因用户未及时续费，导致服务不能提供或提供时发生任何错误的；
+
+  4) 仅是系统的部分小功能出现问题、而不影响整体系统的使用的情形。
+
+### 条款修订
+
+1. 华炎云有权随时对本合约的条款进行修订，并在修订生效日前一个工作日更新在华炎云网站。
+
+2. 华炎云有权对付费版的定价进行修订，并在修订生效日前一个月通告给所有付费版用户。
+
+### 争议及其他规定
+
+1. 如果华炎云用户与华炎云就本合约内容或其执行发生争议，双方应尽量友好协商解决；协商不成时，任何一方均可将争议提交给本合约签约地的仲裁机构；仲裁不成，可向本合约签约地的人民法院提起诉讼。
+
+2. 如果对本合约条款存有疑问，请联系华炎云。本合约的最终解释权属于上海华炎软件科技有限公司。
