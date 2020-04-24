@@ -1,0 +1,41 @@
+---
+title: 审批王升级
+sidebar_label: 升级
+hide_table_of_contents: false
+background: /img/banner/service-overview-lg.png
+---
+
+### 版本提升
+
+从基础班升级为专业版/企业版后，系统功能将得到大幅提升。
+
+<div style={{textAlign:'center'}}>
+
+|  | 基础版 | 专业版 | 企业版|
+|--- | --- | --- | ---|
+|单价 | <h2 class='slds-m-around_medium'>¥ 2</h2> 元/用户/月<br/>（按年付费）| <h2 class='slds-m-around_medium'>¥ 20</h2> 元/用户/月<br/>（按年付费）| <h2 class='slds-m-around_medium'>¥ 60</h2> 元/用户/月<br/>（按年付费）|
+|流程数量限制 | 10个 | 50个 | 不限数量 |
+|单个附件大小限制 | 10兆 | 50兆 | 100兆 |
+|Webhooks 审批触发接口 |  | √ | √|
+|自定义表单Html及脚本 |   | √ | √|
+|批量审批 |   |   | √|
+|文件分发 |   |   | √|
+|审批到台账归档接口 |   |   | √|
+
+</div>
+
+### 自助升级
+
+- 管理员登陆系统后，进入`设置-公司设置-公司`，
+
+![升级](/assets/workflow_upgrade1.png)
+
+- 点击右上角的“升级”按钮，
+
+![选择版本](/assets/workflow_upgrade2.png)
+
+- 选择截止日期，输入用户数，并选择版本：专业版则同时勾选上“审批王标准版”、“审批王专业版扩展包”；企业版则同时勾选上“审批王标准版”、“审批王专业版扩展包”、“审批王企业版扩展包”，系统会自动计算账单金额，点击“确认”按钮，弹出微信支付页面，
+
+![微信支付](/assets/workflow_upgrade3.png)
+
+- 在手机上的微信里扫码并支付，即可完成版本升级。
