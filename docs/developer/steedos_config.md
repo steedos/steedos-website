@@ -39,12 +39,20 @@ tenant:
   enable_forget_password: true
   enable_create_tenant: true
   enable_mobile: false
+  disable_email_register: false
+  enable_bind_mobile: false
+  enable_password_login: true
+  enable_mobile_code_login: false
 ```
 
 - enable_register: 启用注册功能
 - enable_forget_password: 启用忘记密码功能
 - enable_create_tenant: 启用工作区注册功能
 - enable_mobile: 启用手机端界面
+- disable_email_register: 禁止邮箱注册
+- enable_bind_mobile: 强制绑定手机号
+- enable_password_login: 启用密码登录
+- enable_mobile_code_login: 启用手机号 + 验证码登录
  
 ## Web服务URL
 
