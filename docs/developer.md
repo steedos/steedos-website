@@ -78,6 +78,11 @@ hide_table_of_contents: true
 - 配置单位权限对应人员
 - 确认多单位权限控制效果
 
+#### [教程10：第三方系统接口集成](/developer/guide_nc)
+- 增加申请付款按钮
+- 增加申请付款的执行
+- 增加调用接口的具体执行
+- 查看接口的实际运行效果
 
 import Section from '@site/src/components/Section';
 
