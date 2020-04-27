@@ -34,10 +34,6 @@ your browser does not support the video tag
 
 第二类，从零开始，创建业务系统，或是构建企业数据中台。这个领域需要很多年的技术积累，需要通过成百上千个项目沉淀客户需求，才能做出好的开发工具。如何把基础功能标准化，如何把差异化的部分提炼出来做成可配置，这是一个非常难的课题。在这方面比较领先的有以开发CRM并逐步进化的Salesforce， 开发ERP起家的Odoo ，和二十年开发经验的BPM厂商华炎魔方。
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/creator_object.mp4" controls="controls" poster="/assets/creator_object.png" width="100%" autoplay="autoplay" muted="muted" loop="loop">
-your browser does not support the video tag
-</video>
-
 华炎魔方是第二类，就是可以开发全新业务系统的低代码开发平台。
 
 # 如何选择低代码开发平台？
@@ -100,7 +96,34 @@ your browser does not support the video tag
 
 效率的提高推动社会的进步。以前你可能是公司研发部门下的一颗螺丝钉，负责业务系统某一个功能的开发。切换到低代码开发平台之后，你一个人可以独立负责一个大型项目，开发效率大幅提升。你的工作内容也会由写一些枯燥的代码，转变成与业务人员沟通，分析需求，设计数据模型，编写核心业务逻辑，逐步提升到产品经理的层次，而且是一个极其稀有的、会写程序的产品经理 😊。创造的价值不同。相信未来能获得收入也会大不同。
 
+
 import Section from '@site/src/components/Section';
+
+<Section background="#f4f4f4" padding="50">
+
+# 华炎魔方开源低代码开发平台
+
+华炎魔方创新的使用配置文件描述业务模型和业务功能，开发人员只需要编写简单的配置文件就可以构建企业级应用程序，数百项系统功能都可以通过设置参数进行配置。
+
+配置文件和与业务逻辑相关的触发脚本，就构成了一个项目的核心源代码，简单易懂，易于维护。对于大型项目，源码可以轻松保存到Github，可以随时追踪到开发人员的修改历史。
+
+<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/developer/" >
+免费教程
+</a>
+
+<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/platform/try/" >
+试用
+</a>
+
+<p></p>
+
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/creator_object.mp4" controls="controls" poster="/assets/creator_object.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
+your browser does not support the video tag
+</video>
+
+<p></p>
+
+</Section>
 
 <Section background="#215ca0" padding="50">
 <div style={{color:"#FFFFFF"}}>
