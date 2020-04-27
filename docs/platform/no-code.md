@@ -90,9 +90,15 @@ your browser does not support the video tag
 
 但是那几万套模版哪里来的呢？这个悟空变不出来，需要开发人员基于一套统一的、标准化的开发模式实施数百万个项目，需要数十年的积累。
 
-## 想要试试吗？
+import Section from '@site/src/components/Section';
 
-开源低代码开发平台华炎魔方，实现了 Salesforce 的核心功能，提供数据建模工具，并可以编写业务逻辑脚本，开发的系统可以本地部署也可以二次销售。
+<Section background="#f4f4f4" padding="50">
+
+## 华炎魔方开源低代码开发平台
+
+华炎魔方创新的使用配置文件描述业务模型和业务功能，开发人员只需要编写简单的配置文件就可以构建企业级应用程序，数百项系统功能都可以通过设置参数进行配置。
+
+配置文件和与业务逻辑相关的触发脚本，就构成了一个项目的核心源代码，简单易懂，易于维护。对于大型项目，源码可以轻松保存到Github，可以随时追踪到开发人员的修改历史。
 
 <a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/developer/" >
 免费教程
@@ -104,7 +110,13 @@ your browser does not support the video tag
 
 <p></p>
 
-import Section from '@site/src/components/Section';
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/creator_object.mp4" controls="controls" poster="/assets/creator_object.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
+your browser does not support the video tag
+</video>
+
+<p></p>
+
+</Section>
 
 <Section background="#215ca0" padding="50">
 <div style={{color:"#FFFFFF"}}>
