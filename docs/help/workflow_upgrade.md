@@ -1,13 +1,12 @@
 ---
-title: 审批王升级
-sidebar_label: 升级
+title: 华炎办公版本升级
+sidebar_label: 版本升级
 hide_table_of_contents: false
-background: /img/banner/service-overview-lg.png
 ---
 
-### 版本提升
+### 版本比较
 
-从基础班升级为专业版/企业版后，系统功能将得到大幅提升。
+华炎办公从基础班升级为专业版/企业版后，系统功能将得到大幅提升。
 
 <div style={{textAlign:'center'}}>
 
