@@ -27,7 +27,7 @@ module.exports = function(context) {
     );
   }
 
-  const isProd = true; //process.env.NODE_ENV === 'production';
+  const isProd = process.env.NODE_ENV === 'production';
 
   return {
     name: 'docusaurus-plugin-baidu-analytics',
