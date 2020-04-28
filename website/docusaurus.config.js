@@ -113,8 +113,8 @@ module.exports = {
         href: '/cn/'
       },
       links: [
-        {to: 'oa/', label: '华炎办公', position: 'left', activeBasePath: 'oa/'},
-        {to: 'platform/', label: '华炎魔方', position: 'left', activeBasePath: 'platform/home'},
+        {to: 'platform/', label: '华炎魔方', position: 'left', activeBasePath: 'platform/'},
+        {to: 'solutions/workflow/', label: '审批王', position: 'left', activeBasePath: 'oa/'},
 
         // {to: '', label: '解决方案', position: 'left',
         //   items: [
@@ -178,7 +178,7 @@ module.exports = {
           ],
         },
         {
-          title: '项目案例',
+          title: '解决方案',
           items: [
             {
               label: 'OA办公系统',
