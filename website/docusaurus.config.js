@@ -113,29 +113,21 @@ module.exports = {
         href: '/cn/'
       },
       links: [
+        {to: 'oa/', label: '华炎办公', position: 'left', activeBasePath: 'oa/'},
+        {to: 'platform/', label: '华炎魔方', position: 'left', activeBasePath: 'platform/home'},
 
-        {to: '', label: '产品', position: 'left',
-          items: [
-            {to: 'oa/', label: '华炎办公', position: 'left', activeBasePath: 'oa/'},
-            {to: 'solutions/workflow/', label:'流程审批',position: 'left', activeBasePath: 'solutions/workflow/'},
-            {to: 'products/contract/', label: '合同管理', position: 'left', activeBasePath: 'products/contract/'},
-            {to: 'platform/', label: '开发平台', position: 'left', activeBasePath: 'platform/'},
-            {to: 'help/', label: '使用帮助'},
-          ]
-        },
         // {to: '', label: '解决方案', position: 'left',
         //   items: [
         //     // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
+        //     {to: 'products/contract/', label:'合同管理',position: 'left', activeBasePath: 'solutions/group/'},
         //     {to: 'solutions/group/', label:'集团管控',position: 'left', activeBasePath: 'solutions/group/'},
         //     {to: 'solutions/cost/', label: '费控管理', position: 'left', activeBasePath: 'solutions/cost/'},
         //     {to: 'solutions/knowledge/', label: '知识管理', position: 'left', activeBasePath: 'solutions/knowledge/'},
         //   ]
         // },
-        {to: 'platform/', label: '开发人员', position: 'left',
+        {to: 'developer/', label: '开发人员', position: 'left',
           items: [
-            {to: 'platform/', label: '华炎魔方', position: 'left', activeBasePath: 'platform/home'},
-            {to: 'developer/', label: '开发教程', position: 'left'},
-            {to: 'platform/try/', label: '下载试用', position: 'left'},
+            {to: 'developer/', label: '开发文档', position: 'left'},
             {to: 'developer/api/', label: 'API', position: 'left'},
           ]
         },
@@ -186,7 +178,7 @@ module.exports = {
           ],
         },
         {
-          title: '解决方案',
+          title: '项目案例',
           items: [
             {
               label: 'OA办公系统',
@@ -204,10 +196,10 @@ module.exports = {
               label: '流程审批',
               href: '/solutions/workflow/',
             },
-            {
-              label: '什么是OA系统?',
-              to: 'oa/what-is-oa/',
-            },
+            // {
+            //   label: '什么是OA系统?',
+            //   to: 'oa/what-is-oa/',
+            // },
           ],
         },
         {

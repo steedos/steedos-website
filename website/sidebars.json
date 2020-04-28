@@ -1,6 +1,16 @@
 {
   "关于华炎": ["company/about-us", "company/customers", "company/contact-us"],
-  "华炎办公": ["oa", "oa/function", "oa/scenario", "oa/cases", "oa/price", "oa/download"],
+  "华炎办公": ["oa", "oa/function", "oa/scenario", "oa/cases", "oa/price", 
+  {
+    "type": "link",
+    "href": "/help/download",
+    "label": "下载客户端"
+  }, 
+  {
+    "type": "link",
+    "href": "/help",
+    "label": "帮助文档"
+  }],
   "审批王": ["solutions/workflow", "solutions/workflow/function", "solutions/workflow/scenario", "solutions/workflow/cases", "solutions/workflow/price", "solutions/workflow/download"],
   "集团管控":["solutions/group","solutions/group/features","solutions/group/scenario","solutions/group/case"],
   "Steedos Workflow": ["us", "us/training", "us/price", "us/download"],
@@ -12,7 +22,12 @@
     "按角色": ["solutions/sales/role_professional","solutions/sales/role_supervisor","solutions/sales/role_operate","solutions/sales/role_manager","solutions/sales/role_expert","solutions/sales/role_service","solutions/sales/role_FAQ"]
   },
   "华炎知识管理": ["solutions/knowledge","solutions/knowledge/management","solutions/knowledge/case"],
-  "华炎魔方": ["platform/lowcode", "platform/no-code", "platform", "platform/cases", "platform/pricing", "platform/try"],
+  "华炎魔方": ["platform", "platform/lowcode", "platform/no-code", "platform/cases", "platform/pricing", "platform/try",
+    {
+      "type": "link",
+      "href": "/developer",
+      "label": "开发文档"
+    }],
   "Steedos 开发文档": {
     "快速向导": ["developer","developer/install","developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report","developer/guide_flow","developer/guide_sync","developer/guide_companies","developer/guide_nc"],
     "配置文档": ["developer/steedos_config", "developer/datasource", "developer/object", "developer/object_field", "developer/listview", "developer/object_permission", "developer/app", "developer/reports", "developer/object_filter_conditions", "developer/object_field_formula", "developer/standard_objects", "developer/object_workflow"],
