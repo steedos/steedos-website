@@ -152,7 +152,7 @@ class HelloWorldPlugin {
 window.registerPlugin('com.steedos.hellow-world', new HelloWorldPlugin());
 ```
 
-> 以上内容为注册一个hellow-world插件，并且该插件调用了registerObjectHomeComponent，注册一个组件显示为hello_world_object这个对象的首页。关于[registerObjectHomeComponent](./plugin_webap_functions.md#registerobjecthomecomponent)及更多插件函数说明请移步：[Web App 插件函数](./plugin_webap_functions.md)。
+> 以上内容为注册一个hellow-world插件，并且该插件调用了registerObjectHomeComponent，注册一个组件显示为hello_world_object这个对象的首页。关于[registerObjectHomeComponent](./plugin_webapp_functions.md#registerobjecthomecomponent)及更多插件函数说明请移步：[Web App 插件函数](./plugin_webapp_functions.md)。
 
 ## 打包 Webapp
 
