@@ -1,5 +1,5 @@
 ---
-title: Connection
+title: 数据库连接
 ---
 
 ## 什么是`Connection`
