@@ -13,7 +13,7 @@ tags:
 
 <!--truncate-->
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/creator_object.mp4" controls="controls" poster="/assets/creator_object.png" width="100%" autoplay="autoplay" muted="muted" loop="loop">
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/creator_object.mp4" controls="controls" poster="/assets/creator_object.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
 </video>
 

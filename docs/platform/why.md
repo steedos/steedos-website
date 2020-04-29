@@ -17,7 +17,7 @@ keywords:
 
 第二类，从零开始，创建业务系统，或是构建企业数据中台。这个领域需要很多年的技术积累，需要通过成百上千个项目沉淀客户需求，才能做出好的开发工具。如何把基础功能标准化，如何把差异化的部分提炼出来做成可配置，这是一个非常难的课题。在这方面比较领先的有以开发CRM并逐步进化的Salesforce， 开发ERP起家的Odoo ，和二十年开发经验的BPM厂商华炎魔方。
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/creator_object.mp4" controls="controls" poster="/assets/creator_object.png" width="100%" autoplay="autoplay" muted="muted" loop="loop">
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/creator_object.mp4" controls="controls" poster="/assets/creator_object.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
 </video>
 

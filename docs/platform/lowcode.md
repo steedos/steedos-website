@@ -22,7 +22,7 @@ keywords:
 
 低代码开发平台是一种全新的开发方式，通过把标准功能组件化，业务需求配置化，改变应用交付和管理的模式，大大缩减应用交付的周期，最终帮助业务加速创新带来的价值。
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/creator_object.mp4" controls="controls" poster="/assets/creator_object.png" width="100%" autoplay="autoplay" muted="muted" loop="loop">
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/creator_object.mp4" controls="controls" poster="/assets/creator_object.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
 </video>
 
