@@ -172,8 +172,8 @@ module.exports = {
               to: 'platform/',
             },
             {
-              label: '下载试用',
-              to: 'platform/try/',
+              label: '数字化转型',
+              href: '/platform/cases/',
             },
           ],
         },
