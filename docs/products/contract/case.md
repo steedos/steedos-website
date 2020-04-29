@@ -1,7 +1,7 @@
 ---
 title: 华炎魔方帮助企业快速实现数字化转型
 sidebar_label: 应用案例
-hide_table_of_contents: false
+hide_table_of_contents: true
 keywords:
   - 合同
   - 合同管理
@@ -20,13 +20,9 @@ keywords:
 
 华炎魔方仅用**3个月**的时间，为一个大型集团企业建立了完整的合同管理系统，该企业有集团公司与近60家子公司。这套合同管理系统不仅对所有合同涵盖从订立、履行到验收、付款的整个过程，还打通了与用友NC财务管理系统的数据流动，可以实时查看统计报表，实现了企业合同的全过程、自动化、一体化管理。
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts_report.mp4" controls="controls" poster="/assets/contract_chart.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
-your browser does not support the video tag
-</video>
+![业财台账](/assets/contract/contract2.png)
 
 该项目于9月中旬正式开工，10月中旬搭建好系统主体框架，向甲方项目总负责人（财务总监）进行了项目成果汇报。在此基础上开发接口，根据客户的试用情况不断修改，12月12日向总裁进行了汇报，12月23日系统整体上线。
-
-![业财台账](/assets/contract/contract2.png)
 
 效率高，功能强，这是怎么做到的呢？
 

@@ -17,13 +17,10 @@ keywords:
 
 华炎魔方仅用**3个月**的时间，为一个大型集团企业建立了完整的合同管理系统，该企业有集团公司与近60家子公司。这套合同管理系统不仅对所有合同涵盖从订立、履行到验收、付款的整个过程，还打通了与用友NC财务管理系统的数据流动，可以实时查看统计报表，实现了企业合同的全过程、自动化、一体化管理。
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts_report.mp4" controls="controls" poster="/assets/contract_chart.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
-your browser does not support the video tag
-</video>
+![业财台账](/assets/contract/contract2.png)
 
 该项目于9月中旬正式开工，10月中旬搭建好系统主体框架，向甲方项目总负责人（财务总监）进行了项目成果汇报。在此基础上开发接口，根据客户的试用情况不断修改，12月12日向总裁进行了汇报，12月23日系统整体上线。
 
-![业财台账](/assets/contract/contract2.png)
 
 效率高，功能强，这是怎么做到的呢？
 
@@ -33,7 +30,7 @@ your browser does not support the video tag
 
 以下这几项重要功能就是在系统中举足轻重，但是在我们的实施过程中，开发人员不需要介入，或只需要提供少量帮助即可。
 
-## 数据建模快
+# 数据建模快
 
 华炎魔方创新的使用配置文件构建业务模型。本项目涉及合同、供应商、收付款相关表近100张。开发人员只花了4周的时间就完成数据建模的整个过程，快速搭建好系统原型。
 
@@ -46,7 +43,7 @@ your browser does not support the video tag
 </video>
 
 
-## 审批流程设计快
+# 审批流程设计快
 
 合同的流转涉及多人和多部门，传统纸质合同在流转的过程中存在流转时间长、查找不便、容易出错等问题。
 
@@ -60,7 +57,7 @@ your browser does not support the video tag
 
 所见即所得，设计特别快。目前该企业共有近200个流程正在使用。
 
-## 数据实时进入台账
+# 数据实时进入台账
 
 采用手工或Excel管理时，由于不同部门的数据格式不统一，采集也不能够及时进行，汇总工作需要耗费大量时间还不一定准确。这对于领导的决策时间有一定的影响。
 
@@ -78,7 +75,7 @@ your browser does not support the video tag
 
 付款信息直达用友NC系统，付款完成立即反馈回来。实时追踪合同履行过程中的金额变化。
 
-## 统计报表设计快
+# 统计报表设计快
 
 合同管理中最重要的是，对收付款计划与实际情况的管理，这反映了企业间的经济往来。
 
@@ -90,7 +87,7 @@ your browser does not support the video tag
 
 当月的收支情况以及与近期的对比都一目了然。这样的画面只需要配置就可以实现了。
 
-## 字段级的权限管理
+# 字段级的权限管理
 
 由于合同内容及金额的保密性，合同和报表中的数据不允许任意开放，必须严格控制到明细信息、甚至单个字段级别，并且还要区分哪些人可以查看、哪些人可以编辑。
 
