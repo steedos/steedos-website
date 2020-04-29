@@ -56,9 +56,8 @@ yarn add @steedos/react
   }
 }
 
-```
 ## 配置 webpack
-
+```
 创建一个 `/webpack.config.js`文件，配置webpack
 
 ```js
