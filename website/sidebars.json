@@ -42,7 +42,7 @@
     "快速向导": ["developer","developer/install","developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report","developer/guide_flow","developer/guide_sync","developer/guide_companies","developer/guide_nc"],
     "配置文档": ["developer/steedos_config", "developer/datasource", "developer/object", "developer/object_field", "developer/listview", "developer/object_permission", "developer/app", "developer/reports", "developer/object_filter_conditions", "developer/object_field_formula", "developer/standard_objects", "developer/object_workflow"],
     "开发文档": ["developer/object_trigger", "developer/object_action", "developer/object_form", "developer/objectql_connection", "developer/objectql_object", "developer/report_jsreport"],
-    "插件": ["plugins/index", "plugins/plugin_server", "plugins/plugin_webapp", "plugins/plugin_config"]
+    "插件": ["plugins/index",  "plugins/plugin_webapp", "plugins/plugin_webapp_functions"]
   },
   "华炎帮助": {
     "帮助文档": ["help", "help/download", "help/workflow/faq", "help/workflow_upgrade"],
