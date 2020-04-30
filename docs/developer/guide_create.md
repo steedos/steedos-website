@@ -54,22 +54,51 @@ yarn start
 
 服务启动后，即可使用浏览器访问用户界面，访问地址为 [http://127.0.0.1:5000/](http://127.0.0.1:5000/) 。
 
-### 注册新账户
+![登录页](/assets/login_noemail.png)
 
-第一次使用时，数据库为空。您需要点击“注册”，用邮箱注册一个新账户。
+> 上方显示“邮件服务未配置，点击查看帮助”，点击可查看如何通过配置开通发邮件功能。
 
-![注册](/assets/注册.png)
+### 注册一个账户
+
+第一次使用本项目时，数据库为空。您需要点击“注册”，用邮箱注册一个新账户。
+
+![登录页](/assets/login_register.png)
+
+![输入邮件](/assets/register_email.png)
+
+![输入验证码](/assets/register_verify.png)
+
+> 如果已开通发邮件功能，可到邮箱中取验证码；如果尚未配置，则到终端上取验证码：
+
+> ![注册](/assets/register_code.png)
+
+![输入验证码](/assets/register_name.png)
 
 ### 创建一个企业
 
-首次登入系统后，输入企业名称，即可完成企业的创建。
-![创建企业](/assets/注册2.png)
+填写姓名后，输入企业名称，
+
+![创建企业](/assets/register_space.png)
+
+![创建完毕](/assets/register_ok.png)
+
+即可完成企业的创建。
+
+点击“首页”即可进入系统主页面。
 
 ### 浏览系统主页面
 
-![PC界面展示](/assets/主页面.png)
+![PC界面展示](/assets/mainpage.png)
 
 ![移动端界面展示](/assets/guide_2.png)
+
+要进入系统，可以通过验证码登陆。也可以给账户设置密码。
+
+### 设置登录密码
+
+在设置 > 个人账户设置 > 我的资料 中，可以更改密码。
+
+![设置密码](/assets/userset_password.png)
 
 ## 教程源码及下载运行
 
