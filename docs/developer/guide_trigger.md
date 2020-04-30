@@ -50,7 +50,7 @@ module.exports = {
 
 ## 编写触发的执行代码
 
-在scontracts.trigger.js文件中，编写caculateAmount的处理逻辑代码。
+在contracts.trigger.js文件中，编写caculateAmount的处理逻辑代码。
 
 ```javascript
 const objectql = require('@steedos/objectql');
