@@ -100,6 +100,8 @@ yarn start
 
 ![设置密码](/assets/userset_password.png)
 
+更多的系统设置及使用，请参考 [如何设置组织](/help/organization) 、 [如何设置审批](/help/workflow/admin_form) 、 [如何使用审批](/help/workflow/instance_add) 。
+
 ## 教程源码及下载运行
 
 本教程的系列代码在 [steedos-lesson-contracts](https://github.com/steedos/steedos-lesson-contracts) 项目下，我们已将代码开源，供您下载运行，及做参考。本教程为 [教程1、创建项目](https://github.com/steedos/steedos-lesson-contracts/tree/master/lesson1) 。
