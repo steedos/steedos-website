@@ -14,7 +14,7 @@ Steedos 的神奇之处正在于此，你只需要修改业务对象配置文件
 
 ```bash
 name: accounts
-lable: 业务伙伴
+label: 业务伙伴
 icon: accounts
 ```
 ## 添加字段：名称、电话、邮箱...
