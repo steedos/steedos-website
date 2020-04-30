@@ -4,7 +4,13 @@ title: Web App 插件
 
 此教程将引导您创建一个基本的Steedos Web插件。
 
-## 创建插件
+## 什么是Web App 插件
+它是华炎魔方项目的前端插件，通过在华炎魔方项目中创建一个Web App项目的方式来开发前端插件。 
+
+## Web App 插件有什么功能
+可以通过调用全局函数[window.registerPlugin](./plugin_webapp_functions.md#registerPlugin)注册Web App 插件，并在插件内调用各种注册组件函数来实现重写或增强现在华炎魔方项目中已有的UI界面，比如重写门户界面、重写某个对象的首页等。
+
+## 创建插件项目
 
 创建并跳转到webapp文件夹。
 
@@ -14,7 +20,7 @@ mkdir webapp
 cd webapp
 ```
 
-## 初始化插件
+## 初始化插件项目
 
 创建一个 package.json 文件
 
@@ -117,7 +123,7 @@ module.exports = {
 
 > 注意 `react`、`react-dom`等包被指定为外部包. 这样你可以在本地测试代码 (e.g. with [jest](https://jestjs.io/) and snapshots) ，但是并不会影响到 Steedos 打包的react版本，并且最后也不会输出到`webapp.client.js`文件中，可以有效减少打包后文件大小。
 
-## 创建入口文件
+## 注册插件
 
 ```bash
 mkdir src
@@ -152,7 +158,7 @@ class HelloWorldPlugin {
 window.registerPlugin('com.steedos.hellow-world', new HelloWorldPlugin());
 ```
 
-> 以上内容为注册一个hellow-world插件，并且该插件调用了registerObjectHomeComponent，注册一个组件显示为hello_world_object这个对象的首页。关于[registerObjectHomeComponent](./plugin_webapp_functions.md#registerobjecthomecomponent)及更多插件函数说明请移步：[Web App 插件函数](./plugin_webapp_functions.md)。
+> 以上代码注册了一个hellow-world插件，并且该插件调用了registerObjectHomeComponent，注册了一个组件显示为hello_world_object这个对象的首页。关于[registerObjectHomeComponent](./plugin_webapp_functions.md#registerobjecthomecomponent)及更多插件函数说明请移步：[Web App 插件函数](./plugin_webapp_functions.md)。
 
 ## 打包 Webapp
 
@@ -168,7 +174,7 @@ yarn webpack --mode=production
 yarn build
 ```
 
-> 正如`webpack.config.js`配置的`output`，打包后会把`index.jsx`文件内容压缩写入到`webapp.client.js`文件中。
+> 正如`webpack.config.js`配置的`output`，打包后会把`index.jsx`文件内容压缩写入到`webapp.client.js`文件中，这也是Webapp插件引入华炎魔方项目的方式。
 
 ## 插件测试
 

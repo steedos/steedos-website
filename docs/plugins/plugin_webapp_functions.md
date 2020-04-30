@@ -1,8 +1,24 @@
 ---
-title: Web App 插件函数说明
+title: Web App 插件函数
 ---
 
 此教程将引导您使用基本的Steedos Web插件函数实现丰富的前端组件功能。
+
+## registerPlugin
+该函数向华炎魔方项目中注册一个Web App插件。
+```js
+import React from 'react';
+import { Provider } from 'react-redux';
+import { Bootstrap } from '@steedos/react';
+
+class HelloWorldPlugin {
+    initialize(registry, store) {
+        // 调用registry.registerObjectHomeComponent等各种组件注册函数来重写或增强UI功能
+    }
+}
+
+window.registerPlugin('com.steedos.xxx', new HelloWorldPlugin());
+```
 
 ## registerObjectHomeComponent
 该函数注册一个组件显示为某个对象的首页。
