@@ -4,8 +4,22 @@ title: Web App 插件函数
 
 此教程将引导您使用基本的Steedos Web插件函数实现丰富的前端组件功能。
 
-## registerPlugin
-该函数向华炎魔方项目中注册一个Web App插件。
+## 插件类
+插件类中可以定义initialize函数，华炎魔方项目会通过该函数来“初始化”您的插件。
+```js
+import React from 'react';
+import { Provider } from 'react-redux';
+import { Bootstrap } from '@steedos/react';
+
+class HelloWorldPlugin {
+    initialize(registry, store) {
+        // 调用registry.registerObjectHomeComponent等各种组件注册函数来重写或增强UI功能
+    }
+}
+```
+
+### registerPlugin
+该函数可以向华炎魔方项目中注册一个Web App插件。
 ```js
 import React from 'react';
 import { Provider } from 'react-redux';
@@ -20,7 +34,11 @@ class HelloWorldPlugin {
 window.registerPlugin('com.steedos.xxx', new HelloWorldPlugin());
 ```
 
-## registerObjectHomeComponent
+## Registry
+
+Registry是每个插件注册后的实例，通过插件类的“initialize”回调函数传递给每个插件，我们为每个实例提供了各种注册组件函数来重写或增强华炎魔方项目的UI界面。
+
+### registerObjectHomeComponent
 该函数注册一个组件显示为某个对象的首页。
 ```js
 const HelloWorldObjectHome = () => (
@@ -76,7 +94,7 @@ objects:
 ![Hello World Demo](/assets/plugins/hello_world.png)
 
 
-## registerObjectIFrameHomeComponent
+### registerObjectIFrameHomeComponent
 该函数注册一个iframe组件显示为某个对象的首页，可以配置iframe指向的ip地址。
 ```js
 registry.registerObjectIFrameHomeComponent(
@@ -144,7 +162,7 @@ registry.registerObjectIFrameHomeComponent(
 
 ![Hello World Demo](/assets/plugins/object_baidu.png)
 
-## registerDashboardComponent
+### registerDashboardComponent
 该函数注册一个门户组件，并且显示为指定APP的主页。
 ```js
 const DashboardComponentDemo = () => (
@@ -170,7 +188,7 @@ registry.registerDashboardComponent(
 ![Hello World Demo](/assets/plugins/dashboard.png)
 
 
-## registerDashboardIFrameComponent
+### registerDashboardIFrameComponent
 该函数注册一个iframe组件显示为某些App的主页，可以配置iframe指向的ip地址。
 ```js
 registry.registerDashboardIFrameComponent(
@@ -184,3 +202,25 @@ registry.registerDashboardIFrameComponent(
 > 该函数运行后效果图如下：
 
 ![Hello World Demo](/assets/plugins/app_baidu.png)
+
+
+## 导出
+
+我们在[window](https://developer.mozilla.org/en-US/Web/API/Window)对象上导出了许多库和函数，供插件使用。为了避免插件膨胀，我们建议使用[Webpack externals](https://webpack.js.org/configuration/externals/)。以下是公开的库和函数列表:
+
+| Library | Exported Name | Description |
+| ------- | ------------- | ----------- |
+| react | window.React | [ReactJS](https://reactjs.org/) |
+| react-dom | window.ReactDOM | [ReactDOM](https://reactjs.org/react-dom.html) |
+| redux | window.Redux | [Redux](https://redux.js.org/) |
+| react-redux | window.ReactRedux | [React bindings for Redux](https://github.com/reactjs/react-redux) |
+| prop-types | window.PropTypes | [PropTypes](https://www.npmjs.com/package/prop-types) |
+| styled-components | window.StyledComponents | [StyledComponents](https://www.npmjs.com/package/styled-components) |
+| redux-thunk | window.ReduxThunk | [ReduxThunk](https://www.npmjs.com/package/redux-thunk) |
+| immer | window.Immer | [Immer](https://www.npmjs.com/package/immer) |
+| ts-odata-client | window.TSODataClient | [TSODataClient](https://www.npmjs.com/package/ts-odata-client) |
+| node-fetch | window.NodeFetch | [NodeFetch](https://www.npmjs.com/package/node-fetch) |
+| @steedos/react | window.ReactSteedos | Steedos react components and utility functions [ReactSteedos](https://www.npmjs.com/package/@steedos/react) |
+| @salesforce/design-system-react | window.ReactDesignSystem | Salesforce react components and utility functions [ReactDesignSystem](https://www.npmjs.com/package/design-system-react)|
+| @steedos/filters | window.SteedosFilters | Steedos filters and utility functions [SteedosFilters](https://www.npmjs.com/package/@steedos/filters) |
+| registerPlugin | window.registerPlugin | [window.registerPlugin](./plugin_webapp_functions.md#registerplugin) |

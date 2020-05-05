@@ -8,7 +8,7 @@ title: Web App 插件
 它是华炎魔方项目的前端插件，通过在华炎魔方项目中创建一个Web App项目的方式来开发前端插件。 
 
 ## Web App 插件有什么功能
-可以通过调用全局函数[window.registerPlugin](./plugin_webapp_functions.md#registerPlugin)注册Web App 插件，并在插件内调用各种注册组件函数来实现重写或增强现在华炎魔方项目中已有的UI界面，比如重写门户界面、重写某个对象的首页等。
+可以通过调用全局函数[window.registerPlugin](./plugin_webapp_functions.md#registerplugin)注册Web App 插件，并在插件内调用各种注册组件函数来实现重写或增强现在华炎魔方项目中已有的UI界面，比如重写门户界面、重写某个对象的首页等。
 
 ## 创建插件项目
 
