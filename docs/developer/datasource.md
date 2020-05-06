@@ -127,3 +127,17 @@ datasources:
     objectFiles:
       - "./src/mattermost/"
 ```
+
+## 定义空库初始化建表的语言
+
+在创建表时可指定数据库中表的语言
+
+```yaml
+datasources:
+  default:
+    locale: zh # 值来源 https://docs.mongodb.com/manual/reference/collation-locales-defaults/#collation-languages-locales
+    connection:
+      url: mongodb://192.168.0.21/steedos
+    objectFiles:
+      - "./src/default/"
+```
