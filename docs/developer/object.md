@@ -195,11 +195,22 @@ permission_set:
 ### 相关子表
 
 开发人员可以配置对象的相关子表。如果有定义此属性则按照此属性定义的对象显示相关子表，包括显示顺序，子表对象与主表必须通过一个 lookup 或 master_detail 字段关联。
-
+支持两种写法，字符串和对象，如：
 ```yaml
 relatedList:
-  - {objectName}
-  - cms_files
+  - objectName: flow_positions # 对象名
+    columns: # 显示的列
+      - name
+    # 此方法传入当前详细页面的记录数据
+    filters: !!js/function | 
+      function(parentRecord) {
+        var userId = _.isString(parentRecord.user) ? parentRecord.user : parentRecord.user._id;
+        return [["users","=",userId]]
+      }
+    sort: #排序规则
+      - - name
+        - asc
+  - cms_files # 对象名
   - tasks
   - payments
 ```
