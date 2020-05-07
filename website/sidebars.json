@@ -35,7 +35,7 @@
   "华炎魔方": ["platform", "platform/lowcode", "platform/cases", "platform/pricing", "platform/try",
     {
       "type": "link",
-      "href": "/developer",
+      "href": "https://www.steedos.com/developer/",
       "label": "开发文档"
     },
     {
