@@ -109,10 +109,6 @@ email:
 
 ```yml
 sms:
-  twilio:
-    FROM:
-    ACCOUNT_SID:
-    AUTH_TOKEN:
   qcloud:
     smsqueue_interval: 1000
     sdkappid:
