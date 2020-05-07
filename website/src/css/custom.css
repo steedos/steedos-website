@@ -149,9 +149,6 @@ html[data-theme='dark'] .main-wrapper {
   .navbar.navbar--fixed-top.navbar-sidebar--show {
     z-index: 300;
   }
-  .navbar .navbar-sidebar {
-    width: 100%
-  }
 }
 
 .navbar .navbar__brand {
