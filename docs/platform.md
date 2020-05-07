@@ -1,6 +1,7 @@
 ---
-title: 快速开发随需应变的企业管理软件
+title: 华炎魔方：低代码开发平台,快速开发工具,企业PaaS
 sidebar_label: 概述
+hide_title: true
 hide_table_of_contents: true
 background: /img/banner/clouds-large-desktop.png
 keywords:
@@ -18,6 +19,8 @@ keywords:
   - 快速开发工具
   - paas
 ---
+
+# 快速开发随需应变的企业管理软件
 
 华炎魔方是一款随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
 
