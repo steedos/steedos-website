@@ -30,7 +30,3 @@ public:
   cfs:
     storage: ${ENV_CFS_STORE} # ENV_CFS_STORE即为.env.local中添加的变量，${ENV_CFS_STORE}获取这个变量的值
 ```
-
-### 使用自定义环境变量
-
-可以在？文件中引用自定义环境变量，形式为 {env_name} ? 
