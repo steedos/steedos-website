@@ -113,8 +113,8 @@ module.exports = {
         href: '/cn/'
       },
       links: [
-        {to: 'platform/', label: '华炎魔方', position: 'left', activeBasePath: 'platform/'},
-        {to: 'solutions/workflow/', label: '审批王', position: 'left', activeBasePath: 'oa/'},
+        {to: 'platform/', label: '华炎魔方', position: 'left', activeBasePath: '/platform/'},
+        {to: 'oa/', label: '华炎办公', position: 'left', activeBasePath: '/oa/'},
 
         // {to: '', label: '解决方案', position: 'left',
         //   items: [
@@ -131,7 +131,7 @@ module.exports = {
             {to: 'developer/api/', label: 'API', position: 'left'},
           ]
         },
-        {to: '/company/about-us/', label: '关于我们',
+        {to: '/company/about-us/', label: '关于我们', position: 'left',
           items: [
             {to: '/company/about-us/', label: '关于华炎'},
             {to: '/company/customers/', label: '成功案例'},

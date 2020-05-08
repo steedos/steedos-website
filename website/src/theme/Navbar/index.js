@@ -5,31 +5,36 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+import {useLocation} from '@docusaurus/router';
+
 import React, {useCallback, useState} from 'react';
+import classnames from 'classnames';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import isInternalUrl from '@docusaurus/isInternalUrl';
 
 import SearchBar from '@theme/SearchBar';
 import Toggle from '@theme/Toggle';
-
-import classnames from 'classnames';
-
 import useThemeContext from '@theme/hooks/useThemeContext';
 import useHideableNavbar from '@theme/hooks/useHideableNavbar';
 import useLockBodyScroll from '@theme/hooks/useLockBodyScroll';
+import useLogo from '@theme/hooks/useLogo';
 
 import styles from './styles.module.css';
-import {useLocation} from '@docusaurus/router';
 
-function NavLink({activeBasePath, to, href, label, position, ...props}) {
+function NavLink({
+  activeBasePath,
+  to,
+  href,
+  label,
+  activeClassName = 'navbar__link--active',
+  ...props
+}) {
   const toUrl = useBaseUrl(to);
   const activeBaseUrl = useBaseUrl(activeBasePath);
 
   return (
     <Link
-      className="navbar__item navbar__link"
       {...(href
         ? {
             target: '_blank',
@@ -37,7 +42,8 @@ function NavLink({activeBasePath, to, href, label, position, ...props}) {
             href,
           }
         : {
-            activeClassName: 'navbar__link--active',
+            isNavLink: true,
+            activeClassName,
             to: toUrl,
             ...(activeBasePath
               ? {
@@ -52,17 +58,107 @@ function NavLink({activeBasePath, to, href, label, position, ...props}) {
   );
 }
 
-function Navbar(props) {
-  const {siteConfig = {}, isClient} = useDocusaurusContext();
-  const {baseUrl, themeConfig = {}} = siteConfig;
-  const {navbar = {}, disableDarkMode = false} = themeConfig;
-  let {title, logo = {}, links = [], hideOnScroll = false} = navbar;
+function NavItem({items, position, className, ...props}) {
+  const navLinkClassNames = (extraClassName, isDropdownItem = false) =>
+    classnames(
+      {
+        'navbar__item navbar__link': !isDropdownItem,
+        dropdown__link: isDropdownItem,
+      },
+      extraClassName,
+    );
 
+  if (!items) {
+    return <NavLink className={navLinkClassNames(className)} {...props} />;
+  }
+
+  return (
+    <div
+      className={classnames('navbar__item', 'dropdown', 'dropdown--hoverable', {
+        'dropdown--left': position === 'left',
+        'dropdown--right': position === 'right',
+      })}>
+      <NavLink
+        className={navLinkClassNames(className)}
+        {...props}
+        onClick={(e) => e.preventDefault()}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter') {
+            e.target.parentNode.classList.toggle('dropdown--show');
+          }
+        }}>
+        {props.label}
+      </NavLink>
+      <ul className="dropdown__menu">
+        {items.map(({className: childItemClassName, ...childItemProps}, i) => (
+          <li key={i}>
+            <NavLink
+              activeClassName="dropdown__link--active"
+              className={navLinkClassNames(childItemClassName, true)}
+              {...childItemProps}
+            />
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function MobileNavItem({items, className, ...props}) {
+  const navLinkClassNames = (extraClassName, isSubList = false) =>
+    classnames(
+      'menu__link',
+      {
+        'menu__link--sublist': isSubList,
+      },
+      extraClassName,
+    );
+
+  if (!items) {
+    return (
+      <li className="menu__list-item">
+        <NavLink className={navLinkClassNames(className)} {...props} />
+      </li>
+    );
+  }
+
+  return (
+    <li className="menu__list-item">
+      <NavLink className={navLinkClassNames(className, true)} {...props}>
+        {props.label}
+      </NavLink>
+      <ul className="menu__list">
+        {items.map(({className: childItemClassName, ...childItemProps}, i) => (
+          <li className="menu__list-item" key={i}>
+            <NavLink
+              activeClassName="menu__link--active"
+              className={navLinkClassNames(childItemClassName)}
+              {...childItemProps}
+              onClick={props.onClick}
+            />
+          </li>
+        ))}
+      </ul>
+    </li>
+  );
+}
+
+function Navbar() {
+  let {
+    siteConfig: {
+      themeConfig: {
+        navbar: {title, links = [], links_us = [], hideOnScroll = false} = {},
+        disableDarkMode = false,
+      },
+    },
+    isClient,
+  } = useDocusaurusContext();
   const [sidebarShown, setSidebarShown] = useState(false);
   const [isSearchBarExpanded, setIsSearchBarExpanded] = useState(false);
 
   const {isDarkTheme, setLightTheme, setDarkTheme} = useThemeContext();
   const {navbarRef, isNavbarVisible} = useHideableNavbar(hideOnScroll);
+  let {logoLink, logoLinkProps, logoImageUrl, logoAlt} = useLogo();
 
   useLockBodyScroll(sidebarShown);
 
@@ -74,29 +170,14 @@ function Navbar(props) {
   }, [setSidebarShown]);
 
   const onToggleChange = useCallback(
-    e => (e.target.checked ? setDarkTheme() : setLightTheme()),
+    (e) => (e.target.checked ? setDarkTheme() : setLightTheme()),
     [setLightTheme, setDarkTheme],
   );
-
-  let logoLink = logo.href || baseUrl;
-  let logoLinkProps = {};
-
-  if (logo.target) {
-    logoLinkProps = {target: logo.target};
-  } else if (!isInternalUrl(logoLink)) {
-    logoLinkProps = {
-      rel: 'noopener noreferrer',
-      target: '_blank',
-    };
-  }
-
-  const logoSrc = logo.srcDark && isDarkTheme ? logo.srcDark : logo.src;
-  const logoImageUrl = useBaseUrl(logoSrc);
 
   // 支持英文网站
   const location = useLocation();
   if (location && location.pathname.indexOf('/us')>=0){
-    links = navbar.links_us
+    links = links_us
     title = 'Steedos'
     logoLink = '/us/'
   }
@@ -111,37 +192,39 @@ function Navbar(props) {
       })}>
       <div className="navbar__inner">
         <div className="navbar__items">
-          <div
-            aria-label="Navigation bar toggle"
-            className="navbar__toggle"
-            role="button"
-            tabIndex={0}
-            onClick={showSidebar}
-            onKeyDown={showSidebar}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              viewBox="0 0 30 30"
-              role="img"
-              focusable="false">
-              <title>Menu</title>
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                strokeWidth="2"
-                d="M4 7h22M4 15h22M4 23h22"
-              />
-            </svg>
-          </div>
+          {links != null && links.length !== 0 && (
+            <div
+              aria-label="Navigation bar toggle"
+              className="navbar__toggle"
+              role="button"
+              tabIndex={0}
+              onClick={showSidebar}
+              onKeyDown={showSidebar}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                role="img"
+                focusable="false">
+                <title>Menu</title>
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
+                  d="M4 7h22M4 15h22M4 23h22"
+                />
+              </svg>
+            </div>
+          )}
           <Link className="navbar__brand" to={logoLink} {...logoLinkProps}>
-            {logo != null && (
+            {logoImageUrl != null && (
               <img
                 key={isClient}
                 className="navbar__logo"
                 src={logoImageUrl}
-                alt={logo.alt}
+                alt={logoAlt}
               />
             )}
             {title != null && (
@@ -154,33 +237,16 @@ function Navbar(props) {
             )}
           </Link>
           {links
-            .filter(linkItem => linkItem.position !== 'right')
-            .map((linkItem, i) => {
-              const hasSubItems = typeof linkItem.items !== 'undefined' && linkItem.items.length > 0;
-              if (!hasSubItems) return (
-                <NavLink {...linkItem} key={i}/>
-              )
-              else return (
-                <div class="dropdown dropdown--hoverable">
-                <NavLink {...linkItem} key={i}/>
-                <ul class="dropdown__menu">
-                {
-                  linkItem.items.map((subItem, j) => (
-                    <li>
-                    <NavLink {...subItem} key={i+'-'+j}/>
-                    </li>
-                  ))
-                }
-                </ul>
-                </div>
-              )
-            })}
+            .filter((linkItem) => linkItem.position === 'left')
+            .map((linkItem, i) => (
+              <NavItem {...linkItem} key={i} />
+            ))}
         </div>
         <div className="navbar__items navbar__items--right">
           {links
-            .filter(linkItem => linkItem.position === 'right')
+            .filter((linkItem) => linkItem.position === 'right')
             .map((linkItem, i) => (
-              <NavLink {...linkItem} key={i} />
+              <NavItem {...linkItem} key={i} />
             ))}
           {!disableDarkMode && (
             <Toggle
@@ -190,11 +256,10 @@ function Navbar(props) {
               onChange={onToggleChange}
             />
           )}
-          {!sidebarShown &&(
           <SearchBar
             handleSearchBarToggle={setIsSearchBarExpanded}
             isSearchBarExpanded={isSearchBarExpanded}
-          />)}
+          />
         </div>
       </div>
       <div
@@ -209,12 +274,12 @@ function Navbar(props) {
             onClick={hideSidebar}
             to={logoLink}
             {...logoLinkProps}>
-            {logo != null && (
+            {logoImageUrl != null && (
               <img
                 key={isClient}
                 className="navbar__logo"
                 src={logoImageUrl}
-                alt={logo.alt}
+                alt={logoAlt}
               />
             )}
             {title != null && (
@@ -228,37 +293,12 @@ function Navbar(props) {
               onChange={onToggleChange}
             />
           )}
-
-          <SearchBar
-            handleSearchBarToggle={setIsSearchBarExpanded}
-            isSearchBarExpanded={isSearchBarExpanded}
-          />
         </div>
         <div className="navbar-sidebar__items">
           <div className="menu">
             <ul className="menu__list">
               {links.map((linkItem, i) => (
-                <>
-                <li className="menu__list-item" key={i}>
-                  <NavLink
-                    className="menu__link"
-                    {...linkItem}
-                    onClick={hideSidebar}
-                  />
-                </li>
-              
-                {typeof linkItem.items !== 'undefined' && linkItem.items.length > 0 && 
-                  linkItem.items.map((subItem, j) => (
-                    <li className="menu__list-item" key={i+'-'+j}>
-                      <NavLink
-                        className="menu__link" 
-                        style={{paddingLeft: '3rem'}}
-                        {...subItem} 
-                        onClick={hideSidebar}/>
-                    </li>
-                  ))
-                }
-                </>
+                <MobileNavItem {...linkItem} onClick={hideSidebar} key={i} />
               ))}
             </ul>
           </div>
