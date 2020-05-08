@@ -31,11 +31,10 @@ yarn
 
 - src: 项目源码
 - [.env](env): 环境变量配置文件，可以配置端口、URL等环境变量。
-- [.env.local](env): 本地的环境变量配置文件，可以配置端口、URL等环境变量。
-
-> 如果存在文件.env.local，系统启动时，就从文件.env.local中读取环境变量。反之，如果不存在文件.env.local，系统启动时，则从文件.env中读取环境变量。
 
 > 建议修改.env.local中的ROOT_URL，其默认值中的IP为“127.0.0.1”，可改用本机的IP地址。这样，在其他机器就可以用ROOT_URL来访问系统了。
+
+> 如果是多人协作同一个项目的时候，推荐各自新建 .env.local 来替代 .env 。如果存在文件.env.local 。 系统启动时，就从文件.env.local中读取环境变量。反之，如果不存在文件.env.local，系统启动时，则从文件.env中读取环境变量。
 
 - [steedos-config.yml](steedos_config): 项目配置文件，可以配置数据源、插件等参数。
 - package.json: 主要用于配置本项目依赖的npm包。
@@ -63,7 +62,7 @@ yarn start
 
 ![登录页](/assets/login_noemail.png)
 
-> 上方显示“邮件服务未配置，点击查看帮助”，点击可查看如何通过配置开通发邮件功能。可参考 [steedos-config.yml](steedos_config#邮件配置) 。
+> 上方显示“邮件服务未配置，点击查看帮助”，点击可查看如何通过配置开通发邮件功能。可参考 [steedos-config](steedos_config#邮件配置) 。
 
 ### 注册一个账户
 
