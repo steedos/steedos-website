@@ -23,10 +23,18 @@ ROOT_URL=http://127.0.0.1:5000
 
 ## 自定义环境变量
 
-可以在.env.local / .env 中，按需配置自定义的环境变量, 自定义的环境变量主要服务于steedos-config.yml, 如在.env.local中添加了ENV_CFS_STORE=local：
+可以在.env.local / .env 中，按需配置自定义的环境变量。 自定义的环境变量主要服务于steedos-config.yml 。
+
+例如，在.env.local中添加自定义的环境变量
+
+```yml
+ENV_CFS_STORE=local：
+```
+
+定义环境变量ENV_CFS_STORE=local 后，就可以在steedos-config.yml 里引用它。
 
 ```yml
 public:
   cfs:
-    storage: ${ENV_CFS_STORE} # ENV_CFS_STORE即为.env.local中添加的变量，${ENV_CFS_STORE}获取这个变量的值
+    storage: ${ENV_CFS_STORE} # 通过${ENV_CFS_STORE}获取这个在.env.local中添加的变量的值
 ```
