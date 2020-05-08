@@ -38,22 +38,21 @@ tenant:
   enable_register: true
   enable_forget_password: true
   enable_create_tenant: true
-  enable_mobile: false
-  disable_email_register: false
-  enable_bind_mobile: false
   enable_password_login: true
-  enable_mobile_code_login: false
+  enable_bind_email: false
+  enable_bind_mobile: false
 ```
 
-- enable_register: 启用注册功能
-- enable_forget_password: 启用忘记密码功能
-- enable_create_tenant: 启用工作区注册功能
-- enable_mobile: 启用手机端界面
-- disable_email_register: 禁止邮箱注册
-- enable_bind_mobile: 强制绑定手机号
-- enable_password_login: 启用密码登录
-- enable_mobile_code_login: 启用手机号 + 验证码登录
- 
+- enable_register: 启用用户注册功能
+- enable_forget_password: 使用验证码登录；
+  - 如果enable_bind_mobile不为true，则使用邮箱验证码登录
+- enable_create_tenant: 启用创建工作区功能
+- enable_password_login: 启用密码登录；
+  - 如果enable_bind_email为true且使用邮箱密码登录时，邮箱必须是验证过的；
+  - 如果enable_bind_mobile为true且使用手机号密码登录，手机号必须是验证过的；
+- enable_bind_email: 支持邮箱验证码登录
+- enable_bind_mobile: 强制绑定手机号，登录后检测到用户手机号未验证，强制进入手机验证界面；如果为true，注册时仅支持手机号注册
+
 ## Web服务URL
 
 ```yml
