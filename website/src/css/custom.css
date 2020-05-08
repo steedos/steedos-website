@@ -31,6 +31,10 @@
   --ifm-z-index-fixed: 200;
 }
 
+.markdown > h1 {
+  --ifm-h1-font-size: 2.5rem;
+}
+
 @media screen and (max-width: 996px) {
   :root {
     --ifm-h1-font-size: 2.0rem;
@@ -41,6 +45,11 @@
     --ifm-h6-font-size: 1rem;
     --ifm-font-size-base: 16px;
   }
+
+  .markdown > h1 {
+    --ifm-h1-font-size: 2.0rem;
+  }
+
 }
 
 h1, h2, h3, h4, h5, h6 {
