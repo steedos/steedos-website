@@ -1,9 +1,12 @@
 ---
-title: 试用华炎魔方
+title: 低代码开发平台评估向导
+hide_title: true
 sidebar_label: 试用
 background: /img/banner/clouds-large-desktop.png
 hide_table_of_contents: true
 ---
+
+# 华炎魔方评估向导
 
 华炎魔方是一款颠覆性的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
 
