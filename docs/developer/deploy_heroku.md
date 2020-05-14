@@ -56,9 +56,7 @@ NPM_CONFIG_PRODUCTION: false
 PORT:                  5040
 ROOT_URL:              https://steedos-project-saas.herokuapp.com
 STEEDOS_CFS_STORE:         local
-STEEDOS_CREATOR_URL:   https://steedos-project-saas.herokuapp.com
 STEEDOS_STORAGE_DIR:   ./storage
-STEEDOS_WORKFLOW_URL:  https://steedos-project-saas.herokuapp.com
 YARN_PRODUCTION:       false
 ```
 
