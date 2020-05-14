@@ -1,5 +1,5 @@
 ---
-title: 项目发布至docker
+title: 使用docker运行本项目
 ---
 
 本页面描述如何将[steedos-project-saas](https://github.com/steedos/steedos-project-saas)项目编译成镜像发布至[docker hub](https://hub.docker.com/)并使用docker-compose启动的过程。
@@ -42,6 +42,7 @@ docker push exampleUsername@steedos-project-saas:tagname
 cd steedos-project-saas/docker/mongo
 docker-compose up -d
 ```
+> mongodb为[官方镜像](https://hub.docker.com/_/mongo)本项目支持3.6及以上版本，包括4.2版本
 
 ### 启动应用服务
 - 安装[docker-compose](https://docs.docker.com/compose/install/)
