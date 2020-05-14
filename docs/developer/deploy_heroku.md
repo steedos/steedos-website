@@ -7,8 +7,6 @@ heroku官方[向导](https://devcenter.heroku.com/articles/getting-started-with-
 
 ## 准备工作
 
-### 环境搭建
-
 - 注册[heroku](https://www.heroku.com/)账号
 - 安装heroku[命令行工具](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up)， 根据操作系统选择安装
 - 终端登录heroku账号
