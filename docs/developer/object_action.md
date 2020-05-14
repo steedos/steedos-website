@@ -6,6 +6,7 @@ title: 操作按钮
 
 在此基础上，用户可以自定义按钮，并编写javascript脚本执行想要的操作。
 ### 声明对象的操作按钮
+`xxx.object.yml`
 - label: 按钮显示标签
 - on: 显示位置 
   - "list" 为列表定义action，只显示在列表右上角
@@ -16,6 +17,7 @@ title: 操作按钮
 - sort: 排序号，显示时，按照从小到达顺序排列。编辑action的sort默认为0
 
 ### 声明操作按钮的动作
+`xxx.action.js`
 - listenTo: 对象名称，选填。如果没有定义此属性，则取文件名中第一个.之前的文字作为listenTo的值
 - [操作按钮名称]: Function, 按钮点击后要执行的javascript脚本
 - [操作按钮名称]Visible: Function | boolean, 用户控制按钮是否显示
