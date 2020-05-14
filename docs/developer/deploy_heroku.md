@@ -36,16 +36,16 @@ heroku addons:create mongolab:sandbox
 
 ![配置环境变量](/assets/heroku/配置环境变量.png)
 ```env
-ENV_CFS_STORE:         local
-ENV_CREATOR_URL:       https://steedos-project-saas.herokuapp.com
-ENV_STORAGE_DIR:       ./storage
-ENV_WORKFLOW_URL:      https://steedos-project-saas.herokuapp.com
 MAIL_URL:              smtps://邮件发送服务地址:465/
 MONGODB_URI:           添加数据库插件后获取的值，无需改动
 MONGO_URL:             MONGODB_URI的值
 NPM_CONFIG_PRODUCTION: false
 PORT:                  5040
 ROOT_URL:              https://steedos-project-saas.herokuapp.com
+STEEDOS_CFS_STORE:         local
+STEEDOS_CREATOR_URL:   https://steedos-project-saas.herokuapp.com
+STEEDOS_STORAGE_DIR:   ./storage
+STEEDOS_WORKFLOW_URL:  https://steedos-project-saas.herokuapp.com
 YARN_PRODUCTION:       false
 ```
 - 将本地的项目发布到heroku:
