@@ -102,6 +102,75 @@ use steedos
 db.createUser({user: "userUsername", pwd: "userPassword", roles: [ { role: " readWrite", db: "yourdbname" }, { role: " read", db: "local"} ] } )
 ```
 
-## 时间服务器
+## CentOS7搭建NTP服务器
 - 由于代理、应用和数据库部署在不同的服务器的原因，为防止由于服务器时间不一致问题，故需要搭建NTP服务器统一各服务器时间
-> 未完待续
+- 以服务器63、21为例，21作为时间服务器，63的时间将从21同步
+### 在21安装NTP服务
+```bash
+yum install ntp -y
+```
+- 修改配置文件
+```bash
+vim /etc/ntp.conf
+# 把下面四行注释掉
+server 0.centos.pool.ntp.org iburst
+server 1.centos.pool.ntp.org iburst
+server 2.centos.pool.ntp.org iburst
+server 3.centos.pool.ntp.org iburst
+# 然后在下面添加一行
+server 127.127.1.0 iburst
+```
+- 启动ntp服务
+```bash
+systemctl start ntpd
+```
+- 查看服务状态
+```bash
+systemctl status ntpd
+```
+- 查看是否同步
+```bash
+ntpq -p
+```
+- 设置防火墙，打开udp123端口
+```bash
+firewall-cmd --permanent --add-port=123/udp
+```
+- 设置开机启动
+```bash
+systemctl enable ntpd
+```
+### 63安装NTP服务
+- 安装NTP服务步骤与在21安装一样，只是配置需要调整
+```bash
+vim /etc/ntp.conf
+# 把下面四行注释掉
+server 0.centos.pool.ntp.org iburst
+server 1.centos.pool.ntp.org iburst
+server 2.centos.pool.ntp.org iburst
+server 3.centos.pool.ntp.org iburst
+# 然后在下面添加两行
+server 192.168.0.21
+# 允许21时间服务器主动修改本机的时间
+restrict 192.168.0.21 nomodify notrap noquery
+```
+- 与本地ntpd Server同步一下
+```bash
+ntpdate -u 192.168.0.63
+```
+- 启动ntp服务
+```bash
+systemctl start ntpd
+```
+- 查看是否同步
+```bash
+[root@localhost ~]# ntpq -p
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+ 192.168.0.21    LOCAL(0)         6 u   35   64    1    0.285    0.033   0.000
+```
+- 设置开机启动
+```bash
+systemctl enable ntpd
+```
+
