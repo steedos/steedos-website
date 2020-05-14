@@ -58,3 +58,4 @@ docker-compose up -d
 cd steedos-project-saas/docker/nginx
 docker-compose up -d
 ```
+> 配置文件为docker.conf
