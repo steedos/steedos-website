@@ -2,7 +2,7 @@
 title: 项目发布至docker
 ---
 
-本页面描述如何将[steedos-project-saas](https://github.com/steedos/steedos-project-saas)项目编译成镜像发布至[docker hub](https://hub.docker.com/)的过程。
+本页面描述如何将[steedos-project-saas](https://github.com/steedos/steedos-project-saas)项目编译成镜像发布至[docker hub](https://hub.docker.com/)并使用docker-compose启动的过程。
 
 ## 准备工作
 
@@ -36,8 +36,24 @@ docker push exampleUsername@steedos-project-saas:tagname
 > 可使用`docker pull exampleUsername@steedos-project-saas:tagname`拉取镜像到本地
 
 ## 使用docker-compose启动服务
-- 安装[docker-compose](https://docs.docker.com/compose/install/)
-- 安装完成后，进入`steedos-project-saas`项目目录，配置好`.env.local`文件启动服务
+### 启动数据库服务
+- 进入`steedos-project-saas`项目目录下的docker/mongo目录启动数据库服务
 ```bash
-docker-compose up -d 
+cd steedos-project-saas/docker/mongo
+docker-compose up -d
+```
+
+### 启动应用服务
+- 安装[docker-compose](https://docs.docker.com/compose/install/)
+- 安装完成后，进入`steedos-project-saas`项目目录，配置好[.env.local](https://developer.steedos.com/developer/env)文件启动应用服务
+```bash
+docker-compose up -d
+```
+> 配置.env.local的目的是服务于[steedos-config.yml](https://developer.steedos.com/developer/steedos_config)
+
+### 启动代理服务
+- 进入`steedos-project-saas`项目目录下的docker/nginx目录启动代理服务
+```bash
+cd steedos-project-saas/docker/nginx
+docker-compose up -d
 ```
