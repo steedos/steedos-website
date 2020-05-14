@@ -2,7 +2,7 @@
 title: 集群部署
 ---
 
-本页面描述如何将[steedos-project-saas](https://github.com/steedos/steedos-project-saas)项目使用集群方式部署的过程。
+本页面描述如何将[steedos-project-saas](https://github.com/steedos/steedos-project-saas)项目使用集群方式部署的过程。涉及代理服务器（运行nginx）、应用服务器（108，208启动应用实例）、数据库服务器（216，217，218）
 
 ## 代理服务nginx
 - 在nginx配置文件中做如下配置，如：
