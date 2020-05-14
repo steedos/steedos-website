@@ -42,7 +42,7 @@ docker push exampleUsername@steedos-project-saas:tagname
 cd steedos-project-saas/docker/mongo
 docker-compose up -d
 ```
-> mongodb为[官方镜像](https://hub.docker.com/_/mongo)本项目支持3.6及以上版本，包括4.2版本
+> mongodb为[官方镜像](https://hub.docker.com/_/mongo)本项目支持3.6及以上版本，包括最新的4.2版本
 
 ### 启动应用服务
 - 安装[docker-compose](https://docs.docker.com/compose/install/)
