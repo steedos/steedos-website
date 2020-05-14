@@ -18,7 +18,7 @@ title: 操作按钮
 
 ### 声明操作按钮的动作
 `xxx.action.js`
-- listenTo: 对象名称，选填。如果没有定义此属性，则取文件名中第一个.之前的文字作为listenTo的值
+- listenTo: 对象名称，选填。如果没有定义此属性，则取文件名中第一个 `.` 之前的文字作为listenTo的值
 - [操作按钮名称]: Function, 按钮点击后要执行的javascript脚本
 - [操作按钮名称]Visible: Function | boolean, 用户控制按钮是否显示
 

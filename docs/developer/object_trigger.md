@@ -22,7 +22,7 @@ module.exports = {
 
 ### 文件内容说明：
 
-- `listenTo`: 对象名称，选填。如果没有定义此属性，则取文件名中第一个.之前的文字作为listenTo的值
+- `listenTo`: 对象名称，选填。如果没有定义此属性，则取文件名中第一个 `.` 之前的文字作为listenTo的值
 - `beforeInsert`: 数据新增前执行, 选填
 - `beforeUpdate`: 数据修改前执行, 选填
 - `beforeDelete`: 数据删除前执行, 选填
