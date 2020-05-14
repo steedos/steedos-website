@@ -29,7 +29,7 @@ title: 账户管理
 - sms_notification: 开启短信通知
 - utcOffset
 
-### space_user 工作区用户
+### space_users 工作区用户
 
 - name 姓名，必填
 - username 用户名
