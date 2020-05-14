@@ -54,7 +54,7 @@ git push heroku master
 ```
 - 发布成功后，执行`heroku open`使用系统默认浏览器打开刚发布的项目
 
-## 连接giuhub自动发布
+## 连接github自动发布
 - 浏览器访问app管理页面Deploy标签页设置自动发布，在`Deployment method`栏选择Github：
 
 ![连接github](/assets/heroku/连接github.png)
