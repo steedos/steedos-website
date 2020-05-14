@@ -97,7 +97,7 @@ tenant:
 ...
 ```
 ### 邮箱+验证码注册
-[配置邮件服务](/developer/steedos_config#邮件配置)及调整配置文件[steedos-config.yml](/developer/steedos_config#登录界面配置): 
+使用邮件服务前，需要先[配置相关参数](/developer/steedos_config#邮件配置)及调整配置文件[steedos-config.yml](/developer/steedos_config#登录界面配置): 
 ```yml
 ...
 tenant:
@@ -110,7 +110,7 @@ tenant:
 ...
 ```
 ### 手机号+验证码注册
-[配置短信服务](/developer/steedos_config#发送短信配置)及调整配置文件[steedos-config.yml](/developer/steedos_config#登录界面配置): 
+使用短信服务前，需要先[配置相关参数](/developer/steedos_config#发送短信配置)及调整配置文件[steedos-config.yml](/developer/steedos_config#登录界面配置): 
 ```yml
 ...
 tenant:
@@ -133,7 +133,7 @@ tenant:
 ...
 ```
 ### 邮箱+验证码登录
-[配置邮件服务](/developer/steedos_config#邮件配置)及调整配置文件[steedos-config.yml](/developer/steedos_config#登录界面配置): : 
+使用邮件服务前，需要先[配置相关参数](/developer/steedos_config#邮件配置)及调整配置文件[steedos-config.yml](/developer/steedos_config#登录界面配置):
 ```yml
 ...
 tenant:
@@ -142,7 +142,7 @@ tenant:
 ...
 ```
 ### 手机号+验证码登录
-[配置短信服务](/developer/steedos_config#发送短信配置)及调整配置文件[steedos-config.yml](/developer/steedos_config#登录界面配置): 
+使用短信服务前，需要先[配置相关参数](/developer/steedos_config#发送短信配置)及调整配置文件[steedos-config.yml](/developer/steedos_config#登录界面配置): 
 ```yml
 ...
 tenant:
