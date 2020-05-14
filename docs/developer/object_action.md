@@ -25,10 +25,10 @@ title: 操作按钮
     - record_id: 记录唯一标识
   - this
     - object_name: 对象名称
-    - record_id: 记录唯一标识, 仅`on`为`record`开头时存在
+    - record_id: 记录唯一标识, 仅`on`为`record`、`record_more`、`record_only`时存在
     - object: 对象
     - action: 操作
-    - record: 当前记录，仅`on`为`record`开头时存在
+    - record: 当前记录, 仅`on`为`record`、`record_more`、`record_only`时存在
 - [操作按钮名称]Visible: Function(object_name, record_id, record_permissions) | boolean, 用户控制按钮是否显示
   - 返回值： boolean;
   - 参数
