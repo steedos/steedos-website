@@ -2,21 +2,7 @@
 title: 操作按钮
 ---
 
-系统内置三个基本操作：新增、修改、删除。
-
-```javascript
-Creator.Objects.account_receipt.actions = {
-  standard_new: {
-    label: "新建",
-    sort: 0,
-    visible: function (object_name, record_id, record_permissions) {
-      return false;
-    },
-    on: "list",
-    todo: "standard_new"
-  },
-};
-```
+系统内置三个基本操作：新增(`standard_new`)、修改(`standard_edit`)、删除(`standard_delete`)。
 
 在此基础上，用户可以自定义按钮，并编写javascript脚本执行想要的操作。
 
@@ -35,35 +21,21 @@ Creator.Objects.account_receipt.actions = {
   - this.action
 
 ### 使用代码编写操作按钮实例
+`cost_recognition.object.yml`
+```yml
+...
+actions:
+  makePayableOrder:
+    label: 生成应付记录
+    on: record
+  standard_new:
+    visible: false //禁用新增
+```
 
+`cost_recognition.action.js`
 ```javascript
-Creator.Objects.cost_recognition.actions = {
-  makePayableOrder: {
-    label: "生成应付记录",
-    visible: function (object_name, record_id, record_permissions) {
-      if (Session.get("object_name") != 'contracts') {
-        return false;
-      }
-      // 如果合同业务类型时·房屋租赁（承租方）（编码006）·显示此按钮
-      var record = Creator.getObjectRecord(object_name, record_id);
-      if (record && record.account_payable) { // 已经生成应付记录的确认成本记录，不能再次生成应付记录
-        return false;
-      }
-      if (record && record.contract) {
-        this.tempRecord = record;
-        var contract = Creator.getObjectRecord('contracts', record.contract);
-        if (contract && contract.business_category) {
-          this.tempContract = contract;
-          var business_category = Creator.getObjectRecord('business_categories', contract.business_category, 'code');
-          if (business_category.code == '006') {
-            return true;
-          }
-        }
-      }
-      return false;
-    },
-    on: "record",
-    todo: function (object_name, record_id, fields) {
+module.exports = {
+    makePayableOrder: function (object_name, record_id, fields) {
       var collection_name, object, record, contract, cmDoc;
       contract = this.action.tempContract;
       record = this.action.tempRecord;
@@ -89,15 +61,28 @@ Creator.Objects.cost_recognition.actions = {
           return $(".creator-add-related").click();
         });
       }
-    }
   },
-  standard_new: {
-    label: "新建",
-    visible: function () {
+  makePayableOrderVisible: function(object_name, record_id, record_permissions){
+      if (Session.get("object_name") != 'contracts') {
+        return false;
+      }
+      // 如果合同业务类型时·房屋租赁（承租方）（编码006）·显示此按钮
+      var record = Creator.getObjectRecord(object_name, record_id);
+      if (record && record.account_payable) { // 已经生成应付记录的确认成本记录，不能再次生成应付记录
+        return false;
+      }
+      if (record && record.contract) {
+        this.tempRecord = record;
+        var contract = Creator.getObjectRecord('contracts', record.contract);
+        if (contract && contract.business_category) {
+          this.tempContract = contract;
+          var business_category = Creator.getObjectRecord('business_categories', contract.business_category, 'code');
+          if (business_category.code == '006') {
+            return true;
+          }
+        }
+      }
       return false;
-    },
-    on: "list",
-    todo: "standard_new"
   }
-};
+}
 ```
