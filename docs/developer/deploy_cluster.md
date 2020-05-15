@@ -6,15 +6,15 @@ title: 集群部署
 
 ## 服务器分配
 
-* 代理服务器：运行nginx，用于代理转发请求给应用
+- 代理服务器：运行 nginx，用于代理转发请求给应用
 
-* 应用服务器：108，208启动应用实例，用于处理业务逻辑
+- 应用服务器：108，208 启动应用实例，用于处理业务逻辑
 
-* 数据库服务器：216，217，218，用于存贮数据
+- 数据库服务器：216，217，218，用于存贮数据
 
-## 代理服务nginx
+## 代理服务 nginx
 
-在nginx配置文件中做如下配置，如：
+在 nginx 配置文件中做如下配置，如：
 
 ```nginx
 gzip on;
@@ -75,11 +75,12 @@ server {
 
 }
 ```
-> upstream `creatorws`配置了10个供访问的服务实例，其中5个位于108服务器，5个位于208服务器，用于负载均衡
+
+> upstream `creatorws`配置了 10 个供访问的服务实例，其中 5 个位于 108 服务器，5 个位于 208 服务器，用于负载均衡
 
 ## 应用实例集群
 
-在108和208服务器上进入steedos-project-saas项目目录，配置.env.local相关环境变量，如：
+在 108 和 208 服务器上进入 steedos-project-saas 项目目录，配置.env.local 相关环境变量，如：
 
 ```env
 MONGO_URL=mongodb://username:password@192.1.1.216:27017,192.1.1.217:27017,192.1.1.218:27017/yourdbname?replicaSet=steedos
@@ -99,20 +100,20 @@ ENV_CREATOR_URL=https://cn.steedos.com/
 docker-compose up -d
 ```
 
-## mongodb数据库集群
+## mongodb 数据库集群
 
-使用mongodb的[Replication](https://docs.mongodb.com/manual/replication/)模式搭建集群
+使用 mongodb 的[Replication](https://docs.mongodb.com/manual/replication/)模式搭建集群
 
-这里使用192.168.0.216服务器作为Primary，217作为Secondary1，218作为Secondary2
+这里使用 192.168.0.216 服务器作为 Primary，217 作为 Secondary1，218 作为 Secondary2
 
-分别在数据句服务器上[安装](https://docs.mongodb.com/manual/installation/)好mongodb之后，进行初始化：
+分别在数据句服务器上[安装](https://docs.mongodb.com/manual/installation/)好 mongodb 之后，进行初始化：
 
 ```bash
 mongo yourdbname
-rs.initiate({ _id: 'steedos', members: [ { _id: 0, host: 'PrimaryIP:27017', priority: 2 }, { _id: 1, host: 'Secondary1IP:27017', priority: 1 }, { _id: 2, host: 'Secondary2IP:27017', priority: 1 } ]}) 
+rs.initiate({ _id: 'steedos', members: [ { _id: 0, host: 'PrimaryIP:27017', priority: 2 }, { _id: 1, host: 'Secondary1IP:27017', priority: 1 }, { _id: 2, host: 'Secondary2IP:27017', priority: 1 } ]})
 ```
 
-添加用户验证， 在Primary数据库服务器中添加账户验证：
+添加用户验证， 在 Primary 数据库服务器中添加账户验证：
 
 ```bash
 mongo
@@ -122,15 +123,15 @@ use steedos
 db.createUser({user: "userUsername", pwd: "userPassword", roles: [ { role: " readWrite", db: "yourdbname" }, { role: " read", db: "local"} ] } )
 ```
 
-## CentOS7搭建NTP服务器
+## CentOS7 搭建 NTP 服务器
 
-由于代理、应用和数据库部署在不同的服务器的原因，为防止由于服务器时间不一致问题，故需要搭建NTP服务器统一各服务器时间
+由于代理、应用和数据库部署在不同的服务器的原因，为防止由于服务器时间不一致问题，故需要搭建 NTP 服务器统一各服务器时间
 
-以服务器63、21为例，21作为时间服务器，63的时间将从21同步
+以服务器 63、21 为例，21 作为时间服务器，63 的时间将从 21 同步
 
-### 在21安装NTP服务
+### 在 21 安装 NTP 服务
 
-安装NTP服务：
+安装 NTP 服务：
 
 ```bash
 yum install ntp -y
@@ -149,7 +150,7 @@ server 3.centos.pool.ntp.org iburst
 server 127.127.1.0 iburst
 ```
 
-启动ntp服务：
+启动 ntp 服务：
 
 ```bash
 systemctl start ntpd
@@ -167,7 +168,7 @@ systemctl status ntpd
 ntpq -p
 ```
 
-设置防火墙，打开udp123端口：
+设置防火墙，打开 udp123 端口：
 
 ```bash
 firewall-cmd --permanent --add-port=123/udp
@@ -179,9 +180,9 @@ firewall-cmd --permanent --add-port=123/udp
 systemctl enable ntpd
 ```
 
-### 63安装NTP服务
+### 63 安装 NTP 服务
 
-安装NTP服务步骤与在21安装一样，只是配置需要调整：
+安装 NTP 服务步骤与在 21 安装一样，只是配置需要调整：
 
 ```bash
 vim /etc/ntp.conf
@@ -196,13 +197,13 @@ server 192.168.0.21
 restrict 192.168.0.21 nomodify notrap noquery
 ```
 
-与本地ntpd Server同步一下：
+与本地 ntpd Server 同步一下：
 
 ```bash
 ntpdate -u 192.168.0.63
 ```
 
-启动ntp服务：
+启动 ntp 服务：
 
 ```bash
 systemctl start ntpd
@@ -222,4 +223,3 @@ systemctl start ntpd
 ```bash
 systemctl enable ntpd
 ```
-
