@@ -15,7 +15,7 @@ title: 部署项目至ubuntu
 查看 ubuntu 版本：
 
 ```bash
-root@ubuntu:/home/steedos# cat /proc/version
+steedos@ubuntu:/home/steedos# cat /proc/version
 Linux version 4.15.0-88-generic (buildd@lgw01-amd64-036) (gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1)) #88-Ubuntu SMP Tue Feb 11 20:11:34 UTC 2020
 ```
 
@@ -93,13 +93,14 @@ systemctl --user restart code-server
 
 ```bash
 cd steedos-project-saas/docker/mongo
-docker-compose up -d
+sudo docker-compose up -d
 ```
 
 启动应用：
 
 ```bash
 cd steedos-project-saas
+yarn
 pm2 start server.js
 ```
 
@@ -109,7 +110,7 @@ pm2 start server.js
 
 ```bash
 cd steedos-project-saas/docker/nginx
-docker-compose up -d
+sudo docker-compose up -d
 ```
 
 ## 注意事项
