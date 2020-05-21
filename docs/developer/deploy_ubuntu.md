@@ -107,14 +107,41 @@ systemctl --user restart code-server
 
 ## 启动服务
 
-启动数据库：
+### 启动数据库：
+
+下载数据库镜像：
 
 ```bash
-cd steedos-project-saas/docker/mongo
+docker pull mongo:3.4.1
+```
+
+配置启动文件 docker-compose.yml：
+
+```yaml
+mongo:
+  image: mongo:3.4.1
+  ports:
+    - "27017:27017"
+  command: mongod --profile=1 --slowms=500 --replSet rs0
+  volumes:
+    - /srv/mongodb/db:/data/db
+    - /srv/mongodb/backup:/data/backup
+  restart: always
+
+mongo-init-replica:
+  image: mongo:3.4.1
+  command: 'mongo mongo/steedos --eval "rs.initiate({ _id: ''rs0'', members: [ { _id: 0, host: ''127.0.0.1:27017'' } ]})"'
+  links:
+    - mongo:mongo
+```
+
+启动数据库服务：
+
+```bash
 sudo docker-compose up -d
 ```
 
-启动应用：
+### 启动应用：
 
 ```bash
 cd steedos-project-saas
@@ -124,7 +151,7 @@ pm2 start server.js
 
 > 重启服务：`pm2 restart server.js`
 
-启动代理：
+### 启动代理：
 
 ```bash
 cd steedos-project-saas/docker/nginx
