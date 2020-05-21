@@ -39,7 +39,25 @@ sudo apt-get install git
 
 ### 安装 node-v10.16.0
 
-先要安装[nvm](https://github.com/nvm-sh/nvm)，安装完成之后即可使用 nvm 命令安装 node：
+先要安装[nvm](https://github.com/nvm-sh/nvm)：
+
+```bash
+cd ~/
+git clone https://github.com/nvm-sh/nvm.git .nvm
+cd ~/.nvm
+git checkout v0.35.3
+. nvm.sh
+```
+
+将一下内容添加进~/.bashrc，如果没有可以新建：
+
+```bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
+
+安装完成之后即可使用 nvm 命令安装 node：
 
 ```bash
 nvm ls-remote
@@ -115,7 +133,7 @@ sudo docker-compose up -d
 
 ## 注意事项
 
-启动 code-server 服务后关闭了终端，服务访问不了，执行一下命令后重启服务器：
+启动 code-server 服务后关闭了终端，服务访问不了，执行以下命令后重启服务器：
 
 ```bash
 sudo loginctl enable-linger username
