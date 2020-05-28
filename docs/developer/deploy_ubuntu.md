@@ -148,3 +148,13 @@ systemctl --user restart code-server
 ```
 
 比如服务部署在 192.168.0.105，那么浏览器访问 https://192.168.0.108:8080 输入密码即可在浏览器中的 vs code 进行远程开发
+
+### 注意事项
+
+启动 code-server 服务后关闭了终端，服务访问不了，执行以下命令后重启服务器：
+
+```bash
+sudo loginctl enable-linger username
+```
+
+> 来源： https://github.com/cdr/code-server/issues/1673
