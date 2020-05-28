@@ -107,7 +107,7 @@ systemctl --user restart code-server
 
 ## 启动服务
 
-### 启动数据库：
+### 启动数据库
 
 下载数据库镜像：
 
@@ -135,28 +135,25 @@ mongo-init-replica:
     - mongo:mongo
 ```
 
-启动数据库服务：
+启动数据库服务
 
 ```bash
 sudo docker-compose up -d
 ```
 
-### 启动应用：
+### 克隆并启动项目
+
+例如克隆华炎OA，项目源码位于 https://github.com/steedos/steedos-project-saas
 
 ```bash
+cd /srv/
+git clone https://github.com/steedos/steedos-project-saas
 cd steedos-project-saas
 yarn
 pm2 start server.js
 ```
 
 > 重启服务：`pm2 restart server.js`
-
-### 启动代理：
-
-```bash
-cd steedos-project-saas/docker/nginx
-sudo docker-compose up -d
-```
 
 ## 注意事项
 
