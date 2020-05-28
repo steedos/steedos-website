@@ -1,5 +1,5 @@
 ---
-title: 使用docker运行本项目
+title: Docker 部署
 ---
 
 本页面描述如何将[steedos-project-saas](https://github.com/steedos/steedos-project-saas)项目编译成镜像发布至[docker hub](https://hub.docker.com/)并使用 docker-compose 启动的过程。

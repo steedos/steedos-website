@@ -1,5 +1,5 @@
 ---
-title: window启动项目
+title: Windows 部署
 ---
 
 本页面描述如何将[steedos-project-saas](https://github.com/steedos/steedos-project-saas)项目部署至 windows10 的过程。

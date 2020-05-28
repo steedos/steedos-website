@@ -1,5 +1,5 @@
 ---
-title: 部署项目至ubuntu
+title: Ubuntu 部署
 ---
 
 本页面描述如何将[steedos-project-saas](https://github.com/steedos/steedos-project-saas)项目部署至远程开发环境的过程。

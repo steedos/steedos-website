@@ -1,5 +1,5 @@
 ---
-title: 项目发布至heroku
+title: Heroku 部署
 ---
 
 本页面描述如何将[steedos-project-saas](https://github.com/steedos/steedos-project-saas)项目发布至 heroku 并启动服务，通过外网https://steedos-project-saas.herokuapp.com即可访问的过程。

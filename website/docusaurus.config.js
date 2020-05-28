@@ -127,6 +127,7 @@ module.exports = {
         // },
         {to: 'developer/', label: '开发人员', position: 'left',
           items: [
+            {to: 'developer/deploy', label: '部署文档', position: 'left'},
             {to: 'developer/', label: '开发文档', position: 'left'},
             {to: 'developer/api/', label: 'API', position: 'left'},
           ]
