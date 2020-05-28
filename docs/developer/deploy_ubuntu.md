@@ -2,15 +2,13 @@
 title: Ubuntu 部署
 ---
 
-本页面描述如何将[steedos-project-saas](https://github.com/steedos/steedos-project-saas)项目部署至远程开发环境的过程。
+本教程以 [steedos-project-saas](https://github.com/steedos/steedos-project-saas)为例，指导你如何在 Ubuntu 系统中部署和运行基于华炎魔方开发的项目。
 
-部署完成后可在浏览器中打开 vs code 编辑器进行远程开发。
+系统基本环境需要需要安装 docker（运行mongodb)、git、nodejs
 
-## 搭建运行环境
+如果需要远程开发，还可以部署微软 code-server，实现在浏览器中运行 Visual Studio Code 编辑器进行远程开发。
 
-需要安装 docker、docker-compose、git、node-v12.x、pm2、code-server
-
-### 系统版本
+## 安装 Ubuntu
 
 查看 ubuntu 版本：
 
@@ -21,15 +19,15 @@ Linux version 4.15.0-88-generic (buildd@lgw01-amd64-036) (gcc version 7.4.0 (Ubu
 
 > 系统版本没有特别要求，这里只提供参考
 
-### 安装 docker
+## 安装 docker
 
 [官方文档](https://docs.docker.com/engine/install/ubuntu/)
 
-### 安装 docker-compose
+## 安装 docker-compose
 
 [官方文档](https://docs.docker.com/compose/install/)
 
-### 安装 git
+## 安装 git
 
 首先，确认你的系统是否已安装 git，可以通过 git 指令进行查看，如果没有，在命令行模式下输入命令进行安装：
 
@@ -37,7 +35,7 @@ Linux version 4.15.0-88-generic (buildd@lgw01-amd64-036) (gcc version 7.4.0 (Ubu
 sudo apt-get install git
 ```
 
-### 安装 node-v12.x
+## 安装 node-v12.x
 
 添加 node 源：
 
@@ -60,7 +58,7 @@ v12.17.0
 
 > 打印出版本号即表示 node 安装成功
 
-### 安装 pm2
+## 安装 pm2
 
 国内用户配置[淘宝 NPM 镜像](https://developer.aliyun.com/mirror/NPM)以提高 NPM 包下载速度：
 
@@ -75,9 +73,7 @@ yarn config set registry https://registry.npm.taobao.org
 sudo npm install pm2 -g
 ```
 
-## 启动服务
-
-### 启动数据库
+## 通过Docker启动数据库服务
 
 下载数据库镜像：
 
@@ -111,9 +107,9 @@ mongo-init-replica:
 sudo docker-compose up -d
 ```
 
-### 克隆并启动项目
+## 克隆并启动项目
 
-例如克隆华炎 OA，项目源码位于 https://github.com/steedos/steedos-project-saas
+例如克隆steedos-project-saas，项目源码位于 https://github.com/steedos/steedos-project-saas
 
 ```bash
 cd /srv/
@@ -145,19 +141,10 @@ vim ~/.config/code-server/config.yaml
 bind-addr: 0.0.0.0:8080
 auth: password
 password: 307f71d53ec2fd0995499cf4
-cert: false
+cert: true
+
 # 保存后重启服务
 systemctl --user restart code-server
 ```
 
-> 比如服务部署在 192.168.0.105，那么浏览器访问http://192.168.0.108:8080 输入密码即可在浏览器中的 vs code 进行远程开发
-
-### 注意事项
-
-启动 code-server 服务后关闭了终端，服务访问不了，执行以下命令后重启服务器：
-
-```bash
-sudo loginctl enable-linger username
-```
-
-> 来源： https://github.com/cdr/code-server/issues/1673
+比如服务部署在 192.168.0.105，那么浏览器访问 https://192.168.0.108:8080 输入密码即可在浏览器中的 vs code 进行远程开发
