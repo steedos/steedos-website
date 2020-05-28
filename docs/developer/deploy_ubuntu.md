@@ -8,7 +8,7 @@ title: Ubuntu 部署
 
 ## 搭建运行环境
 
-需要安装 docker、docker-compose、git、node-v10.16.0、pm2、code-server
+需要安装 docker、docker-compose、git、node-v12.x、pm2、code-server
 
 ### 系统版本
 
@@ -37,45 +37,42 @@ Linux version 4.15.0-88-generic (buildd@lgw01-amd64-036) (gcc version 7.4.0 (Ubu
 sudo apt-get install git
 ```
 
-### 安装 node-v10.16.0
+### 安装 node-v12.x
 
-先要安装[nvm](https://github.com/nvm-sh/nvm)：
-
-```bash
-cd ~/
-git clone https://github.com/nvm-sh/nvm.git .nvm
-cd ~/.nvm
-git checkout v0.35.3
-. nvm.sh
-```
-
-将一下内容添加进~/.bashrc，如果没有可以新建：
+添加 node 源：
 
 ```bash
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 ```
 
-安装完成之后即可使用 nvm 命令安装 node：
+安装 node：
 
 ```bash
-nvm ls-remote
-nvm install v10.16.0
+sudo apt-get install -y nodejs
 ```
+
+检测是否安装成功：
+
+```bash
+steedos@ubuntu:~$ node -v
+v12.17.0
+```
+
+> 打印出版本号即表示 node 安装成功
 
 ### 安装 pm2
 
-安装[yarn](https://www.npmjs.com/package/yarn)：
+国内用户配置[淘宝 NPM 镜像](https://developer.aliyun.com/mirror/NPM)以提高 NPM 包下载速度：
 
 ```bash
-npm install yarn -g
+npm config set registry https://registry.npm.taobao.org
+yarn config set registry https://registry.npm.taobao.org
 ```
 
 安装[pm2](https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/)：
 
 ```bash
-yarn global add pm2
+sudo npm install pm2 -g
 ```
 
 ### 安装 code-server
@@ -143,7 +140,7 @@ sudo docker-compose up -d
 
 ### 克隆并启动项目
 
-例如克隆华炎OA，项目源码位于 https://github.com/steedos/steedos-project-saas
+例如克隆华炎 OA，项目源码位于 https://github.com/steedos/steedos-project-saas
 
 ```bash
 cd /srv/
