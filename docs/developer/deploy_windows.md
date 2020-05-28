@@ -2,7 +2,10 @@
 title: Windows 部署
 ---
 
-本页面描述如何将[steedos-project-saas](https://github.com/steedos/steedos-project-saas)项目部署至 windows10 的过程。
+
+本教程以 [steedos-project-saas](https://github.com/steedos/steedos-project-saas)为例，指导你如何在 Windows 10 系统中部署和运行基于华炎魔方开发的项目。
+
+系统基本环境需要需要安装 docker（运行mongodb)、git、nodejs
 
 部署完成后可在 windows10 环境下开发。
 
