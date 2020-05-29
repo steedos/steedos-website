@@ -65,7 +65,7 @@
       {
         "type": "category",
         "label": "流程设置",
-        "items": ["help/workflow/admin_form", "help/workflow/admin_flow", "help/workflow/admin_positions"]
+        "items": ["help/workflow/admin_form", "help/workflow/admin_flow", "help/workflow/admin_positions", "help/workflow/admin_picturesignature"]
       }
       ]
   },
