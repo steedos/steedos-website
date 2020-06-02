@@ -1,10 +1,10 @@
 ---
-title: Windows 部署
+title: Mac 部署
 ---
 
-本教程以 [steedos-project-saas](https://github.com/steedos/steedos-project-saas)为例，指导你如何在 Windows 10 系统中部署和运行基于华炎魔方开发的项目。
+本教程以 [steedos-project-saas](https://github.com/steedos/steedos-project-saas)为例，指导你如何在 Mac 系统中部署和运行基于华炎魔方开发的项目。
 
-部署完成后可在 windows10 环境下开发。
+部署完成后可在 Mac 环境下开发。
 
 ## 搭建运行环境
 
@@ -24,7 +24,7 @@ title: Windows 部署
 
 ![安装node](/assets/windows/安装node.png)
 
-安装完成之后打开命令提示符安装 yarn：
+安装完成之后打开终端安装 yarn：
 
 ```bash
 npm install -g yarn
@@ -39,7 +39,7 @@ yarn config set registry https://registry.npm.taobao.org
 
 ### 安装 mongodb-v4.2
 
-根据官方向导，安装最新的[mongodb4.2](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)，选择安装成 windows 服务
+根据官方向导，安装最新的[mongodb4.2](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)，数据库默认开机启动
 
 ### 安装 Robo 3T
 
@@ -53,15 +53,11 @@ yarn config set registry https://registry.npm.taobao.org
 
 ### 启动数据库：
 
-安装时如果选择将 mongodb 安装成 windows 服务，则数据库默认开机启动
-
-如果没有安装成 windows 服务也可以手动启动数据库服务：
+启动数据库服务：
 
 ```bash
-"C:\Program Files\MongoDB\Server\4.2\bin\mongod.exe" --dbpath="c:\data\db"
+brew services start mongodb-community@4.2
 ```
-
-> --dbpath 就是数据存贮路径
 
 ### 启动应用：
 
