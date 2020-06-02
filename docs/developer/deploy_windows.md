@@ -2,10 +2,9 @@
 title: Windows 部署
 ---
 
-
 本教程以 [steedos-project-saas](https://github.com/steedos/steedos-project-saas)为例，指导你如何在 Windows 10 系统中部署和运行基于华炎魔方开发的项目。
 
-系统基本环境需要需要安装 docker（运行mongodb)、git、nodejs
+系统基本环境需要需要安装 docker（运行 mongodb)、git、nodejs
 
 部署完成后可在 windows10 环境下开发。
 
@@ -17,7 +16,7 @@ title: Windows 部署
 
 安装[Github 桌面客户端](https://desktop.github.com/)
 
-访问https://github.com/steedos/steedos-project-saas 将项目 clone 到本地：
+访问https://github.com/steedos/steedos-project-saas 先 fork 项目，然后将已经 fork 的项目 clone 到本地：
 
 ![clone项目](/assets/windows/clone项目.png)
 
@@ -42,7 +41,7 @@ yarn config set registry https://registry.npm.taobao.org
 
 ### 安装 mongodb-v4.2
 
-根据官方向导，安装最新的[mongodb4.2](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
+根据官方向导，安装最新的[mongodb4.2](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)，选择安装成 windows 服务
 
 ### 安装 Robo 3T
 
@@ -56,14 +55,15 @@ yarn config set registry https://registry.npm.taobao.org
 
 ### 启动数据库：
 
-启动数据库服务：
+安装时如果选择将 mongodb 安装成 windows 服务，则数据库默认开机启动
+
+如果没有安装成 windows 服务也可以手动启动数据库服务：
 
 ```bash
 "C:\Program Files\MongoDB\Server\4.2\bin\mongod.exe" --dbpath="c:\data\db"
 ```
 
 > --dbpath 就是数据存贮路径
-> 安装时如果选择将 mongodb 安装成 windows 服务，则数据库默认启动
 
 ### 启动应用：
 
