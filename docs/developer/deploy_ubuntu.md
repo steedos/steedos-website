@@ -4,7 +4,7 @@ title: Ubuntu 部署
 
 本教程以 [steedos-project-saas](https://github.com/steedos/steedos-project-saas)为例，指导你如何在 Ubuntu 系统中部署和运行基于华炎魔方开发的项目。
 
-系统基本环境需要需要安装 docker（运行mongodb)、git、nodejs
+系统基本环境需要需要安装 docker（运行 mongodb)、git、nodejs
 
 如果需要远程开发，还可以部署微软 code-server，实现在浏览器中运行 Visual Studio Code 编辑器进行远程开发。
 
@@ -73,7 +73,7 @@ yarn config set registry https://registry.npm.taobao.org
 sudo npm install pm2 -g
 ```
 
-## 通过Docker启动数据库服务
+## 通过 Docker 启动数据库服务
 
 下载数据库镜像：
 
@@ -109,7 +109,7 @@ sudo docker-compose up -d
 
 ## 克隆并启动项目
 
-例如克隆steedos-project-saas，项目源码位于 https://github.com/steedos/steedos-project-saas
+首先在 github 中 fork 项目，项目源码位于 https://github.com/steedos/steedos-project-saas，然后将已经fork到自己账号下的项目克隆到本地，
 
 ```bash
 cd /srv/
