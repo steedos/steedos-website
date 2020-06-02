@@ -9,6 +9,7 @@ sidebar_label: 概述
 
 部署过程请参考
 
+- [部署到 Mac](./deploy_mac.md)
 - [部署到 Ubuntu](./deploy_ubuntu.md)
 - [部署到 Windows](./deploy_windows.md)
 - [部署到 Heroku](./deploy_keroku.md)
