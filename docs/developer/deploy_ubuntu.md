@@ -35,6 +35,12 @@ sudo apt-get install git
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 ```
 
+安装 make：
+
+```bash
+sudo apt-get install gcc g++ make
+```
+
 安装 node：
 
 ```bash
@@ -56,6 +62,7 @@ v12.17.0
 
 ```bash
 npm config set registry https://registry.npm.taobao.org
+sudo npm install yarn -g
 yarn config set registry https://registry.npm.taobao.org
 ```
 
@@ -75,13 +82,13 @@ sudo npm install pm2 -g
 
 ```bash
 cd /srv/
-git clone https://github.com/steedos/steedos-project-oa
+sudo git clone https://github.com/steedos/steedos-project-oa
 cd steedos-project-oa
-yarn
-pm2 start server.js
+sudo yarn
+sudo pm2 start server.js
 ```
 
-> 重启服务：`pm2 restart server.js`
+> 重启服务：`sudo pm2 restart server.js`
 
 ## 安装 code-server (可选)
 
