@@ -50,7 +50,7 @@
     "插件": ["plugins/index",  "plugins/plugin_webapp", "plugins/plugin_webapp_functions"]
   },
   "Steedos 部署文档": {
-    "安装部署": ["developer/deploy","developer/deploy_ubuntu","developer/deploy_docker","developer/deploy_cluster","developer/deploy_windows","developer/deploy_heroku"]
+    "安装部署": ["developer/deploy","developer/deploy_mac","developer/deploy_windows","developer/deploy_ubuntu","developer/deploy_heroku","developer/deploy_docker","developer/deploy_cluster"]
   }, 
   "华炎帮助": {
     "帮助文档": ["help", "help/download", "help/workflow/faq", "help/workflow_upgrade"],
