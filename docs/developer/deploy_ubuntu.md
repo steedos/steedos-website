@@ -178,3 +178,10 @@ sudo loginctl enable-linger username
 ```
 
 > 来源： https://github.com/cdr/code-server/issues/1673
+
+vs code 提交代码时报`error: insufficient permission for adding an object to repository database .git/objects`的处理方式:
+
+```bash
+cd .git/objects
+sudo chown -R <username>:<group> *
+```
