@@ -2,7 +2,7 @@
 title: Windows 部署
 ---
 
-本教程以 [steedos-project-saas](https://github.com/steedos/steedos-project-saas)为例，指导你如何在 Windows 10 系统中部署和运行基于华炎魔方开发的项目。
+本教程以 [steedos-project-oa](https://github.com/steedos/steedos-project-oa)为例，指导你如何在 Windows 10 系统中部署和运行基于华炎魔方开发的项目。
 
 部署完成后可在 windows10 环境下开发。
 
@@ -14,7 +14,7 @@ title: Windows 部署
 
 安装[Github 桌面客户端](https://desktop.github.com/)
 
-访问https://github.com/steedos/steedos-project-saas 先 fork 项目，然后将已经 fork 到自己账号下的项目 clone 到本地：
+访问https://github.com/steedos/steedos-project-oa 先 fork 项目，然后将已经 fork 到自己账号下的项目 clone 到本地：
 
 ![clone项目](/assets/windows/clone项目.png)
 

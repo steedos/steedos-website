@@ -2,7 +2,7 @@
 title: Heroku 部署
 ---
 
-本页面描述如何将[steedos-project-saas](https://github.com/steedos/steedos-project-saas)项目发布至 heroku 并启动服务，通过外网https://steedos-project-saas.herokuapp.com即可访问的过程。
+本页面描述如何将[steedos-project-oa](https://github.com/steedos/steedos-project-oa)项目发布至 heroku 并启动服务，通过外网https://steedos-project-oa.herokuapp.com即可访问的过程。
 
 heroku 官方[向导](https://devcenter.heroku.com/articles/getting-started-with-nodejs) 。
 
@@ -18,20 +18,20 @@ heroku 官方[向导](https://devcenter.heroku.com/articles/getting-started-with
 heroku login
 ```
 
-fork[steedos-project-saas](https://github.com/steedos/steedos-project-saas)，并 clone 至本地
+fork[steedos-project-oa](https://github.com/steedos/steedos-project-oa)，并 clone 至本地
 
 ## 发布过程
 
-进入本地 steedos-project-saas 项目目录：
+进入本地 steedos-project-oa 项目目录：
 
 ```bash
-cd steedos-project-saas
+cd steedos-project-oa
 ```
 
 创建 app：
 
 ```bash
-heroku create steedos-project-saas
+heroku create steedos-project-oa
 ```
 
 > 如果只执行`heroku create`未指定 app 名称，则会被分配一个随机生成的名称，app 的名称影响将来访问的地址， 名称是唯一的
@@ -54,7 +54,7 @@ MONGODB_URI:           添加数据库插件后获取的值，无需改动
 MONGO_URL:             MONGODB_URI的值
 NPM_CONFIG_PRODUCTION: false
 PORT:                  5040
-ROOT_URL:              https://steedos-project-saas.herokuapp.com
+ROOT_URL:              https://steedos-project-oa.herokuapp.com
 STEEDOS_CFS_STORE:         local
 STEEDOS_STORAGE_DIR:   ./storage
 YARN_PRODUCTION:       false

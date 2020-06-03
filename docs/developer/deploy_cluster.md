@@ -2,7 +2,7 @@
 title: 集群部署
 ---
 
-本页面描述如何将[steedos-project-saas](https://github.com/steedos/steedos-project-saas)项目使用集群方式部署的过程。
+本页面描述如何将[steedos-project-oa](https://github.com/steedos/steedos-project-oa)项目使用集群方式部署的过程。
 
 ## 服务器分配
 
@@ -78,7 +78,7 @@ server {
 
 ## 应用实例集群
 
-在 108 和 208 服务器上进入 steedos-project-saas 项目目录，配置.env.local 相关环境变量，如：
+在 108 和 208 服务器上进入 steedos-project-oa 项目目录，配置.env.local 相关环境变量，如：
 
 ```env
 MONGO_URL=mongodb://username:password@192.1.1.216:27017,192.1.1.217:27017,192.1.1.218:27017/yourdbname?replicaSet=steedos

@@ -2,7 +2,7 @@
 title: Ubuntu 部署
 ---
 
-本教程以 [steedos-project-saas](https://github.com/steedos/steedos-project-saas)为例，指导你如何在 Ubuntu 系统中部署和运行基于华炎魔方开发的项目。
+本教程以 [steedos-project-oa](https://github.com/steedos/steedos-project-oa)为例，指导你如何在 Ubuntu 系统中部署和运行基于华炎魔方开发的项目。
 
 系统基本环境需要需要安装 docker（运行 mongodb)、git、nodejs
 
@@ -109,12 +109,12 @@ sudo docker-compose up -d
 
 ## 克隆并启动项目
 
-首先在 github 中 fork 项目，项目源码位于 https://github.com/steedos/steedos-project-saas，然后将已经fork到自己账号下的项目克隆到本地，
+首先在 github 中 fork 项目，项目源码位于 https://github.com/steedos/steedos-project-oa，然后将已经fork到自己账号下的项目克隆到本地，
 
 ```bash
 cd /srv/
-git clone https://github.com/steedos/steedos-project-saas
-cd steedos-project-saas
+git clone https://github.com/steedos/steedos-project-oa
+cd steedos-project-oa
 yarn
 pm2 start server.js
 ```
