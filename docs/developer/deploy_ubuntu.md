@@ -90,6 +90,28 @@ sudo pm2 start server.js
 
 > 重启服务：`sudo pm2 restart server.js`
 
+## 开放指定端口
+
+添加规则：
+
+```bash
+sudo iptables -I INPUT -p tcp --dport 5080 -j ACCEPT
+```
+
+保存规则:
+
+```bash
+sudo iptables-save
+```
+
+安装 iptables-persistent 持续化规则:
+
+```bash
+sudo apt-get install iptables-persistent
+sudo netfilter-persistent save
+sudo netfilter-persistent reload
+```
+
 ## 安装 code-server (可选)
 
 安装 code-server 的[最新版本](https://github.com/cdr/code-server)：
