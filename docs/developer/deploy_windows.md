@@ -53,15 +53,7 @@ yarn config set registry https://registry.npm.taobao.org
 
 ### 启动数据库：
 
-安装时如果选择将 mongodb 安装成 windows 服务，则数据库默认开机启动
-
-如果没有安装成 windows 服务也可以手动启动数据库服务：
-
-```bash
-"C:\Program Files\MongoDB\Server\4.2\bin\mongod.exe" --dbpath="c:\data\db"
-```
-
-> --dbpath 就是数据存贮路径
+数据库服务为 windows 服务，默认开机启动，可在 windows 系统服务中查看，默认服务名称为 MongoDB
 
 ### 启动应用：
 
