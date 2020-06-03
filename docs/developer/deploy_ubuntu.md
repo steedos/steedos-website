@@ -121,16 +121,6 @@ pm2 start server.js
 
 > 重启服务：`pm2 restart server.js`
 
-## 使用 git 提交代码
-
-比如修改了项目下的 README.md 文件，按顺序执行以下命令：
-
-```bash
-sudo git add README.md
-sudo git commit
-sudo git push # 输入用户名密码后代码提交完成
-```
-
 ## 安装 code-server (可选)
 
 安装 code-server 的[最新版本](https://github.com/cdr/code-server)：
@@ -158,6 +148,26 @@ systemctl --user restart code-server
 ```
 
 比如服务部署在 192.168.0.105，那么浏览器访问 https://192.168.0.108:8080 输入密码即可在浏览器中的 vs code 进行远程开发
+
+### 使用 vs code 提交代码到 git
+
+首先选中需要提交的文件暂存修改：
+
+![暂存修改](/assets/ubuntu/git暂存修改.png)
+
+其次写说明并提交更改：
+
+![提交更改](/assets/ubuntu/git提交更改.png)
+
+如果没有 git 客户端可选择取消打开 git 客户端，并在 vscode 中登陆 git 账号：
+
+![取消打开客户端](/assets/ubuntu/git取消打开客户端.png)
+![输入用户名](/assets/ubuntu/git输入用户名.png)
+![输入密码](/assets/ubuntu/git输入密码.png)
+
+最后推送更改：
+
+![推送更改](/assets/ubuntu/git推送更改.png)
 
 ### 注意事项
 
