@@ -121,6 +121,16 @@ pm2 start server.js
 
 > 重启服务：`pm2 restart server.js`
 
+## 使用 git 提交代码
+
+比如修改了项目下的 README.md 文件，按顺序执行以下命令：
+
+```bash
+sudo git add README.md
+sudo git commit
+sudo git push # 输入用户名密码后代码提交完成
+```
+
 ## 安装 code-server (可选)
 
 安装 code-server 的[最新版本](https://github.com/cdr/code-server)：
