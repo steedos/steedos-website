@@ -94,29 +94,7 @@ pm2 start server.js
 > 重启服务：`pm2 restart server.js`
 > 项目访问地址和端口可在配置文件.env.local 中查看
 
-## 开放指定端口
-
-添加规则：
-
-```bash
-sudo iptables -I INPUT -p tcp --dport 5080 -j ACCEPT
-```
-
-保存规则:
-
-```bash
-sudo iptables-save
-```
-
-安装 iptables-persistent 持续化规则，不然重启服务器之后刚添加的 iptables 规则失效:
-
-```bash
-sudo apt-get install -y iptables-persistent
-sudo netfilter-persistent save
-sudo netfilter-persistent reload
-```
-
-通过项目的 ROOT_URL 即可访问项目如：https://192.168.0.105:5080/
+防火墙开放端口后通过项目的 ROOT_URL 即可访问项目如：https://192.168.0.105:5080/
 
 ## 安装 code-server (可选)
 
