@@ -92,7 +92,7 @@ pm2 start server.js
 ```
 
 > 重启服务：`pm2 restart server.js`
-> 项目访问地址和端口可在配置文件.env.local 中查看
+> 项目访问地址和端口可在配置文件.env.local 中查看和编辑
 
 防火墙开放端口后通过项目的 ROOT_URL 即可访问项目如：https://192.168.0.105:5080/
 
