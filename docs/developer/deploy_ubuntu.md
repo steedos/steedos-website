@@ -150,3 +150,13 @@ git config --global user.email "your email"
 最后推送更改：
 
 ![推送更改](/assets/ubuntu/git推送更改.png)
+
+### 注意事项
+
+启动 code-server 服务后关闭了终端，服务访问不了，执行以下命令后重启服务器：
+
+```bash
+sudo loginctl enable-linger username
+```
+
+> 来源： https://github.com/cdr/code-server/issues/1673
