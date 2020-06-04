@@ -13,8 +13,8 @@ title: Ubuntu 部署
 查看 ubuntu 版本：
 
 ```bash
-steedos@ubuntu:/home/steedos# cat /proc/version
-Linux version 4.15.0-88-generic (buildd@lgw01-amd64-036) (gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1)) #88-Ubuntu SMP Tue Feb 11 20:11:34 UTC 2020
+steedos@ubuntu:~$ cat /etc/issue
+Ubuntu 18.04.4 LTS \n \l
 ```
 
 > 系统版本没有特别要求，这里只提供参考
@@ -38,7 +38,7 @@ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 安装 make：
 
 ```bash
-sudo apt-get install gcc g++ make
+sudo apt-get install -y gcc g++ make
 ```
 
 安装 node：
@@ -80,17 +80,19 @@ sudo npm install pm2 -g
 
 访问项目主页。例如：https://github.com/steedos/steedos-project-oa 。
 
-> 对于华炎提供的项目模版，如需个性化定制，请在项目主页右上角点[Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)，然后将Fork到个人账户下的项目克隆到本地，以便提交修改。
+> 对于华炎提供的项目模版，如需个性化定制，请在项目主页右上角点[Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)，然后将 Fork 到个人账户下的项目克隆到本地，以便提交修改。
 
 ```bash
 cd ~
 git clone https://github.com/steedos/steedos-project-oa
 cd steedos-project-oa
 yarn
+cp .env .env.local
 pm2 start server.js
 ```
 
 > 重启服务：`pm2 restart server.js`
+> 项目访问地址和端口可在配置文件.env.local 中查看
 
 ## 开放指定端口
 
@@ -106,13 +108,15 @@ sudo iptables -I INPUT -p tcp --dport 5080 -j ACCEPT
 sudo iptables-save
 ```
 
-安装 iptables-persistent 持续化规则:
+安装 iptables-persistent 持续化规则，不然重启服务器之后刚添加的 iptables 规则失效:
 
 ```bash
-sudo apt-get install iptables-persistent
+sudo apt-get install -y iptables-persistent
 sudo netfilter-persistent save
 sudo netfilter-persistent reload
 ```
+
+通过项目的 ROOT_URL 即可访问项目如：https://192.168.0.105:5080/
 
 ## 安装 code-server (可选)
 
@@ -150,6 +154,8 @@ systemctl --user restart code-server
 git config --global user.name "your name"
 git config --global user.email "your email"
 ```
+
+> 只需执行一次
 
 ![暂存修改](/assets/ubuntu/git暂存修改.png)
 
