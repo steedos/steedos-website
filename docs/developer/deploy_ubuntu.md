@@ -81,14 +81,14 @@ sudo npm install pm2 -g
 首先在 github 中 fork 项目，项目源码位于 https://github.com/steedos/steedos-project-oa，然后将已经fork到自己账号下的项目克隆到本地，
 
 ```bash
-cd /srv/
-sudo git clone https://github.com/steedos/steedos-project-oa
+cd ~
+git clone https://github.com/steedos/steedos-project-oa
 cd steedos-project-oa
-sudo yarn
-sudo pm2 start server.js
+yarn
+pm2 start server.js
 ```
 
-> 重启服务：`sudo pm2 restart server.js`
+> 重启服务：`pm2 restart server.js`
 
 ## 开放指定端口
 
@@ -117,7 +117,7 @@ sudo netfilter-persistent reload
 安装 code-server 的[最新版本](https://github.com/cdr/code-server)：
 
 ```bash
-curl -sSOL https://github.com/cdr/code-server/releases/download/v3.3.1/code-server_3.3.1_amd64.deb
+curl -SOL https://github.com/cdr/code-server/releases/download/v3.3.1/code-server_3.3.1_amd64.deb
 sudo dpkg -i code-server_3.3.1_amd64.deb
 systemctl --user enable --now code-server
 # Now code-server is running at http://127.0.0.1:8080
@@ -142,7 +142,12 @@ systemctl --user restart code-server
 
 ### 使用 vs code 提交代码到 git
 
-首先选中需要提交的文件暂存修改：
+首先配置用户名和邮件然后选中需要提交的文件暂存修改：
+
+```bash
+git config --global user.name "your name"
+git config --global user.email "your email"
+```
 
 ![暂存修改](/assets/ubuntu/git暂存修改.png)
 
