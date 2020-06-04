@@ -4,7 +4,7 @@ title: Ubuntu 部署
 
 本教程以 [steedos-project-oa](https://github.com/steedos/steedos-project-oa) 为例，指导你如何在 Ubuntu 系统中部署和运行基于华炎魔方开发的项目。
 
-系统基本环境需要需要安装 docker（运行 mongodb)、git、nodejs
+系统基本环境需要需要安装 mongodb、git、nodejs
 
 如果需要远程开发，还可以部署微软 code-server，实现在浏览器中运行 Visual Studio Code 编辑器进行远程开发。
 
@@ -19,17 +19,9 @@ Linux version 4.15.0-88-generic (buildd@lgw01-amd64-036) (gcc version 7.4.0 (Ubu
 
 > 系统版本没有特别要求，这里只提供参考
 
-## 安装 docker
-
-[官方文档](https://docs.docker.com/engine/install/ubuntu/)
-
-## 安装 docker-compose
-
-[官方文档](https://docs.docker.com/compose/install/)
-
 ## 安装 git
 
-首先，确认你的系统是否已安装 git，可以通过 git 指令进行查看，如果没有，在命令行模式下输入命令进行安装：
+首先，确认你的系统是否已安装 git，可以通过 `git` 指令进行查看，如果没有，在命令行模式下输入命令进行安装：
 
 ```bash
 sudo apt-get install git
@@ -41,6 +33,12 @@ sudo apt-get install git
 
 ```bash
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+```
+
+安装 make：
+
+```bash
+sudo apt-get install gcc g++ make
 ```
 
 安装 node：
@@ -64,6 +62,7 @@ v12.17.0
 
 ```bash
 npm config set registry https://registry.npm.taobao.org
+sudo npm install yarn -g
 yarn config set registry https://registry.npm.taobao.org
 ```
 
@@ -73,39 +72,9 @@ yarn config set registry https://registry.npm.taobao.org
 sudo npm install pm2 -g
 ```
 
-## 通过 Docker 启动数据库服务
+## 安装 mongodb 数据库
 
-下载数据库镜像：
-
-```bash
-docker pull mongo:3.4.1
-```
-
-配置启动文件 docker-compose.yml：
-
-```yaml
-mongo:
-  image: mongo:3.4.1
-  ports:
-    - "27017:27017"
-  command: mongod --profile=1 --slowms=500 --replSet rs0
-  volumes:
-    - /srv/mongodb/db:/data/db
-    - /srv/mongodb/backup:/data/backup
-  restart: always
-
-mongo-init-replica:
-  image: mongo:3.4.1
-  command: 'mongo mongo/steedos --eval "rs.initiate({ _id: ''rs0'', members: [ { _id: 0, host: ''127.0.0.1:27017'' } ]})"'
-  links:
-    - mongo:mongo
-```
-
-启动数据库服务
-
-```bash
-sudo docker-compose up -d
-```
+根据官方向导，安装最新的[mongodb4.2](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)，并启动
 
 ## 克隆并启动项目
 
@@ -115,13 +84,35 @@ sudo docker-compose up -d
 
 ```bash
 cd /srv/
-git clone https://github.com/steedos/steedos-project-oa
+sudo git clone https://github.com/steedos/steedos-project-oa
 cd steedos-project-oa
-yarn
-pm2 start server.js
+sudo yarn
+sudo pm2 start server.js
 ```
 
-> 重启服务：`pm2 restart server.js`
+> 重启服务：`sudo pm2 restart server.js`
+
+## 开放指定端口
+
+添加规则：
+
+```bash
+sudo iptables -I INPUT -p tcp --dport 5080 -j ACCEPT
+```
+
+保存规则:
+
+```bash
+sudo iptables-save
+```
+
+安装 iptables-persistent 持续化规则:
+
+```bash
+sudo apt-get install iptables-persistent
+sudo netfilter-persistent save
+sudo netfilter-persistent reload
+```
 
 ## 安装 code-server (可选)
 
@@ -184,6 +175,7 @@ sudo loginctl enable-linger username
 vs code 提交代码时报`error: insufficient permission for adding an object to repository database .git/objects`的处理方式:
 
 ```bash
+cd steedos-project-oa
 cd .git/objects
 sudo chown -R <username>:<group> *
 ```
