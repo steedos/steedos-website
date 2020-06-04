@@ -17,7 +17,7 @@ sidebar_label: 概述
 - [华炎合同管理系统](https://github.com/steedos/steedos-contracts-app)
 - [华炎采购管理系统](https://github.com/steedos/steedos-app-purchase)
 
-> 以上项目如需个性化定制，请在github上先fork，再克隆到本地，以便提交修改。
+> 以上项目如需个性化定制，请在项目主页右上角点[Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)，然后将Fork到个人账户下的项目克隆到本地，以便提交修改。
 
 部署过程请参考
 

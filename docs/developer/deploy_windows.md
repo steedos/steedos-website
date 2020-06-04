@@ -14,7 +14,9 @@ title: Windows 部署
 
 安装[Github 桌面客户端](https://desktop.github.com/)
 
-访问https://github.com/steedos/steedos-project-oa 先 fork 项目，然后将已经 fork 到自己账号下的项目 clone 到本地：
+访问项目主页。例如：https://github.com/steedos/steedos-project-oa 。
+
+> 对于华炎提供的项目模版，如需个性化定制，请在项目主页右上角点[Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)，然后将Fork到个人账户下的项目克隆到本地，以便提交修改。
 
 ![clone项目](/assets/windows/clone项目.png)
 

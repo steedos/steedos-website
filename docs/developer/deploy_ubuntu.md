@@ -2,7 +2,7 @@
 title: Ubuntu 部署
 ---
 
-本教程以 [steedos-project-oa](https://github.com/steedos/steedos-project-oa)为例，指导你如何在 Ubuntu 系统中部署和运行基于华炎魔方开发的项目。
+本教程以 [steedos-project-oa](https://github.com/steedos/steedos-project-oa) 为例，指导你如何在 Ubuntu 系统中部署和运行基于华炎魔方开发的项目。
 
 系统基本环境需要需要安装 mongodb、git、nodejs
 
@@ -78,7 +78,9 @@ sudo npm install pm2 -g
 
 ## 克隆并启动项目
 
-首先在 github 中 fork 项目，项目源码位于 https://github.com/steedos/steedos-project-oa，然后将已经fork到自己账号下的项目克隆到本地，
+访问项目主页。例如：https://github.com/steedos/steedos-project-oa 。
+
+> 对于华炎提供的项目模版，如需个性化定制，请在项目主页右上角点[Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)，然后将Fork到个人账户下的项目克隆到本地，以便提交修改。
 
 ```bash
 cd ~
