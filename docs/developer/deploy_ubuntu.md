@@ -21,10 +21,11 @@ Ubuntu 18.04.4 LTS \n \l
 
 ## 安装 git
 
-首先，确认你的系统是否已安装 git，可以通过 `git` 指令进行查看，如果没有，在命令行模式下输入命令进行安装：
+首先，确认你的系统是否已安装 git，可以通过执行 `git --version` 指令查看版本，如果没有，在命令行模式下输入命令进行安装：
 
 ```bash
-sudo apt-get install git
+sudo apt-get update
+sudo apt-get install -y git
 ```
 
 ## 安装 node-v12.x
@@ -74,7 +75,37 @@ sudo npm install pm2 -g
 
 ## 安装 mongodb 数据库
 
-根据官方向导，安装最新的[mongodb4.2](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)，并启动
+根据官方向导，安装最新的[mongodb4.2](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
+
+### 使用集群模式启动数据库
+
+编辑配置文件:
+
+```bash
+vim /etc/mongod.conf
+# 找到replication部分，去掉#并添加一行配置
+replication:
+  replSetName: rsSteedos
+```
+
+保存后重启数据库：
+
+```bash
+sudo systemctl restart mongod
+```
+
+初始化数据库：
+
+```bash
+# 首先进入mongo控制台
+mongo
+# 执行初始化函数
+rs.initiate()
+# 查看配置
+rs.conf()
+# 查看集群状态，确保members里有一个primary，则表示配置成功
+rs.status()
+```
 
 ## 克隆并启动项目
 
@@ -101,6 +132,7 @@ pm2 start server.js
 安装 code-server 的[最新版本](https://github.com/cdr/code-server)：
 
 ```bash
+cd ~
 curl -SOL https://github.com/cdr/code-server/releases/download/v3.3.1/code-server_3.3.1_amd64.deb
 sudo dpkg -i code-server_3.3.1_amd64.deb
 systemctl --user enable --now code-server
