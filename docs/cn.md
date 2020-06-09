@@ -40,9 +40,9 @@ import Section from '@site/src/components/Section';
 
 <Section background="/img/banner/clouds-large-desktop.png" padding="50">
 
-# 华炎办公：快速部署并持续优化各类业务流程
+# 华炎办公：随需定制的协同办公平台
 
-华炎办公是使用华炎魔方开发的协同办公解决方案，基于华炎魔方内置的图形化的表单与流程设计界面，可以快速地将公司各类审批业务转换为可严格执行的电子流程。
+华炎办公是使用华炎魔方低代码平台开发的协同办公解决方案，除了满足传统OA协作与审批的需求，还可以通过低代码模式快速开发个性化管理模块。
 
 <a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="http://oss.steedos.com/videos/case/%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E8%AF%B7%E5%81%87%E6%B5%81%E7%A8%8B.mp4" target="_blank">
 视频演示
@@ -64,6 +64,6 @@ import Section from '@site/src/components/Section';
 
 #### 什么是华炎办公？
 
-华炎办公是使用华炎魔方开发的协同办公解决方案，基于华炎魔方内置的图形化的表单与流程设计界面，可以快速地将公司各类审批业务转换为可严格执行的电子流程。
+华炎办公是使用华炎魔方低代码平台开发的协同办公解决方案，除了满足传统OA协作与审批的需求，还可以通过低代码模式快速开发个性化管理模块。
 
 </Section>
