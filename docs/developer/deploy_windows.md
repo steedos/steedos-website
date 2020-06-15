@@ -8,17 +8,11 @@ title: Windows 部署
 
 ## 搭建运行环境
 
-需要安装 Github Desktop、node-v12.16.3、mongodb-v4.2、Robo 3T、Visual Studio Code
+需要安装 [Github Desktop](https://desktop.github.com/)、[node-v12.16.3](https://nodejs.org/en/)、[mongodb-v4.2](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)、[Robo 3T](https://robomongo.org/)、[Visual Studio Code](https://code.visualstudio.com/)
 
 ### 安装 Github Desktop
 
 安装[Github 桌面客户端](https://desktop.github.com/)
-
-访问项目主页。例如：https://github.com/steedos/steedos-project-oa 。
-
-> 对于华炎提供的项目模版，如需个性化定制，请在项目主页右上角点[Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)，然后将Fork到个人账户下的项目克隆到本地，以便提交修改。
-
-![clone项目](/assets/windows/clone项目.png)
 
 ### 安装 node-v12.16.3
 
@@ -43,6 +37,31 @@ yarn config set registry https://registry.npm.taobao.org
 
 根据官方向导，安装最新的[mongodb4.2](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)，选择安装成 windows 服务
 
+### 使用集群模式启动数据库
+
+编辑配置文件，默认在 `C:\Program Files\MongoDB\Server\4.2\bin\mongod.cfg`:
+
+```bash
+# 找到replication部分，去掉#并添加一行配置
+replication:
+  replSetName: rsSteedos
+```
+
+保存后在系统服务中重启数据库服务，默认服务名称为 `MongoDB Server`。
+
+初始化数据库：
+
+```bash
+# 首先进入mongo控制台
+mongo
+# 执行初始化函数
+rs.initiate()
+# 查看配置
+rs.conf()
+# 查看集群状态，确保members里有一个primary，则表示配置成功
+rs.status()
+```
+
 ### 安装 Robo 3T
 
 安装 mongodb 数据库图形化管理工具[Robo 3T](https://robomongo.org/)
@@ -55,7 +74,13 @@ yarn config set registry https://registry.npm.taobao.org
 
 ### 启动数据库：
 
-数据库服务为 windows 服务，默认开机启动，可在 windows 系统服务中查看，默认服务名称为 MongoDB
+数据库服务为 windows 服务，默认开机启动，可在 windows 系统服务中查看，默认服务名称为 `MongoDB Server`
+
+### 克隆项目
+
+请访问 https://github.com/steedos/steedos-project-oa 先在项目主页右上角点 [Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) 项目，然后将已经 fork 到自己账号下的项目 clone 到本地，以便提交修改：
+
+![clone项目](/assets/windows/clone项目.png)
 
 ### 启动应用：
 
@@ -63,7 +88,7 @@ yarn config set registry https://registry.npm.taobao.org
 
 ![打开项目](/assets/windows/打开项目.png)
 
-在终端中安装依赖包：
+在 Visual Studio Code 的终端中安装依赖包：
 
 ```bash
 yarn install
@@ -77,4 +102,4 @@ yarn install
 yarn start
 ```
 
-> 在 Visual Studio Code 编辑器中打开项目文件夹按 F5 即可使用 debug 模式启动项目
+> 也可按 F5 即可使用 debug 模式启动项目
