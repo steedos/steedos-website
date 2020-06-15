@@ -86,10 +86,10 @@ PORT=5040
 ROOT_URL=https://cn.steedos.com/
 MONGO_OPLOG_URL=mongodb://127.0.0.1:27017/local
 MULTIPLE_INSTANCES_COLLECTION_NAME=workflow_instances
-ENV_CFS_STORE=local
-ENV_STORAGE_DIR=./storage
-ENV_WORKFLOW_URL=https://cn.steedos.com/
-ENV_CREATOR_URL=https://cn.steedos.com/
+STEEDOS_CFS_STORE=local
+STEEDOS_STORAGE_DIR=./storage
+STEEDOS_WORKFLOW_URL=https://cn.steedos.com/
+STEEDOS_CREATOR_URL=https://cn.steedos.com/
 ```
 
 使用[docker-compose](https://docs.docker.com/compose/install/)启动应用：
