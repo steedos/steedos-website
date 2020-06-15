@@ -2,13 +2,13 @@
 title: 集群部署
 ---
 
-本页面描述如何将[steedos-project-oa](https://github.com/steedos/steedos-project-oa)项目使用集群方式部署的过程。
+本教程以 [steedos-project-oa](https://github.com/steedos/steedos-project-oa) 为例，指导你如何在 centos 中使用集群方式部署项目。
 
 ## 服务器分配
 
 - 代理服务器：运行 nginx，用于代理转发请求给应用
 - 应用服务器：108，208 启动应用实例，用于处理业务逻辑
-- 数据库服务器：216，217，218，用于存贮数据
+- 数据库服务器：216，217，218，用于存储数据
 
 ## 代理服务 nginx
 
@@ -104,7 +104,7 @@ docker-compose up -d
 
 这里使用 192.168.0.216 服务器作为 Primary，217 作为 Secondary1，218 作为 Secondary2
 
-分别在数据句服务器上[安装](https://docs.mongodb.com/manual/installation/)好 mongodb 之后，进行初始化：
+分别在数据库服务器上[安装](https://docs.mongodb.com/manual/installation/)好 mongodb 之后，进行初始化：
 
 ```bash
 mongo yourdbname
@@ -123,7 +123,7 @@ db.createUser({user: "userUsername", pwd: "userPassword", roles: [ { role: " rea
 
 ## CentOS7 搭建 NTP 服务器
 
-由于代理、应用和数据库部署在不同的服务器的原因，为防止由于服务器时间不一致问题，故需要搭建 NTP 服务器统一各服务器时间
+由于代理、应用和数据库部署在不同的服务器的原因，为防止服务器时间不一致问题，需要搭建 NTP 服务器统一各服务器时间
 
 以服务器 63、21 为例，21 作为时间服务器，63 的时间将从 21 同步
 
@@ -178,7 +178,7 @@ firewall-cmd --permanent --add-port=123/udp
 systemctl enable ntpd
 ```
 
-### 63 安装 NTP 服务
+### 在 63 安装 NTP 服务
 
 安装 NTP 服务步骤与在 21 安装一样，只是配置需要调整：
 
