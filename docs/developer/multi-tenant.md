@@ -12,6 +12,55 @@ title: 多租户架构介绍
 
 华炎魔方就是基于 SaaS 架构采用共享数据库，共享数据架构，通过 TenantID 区分租户的方案实现，具有维护和购置成本低，允许数据库支持的租户数量多的优点。
 
+## 多租户数据分离
+
+华炎魔方 SaaS 版本可以把用户划分为不同的工作区（企业），每个工作区可以配置独立的组织机构和权限控制。业务人员录入的每一条业务数据都会自动加入 space 属性，用于标记所属的工作区，如：
+
+工作区表（spaces）结构：
+
+```yml
+  _id:
+    label: ID
+    type: text
+    required: true
+  name:
+    label: Name
+    type: text
+    defaultValue: ''
+    description: ''
+    inlineHelpText: ''
+    required: true
+    searchable: true
+    index: true
+  ... ...
+```
+
+组织架构表（organizations）结构：
+
+```yml
+  _id:
+    label: ID
+    type: text
+    required: true
+  name:
+    label: Name
+    type: text
+    defaultValue: ''
+    description: ''
+    inlineHelpText: ''
+    required: true
+    searchable: true
+    index: true
+  space: # 这个字段的值就是spaces._id的值，由系统内核维护
+    type: text
+    label: Space
+    reference_to: spaces
+    index: true
+    hidden: true
+    required: true
+  ... ...
+```
+
 ## 工作区（租户）
 
 工作区可以理解为系统分配给租户单独的数据存贮空间，工作区之间互不干扰，是华炎魔方的基本组成单位。
@@ -21,7 +70,7 @@ title: 多租户架构介绍
 - 用户可以编辑自己的信息，工作区管理员可以编辑工作区中的所有用户信息。
 - 管理员可以设置公司信息、定制业务对象和业务流程。
 
-## 创建工作区
+### 创建工作区
 
 如果用户没有 Steedos 账户，可以自主[注册](https://cn.steedos.com/)用户(users)账户。
 
@@ -40,7 +89,3 @@ title: 多租户架构介绍
 - 如果当前用户未登录
   - 如果你已有账户？[登录]，登录后自动加入此工作区
   - 显示用户注册界面，注册后自动加入此工作区
-
-## 多租户数据分离
-
-Steedos SAAS 版本可以把用户划分为不同的工作区（企业），每个工作区可以配置独立的组织机构和权限控制。业务人员录入的每一条业务数据都会自动加入 space 属性，用于标记所属的工作区。
