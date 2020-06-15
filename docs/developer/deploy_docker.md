@@ -2,7 +2,7 @@
 title: Docker 部署
 ---
 
-本页面描述如何将[steedos-project-oa](https://github.com/steedos/steedos-project-oa)项目编译成镜像发布至[docker hub](https://hub.docker.com/)并使用 docker-compose 启动的过程。
+本教程以 [steedos-project-oa](https://github.com/steedos/steedos-project-oa)为例，指导你如何将项目编译成镜像发布至[docker hub](https://hub.docker.com/)并使用 [docker-compose](https://docs.docker.com/compose/install/) 启动项目。
 
 ## 准备工作
 
@@ -16,11 +16,13 @@ title: Docker 部署
 docker login
 ```
 
+安装[docker-compose](https://docs.docker.com/compose/install/)
+
 ## 克隆项目
 
-访问项目主页。例如：https://github.com/steedos/steedos-project-oa 。
+请访问 https://github.com/steedos/steedos-project-oa 先在项目主页右上角点 [Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) 项目，然后将已经 fork 到自己账号下的项目 clone 到本地，以便提交修改：
 
-> 对于华炎提供的项目模版，如需个性化定制，请在项目主页右上角点[Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)，然后将Fork到个人账户下的项目克隆到本地，以便提交修改。
+![clone项目](/assets/windows/clone项目.png)
 
 ## 发布过程
 
@@ -58,34 +60,18 @@ docker push exampleUsername@steedos-project-oa:tagname
 
 ### 启动数据库服务
 
-进入`steedos-project-oa`项目目录下的 docker/mongo 目录启动数据库服务：
+使用 mongodb [官方镜像](https://hub.docker.com/_/mongo)启动数据库服务，例如：
 
 ```bash
-cd steedos-project-oa/docker/mongo
-docker-compose up -d
+docker run --name mongo -d mongo:4.2
 ```
-
-> mongodb 为[官方镜像](https://hub.docker.com/_/mongo)本项目支持 3.6 及以上版本，包括最新的 4.2 版本
 
 ### 启动应用服务
 
-安装[docker-compose](https://docs.docker.com/compose/install/)
-
-安装完成后，进入`steedos-project-oa`项目目录，配置好[.env.local](https://developer.steedos.com/developer/env)文件启动应用服务：
+进入`steedos-project-oa`项目目录，配置好[.env.local](https://developer.steedos.com/developer/env)文件启动应用服务：
 
 ```bash
 docker-compose up -d
 ```
 
 > 配置.env.local 的目的是服务于[steedos-config.yml](https://developer.steedos.com/developer/steedos_config)
-
-### 启动代理服务
-
-进入`steedos-project-oa`项目目录下的 docker/nginx 目录启动代理服务：
-
-```bash
-cd steedos-project-oa/docker/nginx
-docker-compose up -d
-```
-
-> 配置文件为 docker.conf
