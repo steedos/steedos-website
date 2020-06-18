@@ -29,7 +29,7 @@ proxy_buffers             8 512k;
 proxy_max_temp_file_size  1024m;
 
 upstream creatorws {
-    ip_hash;
+    hash $http_x_user_id;
     # 108
     server 192.168.0.108:5040;
     server 192.168.0.108:5041;
