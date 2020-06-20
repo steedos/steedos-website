@@ -169,13 +169,20 @@ list_views:
   all:
     label: 所有单位
     columns:
-      - name
+      - field: name
+        width: 100
+        wrap: true
       - priority
       - owner
       - modified
+    mobile_columns: 
+      - amount
+      - field: priority
     filter_fields:
       - priority
 ```
+- 在移动端会识别mobile_columns来显示对应的列，如果为空则取其columns
+- columns/mobile_columns可以配置为字段名，也可以配置为对象，配置为对象时columns支持`field,width,wrap`属性，mobile_columns暂时只支持`field`属性
 
 ### 权限组
 
@@ -198,9 +205,17 @@ permission_set:
 支持两种写法，字符串和对象，如：
 ```yaml
 relatedList:
-  - objectName: flow_positions # 对象名
+  - objectName: contracts # 对象名
     columns: # 显示的列
+      - field: name
+        width: 100
+        wrap: true
+      - amount
+      - capital_amount
+      - currency_type
+    mobile_columns: # 移动端显示的列
       - name
+      - field: amount
     # 此方法传入当前详细页面的记录数据
     filters: !!js/function | 
       function(parentRecord) {
@@ -214,6 +229,9 @@ relatedList:
   - tasks
   - payments
 ```
+- 在移动端会识别mobile_columns来显示对应的列，如果为空则取其columns
+- 当只在relatedList中指定对象名称时（比如上述示例中的tasks），则在移动端优先识别相关对象默认视图下对应的mobile_columns。
+- columns/mobile_columns可以配置为字段名，也可以配置为对象，配置为对象时columns支持`field,width,wrap`属性，mobile_columns暂时只支持`field`属性
 
 ## 标准对象
 
