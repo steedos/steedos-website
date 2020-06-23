@@ -1,5 +1,5 @@
 ---
-title: 部署华炎魔方
+title: 如何安装华炎魔方？
 sidebar_label: 概述
 ---
 

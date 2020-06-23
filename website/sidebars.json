@@ -44,9 +44,11 @@
       "label": "Github"
   }],
   "Steedos 开发文档": {
-    "开发教程": ["developer","developer/install","developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report","developer/guide_flow","developer/guide_sync","developer/guide_companies","developer/guide_nc"],
-    "配置文档": ["developer/steedos_config", "developer/datasource","developer/env", "developer/object", "developer/object_field", "developer/listview", "developer/object_permission", "developer/app", "developer/reports", "developer/object_filter_conditions", "developer/object_field_formula", "developer/standard_objects", "developer/object_workflow", "developer/object_action", "developer/object_form", "developer/report_jsreport"],
-    "ObjectQL": ["developer/objectql", "developer/objectql_connection", "developer/objectql_object", "developer/object_filter", "developer/object_trigger"],
+    "快速向导": ["developer/guide","developer/install", "developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report","developer/guide_flow","developer/guide_sync","developer/guide_companies","developer/guide_nc"],
+    "业务对象": ["developer/datasource", "developer/object", "developer/object_field", "developer/listview", "developer/object_permission", "developer/object_action", "developer/object_form", "developer/app" ],
+    "业务流程": ["developer/object_workflow"],
+    "业务统计": ["developer/reports", "developer/report_jsreport"],
+    "高级开发": ["developer/steedos_config", "developer/env", "developer/objectql_connection", "developer/objectql_object", "developer/object_filter", "developer/object_trigger", "developer/object_filter_conditions", "developer/object_field_formula", "developer/standard_objects"],
     "插件": ["plugins/index",  "plugins/plugin_webapp", "plugins/plugin_webapp_functions"]
   },
   "Steedos 部署文档": {
