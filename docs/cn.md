@@ -30,7 +30,9 @@ https://www-steedos-com.oss-cn-beijing.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%A
 下载产品资料
 </a>
 
-![界面展示](/assets/mac_ipad_iphone_list.png)
+<br/><br/>
+
+![界面展示](/assets/platform/overview/overview.png)
 
 import Section from '@site/src/components/Section';
 
