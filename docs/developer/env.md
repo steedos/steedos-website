@@ -25,7 +25,7 @@ ROOT_URL=http://127.0.0.1:5000
 
 ## 自定义环境变量
 
-可以在.env.local / .env 中，按需配置自定义的环境变量。 自定义的环境变量主要服务于[steedos-config.yml](https://developer.steedos.com/developer/steedos_config) 。
+可以在.env.local / .env 中，按需配置自定义的环境变量。 自定义的环境变量主要服务于[steedos-config.yml](https://www.steedos.com/developer/steedos_config) 。
 
 例如，在.env.local中添加自定义的环境变量
 

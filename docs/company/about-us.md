@@ -11,7 +11,7 @@ background: /img/banner/company.png
 了解我们的产品
 </a>
 
-<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/developer/" >
+<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/developer/guide/" >
 开发教程
 </a>
 

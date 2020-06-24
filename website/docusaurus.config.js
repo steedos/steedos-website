@@ -134,11 +134,11 @@ module.exports = {
           // ]
         },
         {to: '/company/about-us/', label: '关于我们', position: 'left',
-          items: [
-            {to: '/company/about-us/', label: '关于华炎'},
-            {to: '/company/customers/', label: '成功案例'},
-            {to: '/company/contact-us/', label: '联系我们'},
-          ]
+          // items: [
+          //   {to: '/company/about-us/', label: '关于华炎'},
+          //   {to: '/company/customers/', label: '成功案例'},
+          //   {to: '/company/contact-us/', label: '联系我们'},
+          // ]
         },
         {to: '/us/', label: 'English', position: 'right'},
         {label: '登录', position: 'right', href: 'https://cn.steedos.com'},

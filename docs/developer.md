@@ -49,7 +49,7 @@ hide_table_of_contents: true
   </div>
 
   <div class="slds-p-around_small slds-size_1-of-1 slds-large-size_1-of-2">
-    <a href="/help/" class="slds-card slds-box slds-box_link slds-media">
+    <a href="/help/admin/" class="slds-card slds-box slds-box_link slds-media">
         <div class="slds-media__figure slds-media__figure_fixed-width slds-align_absolute-center">
             <div class="slds-welcome-mat__tile-figure">
                 <div class="slds-welcome-mat__tile-icon-container">

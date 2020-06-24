@@ -1,5 +1,5 @@
 ---
-title: 使用帮助
+title: 系统管理员手册
 sidebar_label: 概览
 hide_table_of_contents: true
 background: /img/banner/default.png
@@ -7,9 +7,8 @@ background: /img/banner/default.png
 
 浏览华炎帮助文档，点击右上角可以搜索。
 
-#### 华炎办公
+#### 公司设置
 
-- [如何下载客户端？](/help/download)
 - [如何管理人员？](/help/organization)
 
 #### 流程审批
@@ -25,4 +24,4 @@ background: /img/banner/default.png
 #### 开发人员
 
 - <a href="/platform/" target="_blank">华炎魔方简介</a>
-- <a href="/developer/guide/" target="_blank">如何使用华炎魔方，开发自定义应用？</a>
+- <a href="/developer/" target="_blank">如何使用华炎魔方，开发自定义应用？</a>

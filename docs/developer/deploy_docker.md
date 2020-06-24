@@ -68,10 +68,10 @@ docker run --name mongo -d mongo:4.2
 
 ### 启动应用服务
 
-进入`steedos-project-oa`项目目录，配置好[.env.local](https://developer.steedos.com/developer/env)文件启动应用服务：
+进入`steedos-project-oa`项目目录，配置好[.env.local](https://www.steedos.com/developer/env)文件启动应用服务：
 
 ```bash
 docker-compose up -d
 ```
 
-> 配置.env.local 的目的是服务于[steedos-config.yml](https://developer.steedos.com/developer/steedos_config)
+> 配置.env.local 的目的是服务于[steedos-config.yml](https://www.steedos.com/developer/steedos_config)
