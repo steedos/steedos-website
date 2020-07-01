@@ -8,107 +8,253 @@ Steedos 的神奇之处正在于此，你只需要修改业务对象配置文件
 
 如果你不需要相关的业务对象，直接删除即可。
 
-## 创建业务对象：业务伙伴
+## 创建业务对象：合同
 
-在src项目源码中创建一个名为accounts.object.yml文件，开头配置以下内容：
+在src项目源码中创建一个名为contracts.object.yml文件，开头配置以下内容：
 
 ```bash
-name: accounts
-label: 业务伙伴
-icon: accounts
+name: contracts
+label: 合同
+icon: contract
 ```
-## 添加字段：名称、电话、邮箱...
+## 添加字段：合同名称、合同编号、合同金额...
 
-在accounts.object.yml中，继续配置相关字段:
+在contracts.object.yml中，继续配置相关字段:
 
 ```bash
 fields:
   name:
-    label: 名称
+    label: 合同名称
     type: text
-    defaultValue: ''
-    description: ''
-    inlineHelpText: ''
+    required: true
+    searchable: true
+    index: true
+    is_wide: true
+  "no":
+    type: autonumber
+    formula: "{YYYY}-{000} "
+    label: 合同编号
+    sortable: true
+    filterable: true
+    omit: true
+    readonly: true
+  othercompany:
+    type: text
+    label: 业务伙伴
     searchable: true
     required: true
-    sortable: true
-  credit_code:
-    type: text
-    label: 统一社会信用代码
-    inlineHelpText: '系统按照此字段校验重复，避免重复录入单位信息。'
-    required: true
-  priority:
-    label: 优先级
+  contract_type:
     type: select
-    sortable: true
+    label: 分类
+    required: true
     options:
-      - label: 高
-        value: high
-      - label: 中
-        value: normal
-      - label: 低
-        value: low
+      - label: 产品销售
+        value: 产品销售
+      - label: 开发服务
+        value: 开发服务
+      - label: 项目采购
+        value: 项目采购
+      - label: 其他采购
+        value: 其他采购
+  create_date:
+    label: 登记日期
+    type: date
+    sortable: true
     filterable: true
-  registered_capital:
-    type: currency
-    label: 注册资金
+    defaultValue: "{now}"
+  bop:
+    type: select
+    label: 收支类别
+    options:
+      - label: 付款合同
+        value: 付款合同
+      - label: 收款合同
+        value: 收款合同
+    allowedValues:
+      - 付款合同
+      - 收款合同
+    required: true
+    defaultValue: 收款合同
+  subject:
+    type: textarea
+    label: 合同主要内容
+    is_wide: true
+  amount:
+    label: 合同金额
+    type: number
     scale: 2
-  website:
-    type: url
-    label: 网址
-  phone:
-    type: text
-    label: 电话
-    defaultValue: ''
-  email:
-    type: text
-    label: 邮箱
-  description:
+    required: true
+    sortable: true
+  signed_date:
+    label: 签订日期
+    type: date
+    sortable: true
+    filterable: true
+  start_date:
+    label: 开始日期
+    type: date
+    sortable: true
+    filterable: true
+  end_date:
+    label: 结束日期
+    type: date
+    sortable: true
+    filterable: true
+  remark:
     label: 备注
     type: textarea
     is_wide: true
-    name: description
+  contract_state:
+    type: select
+    label: 合同状态
+    searchable: true
+    options:
+      - label: 审批中
+        value: pending
+      - label: 已核准
+        value: approved
+      - label: 已驳回
+        value: rejected
+      - label: 已取消
+        value: terminated
+      - label: 已签订
+        value: signed
+      - label: 已归档
+        value: archived
+      - label: 已作废
+        value: droped
+      - label: 已完成
+        value: completed
+  contract_fulfillment_state:
+    type: select
+    label: 合同履行状态
+    searchable: true
+    options:
+      - label: 履行中
+        value: 履行中
+      - label: 履行完
+        value: 履行完
+      - label: 已取消
+        value: 已取消
+  paid_amount:
+    label: 已支付总金额
+    type: number
+    scale: 2
+    sortable: true
+    defaultValue: 0
+  unpaid_amount:
+    label: 未支付付款总金额
+    type: number
+    scale: 2
+    sortable: true
+    defaultValue: 0
+  received_amount:
+    label: 已收款总金额
+    type: number
+    scale: 2
+    sortable: true
+    defaultValue: 0
+  unreceived_amount:
+    label: 未收款总金额
+    type: number
+    scale: 2
+    sortable: true
+    defaultValue: 0
  ```
 
-## 设置视图：所有业务伙伴
+## 设置视图：所有合同
 
-在accounts.object.yml中，继续配置业务对象的视图:
+在contracts.object.yml中，继续配置业务对象的视图:
 
 ```bash
 list_views:
   all:
-    label: 所有业务伙伴
+    label: 所有合同
     columns:
-      - name
-      - priority
-      - owner
-      - modified
+      - field: create_date
+        width: 120
+        wrap: true
+      - field: name
+        width: 280
+        wrap: true
+      - field: othercompany
+        width: 200
+      - field: amount
+        width: 120
+      - field: contract_type
+        width: 120
+      - field: bop
+        width: 120
+      - field: start_date
+        width: 120
+      - field: end_date
+        width: 120
+      - field: owner
+        width: 120
     filter_scope: space
+    filter_fields:
+      - contract_type
+      - signed_date
+      - othercompany
+      - contract_state
+    sort:
+      - - create_date
+        - desc
 ```
 
-## 定义权限：所有人都能增删改
+## 新增视图：我的合同
 
-在accounts.object.yml中，继续配置业务对象的权限集:
+```bash
+mine:
+    label: 我的合同
+    filter_scope: mine
+    filter_fields:
+      - contract_type
+      - signed_date
+      - othercompany
+      - contract_state
+    sort:
+      - - create_date
+        - desc
+```
+
+## 定义权限：合同管理员都能增删改
+
+在contracts.object.yml中，继续配置业务对象的权限集:
 
 ```bash
 permission_set:
 	user:
-		allowCreate: true
-		allowDelete: true
-		allowEdit: true
-		allowRead: true
-		modifyAllRecords: true
-		viewAllRecords: true
+    allowCreate: true
+    allowDelete: true
+    allowEdit: true
+    allowRead: true
+    modifyAllRecords: false
+    viewAllRecords: false 
+  contract_manager:
+    allowCreate: true
+    allowEdit: true
+    allowDelete: true
+    allowRead: true
+    modifyAllRecords: true
+    viewAllRecords: true
+  admin:
+    allowCreate: true
+    allowDelete: true
+    allowEdit: true
+    allowRead: true
+    modifyAllRecords: true
+    viewAllRecords: true
 ```
 
-## 修改应用：增加业务伙伴
+## 修改应用：增加合同
 
-修改src下的oa.app.yml，增加：业务伙伴 accounts
+修改src下的oa.app.yml，增加：合同 contracts
 
 ```bash
 objects: 
+  - contracts 
   - instances
-  - accounts
   - cms_posts
   - announcements
   - space_users
@@ -118,7 +264,7 @@ objects:
 
 ## 运行并查看效果
 
-![业务伙伴](/assets/guide_3.png)
+![合同](/assets/contract/contract.png)
 
 ## 教程源码及下载运行
 
