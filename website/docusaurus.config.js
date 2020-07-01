@@ -125,7 +125,7 @@ module.exports = {
         //     {to: 'solutions/knowledge/', label: '知识管理', position: 'left', activeBasePath: 'solutions/knowledge/'},
         //   ]
         // },
-        {to: 'developer/', label: '技术支持', position: 'left',
+        {to: 'developer/', label: '培训教程', position: 'left',
           // items: [
           //   {to: 'developer/deploy/', label: '安装部署', position: 'left'},
           //   {to: 'help/', label: '使用帮助', position: 'left'},
