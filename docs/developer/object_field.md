@@ -324,25 +324,25 @@ tags:
 #### 完整格式
 
 ```yaml
-  options:
-    - label: 高
-      value: high
-    - label: 中
-      value: normal
-    - label: 低
-      value: low
+options:
+  - label: High
+    value: high
+    color: "#bad6f2"
+  - label: Normal
+    value: normal
+    color: "#aaaaa"
+  - label: Low
+    value: low
 ```
+> color表示选项选中时的背景色，不是必须的。
 
-#### 简易格式 (区分显示值和储存值)
+#### 简易格式 (区分显示值、储存值和背景色)
 
 ```yaml
-  options: 高:high,中:normal,低:low
-```
-
-#### 简易格式 (不区分显示值和储存值)
-
-```yaml
-  options: high,normal,low
+options: 
+  - 高:high:#bad6f2
+  - 中:normal:#aaaaa
+  - 低:low
 ```
 
 ### 可选项脚本 optionsFunction
