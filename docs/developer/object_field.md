@@ -327,10 +327,10 @@ tags:
 options:
   - label: High
     value: high
-    color: "#bad6f2"
+    color: bad6f2
   - label: Normal
     value: normal
-    color: "#aaaaa"
+    color: aaa
   - label: Low
     value: low
 ```
@@ -340,8 +340,8 @@ options:
 
 ```yaml
 options: 
-  - 高:high:#bad6f2
-  - 中:normal:#aaaaa
+  - 高:high:bad6f2
+  - 中:normal:aaa
   - 低:low
 ```
 
