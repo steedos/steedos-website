@@ -8,7 +8,7 @@ title: 数据源
 
 开发人员可以在项目配置文件（steedos-config.yml）中定义数据源。
 
-以下配置文件连接了两个数据源。
+以下配置文件连接了多个数据源。
 
 ```yaml
 datasources:
@@ -20,6 +20,16 @@ datasources:
     connection:
       driver: postgres
       url: postgresql://user:password@192.168.0.21:5432/mattermost
+  test:
+    connection:
+      driver: mysql
+      host: localhost
+      port: 3306
+      username: test
+      password: test
+      database: test
+    objectFiles:
+      - "./test/**" 
 ```
 
 ## 使用代码定义数据源
