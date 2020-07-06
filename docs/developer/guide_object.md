@@ -2,8 +2,6 @@
 title: 配置业务对象
 ---
 
-模板项目内置了几个 [业务对象](object.md) 描述文件，以 .object.yml 结尾。
-
 Steedos 的神奇之处正在于此，你只需要修改业务对象配置文件并重新启动服务，整个系统的功能都会自动随之变化。
 
 如果你不需要相关的业务对象，直接删除即可。
@@ -43,19 +41,6 @@ fields:
     label: 业务伙伴
     searchable: true
     required: true
-  contract_type:
-    type: select
-    label: 分类
-    required: true
-    options:
-      - label: 产品销售
-        value: 产品销售
-      - label: 开发服务
-        value: 开发服务
-      - label: 项目采购
-        value: 项目采购
-      - label: 其他采购
-        value: 其他采购
   create_date:
     label: 登记日期
     type: date
@@ -85,25 +70,6 @@ fields:
     scale: 2
     required: true
     sortable: true
-  signed_date:
-    label: 签订日期
-    type: date
-    sortable: true
-    filterable: true
-  start_date:
-    label: 开始日期
-    type: date
-    sortable: true
-    filterable: true
-  end_date:
-    label: 结束日期
-    type: date
-    sortable: true
-    filterable: true
-  remark:
-    label: 备注
-    type: textarea
-    is_wide: true
   contract_state:
     type: select
     label: 合同状态
@@ -125,41 +91,6 @@ fields:
         value: droped
       - label: 已完成
         value: completed
-  contract_fulfillment_state:
-    type: select
-    label: 合同履行状态
-    searchable: true
-    options:
-      - label: 履行中
-        value: 履行中
-      - label: 履行完
-        value: 履行完
-      - label: 已取消
-        value: 已取消
-  paid_amount:
-    label: 已支付总金额
-    type: number
-    scale: 2
-    sortable: true
-    defaultValue: 0
-  unpaid_amount:
-    label: 未支付付款总金额
-    type: number
-    scale: 2
-    sortable: true
-    defaultValue: 0
-  received_amount:
-    label: 已收款总金额
-    type: number
-    scale: 2
-    sortable: true
-    defaultValue: 0
-  unreceived_amount:
-    label: 未收款总金额
-    type: number
-    scale: 2
-    sortable: true
-    defaultValue: 0
  ```
 
 ## 设置视图：所有合同
@@ -218,13 +149,13 @@ mine:
         - desc
 ```
 
-## 定义权限：合同管理员都能增删改
+## 定义权限
 
-在contracts.object.yml中，继续配置业务对象的权限集:
+在contracts.object.yml中，继续配置业务对象的权限集:普通用户只能查看自己的合同，合同管理员和系统管理员可以查看所有合同
 
 ```bash
 permission_set:
-	user:
+  user:
     allowCreate: true
     allowDelete: true
     allowEdit: true
