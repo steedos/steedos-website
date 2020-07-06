@@ -10,7 +10,8 @@ title: 业务对象关联
 name: contract_payments
 label: 付款计划
 icon: orders
-enable_follow: true
+enable_files: true
+enable_search: true
 ```
 
 ## 添加字段
@@ -53,9 +54,24 @@ fields:
     filterable: true
 ```
 
-## 配置视图：所有付款计划、最近查看
+## 业务对象关联字段
 
-在contract_payments.object.yml中，继续配置此对象的2个视图:
+配置字段contract的type类型为master_detail，reference_to: contracts即关联到业务对象contracts，并设置为必填项required: true。
+
+``` bash
+contract:
+    label: 合同
+    type: master_detail
+    reference_to: contracts
+    required: true
+    sortable: true
+    name: contract
+    filterable: true
+```
+
+## 配置默认视图和权限
+
+在contract_payments.object.yml中，继续配置此对象的默认视图以及权限:
 
 ``` bash
 list_views:
@@ -73,14 +89,6 @@ list_views:
   recent:
     label: 最近查看
     filter_scope: space
-```
-
-## 定义权限
-
-在contracts.object.yml中，继续配置此对象的权限集:普通用户只能查看自己的合同，合同管理员和系统管理员可以查看所有的合同
-
-``` bash
-
 permission_set:
   user:
     allowCreate: true
