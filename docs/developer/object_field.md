@@ -406,7 +406,7 @@ account_id:
   type:"lookup"
   label:"单位"
   reference_to:"accounts"
-  filters: [["priority", "=", "normal"]]
+  filters: [["priority", "eq", "normal"]]
 ```
 
 ![lookup类型字段](/assets/field_lookup.png#bordered)
@@ -417,7 +417,11 @@ account_id:
 
 ### 过滤器(filters)
 
-在reference_to对象中筛选可选项时，指定[过滤条件](object_filter.md)，限定选择范围。
+在reference_to对象中筛选可选项时，指定过滤条件，限定选择范围。
+
+- 目前只支持`[["priority", "eq", "normal"]]`这种简单格式的过滤功能。
+- 多个条件AND查询时，过滤条件可以像这样定义：`[["priority", "eq", "normal"], ["state", "eq", "active"]]`。
+- 后续会整合为支持通用[过滤条件](object_filter.md)功能。
 
 ### 多选 multiple
 
