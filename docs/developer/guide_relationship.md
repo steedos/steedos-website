@@ -149,7 +149,9 @@ mobile_objects:
 
 ## 重启服务运行并查看效果
 
-![合同应用](/assets/guide_5.png)
+![合同-付款计划](/assets/guide_5.png)
+
+![合同-付款计划](/assets/guide_6.png)
 
 ## 教程源码及下载运行
 
