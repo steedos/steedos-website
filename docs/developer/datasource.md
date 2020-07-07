@@ -8,7 +8,7 @@ title: 数据源
 
 开发人员可以在项目配置文件（steedos-config.yml）中定义数据源。
 
-以下配置文件连接了多个数据源。
+mongodb是必选的默认数据源，不可删除，但可以配置多个额外的第三方数据源。
 
 ```yaml
 datasources:
@@ -16,20 +16,39 @@ datasources:
     connection:
       driver: mongo
       url: mongodb://192.168.0.21/steedos
+  drivertest:
+    connection:
+      driver: mysql
+      url: mysql://admin:hotoainc.@192.168.0.198:3306/driver-test
+  forecast:
+    connection:
+      driver: mssql
+      host: 192.168.0.190
+      port: 1433
+      username: sa
+      password: hotoainc.
+      database: forecast
+    objectFiles:
+      - "./forecast/**" 
+```
+
+## 加载业务对象
+
+在定义数据源时，通过配置 objectFiles 属性，可以加载[业务对象](./object.md)到数据源中。
+
+```yaml
+datasources:
+  default:
+    connection:
+      url: mongodb://192.168.0.21/steedos
+    objectFiles:
+      - "./src/default/"
   mattermost:
     connection:
       driver: postgres
       url: postgresql://user:password@192.168.0.21:5432/mattermost
-  test:
-    connection:
-      driver: mysql
-      host: localhost
-      port: 3306
-      username: test
-      password: test
-      database: test
     objectFiles:
-      - "./test/**" 
+      - "./src/mattermost/"
 ```
 
 ## 使用代码定义数据源
@@ -117,25 +136,6 @@ datasources:
   default:
     connection:
       url: mongodb://user:password@192.168.0.21/steedos?replicaSet=steedos
-```
-
-## 加载业务对象
-
-在定义数据源时，通过配置 objectFiles 属性，可以加载[业务对象](./object.md)到数据源中。
-
-```yaml
-datasources:
-  default:
-    connection:
-      url: mongodb://192.168.0.21/steedos
-    objectFiles:
-      - "./src/default/"
-  mattermost:
-    connection:
-      driver: postgres
-      url: postgresql://user:password@192.168.0.21:5432/mattermost
-    objectFiles:
-      - "./src/mattermost/"
 ```
 
 ## 定义空库初始化建表的语言
