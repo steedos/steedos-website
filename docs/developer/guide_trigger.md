@@ -30,7 +30,7 @@ fields:
 
 ## 创建触发器
 
-在src项目源码中创建一个名为contracts.trigger.js文件，配置以下2个触发器：
+在src项目源码的contract目录中创建一个名为contracts.trigger.js文件，配置以下2个触发器：
 
 ```javascript
 module.exports = {
