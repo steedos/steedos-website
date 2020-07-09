@@ -27,7 +27,7 @@ your browser does not support the video tag
 华炎办公是使用华炎魔方开发的SaaS版本办公平台，内置审批、公告、知识、任务、日程等常用办公管理功能，并嵌入了合同管理、CRM等标准模块。
 
 - 注册华炎云账户，在线试用[华炎办公](https://cn.steedos.com/)
-- 下载并运行[项目源码](https://github.com/steedos/steedos-project-saas)。
+- 下载并运行[项目源码](https://github.com/steedos/steedos-project-oa)。
 - 查看[系统帮助](/help/)
 
 ## 专属试用环境
