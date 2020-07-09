@@ -1,5 +1,5 @@
 ---
-title: 华炎魔方：低代码开发平台,快速开发工具,企业PaaS
+title: 华炎魔方官网
 sidebar_label: 概述
 hide_title: true
 hide_table_of_contents: true

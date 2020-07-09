@@ -160,10 +160,6 @@ html[data-theme='dark'] .main-wrapper {
   }
 }
 
-.navbar .navbar__brand {
-  margin-right: 2rem;
-}
-
 .dropdown .dropdown__menu {
   left: 0px;
 }

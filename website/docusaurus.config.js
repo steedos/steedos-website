@@ -106,7 +106,7 @@ module.exports = {
     image: 'img/icon_blue.png',
     navbar: {
       hideOnScroll: false,
-      title: '华炎',
+      title: '',
       logo: {
         alt: '华炎魔方',
         src: 'img/icon_blue.png',
