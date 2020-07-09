@@ -31,16 +31,29 @@ keywords:
 </a>
 
 <a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="
-https://www-steedos-com.oss-cn-beijing.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.pdf" target="_blank">
-下载产品资料
+https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.mp4" target="_blank">
+查看视频演示
 </a>
 
 <br/>
 <br/>
 
-![界面展示](/assets/platform/overview/overview.png)
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.mp4" controls="controls" poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.jpg" width="100%" loop="loop" playsinline="playsinline">
+your browser does not support the video tag
+</video>
+
 
 import Section from '@site/src/components/Section';
+
+# 模型驱动业务，零代码创建自定义业务系统
+
+即使是不懂编程的业务人员，也能根据自身需求配置出功能强大的应用程序，例如合同管理、资产管理、采购管理、客户管理、供应商管理、生产管理、仓库管理等等。应用程序支持电脑、平板、手机三种模式运行，除了实现基本的数据管理，更能结合华炎魔方强大的权限引擎，精确控制每一个岗位能查看的数据，以及能执行的操作。
+
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.mp4" controls="controls" poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.jpg" width="100%" loop="loop" playsinline="playsinline">
+your browser does not support the video tag
+</video>
+
+<Section background="#f4f4f4" padding="50">
 
 # 只编写核心业务逻辑，减少代码量90%
 
@@ -48,21 +61,11 @@ import Section from '@site/src/components/Section';
 
 配置文件和与业务逻辑相关的触发脚本，就构成了一个项目的核心源代码，简单易懂，易于维护。对于大型项目，源码可以轻松保存到Github，可以随时追踪到开发人员的修改历史。
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/creator_object.mp4" controls="controls" poster="/assets/creator_object.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/creator_object.mp4" controls="controls" poster="/assets/creator_object.png" width="100%" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
 </video>
 
 <p></p>
-
-<Section background="#f4f4f4" padding="50">
-
-# 自动生成功能强大的数据中台
-
-对数据进行集中数字化管理，包括主表的基本信息，以及附件、任务、审批单及其他自定义子表等详细信息。可以通过授权，来限定不同层级的人员能查看、维护全部或是部分内容。也可以通过关键字，来模糊检索数据记录。
-
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts_operation.mp4" controls="controls" poster="/assets/contract_list.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
-your browser does not support the video tag
-</video>
 
 </Section>
 
@@ -72,7 +75,7 @@ your browser does not support the video tag
 
 在报表顶部用图形化方式显示统计数据，可以显示为柱状图、折线图、饼图。设置时，还可以对特定的字段进行计数、小计、合计等统计处理。通过设定报表的查询条件，可以将统计范围缩小，提高报表的运行速度。例如可以设定只统计某个时间段的数据。平台会自动根据后台配置的用户权限，只对用户权限范围内的数据进行汇总统计。
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts_report.mp4" controls="controls" poster="/assets/contract_chart.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts_report.mp4" controls="controls" poster="/assets/contract_chart.png" width="100%" muted="muted" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
 </video>
 
@@ -88,7 +91,7 @@ your browser does not support the video tag
 
 华炎魔方的流程审批引擎十分强劲，可以将审批中的流程表单及正文附件实时同步为业务对象记录，实现业务数据的统一管理。
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_design.mp4" controls="controls" poster="/assets/workflow_design.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_design.mp4" controls="controls" poster="/assets/workflow_design.png" width="100%"  muted="muted" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
 </video>
 
@@ -98,7 +101,7 @@ your browser does not support the video tag
 
 同时，针对苹果和安卓手机用户，自动生成在小屏幕设备上易于查看与操作的手机版界面，用户即使不在办公室，也能随时登录业务系统，进行业务操作。
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_mobile.mov" controls="controls" poster="/assets/workflow_mobile.png" width="40%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_mobile.mov" controls="controls" poster="/assets/workflow_mobile.png" width="40%" muted="muted" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
 </video>
 

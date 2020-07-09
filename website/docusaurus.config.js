@@ -114,17 +114,17 @@ module.exports = {
       },
       links: [
         {to: 'platform/', label: '华炎魔方', position: 'left', activeBasePath: '/platform/'},
-        {to: 'oa/', label: '华炎办公', position: 'left', activeBasePath: '/oa/'},
 
-        // {to: '', label: '解决方案', position: 'left',
-        //   items: [
-        //     // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
-        //     {to: 'products/contract/', label:'合同管理',position: 'left', activeBasePath: 'solutions/group/'},
-        //     {to: 'solutions/group/', label:'集团管控',position: 'left', activeBasePath: 'solutions/group/'},
-        //     {to: 'solutions/cost/', label: '费控管理', position: 'left', activeBasePath: 'solutions/cost/'},
-        //     {to: 'solutions/knowledge/', label: '知识管理', position: 'left', activeBasePath: 'solutions/knowledge/'},
-        //   ]
-        // },
+        {to: '', label: '应用案例', position: 'left',
+          items: [
+            // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
+            {to: 'oa/', label: '华炎办公', position: 'left', activeBasePath: '/oa/'},
+            {to: 'products/contract/', label:'合同管理',position: 'left', activeBasePath: 'solutions/group/'},
+            {to: 'solutions/group/', label:'集团管控',position: 'left', activeBasePath: 'solutions/group/'},
+            {to: 'solutions/cost/', label: '费控管理', position: 'left', activeBasePath: 'solutions/cost/'},
+            {to: 'solutions/knowledge/', label: '知识管理', position: 'left', activeBasePath: 'solutions/knowledge/'},
+          ]
+        },
         {to: 'developer/', label: '培训教程', position: 'left',
           // items: [
           //   {to: 'developer/deploy/', label: '安装部署', position: 'left'},
