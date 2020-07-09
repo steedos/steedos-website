@@ -10,7 +10,7 @@ background: /img/banner/service-overview-lg.png
 
 - <a href="/platform/" target="_blank">华炎魔方简介</a>
 - <a href="/developer/" target="_blank">如何使用华炎魔方，开发自定义应用？</a>
-- <a href="https://github.com/steedos/steedos-project-saas" target="_blank">项目源码</a>
+- <a href="https://github.com/steedos/steedos-project-oa" target="_blank">项目源码</a>
 
 ## 华炎办公客户端
 
