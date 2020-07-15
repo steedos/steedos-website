@@ -330,7 +330,7 @@ options:
     color: bad6f2
   - label: Normal
     value: normal
-    color: aaa
+    color: aaaaaa
   - label: Low
     value: low
 ```
@@ -341,7 +341,7 @@ options:
 ```yaml
 options: 
   - 高:high:bad6f2
-  - 中:normal:aaa
+  - 中:normal:aaaaaa
   - 低:low
 ```
 
