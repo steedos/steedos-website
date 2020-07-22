@@ -21,7 +21,7 @@ hide_table_of_contents: true
         </div>
         <div class="slds-media__body">
             <div class="slds-welcome-mat__tile-body">
-                <h3 class="slds-welcome-mat__tile-title">华炎魔方技术白皮书</h3>
+                <h3 class="slds-welcome-mat__tile-title">什么是华炎魔方？</h3>
                 <p class="slds-welcome-mat__tile-description">华炎魔方技术架构、零代码开发、低代码开发解决方案简介。</p>
             </div>
         </div>

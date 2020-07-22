@@ -26,13 +26,13 @@ keywords:
 
 作为一款开放的企业平台即服务 (PaaS) 产品，华炎魔方将开源技术和商业类组件结合在同一平台上，从而使开发人员能够利用各种各样的内置功能，轻松便捷地创建企业级应用程序。
 
-<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/developer/guide/" >
-免费教程
+<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="
+https://www-steedos-com.oss-cn-beijing.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.pdf" target="_blank">
+下载产品文档
 </a>
 
-<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="
-https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.mp4" target="_blank">
-查看视频演示
+<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/developer/guide/" >
+查看开发教程
 </a>
 
 <br/>
