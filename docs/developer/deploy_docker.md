@@ -41,7 +41,7 @@ cd steedos-project-oa
 编译镜像：
 
 ```bash
-docker build -t exampleUsername@steedos-project-oa:tagname
+docker build -t exampleUsername/steedos-project-oa:tagname -f ./Dockerfile . --no-cache
 ```
 
 > tagname 可以是 1.0、2.0 等自定义可明确表示版本的字符，build 命令[文档](https://docs.docker.com/engine/reference/commandline/build/)
@@ -49,29 +49,23 @@ docker build -t exampleUsername@steedos-project-oa:tagname
 将镜像推送至 docker hub：
 
 ```bash
-docker push exampleUsername@steedos-project-oa:tagname
+docker push exampleUsername/steedos-project-oa:tagname
 ```
 
 推送完成之后可在[docker hub](https://hub.docker.com/)页面看到镜像
 
-> 可使用`docker pull exampleUsername@steedos-project-oa:tagname`拉取镜像到本地
+> 可使用`docker pull exampleUsername/steedos-project-oa:tagname`拉取镜像到本地
 
-## 使用 docker-compose 启动服务
+## 使用 Docker Compose 启动服务
 
-### 启动数据库服务
+进入`steedos-project-oa`项目目录编辑`docker-compose.yml`文件:
 
-使用 mongodb [官方镜像](https://hub.docker.com/_/mongo)启动数据库服务，例如：
+- 编辑 environment 中的 ROOT_URL 以匹配您的域名或 IP 地址
 
-```bash
-docker run --name mongo -d mongo:4.2
-```
-
-### 启动应用服务
-
-进入`steedos-project-oa`项目目录，配置好[.env.local](https://www.steedos.com/developer/env)文件启动应用服务：
+启动服务：
 
 ```bash
 docker-compose up -d
 ```
 
-> 配置.env.local 的目的是服务于[steedos-config.yml](https://www.steedos.com/developer/steedos_config)
+> 配置 environment 的目的是服务于[steedos-config.yml](https://www.steedos.com/developer/steedos_config)
