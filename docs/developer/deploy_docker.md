@@ -58,9 +58,13 @@ docker push exampleUsername/steedos-project-oa:tagname
 
 ## 使用 Docker Compose 启动服务
 
-进入`steedos-project-oa`项目目录编辑`docker-compose.yml`文件:
+确保本地已安装[docker](https://docs.docker.com/get-docker/)和[docker-compose](https://docs.docker.com/compose/install/)
+
+基于示例文件[docker-compose.yml](https://github.com/steedos/steedos-project-oa/blob/master/docker-compose.yml)在本地新建`docker-compose.yml`文件并将并编辑:
 
 - 编辑 environment 中的 ROOT_URL 以匹配您的域名或 IP 地址
+
+> 配置 environment 的目的是服务于[steedos-config.yml](https://www.steedos.com/developer/steedos_config)
 
 启动服务：
 
@@ -68,4 +72,10 @@ docker push exampleUsername/steedos-project-oa:tagname
 docker-compose up -d
 ```
 
-> 配置 environment 的目的是服务于[steedos-config.yml](https://www.steedos.com/developer/steedos_config)
+> 这将会启动一个 mongodb 数据库服务和一个 node 应用服务，启动好之后可使用配置的 ROOT_URL 地址访问服务
+
+停止服务：
+
+```bash
+docker-compose stop
+```
