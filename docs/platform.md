@@ -22,9 +22,7 @@ keywords:
 
 # 低代码开发平台的引领者与企业数字化转型的探索者
 
-华炎魔方是一款随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
-
-作为一款开放的企业平台即服务 (PaaS) 产品，华炎魔方将开源技术和商业类组件结合在同一平台上，从而使开发人员能够利用各种各样的内置功能，轻松便捷地创建企业级应用程序。
+华炎魔方是新一代的低代码开发平台，基于商业智能和模型驱动，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
 
 <a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="
 https://www-steedos-com.oss-cn-beijing.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.pdf" target="_blank">
@@ -45,9 +43,9 @@ your browser does not support the video tag
 
 import Section from '@site/src/components/Section';
 
-# 模型驱动业务，零代码创建自定义业务系统
+# 建模引擎：零代码搭建业务系统1.0
 
-即使是不懂编程的业务人员，也能根据自身需求配置出功能强大的应用程序，例如合同管理、资产管理、采购管理、客户管理、供应商管理、生产管理、仓库管理等等。应用程序支持电脑、平板、手机三种模式运行，除了实现基本的数据管理，更能结合华炎魔方强大的权限引擎，精确控制每一个岗位能查看的数据，以及能执行的操作。
+华炎魔方内置功能强大的建模引擎，可以任意配置业务字段、列表视图、页面布局，即使是不懂编程的业务人员，也能快速创建智能化、移动化的自定义应用。
 
 <video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.mp4" controls="controls" poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.jpg" width="100%" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
@@ -55,11 +53,9 @@ your browser does not support the video tag
 
 <Section background="#f4f4f4" padding="50">
 
-# 只编写核心业务逻辑，减少代码量90%
+# 低代码引擎：开发效率提升十倍，代码量减少90%
 
-华炎魔方创新的使用配置文件描述业务模型和业务功能，开发人员只需要编写简单的配置文件就可以构建企业级应用程序，数百项系统功能都可以通过设置参数进行配置。
-
-配置文件和与业务逻辑相关的触发脚本，就构成了一个项目的核心源代码，简单易懂，易于维护。对于大型项目，源码可以轻松保存到Github，可以随时追踪到开发人员的修改历史。
+华炎魔方提供了低代码开发的入口，开发人员通过编写代码，实现特定条件下的自动运行、截停、回滚等业务逻辑，让业务在无人值守的情况下自动运转，驱动效率提升。
 
 <video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/creator_object.mp4" controls="controls" poster="/assets/creator_object.png" width="100%" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
@@ -69,11 +65,9 @@ your browser does not support the video tag
 
 </Section>
 
-# 内置报表引擎，随需配置用户所需的统计报表。
+# 报表引擎，可视化的报表设置界面
 
-华炎魔方内置功能强大的报表统计与分析功能，业务人员可通过简单设定，配置出列表、分组报表、二维表进行统计分析，并可自动生成图形化报表。
-
-在报表顶部用图形化方式显示统计数据，可以显示为柱状图、折线图、饼图。设置时，还可以对特定的字段进行计数、小计、合计等统计处理。通过设定报表的查询条件，可以将统计范围缩小，提高报表的运行速度。例如可以设定只统计某个时间段的数据。平台会自动根据后台配置的用户权限，只对用户权限范围内的数据进行汇总统计。
+使用华炎魔方的报表引擎，您可以快速配置统计图表，包括数据列表、分组报表、数据透视图、柱状图、饼图等，方便查看、分析和决策。报表引擎会根据当前登录用户的数据访问权限，动态的返回授权访问的数据，确保每个用户只能查看权限范围内的统计数据。
 
 <video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts_report.mp4" controls="controls" poster="/assets/contract_chart.png" width="100%" muted="muted" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
@@ -83,13 +77,9 @@ your browser does not support the video tag
 
 <Section background="#f4f4f4" padding="50">
 
-# 内置专业的流程引擎，随需绘制各种审批流程
+# 流程引擎，图形化的流程设计工具
 
-对于需要审批的业务数据，例如合同、付款、请假等，系统管理员可通过图形化的工具来配置审批流程，并与业务数据实现互通。
-
-提供图形化的表单与流程设计界面，所见即所得。您可以设计条件判断，支持处理数百个节点的复杂流程，即使是数万人的大型集团企业，也能轻松设计出符合需求的业务流程。
-
-华炎魔方的流程审批引擎十分强劲，可以将审批中的流程表单及正文附件实时同步为业务对象记录，实现业务数据的统一管理。
+华炎魔方内置图形化流程设计工具，通过拖拽的方式就能创建业务流程。支持填写、审批、会签、条件判断等多种节点类型；审批人可以与表单字段关联，可以按审批岗位表自动查找，也可以在流程运行时人工选择；可以设置流程具体步骤授权查看和修改的表单字段；流程支持版本管理，修改流程不影响已经发起和结束的申请单。
 
 <video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_design.mp4" controls="controls" poster="/assets/workflow_design.png" width="100%"  muted="muted" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
@@ -97,9 +87,9 @@ your browser does not support the video tag
 
 </Section>
 
-# 自动生成苹果、安卓移动客户端
+# 从一开始就让应用程序移动化
 
-同时，针对苹果和安卓手机用户，自动生成在小屏幕设备上易于查看与操作的手机版界面，用户即使不在办公室，也能随时登录业务系统，进行业务操作。
+下载华炎魔方手机客户端，就能立刻用手机开展工作，企业的一切信息、业务、员工管理和生产工具全部都可以用手机去操作和管理。不管是在电脑前，还是出门在外，华炎魔方都能让你与工作信息时刻保持连接。
 
 <video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_mobile.mov" controls="controls" poster="/assets/workflow_mobile.png" width="40%" muted="muted" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
@@ -110,23 +100,12 @@ your browser does not support the video tag
 
 <Section background="#f4f4f4" padding="50">
 
-# 免费试用华炎魔方
+# 评估与试用华炎魔方低代码开发平台
 
-### 查看培训教程
-
-本教程以合同管理为例，指导你如何使用华炎魔方创建项目，配置业务对象，编程脚本，处理业务部门的各种个性化需求。您开发的新业务系统可以部署在本地运行。
-
-- [什么是低代码开发平台？](/platform/lowcode/)
-- [程序员该如何选择低代码开发平台？](/platform/why/)
-- [如何使用华炎魔方，快速开发随需定制的管理系统？](/developer/)
-
-### 克隆项目源码
-
-华炎魔方是[开源低代码开发平台](https://www.steedos.com/platform/)，我们将所有源码开源，与合作伙伴一起共建低代码开发平台生态体系。
-
-- [华炎魔方源码](https://github.com/steedos/steedos-platform)
-- [华炎办公实例](https://github.com/steedos/steedos-project-oa)
-- [合同管理系统实例](https://github.com/steedos/steedos-contracts-app)
+- [下载华炎魔方解决方案手册](https://www-steedos-com.oss-cn-beijing.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.pdf)
+- [华炎魔方版本与报价](/platform/pricing/)
+- [本地部署华炎魔方](/developer/deploy/)
+- [查看华炎魔方开发培训教程](/developer/guide/)
 
 </Section>
 

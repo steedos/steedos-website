@@ -17,9 +17,9 @@ keywords:
   - HpaPaas
 ---
 
-# 快速开发随需应变的企业管理软件
+# 华炎魔方发布零代码开发解决方案
 
-华炎魔方是一款随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
+即使是不懂编程的业务人员，也能根据自身需求配置出功能强大的应用程序，例如合同管理、资产管理、采购管理、客户管理、供应商管理、生产管理、仓库管理等等。
 
 <a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/platform/" >
 了解详情
@@ -32,7 +32,7 @@ https://www-steedos-com.oss-cn-beijing.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%A
 
 <br/><br/>
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.mp4" controls="controls" poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.jpg" width="100%" loop="loop" playsinline="playsinline">
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.mp4" controls="controls" poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.jpg" width="100%" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
 </video>
 
@@ -40,7 +40,7 @@ import Section from '@site/src/components/Section';
 
 <Section background="/img/banner/clouds-large-desktop.png" padding="50">
 
-# 华炎办公：随需定制的协同办公平台
+# 华炎办公：开源协同办公解决方案
 
 华炎办公是使用华炎魔方低代码平台开发的协同办公解决方案，除了满足传统OA协作与审批的需求，还可以通过低代码模式快速开发个性化管理模块。
 
@@ -61,9 +61,5 @@ import Section from '@site/src/components/Section';
 #### 什么是华炎魔方？
 
 华炎魔方是一个随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
-
-#### 什么是华炎办公？
-
-华炎办公是使用华炎魔方低代码平台开发的协同办公解决方案，除了满足传统OA协作与审批的需求，还可以通过低代码模式快速开发个性化管理模块。
 
 </Section>
