@@ -6,15 +6,7 @@ title: Docker 部署
 
 ## 准备工作
 
-注册[docker](https://www.docker.com/)账号，如：exampleUsername
-
 安装 docker[命令行工具](https://docs.docker.com/get-docker/)， 根据操作系统选择安装
-
-终端登录 docker 账号：
-
-```bash
-docker login
-```
 
 安装[docker-compose](https://docs.docker.com/compose/install/)
 
@@ -24,19 +16,13 @@ docker login
 
 ![clone项目](/assets/windows/clone项目.png)
 
-## 发布过程
+## 编译镜像
 
 进入本地 steedos-project-oa 项目目录：
 
 ```bash
 cd steedos-project-oa
 ```
-
-浏览器访问[docker hub](https://hub.docker.com/)，并使用刚刚注册的账号登录，点击`Create Repository`按钮：
-
-![新建栈](/assets/docker/新建栈.png)
-
-新建 Repository 名称如：steedos-project-oa
 
 编译镜像：
 
@@ -46,21 +32,13 @@ docker build -t exampleUsername/steedos-project-oa:tagname -f ./Dockerfile . --n
 
 > tagname 可以是 1.0、2.0 等自定义可明确表示版本的字符，build 命令[文档](https://docs.docker.com/engine/reference/commandline/build/)
 
-将镜像推送至 docker hub：
-
-```bash
-docker push exampleUsername/steedos-project-oa:tagname
-```
-
-推送完成之后可在[docker hub](https://hub.docker.com/)页面看到镜像
-
-> 可使用`docker pull exampleUsername/steedos-project-oa:tagname`拉取镜像到本地
-
 ## 使用 Docker Compose 启动服务
 
 确保本地已安装[docker](https://docs.docker.com/get-docker/)和[docker-compose](https://docs.docker.com/compose/install/)
 
-基于示例文件[docker-compose.yml](https://github.com/steedos/steedos-project-oa/blob/master/docker-compose.yml)在本地新建`docker-compose.yml`文件并将并编辑:
+基于示例文件[docker-compose.yml](https://github.com/steedos/steedos-project-oa/blob/master/docker-compose.yml)在本地新建`docker-compose.yml`文件并编辑:
+
+- steedos 下的 image 默认是官方的也可以修改为本地编译的镜像
 
 - 编辑 environment 中的 ROOT_URL 以匹配您的域名或 IP 地址
 

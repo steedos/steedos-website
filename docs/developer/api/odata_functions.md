@@ -6,56 +6,73 @@ title: 自定义函数
 
 ### 接口信息
 
- - 请求方法：GET | POST | PUT | DELETE
+- 请求方法：GET | POST | PUT | DELETE
 
- - 请求接口：/api/v4/{object_name}/{record_id}/{method_name}
+- 请求接口：/api/v4/{object_name}/{record_id}/{method_name}
 
- - 接口说明：
-   - req.user：当前用户信息
-     ```coffeescript
-        methods:
-          confirmReceipt: (req, res) ->
-            let {_id} = req.params
-            let {userId} = req.user
-            return res.send(Steedos.getCollection('vip_order').findOne({ _id: _id, owner: userId, status: 'delivered' }))
-      ```
+- 接口说明：
 
- - 请求参数说明：
-   - 对于方法中需要使用的参数，以JSON形式发送
+  - req.userId: 当前用户 ID
 
- - response说明：
-   - 成功后，将返回方法执行的结果
-
- - 示例如下：
-
-   - HTTP 请求
-
-   ```
-    url
-      -X POST https://beta.steedos.com/api/odata/v4/Af8e****DqD3/vip_order/hbysEccFT2fXjHtpd/confirmReceipt
-      -H 'Content-type': 'application/json'
-        {
-          name: '张四'
+    ```js
+    const objectql = require("@steedos/objectql");
+    Creator.Objects.vip_order.methods = {
+      confirmReceipt: async function (req, res) {
+        try {
+          const params = req.params;
+          const steedosSchema = objectql.getSteedosSchema();
+          var order = await steedosSchema
+            .getObject("vip_order")
+            .findOne(params._id);
+          res.status(200).send(order);
+        } catch (error) {
+          res.status(400).send({
+            error: {
+              details: error.stack,
+              message: error.message,
+            },
+          });
         }
-   ```
+      },
+    };
+    ```
 
-   - HTTP 响应
+- 请求参数说明：
 
-   ```
-    {
-      "_id" : "p6gGT6R3LXLSq97Kw",
-      "name" : "会员卡充值",
-      "amount" : 0.01,
-      "status" : "delivered",
-      "store" : "3NoMAPkdJcPkAxxJm",
-      "card" : "ktd9yru2ANYtaJm5j",
-      "type" : "recharge",
-      "owner" : "sufZtt93b9J49kvip",
-      "space" : "3NoMAPkdJcPkAxxJm",
-      "created" : ISODate("2018-06-06T06:18:28.659Z"),
-      "modified" : ISODate("2018-06-06T06:18:47.172Z"),
-      "created_by" : "sufZtt93b9J49kvip",
-      "modified_by" : "sufZtt93b9J49kvip",
-      "amount_paid" : 0.01
-    }
-   ```
+  - 对于方法中需要使用的参数，以 JSON 形式发送
+
+- response 说明：
+
+  - 成功后，将返回方法执行的结果
+
+- 示例如下：
+
+  - HTTP 请求
+
+  ```bash
+   url \
+     -X POST https://beta.steedos.com/api/v4/vip_order/p6gGT6R3LXLSq97Kw/confirmReceipt \
+     -H 'Content-type: application/json' \
+     -b 'X-Space-Token=55090bbe52...aXpwo'
+  ```
+
+  - HTTP 响应
+
+  ```json
+   {
+     "_id" : "p6gGT6R3LXLSq97Kw",
+     "name" : "会员卡充值",
+     "amount" : 0.01,
+     "status" : "delivered",
+     "store" : "3NoMAPkdJcPkAxxJm",
+     "card" : "ktd9yru2ANYtaJm5j",
+     "type" : "recharge",
+     "owner" : "sufZtt93b9J49kvip",
+     "space" : "3NoMAPkdJcPkAxxJm",
+     "created" : ISODate("2018-06-06T06:18:28.659Z"),
+     "modified" : ISODate("2018-06-06T06:18:47.172Z"),
+     "created_by" : "sufZtt93b9J49kvip",
+     "modified_by" : "sufZtt93b9J49kvip",
+     "amount_paid" : 0.01
+   }
+  ```
