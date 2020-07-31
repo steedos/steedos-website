@@ -1,5 +1,6 @@
 ---
-title: 版本与报价
+title: 华炎魔方报价
+sidebar_label: 报价
 hide_table_of_contents: true
 background: /img/banner/clouds-large-desktop.png
 ---
@@ -10,7 +11,7 @@ background: /img/banner/clouds-large-desktop.png
 
 |  | 入门版 | 专业版 | 企业版|
 |--- | --- | --- | ---|
-|  | 快速创建自定义应用程序 | 为每个部门实现数字化转型 | 转变整个组织的应用程序开发过程。 |
+|  | 快速创建个性化企业应用. | 为每个部门实现数字化转型. | 转变整个组织的应用开发过程。 |
 |单价 | <h2 class='slds-m-around_medium'>¥ 20</h2> 元/用户/月<br/>（按年付费）| <h2 class='slds-m-around_medium'>¥ 80</h2> 元/用户/月<br/>（按年付费）| <h2 class='slds-m-around_medium'>[联系我们](/company/contact-us)</h2> |
 |自定义业务对象 | 10个 | 100个 | 不限数量 |
 |自定义审批流程 | 10个 | 100个 | 不限数量 |

@@ -20,7 +20,7 @@ keywords:
 
 这几年很火的一个概念叫低代码 ( Low Code Development ) 开发，用少量的代码就能开发复杂的业务系统。然后更进一步，由此又催生出一个新的概念：零代码开发 ( No Code Development )。
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_design.mp4" controls="controls" poster="/assets/workflow_design.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.mp4" controls="controls" poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.jpg" width="100%" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
 </video>
 
@@ -82,25 +82,20 @@ import Section from '@site/src/components/Section';
 
 <Section background="#f4f4f4" padding="50">
 
-## 华炎魔方开源低代码开发平台
+# 华炎魔方开源低代码开发平台
 
 华炎魔方创新的使用配置文件描述业务模型和业务功能，开发人员只需要编写简单的配置文件就可以构建企业级应用程序，数百项系统功能都可以通过设置参数进行配置。
 
 配置文件和与业务逻辑相关的触发脚本，就构成了一个项目的核心源代码，简单易懂，易于维护。对于大型项目，源码可以轻松保存到Github，可以随时追踪到开发人员的修改历史。
 
-<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/developer/" >
-免费教程
+<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="
+https://www-steedos-com.oss-cn-beijing.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.pdf" target="_blank">
+下载产品文档
 </a>
 
-<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/platform/try/" >
-试用
+<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.mp4" >
+查看演示视频
 </a>
-
-<p></p>
-
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/creator_object.mp4" controls="controls" poster="/assets/creator_object.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
-your browser does not support the video tag
-</video>
 
 <p></p>
 
