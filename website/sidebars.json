@@ -43,7 +43,7 @@
     "业务对象": ["developer/datasource", "developer/object", "developer/object_field", "developer/listview", "developer/object_permission", "developer/object_action", "developer/object_form", "developer/app" ],
     "业务流程": ["developer/object_workflow"],
     "业务统计": ["developer/reports", "developer/report_jsreport"],
-    "高级开发": ["developer/steedos_config", "developer/env", "developer/objectql_connection", "developer/objectql_object", "developer/object_filter", "developer/object_trigger", "developer/object_filter_conditions", "developer/object_field_formula", "developer/standard_objects"],
+    "高级开发": ["developer/steedos_config", "developer/steedos_server", "developer/env", "developer/objectql_connection", "developer/objectql_object", "developer/object_filter", "developer/object_trigger", "developer/object_filter_conditions", "developer/object_field_formula", "developer/standard_objects"],
     "插件": ["plugins/index",  "plugins/plugin_webapp", "plugins/plugin_webapp_functions"]
   },
   "Steedos 部署文档": {
