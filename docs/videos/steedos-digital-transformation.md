@@ -1,6 +1,6 @@
 ---
 title: 为什么引入低代码开发平台是实施数字化转型的关键？
-sidebar_label: 数字化转型
+sidebar_label: 助力数字化转型
 hide_table_of_contents: true
 hide_title: true
 background: /img/banner/service-overview-lg.png
