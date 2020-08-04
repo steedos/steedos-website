@@ -57,7 +57,7 @@
   "管理员手册": {
     "公司设置": ["help/admin", "help/organization", "help/profile", "help/permission_set", "help/permission_share"],
     "流程设置": ["help/workflow/admin_form", "help/workflow/admin_flow", "help/workflow/admin_positions", "help/workflow/admin_picturesignature"],
-    "对象设置": ["developer/no-code/object", "developer/no-code/object_subtable", "developer/no-code/object_workflows", "developer/no-code/object_datasources", "developer/no-code/object_web_forms"]
+    "对象设置": ["developer/no-code/object", "developer/no-code/object_subtable", "developer/no-code/object_workflows", "developer/no-code/object_datasources"]
   },
   "Steedos Help": {
     "Quick Guide": ["us/help/workflow/README", "us/help/workflow/guide_setup", "us/help/workflow/guide_user", "us/help/workflow/guide_admin", "us/help/workflow/guide_permissions", "us/help/workflow/guide_versions", "us/help/workflow/mp4", "us/help/workflow/faq"],

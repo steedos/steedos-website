@@ -1,5 +1,5 @@
 ---
-title: steedos-server
+title: 升级版本
 ---
 
 package.json: 主要用于配置项目依赖的npm包，位于项目的根目录。
