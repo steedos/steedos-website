@@ -123,7 +123,48 @@ title: 表单设计
 
 如果您熟悉HTML的编写，可以使用 html 自定义表单样式。默认表格样式的表单，一行显示2个字段，宽字段一行显示1个，宽度高度等都是系统固定的，不能通过字段属性进行调整，但是您可以通过导出默认模板，下载html文件，并修改表单的 html 结构和样式来实现自定义功能。
 
-例如，为了实现:
+例如，为了实现如下图中的Excel表格样式，具体操作如下：
+
+![表单模板](/assets/workflow/html_1.png)
+
+- 管理员登录系统后，首先点击“设置-流程设置-流程”，点击“资本性支出项目费用指标控制审批单”，进入到流程详情页。
+- 点击右上角的按钮组合键中的“导出默认模板”，下载该流程的默认表单html文件，文件名为'资本性支出项目费用指标控制审批单.html'。
+- 用代码编辑工具或记事本打开html文件，根据实际情况，修改表单的html结构，以及添加css样式。
+- html文件修改完成后，选中所有代码并复制，在流程详情页的“模板”-“表单模板”，点击编辑，将复制的代码粘贴到表单模板中，并保存确认。
+
+```yaml
+<style>
+//在这里通过id、class等定义样式
+</style>
+<div class='instance-template'>
+	<table class="table-page-title form-table no-border text-align-center" style="width: 100%;display: inline-table;">
+		<tr class="instance-name">
+			<td class="instance-table-name-td page-title">
+				{{instance.name}}
+			</td>
+		</tr>
+	</table>
+	<table class="table-page-body form-table">
+        <tr style="height:0px">
+            //默认是2个字段4列，可通过添加th增加多列，以及设置width的大小来定义每列的宽度
+			<th style='width: 11%'></th>
+			<th style='width: 11%'></th>
+			<th style='width: 8%'></th>
+			<th style='width: 10%'></th>
+			<th style='width: 8%'></th>
+			<th></th>
+			<th style='width: 12%'></th>
+			<th></th>
+			<th style='width: 12%'></th>
+			<th></th>
+		</tr>
+		//下面是表单内容
+        ...
+    </table>
+</div>
+```
+
+> 以上代码为html文件的默认格式，在不破坏整体结构的前提下，通过增加或删除相关内容，以及增加css样式，改变表单的显示样式。
 
 ## 签字意见设置
 

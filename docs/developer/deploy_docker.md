@@ -2,49 +2,19 @@
 title: Docker 部署
 ---
 
-本教程以 [steedos-project-oa](https://github.com/steedos/steedos-project-oa)为例，指导你如何将项目编译成镜像发布至[docker hub](https://hub.docker.com/)并使用 [docker-compose](https://docs.docker.com/compose/install/) 启动项目。
-
-## 准备工作
-
-安装 docker[命令行工具](https://docs.docker.com/get-docker/)， 根据操作系统选择安装
-
-安装[docker-compose](https://docs.docker.com/compose/install/)
-
-## 克隆项目
-
-请访问 https://github.com/steedos/steedos-project-oa 先在项目主页右上角点 [Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) 项目，然后将已经 fork 到自己账号下的项目 clone 到本地，以便提交修改：
-
-![clone项目](/assets/windows/clone项目.png)
-
-## 编译镜像
-
-进入本地 steedos-project-oa 项目目录：
-
-```bash
-cd steedos-project-oa
-```
-
-编译镜像：
-
-```bash
-docker build -t exampleUsername/steedos-project-oa:tagname -f ./Dockerfile . --no-cache
-```
-
-> tagname 可以是 1.0、2.0 等自定义可明确表示版本的字符，build 命令[文档](https://docs.docker.com/engine/reference/commandline/build/)
+本教程以 [steedos-project-oa](https://github.com/steedos/steedos-project-oa)为例，指导你使用 [docker-compose](https://docs.docker.com/compose/install/) 启动项目。
 
 ## 使用 Docker Compose 启动服务
 
 确保本地已安装[docker](https://docs.docker.com/get-docker/)和[docker-compose](https://docs.docker.com/compose/install/)
 
-基于示例文件[docker-compose.yml](https://github.com/steedos/steedos-project-oa/blob/master/docker-compose.yml)在本地新建`docker-compose.yml`文件并编辑:
-
-- steedos 下的 image 默认是官方的也可以修改为本地编译的镜像
+下载示例文件[docker-compose.yml](https://github.com/steedos/steedos-project-oa/blob/master/docker-compose.yml)(唯一需要的文件)到本地并编辑:
 
 - 编辑 environment 中的 ROOT_URL 以匹配您的域名或 IP 地址
 
 > 配置 environment 的目的是服务于[steedos-config.yml](https://www.steedos.com/developer/steedos_config)
 
-启动服务：
+到刚下载的`docker-compose.yml`文件所在目录启动服务：
 
 ```bash
 docker-compose up -d
@@ -57,3 +27,9 @@ docker-compose up -d
 ```bash
 docker-compose stop
 ```
+
+## docker-compose.yml 文件解读
+
+系统中上传的附件、头像等文件在 `./docker-volumes/steedos/storage` 下，数据库文件在 `./docker-volumes/mongo/data/db` 下，这样服务停止后再次启动数据不会丢失
+
+environment 中的环境变量可根据需要参考[steedos-config.yml](https://www.steedos.com/developer/steedos_config)配置调整
