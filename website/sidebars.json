@@ -73,5 +73,8 @@
     "单点登录": ["developer/api/api_jwt"]
   },
   "华信": ["messenger/index", "messenger/download"],
-  "培训视频": ["videos/digital-transformation","videos/lesson-object","videos/lesson-object-relationship"]
+  "视频": {
+    "华炎魔方总览": ["videos/steedos-digital-transformation", "videos/steedos-platform-features"],
+    "低代码开发培训": ["videos/lesson-object","videos/lesson-object-relationship"]
+  }
 }

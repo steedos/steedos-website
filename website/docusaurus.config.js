@@ -125,14 +125,8 @@ module.exports = {
             {to: 'solutions/knowledge/', label: '知识管理', position: 'left', activeBasePath: 'solutions/knowledge/'},
           ]
         },
-        {to: 'developer/', label: '培训教程', position: 'left',
-          // items: [
-          //   {to: 'developer/deploy/', label: '安装部署', position: 'left'},
-          //   {to: 'help/', label: '使用帮助', position: 'left'},
-          //   {to: 'developer/guide/', label: '低代码开发教程', position: 'left'},
-          //   {to: 'developer/api/', label: 'API', position: 'left'},
-          // ]
-        },
+        {to: 'developer/', label: '文档', position: 'left',},
+        {to: 'videos/', label: '视频', position: 'left',},
         {to: '/company/about-us/', label: '关于我们', position: 'left',
           // items: [
           //   {to: '/company/about-us/', label: '关于华炎'},

@@ -21,7 +21,7 @@ hide_table_of_contents: true
         </div>
         <div class="slds-media__body">
             <div class="slds-welcome-mat__tile-body">
-                <h3 class="slds-welcome-mat__tile-title">什么是华炎魔方？</h3>
+                <h3 class="slds-welcome-mat__tile-title">华炎魔方的十大引擎</h3>
                 <p class="slds-welcome-mat__tile-description">华炎魔方技术架构、零代码开发、低代码开发解决方案简介。</p>
             </div>
         </div>
@@ -133,26 +133,6 @@ hide_table_of_contents: true
 <br/><br/>
 
 import Section from '@site/src/components/Section';
-
-# 什么是华炎魔方？
-
-华炎魔方是一款随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
-
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.mp4" controls="controls" poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.jpg" width="100%" loop="loop" playsinline="playsinline">
-your browser does not support the video tag
-</video>
-
-<Section background="#f4f4f4" padding="50">
-
-# 模型驱动业务，零代码创建自定义业务系统
-
-即使是不懂编程的业务人员，也能根据自身需求配置出功能强大的应用程序，例如合同管理、资产管理、采购管理、客户管理、供应商管理、生产管理、仓库管理等等。应用程序支持电脑、平板、手机三种模式运行，除了实现基本的数据管理，更能结合华炎魔方强大的权限引擎，精确控制每一个岗位能查看的数据，以及能执行的操作。
-
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.mp4" controls="controls" poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.jpg" width="100%" loop="loop" playsinline="playsinline">
-your browser does not support the video tag
-</video>
-
-</Section>
 
 <Section background="#215ca0" padding="50">
 <div style={{color:"#FFFFFF"}}>

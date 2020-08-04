@@ -8,3 +8,15 @@
     padding: 0;
     margin: 0;
 }
+
+.slds-carousel__image {
+  line-height: 12px;
+}
+
+.slds-carousel__content-title {
+  font-size: 1.25rem
+}
+
+.slds-carousel__content {
+  height: 7.5rem;
+}
