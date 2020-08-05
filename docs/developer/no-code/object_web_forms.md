@@ -22,7 +22,7 @@ title: 在线表单
 
 ![在线表单](/assets/workflow/web_forms_3.png)
 
-- 网站维护人员可以将html代码复制到网页中，或者在知识页面，新建“潜在客户注册”，在正文的代码中粘贴复制的html代码。
+- 网站维护人员可以将html代码复制到网页中，比如在知识页面，新建“潜在客户注册”，在正文的代码中粘贴复制的html代码。
 
 ![在线表单](/assets/workflow/web_forms_4.png)
 
