@@ -32,5 +32,5 @@ title: 在线表单
 
 ![在线表单](/assets/workflow/web_forms_5.png)
 
-- 如果有设置 notification_users（通知用户），自动发送推送通知给对应的用户。
+> 如果有设置 notification_users（通知用户），自动发送推送通知给对应的用户。
 
