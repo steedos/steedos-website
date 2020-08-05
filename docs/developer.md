@@ -1,5 +1,5 @@
 ---
-title: 欢迎使用华炎魔方
+title: 华炎魔方文档
 background: /img/banner/clouds-large-desktop.png
 hide_table_of_contents: true
 ---

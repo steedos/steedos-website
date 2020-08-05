@@ -11,7 +11,8 @@
     overflow-y: auto;
     position: sticky;
     top: 0;
-    padding-top: var(--ifm-navbar-height);
+    padding-top: var(--ifm-navbar-height);    
+    min-width: 220px;
   }
 
   .sidebar::-webkit-scrollbar {

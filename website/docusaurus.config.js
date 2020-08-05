@@ -115,7 +115,7 @@ module.exports = {
       links: [
         {to: 'platform/', label: '华炎魔方', position: 'left', activeBasePath: '/platform/'},
 
-        {to: '', label: '应用案例', position: 'left',
+        {to: '', label: '应用', position: 'left',
           items: [
             // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
             {to: 'oa/', label: '华炎办公', position: 'left', activeBasePath: '/oa/'},
@@ -125,9 +125,17 @@ module.exports = {
             {to: 'solutions/knowledge/', label: '知识管理', position: 'left', activeBasePath: 'solutions/knowledge/'},
           ]
         },
-        {to: 'developer/', label: '文档', position: 'left',},
+        {to: 'developer/', label: '文档', position: 'left',
+          items: [
+            {to: '/developer/deploy/', label: '安装'},
+            {to: '/developer/guide/', label: '开发'},
+            {to: '/help/', label: '使用'},
+            {to: '/help/admin/', label: '管理'},
+            {to: '/developer/api/', label: 'API'},
+          ]
+        },
         {to: 'videos/', label: '视频', position: 'left',},
-        {to: '/company/about-us/', label: '关于我们', position: 'left',
+        {to: '/company/about-us/', label: '关于', position: 'left',
           // items: [
           //   {to: '/company/about-us/', label: '关于华炎'},
           //   {to: '/company/customers/', label: '成功案例'},

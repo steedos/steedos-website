@@ -1,5 +1,5 @@
 ---
-title: 华炎魔方培训视频
+title: 华炎魔方视频
 background: /img/banner/clouds-large-desktop.png
 hide_table_of_contents: true
 ---
@@ -18,7 +18,7 @@ hide_table_of_contents: true
                         <img src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.jpg" alt="查看视频" />
                     </div>
                     <div class="slds-carousel__content">
-                        <h2 class="slds-carousel__content-title">华炎魔方低代码开发平台，助力企业实施数字化转型</h2>
+                        <h2 class="slds-carousel__content-title">庄大大拍了拍你，给你讲那未来的故事</h2>
                         <button class="slds-button slds-button_neutral" tabindex="0" type="button">查看视频</button>
                     </div>
                 </a>

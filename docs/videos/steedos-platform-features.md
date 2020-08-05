@@ -1,5 +1,5 @@
 ---
-title: 华炎魔方十大引擎
+title: 低代码开发平台解决方案手册
 sidebar_label: 华炎魔方十大引擎
 hide_table_of_contents: true
 hide_title: true
@@ -10,7 +10,18 @@ background: /img/banner/service-overview-lg.png
 your browser does not support the video tag
 </video>
 
-## 华炎魔方十大引擎
+<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="
+https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.mp4" target="_blank">
+下载视频
+</a>
+
+<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="
+https://www-steedos-com.oss-cn-beijing.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.pdf" target="_blank">
+下载演示文档
+</a>
+
+## 华炎魔方低代码开发平台解决方案手册
+
 
 华炎魔方是新一代的低代码开发平台，基于商业智能和模型驱动，开发人员只需编写少量代码就可以构建功能强大的个性化应用。
 
