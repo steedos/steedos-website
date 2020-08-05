@@ -43,7 +43,7 @@ your browser does not support the video tag
 
 import Section from '@site/src/components/Section';
 
-# 建模引擎：零代码搭建业务系统1.0
+# 模型驱动业务，零代码搭建业务系统1.0
 
 华炎魔方内置功能强大的建模引擎，可以任意配置业务字段、列表视图、页面布局，即使是不懂编程的业务人员，也能快速创建智能化、移动化的自定义应用。
 
@@ -53,11 +53,11 @@ your browser does not support the video tag
 
 <Section background="#f4f4f4" padding="50">
 
-# 低代码引擎：开发效率提升十倍，代码量减少90%
+# 华炎魔方十大引擎：开发效率提升十倍，代码量减少90%
 
 华炎魔方提供了低代码开发的入口，开发人员通过编写代码，实现特定条件下的自动运行、截停、回滚等业务逻辑，让业务在无人值守的情况下自动运转，驱动效率提升。
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/creator_object.mp4" controls="controls" poster="/assets/creator_object.png" width="100%" loop="loop" playsinline="playsinline">
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.mp4" controls="controls" poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.jpg" width="100%" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
 </video>
 
@@ -65,27 +65,6 @@ your browser does not support the video tag
 
 </Section>
 
-# 报表引擎，可视化的报表设置界面
-
-使用华炎魔方的报表引擎，您可以快速配置统计图表，包括数据列表、分组报表、数据透视图、柱状图、饼图等，方便查看、分析和决策。报表引擎会根据当前登录用户的数据访问权限，动态的返回授权访问的数据，确保每个用户只能查看权限范围内的统计数据。
-
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts_report.mp4" controls="controls" poster="/assets/contract_chart.png" width="100%" muted="muted" loop="loop" playsinline="playsinline">
-your browser does not support the video tag
-</video>
-
-<p></p>
-
-<Section background="#f4f4f4" padding="50">
-
-# 流程引擎，图形化的流程设计工具
-
-华炎魔方内置图形化流程设计工具，通过拖拽的方式就能创建业务流程。支持填写、审批、会签、条件判断等多种节点类型；审批人可以与表单字段关联，可以按审批岗位表自动查找，也可以在流程运行时人工选择；可以设置流程具体步骤授权查看和修改的表单字段；流程支持版本管理，修改流程不影响已经发起和结束的申请单。
-
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_design.mp4" controls="controls" poster="/assets/workflow_design.png" width="100%"  muted="muted" loop="loop" playsinline="playsinline">
-your browser does not support the video tag
-</video>
-
-</Section>
 
 # 从一开始就让应用程序移动化
 
