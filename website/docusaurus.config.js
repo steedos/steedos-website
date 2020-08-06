@@ -73,7 +73,10 @@ module.exports = {
   // },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: [],
+  scripts: [
+    "http://imgcache.qq.com/open/qcloud/video/tcplayer/lib/hls.min.0.8.8.js",
+    "https://imgcache.qq.com/open/qcloud/video/tcplayer/tcplayer.min.js",
+  ],
 
   // On page navigation for the current documentation page.
   // onPageNav: 'separate',

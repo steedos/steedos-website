@@ -183,3 +183,10 @@ html[data-theme='dark'] .main-wrapper {
 .navbar .navbar__brand {
   height: 2.5rem;
 }
+
+/* 腾讯视频   */
+@media only screen and (min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .tcp-logo-img {
+    width: 50%;
+  }
+}
