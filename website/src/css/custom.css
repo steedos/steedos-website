@@ -179,3 +179,7 @@ html[data-theme='dark'] .main-wrapper {
 .pagination-nav .pagination-nav__link--label {
   font-size: 1rem;
 }
+
+.navbar .navbar__brand {
+  height: 2.5rem;
+}

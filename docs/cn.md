@@ -17,9 +17,9 @@ keywords:
   - HpaPaas
 ---
 
-# 华炎魔方发布零代码开发解决方案
+# 华炎发布新一代低代码开发平台，开发效率提升十倍
 
-即使是不懂编程的业务人员，也能根据自身需求配置出功能强大的应用程序，例如合同管理、资产管理、采购管理、客户管理、供应商管理、生产管理、仓库管理等等。
+华炎魔方是新一代的低代码开发平台，基于商业智能和模型驱动，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
 
 <a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/platform/" >
 了解详情
@@ -32,7 +32,7 @@ https://www-steedos-com.oss-cn-beijing.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%A
 
 <br/><br/>
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.mp4" controls="controls" poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.jpg" width="100%" loop="loop" playsinline="playsinline">
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.mp4" controls="controls" poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.jpg" width="100%" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
 </video>
 

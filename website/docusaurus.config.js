@@ -109,11 +109,11 @@ module.exports = {
       title: '',
       logo: {
         alt: '华炎魔方',
-        src: 'img/icon_blue.png',
+        src: 'img/icon_platform.png',
         href: '/cn/'
       },
       links: [
-        {to: 'platform/', label: '华炎魔方', position: 'left', activeBasePath: '/platform/'},
+        {to: 'platform/', label: '产品', position: 'left', activeBasePath: '/platform/'},
 
         {to: '', label: '应用', position: 'left',
           items: [

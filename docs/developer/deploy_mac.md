@@ -8,7 +8,7 @@ title: Mac 部署
 
 ## 搭建运行环境
 
-需要安装 [Github Desktop](<(https://desktop.github.com/)>)、[node-v12.16.3](<(https://nodejs.org/en/)>)、[mongodb-v4.2](<(https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)>)、[Robo 3T](<(https://robomongo.org/)>)、[Visual Studio Code](<(https://code.visualstudio.com/)>)、[brew](https://brew.sh/)
+需要安装 [Github Desktop](https://desktop.github.com/)、[node-v12.16.3](https://nodejs.org/en/)、[mongodb-v4.2](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)、[Robo 3T](https://robomongo.org/)、[Visual Studio Code](https://code.visualstudio.com/)、[brew](https://brew.sh/)
 
 ### 安装 Github Desktop
 
