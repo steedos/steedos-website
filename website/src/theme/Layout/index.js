@@ -49,7 +49,6 @@ function Layout(props) {
       <Head>
         {/* TODO: Do not assume that it is in english language */}
         <html lang="en" />
-        <link href="https://imgcache.qq.com/open/qcloud/video/tcplayer/tcplayer.css" rel="stylesheet"/>
 
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"></meta>

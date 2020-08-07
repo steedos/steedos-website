@@ -32,9 +32,15 @@ https://www-steedos-com.oss-cn-beijing.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%A
 
 <br/><br/>
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.mp4" controls="controls" poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.jpg" width="100%" loop="loop" playsinline="playsinline">
-your browser does not support the video tag
-</video>
+import Video from '@site/src/components/Video';
+
+<Video url="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features-960.mp4"
+    poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.jpg"
+    autoplay={false}
+    otherurls={[
+        {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.mp4"},
+        {name:"标清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features-960.mp4"}
+    ]}/>
 
 
 import Section from '@site/src/components/Section';

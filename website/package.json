@@ -14,7 +14,8 @@
     "@salesforce/design-system-react": "^0.10.17",
     "classnames": "^2.2.6",
     "react": "^16.10.2",
-    "react-dom": "^16.10.2"
+    "react-dom": "^16.10.2",
+    "xgplayer": "^2.9.12"
   },
   "browserslist": {
     "production": [
@@ -27,5 +28,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.4"
   }
 }
