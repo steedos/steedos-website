@@ -8,8 +8,8 @@
 import React, {useState, useCallback} from 'react';
 import classnames from 'classnames';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import useLockBodyScroll from '@theme/hooks/useLockBodyScroll';
+import useLogo from '@theme/hooks/useLogo';
 import Link from '@docusaurus/Link';
 import isInternalUrl from '@docusaurus/isInternalUrl';
 
@@ -17,7 +17,7 @@ import styles from './styles.module.css';
 
 const MOBILE_TOGGLE_SIZE = 24;
 
-function DocSidebarItem({item, onItemClick, collapsible}) {
+function DocSidebarItem({item, onItemClick, collapsible, ...props}) {
   const {items, href, label, type} = item;
   const [collapsed, setCollapsed] = useState(item.collapsed);
   const [prevCollapsedProp, setPreviousCollapsedProp] = useState(null);
@@ -30,9 +30,10 @@ function DocSidebarItem({item, onItemClick, collapsible}) {
     setCollapsed(item.collapsed);
   }
 
-  const handleItemClick = useCallback(e => {
+  const handleItemClick = useCallback((e) => {
     e.preventDefault();
-    setCollapsed(state => !state);
+    e.target.blur();
+    setCollapsed((state) => !state);
   });
 
   switch (type) {
@@ -50,12 +51,14 @@ function DocSidebarItem({item, onItemClick, collapsible}) {
                 'menu__link--active': collapsible && !item.collapsed,
               })}
               href="#!"
-              onClick={collapsible ? handleItemClick : undefined}>
+              onClick={collapsible ? handleItemClick : undefined}
+              {...props}>
               {label}
             </a>
             <ul className="menu__list">
-              {items.map(childItem => (
+              {items.map((childItem) => (
                 <DocSidebarItem
+                  tabIndex={collapsed ? '-1' : '0'}
                   key={childItem.label}
                   item={childItem}
                   onItemClick={onItemClick}
@@ -76,6 +79,7 @@ function DocSidebarItem({item, onItemClick, collapsible}) {
             to={href}
             {...(isInternalUrl(href)
               ? {
+                  isNavLink: true,
                   activeClassName: 'menu__link--active',
                   exact: true,
                   onClick: onItemClick,
@@ -83,7 +87,8 @@ function DocSidebarItem({item, onItemClick, collapsible}) {
               : {
                   target: '_blank',
                   rel: 'noreferrer noopener',
-                })}>
+                })}
+            {...props}>
             {label}
           </Link>
         </li>
@@ -99,8 +104,8 @@ function mutateSidebarCollapsingState(item, path) {
     case 'category': {
       const anyChildItemsActive =
         items
-          .map(childItem => mutateSidebarCollapsingState(childItem, path))
-          .filter(val => val).length > 0;
+          .map((childItem) => mutateSidebarCollapsingState(childItem, path))
+          .filter((val) => val).length > 0;
       // eslint-disable-next-line no-param-reassign
       item.collapsed = !anyChildItemsActive;
       return anyChildItemsActive;
@@ -115,9 +120,13 @@ function mutateSidebarCollapsingState(item, path) {
 function DocSidebar(props) {
   const [showResponsiveSidebar, setShowResponsiveSidebar] = useState(false);
   const {
-    siteConfig: {themeConfig: {navbar: {title, logo = {}} = {}}} = {},
+    siteConfig: {
+      themeConfig: {navbar: {title, hideOnScroll = false} = {}},
+    } = {},
+    isClient,
   } = useDocusaurusContext();
-  const logoUrl = useBaseUrl(logo.src);
+  const {logoLink, logoLinkProps, logoImageUrl, logoAlt} = useLogo();
+
   const {
     docsSidebars,
     path,
@@ -140,7 +149,7 @@ function DocSidebar(props) {
   }
 
   if (sidebarCollapsible) {
-    sidebarData.forEach(sidebarItem =>
+    sidebarData.forEach((sidebarItem) =>
       mutateSidebarCollapsingState(sidebarItem, path),
     );
   }
@@ -151,6 +160,18 @@ function DocSidebar(props) {
         {/* {logo != null && <img src={logoUrl} alt={logo.alt} />} */}
         {currentSidebar != null && <strong>{currentSidebar}</strong>}
       </div>
+      {hideOnScroll && (
+        <Link
+          tabIndex="-1"
+          className={styles.sidebarLogo}
+          to={logoLink}
+          {...logoLinkProps}>
+          {logoImageUrl != null && (
+            <img key={isClient} src={logoImageUrl} alt={logoAlt} />
+          )}
+          {title != null && <strong>{title}</strong>}
+        </Link>
+      )}
       <div
         className={classnames('menu', 'menu--responsive', styles.menu, {
           'menu--show': showResponsiveSidebar,
@@ -192,11 +213,12 @@ function DocSidebar(props) {
         </button>
         </div>
         <ul className="menu__list">
-          {sidebarData.map(item => (
+          {sidebarData.map((item) => (
             <DocSidebarItem
               key={item.label}
               item={item}
-              onItemClick={() => {
+              onItemClick={(e) => {
+                e.target.blur();
                 setShowResponsiveSidebar(false);
               }}
               collapsible={sidebarCollapsible}
