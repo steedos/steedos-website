@@ -18,7 +18,7 @@ hide_table_of_contents: true
                         <img src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.jpg" alt="查看视频" />
                     </div>
                     <div class="slds-carousel__content">
-                        <h2 class="slds-carousel__content-title">庄大大拍了拍你，给你讲那未来的故事</h2>
+                        <h2 class="slds-carousel__content-title">华炎魔方帮助业务加速创新，提升竞争力</h2>
                         <button class="slds-button slds-button_neutral" tabindex="0" type="button">查看视频</button>
                     </div>
                 </a>

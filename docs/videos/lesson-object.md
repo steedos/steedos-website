@@ -6,9 +6,14 @@ hide_title: true
 background: /img/banner/service-overview-lg.png
 ---
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.mp4" controls="controls" poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.jpg" width="100%" autoplay="autoplay">
-your browser does not support the video tag
-</video>
+import Video from '@site/src/components/Video';
+
+<Video 
+    poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.jpg"
+    autoplay={true}
+    urls={[
+        {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.mp4"},
+    ]}/>
 
 ## 华炎魔方低代码开发教程：如何创建自定义应用程序？
 

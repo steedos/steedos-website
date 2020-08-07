@@ -21,27 +21,28 @@ keywords:
 
 华炎魔方是新一代的低代码开发平台，基于商业智能和模型驱动，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
 
-<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/platform/" >
-了解详情
+<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/videos/steedos-platform-features/" target="_blank">
+视频演示
 </a>
 
-<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="
-https://www-steedos-com.oss-cn-beijing.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.pdf" target="_blank">
-下载产品文档
+<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/platform/" >
+了解详情
 </a>
 
 <br/><br/>
 
 import Video from '@site/src/components/Video';
 
-<Video url="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features-960.mp4"
-    poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.jpg"
+
+<Video 
+    poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.jpg"
     autoplay={false}
-    otherurls={[
-        {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.mp4"},
-        {name:"标清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features-960.mp4"}
+    urls={[
+        {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.mp4"},
     ]}/>
 
+
+<br/><br/>
 
 import Section from '@site/src/components/Section';
 

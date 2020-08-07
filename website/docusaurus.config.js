@@ -74,7 +74,7 @@ module.exports = {
 
   // Add custom scripts here that would be placed in <script> tags.
   scripts: [
-    "https://cdn.jsdelivr.net/npm/xgplayer@2.9.6/browser/index.js" 
+    "https://cdn.jsdelivr.net/npm/xgplayer@2.9.6/browser/index.js",
   ],
 
   // On page navigation for the current documentation page.

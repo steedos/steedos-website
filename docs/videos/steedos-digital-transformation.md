@@ -1,16 +1,21 @@
 ---
 title: 为什么引入低代码开发平台是实施数字化转型的关键？
-sidebar_label: 助力数字化转型
+sidebar_label: 数字化转型
 hide_table_of_contents: true
 hide_title: true
 background: /img/banner/service-overview-lg.png
 ---
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.mp4" controls="controls" poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.jpg" width="100%" loop="loop" autoplay="autoplay">
-your browser does not support the video tag
-</video>
+import Video from '@site/src/components/Video';
 
-## 庄大大拍了拍你，给你讲那数字化转型的故事
+<Video 
+    poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.jpg"
+    autoplay={true}
+    urls={[
+        {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.mp4"},
+    ]}/>
+
+## 华炎魔方助力数字化转型，帮助业务加速创新，提升竞争力
 
 大家好，我是庄大大，
 我是一家上市公司的信息总监，

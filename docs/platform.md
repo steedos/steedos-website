@@ -22,13 +22,12 @@ keywords:
 
 # 新一代低代码开发平台，开发效率提升十倍，代码量减少90%
 
-<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="
-https://www-steedos-com.oss-cn-beijing.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.pdf" target="_blank">
-下载产品文档
+<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/videos/steedos-platform-features/" target="_blank">
+视频演示
 </a>
 
 <a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/developer/guide/" >
-查看开发教程
+开发教程
 </a>
 
 <br/>
@@ -36,12 +35,12 @@ https://www-steedos-com.oss-cn-beijing.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%A
 
 import Video from '@site/src/components/Video';
 
-<Video url="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features-960.mp4"
+<Video 
     poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.jpg"
     autoplay={false}
-    otherurls={[
+    urls={[
+        {name:"标清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features-960.mp4"},
         {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.mp4"},
-        {name:"标清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features-960.mp4"}
     ]}/>
 
 
@@ -55,28 +54,38 @@ import Section from '@site/src/components/Section';
 
 # 华炎魔方兼具敏捷性、灵活性和开放性，帮助业务加速创新，提升竞争力
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.mp4" controls="controls" poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.jpg" width="100%" loop="loop" playsinline="playsinline">
-your browser does not support the video tag
-</video>
+<Video 
+    poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.jpg"
+    autoplay={false}
+    urls={[
+        {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.mp4"},
+    ]}/>
 
 </Section>
 
 # 模型驱动业务，零代码搭建业务系统1.0
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.mp4" controls="controls" poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.jpg" width="100%" loop="loop" playsinline="playsinline">
-your browser does not support the video tag
-</video>
+
+<Video 
+    poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.jpg"
+    autoplay={false}
+    urls={[
+        {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.mp4"},
+    ]}/>
 
 <p></p>
 
 
-# 从一开始就让应用程序移动化
+<!-- # 从一开始就让应用程序移动化
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_mobile.mov" controls="controls" poster="/assets/workflow_mobile.png" width="40%" muted="muted" loop="loop" playsinline="playsinline">
-your browser does not support the video tag
-</video>
+<Video 
+    poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_mobile.png"
+    autoplay={false}
+    urls={[
+        {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_mobile.mov"},
+    ]}/>
 
-<p></p>
+<p></p> -->
 
 
 <Section background="#f4f4f4" padding="50">

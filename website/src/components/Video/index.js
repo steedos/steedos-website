@@ -3,7 +3,7 @@ import React from 'react';
 class Video extends React.Component {
 
   static defaultProps = {
-    id: "video-" + Math.random().toString(36).substring(5),
+    urls: [],
     poster: "",
     autoplay: false,
     loop: false,
@@ -25,24 +25,34 @@ class Video extends React.Component {
 
   constructor(props) {
     super(props);
-    this.players = [];
+    this.id = "video-" + Math.random().toString(36).substring(5);
   }
 
   componentDidMount() {
-    this.players[this.props.id] = new Player(this.props);
-    if (this.props.otherurls) {
-      this.players[this.props.id].emit('resourceReady', this.props.otherurls);
-    }
+    this.timer = setTimeout(() => this.initPlayer(), 100);
+  }
+
+  initPlayer() {
+    if (this.props.urls.length < 1)
+      return
+    let options = Object.assign({}, this.props);
+    if (!options.url)
+      options.url = this.props.urls[0].url;
+    options.id = this.id;
+
+    this.player = new Player(options);
+    this.player.emit('resourceReady', options.urls);
   }
 
   componentWillUnmount() {
-    if (this.players[this.props.id])
-      this.players[this.props.id].destroy(false);
+    clearTimeout(this.timer);
+    if (this.player && this.player.destroy)
+      this.player.destroy(true);
   }
       
   render() {
     return (
-      <div id={this.props.id}></div>
+      <div id={this.id}></div>
     )
   }
 }
