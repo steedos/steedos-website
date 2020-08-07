@@ -122,6 +122,7 @@ html[data-theme='dark'] .main-wrapper {
   max-width: 1390px;
 }
 
+
 .main-wrapper {
   justify-content: center;
   display: flex;
@@ -157,6 +158,10 @@ html[data-theme='dark'] .main-wrapper {
   }
   .navbar.navbar--fixed-top.navbar-sidebar--show {
     z-index: 300;
+  }
+
+  .navbar .navbar__inner .navbar__brand{
+    display: none;
   }
 }
 

@@ -34,9 +34,10 @@ https://www-steedos-com.oss-cn-beijing.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%A
 <br/>
 <br/>
 
-import TencentVideo from '@site/src/components/TencentVideo';
+<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.mp4" controls="controls" poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.jpg" width="100%" loop="loop" playsinline="playsinline">
+your browser does not support the video tag
+</video>
 
-<TencentVideo fileID="5285890806165825461"/>
 
 
 import Section from '@site/src/components/Section';
