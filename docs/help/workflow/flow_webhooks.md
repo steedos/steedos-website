@@ -36,9 +36,19 @@ title: 流程触发器
 
   cc_submit：被传阅提交
 
-- current_approve：当前步骤，即用户执行提交操作时的 approve 数据
+- current_approve：当前步骤，即用户执行提交操作时的 approve 数据，包含主要字段：
 
-- instance：提交申请单操作完成后最新的完整实例数据
+  - judge：当前步骤处理人意见，approved 表示核准，rejected 表示驳回，submitted 表示填写节点提交
+
+- instance：提交申请单操作完成后最新的完整实例数据， 包含主要字段：
+
+  - name：申请单名称
+  - applicant_name：申请人名称
+  - applicant_organization_name：申请人所属组织名称
+  - applicant_organization_fullname：申请人所属组织全路径
+  - current_step_name： 当前步骤名称
+  - state：申请单状态， pending 表示进行中，completed 表示已结束
+  - final_decision：申请单最终处理意见，申请单结束时赋值，approved 表示核准，rejected 表示驳回，terminated 表示强制结束
 
 - from_user：值为当前操作者。如： A 提交申请单给 B 那么 from_user 值就是 A 的相关信息
 
@@ -193,25 +203,24 @@ title: 流程触发器
 
 ## 示例
 
-领导有审批意见时通知文书，给文书发送短信：
+领导有审批意见时通知文书，给文书发送短信，新建 wenshu.router.js，\*.router.js 文档参考[自定义 API](https://www.steedos.com/developer/api/router)：
 
 ```js
-JsonRoutes.add("post", "/api/flow_webhook/notify/wenshu", function (
-  req,
-  res,
-  next
-) {
-  var current_approve,
-    description,
-    e,
-    hashData,
-    ins_description,
-    ins_name,
-    lang,
-    name,
-    params,
-    user;
+const express = require("express");
+const router = express.Router();
+
+router.post("/api/flow_webhook/notify/wenshu", function (req, res) {
   try {
+    var current_approve,
+      description,
+      e,
+      hashData,
+      ins_description,
+      ins_name,
+      lang,
+      name,
+      params,
+      user;
     hashData = req.body;
     if (hashData.action !== "engine_submit") {
       JsonRoutes.sendResult(res, {
@@ -225,7 +234,7 @@ JsonRoutes.add("post", "/api/flow_webhook/notify/wenshu", function (
       _.isEmpty(hashData.instance) ||
       _.isEmpty(hashData.current_approve)
     ) {
-      throw new Meteor.Error("error", "不具备hook执行条件");
+      throw new Error("error", "不具备hook执行条件");
     }
     current_approve = hashData.current_approve;
     if (current_approve.handler_name === "张总") {
@@ -276,23 +285,18 @@ JsonRoutes.add("post", "/api/flow_webhook/notify/wenshu", function (
         }
       }
     }
-    return JsonRoutes.sendResult(res, {
-      code: 200,
-      data: {},
-    });
+    res.status(200).send({ message: "ok" });
   } catch (error) {
-    e = error;
-    console.error(e.stack);
-    return JsonRoutes.sendResult(res, {
-      code: 500,
-      data: {
-        errors: [
-          {
-            errorMessage: e.message,
-          },
-        ],
-      },
+    console.error(error.stack);
+    res.status(500).send({
+      errors: [
+        {
+          errorMessage: error.message,
+        },
+      ],
     });
   }
 });
+
+exports.default = router;
 ```
