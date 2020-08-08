@@ -223,10 +223,7 @@ router.post("/api/flow_webhook/notify/wenshu", function (req, res) {
       user;
     hashData = req.body;
     if (hashData.action !== "engine_submit") {
-      JsonRoutes.sendResult(res, {
-        code: 200,
-        data: {},
-      });
+      res.status(200).send({});
       return;
     }
     if (
