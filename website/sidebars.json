@@ -70,7 +70,8 @@
     "华炎API": ["developer/api"],
     "OData": ["developer/api/odata", "developer/api/odata_auth", "developer/api/odata_query", "developer/api/odata_get", "developer/api/odata_add", "developer/api/odata_edit", "developer/api/odata_delete", "developer/api/odata_functions", "developer/api/odata_metadata"],
     "GraphQL": ["developer/api/graphql", "developer/api/graphql_auth", "developer/api/graphql_query", "developer/api/graphql_add", "developer/api/graphql_edit", "developer/api/graphql_delete"],
-    "单点登录": ["developer/api/api_jwt"]
+    "单点登录": ["developer/api/api_jwt"],
+    "自定义": ["developer/api/router"]
   },
   "华信": ["messenger/index", "messenger/download"],
   "视频": {
