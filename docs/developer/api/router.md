@@ -2,7 +2,7 @@
 title: 自定义API
 sidebar_label: API
 ---
-在系统中，可以调用自定义API处理相关的业务逻辑并返回结果。
+在系统中，可以定义API处理相关的业务逻辑并返回结果。
 
 ### 声明自定义API
 文件规范
@@ -21,6 +21,7 @@ sidebar_label: API
 ```
 
 ### 使用代码编写实例 (登录认证)
+- 认证处理器: `core.requireAuthentication`, 认证成功, 则可以在req中获取到当前用户信息`req.user` ; 认证失败, 则会返回401错误
 ```js
   const express = require("express");
   const router = express.Router();
