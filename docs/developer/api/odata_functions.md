@@ -5,7 +5,7 @@ title: 自定义函数
 在 OData 中，可以调用自定义方法处理相关的业务逻辑并返回结果。
 
 ### 声明自定义函数
-`xxx.method.js`
+`xxx.function.js`
 - listenTo: 对象名称，选填。如果没有定义此属性，则取文件名中第一个 `.` 之前的文字作为listenTo的值
 
 ### 使用代码编写实例
@@ -22,14 +22,14 @@ title: 自定义函数
 
 - 请求方法：GET | POST | PUT | DELETE
 
-- 请求接口：/api/v4/{object_name}/{record_id}/{method_name}
+- 请求接口：/api/v4/{object_name}/{record_id}/{function_name}
 
 - 接口说明：
 
   - req.userId: 当前用户 ID
 
     ```js
-    //vip_order.method.js
+    //vip_order.function.js
     const objectql = require("@steedos/objectql");
     module.exports = {
       confirmReceipt: async function (req, res) {
