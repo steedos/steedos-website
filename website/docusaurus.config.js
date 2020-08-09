@@ -117,22 +117,22 @@ module.exports = {
       links: [
         {to: 'platform/', label: '产品', position: 'left', activeBasePath: '/platform/'},
 
-        {to: '', label: '应用', position: 'left',
+        {to: '', label: '解决方案', position: 'left',
           items: [
             // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
             {to: 'oa/', label: '华炎办公', position: 'left', activeBasePath: '/oa/'},
             {to: 'products/contract/', label:'合同管理',position: 'left', activeBasePath: 'solutions/group/'},
             {to: 'solutions/group/', label:'集团管控',position: 'left', activeBasePath: 'solutions/group/'},
             {to: 'solutions/cost/', label: '费控管理', position: 'left', activeBasePath: 'solutions/cost/'},
-            {to: 'solutions/knowledge/', label: '知识管理', position: 'left', activeBasePath: 'solutions/knowledge/'},
+            //{to: 'solutions/knowledge/', label: '知识管理', position: 'left', activeBasePath: 'solutions/knowledge/'},
           ]
         },
         {to: 'developer/', label: '文档', position: 'left',
           items: [
-            {to: '/developer/deploy/', label: '安装'},
-            {to: '/developer/guide/', label: '开发'},
-            {to: '/help/', label: '使用'},
-            {to: '/help/admin/', label: '管理'},
+            {to: '/developer/deploy/', label: '安装部署'},
+            {to: '/developer/guide/', label: '开发教程'},
+            {to: '/help/', label: '使用帮助'},
+            {to: '/help/admin/', label: '管理员帮助'},
             {to: '/developer/api/', label: 'API'},
           ]
         },
@@ -256,6 +256,9 @@ module.exports = {
         },
       },
     ],
+  ],
+  stylesheets: [
+    '/website/libs/tailwind/tailwind.min.css',
   ],
   plugins: [path.resolve(__dirname, './src/plugins/plugin-baidu-analytics')],
 };

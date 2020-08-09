@@ -15,6 +15,7 @@
     "classnames": "^2.2.6",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "tailwindcss": "^1.6.2",
     "xgplayer": "^2.9.12"
   },
   "browserslist": {

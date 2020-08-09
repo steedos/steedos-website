@@ -1,7 +1,7 @@
 ---
 title: 华炎魔方帮助企业快速实现数字化转型
 sidebar_label: 应用案例
-hide_table_of_contents: false
+hide_table_of_contents: true
 background: /img/banner/clouds-large-desktop.png
 keywords:
   - 低代码

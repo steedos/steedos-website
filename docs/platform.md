@@ -22,7 +22,7 @@ keywords:
 
 # 新一代低代码开发平台，开发效率提升十倍，代码量减少90%
 
-<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/videos/steedos-platform-features/" target="_blank">
+<a class="slds-button slds-button_success slds-m-right_medium slds-var-p-vertical_xx-small" href="/platform/features/">
 视频演示
 </a>
 

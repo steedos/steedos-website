@@ -195,3 +195,9 @@ html[data-theme='dark'] .main-wrapper {
     width: 50%;
   }
 }
+
+.slds-button_success {
+  color: #fff !important;
+  background-color: #278806;
+  border: 1px solid #278806;
+}

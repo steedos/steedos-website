@@ -1,7 +1,7 @@
 ---
 title: 低代码开发平台评估向导
 hide_title: true
-sidebar_label: 试用
+sidebar_label: 免费试用
 background: /img/banner/clouds-large-desktop.png
 hide_table_of_contents: true
 ---
