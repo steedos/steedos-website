@@ -8,7 +8,7 @@ title: Downloads
 
 Click the button below:
 
-<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="http://oss.steedos.com/apps/steedos/windows/cn/steedos-desktop.exe" target="_blank">
+<a class="bg-blue-700 text-white px-5 py-3 font-semibold rounded hover:bg-blue-800 hover:text-white ml-3" href="http://oss.steedos.com/apps/steedos/windows/cn/steedos-desktop.exe" target="_blank">
 Download
 </a>
 
@@ -18,7 +18,7 @@ Download
 
 Click the button below:
 
-<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="http://oss.steedos.com/apps/steedos/mac/steedos.dmg" target="_blank">
+<a class="bg-blue-700 text-white px-5 py-3 font-semibold rounded hover:bg-blue-800 hover:text-white ml-3" href="http://oss.steedos.com/apps/steedos/mac/steedos.dmg" target="_blank">
 Download
 </a>
 

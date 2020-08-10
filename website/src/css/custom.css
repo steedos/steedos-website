@@ -6,8 +6,8 @@
  */
 
 
- @import './salesforce-lightning-design-system.css';
- @import './salesforce-customize.css';
+ /* @import './salesforce-lightning-design-system.css';
+ @import './salesforce-customize.css'; */
  
  :root {
   /* --ifm-color-primary: #25c2a0;
@@ -29,6 +29,7 @@
   --ifm-container-width: 1140px;
   --ifm-spacing-horizontal: 1rem;
   --ifm-z-index-fixed: 200;
+  --ifm-link-hover-decoration: 0;
 }
 
 .markdown > h1 {
@@ -75,10 +76,6 @@ html[data-theme='dark'] .main-wrapper {
   background-image: none;
   background-repeat: no-repeat;
   background-size: contain;
-}  
-
-.container {
-  width: 85%;
 }  
 
 .container p img[src*="#bordered"]{

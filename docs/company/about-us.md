@@ -7,11 +7,11 @@ background: /img/banner/company.png
 
 上海华炎软件科技有限公司成立于2001年，基于20年企业管理软件的开发经验，推出既支持云平台，也能够在本地部署和二次销售系统的低代码开发平台——华炎魔方。
 
-<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/platform/" >
+<a class="bg-blue-700 text-white px-5 py-3 font-semibold rounded hover:bg-blue-800 hover:text-white ml-3" href="/platform/" >
 了解我们的产品
 </a>
 
-<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/developer/guide/" >
+<a class="bg-blue-700 text-white px-5 py-3 font-semibold rounded hover:bg-blue-800 hover:text-white ml-3" href="/developer/guide/" >
 开发教程
 </a>
 

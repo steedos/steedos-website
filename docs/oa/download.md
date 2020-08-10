@@ -16,6 +16,6 @@ background: /img/banner/service-overview-lg.png
 
 使用客户端访问华炎办公，可以实现待处理文件的自动弹出提醒。并可实现附件在线编辑等更多额外功能。
 
-<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/help/download" target="_blank">
+<a class="bg-blue-700 text-white px-5 py-3 font-semibold rounded hover:bg-blue-800 hover:text-white ml-3" href="/help/download" target="_blank">
 点击下载
 </a>

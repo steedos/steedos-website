@@ -16,11 +16,11 @@ keywords:
 
 华炎合同管理系统，是国内首款全身可定制的合同管理解决方案，系统功能涵盖合同订立、执行、跟踪、变更、验收、付款、监督、统计的整个管理过程，并提供低代码开发工具华炎魔方，通过调整配置文件就能调整合同台账、业务字段、审批流程、统计报表等，快速满足业务部门的个性化需求。
 
-<p><a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts-demo.mp4" target="_blank">
+<p><a class="bg-blue-700 text-white px-5 py-3 font-semibold rounded hover:bg-blue-800 hover:text-white ml-3" href="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts-demo.mp4" target="_blank">
 视频演示
 </a>
 
-<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="https://github.com/steedos/steedos-contracts-app" target="_blank">
+<a class="bg-blue-700 text-white px-5 py-3 font-semibold rounded hover:bg-blue-800 hover:text-white ml-3" href="https://github.com/steedos/steedos-contracts-app" target="_blank">
 下载源码
 </a></p>
 

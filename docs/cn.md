@@ -58,7 +58,7 @@ import Section from '@site/src/components/Section';
     ]}/>
 
   <div class="mt-4 mb-4">
-    <a class="slds-button slds-button_success slds-m-right_medium slds-var-p-vertical_xx-small" href="/platform/features/">视频演示</a>
+    <a class="bg-green-700 text-white px-5 py-3 font-semibold rounded hover:bg-green-800  hover:text-white" href="/platform/features/">视频演示</a>
   </div>
 
 </Section>
@@ -73,7 +73,7 @@ import Section from '@site/src/components/Section';
     ]}/>
 
   <div class="mt-4 mb-4">
-    <a class="slds-button slds-button_success slds-m-right_medium slds-var-p-vertical_xx-small" href="/videos/lesson-object/" target="_blank">视频演示</a>
+    <a class="bg-green-700 text-white px-5 py-3 font-semibold rounded hover:bg-green-800  hover:text-white" href="/videos/lesson-object/" target="_blank">视频演示</a>
   </div>
   
 <p></p>

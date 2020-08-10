@@ -7,6 +7,7 @@
 
 import React from 'react';
 import {MDXProvider} from '@mdx-js/react';
+import classnames from 'classnames';
 
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import renderRoutes from '@docusaurus/renderRoutes';
@@ -37,9 +38,13 @@ function DocPage(props) {
     return <NotFound {...props} />;
   }
 
+  let pageClassName = classnames(styles.docPage);
+  if (sidebar) 
+    pageClassName = classnames('hasSidebar', styles.docPage);
+
   return (
     <Layout version={version} key={isClient}>
-      <div className={styles.docPage}>
+      <div className={pageClassName}>
         {sidebar && (
           <div className={styles.docSidebarContainer}>
             <DocSidebar
