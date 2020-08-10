@@ -20,18 +20,35 @@ keywords:
   - paas
 ---
 
-# 新一代低代码开发平台，开发效率提升十倍，代码量减少90%
 
-<a class="slds-button slds-button_success slds-m-right_medium slds-var-p-vertical_xx-small" href="/platform/features/">
-视频演示
-</a>
+<div class="mb-8">
+	<div class="mx-auto flex flex-wrap flex-col xl:flex-row items-center">
+		<div class="flex flex-col w-full xl:w-2/5 justify-center items-start text-center md:text-left">
+			<div class="tracking-loose w-full text-gray-700 font-bold ">新一代低代码开发平台</div>
+			<h1 class="my-4 text-5xl leading-tight">华炎魔方助力数字化转型</h1>
+			<div class="leading-normal text-2xl">华炎魔方特有的敏捷性、灵活性和开放性，帮助业务加速创新，提升竞争力
+</div>
+            <div class="mt-8 mb-8">
+                <a href="/videos/steedos-platform-features/" class="bg-green-700 text-white px-5 py-3 font-semibold rounded hover:bg-green-800  hover:text-white" target="_blank">视频演示</a>
+                <a href="/developer/guide/" class="bg-blue-700 text-white px-5 py-3 font-semibold rounded hover:bg-blue-800 hover:text-white ml-3">开发教程</a>
+            </div>
+		</div>
+		<div class="w-full xl:w-3/5 text-center xl:pl-5">
+                  <Video 
+                    poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.jpg"
+                    autoplay={false}
+                    urls={[
+                        {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.mp4"},
+                    ]}/>
+		</div>
+	</div>
+</div>
 
-<a class="slds-button slds-button_brand slds-m-right_medium slds-var-p-vertical_xx-small" href="/developer/guide/" >
-开发教程
-</a>
+import Section from '@site/src/components/Section';
 
-<br/>
-<br/>
+<Section background="#0f2e5d">
+
+<h1 class="my-4 text-4xl font-bold leading-tight text-white">华炎魔方十大引擎，代码量减少90%，开发效率提升十倍</h1>
 
 import Video from '@site/src/components/Video';
 
@@ -43,28 +60,13 @@ import Video from '@site/src/components/Video';
         {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.mp4"},
     ]}/>
 
-
-
-import Section from '@site/src/components/Section';
-
-<br/>
-<br/>
-
-<Section background="#f4f4f4" padding="50">
-
-# 华炎魔方兼具敏捷性、灵活性和开放性，帮助业务加速创新，提升竞争力
-
-<Video 
-    poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.jpg"
-    autoplay={false}
-    urls={[
-        {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.mp4"},
-    ]}/>
+  <div class="mt-4 mb-4">
+    <a class="slds-button slds-button_success slds-m-right_medium slds-var-p-vertical_xx-small" href="/platform/features/">视频演示</a>
+  </div>
 
 </Section>
 
 # 模型驱动业务，零代码搭建业务系统1.0
-
 
 <Video 
     poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.jpg"
@@ -72,6 +74,10 @@ import Section from '@site/src/components/Section';
     urls={[
         {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.mp4"},
     ]}/>
+
+  <div class="mt-4 mb-4">
+    <a class="slds-button slds-button_success slds-m-right_medium slds-var-p-vertical_xx-small" href="/videos/lesson-object/" target="_blank">视频演示</a>
+  </div>
 
 <p></p>
 
