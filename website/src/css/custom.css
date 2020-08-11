@@ -170,6 +170,10 @@ html[data-theme='dark'] .main-wrapper {
   font-size: 1rem;
 }
 
+.navbar {
+  display: block;
+}
+
 .navbar .navbar__brand {
   height: 2.5rem;
 }
