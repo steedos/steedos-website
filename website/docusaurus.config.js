@@ -115,8 +115,14 @@ module.exports = {
         href: '/cn/'
       },
       links: [
-        {to: 'platform/', label: '产品', position: 'left', activeBasePath: '/platform/'},
-
+        {to: 'platform/', label: '平台', position: 'left', activeBasePath: '/platform/',
+          items: [
+            {to: 'platform/', label:'功能',position: 'left', activeBasePath: '/platform/temp'},
+            {to: 'platform/cases', label:'案例',position: 'left'},
+            {to: 'platform/pricing', label:'报价',position: 'left'},
+            {to: 'platform/try', label:'试用',position: 'left'},
+          ]
+        },
         {to: '', label: '解决方案', position: 'left',
           items: [
             // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
@@ -127,16 +133,9 @@ module.exports = {
             //{to: 'solutions/knowledge/', label: '知识管理', position: 'left', activeBasePath: 'solutions/knowledge/'},
           ]
         },
-        {to: 'developer/', label: '文档', position: 'left',
-          items: [
-            {to: '/developer/deploy/', label: '安装部署'},
-            {to: '/developer/guide/', label: '开发教程'},
-            {to: '/help/', label: '使用帮助'},
-            {to: '/help/admin/', label: '管理员帮助'},
-            {to: '/developer/api/', label: 'API'},
-          ]
-        },
-        {to: 'videos/', label: '视频', position: 'left',},
+        {to: '/developer/', label: '开发', position: 'left',},
+        {to: '/help/', label: '帮助', position: 'left',},
+        //{to: 'videos/', label: '视频', position: 'left',},
         {to: '/company/about-us/', label: '关于', position: 'left',
           // items: [
           //   {to: '/company/about-us/', label: '关于华炎'},
@@ -145,7 +144,7 @@ module.exports = {
           // ]
         },
         {to: '/us/', label: 'English', position: 'right'},
-        {label: '登录', position: 'right', href: 'https://cn.steedos.com'},
+        {label: '华炎云', position: 'right', href: 'https://cn.steedos.com'},
       ],
       links_us: [
         {to: '/us/', label: 'Home', position: 'left'},
@@ -248,7 +247,7 @@ module.exports = {
           path: '../docs',
           routeBasePath: '/', // Set this value to '/'.
           // sidebars file relative to website dir.
-          sidebarPath: require.resolve('./sidebars.json'),
+          sidebarPath: require.resolve('./sidebars.js'),
           // editUrl: 'https://github.com/steedos/steedos-website/edit/master/website/',
         },
         theme: {

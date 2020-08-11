@@ -1,5 +1,6 @@
 ---
 title: 华炎魔方文档
+sidebar_label: 概览
 background: /img/banner/clouds-large-desktop.png
 hide_table_of_contents: true
 ---

@@ -1,5 +1,7 @@
 import React from 'react';
 
+const hashCode = s => s.split('').reduce((a,b) => (((a << 5) - a) + b.charCodeAt(0))|0, 0)
+
 class Video extends React.Component {
 
   static defaultProps = {
@@ -7,7 +9,7 @@ class Video extends React.Component {
     poster: "",
     autoplay: false,
     loop: false,
-    videoInit: true,
+    videoInit: false,
     fluid: true,
     playbackRate: [0.75, 1, 1.25, 1.5, 2],
     defaultPlaybackRate: 1,
@@ -25,7 +27,11 @@ class Video extends React.Component {
 
   constructor(props) {
     super(props);
-    this.id = "video-" + Math.random().toString(36).substring(5);
+    if (props.url)
+      this.url = props.url
+    else
+      this.url = this.props.urls[0].url;
+    this.id =  'video' + hashCode(this.url)
   }
 
   componentDidMount() {
@@ -33,12 +39,12 @@ class Video extends React.Component {
   }
 
   initPlayer() {
+    console.log("initPlayer: " + this.id)
     if (this.props.urls.length < 1)
       return
     let options = Object.assign({}, this.props);
-    if (!options.url)
-      options.url = this.props.urls[0].url;
     options.id = this.id;
+    options.url = this.url;
 
     this.player = new Player(options);
     this.player.emit('resourceReady', options.urls);
@@ -46,8 +52,8 @@ class Video extends React.Component {
 
   componentWillUnmount() {
     clearTimeout(this.timer);
-    if (this.player && this.player.destroy)
-      this.player.destroy(true);
+    // if (this.player && this.player.destroy)
+    //   this.player.destroy(true);
   }
       
   render() {

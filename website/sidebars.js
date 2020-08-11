@@ -1,3 +1,5 @@
+
+module.exports = 
 {
   "关于华炎": ["company/about-us", "company/customers", "company/contact-us"],
   "华炎办公": ["oa", "oa/function", "oa/scenario", "oa/cases", "oa/price", 
@@ -32,37 +34,49 @@
     "按角色": ["solutions/sales/role_professional","solutions/sales/role_supervisor","solutions/sales/role_operate","solutions/sales/role_manager","solutions/sales/role_expert","solutions/sales/role_service","solutions/sales/role_FAQ"]
   },
   "华炎知识管理": ["solutions/knowledge","solutions/knowledge/management","solutions/knowledge/case"],
-  "华炎魔方": [
-    "platform", 
-    "platform/features", 
-    "platform/pricing", 
-    "platform/cases", 
-    "platform/try",
-    {
-      "type": "link",
-      "href": "https://github.com/steedos/steedos-platform",
-      "label": "开源社区版"
-  }],
-  "Steedos 开发文档": {
-    "快速向导": ["developer/guide","developer/install", "developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report","developer/guide_flow","developer/guide_sync","developer/guide_companies","developer/guide_nc"],
+  // "华炎魔方": [
+  //   "platform", 
+  //   "platform/features", 
+  //   "platform/pricing", 
+  //   "platform/cases", 
+  //   "platform/try",
+  //   {
+  //     "type": "link",
+  //     "href": "https://github.com/steedos/steedos-platform",
+  //     "label": "开源社区版"
+  // }],
+  "开发文档": {
+    "快速向导": ["developer","developer/install", "developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report","developer/guide_flow","developer/guide_sync","developer/guide_companies","developer/guide_nc"],
+    "安装部署": ["developer/deploy","developer/deploy_mac","developer/deploy_windows","developer/deploy_ubuntu","developer/deploy_heroku","developer/deploy_docker","developer/deploy_cluster"],
     "业务对象": ["developer/datasource", "developer/object", "developer/object_field", "developer/listview", "developer/object_filter_conditions", "developer/object_permission", "developer/object_action", "developer/object_form", "developer/app" ],
     "业务流程": ["developer/object_workflow"],
     "业务统计": ["developer/reports", "developer/report_jsreport"],
     "高级开发": ["developer/steedos_config", "developer/steedos_server", "developer/env", "developer/objectql_connection", "developer/objectql_object", "developer/object_filter", "developer/object_trigger", "developer/object_field_formula", "developer/standard_objects"],
-    "插件": ["plugins/index",  "plugins/plugin_webapp", "plugins/plugin_webapp_functions"]
+    "插件": ["plugins/index",  "plugins/plugin_webapp", "plugins/plugin_webapp_functions"],
+    
+    "API": [
+      "developer/api",
+      {
+        "OData": ["developer/api/odata", "developer/api/odata_auth", "developer/api/odata_query", "developer/api/odata_get", "developer/api/odata_add", "developer/api/odata_edit", "developer/api/odata_delete", "developer/api/odata_functions", "developer/api/odata_metadata"],
+        "GraphQL": ["developer/api/graphql", "developer/api/graphql_auth", "developer/api/graphql_query", "developer/api/graphql_add", "developer/api/graphql_edit", "developer/api/graphql_delete"],
+        "高级": ["developer/api/api_jwt", "developer/api/router"]
+      }]
   },
-  "Steedos 部署文档": {
-    "安装部署": ["developer/deploy","developer/deploy_mac","developer/deploy_windows","developer/deploy_ubuntu","developer/deploy_heroku","developer/deploy_docker","developer/deploy_cluster"]
-  }, 
-  "用户手册": {
-    "帮助文档": ["help", "help/download", "help/workflow/faq", "help/workflow_upgrade"],
-    "流程审批": ["help/workflow/instance_add", "help/workflow/instance_approve", "help/workflow/instance_carboncopy", "help/workflow/instance_distribute", "help/workflow/instance_forward", "help/workflow/instance_print", "help/workflow/instance_search", "help/workflow/instance_monitor", "help/workflow/instance_export" ],
-    "数据台账": ["help/record_list", "help/record_view", "help/record_report", "help/notifications"]
-  },
-  "管理员手册": {
-    "公司设置": ["help/admin", "help/organization", "help/profile", "help/permission_set", "help/permission_share"],
-    "流程设置": ["help/workflow/admin_form", "help/workflow/admin_flow", "help/workflow/admin_positions", "help/workflow/admin_picturesignature"],
-    "对象设置": ["developer/no-code/object", "developer/no-code/object_subtable", "developer/no-code/object_workflows", "developer/no-code/object_datasources", "developer/no-code/object_web_forms"]
+  "帮助中心": {
+    "用户帮助": ["help", "videos", "help/download",
+    {
+      "流程审批": ["help/workflow/instance_add", "help/workflow/instance_approve", "help/workflow/instance_carboncopy", "help/workflow/instance_distribute", "help/workflow/instance_forward", "help/workflow/instance_print", "help/workflow/instance_search", "help/workflow/instance_monitor", "help/workflow/instance_export" ],
+      "数据台账": ["help/record_list", "help/record_view", "help/record_report", "help/notifications"],  
+    }
+    
+    ],
+    "管理员设置": [
+      {
+        "公司设置": ["help/admin", "help/organization", "help/profile", "help/permission_set", "help/permission_share"],
+        "流程设置": ["help/workflow/admin_form", "help/workflow/admin_flow", "help/workflow/admin_positions", "help/workflow/admin_picturesignature"],
+        "对象设置": ["developer/no-code/object", "developer/no-code/object_subtable", "developer/no-code/object_workflows", "developer/no-code/object_datasources", "developer/no-code/object_web_forms"]
+      }
+      , "help/workflow/faq"    ]
   },
   "Steedos Help": {
     "Quick Guide": ["us/help/workflow/README", "us/help/workflow/guide_setup", "us/help/workflow/guide_user", "us/help/workflow/guide_admin", "us/help/workflow/guide_permissions", "us/help/workflow/guide_versions", "us/help/workflow/mp4", "us/help/workflow/faq"],
@@ -72,15 +86,10 @@
     "How to design a flow": ["us/help/workflow/flow_design", "us/help/workflow/flow_permissions", "us/help/workflow/flow_step_approve", "us/help/workflow/flow_step_input", "us/help/workflow/flow_step_counter_sign", "us/help/workflow/flow_step_condition", "us/help/workflow/flow_step_user", "us/help/workflow/flow_step_permissions", "us/help/workflow/flow_state"]
   },
   "华炎API": {    
-    "华炎API": ["developer/api"],
-    "OData": ["developer/api/odata", "developer/api/odata_auth", "developer/api/odata_query", "developer/api/odata_get", "developer/api/odata_add", "developer/api/odata_edit", "developer/api/odata_delete", "developer/api/odata_functions", "developer/api/odata_metadata"],
-    "GraphQL": ["developer/api/graphql", "developer/api/graphql_auth", "developer/api/graphql_query", "developer/api/graphql_add", "developer/api/graphql_edit", "developer/api/graphql_delete"],
-    "单点登录": ["developer/api/api_jwt"],
-    "自定义": ["developer/api/router"]
   },
   "华信": ["messenger/index", "messenger/download"],
-  "视频": {
-    "华炎魔方总览": ["videos/steedos-digital-transformation", "videos/steedos-platform-features"],
-    "低代码开发培训": ["videos/lesson-object","videos/lesson-object-relationship"]
-  }
+  // "视频": {
+  //   "华炎魔方总览": ["videos/steedos-digital-transformation", "videos/steedos-platform-features"],
+  //   "低代码开发培训": ["videos/lesson-object","videos/lesson-object-relationship"]
+  // }
 }

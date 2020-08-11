@@ -6,8 +6,8 @@
  */
 
 
- /* @import './salesforce-lightning-design-system.css';
- @import './salesforce-customize.css'; */
+ @import './salesforce-lightning-design-system.css';
+ @import './salesforce-customize.css'; 
  
  :root {
   /* --ifm-color-primary: #25c2a0;
@@ -113,17 +113,6 @@ html[data-theme='dark'] .main-wrapper {
 
 .navbar .navbar__title {
   font-size: 1.2rem;
-}
-
-.navbar .navbar__inner {
-  max-width: 1390px;
-}
-
-
-.main-wrapper {
-  justify-content: center;
-  display: flex;
-  min-height: 1390px;
 }
 
 @media (max-width: 996px) {

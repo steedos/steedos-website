@@ -1,5 +1,6 @@
 ---
 title: 华炎魔方视频
+sidebar_label: 视频
 background: /img/banner/clouds-large-desktop.png
 hide_title: true
 hide_table_of_contents: true
