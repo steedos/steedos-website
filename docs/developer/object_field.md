@@ -175,7 +175,7 @@ country:
   picklist: countryList
 ```
 
-![选项列表值集](/assets/field_picklist.png#bordered)
+![选项列表值集](/assets/field_picklist.png)
 
 ## 基本类型字段
 
@@ -220,7 +220,7 @@ deadline:
   type: 'date'
 ```
 
-![日期类型字段](/assets/field_date.png#bordered)
+![日期类型字段](/assets/field_date.png)
 
 ### 日期时间 datetime
 
@@ -232,7 +232,7 @@ starttime:
   type: 'datetime'
 ```
 
-![日期时间类型字段](/assets/field_datetime.png#bordered)
+![日期时间类型字段](/assets/field_datetime.png)
 
 ### 布尔 boolean
 
@@ -315,7 +315,7 @@ tags:
   multiple: true
 ```
 
-![select类型字段多选](/assets/field_select_multiple.png#bordered)
+![select类型字段多选](/assets/field_select_multiple.png)
 
 ### 可选项 options
 
@@ -409,7 +409,7 @@ account_id:
   filters: [["priority", "eq", "normal"]]
 ```
 
-![lookup类型字段](/assets/field_lookup.png#bordered)
+![lookup类型字段](/assets/field_lookup.png)
 
 ### 引用对象(reference_to)
 
@@ -436,7 +436,7 @@ contract_type:
   multiple: true
 ```
 
-![lookup类型字段多选](/assets/field_lookup_multiple.png#bordered)
+![lookup类型字段多选](/assets/field_lookup_multiple.png)
 
 多选字段在MongoDB数据库中保存为数组，值为选中记录的ID：
 
@@ -476,7 +476,7 @@ contract_type: ["id-1111111","id-2222222"]
     filterable: true
 ```
 
-![master_detail类型字段多选](/assets/field_master_detail_guide.png#bordered)
+![master_detail类型字段多选](/assets/field_master_detail_guide.png)
 
 ## 表格类型字段 grid
 

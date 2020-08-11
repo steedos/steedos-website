@@ -24,7 +24,7 @@ keywords:
 下载源码
 </a></p>
 
-![华炎合同管理](/assets/project_contracts.png#bordered)
+![华炎合同管理](/assets/project_contracts.png)
 
 import Section from '@site/src/components/Section';
 

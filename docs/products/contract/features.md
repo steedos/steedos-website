@@ -20,7 +20,7 @@ keywords:
 视频演示
 </a></p>
 
-![华炎合同管理](/assets/project_contracts.png#bordered)
+![华炎合同管理](/assets/project_contracts.png)
 
 ## 合同管理解决方案背景
 

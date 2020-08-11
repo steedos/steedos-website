@@ -24,7 +24,7 @@ keywords:
 下载源码
 </a></p>
 
-![华炎合同管理](/assets/project_contracts.png#bordered)
+![华炎合同管理](/assets/project_contracts.png)
 
 # 简单易懂的项目源码，IT部门就能自主定制
 

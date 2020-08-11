@@ -178,7 +178,7 @@ import Section from '@site/src/components/Section';
 
 我们的技术专家拥有十年以上的管理软件开发经验，无论您询问有关华炎魔方开发平台的功能、定价、实施或任何其他方面的问题，他们都将随时准备为您提供帮助。
 
-![在线咨询](/assets/try/contact_by_weixin.png)
+![在线咨询](/assets/contact_by_weixin.png)
 
 </div>
 </Section>

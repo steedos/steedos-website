@@ -83,7 +83,7 @@ html[data-theme='dark'] .main-wrapper {
   background-size: contain;
 }  
 
-.container p img[src*="#bordered"]{
+.container p img[src*=""]{
   border: 1px solid #DDD;
 }
 

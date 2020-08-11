@@ -6,7 +6,7 @@ sidebar_label: 移动办公
 通过移动销售管理CRM系统在手机等移动设备上管理业务。使用移动CRM解决方案确保您的销售团队紧跟业务流程：借助移动CRM软件，您能够随时随地达成交易、服务客户并且一对一的移动市场营销活动。
 
 
-![移动设备](/static/assets/mac_mobile_view1.png)
+![移动设备](/assets/mac_mobile_view1.png)
 
 #### 管理日常工作
 

@@ -16,7 +16,7 @@ background: /img/banner/health-cloud.png
 
 下属企业门户：通过门户的方式实现企业工作内容的呈现。
 
-![管控场景](/static/assets/groupimg/管控场景.png)
+![group](/assets/groupimg/group.png)
 
 #### 集团统一流程中心
 
@@ -28,7 +28,7 @@ background: /img/banner/health-cloud.png
 
 将流程融入数据控制点：将每个流程审批表单所关联的决策信息立体呈现，这是作为集团化管控重要的要求。
 
-![管控场景](/static/assets/groupimg/管控场景1.png)
+![group](/assets/groupimg/group1.png)
 
 ## 集团财务风控
 
@@ -40,7 +40,7 @@ background: /img/banner/health-cloud.png
 
 专项方案关联管控型：根据不同的项目、合同实现对不同类型费用的合并管控。
 
-![管控场景](/static/assets/groupimg/管控场景4.png)
+![group](/assets/groupimg/group4.png)
 
 #### 集团合同中心
 
@@ -52,7 +52,7 @@ background: /img/banner/health-cloud.png
 
 提升合同管理效率：从合同的模板到归档的全系统支持。
 
-![管控场景](/static/assets/groupimg/管控场景5.png)
+![group](/assets/groupimg/group5.png)
 
 ## 集团知识管理
 
@@ -66,7 +66,7 @@ background: /img/banner/health-cloud.png
 
 知识行为分析：按照组织、类型、知识的操作等方式来分析整个组织杂知识方面的管理成效。
 
-![管控场景](/static/assets/groupimg/管控场景2.png)
+![group](/assets/groupimg/group2.png)
 
 #### 集团公文中心
 
@@ -76,7 +76,7 @@ background: /img/banner/health-cloud.png
 
 公文管理与承办一体化：通过公文管理直接形成督查督办。
 
-![管控场景](/static/assets/groupimg/管控场景3.png)
+![group](/assets/groupimg/group3.png)
 
 ## 集团综合管理
 
@@ -90,7 +90,7 @@ background: /img/banner/health-cloud.png
 
 项目实时监控：从任务安排、项目进度、人员安排、预算情况等不同角度监控项目，以便及时对项目做出调整。
 
-![管控场景](/static/assets/groupimg/管控场景6.png)
+![group](/assets/groupimg/group6.png)
 
 #### 集团任务中心
 
@@ -102,7 +102,7 @@ background: /img/banner/health-cloud.png
 
 任务实时督导：上级可以了解到每个下属的任务安排情况，并且对下属的任务执行进行回复评价指导。
 
-![管控场景](/static/assets/groupimg/管控场景7.png)
+![group](/assets/groupimg/group7.png)
 
 
 #### 集团会议中心
@@ -114,7 +114,7 @@ background: /img/banner/health-cloud.png
 
 会议分析图表化：从任务安排、项目进度、人员安排、预算情况等不同角度监控项目，以便及时对项目做出调整。
 
-![管控场景](/static/assets/groupimg/管控场景8.png)
+![group](/assets/groupimg/group8.png)
 
 #### 集团行政中心
 
@@ -126,4 +126,4 @@ background: /img/banner/health-cloud.png
 
 礼品资源管理：营销过程中礼品资源的统一管控。
 
-![管控场景](/static/assets/groupimg/管控场景9.png)
+![group](/assets/groupimg/group9.png)

@@ -12,7 +12,7 @@ background: /img/banner/health-cloud.png
 - 支持移动段的组织结构视图
 
 
-![logo](/static/assets/组织机构.png)
+![logo](/assets/组织机构.png)
 
 #### “弹性化”的集团组织体系
 
@@ -47,7 +47,7 @@ background: /img/banner/health-cloud.png
 - 制度要求的上传下达
 - 任务执行的上传下达
 
-![跨组织实时传达](/static/assets/groupimg/m2_l.png)
+![跨组织实时传达](/assets/groupimg/m2_l.png)
 
 #### 传达内容可视化
 
@@ -57,7 +57,7 @@ background: /img/banner/health-cloud.png
 - 协作沟通过程可视化
 - 统计分析可视化
 
-![内容可视化](/static/assets/groupimg/m6_l.png)
+![内容可视化](/assets/groupimg/m6_l.png)
 
 #### 传达方式移动化
 
@@ -67,7 +67,7 @@ background: /img/banner/health-cloud.png
 - 利用IM工具将沟通与传达结合
 - 与其他移动管理应用无缝结合
 
-![移动化](/static/assets/groupimg/m7_l.png)
+![移动化](/assets/groupimg/m7_l.png)
 
 ## 实时资源共享
 
@@ -93,7 +93,7 @@ background: /img/banner/health-cloud.png
 
 支持多级分权的共享服务：分级分层的共享服务类型
 
-![服务共享](/static/assets/groupimg/m10_l.png)
+![服务共享](/assets/groupimg/m10_l.png)
 
 #### 合同法务共享
 
@@ -154,4 +154,4 @@ background: /img/banner/health-cloud.png
 3. 人事类报表：
 提供人员统计、绩效统计、薪资统计等人事类报表
 
-![图表化](/static/assets/groupimg/report-clear.png)
+![图表化](/assets/groupimg/report-clear.png)

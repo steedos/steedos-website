@@ -146,9 +146,12 @@ function MobileNavItem({items, className, ...props}) {
 function Navbar() {
   let {
     siteConfig: {
+      customFields: {
+        navbar_items_us = [],
+      },
       themeConfig: {
-        navbar: {title, links = [], links_us = [], hideOnScroll = false} = {},
-        disableDarkMode = false,
+        navbar: {title, items = [], items_us = [], hideOnScroll = false} = {},
+        disableDarkMode = true,
       },
     },
     isClient,
@@ -177,8 +180,8 @@ function Navbar() {
   // 支持英文网站
   const location = useLocation();
   if (location && location.pathname.indexOf('/us')>=0){
-    links = links_us
-    title = 'Steedos'
+    items = navbar_items_us
+    title = ''
     logoLink = '/us/'
   }
 
@@ -192,7 +195,7 @@ function Navbar() {
       })}>
       <div className="navbar__inner">
         <div className="navbar__items">
-          {links != null && links.length !== 0 && (
+          {items != null && items.length !== 0 && (
             <div
               aria-label="Navigation bar toggle"
               className="navbar__toggle"
@@ -236,14 +239,14 @@ function Navbar() {
               </strong>
             )}
           </Link>
-          {links
+          {items
             .filter((linkItem) => linkItem.position === 'left')
             .map((linkItem, i) => (
               <NavItem {...linkItem} key={i} />
             ))}
         </div>
         <div className="navbar__items navbar__items--right">
-          {links
+          {items
             .filter((linkItem) => linkItem.position === 'right')
             .map((linkItem, i) => (
               <NavItem {...linkItem} key={i} />
@@ -297,7 +300,7 @@ function Navbar() {
         <div className="navbar-sidebar__items">
           <div className="menu">
             <ul className="menu__list">
-              {links.map((linkItem, i) => (
+              {items.map((linkItem, i) => (
                 <MobileNavItem {...linkItem} onClick={hideSidebar} key={i} />
               ))}
             </ul>

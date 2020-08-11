@@ -104,8 +104,19 @@ module.exports = {
   // useEnglishUrl: false,
 
   themeConfig: {
-    disableDarkMode: true,
     image: 'img/icon_blue.png',
+    colorMode: {
+      // "light" | "dark"
+      defaultMode: 'light',
+
+      // Hides the switch in the navbar
+      // Useful if you want to support a single color mode
+      disableSwitch: true,
+
+      // Should we use the prefers-color-scheme media-query,
+      // using user system preferences, instead of the hardcoded defaultMode
+      respectPrefersColorScheme: false,
+    },
     navbar: {
       hideOnScroll: false,
       title: '',
@@ -114,7 +125,7 @@ module.exports = {
         src: 'img/icon_platform.png',
         href: '/cn/'
       },
-      links: [
+      items: [
         {to: 'platform/', label: '平台', position: 'left', activeBasePath: '/platform/',
           items: [
             {to: 'platform/', label:'功能',position: 'left', activeBasePath: '/platform/temp'},
@@ -123,7 +134,7 @@ module.exports = {
             {to: 'platform/try', label:'试用',position: 'left'},
           ]
         },
-        {to: '', label: '解决方案', position: 'left',
+        {label: '解决方案', position: 'left',
           items: [
             // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
             {to: 'oa/', label: '华炎办公', position: 'left', activeBasePath: '/oa/'},
@@ -146,12 +157,12 @@ module.exports = {
         {to: '/us/', label: 'English', position: 'right'},
         {label: '华炎云', position: 'right', href: 'https://cn.steedos.com'},
       ],
-      links_us: [
-        {to: '/us/', label: 'Home', position: 'left'},
-        {to: '/us/help/workflow/README', label: 'Docs', position: 'left'},
-        {to: '/cn', label: '中文', position: 'right'},
-        {to: '/us/login', label: 'Login', position: 'right'}
-      ],
+      // links_us: [
+      //   {to: '/us/', label: 'Home', position: 'left'},
+      //   {to: '/us/help/workflow/README', label: 'Docs', position: 'left'},
+      //   {to: '/cn', label: '中文', position: 'right'},
+      //   {to: '/us/login', label: 'Login', position: 'right'}
+      // ],
     },
     footer: {
       style: 'dark',
@@ -178,7 +189,7 @@ module.exports = {
             },
             {
               label: '数字化转型',
-              href: '/platform/cases/',
+              to: 'platform/cases/',
             },
           ],
         },
@@ -191,15 +202,15 @@ module.exports = {
             },
             {
               label: '集团管控',
-              href: '/solutions/group/',
+              to: 'solutions/group/',
             },
             {
               label: '合同管理',
-              href: '/products/contract/',
+              to: 'products/contract/',
             },
             {
               label: '流程审批',
-              href: '/solutions/workflow/',
+              to: 'solutions/workflow/',
             },
             // {
             //   label: '什么是OA系统?',
@@ -212,6 +223,7 @@ module.exports = {
           items: [
             {
               label: '销售热线：400-820-1612',
+              href: 'tel://400-820-1612'
             },
             {
               label: '在线咨询',
@@ -225,8 +237,8 @@ module.exports = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} 上海华炎软件科技有限公司. `,
-      icp: ` 沪ICP备09089283号`,
-      icpURL: ` http://www.beian.miit.gov.cn/`,
+      // icp: ` 沪ICP备09089283号`,
+      // icpURL: ` http://www.beian.miit.gov.cn/`,
     },
     algolia: {
       apiKey: 'eaa8e1c86ac084b5cac664d9d996856c',
@@ -259,5 +271,16 @@ module.exports = {
   stylesheets: [
     '/website/libs/tailwind/tailwind.min.css',
   ],
-  plugins: [path.resolve(__dirname, './src/plugins/plugin-baidu-analytics')],
+  plugins: [
+    path.resolve(__dirname, './src/plugins/plugin-baidu-analytics')
+  ],
+
+  customFields: {
+    navbar_items_us: [
+      {to: '/us/', label: 'Home', position: 'left'},
+      {to: '/us/help/workflow/README', label: 'Docs', position: 'left'},
+      {to: '/cn', label: '中文', position: 'right'},
+      {to: '/us/login', label: 'Login', position: 'right'}
+    ],
+  },
 };

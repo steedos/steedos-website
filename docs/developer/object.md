@@ -4,7 +4,7 @@ title: 业务对象
 
 业务对象可以理解为传统数据库中的表。例如合同、单位、联系人、收款记录、付款记录等，都可以定义为业务对象。
 
-![对象显示效果](/assets/object_guide.png#bordered)
+![对象显示效果](/assets/object_guide.png)
 
 ## 业务对象配置
 
