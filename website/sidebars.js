@@ -45,9 +45,9 @@ module.exports =
   //     "href": "https://github.com/steedos/steedos-platform",
   //     "label": "开源社区版"
   // }],
-  "开发文档": {
-    "安装部署": ["developer/deploy","developer/deploy_mac","developer/deploy_windows","developer/deploy_ubuntu","developer/deploy_heroku","developer/deploy_docker","developer/deploy_cluster", "developer/steedos_server"],
-    "低代码开发教程": ["developer/guide", "developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report","developer/guide_flow","developer/guide_sync","developer/guide_companies","developer/guide_nc"],
+  "开发人员": {
+    "快速向导": ["developer", "developer/deploy","developer/steedos_server"],
+    "开发教程": ["developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report","developer/guide_flow","developer/guide_sync","developer/guide_companies","developer/guide_nc"],
     "开发文档": ["developer/datasource", "developer/object", "developer/object_field", "developer/listview", "developer/object_filter_conditions", "developer/object_permission", "developer/object_action", "developer/object_form", "developer/app", "developer/object_workflow", "developer/reports", "developer/report_jsreport"],
     "高级开发": ["developer/steedos_config", "developer/env", "developer/objectql_connection", "developer/objectql_object", "developer/object_filter", "developer/object_trigger", "developer/object_field_formula", "developer/standard_objects"],
     "插件": ["plugins/index",  "plugins/plugin_webapp", "plugins/plugin_webapp_functions"],
@@ -60,15 +60,15 @@ module.exports =
         "高级": ["developer/api/api_jwt", "developer/api/router"]
       }]
   },
-  "帮助中心": {
-    "用户帮助": ["help", "videos", "help/download",
+  "文档": {
+    "快速向导": ["help", "videos", "help/download"],
+    "用户手册": [
     {
       "流程审批": ["help/workflow/instance_add", "help/workflow/instance_approve", "help/workflow/instance_carboncopy", "help/workflow/instance_distribute", "help/workflow/instance_forward", "help/workflow/instance_print", "help/workflow/instance_search", "help/workflow/instance_monitor", "help/workflow/instance_export" ],
       "数据台账": ["help/record_list", "help/record_view", "help/record_report", "help/notifications"],  
     }
-    
     ],
-    "管理员设置": [
+    "管理员手册": [
       {
         "公司设置": ["help/admin", "help/organization", "help/profile", "help/permission_set", "help/permission_share"],
         "流程设置": ["help/workflow/admin_form", "help/workflow/admin_flow", "help/workflow/admin_positions", "help/workflow/admin_picturesignature"],

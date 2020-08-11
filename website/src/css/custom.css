@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
- @import '../../node_modules/tailwindcss/dist/tailwind.css';
+ /* @import '../../node_modules/tailwindcss/dist/tailwind.css'; */
 
  @import './salesforce-lightning-design-system.css';
  @import './salesforce-customize.css'; 

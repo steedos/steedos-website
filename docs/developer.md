@@ -1,137 +1,101 @@
 ---
-title: 华炎魔方文档
+title: 华炎魔方开发人员
 sidebar_label: 概览
-background: /img/banner/clouds-large-desktop.png
 hide_table_of_contents: true
 ---
 
-华炎魔方是一款随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
+华炎魔方是[开源低代码开发工具](https://github.com/steedos/steedos-platform)，基于NodeJS开发，使用yml文件定义[业务对象](/developer/object/)，使用 javascript 语法编写前端和后端业务逻辑脚本。系统内核（业务对象管理、账户管理、权限管理、流程引擎、报表引擎）需运行于 MongoDB 数据库，开发人员可以定义[第三方数据源](/developer/datasource/)，连接SQL Server、Oracle等现有的业务系统数据库。
 
-<div class="slds-grid slds-wrap">
+import Video from '@site/src/components/Video';
 
-  <div class="slds-p-around_small slds-size_1-of-1 slds-large-size_1-of-2">
-    <a href="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.pdf" class="slds-card slds-box slds-box_link slds-media">
-        <div class="slds-media__figure slds-media__figure_fixed-width slds-align_absolute-center">
-            <div class="slds-welcome-mat__tile-figure">
-                <div class="slds-welcome-mat__tile-icon-container">
-                    <span class="slds-icon_container slds-icon-utility-animal_and_nature">
-                        <svg class="slds-icon slds-icon-text-default" aria-hidden="true"><use href="/assets/icons/utility-sprite/svg/symbols.svg#company"></use></svg>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="slds-media__body">
-            <div class="slds-welcome-mat__tile-body">
-                <h3 class="slds-welcome-mat__tile-title">华炎魔方的十大引擎</h3>
-                <p class="slds-welcome-mat__tile-description">华炎魔方技术架构、零代码开发、低代码开发解决方案简介。</p>
-            </div>
-        </div>
-    </a>
-  </div>
-
-  <div class="slds-p-around_small slds-size_1-of-1 slds-large-size_1-of-2">
-    <a href="/developer/deploy/" class="slds-card slds-box slds-box_link slds-media">
-        <div class="slds-media__figure slds-media__figure_fixed-width slds-align_absolute-center">
-            <div class="slds-welcome-mat__tile-figure">
-                <div class="slds-welcome-mat__tile-icon-container">
-                    <span class="slds-icon_container slds-icon-utility-animal_and_nature">
-                        <svg class="slds-icon slds-icon-text-default" aria-hidden="true"><use href="/assets/icons/utility-sprite/svg/symbols.svg#setup_assistant_guide"></use></svg>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="slds-media__body">
-            <div class="slds-welcome-mat__tile-body">
-                <h3 class="slds-welcome-mat__tile-title">安装部署</h3>
-                <p class="slds-welcome-mat__tile-description">如何在本地服务器，安装部署华炎魔方开发环境/生产环境。</p>
-            </div>
-        </div>
-    </a>
-  </div>
-
-  <div class="slds-p-around_small slds-size_1-of-1 slds-large-size_1-of-2">
-    <a href="/help/admin/" class="slds-card slds-box slds-box_link slds-media">
-        <div class="slds-media__figure slds-media__figure_fixed-width slds-align_absolute-center">
-            <div class="slds-welcome-mat__tile-figure">
-                <div class="slds-welcome-mat__tile-icon-container">
-                    <span class="slds-icon_container slds-icon-utility-animal_and_nature">
-                        <svg class="slds-icon slds-icon-text-default" aria-hidden="true"><use href="/assets/icons/utility-sprite/svg/symbols.svg#setup"></use></svg>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="slds-media__body">
-            <div class="slds-welcome-mat__tile-body">
-                <h3 class="slds-welcome-mat__tile-title">系统管理员手册</h3>
-                <p class="slds-welcome-mat__tile-description">如何配置业务对象、如何配置审批流程、如何配置业务权限</p>
-            </div>
-        </div>
-    </a>
-  </div>
-
-  <div class="slds-p-around_small slds-size_1-of-1 slds-large-size_1-of-2">
-    <a href="/help/" class="slds-card slds-box slds-box_link slds-media">
-        <div class="slds-media__figure slds-media__figure_fixed-width slds-align_absolute-center">
-            <div class="slds-welcome-mat__tile-figure">
-                <div class="slds-welcome-mat__tile-icon-container">
-                    <span class="slds-icon_container slds-icon-utility-animal_and_nature">
-                        <svg class="slds-icon slds-icon-text-default" aria-hidden="true"><use href="/assets/icons/utility-sprite/svg/symbols.svg#people"></use></svg>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="slds-media__body">
-            <div class="slds-welcome-mat__tile-body">
-                <h3 class="slds-welcome-mat__tile-title">用户手册</h3>
-                <p class="slds-welcome-mat__tile-description">如何填写申请单、在线审批、管理数据台账。</p>
-            </div>
-        </div>
-    </a>
-  </div>
-
-  <div class="slds-p-around_small slds-size_1-of-1 slds-large-size_1-of-2">
-    <a href="/developer/guide/" class="slds-card slds-box slds-box_link slds-media">
-        <div class="slds-media__figure slds-media__figure_fixed-width slds-align_absolute-center">
-            <div class="slds-welcome-mat__tile-figure">
-                <div class="slds-welcome-mat__tile-icon-container">
-                    <span class="slds-icon_container slds-icon-utility-animal_and_nature">
-                        <svg class="slds-icon slds-icon-text-default" aria-hidden="true"><use href="/assets/icons/utility-sprite/svg/symbols.svg#sobject"></use></svg>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="slds-media__body">
-            <div class="slds-welcome-mat__tile-body">
-                <h3 class="slds-welcome-mat__tile-title">低代码开发教程</h3>
-                <p class="slds-welcome-mat__tile-description">如何使用华炎魔方，开发随需定制的合同管理系统</p>
-            </div>
-        </div>
-    </a>
-  </div>
-
-  <div class="slds-p-around_small slds-size_1-of-1 slds-large-size_1-of-2">
-    <a href="/developer/api/" class="slds-card slds-box slds-box_link slds-media">
-        <div class="slds-media__figure slds-media__figure_fixed-width slds-align_absolute-center">
-            <div class="slds-welcome-mat__tile-figure">
-                <div class="slds-welcome-mat__tile-icon-container">
-                    <span class="slds-icon_container slds-icon-utility-animal_and_nature">
-                        <svg class="slds-icon slds-icon-text-default" aria-hidden="true"><use href="/assets/icons/utility-sprite/svg/symbols.svg#replace"></use></svg>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="slds-media__body">
-            <div class="slds-welcome-mat__tile-body">
-                <h3 class="slds-welcome-mat__tile-title">华炎魔方 API</h3>
-                <p class="slds-welcome-mat__tile-description">使用标准的 OData/GraphQL 接口，访问你的自定义业务对象</p>
-            </div>
-        </div>
-    </a>
-  </div>
-
+<div class="my-8 relative mx-auto w-full rounded-lg overflow-hidden shadow-lg  focus:outline-none focus:shadow-outline lg:max-w-md">
+    <Video
+        poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.jpg"
+        autoplay={false}
+        urls={[
+            {name:"标清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features-960.mp4"},
+            {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.mp4"},
+        ]}/>
 </div>
 
-<br/><br/>
+本教程以合同管理为例，指导你如何使用华炎魔方创建项目，配置业务对象，编程脚本，处理业务部门的各种个性化需求。您开发的新业务系统可以部署在本地运行。
+
+#### [准备：安装开发环境](/developer/deploy)
+
+#### [教程1：创建项目](/developer/guide_create)
+
+- 创建steedos项目
+- 安装依赖包
+- 运行空项目
+- 文件夹结构
+- 注册新账户
+- 创建企业/工作区
+- 系统主页面
+
+#### [教程2：配置业务对象](/developer/guide_object)
+
+- 创建业务对象：合同
+- 添加字段
+- 设置视图：所有合同
+- 新增视图：我的合同
+- 定义权限：普通用户只能查看自己的合同，合同管理员和系统管理员可以查看所有合同
+- 修改应用：增加合同
+- 重启服务运行并查看效果
+
+#### [教程3：业务对象关联](/developer/guide_relationship)
+
+- 创建业务对象：付款计划
+- 添加字段
+- 业务对象关联字段
+- 配置默认视图和权限
+- 修改默认应用：去掉合同
+- 新建自定义应用：合同，配置相关的业务对象
+- 重启服务运行并查看效果
+
+#### [教程4：配置触发器](/developer/guide_trigger)
+
+- 修改业务对象的字段
+- 创建触发器
+- 编写触发的执行代码：自动更新待收金额
+
+#### [教程5：自定义操作按钮](/developer/guide_button)
+- 创建自定义操作按钮
+- 编写按钮的执行代码：发送邮件
+- 重启服务运行并查看效果
+
+#### [教程6：设置报表](/developer/guide_report)
+- 修改合同应用：增加报表reports
+- 重启服务运行并查看效果
+- 定义矩阵型报表：合同年度统计
+
+#### [教程7：设置合同审批流程](/developer/guide_flow)
+- 配置表单
+- 配置流程
+- 配置权限
+- 运行合同审批流程
+
+#### [教程8：合同审批自动进入合同台账](/developer/guide_sync)
+- 修改表单，读取合作伙伴数据
+- 修改系统配置，设置同步频率
+- 修改应用，打开合同的配置对象流程开关
+- 重启服务
+- 配置对象流程
+- 运行合同审批流程，确认同步情况
+
+#### [教程9：多单位权限控制](/developer/guide_companies)
+- 修改合作伙伴，启用分部字段
+- 修改合作伙伴，修改权限控制
+- 修改合同，启用分部字段
+- 修改合同，修改权限控制
+- 重启服务
+- 配置单位权限对应人员
+- 确认多单位权限控制效果
+
+#### [教程10：第三方系统接口集成](/developer/guide_nc)
+- 增加申请付款按钮
+- 增加申请付款的执行
+- 增加调用接口的具体执行
+- 查看接口的实际运行效果
 
 import Section from '@site/src/components/Section';
 

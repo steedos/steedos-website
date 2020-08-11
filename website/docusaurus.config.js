@@ -133,8 +133,8 @@ module.exports = {
             //{to: 'solutions/knowledge/', label: '知识管理', position: 'left', activeBasePath: 'solutions/knowledge/'},
           ]
         },
-        {to: '/developer/guide/', label: '开发', position: 'left',},
-        {to: '/help/', label: '帮助', position: 'left',},
+        {to: '/help/', label: '文档', position: 'left',},
+        {to: '/developer/', label: '开发人员', position: 'left',},
         //{to: 'videos/', label: '视频', position: 'left',},
         {to: '/company/about-us/', label: '关于', position: 'left',
           // items: [
@@ -256,8 +256,8 @@ module.exports = {
       },
     ],
   ],
-  // stylesheets: [
-  //   '/website/libs/tailwind/tailwind.min.css',
-  // ],
+  stylesheets: [
+    '/website/libs/tailwind/tailwind.min.css',
+  ],
   plugins: [path.resolve(__dirname, './src/plugins/plugin-baidu-analytics')],
 };
