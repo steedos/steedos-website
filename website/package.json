@@ -12,6 +12,7 @@
     "@docusaurus/preset-classic": "^2.0.0-alpha.54",
     "@salesforce-ux/design-system": "^2.11.0",
     "@salesforce/design-system-react": "^0.10.17",
+    "@tailwindcss/ui": "^0.5.0",
     "classnames": "^2.2.6",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",

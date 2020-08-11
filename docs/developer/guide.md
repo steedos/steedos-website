@@ -10,8 +10,6 @@ hide_table_of_contents: true
 
 本教程以合同管理为例，指导你如何使用华炎魔方创建项目，配置业务对象，编程脚本，处理业务部门的各种个性化需求。您开发的新业务系统可以部署在本地运行。
 
-#### [准备：安装开发环境](/developer/install)
-
 #### [教程1：创建项目](/developer/guide_create)
 
 - 创建steedos项目

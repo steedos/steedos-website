@@ -19,14 +19,14 @@ datasources:
   drivertest:
     connection:
       driver: mysql
-      url: mysql://admin:hotoainc.@192.168.0.198:3306/driver-test
+      url: mysql://admin:password@192.168.0.198:3306/driver-test
   forecast:
     connection:
       driver: mssql
       host: 192.168.0.190
       port: 1433
       username: sa
-      password: hotoainc.
+      password: password
       database: forecast
     objectFiles:
       - "./forecast/**" 

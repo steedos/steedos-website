@@ -2,7 +2,7 @@
 title: 创建项目
 ---
 
-创建Steedos项目前，请先 [安装开发环境](https://www.steedos.com/developer/install) 。
+创建Steedos项目前，请先 [安装开发环境](/developer/deploy/) 。
 
 ## 创建Steedos项目
 

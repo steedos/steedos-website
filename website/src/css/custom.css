@@ -5,6 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+ @import '../../node_modules/tailwindcss/dist/tailwind.css';
 
  @import './salesforce-lightning-design-system.css';
  @import './salesforce-customize.css'; 
@@ -34,6 +35,10 @@
 
 .markdown > h1 {
   --ifm-h1-font-size: 2.5rem;
+}
+
+.markdown > ol, .markdown > ul {
+  list-style: disc;
 }
 
 @media screen and (max-width: 996px) {
@@ -104,12 +109,6 @@ html[data-theme='dark'] .main-wrapper {
   font-weight: 400;
 }
 
-.navbar {
-  border-bottom: 3px solid #00a1e0;
-  box-shadow: none;
-  min-height: 60px;
-  justify-content: center;
-}
 
 .navbar .navbar__title {
   font-size: 1.2rem;
