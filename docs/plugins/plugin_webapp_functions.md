@@ -63,6 +63,7 @@ helloworld.object.yml:
 name: hello_world_object
 label: Hellow World
 icon: home
+hidden: true
 fields:
   name:
     label: name

@@ -158,7 +158,7 @@ class HelloWorldPlugin {
 window.registerPlugin('com.steedos.hellow-world', new HelloWorldPlugin());
 ```
 
-> 以上代码注册了一个hellow-world插件，并且该插件调用了registerObjectHomeComponent，注册了一个组件显示为hello_world_object这个对象的首页。关于[registerObjectHomeComponent](./plugin_webapp_functions.md#registerobjecthomecomponent)及更多插件函数说明请移步：[Web App 插件函数](./plugin_webapp_functions.md)。
+> 以上代码注册了一个hellow-world插件，并且该插件调用了`registerObjectHomeComponent`，注册了一个组件显示为`hello_world_object`这个对象的首页。关于[registerObjectHomeComponent](./plugin_webapp_functions.md#registerobjecthomecomponent)及更多插件函数说明请移步：[Web App 插件函数](./plugin_webapp_functions.md)。
 
 ## 打包 Webapp
 
@@ -175,6 +175,9 @@ yarn build
 ```
 
 > 正如`webpack.config.js`配置的`output`，打包后会把`index.jsx`文件内容压缩写入到`webapp.client.js`文件中，这也是Webapp插件引入华炎魔方项目的方式。
+
+## 插件配置
+部分[Web App 插件函数](./plugin_webapp_functions.md)需要配合相关配置才能生效，比如上面示例中提到的`registerObjectHomeComponent`函数，就需要额外在项目根目录的src文件夹下配置一个对象`*.object.yml`文件，且该对象需要配置到某个app的objects属性中才能被看到，请参考：[registerObjectHomeComponent](./plugin_webapp_functions.md#registerobjecthomecomponent)。
 
 ## 插件测试
 
