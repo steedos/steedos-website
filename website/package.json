@@ -5,19 +5,32 @@
     "swizzle": "docusaurus swizzle",
     "serve": "docusaurus serve",
     "deploy": "docusaurus deploy",
-    "dep": "GIT_USER=hotlong && yarn deploy"
+    "dep": "GIT_USER=hotlong && yarn deploy",
+    "tailwind": "cross-env NODE_ENV=development postcss ./tailwind.css -o static/website/libs/tailwind/tailwind.min.css",
+    "tailwindp": "cross-env NODE_ENV=production postcss ./tailwind.css -o static/website/libs/tailwind/tailwind.min.css"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.61",
     "@docusaurus/preset-classic": "2.0.0-alpha.61",
     "@salesforce-ux/design-system": "^2.11.0",
+    "@tailwindcss/ui": "^0.5.0",
     "add": "^2.0.6",
     "classnames": "^2.2.6",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "tailwindcss": "^1.6.2",
+    "tailwindcss-dark-mode": "^1.1.6",
     "xgplayer": "^2.9.12",
     "yarn": "^1.22.4"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "concurrently": "^4.1.0",
+    "cross-env": "^5.2.0",
+    "cssnano": "^4.1.10",
+    "live-server": "^1.2.1",
+    "postcss-cli": "^6.1.2",
+    "tailwindcss": "^1.6.2",
+    "tailwindcss-theming": "^3.0.0-beta.1"
   },
   "browserslist": {
     "production": [
@@ -30,8 +43,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.10.4"
   }
 }
