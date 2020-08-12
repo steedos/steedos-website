@@ -34,10 +34,10 @@ import Video from '@site/src/components/Video';
 		</div>
 		<div class="w-full lg:w-3/5 text-center lg:pl-5">
                   <Video 
-                    poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.jpg"
+                    poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.jpg"
                     autoplay={false}
                     urls={[
-                        {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.mp4"},
+                        {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.mp4"},
                     ]}/>
 		</div>
 	</div>
@@ -51,11 +51,11 @@ import Section from '@site/src/components/Section';
 
 
 <Video 
-    poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.jpg"
+    poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features.jpg"
     autoplay={false}
     urls={[
-        {name:"标清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features-960.mp4"},
-        {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.mp4"},
+        {name:"标清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features-960.mp4"},
+        {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features.mp4"},
     ]}/>
 
   <div class="mt-4 mb-4">
@@ -67,10 +67,10 @@ import Section from '@site/src/components/Section';
 # 模型驱动业务，零代码搭建业务系统1.0
 
 <Video 
-    poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.jpg"
+    poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.jpg"
     autoplay={false}
     urls={[
-        {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.mp4"},
+        {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.mp4"},
     ]}/>
 
   <div class="mt-4 mb-4">
@@ -83,10 +83,10 @@ import Section from '@site/src/components/Section';
 <!-- # 从一开始就让应用程序移动化
 
 <Video 
-    poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_mobile.png"
+    poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/workflow_mobile.png"
     autoplay={false}
     urls={[
-        {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_mobile.mov"},
+        {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/workflow_mobile.mov"},
     ]}/>
 
 <p></p> -->
@@ -96,7 +96,7 @@ import Section from '@site/src/components/Section';
 
 # 评估与试用华炎魔方低代码开发平台
 
-- [下载华炎魔方解决方案手册](https://www-steedos-com.oss-cn-beijing.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.pdf)
+- [下载华炎魔方解决方案手册](https://www-steedos-com.oss-accelerate.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.pdf)
 - [华炎魔方版本与报价](/platform/pricing/)
 - [本地部署华炎魔方](/developer/deploy/)
 - [查看华炎魔方开发培训教程](/developer/guide/)

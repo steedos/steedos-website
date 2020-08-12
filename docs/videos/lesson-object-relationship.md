@@ -9,10 +9,10 @@ background: /img/banner/service-overview-lg.png
 import Video from '@site/src/components/Video';
 
 <Video 
-    poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-relationship.jpg"
+    poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-relationship.jpg"
     autoplay={true}
     urls={[
-        {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-relationship.mp4"},
+        {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-relationship.mp4"},
     ]}/>
 
 

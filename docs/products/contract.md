@@ -16,7 +16,7 @@ keywords:
 
 华炎合同管理系统，是国内首款全身可定制的合同管理解决方案，系统功能涵盖合同订立、执行、跟踪、变更、验收、付款、监督、统计的整个管理过程，并提供低代码开发工具华炎魔方，通过调整配置文件就能调整合同台账、业务字段、审批流程、统计报表等，快速满足业务部门的个性化需求。
 
-<p><a class="bg-blue-700 text-white px-5 py-3 font-semibold rounded hover:bg-blue-800 hover:text-white ml-3" href="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts-demo.mp4" target="_blank">
+<p><a class="bg-blue-700 text-white px-5 py-3 font-semibold rounded hover:bg-blue-800 hover:text-white ml-3" href="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/contracts-demo.mp4" target="_blank">
 视频演示
 </a>
 
@@ -32,7 +32,7 @@ import Section from '@site/src/components/Section';
 
 不同的行业、不同的企业规模、不同的管理模式，合同管理的需求都会有个性化的差异。华炎合同管理系统，以华炎软件自主研发的新一代人工智能开发工具“华炎魔方”为基础，实现业务管理系统的快速开发。对于系统中的申请表单、审批流程、台账记录等，可以通过自助修改配置的方式，来快捷地进行优化开发，以满足企业的管理制度和个性化要求。
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/creator_object.mp4" controls="controls" poster="/assets/creator_object.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
+<video src="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/creator_object.mp4" controls="controls" poster="/assets/creator_object.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
 </video>
 
@@ -43,7 +43,7 @@ your browser does not support the video tag
 
 华炎合同管理解决方案，涵盖合同订立、执行、跟踪、变更、验收、付款、监督、统计的整个管理过程，并打通了合同管理系统与财务管理系统的数据与流程联动，实现企业合同的全闭环、自动化、一体化管理。
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts_operation.mp4" controls="controls" poster="/assets/contract_list.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
+<video src="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/contracts_operation.mp4" controls="controls" poster="/assets/contract_list.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
 </video>
 
@@ -55,7 +55,7 @@ your browser does not support the video tag
 
 在报表顶部用图形化方式显示统计数据，可以显示为柱状图、折线图、饼图。设置时，还可以对特定的字段进行计数、小计、合计等统计处理。通过设定报表的查询条件，可以将统计范围缩小，提高报表的运行速度。例如可以设定只统计某个时间段的数据。平台会自动根据后台配置的用户权限，只对用户权限范围内的数据进行汇总统计。
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts_report.mp4" controls="controls" poster="/assets/contract_chart.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
+<video src="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/contracts_report.mp4" controls="controls" poster="/assets/contract_chart.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
 </video>
 
@@ -69,7 +69,7 @@ your browser does not support the video tag
 
 华炎魔方的流程审批引擎十分强劲，可以将审批中的流程表单及正文附件自动化实时同步到合同台账，免去了接口开发的成本，大幅提升项目实施效率。
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_design.mp4" controls="controls" poster="/assets/workflow_design.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
+<video src="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/workflow_design.mp4" controls="controls" poster="/assets/workflow_design.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
 </video>
 
@@ -79,7 +79,7 @@ your browser does not support the video tag
 
 同时，针对苹果和安卓手机用户，自动生成在小屏幕设备上易于查看与操作的手机版界面，用户即使不在办公室，也能随时登录业务系统，进行业务操作。
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/workflow_mobile.mov" controls="controls" poster="/assets/workflow_mobile.png" width="40%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
+<video src="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/workflow_mobile.mov" controls="controls" poster="/assets/workflow_mobile.png" width="40%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
 </video>
 

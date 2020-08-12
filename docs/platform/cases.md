@@ -37,7 +37,7 @@ keywords:
 
 为了保持和财务系统数据字典的一致性，财务相关的数据表例如银行信息、公司信息、财务分类需要直连用友数据库，华炎魔方只需简单配置，就能连接第三方系统的数据表，并可以使用华炎魔方内置的跨数据库查询语法ObjectQL，使用同一套编码规范处理来自不同数据库的业务数据。
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/creator_object.mp4" controls="controls" poster="/assets/creator_object.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
+<video src="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/creator_object.mp4" controls="controls" poster="/assets/creator_object.png" width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
 </video>
 

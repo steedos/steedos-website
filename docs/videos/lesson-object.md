@@ -9,10 +9,10 @@ background: /img/banner/service-overview-lg.png
 import Video from '@site/src/components/Video';
 
 <Video 
-    poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.jpg"
+    poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.jpg"
     autoplay={true}
     urls={[
-        {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.mp4"},
+        {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.mp4"},
     ]}/>
 
 ## 华炎魔方低代码开发教程：如何创建自定义应用程序？

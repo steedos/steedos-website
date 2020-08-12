@@ -10,11 +10,11 @@ import Video from '@site/src/components/Video';
 
 <div class="my-8 relative mx-auto w-full rounded-lg overflow-hidden shadow-lg  focus:outline-none focus:shadow-outline lg:max-w-md">
     <Video
-        poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.jpg"
+        poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features.jpg"
         autoplay={false}
         urls={[
-            {name:"标清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features-960.mp4"},
-            {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.mp4"},
+            {name:"标清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features-960.mp4"},
+            {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features.mp4"},
         ]}/>
 </div>
 

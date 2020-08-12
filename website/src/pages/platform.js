@@ -7,7 +7,7 @@ import Features from '@site/src/components/Features';
 export default function Landing() {
   return (
 <Layout
-      title="华炎魔方官网"
+      title="华炎魔方低代码开发平台官网"
       description="华炎魔方是一款随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。"
       >
 <section class="flex bg-cover bg-no-repeat bg-blue-200">
@@ -43,10 +43,10 @@ export default function Landing() {
         <div class="relative mx-auto w-full lg:max-w-md">
           <div class="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
             <Video 
-              poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.jpg"
+              poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.jpg"
               autoplay={false}
               urls={[
-                  {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.mp4"},
+                  {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.mp4"},
               ]}/>
           </div>
         </div>
@@ -55,7 +55,7 @@ export default function Landing() {
   </div>
 </section>
 
-<div class="pt-16 bg-gray-50 overflow-hidden">
+<div class="py-16 bg-gray-50 overflow-hidden bg-gray-100">
   <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
     <svg class="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4" width="404" height="784" fill="none" viewBox="0 0 404 784">
       <defs>
@@ -73,13 +73,24 @@ export default function Landing() {
       <p class="mt-4 max-w-3xl mx-auto text-center text-xl leading-7 text-gray-500">
       华炎魔方基于商业智能和模型驱动，开发人员只需编写少量代码，就能轻松便捷地创建智能化、移动化的个性化应用。
       </p>
-      <a href="/videos/steedos-platform-features/" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-500 hover:text-blue-700 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+
+      <div class="relative mx-auto w-full lg:max-w-md">
+        <div class="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
+          <Video 
+            poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/lowcode.jpeg"
+            autoplay={false}
+            urls={[
+                {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/lowcode.mp4"},
+            ]}/>
+        </div>
+      </div>
+      {/* <a href="/videos/steedos-platform-features/" class="w-full flex items-center justify-center px-8 py-8 border border-transparent text-base leading-6 font-medium rounded-md text-blue-500 hover:text-blue-700 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
         <svg class="h-10 w-10 mx-4" fill="currentColor" viewBox="0 0 84 84">
           <circle opacity="0.9" cx="42" cy="42" r="42" fill="#EFEFEF" />
           <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
         </svg>
         查看华炎魔方解决方案概览
-      </a>
+      </a> */}
     </div>
 
     </div>
@@ -88,8 +99,8 @@ export default function Landing() {
 <Features 
   title="数据建模"
   description="华炎魔方内置功能强大的建模引擎，可以任意配置业务字段、列表视图、页面布局，即使是不懂编程的业务人员，也能快速创建智能化、移动化的企业应用程序。"
-  imageUrl="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/steedos/features-object.jpeg"
-  videoUrl="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/steedos/features-object.mp4"
+  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-object.jpeg"
+  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-object.mp4"
   imagePosition="left"
   items={[
     {title: "业务对象", description: "业务对象相当于数据库中的表，用于保存业务系统中的核心数据。"},
@@ -101,8 +112,8 @@ export default function Landing() {
 <Features 
   title="模型驱动界面"
   description="数据建模完成之后，业务系统的原型也就自动生成了。华炎魔方根据业务模型，动态生成业务系统的后端服务接口和前端操作界面。"
-  imageUrl="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/steedos/features-ui.jpeg"
-  videoUrl="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/steedos/features-ui.mp4"
+  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-ui.jpeg"
+  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-ui.mp4"
   items={[
     {title: "列表视图", description: "在列表视图中浏览、筛选、编辑业务数据。"},
     {title: "记录查看视图", description: "显示当前记录详细信息，以及相关的子表数据。"},
@@ -112,8 +123,8 @@ export default function Landing() {
 <Features 
   title="低代码开发业务逻辑"
   description="华炎魔方提供了低代码开发的入口，开发人员通过编写代码，就能实现特定条件下的自动运行、截停、回滚等业务逻辑，让业务在无人值守的情况下自动运转，驱动效率提升。"
-  imageUrl="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/steedos/features-lowcode.jpeg"
-  videoUrl="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/steedos/features-lowcode.mp4"
+  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-lowcode.jpeg"
+  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-lowcode.mp4"
   imagePosition="left"
   containerClass="bg-gray-100"
   items={[
@@ -127,8 +138,8 @@ export default function Landing() {
 <Features 
   title="从一开始就让应用程序移动化"
   description="使用移动应用程序，实现业务的全面转型。 提高员工生产力，加强客户联系，帮助合作伙伴取得更大成功。"
-  imageUrl="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/steedos/features-mobile.jpeg"
-  videoUrl="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/steedos/features-mobile.mp4"
+  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-mobile.jpeg"
+  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-mobile.mp4"
   containerClass="bg-gray-100"
   items={[
     {title: "消息推送", description: "有新的待处理事项时，华炎魔方手机客户端会自动弹出推送提醒。"},
@@ -139,8 +150,8 @@ export default function Landing() {
 <Features 
   title="流程引擎"
   description="涵盖了流程设计、流程运行、管理维护、统计分析与流程优化等各类工具，帮助企业快速部署、有效监控并持续优化业务流程。"
-  imageUrl="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/steedos/features-flow.jpeg"
-  videoUrl="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/steedos/features-flow.mp4"
+  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-flow.jpeg"
+  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-flow.mp4"
   imagePosition="left"
   items={[
     {title: "流程设计", description: "图形化流程设计工具，通过拖拽的方式就能创建业务流程。"},
@@ -152,8 +163,8 @@ export default function Landing() {
 <Features 
   title="报表引擎"
   description="使用华炎魔方的报表引擎，您可以快速配置统计图表，包括数据列表、分组报表、数据透视图、柱状图、饼图等，方便查看、分析和决策。"
-  imageUrl="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/steedos/features-report.jpeg"
-  videoUrl="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/steedos/features-report.mp4"
+  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-report.jpeg"
+  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-report.mp4"
   imagePosition="right"
   items={[
     {title: "报表设计", description: "可视化界面，业务人员可自主配置统计报表，分析业务数据。"},
@@ -174,10 +185,10 @@ export default function Landing() {
       <div class="relative mx-auto w-full lg:max-w-md">
         <div class="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
           <Video 
-            poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/steedos/cases.jpeg"
+            poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/cases.jpeg"
             autoplay={false}
             urls={[
-                {name:"高清", url:"https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/steedos/cases.mp4"},
+                {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/cases.mp4"},
             ]}/>
         </div>
       </div>
@@ -191,7 +202,7 @@ export default function Landing() {
       <div class="text-2xl mb-4 leading-6 font-semibold uppercase tracking-wider text-gray-300">
         对于华炎魔方低代码开发平台有疑问？？
       </div>
-      <div class="mt-2 text-white text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl sm:leading-10">
+      <div class="my-6 text-white text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl sm:leading-10">
         微信扫描二维码，我们的技术专家会为您解答。
       </div>
       <p class="mt-3 mb-0 text-lg leading-7 text-gray-300">

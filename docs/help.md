@@ -11,11 +11,11 @@ import Card from '@site/src/components/Card';
 
 <div class="mt-12 grid gap-5 max-w-lg mx-auto md:grid-cols-2 lg:max-w-none">
 
-  <Card image="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.jpg"
+  <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.jpg"
     title="华炎魔方助力企业数字化转型"
     href="/videos/steedos-digital-transformation/"/>
 
-  <Card image="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-object-manager.jpg"
+  <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.jpg"
     title="如何创建自定义应用程序"
     href="/videos/lesson-object/"/>
 

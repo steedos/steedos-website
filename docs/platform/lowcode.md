@@ -22,7 +22,7 @@ keywords:
 
 低代码开发平台是一种全新的开发方式，通过把标准功能组件化，业务需求配置化，改变应用交付和管理的模式，大大缩减应用交付的周期，最终帮助业务加速创新带来的价值。
 
-<video src="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.mp4" controls="controls" poster="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-platform-features.jpg" width="100%" loop="loop" playsinline="playsinline">
+<video src="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features.mp4" controls="controls" poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features.jpg" width="100%" loop="loop" playsinline="playsinline">
 your browser does not support the video tag
 </video>
 
@@ -108,11 +108,11 @@ import Section from '@site/src/components/Section';
 配置文件和与业务逻辑相关的触发脚本，就构成了一个项目的核心源代码，简单易懂，易于维护。对于大型项目，源码可以轻松保存到Github，可以随时追踪到开发人员的修改历史。
 
 <a class="bg-blue-700 text-white px-5 py-3 font-semibold rounded hover:bg-blue-800 hover:text-white ml-3" href="
-https://www-steedos-com.oss-cn-beijing.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.pdf" target="_blank">
+https://www-steedos-com.oss-accelerate.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.pdf" target="_blank">
 下载产品文档
 </a>
 
-<a class="bg-blue-700 text-white px-5 py-3 font-semibold rounded hover:bg-blue-800 hover:text-white ml-3" href="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/steedos-guide.mp4" >
+<a class="bg-blue-700 text-white px-5 py-3 font-semibold rounded hover:bg-blue-800 hover:text-white ml-3" href="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.mp4" >
 查看演示视频
 </a>
 
