@@ -177,7 +177,7 @@ export default function Landing() {
     <div class="lg:text-center">
       <p class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">案例分享</p>
       <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-        了解为何成百上千的企业都选择华炎魔方？
+        了解华炎魔方如何帮助业务加速创新
       </h3>
       <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
         每一天，有超过 15 万人在使用我们全球首屈一指的华炎魔方构建的解决方案，并且他们正不断提升员工工作效率、改进团队协作能力、增强客户忠诚度并扩展业务规模。
@@ -197,7 +197,7 @@ export default function Landing() {
 </div>
 
 <div class="relative bg-gray-700">
-  <div class="max-w-screen-xl mx-auto py-8 px-4 lg:flex lg:items-center lg:justify-between">
+  <div class="max-w-screen-xl mx-auto py-8 px-4 lg:py-12 lg:flex lg:items-center lg:justify-between">
     <div class="">
       <div class="text-2xl mb-4 leading-6 font-semibold uppercase tracking-wider text-gray-300">
         对于华炎魔方低代码开发平台有疑问？？

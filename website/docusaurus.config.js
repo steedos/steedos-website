@@ -156,6 +156,12 @@ module.exports = {
         },
         {to: '/us/', label: 'English', position: 'right'},
         {label: '华炎云', position: 'right', href: 'https://cn.steedos.com'},
+        {
+          href: 'https://github.com/steedos/',
+          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
+        },
       ],
       // links_us: [
       //   {to: '/us/', label: 'Home', position: 'left'},
