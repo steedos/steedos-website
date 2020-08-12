@@ -72,7 +72,7 @@ module.exports =
       {
         "公司设置": ["help/admin", "help/organization", "help/profile", "help/permission_set", "help/permission_share"],
         "流程设置": ["help/workflow/admin_form", "help/workflow/admin_flow", "help/workflow/admin_positions", "help/workflow/admin_picturesignature"],
-        "对象设置": ["developer/no-code/object", "developer/no-code/object_subtable", "developer/no-code/object_workflows", "developer/no-code/object_datasources", "developer/no-code/object_web_forms"]
+        "对象设置": ["help/no-code/object", "help/no-code/object_subtable", "help/no-code/object_workflows", "help/no-code/object_datasources", "help/no-code/object_web_forms"]
       }
       , "help/workflow/faq"    ]
   },
