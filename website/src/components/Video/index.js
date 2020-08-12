@@ -46,14 +46,19 @@ class Video extends React.Component {
     options.id = this.id;
     options.url = this.url;
 
-    this.player = new Player(options);
-    this.player.emit('resourceReady', options.urls);
+    let player = new Player(options);
+    player.emit('resourceReady', options.urls);
+    // if (!this.props.playsinline) {
+    //   player.once('play',function(){
+    //     //事件名称可以在上述查询
+    //     console.log("go fullscreen.")
+    //     player.getFullscreen(player.root);
+    //   })
+    // }
   }
 
   componentWillUnmount() {
     clearTimeout(this.timer);
-    // if (this.player && this.player.destroy)
-    //   this.player.destroy(true);
   }
       
   render() {

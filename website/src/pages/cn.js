@@ -69,7 +69,7 @@ export default function Landing() {
 
     <div class="relative">
       <h3 class="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-      新一代低代码开发平台，代码量减少90%，开发效率提升十倍
+      全新低代码开发方式，代码量减少90%，开发效率提升十倍
       </h3>
       <p class="mt-4 max-w-3xl mx-auto text-center text-xl leading-7 text-gray-500">
       华炎魔方基于商业智能和模型驱动，开发人员只需编写少量代码，就能轻松便捷地创建智能化、移动化的个性化应用。
