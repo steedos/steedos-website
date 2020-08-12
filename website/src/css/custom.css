@@ -27,6 +27,10 @@
   --ifm-link-hover-decoration: 0;
 }
 
+.menu {
+  background-color: #fafbfc;
+}
+
 .markdown > ol, .markdown > ul {
   list-style: disc;
 }

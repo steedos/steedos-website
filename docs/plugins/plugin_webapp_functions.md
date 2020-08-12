@@ -198,7 +198,7 @@ registry.registerDashboardIFrameComponent(
 );
 ```
 
-与[registerObjectIFrameHomeComponent函数](./plugin_webap_functions.md#registerObjectIFrameHomeComponent)一样，第二个参数也可以是一个函数，也支持传入第三个参数重写整个iframe组件。
+与[registerObjectIFrameHomeComponent函数](./plugin_webapp_functions.md#registerObjectIFrameHomeComponent)一样，第二个参数也可以是一个函数，也支持传入第三个参数重写整个iframe组件。
 
 > 该函数运行后效果图如下：
 

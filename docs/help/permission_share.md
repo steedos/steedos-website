@@ -16,7 +16,7 @@ title: 共享规则
 
 ### 过滤条件 filters
 
-符合指定过滤条件的记录，才适用此共享规则。语法参考[过滤条件](./object_filter.md)。
+符合指定过滤条件的记录，才适用此共享规则。语法参考[过滤条件](/developer/object_filter.md)。
 
 ### 授权用户 users
 

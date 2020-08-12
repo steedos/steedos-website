@@ -24,6 +24,6 @@ sidebar_label: 安装
 - [部署到 Windows](./deploy_windows.md): 通常用于部署开发环境，生产环境建议使用Ubuntu。
 - [部署到 Mac](./deploy_mac.md): 通常用于部署开发环境，生产环境建议使用Ubuntu。
 - [部署到 Ubuntu](./deploy_ubuntu.md): 部署到Ubuntu，并支持远程开发与调试。
-- [部署到 Heroku](./deploy_keroku.md): 利用Salesforce提供的免费云服务，部署开发环境。
+- [部署到 Heroku](./deploy_heroku.md): 利用Salesforce提供的免费云服务，部署开发环境。
 - [Docker 部署](./deploy_docker.md): 可选使用docker方式部署生产环境。
 - [集群部署](./deploy_cluster.md): 对于用户量大的系统，还可以采用多服务器集群部署模式。

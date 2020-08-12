@@ -17,9 +17,9 @@ title: ConnectionOptions
 
 - `objects` - 要加载并用于此连接的对象。接受要加载的对象类和目录路径。目录支持 glob 模式。示例：`objects: ["objects/**"]`。了解有关[对象](./object.md)的更多信息。
 
-- `logging` - 指示是否启用日志记录。如果设置为`true`，则将启用查询和错误日志记录。你还可以指定要启用的不同类型的日志记录，例如`["query", "error", "schema"]`。详细了解[Logging](./logging.md)。
+- `logging` - 指示是否启用日志记录。如果设置为`true`，则将启用查询和错误日志记录。你还可以指定要启用的不同类型的日志记录，例如`["query", "error", "schema"]`。
 
-- `logger` - 记录器，用于日志的记录方式。可能的值是"advanced-console", "simple-console" 和 "file"。默认为"advanced-console"。你还可以指定实现`Logger`接口的记录器类。详细了解[Logging](./logging.md)。
+- `logger` - 记录器，用于日志的记录方式。可能的值是"advanced-console", "simple-console" 和 "file"。默认为"advanced-console"。你还可以指定实现`Logger`接口的记录器类。
 
 - `maxQueryExecutionTime` - 如果查询执行时间超过此给定的最大执行时间（以毫秒为单位），则 logger 将记录此查询。
 
@@ -28,7 +28,7 @@ title: ConnectionOptions
 - `synchronize` - 指示是否在每次应用程序启动时自动创建数据库架构。
   请注意此选项，不要在生产环境中使用它，否则将丢失所有生产数据。但是此选项在调试和开发期间非常有用。作为替代方案，你可以使用 CLI 运行 schema：sync 命令。请注意，对于 MongoDB 数据库，它不会创建模式，因为 MongoDB 是无模式的。相反，它只是通过创建索引来同步。
 
-- `cache` - 启用实体结果缓存。你还可以在此处配置缓存类型和其他缓存选项。阅读更多有关[caching](./caching.md)的信息。
+- `cache` - 启用实体结果缓存。你还可以在此处配置缓存类型和其他缓存选项。
 
 ## `mysql`/`mariadb`
 
