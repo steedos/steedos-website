@@ -121,3 +121,6 @@ html[data-theme='dark'] .navbar__link--active {
   color: #fff;
   text-decoration: none;
 }
+html[data-theme='dark'] .navbar{
+  background-color: rgba(0, 0, 0, 0.8);
+}

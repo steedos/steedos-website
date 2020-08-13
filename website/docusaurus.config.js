@@ -108,7 +108,7 @@ module.exports = {
     image: 'img/icon_platform.png',
     colorMode: {
       // "light" | "dark"
-      defaultMode: 'light',
+      defaultMode: 'dark',
 
       // Hides the switch in the navbar
       // Useful if you want to support a single color mode
@@ -119,7 +119,7 @@ module.exports = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      hideOnScroll: true,
+      hideOnScroll: false,
       title: '',
       logo: {
         alt: '华炎魔方',
