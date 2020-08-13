@@ -80,7 +80,6 @@ ul, ol {
 
 .markdown table {
   display: table;
-  background: white;
 }
 
 /* 搜索只显示图标 */
@@ -122,6 +121,12 @@ html[data-theme='dark'] .navbar__link--active {
   text-decoration: none;
 }
 html[data-theme='dark'] .navbar{
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter:saturate(1.8) blur(10px);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+@media (min-width: 750px) {
+  html[data-theme='dark'] .navbar{
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: saturate(1.8) blur(10px);
+  }
 }

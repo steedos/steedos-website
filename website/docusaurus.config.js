@@ -150,12 +150,7 @@ module.exports = {
         {to: '/company/contact-us', label: '在线咨询', position: 'left',},
         //{to: 'videos/', label: '视频', position: 'left',},
         {label: '华炎云', position: 'right', href: 'https://cn.steedos.com'},
-        {label: 'ZH', position: 'right',
-          items: [
-            {to: 'cn/', label: '中文', position: 'left'},
-            {to: 'us/', label:'English',position: 'left'},
-          ]
-        },
+        {to: 'us/', label: 'EN', position: 'right'},
         {
           href: 'https://github.com/steedos/',
           position: 'right',
@@ -207,12 +202,7 @@ module.exports = {
       {to: '/us/', label: 'Home', position: 'left'},
       {to: '/us/help/workflow/README', label: 'Docs', position: 'left'},
       {to: '/us/login', label: 'Login', position: 'right'},
-      {label: 'EN', position: 'right',
-        items: [
-          {to: 'cn/', label: '中文', position: 'left'},
-          {to: 'us/', label:'English',position: 'left'},
-        ]
-      },
+      {to: 'cn/',label: '中文', position: 'right'},
       {
         href: 'https://github.com/steedos/',
         position: 'right',

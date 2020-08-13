@@ -63,7 +63,8 @@ class Footer extends React.Component {
           </a> */}
         </div>
       </div>
-      <div className="mt-12 grid grid-cols-5 gap-8 xl:mt-0 xl:col-span-2">
+      <div class="mt-12 grid grid-cols-3 gap-8 xl:mt-0 xl:col-span-2">
+        <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
             <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
               平台
@@ -118,34 +119,9 @@ class Footer extends React.Component {
               </li>
             </ul>
           </div>
+        </div>
+        <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
-              技术支持
-            </h4>
-            <ul className="mt-4">
-              <li className="mt-4">
-                <a href="/videos/" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  视频
-                </a>
-              </li>
-              <li className="mt-4">
-                <a href="/help/admin" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  管理员帮助
-                </a>
-              </li>
-              <li className="mt-4">
-                <a href="/help/" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  使用帮助
-                </a>
-              </li>
-              <li className="mt-4">
-                <a href="/help/download" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  下载客户端
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="mt-12 md:mt-0">
             <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
               开发人员
             </h4>
@@ -168,6 +144,62 @@ class Footer extends React.Component {
               <li className="mt-4">
                 <a href="/developer/api" className="text-base leading-6 text-gray-500 hover:text-gray-900">
                   系统集成
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="mt-12 md:mt-0">
+            <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+              技术支持
+            </h4>
+            <ul className="mt-4">
+              <li className="mt-4">
+                <a href="https://cn.steedos.com/" target="_blank" className="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  登录华炎云
+                </a>
+              </li>
+              <li className="mt-4">
+                <a href="/help/admin" className="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  管理员帮助
+                </a>
+              </li>
+              <li className="mt-4">
+                <a href="/help/" className="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  使用帮助
+                </a>
+              </li>
+              <li className="mt-4">
+                <a href="/help/download" className="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  下载客户端
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+              视频
+            </h4>
+            <ul className="mt-4">
+              <li>
+                <a href="/videos/steedos-digital-transformation/" className="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  数字化转型
+                </a>
+              </li>
+              <li className="mt-4">
+                <a href="/videos/steedos-platform-features/" className="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  低代码开发
+                </a>
+              </li>
+              <li className="mt-4">
+                <a href="/videos/lesson-object/" className="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  零代码开发
+                </a>
+              </li>
+              <li className="mt-4">
+                <a href="/videos/lesson-object-relationship/" className="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  对象关联
                 </a>
               </li>
             </ul>
@@ -199,6 +231,7 @@ class Footer extends React.Component {
               </li>
             </ul>
           </div>
+        </div>
       </div>
     </div>
     <div className="mt-12 border-t border-gray-200 pt-8">
