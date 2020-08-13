@@ -61,7 +61,7 @@ module.exports =
       }]
   },
   "文档": {
-    "快速向导": ["help", "videos", "help/download"],
+    "快速向导": ["help", "help/download"],
     "用户手册": [
     {
       "流程审批": ["help/workflow/instance_add", "help/workflow/instance_approve", "help/workflow/instance_carboncopy", "help/workflow/instance_distribute", "help/workflow/instance_forward", "help/workflow/instance_print", "help/workflow/instance_search", "help/workflow/instance_monitor", "help/workflow/instance_export" ],

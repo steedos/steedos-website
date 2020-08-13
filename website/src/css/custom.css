@@ -36,8 +36,27 @@
   --ifm-h6-font-size: 0.85rem;
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown p {
+  margin-top: 0;
+  margin-bottom: var(--ifm-paragraph-margin-bottom);
+}
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
 .markdown > ol, .markdown > ul {
   list-style: disc;
+  margin-bottom: var(--ifm-list-margin);
+  padding-left: var(--ifm-list-left-padding);
 }
 
 .markdown table {

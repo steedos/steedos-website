@@ -15,21 +15,21 @@ class Section extends React.Component {
     };
   }
 
-  componentDidMount() {
-    this.updateHeight();
-    this.intervalUpdate = setInterval(this.updateHeight.bind(this), 2000);
-  }
+  // componentDidMount() {
+  //   this.updateHeight();
+  //   this.intervalUpdate = setInterval(this.updateHeight.bind(this), 2000);
+  // }
 
-  componentWillUnmount() {
-    clearInterval(this.intervalUpdate);
-  }
+  // componentWillUnmount() {
+  //   clearInterval(this.intervalUpdate);
+  // }
 
-  updateHeight() {
-    const height = this.refs[this.state.sectionId].clientHeight;
-    if (this.state.height !== height) {
-      this.setState({ height });
-    }
-  };
+  // updateHeight() {
+  //   const height = this.refs[this.state.sectionId].clientHeight;
+  //   if (this.state.height !== height) {
+  //     this.setState({ height });
+  //   }
+  // };
 
   render() {
     let {background, height, padding, color} = this.props;
@@ -42,24 +42,22 @@ class Section extends React.Component {
     
     return (
       <>
-      {/* <div className={styles.sectionBackground} id={this.state.backgroundId}></div> */}
+      <div className={styles.sectionBackground} id={this.state.backgroundId}>
       <div className={styles.section} ref={this.state.sectionId} id={this.state.sectionId}>
-        {/* <style dangerouslySetInnerHTML={{__html: `
+        <style dangerouslySetInnerHTML={{__html: `
           #${this.state.sectionId} {
-            min-height: ${height}px;
             color: ${color};
+            padding: ${padding}px;
           }
           #${this.state.backgroundId} {
             background: ${background};  
             background-repeat: no-repeat;
             background-position: top;
             background-size: cover;
-            height: ${height}px;
           }
-        `}}></style> */}
-        {padding && (<div style={{height: padding + 'px' }}></div>)}
+        `}}></style>
         {this.props.children}
-        {padding && (<div style={{height: padding + 'px' }}></div>)}
+      </div>
       </div>
       </>
     )

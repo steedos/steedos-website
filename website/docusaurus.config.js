@@ -131,33 +131,26 @@ module.exports = {
         {to: 'platform/', label: '平台', position: 'left', activeBasePath: '/platform/',
           items: [
             {to: 'platform/', label:'功能',position: 'left', activeBasePath: '/platform/temp'},
-            {to: 'platform/cases', label:'案例',position: 'left'},
+            {to: 'videos/', label:'视频',position: 'left'},
             {to: 'platform/pricing', label:'报价',position: 'left'},
             {to: 'platform/try', label:'试用',position: 'left'},
           ]
         },
-        {label: '解决方案', position: 'left',
+        {label: '应用案例', position: 'left',
           items: [
             // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
-            {to: 'oa/', label: '华炎办公', position: 'left', activeBasePath: '/oa/'},
-            {to: 'products/contract/', label:'合同管理',position: 'left', activeBasePath: 'solutions/group/'},
-            {to: 'solutions/group/', label:'集团管控',position: 'left', activeBasePath: 'solutions/group/'},
-            {to: 'solutions/cost/', label: '费控管理', position: 'left', activeBasePath: 'solutions/cost/'},
-            //{to: 'solutions/knowledge/', label: '知识管理', position: 'left', activeBasePath: 'solutions/knowledge/'},
+            {to: 'oa/', label: '华炎办公', position: 'left'},
+            {to: 'products/contract/', label:'合同管理',position: 'left'},
+            {to: 'solutions/group/', label:'集团管控',position: 'left'},
+            {to: 'solutions/cost/', label: '费控管理', position: 'left'},
           ]
         },
-        {to: '/help/', label: '文档', position: 'left',},
         {to: '/developer/', label: '开发人员', position: 'left',},
-        {label: '华炎云', position: 'left', href: 'https://cn.steedos.com'},
+        {to: '/help/', label: '文档', position: 'left',},
+        {to: '/company/contact-us', label: '在线咨询', position: 'left',},
         //{to: 'videos/', label: '视频', position: 'left',},
-        {to: '/company/contact-us/', label: '联系我们', position: 'right',
-          // items: [
-          //   {to: '/company/about-us/', label: '关于华炎'},
-          //   {to: '/company/customers/', label: '成功案例'},
-          //   {to: '/company/contact-us/', label: '联系我们'},
-          // ]
-        },
-        {to: '/us/', label: 'EN', position: 'right',
+        {label: '华炎云', position: 'right', href: 'https://cn.steedos.com'},
+        {label: 'ZH', position: 'right',
           items: [
             {to: 'cn/', label: '中文', position: 'left'},
             {to: 'us/', label:'English',position: 'left'},
@@ -293,7 +286,7 @@ module.exports = {
       {to: '/us/', label: 'Home', position: 'left'},
       {to: '/us/help/workflow/README', label: 'Docs', position: 'left'},
       {to: '/us/login', label: 'Login', position: 'right'},
-      {to: '/cn/', label: '中文', position: 'right',
+      {label: 'EN', position: 'right',
         items: [
           {to: 'cn/', label: '中文', position: 'left'},
           {to: 'us/', label:'English',position: 'left'},

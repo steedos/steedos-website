@@ -16,7 +16,7 @@ import Video from '@site/src/components/Video';
         {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features.mp4"},
     ]}/>
 
-<!-- 
+
 <a class="bg-blue-700 text-white px-5 py-3 font-semibold rounded hover:bg-blue-800 hover:text-white ml-3" href="
 https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features.mp4" target="_blank">
 下载视频
@@ -25,7 +25,7 @@ https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platf
 <a class="bg-blue-700 text-white px-5 py-3 font-semibold rounded hover:bg-blue-800 hover:text-white ml-3" href="
 https://www-steedos-com.oss-accelerate.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.pdf" target="_blank">
 下载演示文档
-</a> -->
+</a>
 
 ## 华炎魔方低代码开发平台解决方案手册
 

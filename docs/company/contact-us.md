@@ -4,7 +4,7 @@ hide_table_of_contents: true
 background: /img/banner/company.png
 ---
 
-#### 有问题？ 请致电400-820-1612
+#### 有问题？ 请致电：[400-820-1612](tel://4008201612)
 
 ## 在线咨询
 

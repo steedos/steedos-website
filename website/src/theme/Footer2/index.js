@@ -1,20 +1,21 @@
 /**
- * Copyright (c) 2017-present, Facebook, Inc.
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 import React from 'react';
-import classnames from 'classnames';
-
+import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
-function FooterLink({to, href, label, ...props}) {
+function FooterLink({to, href, label, prependBaseUrlToHref, ...props}) {
   const toUrl = useBaseUrl(to);
+  const normalizedHref = useBaseUrl(href, {
+    forcePrependBaseUrl: true,
+  });
   return (
     <Link
       className="footer__link-item"
@@ -22,7 +23,7 @@ function FooterLink({to, href, label, ...props}) {
         ? {
             target: '_blank',
             rel: 'noopener noreferrer',
-            href,
+            href: prependBaseUrlToHref ? normalizedHref : href,
           }
         : {
             to: toUrl,
@@ -42,8 +43,7 @@ function Footer() {
   const {siteConfig = {}} = context;
   const {themeConfig = {}} = siteConfig;
   const {footer} = themeConfig;
-
-  const {copyright, icp, icpURL, links = [], logo = {}} = footer || {};
+  const {copyright, links = [], logo = {}} = footer || {};
   const logoUrl = useBaseUrl(logo.src);
 
   if (!footer) {
@@ -52,7 +52,7 @@ function Footer() {
 
   return (
     <footer
-      className={classnames('footer', {
+      className={clsx('footer', {
         'footer--dark': footer.style === 'dark',
       })}>
       <div className="container">
@@ -69,8 +69,10 @@ function Footer() {
                   <ul className="footer__items">
                     {linkItem.items.map((item, key) =>
                       item.html ? (
-                        <div
+                        <li
                           key={key}
+                          className="footer__item" // Developer provided the HTML, so assume it's safe.
+                          // eslint-disable-next-line react/no-danger
                           dangerouslySetInnerHTML={{
                             __html: item.html,
                           }}
@@ -104,8 +106,13 @@ function Footer() {
                 )}
               </div>
             )}
-            {copyright}
-            <a href={icpURL} target="_blank" className="footer__link-item">{icp}</a>
+
+            <div // Developer provided the HTML, so assume it's safe.
+              // eslint-disable-next-line react/no-danger
+              dangerouslySetInnerHTML={{
+                __html: copyright,
+              }}
+            />
           </div>
         )}
       </div>

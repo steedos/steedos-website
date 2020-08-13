@@ -39,7 +39,6 @@ class Video extends React.Component {
   }
 
   initPlayer() {
-    console.log("initPlayer: " + this.id)
     if (this.props.urls.length < 1)
       return
     let options = Object.assign({}, this.props);

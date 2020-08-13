@@ -11,38 +11,38 @@ export default function Landing() {
       description="华炎魔方是一款随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。"
       keywords={["低代码,低代码开发,低代码开发平台,开源低代码开发平台,快速开发平台,快速开发工具,paas,零代码,零代码开发,零代码开发平台"]}
       >
-<section class="flex bg-cover bg-no-repeat bg-blue-200">
-  <div class="mx-auto max-w-screen-xl px-4 my-12">
-    <div class="lg:grid lg:grid-cols-12 lg:gap-8">
-      <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
-        <div class="text-sm font-semibold uppercase tracking-wide text-gray-700 sm:text-base lg:text-sm xl:text-base">
+<section className="flex bg-cover bg-no-repeat bg-blue-200">
+  <div className="mx-auto max-w-screen-xl px-4 my-12">
+    <div className="lg:grid lg:grid-cols-12 lg:gap-8">
+      <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+        <div className="text-sm font-semibold uppercase tracking-wide text-gray-700 sm:text-base lg:text-sm xl:text-base">
           新一代低代码开发平台
         </div>
-        <h2 class="mt-1 text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-6xl lg:text-5xl xl:text-6xl">
+        <h2 className="mt-1 text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-6xl lg:text-5xl xl:text-6xl">
           华炎魔方
-          <br class="hidden md:inline"/>
-          <span class="text-blue-700">助力企业数字化转型</span>
+          <br className="hidden md:inline"/>
+          <span className="text-blue-700">助力企业数字化转型</span>
         </h2>
-        <p class="mt-3 text-base text-gray-700 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+        <p className="mt-3 text-base text-gray-700 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
           华炎魔方特有的敏捷性、灵活性和开放性，帮助业务加速创新，提升竞争力.
         </p>
 
-        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-          <div class="rounded-md shadow">
-            <a href="/videos/steedos-platform-features/" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10  hover:text-white">
+        <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+          <div className="rounded-md shadow">
+            <a href="/videos/steedos-platform-features/" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10  hover:text-white">
               视频演示
             </a>
           </div>
-          <div class="mt-3 sm:mt-0 sm:ml-3">
-            <a href="/developer/" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-700 bg-blue-100 hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+          <div className="mt-3 sm:mt-0 sm:ml-3">
+            <a href="/developer/" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-700 bg-blue-100 hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
               开发教程
             </a>
           </div>
         </div>
       </div>
-      <div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-        <div class="relative mx-auto w-full lg:max-w-md">
-          <div class="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
+      <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+        <div className="relative mx-auto w-full lg:max-w-md">
+          <div className="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
             <Video 
               poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.jpg"
               autoplay={false}
@@ -56,27 +56,27 @@ export default function Landing() {
   </div>
 </section>
 
-<div class="py-16 bg-gray-50 overflow-hidden bg-gray-100">
-  <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
-    <svg class="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4" width="404" height="784" fill="none" viewBox="0 0 404 784">
+<div className="py-16 bg-gray-50 overflow-hidden bg-gray-100">
+  <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
+    <svg className="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4" width="404" height="784" fill="none" viewBox="0 0 404 784">
       <defs>
         <pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-          <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+          <rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor" />
         </pattern>
       </defs>
       <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" />
     </svg>
 
-    <div class="relative">
-      <h3 class="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+    <div className="relative">
+      <h3 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
       全新低代码开发方式，代码量减少90%，开发效率提升十倍
       </h3>
-      <p class="mt-4 max-w-3xl mx-auto text-center text-xl leading-7 text-gray-500">
-      华炎魔方基于商业智能和模型驱动，开发人员只需编写少量代码，就能轻松便捷地创建智能化、移动化的个性化应用。
+      <p className="mt-4 max-w-3xl mx-auto text-center text-xl leading-7 text-gray-500">
+      华炎魔方基于商业智能和模型驱动，只需编写少量代码，就能轻松便捷地创建智能化、移动化的企业应用。
       </p>
 
-      <div class="relative mx-auto w-full lg:max-w-md">
-        <div class="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
+      <div className="relative mx-auto w-full lg:max-w-md mt-4">
+        <div className="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
           <Video 
             poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/lowcode.jpeg"
             autoplay={false}
@@ -85,8 +85,8 @@ export default function Landing() {
             ]}/>
         </div>
       </div>
-      {/* <a href="/videos/steedos-platform-features/" class="w-full flex items-center justify-center px-8 py-8 border border-transparent text-base leading-6 font-medium rounded-md text-blue-500 hover:text-blue-700 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
-        <svg class="h-10 w-10 mx-4" fill="currentColor" viewBox="0 0 84 84">
+      {/* <a href="/videos/steedos-platform-features/" className="w-full flex items-center justify-center px-8 py-8 border border-transparent text-base leading-6 font-medium rounded-md text-blue-500 hover:text-blue-700 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+        <svg className="h-10 w-10 mx-4" fill="currentColor" viewBox="0 0 84 84">
           <circle opacity="0.9" cx="42" cy="42" r="42" fill="#EFEFEF" />
           <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
         </svg>
@@ -173,18 +173,18 @@ export default function Landing() {
   ]}
 />
 
-<div class="py-12 bg-gray-100">
-  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="lg:text-center">
-      <p class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">案例分享</p>
-      <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+<div className="py-12 bg-gray-100">
+  <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="lg:text-center">
+      <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">案例分享</p>
+      <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
         了解华炎魔方如何帮助业务加速创新
       </h3>
-      <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
+      <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
         每一天，有超过 15 万人在使用我们全球首屈一指的华炎魔方构建的解决方案，并且他们正不断提升员工工作效率、改进团队协作能力、增强客户忠诚度并扩展业务规模。
       </p>
-      <div class="relative mx-auto w-full lg:max-w-md">
-        <div class="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
+      <div className="relative mx-auto w-full lg:max-w-md">
+        <div className="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
           <Video 
             poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/cases.jpeg"
             autoplay={false}
@@ -197,24 +197,6 @@ export default function Landing() {
   </div>
 </div>
 
-<div class="relative bg-gray-700">
-  <div class="max-w-screen-xl mx-auto py-8 px-4 lg:py-12 lg:flex lg:items-center lg:justify-between">
-    <div class="">
-      <div class="text-2xl mb-4 leading-6 font-semibold uppercase tracking-wider text-gray-300">
-        对于华炎魔方低代码开发平台有疑问？？
-      </div>
-      <div class="my-6 text-white text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl sm:leading-10">
-        微信扫描二维码，我们的技术专家会为您解答。
-      </div>
-      <p class="mt-3 mb-0 text-lg leading-7 text-gray-300">
-        我们的技术专家拥有十年以上的管理软件开发经验，无论您询问有关华炎魔方开发平台的功能、定价、实施或任何其他方面的问题，他们都将随时准备为您提供帮助。
-      </p>
-    </div>
-    <div class="flex lg:flex-shrink-0">
-      <img class="h-32 w-32 m-4" src="/assets/contact_by_weixin.png"/>
-    </div>
-  </div>
-</div>
 
 </Layout>
   );

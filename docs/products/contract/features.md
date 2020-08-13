@@ -135,19 +135,3 @@ keywords:
 #### 获取财务系统回传来的单据信息并更新合同台账
 
 可以实时接收财务系统推送过来的财务单据（如收款单），同步为对应合同的实际收款记录，并更新合同台账信息，确保从合同管理系统中得到的信息更准确及时。
-
-import Section from '@site/src/components/Section';
-
-<Section background="#215ca0" padding="50">
-<div style={{color:"#FFFFFF"}}>
-
-# 对于我们的合同管理系统有疑问？？
-# 扫描以下二维码，我们的技术专家会为您解答。
-
-我们的专家拥有十年以上的管理软件开发经验，无论您询问有关合同管理系统的功能、定价、实施或任何其他方面的问题，他们都将随时准备为您提供帮助。
-
-![在线咨询](/assets/contact_by_weixin.png)
-
-</div>
-
-</Section>

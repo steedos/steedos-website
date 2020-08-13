@@ -103,19 +103,6 @@ import Section from '@site/src/components/Section';
 
 </Section>
 
-<Section background="#215ca0" padding="50">
-<div style={{color:"#FFFFFF"}}>
-
-# 对于华炎魔方低代码开发平台有疑问？？
-# 扫描以下二维码，我们的技术专家会为您解答。
-
-我们的技术专家拥有十年以上的管理软件开发经验，无论您询问有关华炎魔方开发平台的功能、定价、实施或任何其他方面的问题，他们都将随时准备为您提供帮助。
-
-![在线咨询](/assets/contact_by_weixin.png)
-
-</div>
-
-</Section>
 
 <Section background="#f4f4f4" padding="50">
 

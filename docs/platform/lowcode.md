@@ -115,16 +115,3 @@ import Section from '@site/src/components/Section';
 配置文件和与业务逻辑相关的触发脚本，就构成了一个项目的核心源代码，简单易懂，易于维护。对于大型项目，源码可以轻松保存到Github，可以随时追踪到开发人员的修改历史。
 
 </Section>
-
-<Section background="#215ca0" padding="50">
-<div style={{color:"#FFFFFF"}}>
-
-# 对于我们的快速开发工具有疑问？？
-# 扫描以下二维码，我们的技术专家会为您解答。
-
-我们的技术专家拥有十年以上的管理软件开发经验，无论您询问有关华炎魔方开发平台的功能、定价、实施或任何其他方面的问题，他们都将随时准备为您提供帮助。
-
-![在线咨询](/assets/contact_by_weixin.png)
-
-</div>
-</Section>

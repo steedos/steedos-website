@@ -167,18 +167,3 @@ hide_table_of_contents: false
 
 然后输入账户及密码，即可登陆系统。
 
-
-import Section from '@site/src/components/Section';
-
-<Section background="#215ca0" padding="50">
-<div style={{color:"#FFFFFF"}}>
-
-# 对于我们的快速开发工具有疑问？？
-# 扫描以下二维码，我们的技术专家会为您解答。
-
-我们的技术专家拥有十年以上的管理软件开发经验，无论您询问有关华炎魔方开发平台的功能、定价、实施或任何其他方面的问题，他们都将随时准备为您提供帮助。
-
-![在线咨询](/assets/contact_by_weixin.png)
-
-</div>
-</Section>
