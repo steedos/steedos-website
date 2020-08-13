@@ -9,7 +9,8 @@ export default function Landing() {
 <Layout
       title="华炎魔方,华炎办公,审批王,低代码,零代码,快速开发工具,企业PaaS平台"
       description="华炎魔方是一款随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。"
-      >
+      keywords={["低代码,低代码开发,低代码开发平台,开源低代码开发平台,快速开发平台,快速开发工具,paas,零代码,零代码开发,零代码开发平台"]}
+>
         
 <section class="flex bg-cover bg-no-repeat bg-blue-200">
   <div class="mx-auto max-w-screen-xl px-4 my-12">
