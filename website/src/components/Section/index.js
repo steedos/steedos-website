@@ -42,9 +42,9 @@ class Section extends React.Component {
     
     return (
       <>
-      <div className={styles.sectionBackground} id={this.state.backgroundId}></div>
+      {/* <div className={styles.sectionBackground} id={this.state.backgroundId}></div> */}
       <div className={styles.section} ref={this.state.sectionId} id={this.state.sectionId}>
-        <style dangerouslySetInnerHTML={{__html: `
+        {/* <style dangerouslySetInnerHTML={{__html: `
           #${this.state.sectionId} {
             min-height: ${height}px;
             color: ${color};
@@ -56,7 +56,7 @@ class Section extends React.Component {
             background-size: cover;
             height: ${height}px;
           }
-        `}}></style>
+        `}}></style> */}
         {padding && (<div style={{height: padding + 'px' }}></div>)}
         {this.props.children}
         {padding && (<div style={{height: padding + 'px' }}></div>)}
