@@ -104,18 +104,18 @@ module.exports = {
   // useEnglishUrl: false,
 
   themeConfig: {
-    image: 'img/icon_blue.png',
+    image: 'img/icon_platform.png',
     colorMode: {
       // "light" | "dark"
       defaultMode: 'light',
 
       // Hides the switch in the navbar
       // Useful if you want to support a single color mode
-      disableSwitch: true,
+      disableSwitch: false,
 
       // Should we use the prefers-color-scheme media-query,
       // using user system preferences, instead of the hardcoded defaultMode
-      respectPrefersColorScheme: false,
+      respectPrefersColorScheme: true,
     },
     navbar: {
       hideOnScroll: false,
@@ -123,6 +123,7 @@ module.exports = {
       logo: {
         alt: '华炎魔方',
         src: 'img/icon_platform.png',
+        srcDark:  'img/icon_platform_white.png',
         href: '/cn/'
       },
       items: [
@@ -146,8 +147,9 @@ module.exports = {
         },
         {to: '/help/', label: '文档', position: 'left',},
         {to: '/developer/', label: '开发人员', position: 'left',},
+        {label: '华炎云', position: 'left', href: 'https://cn.steedos.com'},
         //{to: 'videos/', label: '视频', position: 'left',},
-        {to: '/company/about-us/', label: '关于', position: 'left',
+        {to: '/company/contact-us/', label: '联系我们', position: 'right',
           // items: [
           //   {to: '/company/about-us/', label: '关于华炎'},
           //   {to: '/company/customers/', label: '成功案例'},
@@ -155,7 +157,6 @@ module.exports = {
           // ]
         },
         {to: '/us/', label: 'English', position: 'right'},
-        {label: '华炎云', position: 'right', href: 'https://cn.steedos.com'},
         {
           href: 'https://github.com/steedos/',
           position: 'right',
@@ -286,7 +287,13 @@ module.exports = {
       {to: '/us/', label: 'Home', position: 'left'},
       {to: '/us/help/workflow/README', label: 'Docs', position: 'left'},
       {to: '/cn', label: '中文', position: 'right'},
-      {to: '/us/login', label: 'Login', position: 'right'}
+      {
+        href: 'https://github.com/steedos/',
+        position: 'right',
+        className: 'header-github-link',
+        'aria-label': 'GitHub repository',
+      },
+      {to: '/us/login', label: 'Login', position: 'right'},
     ],
   },
 };

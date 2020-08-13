@@ -29,7 +29,7 @@ import Video from '@site/src/components/Video';
 </div>
             <div class="mt-8 mb-8">
                 <a href="/videos/steedos-platform-features/" class="bg-green-700 text-white px-5 py-3 font-semibold rounded hover:bg-green-800  hover:text-white" target="_blank">视频演示</a>
-                <a href="/developer/guide/" class="bg-blue-700 text-white px-5 py-3 font-semibold rounded hover:bg-blue-800 hover:text-white ml-3">开发教程</a>
+                <a href="/developer/" class="bg-blue-700 text-white px-5 py-3 font-semibold rounded hover:bg-blue-800 hover:text-white ml-3">开发教程</a>
             </div>
 		</div>
 		<div class="w-full lg:w-3/5 text-center lg:pl-5">
@@ -99,7 +99,7 @@ import Section from '@site/src/components/Section';
 - [下载华炎魔方解决方案手册](https://www-steedos-com.oss-accelerate.aliyuncs.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.pdf)
 - [华炎魔方版本与报价](/platform/pricing/)
 - [本地部署华炎魔方](/developer/deploy/)
-- [查看华炎魔方开发培训教程](/developer/guide/)
+- [查看华炎魔方开发培训教程](/developer/)
 
 </Section>
 

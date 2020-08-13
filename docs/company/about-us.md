@@ -11,7 +11,7 @@ background: /img/banner/company.png
 了解我们的产品
 </a>
 
-<a class="bg-blue-700 text-white px-5 py-3 font-semibold rounded hover:bg-blue-800 hover:text-white ml-3" href="/developer/guide/" >
+<a class="bg-blue-700 text-white px-5 py-3 font-semibold rounded hover:bg-blue-800 hover:text-white ml-3" href="/developer/" >
 开发教程
 </a>
 

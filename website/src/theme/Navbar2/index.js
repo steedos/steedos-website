@@ -4,35 +4,143 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import React, {useCallback, useState, useEffect} from 'react';
-import clsx from 'clsx';
+
+import {useLocation} from '@docusaurus/router';
+
+import React, {useCallback, useState} from 'react';
+import classnames from 'classnames';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 import SearchBar from '@theme/SearchBar';
 import Toggle from '@theme/Toggle';
 import useThemeContext from '@theme/hooks/useThemeContext';
 import useHideableNavbar from '@theme/hooks/useHideableNavbar';
 import useLockBodyScroll from '@theme/hooks/useLockBodyScroll';
-import useWindowSize, {windowSizes} from '@theme/hooks/useWindowSize';
 import useLogo from '@theme/hooks/useLogo';
+
 import styles from './styles.module.css';
-import NavbarItem from '@theme/NavbarItem'; // retrocompatible with v1
-import {useLocation} from '@docusaurus/router';
 
-const DefaultNavItemPosition = 'right'; // If split links by left/right
-// if position is unspecified, fallback to right (as v1)
+function NavLink({
+  activeBasePath,
+  to,
+  href,
+  label,
+  activeClassName = 'navbar__link--active',
+  ...props
+}) {
+  const toUrl = useBaseUrl(to);
+  const activeBaseUrl = useBaseUrl(activeBasePath);
 
-function splitNavItemsByPosition(items) {
-  const leftItems = items.filter(
-    (item) => (item.position ?? DefaultNavItemPosition) === 'left',
+  return (
+    <Link
+      {...(href
+        ? {
+            target: '_blank',
+            rel: 'noopener noreferrer',
+            href,
+          }
+        : {
+            isNavLink: true,
+            activeClassName,
+            to: toUrl,
+            ...(activeBasePath
+              ? {
+                  isActive: (_match, location) =>
+                    location.pathname.startsWith(activeBaseUrl),
+                }
+              : null),
+          })}
+      {...props}>
+      {label}
+    </Link>
   );
-  const rightItems = items.filter(
-    (item) => (item.position ?? DefaultNavItemPosition) === 'right',
+}
+
+function NavItem({items, position, className, ...props}) {
+  const navLinkClassNames = (extraClassName, isDropdownItem = false) =>
+    classnames(
+      {
+        'navbar__item navbar__link': !isDropdownItem,
+        dropdown__link: isDropdownItem,
+      },
+      extraClassName,
+    );
+
+  if (!items) {
+    return <NavLink className={navLinkClassNames(className)} {...props} />;
+  }
+
+  return (
+    <div
+      className={classnames('navbar__item', 'dropdown', 'dropdown--hoverable', {
+        'dropdown--left': position === 'left',
+        'dropdown--right': position === 'right',
+      })}>
+      <NavLink
+        className={navLinkClassNames(className)}
+        {...props}
+        onClick={(e) => e.preventDefault()}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter') {
+            e.target.parentNode.classList.toggle('dropdown--show');
+          }
+        }}>
+        {props.label}
+      </NavLink>
+      <ul className="dropdown__menu">
+        {items.map(({className: childItemClassName, ...childItemProps}, i) => (
+          <li key={i}>
+            <NavLink
+              activeClassName="dropdown__link--active"
+              className={navLinkClassNames(childItemClassName, true)}
+              {...childItemProps}
+            />
+          </li>
+        ))}
+      </ul>
+    </div>
   );
-  return {
-    leftItems,
-    rightItems,
-  };
+}
+
+function MobileNavItem({items, className, ...props}) {
+  const navLinkClassNames = (extraClassName, isSubList = false) =>
+    classnames(
+      'menu__link',
+      {
+        'menu__link--sublist': isSubList,
+      },
+      extraClassName,
+    );
+
+  if (!items) {
+    return (
+      <li className="menu__list-item">
+        <NavLink className={navLinkClassNames(className)} {...props} />
+      </li>
+    );
+  }
+
+  return (
+    <li className="menu__list-item">
+      <NavLink className={navLinkClassNames(className, true)} {...props}>
+        {props.label}
+      </NavLink>
+      <ul className="menu__list">
+        {items.map(({className: childItemClassName, ...childItemProps}, i) => (
+          <li className="menu__list-item" key={i}>
+            <NavLink
+              activeClassName="menu__link--active"
+              className={navLinkClassNames(childItemClassName)}
+              {...childItemProps}
+              onClick={props.onClick}
+            />
+          </li>
+        ))}
+      </ul>
+    </li>
+  );
 }
 
 function Navbar() {
@@ -42,50 +150,45 @@ function Navbar() {
         navbar_items_us = [],
       },
       themeConfig: {
-        navbar: {title = '', items = [], hideOnScroll = false} = {},
-        colorMode: {disableSwitch: disableColorModeSwitch = false} = {},
+        navbar: {title, items = [], items_us = [], hideOnScroll = false} = {},
+        disableDarkMode = true,
       },
     },
     isClient,
   } = useDocusaurusContext();
-
   const [sidebarShown, setSidebarShown] = useState(false);
   const [isSearchBarExpanded, setIsSearchBarExpanded] = useState(false);
+
   const {isDarkTheme, setLightTheme, setDarkTheme} = useThemeContext();
   const {navbarRef, isNavbarVisible} = useHideableNavbar(hideOnScroll);
   let {logoLink, logoLinkProps, logoImageUrl, logoAlt} = useLogo();
 
-
-  // 支持英文网站
-  const location = useLocation();
-  if (location && location.pathname.indexOf('/us')>=0){
-    items = navbar_items_us
-    logoLink = '/us/'
-  }
-
-
   useLockBodyScroll(sidebarShown);
+
   const showSidebar = useCallback(() => {
     setSidebarShown(true);
   }, [setSidebarShown]);
   const hideSidebar = useCallback(() => {
     setSidebarShown(false);
   }, [setSidebarShown]);
+
   const onToggleChange = useCallback(
     (e) => (e.target.checked ? setDarkTheme() : setLightTheme()),
     [setLightTheme, setDarkTheme],
   );
-  const windowSize = useWindowSize();
-  useEffect(() => {
-    if (windowSize === windowSizes.desktop) {
-      setSidebarShown(false);
-    }
-  }, [windowSize]);
-  const {leftItems, rightItems} = splitNavItemsByPosition(items);
+
+  // 支持英文网站
+  const location = useLocation();
+  if (location && location.pathname.indexOf('/us')>=0){
+    items = navbar_items_us
+    title = ''
+    logoLink = '/us/'
+  }
+
   return (
     <nav
       ref={navbarRef}
-      className={clsx('navbar', 'navbar--light', 'navbar--fixed-top', {
+      className={classnames('navbar', 'navbar--light', 'navbar--fixed-top', {
         'navbar-sidebar--show': sidebarShown,
         [styles.navbarHideable]: hideOnScroll,
         [styles.navbarHidden]: !isNavbarVisible,
@@ -129,22 +232,26 @@ function Navbar() {
             )}
             {title != null && (
               <strong
-                className={clsx('navbar__title', {
+                className={classnames('navbar__title', {
                   [styles.hideLogoText]: isSearchBarExpanded,
                 })}>
                 {title}
               </strong>
             )}
           </Link>
-          {leftItems.map((item, i) => (
-            <NavbarItem {...item} key={i} />
-          ))}
+          {items
+            .filter((linkItem) => linkItem.position === 'left')
+            .map((linkItem, i) => (
+              <NavItem {...linkItem} key={i} />
+            ))}
         </div>
         <div className="navbar__items navbar__items--right">
-          {rightItems.map((item, i) => (
-            <NavbarItem {...item} key={i} />
-          ))}
-          {!disableColorModeSwitch && (
+          {items
+            .filter((linkItem) => linkItem.position === 'right')
+            .map((linkItem, i) => (
+              <NavItem {...linkItem} key={i} />
+            ))}
+          {!disableDarkMode && (
             <Toggle
               className={styles.displayOnlyInLargeViewport}
               aria-label="Dark mode toggle"
@@ -182,7 +289,7 @@ function Navbar() {
               <strong className="navbar__title">{title}</strong>
             )}
           </Link>
-          {!disableColorModeSwitch && sidebarShown && (
+          {!disableDarkMode && sidebarShown && (
             <Toggle
               aria-label="Dark mode toggle in sidebar"
               checked={isDarkTheme}
@@ -193,8 +300,8 @@ function Navbar() {
         <div className="navbar-sidebar__items">
           <div className="menu">
             <ul className="menu__list">
-              {items.map((item, i) => (
-                <NavbarItem mobile {...item} onClick={hideSidebar} key={i} />
+              {items.map((linkItem, i) => (
+                <MobileNavItem {...linkItem} onClick={hideSidebar} key={i} />
               ))}
             </ul>
           </div>
