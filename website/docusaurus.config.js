@@ -1,4 +1,5 @@
 var path = require('path');
+const { truncate } = require('fs');
 
 // docusaurus.config.js
 module.exports = {
@@ -118,7 +119,7 @@ module.exports = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      hideOnScroll: false,
+      hideOnScroll: true,
       title: '',
       logo: {
         alt: '华炎魔方',
@@ -156,7 +157,12 @@ module.exports = {
           //   {to: '/company/contact-us/', label: '联系我们'},
           // ]
         },
-        {to: '/us/', label: 'English', position: 'right'},
+        {to: '/us/', label: 'EN', position: 'right',
+          items: [
+            {to: 'cn/', label: '中文', position: 'left'},
+            {to: 'us/', label:'English',position: 'left'},
+          ]
+        },
         {
           href: 'https://github.com/steedos/',
           position: 'right',
@@ -286,14 +292,19 @@ module.exports = {
     navbar_items_us: [
       {to: '/us/', label: 'Home', position: 'left'},
       {to: '/us/help/workflow/README', label: 'Docs', position: 'left'},
-      {to: '/cn', label: '中文', position: 'right'},
+      {to: '/us/login', label: 'Login', position: 'right'},
+      {to: '/cn/', label: '中文', position: 'right',
+        items: [
+          {to: 'cn/', label: '中文', position: 'left'},
+          {to: 'us/', label:'English',position: 'left'},
+        ]
+      },
       {
         href: 'https://github.com/steedos/',
         position: 'right',
         className: 'header-github-link',
         'aria-label': 'GitHub repository',
       },
-      {to: '/us/login', label: 'Login', position: 'right'},
     ],
   },
 };
