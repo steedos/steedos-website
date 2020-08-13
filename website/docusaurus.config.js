@@ -170,82 +170,6 @@ module.exports = {
       //   {to: '/us/login', label: 'Login', position: 'right'}
       // ],
     },
-    footer: {
-      style: 'dark',
-      // logo: {
-      //   alt: 'Facebook Open Source Logo',
-      //   src: 'img/icon_blue.png',
-      // },
-
-      links: [
-        {
-          title: '初识华炎？',
-          items: [
-            {
-              label: '低代码',
-              to: 'platform/lowcode/',
-            },
-            {
-              label: '零代码/无代码',
-              to: 'platform/no-code/',
-            },
-            {
-              label: '开源低代码开发平台',
-              to: 'platform/',
-            },
-            {
-              label: '数字化转型',
-              to: 'platform/cases/',
-            },
-          ],
-        },
-        {
-          title: '解决方案',
-          items: [
-            {
-              label: 'OA办公系统',
-              to: 'oa/',
-            },
-            {
-              label: '集团管控',
-              to: 'solutions/group/',
-            },
-            {
-              label: '合同管理',
-              to: 'products/contract/',
-            },
-            {
-              label: '流程审批',
-              to: 'solutions/workflow/',
-            },
-            // {
-            //   label: '什么是OA系统?',
-            //   to: 'oa/what-is-oa/',
-            // },
-          ],
-        },
-        {
-          title: '技术支持',
-          items: [
-            {
-              label: '销售热线：400-820-1612',
-              href: 'tel://400-820-1612'
-            },
-            {
-              label: '在线咨询',
-              to: 'company/contact-us',
-            },
-            {
-              label: '最新动态',
-              to: 'blog',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} 上海华炎软件科技有限公司. `,
-      // icp: ` 沪ICP备09089283号`,
-      // icpURL: ` http://www.beian.miit.gov.cn/`,
-    },
     algolia: {
       apiKey: 'eaa8e1c86ac084b5cac664d9d996856c',
       indexName: 'steedos',
@@ -273,9 +197,6 @@ module.exports = {
         },
       },
     ],
-  ],
-  stylesheets: [
-    '/website/libs/tailwind/tailwind.min.css',
   ],
   plugins: [
     path.resolve(__dirname, './src/plugins/plugin-baidu-analytics')

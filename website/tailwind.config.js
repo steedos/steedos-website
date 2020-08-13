@@ -7,8 +7,8 @@ module.exports = {
     darkSelector: '[data-theme="dark"]'
   },
   variants: {
-    textColor: ["dark", "light"],
-    backgroundColor: ["dark", "light"]
+    textColor: ["hover", "dark", "light"],
+    backgroundColor: ["hover", "dark", "light"]
   },
   // variants: {
   //   backgroundColor: ['dark', 'dark-hover'],

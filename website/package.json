@@ -6,7 +6,7 @@
     "serve": "docusaurus serve",
     "deploy": "docusaurus deploy",
     "dep": "GIT_USER=hotlong && yarn deploy",
-    "tailwind": "cross-env NODE_ENV=development postcss ./tailwind.css -o static/website/libs/tailwind/tailwind.min.css",
+    "tailwind": "cross-env NODE_ENV=development postcss src/css/tailwind-src.css -o src/css/tailwind.css",
     "tailwindp": "cross-env NODE_ENV=production postcss ./tailwind.css -o static/website/libs/tailwind/tailwind.min.css"
   },
   "dependencies": {
