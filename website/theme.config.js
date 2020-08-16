@@ -240,7 +240,7 @@ const darkPalette = {
   
 const light = new Theme()
   .setName("light")
-  .targetable()
+  //.targetable()
   .addColors({...lightPalette})
 
 const dark = new Theme()
@@ -250,4 +250,4 @@ const dark = new Theme()
 
 module.exports = new ThemeManager()
   .setDefaultTheme(light)
-  .setDefaultDarkTheme(dark);
+  .addTheme(dark);
