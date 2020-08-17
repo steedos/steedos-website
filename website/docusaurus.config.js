@@ -147,7 +147,7 @@ module.exports = {
         },
         {to: '/developer/', label: '开发人员', position: 'left',},
         {to: '/help/', label: '文档', position: 'left',},
-        {to: '/company/contact-us', label: '在线咨询', position: 'left',},
+        {to: '/platform/pricing', label: '报价', position: 'left',},
         //{to: 'videos/', label: '视频', position: 'left',},
         {label: '华炎云', position: 'right', href: 'https://cn.steedos.com'},
         {to: 'us/', label: 'EN', position: 'right'},
