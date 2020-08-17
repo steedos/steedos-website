@@ -37,6 +37,38 @@ yarn config set registry https://registry.npm.taobao.org
 
 根据官方向导，安装最新的[mongodb4.2](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)，选择安装成 windows 服务
 
+- 右键以管理员身份运行mongodb-win32-x86_64-2012plus-4.2.8-signed.msi，点击Next
+
+![安装mongodb](/assets/windows/mongodb_1.jpeg)
+
+- 点击I accept the terms in the license Agreement，点击Next
+
+![安装mongodb](/assets/windows/mongodb_2.jpeg)
+
+- 选择默认安装路径，点击complete；自定义安装路径，点击custom，点击Next；
+
+![安装mongodb](/assets/windows/mongodb_3.jpeg)
+
+- 如果选择custom，点击Browse选择路径，点击Next
+
+![安装mongodb](/assets/windows/mongodb_4.jpeg)
+
+- Service Configuration选择默认的 Run service as Network Service User，直接点击Next
+
+![安装mongodb](/assets/windows/mongodb_5.jpeg)
+
+- 取消勾选Install MongoDB Compass，点击Next
+
+![安装mongodb](/assets/windows/mongodb_6.jpeg)
+
+- 点击Install，开始安装
+
+![安装mongodb](/assets/windows/mongodb_7.jpeg)
+
+- 点击Finish，完成安装
+
+![安装mongodb](/assets/windows/mongodb_8.jpeg)
+
 ### 使用集群模式启动数据库
 
 编辑配置文件，默认在 `C:\Program Files\MongoDB\Server\4.2\bin\mongod.cfg`:
