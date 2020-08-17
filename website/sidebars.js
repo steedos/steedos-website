@@ -46,7 +46,13 @@ module.exports =
   //     "label": "开源社区版"
   // }],
   "开发人员": {
-    "快速向导": ["developer", "developer/deploy","developer/steedos_server"],
+    "快速向导": [
+      "developer",
+      {
+         "安装": ["developer/deploy", "developer/deploy_windows", "developer/deploy_mac", "developer/deploy_ubuntu", "developer/deploy_heroku", "developer/deploy_docker", "developer/deploy_cluster"]
+      },
+      "developer/steedos_server"
+    ],
     "开发教程": ["developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report","developer/guide_flow","developer/guide_sync","developer/guide_companies","developer/guide_nc"],
     "开发文档": ["developer/datasource", "developer/object", "developer/object_field", "developer/listview", "developer/object_filter_conditions", "developer/object_permission", "developer/object_action", "developer/object_form", "developer/app", "developer/object_workflow", "developer/reports", "developer/report_jsreport"],
     "高级开发": ["developer/steedos_config", "developer/env", "developer/objectql_connection", "developer/objectql_object", "developer/object_filter", "developer/object_trigger", "developer/object_field_formula", "developer/standard_objects"],
