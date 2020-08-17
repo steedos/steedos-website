@@ -128,14 +128,7 @@ module.exports = {
         href: '/cn/'
       },
       items: [
-        {to: 'platform/', label: '平台', position: 'left', activeBasePath: '/platform/',
-          items: [
-            {to: 'platform/', label:'功能',position: 'left', activeBasePath: '/platform/temp'},
-            {to: 'videos/', label:'视频',position: 'left'},
-            {to: 'platform/pricing', label:'报价',position: 'left'},
-            {to: 'platform/try', label:'试用',position: 'left'},
-          ]
-        },
+        {to: 'platform/', label: '平台', position: 'left', activeBasePath: '/platform/',},
         {label: '应用案例', position: 'left',
           items: [
             // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
@@ -145,8 +138,14 @@ module.exports = {
             {to: 'solutions/cost/', label: '费控管理', position: 'left'},
           ]
         },
-        {to: '/developer/', label: '开发人员', position: 'left',},
-        {to: '/help/', label: '文档', position: 'left',},
+        {to: '/help/', label: '文档', position: 'left',
+        items: [
+          {to: '/videos/', label:'视频',position: 'left'},
+          {to: '/help/', label: '用户手册', position: 'left'},
+          {to: '/help/admin/', label: '管理员手册', position: 'left'},
+          {to: '/help/download', label: '下载客户端', position: 'left'},
+        ]},
+        {to: '/developer/', label: '开发', position: 'left',},
         {to: '/platform/pricing', label: '报价', position: 'left',},
         //{to: 'videos/', label: '视频', position: 'left',},
         {label: '华炎云', position: 'right', href: 'https://cn.steedos.com'},

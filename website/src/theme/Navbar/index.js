@@ -58,7 +58,7 @@ function Navbar() {
 
   // 支持英文网站
   const location = useLocation();
-  if (location && location.pathname.indexOf('/us')>=0){
+  if (location && location.pathname.startsWith('/us')){
     items = navbar_items_us
     logoLink = '/us/'
   }
