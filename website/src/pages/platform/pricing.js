@@ -156,7 +156,7 @@ export default function Landing() {
                 </div>
               </div>
               <div class="border-t-2 border-gray-100 rounded-b-lg pt-10 pb-8 px-6 bg-gray-50 sm:px-10 sm:py-10">
-                <div class="pb-6 font-bold text-base leading-6 text-gray-500">开源社区版的全部功能，以及：</div>
+                <div class="pb-6 font-bold text-base leading-6 text-gray-500">包含开源社区版的全部功能，以及：</div>
                 <ul>
                   <li class="flex items-start">
                     <div class="flex-shrink-0">
@@ -253,7 +253,7 @@ export default function Landing() {
                   </div>
                 </div>
                 <div class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
-                  <div class="pb-6 font-bold text-base leading-6 text-gray-500">专业版的全部功能，以及：</div>
+                  <div class="pb-6 font-bold text-base leading-6 text-gray-500">包含专业版的全部功能，以及：</div>
                   <ul>
                     <li class="mt-4 flex items-start">
                       <div class="flex-shrink-0">
