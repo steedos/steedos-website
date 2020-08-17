@@ -45,7 +45,7 @@ yarn config set registry https://registry.npm.taobao.org
 
 ![安装mongodb](/assets/windows/mongodb_2.jpeg)
 
-- 选择默认安装路径，点击complete；自定义安装路径，点击custom，点击Next；
+- 选择默认安装路径，点击complete；自定义安装路径，点击custom，点击Next
 
 ![安装mongodb](/assets/windows/mongodb_3.jpeg)
 
