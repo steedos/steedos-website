@@ -38,8 +38,8 @@ background: /img/banner/clouds-large-desktop.png
 
 从组织的角度，为了构建符合企业特点和需求的知识管理， 从人员的角度，是为了提供个人工作和管理需要的知识支撑，华炎知识平台在企业的应用可归纳为以下几个方面：
 
-<div className="slds-grid slds-wrap">
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+<div className="flex items-start flex-wrap">
+<div className="w-1/2 py-4">
 
 #### 为企业建立知识可积累架构
 
@@ -51,7 +51,7 @@ background: /img/banner/clouds-large-desktop.png
 - 知识中心门户
 
 </div>
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+<div className="w-1/2 py-4">
 
 #### 建立企业业务过程标准化
 
@@ -63,7 +63,7 @@ background: /img/banner/clouds-large-desktop.png
 - 法务合同管理流程体系
 
 </div>
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+<div className="w-1/2 py-4">
 
 #### 支撑企业岗位工作与职能管理
 
@@ -75,7 +75,7 @@ background: /img/banner/clouds-large-desktop.png
 - 党群工作服务门户
 
 </div>
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+<div className="w-1/2 py-4">
 
 #### 助力企业形成知识创新型组织
 
@@ -87,7 +87,7 @@ background: /img/banner/clouds-large-desktop.png
 - 员工工作微博
 
 </div>
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+<div className="w-1/2 py-4">
 
 #### 辅助企业员工培养与成长
 

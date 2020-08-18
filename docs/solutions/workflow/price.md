@@ -11,7 +11,7 @@ background: /img/banner/service-overview-lg.png
 
 |  | 基础版 | 专业版 | 企业版|
 |--- | --- | --- | ---|
-|单价 | <h2 class='slds-m-around_medium'>¥ 2</h2> 元/用户/月<br/>（按年付费）| <h2 class='slds-m-around_medium'>¥ 20</h2> 元/用户/月<br/>（按年付费）| <h2 class='slds-m-around_medium'>¥ 60</h2> 元/用户/月<br/>（按年付费）|
+|单价 | <h2 class='m-4'>¥ 2</h2> 元/用户/月<br/>（按年付费）| <h2 class='m-4'>¥ 20</h2> 元/用户/月<br/>（按年付费）| <h2 class='m-4'>¥ 60</h2> 元/用户/月<br/>（按年付费）|
 |流程数量限制 | 10个 | 50个 | 不限数量 |
 |单个附件大小限制 | 10兆 | 50兆 | 100兆 |
 |免费电脑、手机、平板客户端 | √ | √ | √|

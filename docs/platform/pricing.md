@@ -12,7 +12,7 @@ background: /img/banner/clouds-large-desktop.png
 |  | 入门版 | 专业版 | 企业版|
 |--- | --- | --- | ---|
 |  | 快速创建个性化企业应用. | 为每个部门实现数字化转型. | 转变整个组织的应用开发过程。 |
-|单价 | <h2 class='slds-m-around_medium'>¥ 20</h2> 元/用户/月<br/>（按年付费）| <h2 class='slds-m-around_medium'>¥ 80</h2> 元/用户/月<br/>（按年付费）| <h2 class='slds-m-around_medium'>[联系我们](/company/contact-us)</h2> |
+|单价 | <h2 class='m-4'>¥ 20</h2> 元/用户/月<br/>（按年付费）| <h2 class='m-4'>¥ 80</h2> 元/用户/月<br/>（按年付费）| <h2 class='m-4'>[联系我们](/company/contact-us)</h2> |
 |自定义业务对象 | 10个 | 100个 | 不限数量 |
 |自定义审批流程 | 10个 | 100个 | 不限数量 |
 |私有化部署 | √ | √ | √|
@@ -38,7 +38,7 @@ background: /img/banner/clouds-large-desktop.png
 |  | 标准客服包 | 金牌客服包 | 钻石客服包 |
 |--- | --- | --- | ---|
 |  | 提供免费的开发向导、产品资料。 | 随时响应技术问题。 | 专属客服代表。 |
-|单价 | <h2 class='slds-m-around_medium'>无额外费用</h2>  | <h2 class='slds-m-around_medium'>报价的20%</h2> | <h2 class='slds-m-around_medium'>报价的30%</h2> |
+|单价 | <h2 class='m-4'>无额外费用</h2>  | <h2 class='m-4'>报价的20%</h2> | <h2 class='m-4'>报价的30%</h2> |
 |培训视频 | √ | √ | √ |
 |在线帮助 | √ | √ | √ |
 |客服社区 | √ | √ | √ |

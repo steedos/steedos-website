@@ -57,8 +57,8 @@ hide_table_of_contents: false
 
 除了浏览器，您还可以下载客户端来试用系统。
 
-<div className="slds-grid slds-wrap">
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_large">
+<div className="flex items-start flex-wrap">
+<div className="w-1/2 py-6">
 
 #### Windows 客户端
 
@@ -71,7 +71,7 @@ hide_table_of_contents: false
 </a>
 
 </div>
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_large">
+<div className="w-1/2 py-6">
 
 #### Mac 客户端
 
@@ -130,8 +130,8 @@ hide_table_of_contents: false
 
 ### 下载App
 
-<div className="slds-grid slds-wrap">
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_large">
+<div className="flex items-start flex-wrap">
+<div className="w-1/2 py-6">
 
 #### iOS 客户端
 
@@ -142,7 +142,7 @@ hide_table_of_contents: false
 ![苹果客户端](/assets/workflow/download-ios.png)
 
 </div>
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_large">
+<div className="w-1/2 py-6">
 
 #### Android 客户端
 

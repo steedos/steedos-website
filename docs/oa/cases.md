@@ -40,8 +40,8 @@ background: /img/banner/service-overview-lg.png
 
 ## 更多服务客户
 
-<div className="slds-grid slds-wrap">
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+<div className="flex items-start flex-wrap">
+<div className="w-1/2 py-4">
 
 #### 集团
 
@@ -56,7 +56,7 @@ background: /img/banner/service-overview-lg.png
 - 西安航空发动机(集团)有限公司
 
 </div>
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+<div className="w-1/2 py-4">
 
 #### 上市公司
 
@@ -74,7 +74,7 @@ background: /img/banner/service-overview-lg.png
 - 交大博通（600455）
 
 </div>
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+<div className="w-1/2 py-4">
 
 #### 交通运输
 
@@ -88,7 +88,7 @@ background: /img/banner/service-overview-lg.png
 - 崇明大众公司
 
 </div>
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+<div className="w-1/2 py-4">
 
 #### 政府机关
 
@@ -99,7 +99,7 @@ background: /img/banner/service-overview-lg.png
 - 张家港市人事局
 
 </div>
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+<div className="w-1/2 py-4">
 
 #### 能源
 
@@ -118,7 +118,7 @@ background: /img/banner/service-overview-lg.png
 - 镇海石化工程公司
 
 </div>
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+<div className="w-1/2 py-4">
 
 #### 汽车与配件
 
@@ -130,7 +130,7 @@ background: /img/banner/service-overview-lg.png
 - 吉林众诚汽车服务有限责任公司
 
 </div>
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+<div className="w-1/2 py-4">
 
 #### 房产
 
@@ -143,7 +143,7 @@ background: /img/banner/service-overview-lg.png
 - 北京鲁艺房地产开发有限责任公司
 
 </div>
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+<div className="w-1/2 py-4">
 
 #### 电力
 
@@ -152,7 +152,7 @@ background: /img/banner/service-overview-lg.png
 - 上海阜通电力实业有限公司
 
 </div>
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+<div className="w-1/2 py-4">
 
 #### 金融
 
@@ -163,7 +163,7 @@ background: /img/banner/service-overview-lg.png
 - 长信基金管理有限公司
 
 </div>
-<div className="slds-col slds-size_1-of-2 slds-p-vertical_medium">
+<div className="w-1/2 py-4">
 
 #### 教育及非盈利机构
 

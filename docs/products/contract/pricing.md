@@ -20,7 +20,7 @@ keywords:
 
 |  | 开源社区版 | 在线租用版 | 私有云部署版|
 |--- | --- | --- | ---|
-|单价 |  <h2 class='slds-m-around_medium'>免费</h2> <br/>| <h2 class='slds-m-around_medium'>¥ 2</h2> 元/用户/月<br/>（按年付费）| <h2 class='slds-m-around_medium'>¥ 20</h2> 元/用户/月<br/>（按年付费）|
+|单价 |  <h2 class='m-4'>免费</h2> <br/>| <h2 class='m-4'>¥ 2</h2> 元/用户/月<br/>（按年付费）| <h2 class='m-4'>¥ 20</h2> 元/用户/月<br/>（按年付费）|
 |合同管理 | √ | √ | √ |
 |收付款管理 | √ | √ | √ |
 |收付款预测 | √ | √ | √ |

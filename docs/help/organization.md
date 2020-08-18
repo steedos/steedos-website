@@ -86,12 +86,10 @@ title: 组织机构
 
 每个用户可以设定多个分部，其中选中的第一个分部为主分部。当员工被添加到部门级组织时，员工的所属分部会自动被设置为部门对应的分部。
 
+![分部](/assets/workflow/company_ids.png)
+
 进入系统用户设置中，点击“分部”后，点击页面右上角的“新建”按钮来创建新的分部，新建时输入分部名称，并关联对应的部门。
 
 ![分部](/assets/workflow/company.png)
 
-> 分部，作为企业版的功能，需要在package.json中加上插件才显示：
-
-```yml
-"@steedos/plugin-enterprise": "^1.20.15"
-```
+> 分部，作为企业版的功能，需要在package.json中加上插件才显示："@steedos/plugin-enterprise": "^1.20.15"
