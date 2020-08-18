@@ -25,7 +25,7 @@
   --ifm-spacing-horizontal: 1rem;
   --ifm-z-index-fixed: 200;
   --ifm-link-hover-decoration: 0;
-  --ifm-link-hover-color: ;
+  --ifm-link-hover-color: "###";
 }
 
 .markdown {

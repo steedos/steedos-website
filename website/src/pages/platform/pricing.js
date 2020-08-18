@@ -2,6 +2,7 @@ import React from "react";
 
 import Layout from '@theme/Layout';
 import Video from '@site/src/components/Video';
+import FAQ from '@site/src/components/FAQ';
 
 export default function Landing() {
   return (
@@ -18,7 +19,10 @@ export default function Landing() {
         华炎魔方版本与报价
       </p>
       <p class="mt-3 max-w-4xl mx-auto text-xl leading-7 text-gray-500 sm:mt-5 sm:text-2xl sm:leading-8">
-        使用华炎魔方，为每一个部门、每一项业务、每一个用户创建个性化的应用程序。
+        华炎魔方是<a href="https://github.com/steedos/steedos-platform/" target="_blank" class=" text-gray-700">开源低代码开发平台</a>，
+        开源社区版基于MIT协议，您可以免费使用。
+        <br></br>
+        华炎魔方商业版本内置流程引擎，并提供更专业的支持服务。
       </p>
     </div>
   </div>
@@ -313,6 +317,7 @@ export default function Landing() {
   </div>
 </div>
 
+<FAQ/>
 
 </Layout>
   );
