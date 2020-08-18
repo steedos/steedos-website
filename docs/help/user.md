@@ -1,5 +1,5 @@
 ---
-title: 管理员手册
+title: 用户手册
 sidebar_label: 概述
 hide_table_of_contents: true
 background: /img/banner/default.png
@@ -11,26 +11,24 @@ import Card from '@site/src/components/Card';
 
 <div class="mt-12 grid gap-5 mx-auto md:grid-cols-2 lg:max-w-none">
 
-  <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/admin-contracts.jpg"
+  <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/user-contracts.jpg"
     category="视频"
-    title="如何配置合同审批流程"
-    description="本教程以合同管理为例，演示了如何使用华炎魔方，配置审批流程。"
-    href="/videos/workflow/admin-contracts/"/>
+    title="如何填单和审批"
+    href="/videos/workflow/user-contracts/"/>
 
-  <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.jpg"
+  <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.jpg"
     category="视频"
-    title="如何创建自定义应用程序"
-    description="本教程以资产管理为例，演示了如何使用华炎魔方，创建自定义应用程序。"
-    href="/videos/lesson-object/"/>
+    title="华炎魔方助力企业数字化转型"
+    href="/videos/steedos-digital-transformation/"/>
 
 </div>
 
+## 使用帮助
 
-#### 公司设置
-
+- [如何下载客户端？](/help/download)
 - [如何管理人员？](/help/organization)
 
-#### 流程审批
+## 流程审批
 
 - [如何填写申请单？](/help/workflow/instance_add.md)
 - [如何审批？](/help/workflow/instance_approve.md)
@@ -38,8 +36,3 @@ import Card from '@site/src/components/Card';
 - [如何设计表单？](/help/workflow/admin_form)
 - [如何配置岗位？](/help/workflow/admin_positions)
 - [使用技巧](/help/workflow/faq)
-
-#### 开发人员
-
-- <a href="/platform/" target="_blank">华炎魔方简介</a>
-- <a href="/developer/" target="_blank">如何使用华炎魔方，开发自定义应用？</a>

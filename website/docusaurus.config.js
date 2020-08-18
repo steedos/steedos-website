@@ -141,7 +141,7 @@ module.exports = {
         {to: '/help/', label: '文档', position: 'left',
         items: [
           {to: '/videos/', label:'视频',position: 'left'},
-          {to: '/help/', label: '用户手册', position: 'left'},
+          {to: '/help/user/', label: '用户手册', position: 'left'},
           {to: '/help/admin/', label: '管理员手册', position: 'left'},
           {to: '/help/download', label: '下载客户端', position: 'left'},
         ]},

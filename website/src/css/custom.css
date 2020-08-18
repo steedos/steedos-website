@@ -8,7 +8,6 @@
  @import './salesforce-lightning-design-system.css';
  @import './salesforce-customize.css'; 
  
- @import './tailwind.css';
 
  :root {
   /* --ifm-color-primary: #25c2a0;
@@ -24,8 +23,8 @@
   --ifm-container-width: 1140px;
   --ifm-spacing-horizontal: 1rem;
   --ifm-z-index-fixed: 200;
-  --ifm-link-hover-decoration: 0;
-  --ifm-link-hover-color: "###";
+  --ifm-link-hover-decoration: 1;
+  --ifm-link-hover-color: inherit;
 }
 
 .markdown {
@@ -55,9 +54,23 @@
   font-size: var(--ifm-h6-font-size)
 }
 
+.markdown a {
+    color: var(--ifm-link-color);
+    text-decoration: none;
+}
+
+.markdown a:hover {
+  color: var(--ifm-link-color);
+  text-decoration: underline;
+}
+
+.markdown .hover\:no-underline:hover {
+  text-decoration: none;
+}
+
 p {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: var(--ifm-paragraph-margin-bottom);
 }
 
 .markdown p {
@@ -130,3 +143,6 @@ html[data-theme='dark'] .navbar{
     backdrop-filter: saturate(1.8) blur(10px);
   }
 }
+
+
+@import './tailwind.css';

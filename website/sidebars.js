@@ -67,16 +67,15 @@ module.exports =
       }]
   },
   "文档": {
-    "快速向导": ["help", "help/download"],
-    "用户手册": [
+    "用户手册": ["help/user", "help/download",
     {
       "流程审批": ["help/workflow/instance_add", "help/workflow/instance_approve", "help/workflow/instance_carboncopy", "help/workflow/instance_distribute", "help/workflow/instance_forward", "help/workflow/instance_print", "help/workflow/instance_search", "help/workflow/instance_monitor", "help/workflow/instance_export" ],
       "数据台账": ["help/record_list", "help/record_view", "help/record_report", "help/notifications"],  
     }
     ],
-    "管理员手册": [
+    "管理员手册": ["help/admin", 
       {
-        "公司设置": ["help/admin", "help/organization", "help/profile", "help/permission_set", "help/permission_share"],
+        "公司设置": ["help/organization", "help/profile", "help/permission_set", "help/permission_share"],
         "流程设置": ["help/workflow/admin_form", "help/workflow/admin_flow", "help/workflow/admin_positions", "help/workflow/admin_picturesignature"],
         "对象设置": ["help/no-code/object", "help/no-code/object_subtable", "help/no-code/object_workflows", "help/no-code/object_datasources", "help/no-code/object_web_forms"]
       }
