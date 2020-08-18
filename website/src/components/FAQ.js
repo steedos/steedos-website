@@ -56,11 +56,11 @@ class FAQ extends React.Component {
                     <div class="mt-12 md:mt-0">
                       <div>
                         <dt class="text-lg leading-6 font-medium text-gray-900">
-                          为什么需要低代码开发平台？
+                          传统开发方式不好吗？为什么要学习低代码开发平台？
                         </dt>
                         <dd class="mt-2">
                           <p class="text-base leading-6 text-gray-500">
-                          长久以来，开发企业软件系统需要大量的投资，需要业务部门提出精准的业务需求，一旦系统建成后，就很难修改和升级，使企业背负沉重的数字债务。
+                          传统模式开发企业软件系统需要大量的投资，需要业务部门提出精准的业务需求，一旦系统建成后，就很难修改和升级，使企业背负沉重的数字债务。
                           </p>
                         </dd>
                       </div>
