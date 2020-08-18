@@ -81,8 +81,8 @@ class Footer extends React.Component {
                 </a>
               </li>
               <li className="mt-4">
-                <a href="/platform/try" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  试用
+                <a href="/platform/cases" className="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  客户案例
                 </a>
               </li>
               <li className="mt-4">
