@@ -5,9 +5,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 
- @import './salesforce-lightning-design-system.css';
+/* @import './salesforce-lightning-design-system.css';
  @import './salesforce-customize.css'; 
- 
+*/
+/* @import './tailwind.css'; */
 
  :root {
   /* --ifm-color-primary: #25c2a0;
@@ -23,8 +24,8 @@
   --ifm-container-width: 1140px;
   --ifm-spacing-horizontal: 1rem;
   --ifm-z-index-fixed: 200;
-  --ifm-link-hover-decoration: 1;
-  --ifm-link-hover-color: inherit;
+  --ifm-link-hover-decoration: none;
+  /* --ifm-link-hover-color: #03a9f4;  */
 }
 
 .markdown {
@@ -54,7 +55,11 @@
   font-size: var(--ifm-h6-font-size)
 }
 
-.markdown a {
+a:hover {
+  opacity: 0.75
+}
+
+/* .markdown a {
     color: var(--ifm-link-color);
     text-decoration: none;
 }
@@ -66,7 +71,7 @@
 
 .markdown .hover\:no-underline:hover {
   text-decoration: none;
-}
+} */
 
 p {
   margin-top: 0;
@@ -144,5 +149,3 @@ html[data-theme='dark'] .navbar{
   }
 }
 
-
-@import './tailwind.css';

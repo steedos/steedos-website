@@ -196,6 +196,9 @@ module.exports = {
     path.resolve(__dirname, './src/plugins/plugin-baidu-analytics'),
   ],
 
+  stylesheets: [
+    '/website/libs/tailwind.min.css',
+  ],
   customFields: {
     navbar_items_us: [
       {to: '/us/', label: 'Home', position: 'left'},
