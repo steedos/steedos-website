@@ -193,7 +193,7 @@ module.exports = {
     ],
   ],
   plugins: [
-    path.resolve(__dirname, './src/plugins/plugin-baidu-analytics')
+    path.resolve(__dirname, './src/plugins/plugin-baidu-analytics'),
   ],
 
   customFields: {
