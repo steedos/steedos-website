@@ -11,8 +11,8 @@ import Video from '@site/src/components/Video';
     poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features.jpg"
     autoplay={true}
     urls={[
-        {name:"标清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features-960.mp4"},
         {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features.mp4"},
+        {name:"标清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features-960.mp4"},
     ]}/>
 
 <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
