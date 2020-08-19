@@ -12,7 +12,7 @@ export default function Landing() {
       description="华炎魔方是一款随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。"
       keywords={["低代码,低代码开发,低代码开发平台,开源低代码开发平台,快速开发平台,快速开发工具,paas,零代码,零代码开发,零代码开发平台"]}
       >
-<section className="flex bg-cover bg-no-repeat bg-blue-200">
+<section className="flex bg-cover bg-no-repeat bg-teal-200">
   <div className="mx-auto max-w-screen-xl px-4 my-12">
     <div className="lg:grid lg:grid-cols-12 lg:gap-8">
       <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
@@ -22,7 +22,7 @@ export default function Landing() {
         <h2 className="mt-1 text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-6xl lg:text-5xl xl:text-6xl">
           华炎魔方
           <br className="hidden md:inline"/>
-          <span className="text-blue-700">助力企业数字化转型</span>
+          <span className="text-teal-700">助力企业数字化转型</span>
         </h2>
         <p className="mt-3 text-base text-gray-700 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
           华炎魔方特有的敏捷性、灵活性和开放性，帮助业务加速创新，提升竞争力.
@@ -30,12 +30,12 @@ export default function Landing() {
 
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
           <div className="rounded-md shadow">
-            <a href="/videos/steedos-platform-features/" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10  hover:text-white">
+            <a href="/videos/steedos-platform-features/" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-teal-600 hover:bg-teal-500 focus:outline-none focus:border-teal-700 focus:shadow-outline-teal transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10  hover:text-white">
               视频演示
             </a>
           </div>
           <div className="mt-3 sm:mt-0 sm:ml-3">
-            <a href="/developer/" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-700 bg-blue-100 hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+            <a href="/developer/" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-teal-700 bg-teal-100 hover:text-teal-600 hover:bg-teal-50 focus:outline-none focus:shadow-outline-teal focus:border-teal-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
               开发教程
             </a>
           </div>
@@ -86,7 +86,7 @@ export default function Landing() {
             ]}/>
         </div>
       </div>
-      {/* <a href="/videos/steedos-platform-features/" className="w-full flex items-center justify-center px-8 py-8 border border-transparent text-base leading-6 font-medium rounded-md text-blue-500 hover:text-blue-700 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+      {/* <a href="/videos/steedos-platform-features/" className="w-full flex items-center justify-center px-8 py-8 border border-transparent text-base leading-6 font-medium rounded-md text-teal-500 hover:text-teal-700 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
         <svg className="h-10 w-10 mx-4" fill="currentColor" viewBox="0 0 84 84">
           <circle opacity="0.9" cx="42" cy="42" r="42" fill="#EFEFEF" />
           <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
