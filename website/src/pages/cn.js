@@ -172,6 +172,7 @@ export default function Landing() {
   items={[
     {title: "报表设计", description: "可视化界面，业务人员可自主配置统计报表，分析业务数据。"},
     {title: "报表显示", description: "自动按当前用户权限过滤报表数据，动态显示业务统计结果。"},
+    {title: "导出Excel", description: "华炎魔方中的所有数据及统计报表均可导出为Excel，以便进一步分析。"},
   ]}
 />
 
