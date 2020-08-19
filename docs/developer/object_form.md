@@ -245,7 +245,7 @@ form:
   ```yml
     # xxx.object.yml
     form:
-      errorUpdate: !!js/function |
+      errorDelete: !!js/function |
         function(){
           ...
         }
