@@ -37,8 +37,7 @@ import FAQ from '@site/src/components/FAQ';
   </div>
 </main>
 
-
-<div class="py-12 bg-gray-50">
+<div class="py-12">
   <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="lg:text-center">
       <p class="text-base leading-6 text-green-600 font-semibold tracking-wide uppercase">为什么选择华炎？</p>
@@ -124,21 +123,6 @@ import FAQ from '@site/src/components/FAQ';
   </div>
 </div>
 
-
-
-<Features 
-  title="功能强大的合同台账，覆盖合同管理的整个生命周期"
-  description="华炎合同管理解决方案，涵盖合同订立、执行、跟踪、变更、验收、付款、监督、统计的整个管理过程，并打通了合同管理系统与财务管理系统的数据与流程联动，实现企业合同的全闭环、自动化、一体化管理。"
-  imageUrl="/assets/contract_list.png"
-  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/contracts_operation.mp4"
-  imagePosition="left"
-  items={[
-    {title: "合同台账", description: "对公司的所有合同进行分类管理，包括：采购合同、销售合同、服务合同等。可以实时查看合同内容、金额、签约对象、收支类别、履约状态等基本信息，以及收款、付款、发票、验收、任务等相关详情。"},
-    {title: "收、付款计划", description: "通过付款计划，财务部门可以作出更准确更合理的资金安排；通过收款计划，财务部门可以提前对现金流状况进行分析和规划。"},
-    {title: "签约对象", description: "对公司的客户及供应商的信息、资质等进行统一管理。可以实时查看与这个客商签订的所有合同及其收款、付款等详细情况。"},
-  ]}
-/>
-
 <Features 
   title="为每一个重要环节启用审批"
   description="华炎魔方内置专业的流程引擎，对于合同管理中的各种事项，只需简单配置，就能实现电子化审批。"
@@ -152,12 +136,139 @@ import FAQ from '@site/src/components/FAQ';
   ]}
 />
 
+<div class="py-12 bg-white">
+  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="lg:text-center">
+      <p class="text-base leading-6 text-green-600 font-semibold tracking-wide uppercase">合同台账</p>
+      <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+        随心定制的合同台账，覆盖合同管理的整个生命周期
+      </h3>
+      <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
+        华炎合同管理解决方案，涵盖合同订立、执行、跟踪、变更、验收、付款、监督、统计的整个管理过程，并打通了合同管理系统与财务管理系统的数据与流程联动，实现企业合同的全闭环、自动化、一体化管理。
+      </p>
+    </div>
+    <div className="relative mx-auto w-full lg:max-w-md mt-4">
+      <div className="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
+        <Video 
+          poster="/assets/contract_list.png"
+          autoplay={false}
+          urls={[
+              {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/contracts_operation.mp4"},
+          ]}/>
+      </div>
+    </div>
+    <div class="mt-10">
+      <ul class="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
+        <li>
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                </svg>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h4 class="text-lg leading-6 font-medium text-gray-900">管合同</h4>
+              <p class="mt-2 text-base leading-6 text-gray-500">
+                对公司所有的合同进行分类管理，包括合同的对方单位、签订日期、金额、履约状态、分类等基本要素，以及合同的应收应付、实收实付、验收状态、开票记录等相关表信息。
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="mt-10 md:mt-0">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                </svg>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h4 class="text-lg leading-6 font-medium text-gray-900">管签约对象</h4>
+              <p class="mt-2 text-base leading-6 text-gray-500">
+                合同台账中可以设定对方单位相关表，将公司的客户、供应商进行统一登记管理。可以记录单位的类别、优先级、基本资料以及相关的联系人等信息，可以对单位的历史信誉进行评分和评价。
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="mt-10 md:mt-0">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h4 class="text-lg leading-6 font-medium text-gray-900">管资金</h4>
+              <p class="mt-2 text-base leading-6 text-gray-500">
+                合同台账可以设定应收应付子表，可在合同签订阶段登记合同约定的应收应付日期、合同的开票日期等信息。并在实际付款流程走完之后更新相关信息。通过对应收应付数据的统计，可以实现对未来1个月～1年的应收、应付账款进行预算，帮助财务部门做好资金准备。
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="mt-10 md:mt-0">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                </svg>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h4 class="text-lg leading-6 font-medium text-gray-900">管进度</h4>
+              <p class="mt-2 text-base leading-6 text-gray-500">
+                对于合同中需要分配的任务和需要提醒的预警信息，可以配置任务子表，对每个合同创建待办任务。任务可以分派给具体的责任人，可以指定提醒日期。责任人可以在统一的界面中汇总查看来自各个合同中的待办任务，并通过月历视图浏览每个月的任务安排。
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="mt-10 md:mt-0">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
+                <svg viewBox="0 0 20 20" fill="currentColor" class="user-group w-6 h-6"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path></svg>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h4 class="text-lg leading-6 font-medium text-gray-900">管权限</h4>
+              <p class="mt-2 text-base leading-6 text-gray-500">
+                通过配置合同对象的权限，可以限制经办人只能查看本人负责的合同、公司主管可以查看本单位的合同，集团领导可以查看集团所有合同。对于重要字段，例如金额、对方单位、履约状态等，还可以配置审计功能，对这些字段的任何修改，系统均会自动记录审计日志。
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="mt-10 md:mt-0">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
+                <svg viewBox="0 0 20 20" fill="currentColor" class="document-report w-6 h-6"><path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm2 10a1 1 0 10-2 0v3a1 1 0 102 0v-3zm2-3a1 1 0 011 1v5a1 1 0 11-2 0v-5a1 1 0 011-1zm4-1a1 1 0 10-2 0v7a1 1 0 102 0V8z" clip-rule="evenodd"></path></svg>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h4 class="text-lg leading-6 font-medium text-gray-900">管统计分析</h4>
+              <p class="mt-2 text-base leading-6 text-gray-500">
+                通过配置合同统计报表，可以按履约状态、按日期、按分类对合同进行多维度的汇总与分析。系统支持普通的列表统计、分类统计、二维表，支持通过可视化的界面对报表样式进行排版。对于复杂需求的报表，也可以通过javascript和html编写报表模版文件，实现完全个性化的统计分析。
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 <Features 
-  title="随心定制数据表、字段和页面布局"
+  title="模型驱动界面，想怎么改就怎么改"
   description="华炎魔方基于模型驱动，可以任意配置业务字段、列表视图、页面布局，即使是不懂编程的业务人员，也能快速定制。"
   imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-object.jpeg"
   videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-object.mp4"
   imagePosition="left"
+  containerClass="bg-gray-50"
   items={[
     {title: "业务对象", description: "业务对象相当于数据库中的表，用于保存业务系统中的核心数据。"},
     {title: "列表视图", description: "通过配置列表视图，最终用户可以快捷的切换多个查询条件。"},
