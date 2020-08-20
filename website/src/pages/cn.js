@@ -4,6 +4,7 @@ import Layout from '@theme/Layout';
 import Video from '@site/src/components/Video';
 import Features from '@site/src/components/Features';
 import FAQ from '@site/src/components/FAQ';
+import Customers from '@site/src/components/Customers';
 
 export default function Landing() {
   return (
@@ -176,29 +177,8 @@ export default function Landing() {
   ]}
 />
 
-<div className="py-12 bg-gray-100">
-  <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="lg:text-center">
-      <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">案例分享</p>
-      <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-        了解华炎魔方如何帮助业务加速创新
-      </h3>
-      <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
-        每一天，有超过 15 万人在使用我们全球首屈一指的华炎魔方构建的解决方案，并且他们正不断提升员工工作效率、改进团队协作能力、增强客户忠诚度并扩展业务规模。
-      </p>
-      <div className="max-w-xl mt-6 relative mx-auto w-full lg:max-w-md mt-4">
-        <div className="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
-          <Video 
-            poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/cases.jpeg"
-            autoplay={false}
-            urls={[
-                {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/cases.mp4"},
-            ]}/>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
+<Customers/>
 
 <FAQ/>
 
