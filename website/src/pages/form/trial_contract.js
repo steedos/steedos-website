@@ -61,37 +61,37 @@ export default function TrialForm() {
           <div>
             <label for="name" class="block text-sm font-medium leading-5 text-gray-700">姓名</label>
             <div class="mt-1 relative rounded-md shadow-sm">
-              <input id="name" name="name" class="bg-black text-white form-input py-3 px-4 block w-full transition ease-in-out duration-150" placeholder="姓名"/>
+              <input id="name" name="name" class="bg-black text-white form-input py-3 px-4 block w-full transition ease-in-out duration-150"/>
             </div>
           </div>
           <div>
             <label for="email" class="block text-sm font-medium leading-5 text-gray-700">邮件</label>
             <div class="mt-1 relative rounded-md shadow-sm">
-              <input id="email" name="email" class="bg-black text-white form-input py-3 px-4 block w-full transition ease-in-out duration-150" placeholder="邮件"/>
+              <input id="email" name="email" class="bg-black text-white form-input py-3 px-4 block w-full transition ease-in-out duration-150"/>
             </div>
           </div>
           <div>
             <label for="title" class="block text-sm font-medium leading-5 text-gray-700">职务</label>
             <div class="mt-1 relative rounded-md shadow-sm">
-              <input id="title" name="title" class="bg-black text-white form-input py-3 px-4 block w-full transition ease-in-out duration-150" placeholder="职务"/>
+              <input id="title" name="title" class="bg-black text-white form-input py-3 px-4 block w-full transition ease-in-out duration-150"/>
             </div>
           </div>
           <div>
             <label for="company" class="block text-sm font-medium leading-5 text-gray-700">公司</label>
             <div class="mt-1 relative rounded-md shadow-sm">
-              <input id="company" name="company" class="bg-black text-white form-input py-3 px-4 block w-full transition ease-in-out duration-150" placeholder="公司"/>
+              <input id="company" name="company" class="bg-black text-white form-input py-3 px-4 block w-full transition ease-in-out duration-150"/>
             </div>
           </div>
           <div>
             <label for="mobilephone" class="block text-sm font-medium leading-5 text-gray-700">手机</label>
             <div class="mt-1 relative rounded-md shadow-sm">
-              <input id="mobilephone" name="mobilephone" class="bg-black text-white form-input py-3 px-4 block w-full transition ease-in-out duration-150" placeholder="手机"/>
+              <input id="mobilephone" name="mobilephone" class="bg-black text-white form-input py-3 px-4 block w-full transition ease-in-out duration-150"/>
             </div>
           </div>
           <div>            
             <label for="address" class="block text-sm font-medium leading-5 text-gray-700">备注</label>
             <div class="relative rounded-md shadow-sm">
-              <textarea id="address" name="address" rows="3" class="bg-black text-white form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="备注"></textarea>
+              <textarea id="address" name="address" rows="3" class="bg-black text-white form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"></textarea>
             </div>
           </div>
           <div class="">
