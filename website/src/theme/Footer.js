@@ -6,7 +6,7 @@ class Footer extends React.Component {
         return (
 <>
 <div className="relative bg-blue-800">
-  <div className="max-w-screen-xl mx-auto py-8 px-4 lg:py-12 lg:flex lg:items-center lg:justify-between">
+  <div className="max-w-screen-xl mx-auto py-8 px-4 lg:py-8 lg:flex lg:items-center lg:justify-between">
     <div className="">
       <div className="text-2xl mb-4 leading-6 font-semibold uppercase tracking-wider text-gray-300">
         对于华炎魔方低代码开发平台有疑问？？
@@ -17,9 +17,14 @@ class Footer extends React.Component {
       <p className="mt-3 mb-0 text-lg leading-7 text-gray-300">
         我们的技术专家拥有十年以上的管理软件开发经验，无论您询问有关华炎魔方开发平台的功能、定价、实施或任何其他方面的问题，他们都将随时准备为您提供帮助。
       </p>
+      <div className="mt-3">
+        <a href="/form/trial" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-black bg-green-300 hover:bg-green-400 hover:text-black focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+            预约产品演示
+        </a>
+      </div>
     </div>
     <div className="flex lg:flex-shrink-0">
-      <img className="h-40 w-40 m-4" src="/assets/contact_by_weixin.png"/>
+      <img className="h-48 w-48 mt-4" src="/assets/contact_by_weixin.png"/>
     </div>
   </div>
 </div>

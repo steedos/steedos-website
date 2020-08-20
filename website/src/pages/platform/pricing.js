@@ -67,7 +67,7 @@ export default function Landing() {
                         私有化部署
                       </p>
                     </li>
-                    <li class="mt-4 flex items-start">
+                    <li class="mt-0 flex items-start">
                       <div class="flex-shrink-0">
                         <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -77,7 +77,7 @@ export default function Landing() {
                         低代码建模引擎
                       </p>
                     </li>
-                    <li class="mt-4 flex items-start">
+                    <li class="mt-0 flex items-start">
                       <div class="flex-shrink-0">
                         <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -87,7 +87,7 @@ export default function Landing() {
                         低代码开发引擎
                       </p>
                     </li>
-                    <li class="mt-4 flex items-start">
+                    <li class="mt-0 flex items-start">
                       <div class="flex-shrink-0">
                         <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -97,7 +97,7 @@ export default function Landing() {
                         移动引擎
                       </p>
                     </li>
-                    <li class="mt-4 flex items-start">
+                    <li class="mt-0 flex items-start">
                       <div class="flex-shrink-0">
                         <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -107,7 +107,7 @@ export default function Landing() {
                         报表引擎
                       </p>
                     </li>
-                    <li class="mt-4 flex items-start">
+                    <li class="mt-0 flex items-start">
                       <div class="flex-shrink-0">
                         <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -120,8 +120,8 @@ export default function Landing() {
                   </ul>
                   <div class="mt-8">
                     <div class="rounded-lg shadow-md">
-                      <a href="/developer" class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base leading-6 font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150" aria-describedby="tier-hobby">
-                        开始试用
+                      <a href="/developer" class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base leading-6 font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150" aria-describedby="tier-scale">
+                        下载试用
                       </a>
                     </div>
                   </div>
@@ -172,7 +172,7 @@ export default function Landing() {
                       流程引擎（10个自定义流程）
                     </p>
                   </li>
-                  <li class="mt-4 flex items-start">
+                  <li class="mt-0 flex items-start">
                     <div class="flex-shrink-0">
                       <svg class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -182,7 +182,7 @@ export default function Landing() {
                       图形化流程设计工具
                     </p>
                   </li>
-                  <li class="mt-4 flex items-start">
+                  <li class="mt-0 flex items-start">
                     <div class="flex-shrink-0">
                       <svg class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -192,7 +192,7 @@ export default function Landing() {
                       流程转数据
                     </p>
                   </li>
-                  <li class="mt-4 flex items-start">
+                  <li class="mt-0 flex items-start">
                     <div class="flex-shrink-0">
                       <svg class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -202,7 +202,7 @@ export default function Landing() {
                       数据转流程
                     </p>
                   </li>
-                  <li class="mt-4 flex items-start">
+                  <li class="mt-0 flex items-start">
                     <div class="flex-shrink-0">
                       <svg class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -212,7 +212,7 @@ export default function Landing() {
                       流程 API
                     </p>
                   </li>
-                  <li class="mt-4 flex items-start">
+                  <li class="mt-0 flex items-start">
                     <div class="flex-shrink-0">
                       <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -225,8 +225,8 @@ export default function Landing() {
                 </ul>
                 <div class="mt-10">
                   <div class="rounded-lg shadow-md">
-                    <a href="/developer" class="block w-full text-center rounded-lg border border-transparent bg-blue-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150" aria-describedby="tier-growth">
-                      开始试用
+                    <a href="/form/trial" target="_blank" class="block w-full text-center rounded-lg border border-transparent bg-blue-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150" aria-describedby="tier-growth">
+                      预约演示
                     </a>
                   </div>
                 </div>
@@ -259,7 +259,7 @@ export default function Landing() {
                 <div class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
                   <div class="pb-6 font-bold text-base leading-6 text-gray-500">包含专业版的全部功能，以及：</div>
                   <ul>
-                    <li class="mt-4 flex items-start">
+                    <li class="mt-0 flex items-start">
                       <div class="flex-shrink-0">
                         <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -269,7 +269,7 @@ export default function Landing() {
                         流程引擎（110个自定义流程）
                       </p>
                     </li>
-                    <li class="mt-4 flex items-start">
+                    <li class="mt-0 flex items-start">
                       <div class="flex-shrink-0">
                         <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -279,7 +279,7 @@ export default function Landing() {
                         外部数据源
                       </p>
                     </li>
-                    <li class="mt-4 flex items-start">
+                    <li class="mt-0 flex items-start">
                       <div class="flex-shrink-0">
                         <svg class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -289,7 +289,7 @@ export default function Landing() {
                         集团多公司管理
                       </p>
                     </li>
-                    <li class="mt-4 flex items-start">
+                    <li class="mt-0 flex items-start">
                       <div class="flex-shrink-0">
                         <svg class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -302,8 +302,8 @@ export default function Landing() {
                   </ul>
                   <div class="mt-8">
                     <div class="rounded-lg shadow-md">
-                      <a href="/developer" class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base leading-6 font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150" aria-describedby="tier-scale">
-                        开始试用
+                      <a href="/form/trial" target="_blank" class="block w-full text-center rounded-lg border border-transparent bg-blue-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150" aria-describedby="tier-growth">
+                        预约演示
                       </a>
                     </div>
                   </div>
