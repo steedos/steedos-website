@@ -136,6 +136,23 @@ export default function Landing() {
   ]}
 />
 
+<div class="bg-gray-200">
+  <div class="max-w-screen-xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+    <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+      想要了解更多？
+      <br/>
+      在线预约我们的技术专家，为您做产品演示。
+    </h2>
+    <div class="mt-8 flex justify-center">
+      <div class="inline-flex rounded-md shadow">
+        <a href="/form/trial" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:text-white hover:bg-green-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+          预约产品演示
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <Features 
   title="从一开始就让应用程序移动化"
