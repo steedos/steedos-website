@@ -103,9 +103,7 @@ export default function TrialForm() {
       </div>
     </div>
   </div>
+
 </div>
-<script>
-  alert("xxx")
-</script>
 )};
 
