@@ -8,7 +8,7 @@ class Customers extends React.Component {
 
 <div class="bg-gray-100">
   <div class="py-8 lg:py-12 relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
-    <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center text-center">
       <div>
         <h2 class="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
           成功案例
@@ -16,7 +16,7 @@ class Customers extends React.Component {
         <p class="mt-3 max-w-3xl text-lg leading-7 text-gray-500">
           华炎魔方已经成功应用于许多大型企业与政府机构。
         </p>
-        <div className="max-w-xl my-3 relative lg:max-w-md">
+        <div className="max-w-xl my-3 relative lg:max-w-md mx-auto">
           <div className="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
             <Video 
               poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/cases.jpeg"
