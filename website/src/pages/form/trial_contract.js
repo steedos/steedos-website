@@ -61,31 +61,31 @@ export default function TrialForm() {
           <div>
             <label for="name" class="block text-sm font-medium leading-5 text-gray-700">姓名</label>
             <div class="mt-1 relative rounded-md shadow-sm">
-              <input id="name" name="name" class="bg-black text-white form-input py-3 px-4 block w-full transition ease-in-out duration-150"/>
+              <input id="name" name="name" class="bg-black text-white form-input py-3 px-4 block w-full transition ease-in-out duration-150" required/>
             </div>
           </div>
           <div>
             <label for="email" class="block text-sm font-medium leading-5 text-gray-700">邮件</label>
             <div class="mt-1 relative rounded-md shadow-sm">
-              <input id="email" name="email" class="bg-black text-white form-input py-3 px-4 block w-full transition ease-in-out duration-150"/>
+              <input id="email" name="email" class="bg-black text-white form-input py-3 px-4 block w-full transition ease-in-out duration-150" title="邮件格式不正确，请重新输入！" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required/>
             </div>
           </div>
           <div>
             <label for="title" class="block text-sm font-medium leading-5 text-gray-700">职务</label>
             <div class="mt-1 relative rounded-md shadow-sm">
-              <input id="title" name="title" class="bg-black text-white form-input py-3 px-4 block w-full transition ease-in-out duration-150"/>
+              <input id="title" name="title" class="bg-black text-white form-input py-3 px-4 block w-full transition ease-in-out duration-150" required/>
             </div>
           </div>
           <div>
             <label for="company" class="block text-sm font-medium leading-5 text-gray-700">公司</label>
             <div class="mt-1 relative rounded-md shadow-sm">
-              <input id="company" name="company" class="bg-black text-white form-input py-3 px-4 block w-full transition ease-in-out duration-150"/>
+              <input id="company" name="company" class="bg-black text-white form-input py-3 px-4 block w-full transition ease-in-out duration-150" required/>
             </div>
           </div>
           <div>
             <label for="mobilephone" class="block text-sm font-medium leading-5 text-gray-700">手机</label>
             <div class="mt-1 relative rounded-md shadow-sm">
-              <input id="mobilephone" name="mobilephone" class="bg-black text-white form-input py-3 px-4 block w-full transition ease-in-out duration-150"/>
+              <input id="mobilephone" name="mobilephone" class="bg-black text-white form-input py-3 px-4 block w-full transition ease-in-out duration-150" title="手机号不正确，请重新输入！" pattern="^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\d{8}$" required/>
             </div>
           </div>
           <div>            
