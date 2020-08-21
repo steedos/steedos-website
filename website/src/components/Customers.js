@@ -40,7 +40,7 @@ class Customers extends React.Component {
         </div> */}
       </div>
       <div class="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2" data-theme='light'>
-        <div class="col-span-1 flex justify-center py-8 px-8 bg-black dark:bg-white">
+        <div class="col-span-1 flex justify-center py-8 px-8 bg-white">
           <img class="max-h-12" src="/assets/customers/dzug.png" alt="大众公用"/>
         </div>
         <div class="col-span-1 flex justify-center py-8 px-8 bg-white">
