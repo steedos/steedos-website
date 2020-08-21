@@ -8,16 +8,17 @@ import Features from '@site/src/components/Features';
 import FAQ from '@site/src/components/FAQ';
 import Customers from '@site/src/components/Customers';
 
-<main class="lg:relative bg-green-100 sm:pb-12 lg:pb-0">
-  <div class="mx-auto max-w-7xl w-full py-12 text-center lg:py-32 lg:text-left">
-    <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+<main class="flex bg-cover bg-no-repeat bg-green-100">
+<div class="mx-auto max-w-screen-xl px-4 my-12">
+  <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+    <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
       <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
         华炎魔方应用案例
         <br/>
         <span class="text-green-600">全程电子化合同管理解决方案</span>
       </h2>
       <p class="mt-3 mx-auto text-lg text-gray-500 sm:text-xl md:mt-5">
-        华炎合同管理系统，是国内首款基于低代码技术的合同管理解决方案，系统功能涵盖合同订立、执行、跟踪、变更、验收、付款、监督、统计的整个管理过程，并提供低代码开发工具华炎魔方，通过调整配置文件就能调整合同台账、业务字段、审批流程、统计报表等，快速满足业务部门的个性化需求。
+        华炎合同管理系统，功能涵盖合同订立、执行、跟踪、变更、验收、付款、监督、统计的整个管理过程。系统兼具敏捷性、灵活性和开放性，可以根据业务需求随时调整。
       </p>
       <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
         <div class="rounded-md shadow">
@@ -32,10 +33,13 @@ import Customers from '@site/src/components/Customers';
         </div>
       </div>
     </div>
+    <div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+      <div class="relative mx-auto w-full">
+        <img class="relative block w-full overflow-hidden focus:outline-none focus:shadow-outline object-contain" src="/assets/contract/contract_desktop_pad_mobile.png"/>
+      </div>
+    </div>
   </div>
-  <div class="relative w-full h-64 sm:h-72 md:h-96 lg:mx-6 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-    <img class="absolute inset-0 w-full h-full object-contain" src="/assets/contract/contract_desktop_pad_mobile.png"/>
-  </div>
+</div>
 </main>
 
 <div class="py-12">
