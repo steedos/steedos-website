@@ -27,7 +27,7 @@ export default function TrialForm() {
               poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features.jpg"
               autoplay={false}
               urls={[
-                  {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/creator/steedos-platform-features.mp4"},
+                  {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features.mp4"},
               ]}/>
           </div>
         </div>
