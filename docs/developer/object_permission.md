@@ -15,18 +15,32 @@ permission_set:
     allowRead: true
     allowEdit: true
     allowDelete: false
+    modifyCompanyRecords: false
+    viewCompanyRecords: false
+    modifyAllRecords: false
+    viewAllRecords: false
+    disabled_list_views: []
+    disabled_actions: []
+    unreadable_fields: []
+    uneditable_fields: []
+    unrelated_objects: []
   admin:
     allowCreate: false
     allowRead: true
     allowEdit: true
     allowDelete: true
     modifyCompanyRecords: true
-    viewCompanyRecords: true 
+    viewCompanyRecords: true
     modifyAllRecords: true
-    viewAllRecords: true 
+    viewAllRecords: true
+    disabled_list_views: []
+    disabled_actions: []
+    unreadable_fields: []
+    uneditable_fields: []
+    unrelated_objects: []
 ```
 
-在上面的yml文件中，就给user、admin这两个权限组指定了对象权限。主要选项的意义如下：
+在上面的 yml 文件中，就给 user、admin 这两个权限组指定了对象权限。主要选项的意义如下：
 
 ![权限设置](/assets/platform/permisson_options.png)
 
@@ -60,9 +74,9 @@ permission_set:
 
 ### 允许创建 allowCreate
 
-用户可以创建记录。在列表视图的右上角，显示新建按钮。调用API接口创建记录时，服务端也会判断此权限。
+用户可以创建记录。在列表视图的右上角，显示新建按钮。调用 API 接口创建记录时，服务端也会判断此权限。
 
-> Steedos 为每个业务对象内置了 所有者(owner) 字段，默认值为记录的创建人。下面3个配置项，即为所有者权限。
+> Steedos 为每个业务对象内置了 所有者(owner) 字段，默认值为记录的创建人。下面 3 个配置项，即为所有者权限。
 
 ### 允许查看 allowRead
 
@@ -76,7 +90,7 @@ permission_set:
 
 用户可以查看、编辑并删除所有者是自己的记录。
 
-> Steedos 为每个业务对象内置了 所属单位(company_ids) 字段，默认值为记录创建人的所属单位。下面2个配置项，即为单位级权限。
+> Steedos 为每个业务对象内置了 所属单位(company_ids) 字段，默认值为记录创建人的所属单位。下面 2 个配置项，即为单位级权限。
 
 ### 查看本单位 viewCompanyRecords
 
@@ -86,7 +100,7 @@ permission_set:
 
 用户可以查看并修改本单位的记录，也可以执行删除操作。
 
-> 通过配置以下2个权限，授权用户查看/修改所有单位的业务记录，即为全局管理权限。
+> 通过配置以下 2 个权限，授权用户查看/修改所有单位的业务记录，即为全局管理权限。
 
 ### 查看所有记录 viewAllRecords
 
@@ -98,70 +112,119 @@ permission_set:
 
 > 上述配置项最为常用。后面列出的配置项，可根据实际需要进行选配。
 
-### 可见字段 fields
+### 禁用对象列表视图 disabled_list_views
 
-指定用户在界面上可以查看的字段。
-
-值为字段名数组。数组中字段的先后顺序也是查看界面上字段显示的先后顺序。
+指定用户在界面上不显示的视图，如：
 
 ```yml
+list_views:
+  all:
+    label: All
+    filter_scope: space
+    columns:
+      - name
+      - applicant
+      - applicant_organization
+      - modified
+      - state
+  inbox:
+    label: Inbox
+    filter_scope: space
+    filters:
+      - - inbox_users
+        - =
+        - "{userId}"
+  outbox:
+    label: Outbox
+    filter_scope: space
+    filters:
+      - - outbox_users
+        - =
+        - "{userId}"
 permission_set:
   user:
-    fields:
-      - field: amount
-        readable: true
-        editable: true
-      - field: company_id
-        readable: false
-        editable: true
+    disabled_list_views:
+      - inbox
+      - outbox
 ```
 
-### 可见列表视图 listViews
-
-设定用户可以查看的[列表视图](./listview.md)。
-
-值为列表视图名数组。数组中的顺序，就是界面上显示的列表视图可选项顺序。其中第一个为默认列表视图。
-
-```yml
-permission_set:
-  user:
-    listViews:
-      - all
-      - mine
-      - recent
-```
+以上示例表示：普通用户只能看到 all 视图。
 
 如果未配置，表示可以查看所有列表视图。此时界面上列表视图的显示顺序以业务对象中定义的顺序为准。
 
-### 可见相关对象 relatedList
+### 禁用对象操作 disabled_actions
 
-设定记录查看界面，用户可以查看到的相关记录列表。
+设置对象记录禁止的操作，如：
 
-值为对象名数组，数组中的对象名先后顺序，就是用户界面上相关记录显示的先后顺序。
+```yml
+actions:
+  standard_query:
+    label: Search
+  standard_new:
+    label: New
+permission_set:
+  user:
+    disabled_actions:
+      - standard_new
+```
+
+以上示例表示：普通用户不能进行标准新建操作。
+
+### 不可见字段 unreadable_fields
+
+设定记录查看界面，不显示的字段。
+
+```yml
+fields:
+  name:
+    label: Name
+    type: text
+  space:
+    type: text
+    label: Space
+    reference_to: spaces
+    hidden: true
+    defaultValue: "{spaceId}"
+permission_set:
+  user:
+    unreadable_fields: ["space"]
+```
+
+以上配置表示：普通用户在界面上看不到指定字段。
+
+### 不可编辑字段 uneditable_fields
+
+设定记录不可被编辑的字段。
+
+```yml
+fields:
+  name:
+    label: Name
+    type: text
+  space:
+    type: text
+    label: Space
+    reference_to: spaces
+    hidden: true
+    defaultValue: "{spaceId}"
+permission_set:
+  user:
+    uneditable_fields: ["space"]
+```
+
+以上配置表示：普通用户在界面上能看到指定字段，但是不可修改。
+
+### 禁用关联对象 unrelated_objects
+
+设定记录相关列表中，看不到的子表。
 
 ```yml
 permission_set:
   user:
-    relatedList: ['files', 'tasks', 'payments']
+    unrelated_objects: ["{对象名}"]
 ```
 
-以上配置表示：普通用户在查看记录时，可以查看到相关的 文件(files)、任务(tasks)、付款(payments) 记录。
-
-### 可见操作按钮 actions
-
-设定记录查看界面，用户可以查看到的 [操作按钮](./object_action.md)。
-
-值为操作按钮名，数组中的操作按钮先后顺序，就是用户界面上操作按钮显示的先后顺序。
-
-```yml
-permission_set:
-  user:
-    actions: ['standard_edit', 'upgrade']
-```
-
-以上配置表示：普通用户在查看记录时，可以查看到标准的编辑(standard_edit)按钮和自定义的升级(updade)按钮。
-
-如果未配置，表示可以查看所有操作按钮。此时界面上操作按钮的显示顺序以业务对象中定义的顺序为准。
+以上配置表示：普通用户在记录相关列表中，看不到对应的子表。
 
 ## 对象权限的特例
 
