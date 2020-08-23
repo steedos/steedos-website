@@ -2,7 +2,7 @@
 title: 华炎发布低代码开发平台华炎魔方
 author: steedos
 authorURL: https://www.steedos.com/platform/
-tags: [低代码, 华炎魔方, creator]
+# tags: [低代码, 华炎魔方, creator]
 ---
 
 低代码开发平台，是指无需编码或很少代码（No Code or Low Code）就可以快速生成应用程序的工具，提供可视化的设计工具来快速搭建界面、设计数据模型、创建业务逻辑和工作流。

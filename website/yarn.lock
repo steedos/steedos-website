@@ -1959,6 +1959,21 @@
     unist-util-visit "^2.0.2"
     url-loader "^4.1.0"
 
+"@docusaurus/plugin-client-redirects@2.0.0-alpha.61":
+  version "2.0.0-alpha.61"
+  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-client-redirects/-/plugin-client-redirects-2.0.0-alpha.61.tgz#53dff9fa1d047435975fee035cd11dcf34fc613e"
+  integrity sha512-4YvU1gVH0USGdoBlJ8XJUs+1pUXxki7pY0DK8bKLn81ufwm69X5DRhlEEl//blZPGg4+M/v6Yjz31yPDlsDRyQ==
+  dependencies:
+    "@docusaurus/types" "^2.0.0-alpha.61"
+    "@docusaurus/utils" "^2.0.0-alpha.61"
+    "@hapi/joi" "^17.1.1"
+    "@types/hapi__joi" "^17.1.2"
+    chalk "^3.0.0"
+    eta "^1.1.1"
+    fs-extra "^8.1.0"
+    globby "^10.0.1"
+    lodash "^4.17.15"
+
 "@docusaurus/plugin-content-blog@^2.0.0-alpha.61":
   version "2.0.0-alpha.61"
   resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-blog/-/plugin-content-blog-2.0.0-alpha.61.tgz#fd4df3eedfd5ac8b32f2a4fcfe562804b30164eb"
@@ -2455,6 +2470,11 @@
     "@types/events" "*"
     "@types/minimatch" "*"
     "@types/node" "*"
+
+"@types/hapi__joi@^17.1.2":
+  version "17.1.4"
+  resolved "https://registry.yarnpkg.com/@types/hapi__joi/-/hapi__joi-17.1.4.tgz#e46cd1bd81d25cd45247d652dadb3666514d807c"
+  integrity sha512-gqY3TeTyZvnyNhM02HgyCIoGIWsTFMnuzMfnD8evTsr1KIfueGJaz+QC77j+dFvhZ5cJArUNjDRHUjPxNohzGA==
 
 "@types/html-minifier-terser@^5.0.0":
   version "5.0.0"

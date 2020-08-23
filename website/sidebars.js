@@ -2,17 +2,17 @@
 module.exports = 
 {
   "关于华炎": ["company/about-us", "company/customers", "company/contact-us"],
-  "华炎办公": ["oa", "oa/function", "oa/scenario", "oa/cases", "oa/price", 
-  {
-    "type": "link",
-    "href": "/help/download",
-    "label": "下载客户端"
-  }, 
-  {
-    "type": "link",
-    "href": "/help",
-    "label": "帮助文档"
-  }],
+  // "华炎办公": ["oa", "oa/function", "oa/scenario", "oa/cases", "oa/price", 
+  // {
+  //   "type": "link",
+  //   "href": "/help/download",
+  //   "label": "下载客户端"
+  // }, 
+  // {
+  //   "type": "link",
+  //   "href": "/help",
+  //   "label": "帮助文档"
+  // }],
   "审批王": ["solutions/workflow", "solutions/workflow/function", "solutions/workflow/scenario", "solutions/workflow/cases", "solutions/workflow/price", 
     {
       "type": "link",

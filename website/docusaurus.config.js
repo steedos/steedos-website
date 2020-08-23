@@ -151,7 +151,7 @@ module.exports = {
         {to: 'products/oa', label: '华炎办公', position: 'right'},
         {to: 'us/', label: 'EN', position: 'right'},
         {
-          href: 'https://github.com/steedos/',
+          href: 'https://github.com/steedos/steedos-platform/',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
@@ -194,6 +194,20 @@ module.exports = {
   ],
   plugins: [
     path.resolve(__dirname, './src/plugins/plugin-baidu-analytics'),
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        fromExtensions: ['html'],
+        createRedirects: function (path) {
+        },
+        redirects: [
+          {
+            from: ['/oa/', '/oa/function', '/oa/features', '/oa/scenario', '/oa/cases'],
+            to: '/products/oa',
+          },
+        ],
+      },
+    ],
   ],
 
   stylesheets: [
