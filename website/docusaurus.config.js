@@ -129,10 +129,10 @@ module.exports = {
       },
       items: [
         {to: 'platform/', label: '平台', position: 'left', activeBasePath: '/platform/',},
-        {label: '应用案例', position: 'left',
+        {label: '解决方案', position: 'left',
           items: [
             // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
-            {to: 'oa/', label: '华炎办公', position: 'left'},
+            {to: 'products/oa/', label: '华炎办公', position: 'left'},
             {to: 'products/contract/', label:'合同管理',position: 'left'},
             {to: 'solutions/group/', label:'集团管控',position: 'left'},
             {to: 'solutions/cost/', label: '费控管理', position: 'left'},
@@ -148,7 +148,7 @@ module.exports = {
         {to: '/developer/', label: '开发', position: 'left',},
         {to: '/platform/pricing', label: '报价', position: 'left',},
         //{to: 'videos/', label: '视频', position: 'left',},
-        {label: '华炎云', position: 'right', href: 'https://cn.steedos.com'},
+        {to: 'products/oa', label: '华炎办公', position: 'right'},
         {to: 'us/', label: 'EN', position: 'right'},
         {
           href: 'https://github.com/steedos/',
