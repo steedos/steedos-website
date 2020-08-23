@@ -14,19 +14,19 @@ export default function Landing() {
       keywords={["低代码,低代码开发,低代码开发平台,开源低代码开发平台,快速开发平台,快速开发工具,paas,零代码,零代码开发,零代码开发平台"]}
       >
 <section className="flex bg-cover bg-no-repeat bg-teal-200">
-  <div className="mx-auto max-w-screen-xl px-4 my-12">
-    <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-      <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
-        <div className="text-sm font-semibold uppercase tracking-wide text-gray-700 sm:text-base lg:text-sm xl:text-base">
-          新一代低代码开发平台
+  <div className="mx-auto px-4 my-12 max-w-screen-xl">
+    <div className="lg:grid lg:grid-cols-10 lg:gap-8">
+      <div className="sm:text-center md:mx-auto lg:col-span-6 lg:text-left">
+        <div className="text-lg font-semibold uppercase tracking-wide text-gray-700 sm:text-lg xl:text-xl">
+          开源低代码开发平台
         </div>
-        <h2 className="mt-1 text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-6xl lg:text-5xl xl:text-6xl">
+        <h2 className="mt-1 text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-5xl lg:text-5xl xl:text-6xl">
           华炎魔方
           <br className="hidden md:inline"/>
-          <span className="text-teal-700">助力企业数字化转型</span>
+          <span className="text-teal-700">为业务部门快速构建自定义应用程序</span>
         </h2>
         <p className="mt-3 text-base text-gray-700 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-          华炎魔方特有的敏捷性、灵活性和开放性，帮助业务加速创新，提升竞争力.
+          华炎魔方是开源低代码开发平台，基于商业智能和模型驱动，只需编写少量代码，就能轻松便捷地创建智能化、移动化的企业应用。
         </p>
 
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
@@ -42,7 +42,7 @@ export default function Landing() {
           </div>
         </div>
       </div>
-      <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+      <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-4 lg:flex lg:items-center">
         <div className="relative mx-auto w-full lg:max-w-md">
           <div className="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
             <Video 

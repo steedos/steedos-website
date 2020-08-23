@@ -18,13 +18,9 @@ function MDXPage(props) {
 
   return (
     <Layout title={title} description={description} permalink={permalink}>
-      <main>
-        <div className="">
           <MDXProvider components={MDXComponents}>
             <MDXPageContent />
           </MDXProvider>
-        </div>
-      </main>
     </Layout>
   );
 }
