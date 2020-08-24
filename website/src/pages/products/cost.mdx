@@ -105,7 +105,7 @@ import Customers from '@site/src/components/Customers';
   imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/user-contracts.jpg"
   videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/user-contracts.mp4"
   containerClass="bg-gray-100"
-  theme="tea l"
+  theme="teal"
   items={[
     {title: "费用报销", description: "可以在电脑端和手机端发起费用报销审批并处理。审批过程中，会自动对比费用预算，超出预算禁止提交。费控审批发起后，费控信息自动进入费控台账"},
     {title: "付款申请", description: "基于付款计划发起付款申请流程。付款申请完成后，系统自动更新费控台账信息、付款计划执行信息，同时也可以自动将付款单的详细信息通过接口传入财务管理系统。"},
@@ -143,20 +143,28 @@ import Customers from '@site/src/components/Customers';
   ]}
 />
 
+
+
 <div class="bg-gray-200">
-  <div class="max-w-screen-xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+  <div class="max-w-screen-xl mx-auto text-center py-10 px-4 sm:px-6 lg:py-12 lg:px-8">
     <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-      想要了解更多？
-      <br/>
-      在线预约我们的技术专家，为您做产品演示。
+      开放源码、随心定制
     </h2>
-    <div class="mt-8 flex justify-center">
-      <div class="inline-flex rounded-md shadow">
-        <a href="/form/trial_contract" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-teal-600 hover:text-white hover:bg-teal-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-          预约产品演示
-        </a>
+    <p class="mt-4 text-xl leading-7 text-gray-500 lg:mx-auto">
+      华炎费控管理解决方案基于低代码技术、完全开源。可以根据业务需求随心调整、无缝迭代，帮助业务加速创新，提升竞争力。
+    </p>
+      <div class="mt-8 flex flex justify-center justify-start">
+        <div class="rounded-md shadow">
+          <a href="https://github.com/steedos/steedos-app-expense" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 hover:text-white focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+            查看源码
+          </a>
+        </div>
+        <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+          <a href="/form/trial_contract" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+            预约产品演示
+          </a>
+        </div>
       </div>
-    </div>
   </div>
 </div>
 
