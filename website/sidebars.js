@@ -2,28 +2,6 @@
 module.exports = 
 {
   "关于华炎": ["company/about-us", "company/customers", "company/contact-us"],
-  // "华炎办公": ["oa", "oa/function", "oa/scenario", "oa/cases", "oa/price", 
-  // {
-  //   "type": "link",
-  //   "href": "/help/download",
-  //   "label": "下载客户端"
-  // }, 
-  // {
-  //   "type": "link",
-  //   "href": "/help",
-  //   "label": "帮助文档"
-  // }],
-  "审批王": ["solutions/workflow", "solutions/workflow/function", "solutions/workflow/scenario", "solutions/workflow/cases", "solutions/workflow/price", 
-    {
-      "type": "link",
-      "href": "/help/download",
-      "label": "下载客户端"
-    }, 
-    {
-      "type": "link",
-      "href": "/help",
-      "label": "帮助文档"
-    }],
   "集团管控":["solutions/group","solutions/group/features","solutions/group/scenario","solutions/group/case"],
   "Steedos Workflow": ["us", "us/training", "us/price", "us/download"],
   "华炎费控": ["solutions/cost","solutions/cost/project","solutions/cost/costcases"],

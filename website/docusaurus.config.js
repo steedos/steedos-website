@@ -137,6 +137,7 @@ module.exports = {
             {to: 'products/purchase/', label:'采购管理',position: 'left'},
             // {to: 'solutions/group/', label:'集团管控',position: 'left'},
             {to: 'products/cost/', label: '费控管理', position: 'left'},
+            {to: 'products/workflow/', label: '流程管理', position: 'left'},
           ]
         },
         {to: '/help/', label: '文档', position: 'left',
@@ -203,8 +204,16 @@ module.exports = {
         },
         redirects: [
           {
-            from: ['/oa/', '/oa/function', '/oa/features', '/oa/scenario', '/oa/cases'],
+            from: ['/oa/', '/oa/download', '/oa/function', '/oa/features', '/oa/scenario', '/oa/cases'],
             to: '/products/oa',
+          },
+          {
+            from: ['/solutions/contract/', '/prodcuts/contract/case', '/prodcuts/contract/features', '/prodcuts/contract/opensource', '/prodcuts/contract/pricing'],
+            to: '/products/contract',
+          },
+          {
+            from: ['/solutions/workflow', '/solutions/workflow/cases', '/solutions/workflow/download', '/solutions/workflow/features', '/solutions/workflow/function', '/solutions/workflow/price', '/solutions/workflow/scenario'],
+            to: '/products/workflow',
           },
         ],
       },
