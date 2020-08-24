@@ -8,6 +8,7 @@ class Card extends React.Component {
       category: "",
       title: "",
       description: "",
+      theme: "green",
   }
 
   constructor(props) {
@@ -15,7 +16,7 @@ class Card extends React.Component {
   }
 
   render() {
-    let {href, image, category, title, description} = this.props;
+    let {href, image, category, title, description, theme} = this.props;
     return (
       <a href={href} className="block hover:no-underline">
         <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">

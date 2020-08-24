@@ -18,7 +18,7 @@ import FeaturesWide from '@site/src/components/FeaturesWide';
 import FAQ from '@site/src/components/FAQ';
 import Customers from '@site/src/components/Customers';
 
-<main class="flex bg-cover bg-no-repeat bg-indigo-50">
+<main class="flex bg-cover bg-no-repeat bg-indigo-100">
   <div class="mx-auto px-4 my-12 max-w-screen-xl">
     <div class="lg:grid lg:grid-cols-12 lg:gap-8">
       <div class="sm:text-center md:mx-auto lg:col-span-6 lg:text-left lg:self-center">
@@ -61,15 +61,40 @@ import Customers from '@site/src/components/Customers';
   title="采购管理解决方案应用场景"
   description="华炎采购管理解决方案，涵盖供应商管理、采购计划、采购订单、执行、跟踪、变更、验收、付款、监督、统计的整个管理过程。系统基于商业智能和模型驱动，兼具敏捷性、灵活性和开放性，可以根据业务需求随心调整、无缝迭代，帮助业务加速创新，提升竞争力。"
   containerClass="bg-gray-50"
+  theme="indigo"
   imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.jpg"
   videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.mp4"
   items={[
-    {title: "供应商在线注册、准入", description: "统一供应商注册与认证，规范供应商引入过程；通过一个入口，完成供应商的注册与准入审批；实现供应商身份认证，在线申请，即可完成身份认证，便捷方便。"},
-    {title: "供应商风险管理", description: "规范供应商风险管理指标，避免不同管理标准，可视化，可预警、可推送；连接第三方征信平台，实时提醒和预警，对供应商进行风险前置监控。"},
-    {title: "供应商门户", description: "实现采购信息公开，一站式展现所有采购需求；提供在线报价、投标、签署合同，对账单、历史订单查询等功能，工作打通，协同一体。"},
-    {title: "采购招标", description: "实现从采购需求，采购计划，招投标申请，询比价，到合同签署，全流程化驱动，通过流程驱动制度落地，使得采购过程更规范、更透明。"},
-    {title: "印控中心", description: "实现采购招标文件、投标文件、询报价文件、合同、采购订单、对账单、收发货等文件的电子化签署 ，是全过程电子化，实现采购全程无纸化。"},
-    {title: "采购执行一体化", description: "对接合同，实现采购合同的签订与执行；对接ERP订单管理，实现采购协议与订单一体化；对接财务，实现采购的付款申请一体化。"},
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="user-add w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" /></svg>),
+      title: "供应商在线注册、准入", 
+      description: "统一供应商注册与认证，规范供应商引入过程；通过一个入口，完成供应商的注册与准入审批；实现供应商身份认证，在线申请，即可完成身份认证，便捷方便。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="eye w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>),
+      title: "供应商风险管理", 
+      description: "规范供应商风险管理指标，避免不同管理标准，可视化，可预警、可推送；连接第三方征信平台，实时提醒和预警，对供应商进行风险前置监控。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="home w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>),
+      title: "供应商门户", 
+      description: "实现采购信息公开，一站式展现所有采购需求；提供在线报价、投标、签署合同，对账单、历史订单查询等功能，工作打通，协同一体。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="document-duplicate w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" /></svg>),
+      title: "采购招标", 
+      description: "实现从采购需求，采购计划，招投标申请，询比价，到合同签署，全流程化驱动，通过流程驱动制度落地，使得采购过程更规范、更透明。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="lock-closed w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>),
+      title: "印控中心", 
+      description: "实现采购招标文件、投标文件、询报价文件、合同、采购订单、对账单、收发货等文件的电子化签署 ，是全过程电子化，实现采购全程无纸化。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="switch-horizontal w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" /></svg>),
+      title: "系统集成", 
+      description: "对接办公系统，实现单点登录；对接ERP订单管理，实现采购协议与订单一体化；对接财务，实现采购的付款申请一体化。"
+    },
   ]}
 />
 
@@ -80,6 +105,7 @@ import Customers from '@site/src/components/Customers';
   imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/user-contracts.jpg"
   videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/user-contracts.mp4"
   containerClass="bg-gray-100"
+  theme="indigo"
   items={[
     {title: "采购签署", description: "可以在电脑端和手机端发起采购审批并处理。审批过程中，会保存采购文本的所有版本。采购审批发起后，采购信息自动进入采购台账"},
     {title: "付款申请", description: "基于付款计划发起付款申请流程。付款申请完成后，系统自动更新采购台账信息、付款计划执行信息，同时也可以自动将付款单的详细信息通过接口传入财务管理系统。"},
@@ -87,131 +113,48 @@ import Customers from '@site/src/components/Customers';
   ]}
 />
 
-<div class="py-12 bg-white">
-  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="lg:text-center">
-      <p class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">华炎魔方采购管理解决方案</p>
-      <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-        基于模型驱动，快速满足业务部门的各种定制需求
-      </h3>
-      <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
-        华炎魔方采购管理解决方案，基于商业智能和模型驱动，兼具敏捷性、灵活性和开放性，可以根据业务需求随时调整、无缝迭代，帮助业务加速创新，提升竞争力。
-      </p>
-    </div>
-    <div className="relative mx-auto w-full lg:max-w-md mt-4">
-      <div className="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
-        <Video 
-          poster="/assets/contract_list.png"
-          autoplay={false}
-          urls={[
-              {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/contracts_operation.mp4"},
-          ]}/>
-      </div>
-    </div>
-    <div class="mt-10">
-      <ul class="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
-        <li>
-          <div class="flex">
-            <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                </svg>
-              </div>
-            </div>
-            <div class="ml-4">
-              <h4 class="text-lg leading-6 font-medium text-gray-900">管采购</h4>
-              <p class="mt-2 text-base leading-6 text-gray-500">
-                对公司所有的采购合同进行分类管理，包括采购的对方单位、签订日期、金额、履约状态、分类等基本要素，以及采购的应付、实付、验收状态、开票记录等相关表信息。
-              </p>
-            </div>
-          </div>
-        </li>
-        <li class="mt-10 md:mt-0">
-          <div class="flex">
-            <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-                </svg>
-              </div>
-            </div>
-            <div class="ml-4">
-              <h4 class="text-lg leading-6 font-medium text-gray-900">管供应商</h4>
-              <p class="mt-2 text-base leading-6 text-gray-500">
-                采购台账中可以设定供应商相关表，将公司的供应商进行统一登记管理。可以记录单位的类别、优先级、基本资料以及相关的联系人等信息，可以对单位的历史信誉进行评分和评价。
-              </p>
-            </div>
-          </div>
-        </li>
-        <li class="mt-10 md:mt-0">
-          <div class="flex">
-            <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-            </div>
-            <div class="ml-4">
-              <h4 class="text-lg leading-6 font-medium text-gray-900">管资金</h4>
-              <p class="mt-2 text-base leading-6 text-gray-500">
-                采购台账可以设定应收应付子表，可在采购签订阶段登记采购约定的应收应付日期、采购的开票日期等信息。并在实际付款流程走完之后更新相关信息。通过对应收应付数据的统计，可以实现对未来1个月～1年的应收、应付账款进行预算，帮助财务部门做好资金准备。
-              </p>
-            </div>
-          </div>
-        </li>
-        <li class="mt-10 md:mt-0">
-          <div class="flex">
-            <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-                </svg>
-              </div>
-            </div>
-            <div class="ml-4">
-              <h4 class="text-lg leading-6 font-medium text-gray-900">管进度</h4>
-              <p class="mt-2 text-base leading-6 text-gray-500">
-                对于采购中需要分配的任务和需要提醒的预警信息，可以配置任务子表，对每个采购创建待办任务。任务可以分派给具体的责任人，可以指定提醒日期。责任人可以在统一的界面中汇总查看来自各个采购中的待办任务，并通过月历视图浏览每个月的任务安排。
-              </p>
-            </div>
-          </div>
-        </li>
-        <li class="mt-10 md:mt-0">
-          <div class="flex">
-            <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                <svg viewBox="0 0 20 20" fill="currentColor" class="user-group w-6 h-6"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path></svg>
-              </div>
-            </div>
-            <div class="ml-4">
-              <h4 class="text-lg leading-6 font-medium text-gray-900">管权限</h4>
-              <p class="mt-2 text-base leading-6 text-gray-500">
-                通过配置采购对象的权限，可以限制经办人只能查看本人负责的采购、公司主管可以查看本单位的采购，集团领导可以查看集团所有采购。对于重要字段，例如金额、对方单位、履约状态等，还可以配置审计功能，对这些字段的任何修改，系统均会自动记录审计日志。
-              </p>
-            </div>
-          </div>
-        </li>
-        <li class="mt-10 md:mt-0">
-          <div class="flex">
-            <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                <svg viewBox="0 0 20 20" fill="currentColor" class="document-report w-6 h-6"><path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm2 10a1 1 0 10-2 0v3a1 1 0 102 0v-3zm2-3a1 1 0 011 1v5a1 1 0 11-2 0v-5a1 1 0 011-1zm4-1a1 1 0 10-2 0v7a1 1 0 102 0V8z" clip-rule="evenodd"></path></svg>
-              </div>
-            </div>
-            <div class="ml-4">
-              <h4 class="text-lg leading-6 font-medium text-gray-900">管统计分析</h4>
-              <p class="mt-2 text-base leading-6 text-gray-500">
-                通过配置采购统计报表，可以按履约状态、按日期、按分类对采购进行多维度的汇总与分析。系统支持普通的列表统计、分类统计、二维表，支持通过可视化的界面对报表样式进行排版。对于复杂需求的报表，也可以通过javascript和html编写报表模版文件，实现完全个性化的统计分析。
-              </p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+
+<FeaturesWide 
+  header="华炎魔方采购管理解决方案"
+  title="基于模型驱动，快速满足业务部门的各种定制需求"
+  description="华炎魔方采购管理解决方案，基于商业智能和模型驱动，兼具敏捷性、灵活性和开放性，可以根据业务需求随时调整、无缝迭代，帮助业务加速创新，提升竞争力。"
+  containerClass="bg-gray-50"
+  theme="indigo"
+  imageUrl="/assets/contract_list.png"
+  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/contracts_operation.mp4"
+  items={[
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="inbox-in w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-2m-4-1v8m0 0l3-3m-3 3L9 8m-5 5h2.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293h3.172a1 1 0 00.707-.293l2.414-2.414a1 1 0 01.707-.293H20" /></svg>),
+      title: "管采购", 
+      description: "对公司所有的采购合同进行分类管理，包括采购的对方单位、签订日期、金额、履约状态、分类等基本要素，以及采购的应付、实付、验收状态、开票记录等相关表信息。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="identification w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" /></svg>),
+      title: "管供应商", 
+      description: "采购台账中可以设定供应商相关表，将公司的供应商进行统一登记管理。可以记录单位的类别、优先级、基本资料以及相关的联系人等信息，可以对单位的历史信誉进行评分和评价。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="currency-dollar w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>),
+      title: "管资金", 
+      description: "采购台账可以设定应收应付子表，可在采购签订阶段登记采购约定的应收应付日期、采购的开票日期等信息。并在实际付款流程走完之后更新相关信息。通过对应收应付数据的统计，可以实现对未来1个月～1年的应收、应付账款进行预算，帮助财务部门做好资金准备。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="chevron-double-right w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" /></svg>),
+      title: "管进度", 
+      description: "对于采购中需要分配的任务和需要提醒的预警信息，可以配置任务子表，对每个采购创建待办任务。任务可以分派给具体的责任人，可以指定提醒日期。责任人可以在统一的界面中汇总查看来自各个采购中的待办任务，并通过月历视图浏览每个月的任务安排。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="lock-closed w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>),
+      title: "管权限", 
+      description: "通过配置采购对象的权限，可以限制经办人只能查看本人负责的采购、公司主管可以查看本单位的采购，集团领导可以查看集团所有采购。对于重要字段，例如金额、对方单位、履约状态等，还可以配置审计功能，对这些字段的任何修改，系统均会自动记录审计日志。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="chart-bar w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>),
+      title: "管统计分析", 
+      description: "通过配置采购统计报表，可以按履约状态、按日期、按分类对采购进行多维度的汇总与分析。系统支持普通的列表统计、分类统计、二维表，支持通过可视化的界面对报表样式进行排版。对于复杂需求的报表，也可以通过javascript和html编写报表模版文件，实现完全个性化的统计分析。"
+    },
+  ]}
+/>
 
 <div class="bg-gray-200">
   <div class="max-w-screen-xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
@@ -237,6 +180,7 @@ import Customers from '@site/src/components/Customers';
   videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-object.mp4"
   imagePosition="left"
   containerClass="bg-gray-50"
+  theme="indigo"
   items={[
     {title: "业务对象", description: "业务对象相当于数据库中的表，用于保存业务系统中的核心数据。"},
     {title: "列表视图", description: "通过配置列表视图，最终用户可以快捷的切换多个查询条件。"},
@@ -250,6 +194,7 @@ import Customers from '@site/src/components/Customers';
   imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/admin-contracts.jpg"
   videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/admin-contracts.mp4"
   imagePosition="right"
+  theme="indigo"
   items={[
     {title: "流程设计", description: "图形化流程设计工具，通过拖拽的方式就能创建业务流程。"},
     {title: "效率统计", description: "系统会实时监控用户的审批效率数据，并进行效率分析、生成效率报表。"},
@@ -265,6 +210,7 @@ import Customers from '@site/src/components/Customers';
   videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-report.mp4"
   imagePosition="left"
   containerClass="bg-gray-50"
+  theme="indigo"
   items={[
     {title: "报表设计", description: "可视化界面，业务人员可自主配置统计报表，分析业务数据。"},
     {title: "报表显示", description: "自动按当前用户权限过滤报表数据，动态显示业务统计结果。"},
@@ -278,6 +224,7 @@ import Customers from '@site/src/components/Customers';
   imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-mobile.jpeg"
   videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-mobile.mp4"
   imagePosition="right"
+  theme="indigo"
   items={[
     {title: "消息推送", description: "有新的待处理事项时，华炎魔方手机客户端会自动弹出推送提醒。"},
     {title: "个性化手机界面", description: "只需简单配置，就能定制你的专属手机客户端。"},

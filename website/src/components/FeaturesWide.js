@@ -6,10 +6,13 @@ class FeaturesWide extends React.Component {
 
 
   render() {
-    let {header, title, description, items, imageUrl, videoUrl, containerClass} = this.props;
+    let {header, title, description, items, imageUrl, videoUrl, containerClass, theme} = this.props;
 
     if (!containerClass)
       containerClass = ""
+
+    if (!theme)
+        theme = "green"
 
     return (
 
@@ -17,7 +20,7 @@ class FeaturesWide extends React.Component {
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="lg:text-center">
         {header && (
-            <p class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">{header}</p>
+            <p class={"text-base leading-6 font-semibold tracking-wide uppercase " + "text-" + theme + "-600"}>{header}</p>
         )}
         <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
             {title}
@@ -43,14 +46,16 @@ class FeaturesWide extends React.Component {
     
         <div class="mt-10">
         <ul class="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
-        {items && items.map(({ title, description }, idx) => (
+        {items && items.map(({ title, description, icon }, idx) => {
+            if (!icon)
+                icon = (<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>);
+
+            return (
             <li>
             <div class="flex">
                 <div class="flex-shrink-0">
-                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                    </svg>
+                <div class={"flex items-center justify-center h-12 w-12 rounded-md text-white "  + "bg-" + theme + "-500"}>
+                    {icon}
                 </div>
                 </div>
                 <div class="ml-4">
@@ -61,7 +66,8 @@ class FeaturesWide extends React.Component {
                 </div>
             </div>
             </li>
-        ))}
+            )}
+        )}
         </ul>
         </div>
     </div>
