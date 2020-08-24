@@ -99,7 +99,7 @@ class Footer extends React.Component {
           </div>
           <div className="mt-12 md:mt-0">
             <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
-              应用案例
+              解决方案
             </h4>
             <ul className="mt-4">
               <li>
