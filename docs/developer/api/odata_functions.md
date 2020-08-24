@@ -13,7 +13,8 @@ title: 自定义函数
   module.exports = {
     test: async function(req, res){
         const params = req.params;
-        res.send({message: params._id + 'test ok'})
+        const userSession = req.user;
+        res.send({message: `${params._id}, ${userSession.email}, test ok.`})
     }
   }
 ```
