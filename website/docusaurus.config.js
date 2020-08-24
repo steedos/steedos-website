@@ -208,7 +208,7 @@ module.exports = {
             to: '/products/oa',
           },
           {
-            from: ['/solutions/contract/', '/prodcuts/contract/case', '/prodcuts/contract/features', '/prodcuts/contract/opensource', '/prodcuts/contract/pricing'],
+            from: ['/solutions/contract/', '/products/contract/case', '/products/contract/features', '/products/contract/opensource', '/products/contract/pricing'],
             to: '/products/contract',
           },
           {
