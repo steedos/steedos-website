@@ -136,7 +136,7 @@ module.exports = {
             {to: 'products/contract/', label:'合同管理',position: 'left'},
             {to: 'products/purchase/', label:'采购管理',position: 'left'},
             // {to: 'solutions/group/', label:'集团管控',position: 'left'},
-            // {to: 'solutions/cost/', label: '费控管理', position: 'left'},
+            {to: 'products/cost/', label: '费控管理', position: 'left'},
           ]
         },
         {to: '/help/', label: '文档', position: 'left',
