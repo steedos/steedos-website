@@ -154,132 +154,48 @@ import Customers from '@site/src/components/Customers';
   ]}
 />
 
-<div class="py-12 bg-white">
-  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="lg:text-center">
-      <p class="text-base leading-6 text-green-600 font-semibold tracking-wide uppercase">合同台账</p>
-      <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-        随心定制的合同台账，覆盖合同管理的整个生命周期
-      </h3>
-      <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
-        华炎合同管理解决方案，涵盖合同订立、执行、跟踪、变更、验收、付款、监督、统计的整个管理过程，并打通了合同管理系统与财务管理系统的数据与流程联动，实现企业合同的全闭环、自动化、一体化管理。
-      </p>
-    </div>
-    <div className="relative mx-auto w-full lg:max-w-md mt-4">
-      <div className="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
-        <Video 
-          poster="/assets/contract_list.png"
-          autoplay={false}
-          urls={[
-              {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/contracts_operation.mp4"},
-          ]}/>
-      </div>
-    </div>
-    <div class="mt-10">
-      <ul class="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
-        <li>
-          <div class="flex">
-            <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                </svg>
-              </div>
-            </div>
-            <div class="ml-4">
-              <h4 class="text-lg leading-6 font-medium text-gray-900">管合同</h4>
-              <p class="mt-2 text-base leading-6 text-gray-500">
-                对公司所有的合同进行分类管理，包括合同的对方单位、签订日期、金额、履约状态、分类等基本要素，以及合同的应收应付、实收实付、验收状态、开票记录等相关表信息。
-              </p>
-            </div>
-          </div>
-        </li>
-        <li class="mt-10 md:mt-0">
-          <div class="flex">
-            <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-                </svg>
-              </div>
-            </div>
-            <div class="ml-4">
-              <h4 class="text-lg leading-6 font-medium text-gray-900">管签约对象</h4>
-              <p class="mt-2 text-base leading-6 text-gray-500">
-                合同台账中可以设定对方单位相关表，将公司的客户、供应商进行统一登记管理。可以记录单位的类别、优先级、基本资料以及相关的联系人等信息，可以对单位的历史信誉进行评分和评价。
-              </p>
-            </div>
-          </div>
-        </li>
-        <li class="mt-10 md:mt-0">
-          <div class="flex">
-            <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-            </div>
-            <div class="ml-4">
-              <h4 class="text-lg leading-6 font-medium text-gray-900">管资金</h4>
-              <p class="mt-2 text-base leading-6 text-gray-500">
-                合同台账可以设定应收应付子表，可在合同签订阶段登记合同约定的应收应付日期、合同的开票日期等信息。并在实际付款流程走完之后更新相关信息。通过对应收应付数据的统计，可以实现对未来1个月～1年的应收、应付账款进行预算，帮助财务部门做好资金准备。
-              </p>
-            </div>
-          </div>
-        </li>
-        <li class="mt-10 md:mt-0">
-          <div class="flex">
-            <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-                </svg>
-              </div>
-            </div>
-            <div class="ml-4">
-              <h4 class="text-lg leading-6 font-medium text-gray-900">管进度</h4>
-              <p class="mt-2 text-base leading-6 text-gray-500">
-                对于合同中需要分配的任务和需要提醒的预警信息，可以配置任务子表，对每个合同创建待办任务。任务可以分派给具体的责任人，可以指定提醒日期。责任人可以在统一的界面中汇总查看来自各个合同中的待办任务，并通过月历视图浏览每个月的任务安排。
-              </p>
-            </div>
-          </div>
-        </li>
-        <li class="mt-10 md:mt-0">
-          <div class="flex">
-            <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
-                <svg viewBox="0 0 20 20" fill="currentColor" class="user-group w-6 h-6"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path></svg>
-              </div>
-            </div>
-            <div class="ml-4">
-              <h4 class="text-lg leading-6 font-medium text-gray-900">管权限</h4>
-              <p class="mt-2 text-base leading-6 text-gray-500">
-                通过配置合同对象的权限，可以限制经办人只能查看本人负责的合同、公司主管可以查看本单位的合同，集团领导可以查看集团所有合同。对于重要字段，例如金额、对方单位、履约状态等，还可以配置审计功能，对这些字段的任何修改，系统均会自动记录审计日志。
-              </p>
-            </div>
-          </div>
-        </li>
-        <li class="mt-10 md:mt-0">
-          <div class="flex">
-            <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
-                <svg viewBox="0 0 20 20" fill="currentColor" class="document-report w-6 h-6"><path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm2 10a1 1 0 10-2 0v3a1 1 0 102 0v-3zm2-3a1 1 0 011 1v5a1 1 0 11-2 0v-5a1 1 0 011-1zm4-1a1 1 0 10-2 0v7a1 1 0 102 0V8z" clip-rule="evenodd"></path></svg>
-              </div>
-            </div>
-            <div class="ml-4">
-              <h4 class="text-lg leading-6 font-medium text-gray-900">管统计分析</h4>
-              <p class="mt-2 text-base leading-6 text-gray-500">
-                通过配置合同统计报表，可以按履约状态、按日期、按分类对合同进行多维度的汇总与分析。系统支持普通的列表统计、分类统计、二维表，支持通过可视化的界面对报表样式进行排版。对于复杂需求的报表，也可以通过javascript和html编写报表模版文件，实现完全个性化的统计分析。
-              </p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
 
+<FeaturesWide 
+  header="华炎魔方合同管理解决方案"
+  title="基于模型驱动，快速满足业务部门的各种定制需求"
+  description="华炎合同管理解决方案，涵盖合同订立、执行、跟踪、变更、验收、付款、监督、统计的整个管理过程，并打通了合同管理系统与财务管理系统的数据与流程联动，实现企业合同的全闭环、自动化、一体化管理。"
+  containerClass="bg-gray-50"
+  theme="indigo"
+  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.jpg"
+  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.mp4"
+  items={[
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="inbox-in w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-2m-4-1v8m0 0l3-3m-3 3L9 8m-5 5h2.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293h3.172a1 1 0 00.707-.293l2.414-2.414a1 1 0 01.707-.293H20" /></svg>),
+      title: "管合同", 
+      description: "对公司所有的合同进行分类管理，包括合同的对方单位、签订日期、金额、履约状态、分类等基本要素，以及合同的应收应付、实收实付、验收状态、开票记录等相关表信息。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="identification w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" /></svg>),
+      title: "管供应商", 
+      description: "合同台账中可以设定供应商相关表，将公司的供应商进行统一登记管理。可以记录单位的类别、优先级、基本资料以及相关的联系人等信息，可以对单位的历史信誉进行评分和评价。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="currency-dollar w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>),
+      title: "管资金", 
+      description: "合同台账可以设定应收应付子表，可在合同签订阶段登记合同约定的应收应付日期、合同的开票日期等信息。并在实际付款流程走完之后更新相关信息。通过对应收应付数据的统计，可以实现对未来1个月～1年的应收、应付账款进行预算，帮助财务部门做好资金准备。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="chevron-double-right w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" /></svg>),
+      title: "管进度", 
+      description: "对于合同中需要分配的任务和需要提醒的预警信息，可以配置任务子表，对每个合同创建待办任务。任务可以分派给具体的责任人，可以指定提醒日期。责任人可以在统一的界面中汇总查看来自各个合同中的待办任务，并通过月历视图浏览每个月的任务安排。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="lock-closed w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>),
+      title: "管权限", 
+      description: "通过配置合同对象的权限，可以限制经办人只能查看本人负责的合同、公司主管可以查看本单位的合同，集团领导可以查看集团所有合同。对于重要字段，例如金额、对方单位、履约状态等，还可以配置审计功能，对这些字段的任何修改，系统均会自动记录审计日志。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="chart-bar w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>),
+      title: "管统计分析", 
+      description: "通过配置合同统计报表，可以按履约状态、按日期、按分类对合同进行多维度的汇总与分析。系统支持普通的列表统计、分类统计、二维表，支持通过可视化的界面对报表样式进行排版。对于复杂需求的报表，也可以通过javascript和html编写报表模版文件，实现完全个性化的统计分析。"
+    },
+  ]}
+/>
 
 
 <div class="bg-gray-200">
