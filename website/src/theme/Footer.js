@@ -113,8 +113,8 @@ class Footer extends React.Component {
                 </a>
               </li>
               <li className="mt-4">
-                <a href="/solutions/group/" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  集团管控
+                <a href="/products/purchase/" className="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  采购管理
                 </a>
               </li>
               <li className="mt-4">
