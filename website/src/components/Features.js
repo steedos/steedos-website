@@ -22,6 +22,18 @@ class Features extends React.Component {
     if (!theme)
       theme = "green"
 
+    let imageComponent = (<img src={imageUrl}/>);
+    if (videoUrl) {
+      imageComponent = (
+        <Video 
+            poster={imageUrl}
+            autoplay={false}
+            urls={[
+                {name:"高清", url:videoUrl},
+            ]}/>
+      );
+    }
+
     return (
     
 <div className={"lg:py-12 py-8 overflow-hidden " + containerClass}>
@@ -59,6 +71,7 @@ class Features extends React.Component {
         </ul>
       </div>
 
+      {imageUrl && (
       <div className={"mt-10 mx-4 relative lg:mt-0 " + imageContainerClass}>
         <svg className="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404">
           <defs>
@@ -70,18 +83,11 @@ class Features extends React.Component {
         </svg>
         <div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md sm:mx-4">
           <div className="relative block w-full rounded-lg overflow-hidden focus:outline-none focus:shadow-outline">
-            {videoUrl && (
-              <Video 
-                poster={imageUrl}
-                autoplay={false}
-                urls={[
-                    {name:"高清", url:videoUrl},
-                ]}/>
-            )}
+          {imageComponent}
           </div>
         </div>
-
       </div>
+      )}
     </div>
   </div>
 </div>

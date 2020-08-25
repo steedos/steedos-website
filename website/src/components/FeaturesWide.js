@@ -14,6 +14,17 @@ class FeaturesWide extends React.Component {
     if (!theme)
         theme = "green"
 
+    let imageComponent = (<img src={imageUrl}/>);
+    if (videoUrl) {
+        imageComponent = (
+        <Video 
+            poster={imageUrl}
+            autoplay={false}
+            urls={[
+                {name:"高清", url:videoUrl},
+            ]}/>
+        );
+    }
     return (
 
 <div class={"py-12 "  + containerClass}>
@@ -31,15 +42,10 @@ class FeaturesWide extends React.Component {
         </p>
         )}
         </div>
-        {videoUrl && imageUrl && (
+        {imageUrl && (
             <div className="relative mx-auto w-full lg:max-w-md mt-4">
                 <div className="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
-                    <Video 
-                    poster={imageUrl}
-                    autoplay={false}
-                    urls={[
-                        {name:"高清", url:videoUrl},
-                    ]}/>
+                    {imageComponent}
                 </div>
             </div>
         )}
@@ -47,15 +53,20 @@ class FeaturesWide extends React.Component {
         <div class="mt-10">
         <ul class="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
         {items && items.map(({ title, description, icon }, idx) => {
-            if (!icon)
-                icon = (<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>);
-
+            console.log(icon)
+            let Icon = (<div/>)
+            if (icon instanceof Function)
+                Icon = icon({class:"h-6 w-6"});
+            else if (icon)
+                Icon = icon;
+            else
+                Icon = (<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>);
             return (
             <li>
             <div class="flex">
                 <div class="flex-shrink-0">
                 <div class={"flex items-center justify-center h-12 w-12 rounded-md text-white "  + "bg-" + theme + "-500"}>
-                    {icon}
+                    {Icon}
                 </div>
                 </div>
                 <div class="ml-4">
