@@ -68,7 +68,7 @@ class Footer extends React.Component {
           </a> */}
         </div>
       </div>
-      <div class="mt-12 grid grid-cols-3 gap-8 xl:mt-0 xl:col-span-2">
+      <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
             <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
@@ -102,14 +102,14 @@ class Footer extends React.Component {
               解决方案
             </h4>
             <ul className="mt-4">
-              <li>
-                <a href="/products/oa/" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  协同办公
-                </a>
-              </li>
               <li className="mt-4">
                 <a href="/products/contract/" className="text-base leading-6 text-gray-500 hover:text-gray-900">
                   合同管理
+                </a>
+              </li>
+              <li className="mt-4">
+                <a href="/products/sales/" className="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  销售管理
                 </a>
               </li>
               <li className="mt-4">
@@ -122,60 +122,9 @@ class Footer extends React.Component {
                   费控管理
                 </a>
               </li>
-            </ul>
-          </div>
-        </div>
-        <div class="md:grid md:grid-cols-2 md:gap-8">
-          <div>
-            <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
-              开发人员
-            </h4>
-            <ul className="mt-4">
-              <li>
-                <a href="/developer/" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  快速向导
-                </a>
-              </li>
               <li className="mt-4">
-                <a href="/developer/deploy" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  本地部署
-                </a>
-              </li>
-              <li className="mt-4">
-                <a href="/developer/object" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  开发文档
-                </a>
-              </li>
-              <li className="mt-4">
-                <a href="/developer/api" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  系统集成
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="mt-12 md:mt-0">
-            <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
-              技术支持
-            </h4>
-            <ul className="mt-4">
-              <li className="mt-4">
-                <a href="https://cn.steedos.com/" target="_blank" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  登录华炎云
-                </a>
-              </li>
-              <li className="mt-4">
-                <a href="/help/admin" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  管理员帮助
-                </a>
-              </li>
-              <li className="mt-4">
-                <a href="/help/" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  使用帮助
-                </a>
-              </li>
-              <li className="mt-4">
-                <a href="/help/download" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  下载客户端
+                <a href="/products/workflow/" className="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  流程管理
                 </a>
               </li>
             </ul>
@@ -184,7 +133,7 @@ class Footer extends React.Component {
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
             <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
-              视频
+              视频演示
             </h4>
             <ul className="mt-4">
               <li>
@@ -203,8 +152,8 @@ class Footer extends React.Component {
                 </a>
               </li>
               <li className="mt-4">
-                <a href="/videos/lesson-object-relationship/" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  对象关联
+                <a href="/videos/workflow/admin-contracts" className="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  自定义流程
                 </a>
               </li>
             </ul>

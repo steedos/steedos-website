@@ -132,11 +132,12 @@ module.exports = {
         {label: '解决方案', position: 'left',
           items: [
             // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
-            {to: 'products/oa/', label: '协同办公', position: 'left'},
             {to: 'products/contract/', label:'合同管理',position: 'left'},
+            {to: 'products/sales/', label:'销售管理',position: 'left'},
             {to: 'products/purchase/', label:'采购管理',position: 'left'},
             // {to: 'solutions/group/', label:'集团管控',position: 'left'},
             {to: 'products/cost/', label: '费控管理', position: 'left'},
+            {to: 'products/oa/', label: '协同办公', position: 'left'},
             {to: 'products/workflow/', label: '流程管理', position: 'left'},
           ]
         },
