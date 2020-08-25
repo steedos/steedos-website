@@ -53,7 +53,6 @@ class FeaturesWide extends React.Component {
         <div class="mt-10">
         <ul class="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
         {items && items.map(({ title, description, icon }, idx) => {
-            console.log(icon)
             let Icon = (<div/>)
             if (icon instanceof Function)
                 Icon = icon({class:"h-6 w-6"});
