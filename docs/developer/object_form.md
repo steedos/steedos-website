@@ -250,3 +250,100 @@ form:
           ...
         }
   ```
+### beforeView
+- 记录详细页面：记录显示前执行
+- 无参函数，所属数据可从this中获取: 
+  ```
+    {
+      userId: 当前用户唯一标识,
+      spaceId: 当前工作区唯一标识,
+      object_name: 当前对象名称,
+      doc: 要显示的记录,
+      schema: Schema
+    }
+  ```
+- 示例：
+  ```yml
+    # xxx.object.yml
+    form:
+      beforeView: !!js/function |
+        function(){
+          if(this.doc.is_trial){
+            this.doc.name = this.doc.name + "(试用)";
+          }
+        }
+  ```
+### afterView
+- 记录详细页面：记录显示之后执行
+- 无参函数，所属数据可从this中获取: 
+  ```
+    {
+      userId: 当前用户唯一标识,
+      spaceId: 当前工作区唯一标识,
+      object_name: 当前对象名称,
+      doc: 要显示的记录,
+      schema: Schema
+    }
+  ```
+- 示例：
+  ```yml
+    # xxx.object.yml
+    form:
+      afterView: !!js/function |
+        function(){
+          //如果当前记录的is_trial为true，则修改详细页面header背景颜色、字体颜色
+          if(this.doc.is_trial){
+            $(".slds-page-header_bleed").css('background-color', '#4CAF50').css('color', '#ffffff');
+          }
+        }
+  ```
+### beforeEdit
+- 记录详细页面：编辑页面显示之前执行
+- 无参函数，所属数据可从this中获取: 
+  ```
+    {
+      userId: 当前用户唯一标识,
+      spaceId: 当前工作区唯一标识,
+      object_name: 当前对象名称,
+      doc: 要显示的记录,
+      schema: Schema
+    }
+  ```
+- 示例：
+  ```yml
+    # xxx.object.yml
+    form:
+      beforeEdit: !!js/function |
+        function(){
+          //如果当前记录的is_trial为true，则试用截止日期必填
+          if(this.doc.is_trial){
+            this.schema._schema.trial_end_date.optional = false
+          }
+        }
+  ```
+### afterEdit
+- 记录详细页面：编辑字段值后执行
+- 无参函数，所属数据可从this中获取: 
+  ```
+    {
+      userId: 当前用户唯一标识,
+      spaceId: 当前工作区唯一标识,
+      object_name: 当前对象名称,
+      doc: 要显示的记录,
+      schema: Schema
+    }
+  ```
+- 示例：
+  ```yml
+    # xxx.object.yml
+    form:
+      afterEdit: !!js/function |
+        function(){
+          //如果当前记录的is_trial为true，切字段trial_end_date没有值时，给字段赋值。
+          if(this.doc.is_trial && !this.doc.trial_end_date){
+            this.doc.trial_end_date = moment().add(1, 'years').format('L')
+          }else if(!this.doc.is_tria){ // 非试用时，清理试用截止日期
+            delete this.doc.trial_end_date
+          }
+        }
+  ```
