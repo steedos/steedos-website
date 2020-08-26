@@ -339,7 +339,7 @@ form:
     form:
       afterEdit: !!js/function |
         function(){
-          //如果当前记录的is_trial为true，切字段trial_end_date没有值时，给字段赋值。
+          //如果当前记录的is_trial为true且字段trial_end_date没有值时，给字段赋值。
           if(this.doc.is_trial && !this.doc.trial_end_date){
             this.doc.trial_end_date = moment().add(1, 'years').format('L')
           }else if(!this.doc.is_tria){ // 非试用时，清理试用截止日期
