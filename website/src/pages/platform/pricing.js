@@ -57,16 +57,6 @@ export default function Landing() {
                 </div>
                 <div class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
                   <ul>
-                    <li class="flex items-start">
-                      <div class="flex-shrink-0">
-                        <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                      </div>
-                      <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                        私有化部署
-                      </p>
-                    </li>
                     <li class="mt-0 flex items-start">
                       <div class="flex-shrink-0">
                         <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
@@ -114,7 +104,27 @@ export default function Landing() {
                         </svg>
                       </div>
                       <p class="ml-3 text-base leading-6 font-medium text-gray-500">
+                        安全引擎
+                      </p>
+                    </li>
+                    <li class="mt-0 flex items-start">
+                      <div class="flex-shrink-0">
+                        <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <p class="ml-3 text-base leading-6 font-medium text-gray-500">
                         数据 API
+                      </p>
+                    </li>
+                    <li class="flex items-start">
+                      <div class="flex-shrink-0">
+                        <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <p class="ml-3 text-base leading-6 font-medium text-gray-500">
+                        私有化部署
                       </p>
                     </li>
                   </ul>
@@ -162,6 +172,16 @@ export default function Landing() {
               <div class="border-t-2 border-gray-100 rounded-b-lg pt-10 pb-8 px-6 bg-gray-50 sm:px-10 sm:py-10">
                 <div class="pb-6 font-bold text-base leading-6 text-gray-500">包含开源社区版的全部功能，以及：</div>
                 <ul>
+                  <li class="mt-0 flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="ml-3 text-base leading-6 font-medium text-gray-500">
+                      零代码建模引擎（10个自定义业务对象）
+                    </p>
+                  </li>
                   <li class="flex items-start">
                     <div class="flex-shrink-0">
                       <svg class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -169,7 +189,7 @@ export default function Landing() {
                       </svg>
                     </div>
                     <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                      流程引擎（10个自定义流程）
+                      流程引擎（20个自定义流程）
                     </p>
                   </li>
                   <li class="mt-0 flex items-start">
@@ -266,7 +286,17 @@ export default function Landing() {
                         </svg>
                       </div>
                       <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                        流程引擎（110个自定义流程）
+                        零代码建模引擎（110个自定义业务对象）
+                      </p>
+                    </li>
+                    <li class="mt-0 flex items-start">
+                      <div class="flex-shrink-0">
+                        <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <p class="ml-3 text-base leading-6 font-medium text-gray-500">
+                        流程引擎（无限）
                       </p>
                     </li>
                     <li class="mt-0 flex items-start">
