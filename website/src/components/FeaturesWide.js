@@ -37,7 +37,7 @@ class FeaturesWide extends React.Component {
             {title}
         </h3>
         {description && (
-        <p class="mt-4 text-xl leading-7 text-gray-500 lg:mx-auto">
+        <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
             {description}
         </p>
         )}
