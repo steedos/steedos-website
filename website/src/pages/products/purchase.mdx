@@ -152,7 +152,7 @@ import Customers from '@site/src/components/Customers';
     {title: "面向供应商的自助服务", description: "供应商能够通过华炎魔方维护自己的信息，这样就能确保供应商数据的高可信度。"},
     {title: "供应商准入", description: "自动化供应商启用和资审流程，并与其他采购流程相集成，从而缩短启用周期"},
     {title: "供应商门户", description: "实现采购信息公开，一站式展现所有采购需求；提供在线报价、签署合同，查询订单等功能，工作打通，协同一体。"},
-    {title: "供应商风险管理", description: "规范供应商风险管理指标，避免不同管理标准，连接第三方征信平台，实时审查供应商资质，对供应商进行风险前置监控。"},
+    {title: "供应商风险管理", description: "你可以将风险尽职调查纳入采购流程，帮助采购人员在采购前作出明智的决策。获得所需的信息后，采购人员就能避免制定可能给你的企业带来风险的决策。"},
   ]}
 />
 
@@ -187,45 +187,13 @@ import Customers from '@site/src/components/Customers';
 
 
 <FeaturesWide 
-  header="华炎魔方采购管理解决方案"
-  title="基于模型驱动，快速满足业务部门的各种定制需求"
-  description="华炎魔方采购管理解决方案，基于商业智能和模型驱动，兼具敏捷性、灵活性和开放性，可以根据业务需求随时调整、无缝迭代，帮助业务加速创新，提升竞争力。"
+  header="华炎魔方"
+  title="创建自定义应用程序，快速满足业务部门的个性化需求"
+  description="华炎魔方基于商业智能和模型驱动，可以快速创建自定义应用程序，应用程序可以根据业务需求随时调整、无缝迭代，帮助业务加速创新，提升竞争力。"
   containerClass="bg-gray-50"
   theme="indigo"
   imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.jpg"
   videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.mp4"
-  items={[
-    {
-      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="inbox-in w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-2m-4-1v8m0 0l3-3m-3 3L9 8m-5 5h2.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293h3.172a1 1 0 00.707-.293l2.414-2.414a1 1 0 01.707-.293H20" /></svg>),
-      title: "管采购", 
-      description: "对公司所有的采购合同进行分类管理，包括采购的对方单位、签订日期、金额、履约状态、分类等基本要素，以及采购的应付、实付、验收状态、开票记录等相关表信息。"
-    },
-    {
-      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="identification w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" /></svg>),
-      title: "管供应商", 
-      description: "采购台账中可以设定供应商相关表，将公司的供应商进行统一登记管理。可以记录单位的类别、优先级、基本资料以及相关的联系人等信息，可以对单位的历史信誉进行评分和评价。"
-    },
-    {
-      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="currency-dollar w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>),
-      title: "管资金", 
-      description: "采购台账可以设定应收应付子表，可在采购签订阶段登记采购约定的应收应付日期、采购的开票日期等信息。并在实际付款流程走完之后更新相关信息。通过对应收应付数据的统计，可以实现对未来1个月～1年的应收、应付账款进行预算，帮助财务部门做好资金准备。"
-    },
-    {
-      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="chevron-double-right w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" /></svg>),
-      title: "管进度", 
-      description: "对于采购中需要分配的任务和需要提醒的预警信息，可以配置任务子表，对每个采购创建待办任务。任务可以分派给具体的责任人，可以指定提醒日期。责任人可以在统一的界面中汇总查看来自各个采购中的待办任务，并通过月历视图浏览每个月的任务安排。"
-    },
-    {
-      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="lock-closed w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>),
-      title: "管权限", 
-      description: "通过配置采购对象的权限，可以限制经办人只能查看本人负责的采购、公司主管可以查看本单位的采购，集团领导可以查看集团所有采购。对于重要字段，例如金额、对方单位、履约状态等，还可以配置审计功能，对这些字段的任何修改，系统均会自动记录审计日志。"
-    },
-    {
-      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="chart-bar w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>),
-      title: "管统计分析", 
-      description: "通过配置采购统计报表，可以按履约状态、按日期、按分类对采购进行多维度的汇总与分析。系统支持普通的列表统计、分类统计、二维表，支持通过可视化的界面对报表样式进行排版。对于复杂需求的报表，也可以通过javascript和html编写报表模版文件，实现完全个性化的统计分析。"
-    },
-  ]}
 />
 
 <div class="bg-gray-200">
