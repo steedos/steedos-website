@@ -56,7 +56,7 @@
 }
 
 a:hover {
-  opacity: 0.75
+  opacity: 0.9
 }
 
 /* .markdown a {
@@ -149,3 +149,12 @@ html[data-theme='dark'] .navbar{
   }
 }
 
+.navbar__brand {
+  height: 40px;
+  opacity: .8;
+}
+
+.navbar__brand:hover {
+  height: 40px;
+  opacity: 1;
+}
