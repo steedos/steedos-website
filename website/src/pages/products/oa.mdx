@@ -1,6 +1,24 @@
 ---
 title: 华炎办公：快速部署、有效监控并持续优化各类业务流程
 description: 华炎办公是基于低代码平台开发的协同办公解决方案，除了满足传统OA协作与审批的需求，还可以通过低代码模式快速开发个性化管理模块，助力企业数字化转型。
+keywords:
+  - OA
+  - OA系统
+  - OA软件
+  - 免费OA系统
+  - 免费OA软件
+  - 开源OA系统
+  - 开源OA软件
+  - 协同办公
+  - 协同办公软件
+  - 办公系统
+  - 办公软件
+  - 办公管理软件
+  - 免费办公管理软件
+  - 开源办公管理软件
+  - 办公管理系统
+  - 免费办公管理系统
+  - 开源办公管理系统
 ---
 
 import Video from '@site/src/components/Video';
@@ -8,21 +26,22 @@ import Features from '@site/src/components/Features';
 import FeaturesWide from '@site/src/components/FeaturesWide';
 import FAQ from '@site/src/components/FAQ';
 import Customers from '@site/src/components/Customers';
+import * as Icons from '@site/src/components/HeroIcons/outline';
 
 <main class="flex bg-cover bg-no-repeat bg-blue-100">
   <div class="mx-auto px-4 my-12 max-w-screen-xl">
     <div class="lg:grid lg:grid-cols-12 lg:gap-8">
       <div class="sm:text-center md:mx-auto lg:col-span-6 lg:text-left lg:self-center">
         <div className="text-lg font-semibold uppercase tracking-wide text-gray-700 sm:text-lg xl:text-xl">
-          华炎魔方解决方案
+          OA 办公解决方案
         </div>
         <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
-          华炎办公
+          以 OA 为核心，
           <br/>
-          <span class="text-blue-700">让工作更快、更智能</span>
+          <span class="text-blue-700">整合业务流程和数据</span>
         </h2>
         <p class="mt-3 mx-auto text-lg text-gray-700 sm:text-xl md:mt-5">
-          为每一个部门创建个性化、智能化的的办公应用，涵盖协作、知识、销售、采购、合同、费控、财务等所有业务。
+          利用统一的集成式 OA 管理系统，实现所有部门和职能的互联，转型成为智慧企业。
         </p>
         <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
           <div class="rounded-md shadow">
@@ -48,23 +67,269 @@ import Customers from '@site/src/components/Customers';
 
 
 <FeaturesWide 
-  header="华炎魔方"
-  title="基于模型驱动，快速为每个部门创建个性化的办公应用"
-  description="华炎魔方内置功能强大的建模引擎，可以任意配置业务字段、列表视图、页面布局、审批流程、统计报表，即使是不懂编程的业务人员，也能快速创建智能化、移动化的企业应用程序。"
-  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.jpg"
-  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.mp4"
+  title="全新低代码平台，为你的企业提供个性化的管理软件"
+  description="华炎魔方是一款可随企业发展而扩展的业务管理软件，可以帮助企业加强对自身的管控。借助该软件，企业能够简化关键流程，更深入地洞悉企业运营状况，并基于实时信息制定决策，最终推动盈利性增长。"
+  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.jpg"
+  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.mp4"
   containerClass="bg-gray-50"
   theme="blue"
   items={[
-    {title: "协作", description: "内置公告、任务、日程、文档、通讯录等常用的协作功能，每天要做什么、做了什么、有什么收获；实时推进目标成果、构建高效率协作团队。"},
-    {title: "知识", description: "提供灵活便捷的多级分类目录以及全面的多维全权限控制，帮助企业快速构建知识库，方便所有员工持续高效的将知识积累到企业知识库中。"},
-    {title: "销售", description: "您的销售团队能够借助一系列销售工具，以前所未有的方式完成交易。这些工具可提高工作效率，为销售漏斗填充可靠的销售线索，并提高销售成功率。"},
-    {title: "采购", description: "集中采购管理平台构建起从供应商的认证、采购需求、采购计划、采购招投标、签署合同、采购订单到供应商对账付款的全程电子化采购管理体系。"},
-    {title: "合同", description: "涵盖合同订立、执行、跟踪、变更、验收、付款、监督、统计的整个管理过程，并打通了合同管理系统与财务管理系统的数据与流程联动，实现企业合同的全闭环、自动化、一体化管理。"},
-    {title: "费控", description: "建立全面融合的费控管理体系，从全流程驱动到全面的集成功能，将多管控方案融合，达到预算与费用一体化的目的，华炎魔方提供核心的费控解决方案。"},
+    {
+      icon: Icons.InboxIn,
+      title: (<a href="/products/workflow" target="_blank">流程</a>), 
+      description: "帮助用户基于企业业务模式和管理模式，自行定义所需要的各种流程应用，快速构建企业自身的流程管控体系，同时也为建设企业整体协同平台夯实基础。"
+    },
+    {
+      icon: Icons.Gift,
+      title: (<a href="/products/sales" target="_blank">销售</a>), 
+      description: "您的销售团队能够借助一系列销售工具，以前所未有的方式完成交易。这些工具可提高工作效率，为销售漏斗填充可靠的销售线索，并提高销售成功率。"
+    },
+    {
+      icon: Icons.ShoppingCart,
+      title: (<a href="/products/purchase" target="_blank">采购</a>),
+      description: "集中采购管理平台构建起从供应商的认证、采购需求、采购计划、采购招投标、签署合同、采购订单到供应商对账付款的全程电子化采购管理体系。"
+    },
+    {
+      icon: Icons.DocumentText,
+      title: (<a href="/products/contract" target="_blank">合同</a>),
+      description: "涵盖合同订立、执行、跟踪、变更、验收、付款、监督、统计的整个管理过程，并打通了合同管理系统与财务管理系统的数据与流程联动，实现企业合同的全闭环、自动化、一体化管理。"
+    },
+    {
+      icon: Icons.CurrencyYen,
+      title: (<a href="/products/cost" target="_blank">费控</a>),
+      description: "建立全面融合的费控管理体系，从全流程驱动到全面的集成功能，将多管控方案融合，达到预算与费用一体化的目的，华炎魔方提供核心的费控解决方案。"
+    },
+    {
+      href: "/platform",
+      icon: Icons.ViewGrid,
+      title: (<a href="/platform" target="_blank">自定义应用</a>),
+      description: "华炎魔方是新一代低代码开发平台，基于商业智能和模型驱动，业务部门可以根据实际需求，轻松便捷的创建智能化、移动化、个性化的应用程序。"
+    },
   ]}
 />
 
+
+
+<FeaturesWide 
+  title="流程管理"
+  description="审批王广泛应用于企业内部员工（决策层/管理层/执行层）及外部用户（客户/供应商/经销商）的各类工作场景。通过工作流程管理的有效实施，可以帮助企业提升效率、规范管理。"
+  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-flow.jpeg"
+  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-flow.mp4"  
+  theme="indigo"
+  containerClass="bg-white"
+  items={[
+    {
+      icon: Icons.CurrencyYen,
+      title: "财务管理", 
+      description: "外出/出差/报销申请、费控管理、预算管理、固定资产管理、发票管理、付款管理、资金管理"},
+    {
+      icon: Icons.Gift,
+      title: "销售管理", 
+      description: "客户主数据管理、产品主数据管理、商品促销方案审定、报价管理、销售订单管理、合同管理、报价管理、市场费用管理"},
+    {
+      icon: Icons.ShoppingCart,
+      title: "采购管理", 
+      description: "供应商主数据管理、采购计划管理、供应商认证和评估管理、采购订单管理、采购付款管理、采购验收"},
+    {
+      icon: Icons.UserGroup,
+      title: "人事管理", 
+      description: "招聘申请、新员工入职、培训申请、转正申请、加班申请、请假申请、岗位异动申请、离职申请"},
+    {
+      icon: Icons.OfficeBuilding,
+      title: "行政管理", 
+      description: "公文管理、资产管理、会议管理、车辆管理、客户接待、礼品管理、名片申请、证照管理"},
+    {
+      icon: Icons.DesktopComputer,
+      title: "信息管理", 
+      description: "IT桌面支持服务、网络资源管理、IT故障管理、系统账号管理、IT应用开发管理"},
+    {
+      icon: Icons.LightBulb,
+      title: "质量管理", 
+      description: "用户质量申诉、纠正预防措施、原材料检验、不合格品处理、退货处理"},
+    {
+      icon: Icons.EmojiHappy,
+      title: "客户服务", 
+      description: "客户投诉管理、客户技术支持管理、客户服务质量跟踪管理"},
+  ]}
+/>
+
+<FeaturesWide
+  header=""
+  title="合同管理"
+  description="利用安全的电子存储和搜索工具，你可以按需访问合同，随时跟踪合同动态。此外，你可以使用预先批准的模板和法规条款，快速、轻松地创建合同。"
+  containerClass="bg-gray-50"
+  theme="green"
+  items={[
+    {
+      icon: Icons.BadgeCheck,
+      title: "规范和控制合同审批流程", 
+      description: "华炎魔方内置专业的流程引擎，对于合同管理中的各种事项，只需简单配置，就能实现电子化审批。"
+    },
+    {
+      icon: Icons.Collection,
+      title: "合同范本管理", 
+      description: "在一个中央数据库中集中维护整个企业的标准条款、合同模板和政策规则。"
+    },
+    {
+      icon: Icons.Bell,
+      title: "及时续约", 
+      description: "你可以在供应商合同的重要里程碑日期之前收到通知，充分把握业务机会。"
+    },
+    {
+      icon: Icons.CursorClick,
+      title: "支持电子签名，节约成本", 
+      description: "通过添加电子签名功能，你可以省去邮寄和签署多份合同副本的步骤，节约时间和成本。"
+    },
+    {
+      icon: Icons.ChartSquareBar,
+      title: "全面可视性", 
+      description: "利用自动警报、便捷的仪表盘和可配置报告，你可以在整个合同周期及时了解合同动态。"
+    },
+    {
+      icon: Icons.Key,
+      title: "更出色的合规性", 
+      description: "借助华炎合同管理解决方案，你可以实施严格控制的流程、自动追踪和全面的审计跟踪，及时了解合同外活动，进而强化合规活动。"
+    },
+    {
+      icon: Icons.LightBulb,
+      title: "自动化通知", 
+      description: "如果预先批准的合同范本或合同条款发生改变，你将立即收到警报。这项功能可以帮助你控制非标准协议。"
+    },
+    {
+      icon: Icons.Chip,
+      title: "系统集成", 
+      description: "通过将合同流程与其他华炎魔方解决方案、你的 ERP 系统或其他第三方系统集成，你可以最大限度地提高合同合规性和控制力"
+    },
+  ]}
+/>
+
+<FeaturesWide 
+  title="费控管理"
+  description="华炎费控管理解决方案，从全流程驱动到全面的集成功能，将多管控方案融合，达到预算与费用一体化的目的。系统基于商业智能和模型驱动，兼具敏捷性、灵活性和开放性，可以根据业务需求随心调整、无缝迭代，帮助业务加速创新，提升竞争力。"
+  containerClass="bg-gray-100"
+  theme="teal"
+  items={[
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="user-add w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" /></svg>),
+      title: "财务报账", 
+      description: "日常报销、差旅报销、营销业务、培训会务、借支付款等"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="eye w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>),
+      title: "费用执行控制", 
+      description: "预算控制、事前控制、超额控制、审批控制、预警提醒等、"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="home w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>),
+      title: "财务定额标准", 
+      description: "标准管理、城市标准、职级标准、住宿标准、更多标准等"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="document-duplicate w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" /></svg>),
+      title: "费用预算管理", 
+      description: "预算编审、控制方案、预算调整、预实对比、多维分析、"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="lock-closed w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>),
+      title: "业务应用集成", 
+      description: "财务核算接口、资金支付接口、商旅出行接口、影像档案接口、全面预算接口"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="switch-horizontal w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" /></svg>),
+      title: "业务扩展实现", 
+      description: "采购至付款、销售至收款、资产与资金、总账与报表、票据与档案"
+    },
+  ]}
+/>
+
+<FeaturesWide 
+  title="销售管理"
+  description="您的销售团队能够借助一系列销售工具，以前所未有的方式完成交易。这些工具可提高工作效率，为销售漏斗填充可靠的销售线索，并提高销售成功率。"
+  containerClass="bg-white"
+  theme="blue"  
+  items={[
+    {
+      icon: Icons.Identification,
+      title: "360˚客户画像", 
+      description: "为每个客户建立专属的客户档案，商机、历史成交、跟进记录、信用账户等清晰可见，通过智能客户分级，实现精细化运营。"
+    },
+    {
+      icon: Icons.AcademicCap,
+      title: "商机管理", 
+      description: "通过流程引擎，定义企业标准的商机跟进阶段及动作，规范销售行为，缩短销售周期，提升商机赢率。"
+    },
+    {
+      icon: Icons.Filter,
+      title: "销售预测与销售漏斗", 
+      description: "历史数据综合分析，智能评估商机赢率，帮助企业管理者清晰了解每一个商机成交可能性，精准预测销售业绩。"
+    },
+    {
+      icon: Icons.Cube,
+      title: "产品管理", 
+      description: "产品支持SPU和SKU多规格管理，深度支持复杂商品模式，灵活应对业务需求。"
+    },
+    {
+      icon: Icons.ShoppingCart,
+      title: "订单管理", 
+      description: "支持APP、H5多端移动订货，实时下单，自主设定订单审核流程，保证订单数据有效、准确。"
+    },
+    {
+      icon: Icons.CurrencyYen,
+      title: "回款管理", 
+      description: "支持分期计划回款，清晰记录回款及账期，规范管理企业的现金流和应收账款，保障业绩准确、真实、有效"
+    },
+    {
+      icon: Icons.ThumbUp,
+      title: "目标与绩效管理", 
+      description: "定制目标考核的维度、指标，首页预置目标达成进度，可实时调整，确保目标高效达成。"
+    },
+    {
+      icon: Icons.Mail,
+      title: "邮件管理", 
+      description: "自动记录纷享邮箱中所有员工与客户的往来邮件，留存每一次触达客户的重要业务数据。"
+    },
+  ]}
+/>
+
+
+<FeaturesWide 
+  title="采购管理"
+  description="不论您是想端到端地完善整个采购到结算流程，还是只想完善其中某些环节，华炎魔方采购管理解决方案都能帮助您在采购流程中加强对成本和风险的控制。"
+  containerClass="bg-gray-50"
+  theme="indigo"
+  items={[
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="user-add w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" /></svg>),
+      title: "供应商管理", 
+      description: "一站式管理供应商信息、生命周期、绩效和风险的端到端解决方案产品组合，并且能够与其他采购流程相集成。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="eye w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>),
+      title: "采购管理", 
+      description: "你可以高效管理从寻源到结算的整个采购流程，同时有效控制采购支出，找到新的省钱之道，并打造健康的供应链。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="home w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>),
+      title: "供应商门户", 
+      description: "实现采购信息公开，一站式展现所有采购需求；提供在线报价、投标、签署合同，对账单、历史订单查询等功能，工作打通，协同一体。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="document-duplicate w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" /></svg>),
+      title: "采购招标", 
+      description: "实现从采购需求，采购计划，招投标申请，询比价，到合同签署，全流程化驱动，通过流程驱动制度落地，使得采购过程更规范、更透明。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="lock-closed w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>),
+      title: "印控中心", 
+      description: "实现采购招标文件、投标文件、询报价文件、合同、采购订单、对账单、收发货等文件的电子化签署 ，是全过程电子化，实现采购全程无纸化。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="switch-horizontal w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" /></svg>),
+      title: "系统集成", 
+      description: "对接办公系统，实现单点登录；对接ERP订单管理，实现采购协议与订单一体化；对接财务，实现采购的付款申请一体化。"
+    },
+  ]}
+/>
 
 
 <div class="bg-gray-200">
@@ -91,7 +356,22 @@ import Customers from '@site/src/components/Customers';
 </div>
 
 <Features 
-  title="流程引擎"
+  title="只需数次点击，即可构建应用程序"
+  description="华炎魔方基于模型驱动，可以任意配置业务字段、列表视图、页面布局，即使是不懂编程的业务人员，也能快速定制。"
+  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-object.jpeg"
+  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-object.mp4"
+  imagePosition="left"
+  containerClass="bg-gray-50"
+  theme="blue"
+  items={[
+    {title: "业务对象", description: "业务对象相当于数据库中的表，用于保存业务系统中的核心数据。"},
+    {title: "列表视图", description: "通过配置列表视图，最终用户可以快捷的切换多个查询条件。"},
+    {title: "页面布局", description: "页面布局控制了记录的显示方式，可以按照用户权限分配不同的页面布局。"},
+  ]}
+/>
+
+<Features 
+  title="图形化流程设计工具"
   description="华炎魔方内置了流程设计、管理维护、统计分析与流程优化等各类工具，帮助企业快速部署、有效监控并持续优化业务流程。"
   imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/admin-contracts.jpg"
   videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/admin-contracts.mp4"
@@ -101,22 +381,6 @@ import Customers from '@site/src/components/Customers';
     {title: "流程设计", description: "图形化流程设计工具，通过拖拽的方式就能创建业务流程。"},
     {title: "效率统计", description: "系统会实时监控用户的审批效率数据，并进行效率分析、生成效率报表。"},
     {title: "数据同步", description: "只需简单配置，就能实现审批单与业务台账双向同步。"},
-  ]}
-/>
-
-<FeaturesWide 
-  header="流程引擎"
-  title="快速部署、有效监控并持续优化各类业务流程"
-  description="华炎魔方内置了流程设计、管理维护、统计分析与流程优化等各类工具，帮助企业快速部署、有效监控并持续优化业务流程。"
-  containerClass="bg-gray-100"
-  theme="blue"
-  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/user-contracts.jpg"
-  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/user-contracts.mp4"
-  items={[
-    {title: "请假申请", description: "在请假流程表单中可以快速查阅请假规定，并方便的输入请假信息，同时，可以查看各种法定假期的实时数据，例如：年假的剩余天数，以及请假的历史记录。请假流程所产生的数据直接汇总至人事模块，和考勤数据相关联，不需要另外再作考勤记录。"},
-    {title: "出差申请", description: "通过出差申请流程表单可以规范出差申请的填写，自定义的设置可以减少信息重复录入，同时，可以直接关联相关客户、相关项目，便于记录及评估本次出差的必要性和合理性。"},
-    {title: "费用报销", description: "在提交费用报销时，系统自定义的各类设置可以减少信息重复录入；在提交报销流程时，可以关联相关流程提供报销依据，支持自动计算合计金额；同时，报销流程可以实时显示相关历史报销数据和流程，辅助上级领导进行审批，更好的辅助企业进行费用管控。"},
-    {title: "合同审批", description: "在合同审批流程中提供格式化的合同表单，方便合同申请人填写，各类标准化合同信息将大大减少合同审批的填写工作量；合同审批可以关联到客户管理模块，可实时查阅该客户的历史合同信息，在审批完成后，将自动更新维护客户的合同台账资料。"},
   ]}
 />
 

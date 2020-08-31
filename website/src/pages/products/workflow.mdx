@@ -20,6 +20,7 @@ import Features from '@site/src/components/Features';
 import FeaturesWide from '@site/src/components/FeaturesWide';
 import FAQ from '@site/src/components/FAQ';
 import Customers from '@site/src/components/Customers';
+import * as Icons from '@site/src/components/HeroIcons/outline';
 
 <main class="flex bg-cover bg-no-repeat bg-indigo-100">
   <div class="mx-auto px-4 my-12 max-w-screen-xl">
@@ -59,17 +60,67 @@ import Customers from '@site/src/components/Customers';
 
 
 <FeaturesWide 
-  header="审批王"
+  title="快速部署、有效监控并持续优化各类业务流程"
+  description="审批王广泛应用于企业内部员工（决策层/管理层/执行层）及外部用户（客户/供应商/经销商）的各类工作场景。通过工作流程管理的有效实施，可以帮助企业提升效率、规范管理。"
+  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-flow.jpeg"
+  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-flow.mp4"  
+  theme="indigo"
+  containerClass="bg-gray-50"
+  items={[
+    {
+      icon: Icons.CurrencyYen,
+      title: "财务管理", 
+      description: "外出/出差/报销申请、费控管理、预算管理、固定资产管理、发票管理、付款管理、资金管理"},
+    {
+      icon: Icons.Gift,
+      title: "销售管理", 
+      description: "客户主数据管理、产品主数据管理、商品促销方案审定、报价管理、销售订单管理、合同管理、报价管理、市场费用管理"},
+    {
+      icon: Icons.ShoppingCart,
+      title: "采购管理", 
+      description: "供应商主数据管理、采购计划管理、供应商认证和评估管理、采购订单管理、采购付款管理、采购验收"},
+    {
+      icon: Icons.UserGroup,
+      title: "人事管理", 
+      description: "招聘申请、新员工入职、培训申请、转正申请、加班申请、请假申请、岗位异动申请、离职申请"},
+    {
+      icon: Icons.OfficeBuilding,
+      title: "行政管理", 
+      description: "公文管理、资产管理、会议管理、车辆管理、客户接待、礼品管理、名片申请、证照管理"},
+    {
+      icon: Icons.DesktopComputer,
+      title: "信息管理", 
+      description: "IT桌面支持服务、网络资源管理、IT故障管理、系统账号管理、IT应用开发管理"},
+    {
+      icon: Icons.LightBulb,
+      title: "质量管理", 
+      description: "用户质量申诉、纠正预防措施、原材料检验、不合格品处理、退货处理"},
+    {
+      icon: Icons.EmojiHappy,
+      title: "客户服务", 
+      description: "客户投诉管理、客户技术支持管理、客户服务质量跟踪管理"},
+  ]}
+/>
+
+<FeaturesWide 
   title="流程引擎核心功能"
   description="流程引擎是整个数字化转型的血脉，是连接并打通其它各个应用系统之间协同的关键所在。通过审批王，既可以帮助用户基于企业业务模式和管理模式，自行定义所需要的各种流程应用，快速构建企业自身的流程管控体系，同时也为建设企业整体协同平台夯实基础。"
   imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-flow.jpeg"
   videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-flow.mp4"  
   theme="indigo"
   items={[
-    {title: "高效表单设计工具", description: "系统提供多种表单样式模板，同时支持表单模板样式自定义和再扩展，最大程度满足用户设计表单的需求。"},
-    {title: "图形化流程设计工具", description: "快速适应企业流程操作者的复杂情况，如可以指定用户、角色、岗位、部门（分部）、安全级别、职位上下级关系作为当前流程节点的操作者。"},
-    {title: "多维报表分析工具", description: "支持包含基于表单数据的分析、流程数量的分析、流程时间与效率的分析，建立一套PDCA持续不断的流程管控体系。"},
-    {title: "全面数据及应用集成", description: "可以实现企业各类业务数据在不同异构系统间的交互集成，通过流程引擎连接所有业务接口，最终打通各个信息孤岛，形成企业信息一体化的管理体系。"},
+    {
+      icon: Icons.DocumentText,
+      title: "高效表单设计工具", description: "系统提供多种表单样式模板，同时支持表单模板样式自定义和再扩展，最大程度满足用户设计表单的需求。"},
+    {
+      icon: Icons.CursorClick,
+      title: "图形化流程设计工具", description: "快速适应企业流程操作者的复杂情况，如可以指定用户、角色、岗位、部门（分部）、安全级别、职位上下级关系作为当前流程节点的操作者。"},
+    {
+      icon: Icons.ChartPie,
+      title: "多维报表分析工具", description: "支持包含基于表单数据的分析、流程数量的分析、流程时间与效率的分析，建立一套PDCA持续不断的流程管控体系。"},
+    {
+      icon: Icons.CubeTransparent,
+      title: "全面数据及应用集成", description: "可以实现企业各类业务数据在不同异构系统间的交互集成，通过流程引擎连接所有业务接口，最终打通各个信息孤岛，形成企业信息一体化的管理体系。"},
   ]}
 />
 
@@ -105,7 +156,7 @@ import Customers from '@site/src/components/Customers';
 />
 
 <Features 
-  title="模型驱动业务"
+  title="只需数次点击，即可构建应用程序"
   description="华炎魔方基于模型驱动，可以任意配置业务字段、列表视图、页面布局，即使是不懂编程的业务人员，也能快速定制。"
   imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-object.jpeg"
   videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-object.mp4"
@@ -169,25 +220,5 @@ import Customers from '@site/src/components/Customers';
   ]}
 />
 
-
-<FeaturesWide 
-  header="审批王"
-  title="流程引擎应用领域"
-  description="审批王广泛应用于企业内部员工（决策层/管理层/执行层）及外部用户（客户/供应商/经销商）的各类工作场景。通过工作流程管理的有效实施，可以帮助企业提升效率、规范管理。"
-  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-flow.jpeg"
-  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-flow.mp4"  
-  theme="indigo"
-  containerClass="bg-gray-50"
-  items={[
-    {title: "财务管理", description: "外出/出差/报销申请、费控管理、预算管理、固定资产管理、发票管理、付款管理、资金管理"},
-    {title: "销售管理", description: "客户主数据管理、产品主数据管理、商品促销方案审定、报价管理、销售订单管理、合同管理、报价管理、市场费用管理"},
-    {title: "采购管理", description: "供应商主数据管理、采购计划管理、供应商认证和评估管理、采购订单管理、采购付款管理、采购验收"},
-    {title: "人事管理", description: "招聘申请、新员工入职、培训申请、转正申请、加班申请、请假申请、岗位异动申请、离职申请"},
-    {title: "行政管理", description: "公文管理、资产管理、会议管理、车辆管理、客户接待、礼品管理、名片申请、证照管理"},
-    {title: "信息管理", description: "IT桌面支持服务、网络资源管理、IT故障管理、系统账号管理、IT应用开发管理"},
-    {title: "质量管理", description: "用户质量申诉、纠正预防措施、原材料检验、不合格品处理、退货处理"},
-    {title: "客户服务", description: "客户投诉管理、客户技术支持管理、客户服务质量跟踪管理"},
-  ]}
-/>
 
 <Customers/>
