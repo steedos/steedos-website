@@ -124,11 +124,6 @@ html[data-theme='dark'] .header-github-link:before {
     no-repeat;
 }
 
-html[data-theme='dark'] .navbar__logo:after {
-  content: url("/img/icon_platform_white.png");
-}
-
-
 html[data-theme='dark'] .navbar__link {
   color: #cccccc;
 }

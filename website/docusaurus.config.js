@@ -43,7 +43,7 @@ module.exports = {
   /* path to images for header/footer */
   // headerIcon: 'img/icon_blue.png',
   // footerIcon: 'img/icon_blue.png',
-  favicon: 'img/icon_blue.png',
+  favicon: 'img/logo.png',
 
   /* Colors for website */
   // colors: {
@@ -105,7 +105,7 @@ module.exports = {
   // useEnglishUrl: false,
 
   themeConfig: {
-    image: 'img/icon_platform.png',
+    image: 'img/logo_platform.png',
     colorMode: {
       // "light" | "dark"
       defaultMode: 'dark',
@@ -123,8 +123,8 @@ module.exports = {
       title: '',
       logo: {
         alt: '华炎魔方',
-        src: 'img/icon_platform.png',
-        srcDark:  'img/icon_platform_white.png',
+        src: 'img/logo_platform.png',
+        srcDark:  'img/logo_platform_white.png',
         href: '/cn/'
       },
       items: [
