@@ -45,10 +45,11 @@ yarn config set registry https://registry.npm.taobao.org
 vim /usr/local/etc/mongod.conf
 # 找到replication部分，去掉#并添加一行配置
 replication:
+#以下配置必须缩进两个空格
   replSetName: rsSteedos
 ```
 
-保存后重启数据库：
+保存后重启数据库才会生效：
 
 ```bash
 brew services restart mongodb-community@4.2

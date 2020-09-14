@@ -76,10 +76,11 @@ yarn config set registry https://registry.npm.taobao.org
 ```bash
 # 找到replication部分，去掉#并添加一行配置
 replication:
+#以下配置必须缩进两个空格
   replSetName: rsSteedos
 ```
 
-保存后在系统服务中重启数据库服务，默认服务名称为 `MongoDB Server`。
+> 保存后在系统服务中重启数据库服务才会生效，默认服务名称为 `MongoDB Server`。
 
 初始化数据库：
 
