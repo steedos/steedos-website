@@ -10,7 +10,6 @@ title: 使用技巧
 - <a href="./question_conditional" target="_blank">请假天数较多时须请总经理审批、较少时无需总经理审批，如何实现？</a>
 - <a href="./question_skipApproval" target="_blank">员工提交申请需先发部门经理审批，那么部门经理自己提交申请时，如何自动跳过“部门经理审批”这一步？</a>
 - <a href="./question_forbidden" target="_blank">可以让某一步的人员无法修改某个字段吗？</a>
-- <a href="./field_odata" target="_blank">根据现有的数据源，如何配置odata字段？</a>
 
 #### 表单设计类
 
@@ -19,6 +18,7 @@ title: 使用技巧
 - <a href="./question_autonum" target="_blank">如何实现申请单的自动文件编号？</a>
 - <a href="./question_mydep" target="_blank">申请人的所在部门如何自动显示在申请单上？</a>
 - <a href="./question_comments" target="_blank">如何在申请单里增加领导意见栏？</a>
+- <a href="./field_odata" target="_blank">根据现有的数据源，如何配置odata字段？</a>
 
 #### 系统使用类
 
