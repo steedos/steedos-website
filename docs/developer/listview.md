@@ -124,3 +124,25 @@ list_views:
 ### 组合排序
 - 选中需要排序的第一个字段，点击列标题可以排序，再点一次可以切换排序顺序
 - 在列表题上点击右键，或是按住(SHIFT键)再点击列标题，可以设定多个字段的组合排序。
+
+## 移动端列表视图配置
+当手机端显示的列区别于PC端时，需要单独配置mobile_columns。
+```yaml
+list_views:
+  all:
+    label: 所有单位
+    columns:
+      - field: name
+        width: 100
+        wrap: true
+      - priority
+      - owner
+      - modified
+    mobile_columns: 
+      - amount
+      - field: priority
+    filter_fields:
+      - priority
+```
+- 在移动端会识别mobile_columns来显示对应的列，如果为空则取其columns
+- columns/mobile_columns可以配置为字段名，也可以配置为对象，配置为对象时columns支持`field,width,wrap`属性，mobile_columns暂时只支持`field`属性
