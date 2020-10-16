@@ -31,4 +31,5 @@ title: 字段公式
  - 计数：  count({object_name.field_name})
  - 最大值：max({object_name.field_name})
  - 最小值：min({object_name.field_name})
+
 当子表中的记录有增删改时，会自动重新计算对应主表中的记录。
