@@ -31,7 +31,6 @@ function DocItem(props) {
     editUrl,
     lastUpdatedAt,
     lastUpdatedBy,
-    source
   } = metadata;
   const {
     frontMatter: {
@@ -56,8 +55,8 @@ function DocItem(props) {
   const metaImageUrl = useBaseUrl(metaImage, {
     absolute: true,
   });
-  const isMdx = source.endsWith(".mdx")
-  console.log(isMdx)
+  {/* Steedos Modified */}
+  const isMdx = metadata.source.endsWith(".mdx")
   return (
     <>
       <Head>
@@ -78,6 +77,7 @@ function DocItem(props) {
         {permalink && <meta property="og:url" content={siteUrl + permalink} />}
         {permalink && <link rel="canonical" href={siteUrl + permalink} />}
       </Head>
+      {/* Steedos Modified */}
       {isMdx && <DocContent />}
       {!isMdx &&
       <div
