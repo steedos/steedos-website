@@ -20,7 +20,6 @@ import {
 } from '@theme/hooks/useDocs';
 
 function DocItem(props) {
-  console.log(props)
   const {siteConfig = {}} = useDocusaurusContext();
   const {url: siteUrl, title: siteTitle, titleDelimiter} = siteConfig;
   const {content: DocContent} = props;
@@ -32,6 +31,7 @@ function DocItem(props) {
     editUrl,
     lastUpdatedAt,
     lastUpdatedBy,
+    source
   } = metadata;
   const {
     frontMatter: {
@@ -56,6 +56,8 @@ function DocItem(props) {
   const metaImageUrl = useBaseUrl(metaImage, {
     absolute: true,
   });
+  const isMdx = source.endsWith(".mdx")
+  console.log(isMdx)
   return (
     <>
       <Head>
@@ -76,6 +78,8 @@ function DocItem(props) {
         {permalink && <meta property="og:url" content={siteUrl + permalink} />}
         {permalink && <link rel="canonical" href={siteUrl + permalink} />}
       </Head>
+      {isMdx && <DocContent />}
+      {!isMdx &&
       <div
         className={clsx('container padding-vert--lg', styles.docItemWrapper)}>
         <div className="row">
@@ -181,6 +185,7 @@ function DocItem(props) {
           )}
         </div>
       </div>
+      }
     </>
   );
 }
