@@ -10,9 +10,9 @@
     "tailwind.min": "cross-env NODE_ENV=production postcss src/css/tailwind-src.css -o static/website/libs/tailwind.min.css"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-alpha.61",
-    "@docusaurus/plugin-client-redirects": "2.0.0-alpha.61",
-    "@docusaurus/preset-classic": "2.0.0-alpha.61",
+    "@docusaurus/core": "2.0.0-alpha.65",
+    "@docusaurus/plugin-client-redirects": "2.0.0-alpha.65",
+    "@docusaurus/preset-classic": "2.0.0-alpha.65",
     "@salesforce-ux/design-system": "^2.11.0",
     "@tailwindcss/ui": "^0.5.0",
     "add": "^2.0.6",
