@@ -6,11 +6,11 @@ module.exports =
   "Steedos Workflow": ["us", "us/training", "us/price", "us/download"],
   "华炎费控": ["solutions/cost","solutions/cost/project","solutions/cost/costcases"],
   // "华炎合同": ["products/contract","products/contract/features","products/contract/opensource", "products/contract/case"],
-  "销售管理":{
-    "销售管理": ["solutions/sales/home","solutions/sales/reason"],
-    "功能": ["solutions/sales/contacts","solutions/sales/business","solutions/sales/clue","solutions/sales/mobile","solutions/sales/im","solutions/sales/mobile_office","solutions/sales/libraries","solutions/sales/report","solutions/sales/forecast"],
-    "按角色": ["solutions/sales/role_professional","solutions/sales/role_supervisor","solutions/sales/role_operate","solutions/sales/role_manager","solutions/sales/role_expert","solutions/sales/role_service","solutions/sales/role_FAQ"]
-  },
+  // "销售管理":{
+  //   "销售管理": ["solutions/sales/home","solutions/sales/reason"],
+  //   "功能": ["solutions/sales/contacts","solutions/sales/business","solutions/sales/clue","solutions/sales/mobile","solutions/sales/im","solutions/sales/mobile_office","solutions/sales/libraries","solutions/sales/report","solutions/sales/forecast"],
+  //   "按角色": ["solutions/sales/role_professional","solutions/sales/role_supervisor","solutions/sales/role_operate","solutions/sales/role_manager","solutions/sales/role_expert","solutions/sales/role_service","solutions/sales/role_FAQ"]
+  // },
   "华炎知识管理": ["solutions/knowledge","solutions/knowledge/management","solutions/knowledge/case"],
   // "华炎魔方": [
   //   "platform", 
@@ -69,8 +69,11 @@ module.exports =
   "华炎API": {    
   },
   "华信": ["messenger/index", "messenger/download"],
-  // "视频": {
-  //   "华炎魔方总览": ["videos/steedos-digital-transformation", "videos/steedos-platform-features"],
-  //   "低代码开发培训": ["videos/lesson-object","videos/lesson-object-relationship"]
-  // }
+  // "报价": {
+  //   "报价": ["pricing/platform"],
+  // },
+  "解决方案": ["products/contract"],
+  "华炎魔方": {
+    "华炎魔方": ["platform/pricing"]
+  }
 }

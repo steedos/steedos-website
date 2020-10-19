@@ -18,6 +18,7 @@ module.exports = {
   // Used for publishing and more
   projectName: 'steedos.github.io',
   organizationName: 'steedos',
+  onBrokenLinks: 'warn', 
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
