@@ -78,8 +78,27 @@ module.exports =
   // "报价": {
   //   "报价": ["pricing/platform"],
   // },
-  "解决方案": ["products/contract"],
+  "解决方案": {
+    "解决方案": [
+      "products/oa", 
+      "products/contract",
+      "products/sales",
+      "products/purchase",
+      "products/cost",
+      // "products/workflow",
+    ],
+  },
   "华炎魔方": {
-    "华炎魔方": ["platform/pricing"]
+    "低代码平台": [
+      "platform", 
+      "videos", 
+      "platform/cases", 
+      "platform/pricing",
+      {
+        "type": "link",
+        "href": "https://github.com/steedos/steedos-platform",
+        "label": "开源"
+      }
+    ]
   }
 }
