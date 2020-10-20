@@ -35,7 +35,7 @@ module.exports =
     "开发文档": [
       "developer/datasource", "developer/object", 
       {
-        "字段": ["developer/object_field", "developer/select_field", "developer/inline_field", "developer/formula_field", "developer/summary_field"]
+        "字段": ["developer/object_field", "developer/complex_field", "developer/inline_field", "developer/formula_field", "developer/summary_field"]
       },
       "developer/listview", "developer/object_filter_conditions", "developer/object_permission", "developer/object_action", "developer/object_form", "developer/app", "developer/object_workflow", "developer/reports", "developer/report_jsreport"
     ],
