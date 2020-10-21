@@ -129,20 +129,28 @@ module.exports = {
         href: '/cn/'
       },
       items: [
-        {to: 'platform/', label: '低代码平台', position: 'left', activeBasePath: '/platform/',},
-        {label: '解决方案', position: 'left', to: 'products/oa/',
-          // items: [
-          //   // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
-          //   {to: 'products/oa/', label: '华炎办公', position: 'left'},
-          //   {to: 'products/contract/', label:'合同管理',position: 'left'},
-          //   {to: 'products/sales/', label:'销售管理',position: 'left'},
-          //   {to: 'products/purchase/', label:'采购管理',position: 'left'},
-          //   // {to: 'solutions/group/', label:'集团管控',position: 'left'},
-          //   {to: 'products/cost/', label: '费控管理', position: 'left'},
-          //   {to: 'products/workflow/', label: '流程管理', position: 'left'},
-          // ]
+        {to: 'platform/', label: '平台', position: 'left', activeBasePath: '/platform/',
+          items: [
+            // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
+            {to: 'platform/', label: '平台概览', position: 'left'},
+            {to: 'videos/', label:'视频演示',position: 'left'},
+            {to: 'pricing/platform', label:'报价',position: 'left'},
+          ]
+        },
+        {label: '应用案例', position: 'left', to: 'products/oa/',
+          items: [
+            // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
+            // {to: 'products/oa/', label: '华炎办公', position: 'left'},
+            {to: 'products/contract/', label:'合同',position: 'left'},
+            {to: 'products/sales/', label:'销售',position: 'left'},
+            {to: 'products/purchase/', label:'采购',position: 'left'},
+            // {to: 'solutions/group/', label:'集团管控',position: 'left'},
+            {to: 'products/cost/', label: '费控', position: 'left'},
+            {to: 'products/workflow/', label: '流程', position: 'left'},
+          ]
         },
         // {to: 'products/oa', label: '华炎云', position: 'left'},
+        {to: 'videos/', label: '视频', position: 'left',},
         {to: '/help/', label: '文档', position: 'left',
         items: [
           {to: '/help/user/', label: '帮助文档', position: 'left'},
@@ -151,8 +159,17 @@ module.exports = {
           {to: '/help/download', label: '下载客户端', position: 'left'},
         ]},
         // {to: '/platform/pricing', label: '报价', position: 'left',},
-        //{to: 'videos/', label: '视频', position: 'left',},
-        {to: 'us/', label: 'EN', position: 'right'},
+        {label: '登录', position: 'right',
+          items: [
+            {to: 'https://cn.steedos.com', label: '华炎办公', position: 'left'},
+          ]
+        },
+        {label: 'ZH', to: 'us/', position: 'right',
+          items: [
+            {to: '/', label: '中文', position: 'left'},
+            {to: '/us', label: 'English', position: 'left'},
+          ]
+        },
         // {
         //   href: 'https://github.com/steedos/steedos-platform/',
         //   position: 'right',
@@ -229,13 +246,13 @@ module.exports = {
       {to: '/us/', label: 'Home', position: 'left'},
       {to: '/us/help/workflow/README', label: 'Docs', position: 'left'},
       {to: '/us/login', label: 'Login', position: 'right'},
-      {to: 'cn/',label: '中文', position: 'right'},
-      {
-        href: 'https://github.com/steedos/',
-        position: 'right',
-        className: 'header-github-link',
-        'aria-label': 'GitHub repository',
-      },
+     
+      {label: 'EN', to: 'us/', position: 'right',
+      items: [
+        {to: '/us', label: 'English', position: 'left'},
+        {to: '/cn', label: '中文', position: 'left'},
+      ]
+    },
     ],
   },
 };
