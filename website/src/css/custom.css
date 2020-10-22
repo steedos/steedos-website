@@ -36,7 +36,9 @@
 .navbar__toggle {
   color: white;
 }
-
+.main-wrapper {
+  background-color: rgb(var(--color-cool-gray-50));
+}
 .markdown {
   --ifm-h1-font-size: 3rem;
   --ifm-h2-font-size: 2rem;
