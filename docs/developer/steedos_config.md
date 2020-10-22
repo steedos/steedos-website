@@ -35,23 +35,23 @@ tenant:
   name: Steedos
   logo_url:
   background_url:
+  saas: false
   enable_register: true
-  enable_forget_password: true
   enable_create_tenant: true
   enable_password_login: true
   enable_bind_email: false
   enable_bind_mobile: false
+  enable_mobile_code_login: false
+  enable_email_code_login: false
 ```
 
-- enable_register: 启用用户注册功能
-- enable_forget_password: 使用验证码登录；
-  - 如果enable_bind_mobile不为true，则使用邮箱验证码登录
-- enable_create_tenant: 启用创建工作区功能
-- enable_password_login: 启用密码登录；
-  - 如果enable_bind_email为true且使用邮箱密码登录时，邮箱必须是验证过的；
-  - 如果enable_bind_mobile为true且使用手机号密码登录，手机号必须是验证过的；
-- enable_bind_email: 支持邮箱验证码登录
-- enable_bind_mobile: 强制绑定手机号，登录后检测到用户手机号未验证，强制进入手机验证界面；如果为true，注册时仅支持手机号注册
+- enable_register: 允许创建账户，默认true
+- enable_bind_mobile: 强制绑定邮箱，默认false
+- enable_bind_email: 强制绑定邮箱，默认false
+- enable_create_tenant: 允许创建企业，默认true
+- enable_password_login: 允许使用密码登录，启用时，注册和登录都默认使用密码。默认true
+- enable_mobile_code_login: 允许使用手机验证码登录，启用时，注册和登录都默认使用验证码。
+- enable_email_code_login: 允许使用邮箱验证码登录，启用时，注册和登录都默认使用验证码。
 
 ## Web服务URL
 
