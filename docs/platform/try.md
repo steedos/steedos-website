@@ -12,33 +12,35 @@ hide_table_of_contents: true
 
 你可以通过以下方式体验华炎魔方。
 
-## 查看培训教程
+## 视频演示
+
+- [华炎魔方助力企业数字化转型](/videos/steedos-digital-transformation/)
+- [如何创建自定义应用程序](/videos/lesson-object/)
+- [华炎魔方十大引擎，开发效率提升十倍](/videos/steedos-platform-features/)
+- [如何设计审批流程](/videos/lesson-object/)
+- [如何填单和审批](/videos/workflow/user-contracts/)
+
+## 在线试用
+
+访问以下试用网址，注册账户，创建一个企业，就能体验华炎魔方的最新功能。
+
+- [华炎CRM试用环境（最新版）](https://salesforce.trial.steedos.com:8443/)
+
+## 预约演示
+
+[联系我们](http://localhost:3000/form/trial/)，我们的技术专家为您安排一对一的技术交流。我们的技术专家拥有十年以上的管理软件开发经验，无论您询问有关华炎魔方的功能、定价、实施或任何其他方面的问题，他们都将随时准备为您提供帮助。
+
+## 本地部署
+
+- [部署到 Windows](/help/deploy/deploy_windows.md): 通常用于部署开发环境，生产环境建议使用Ubuntu。
+- [部署到 Mac](/help/deploy/deploy_mac.md): 通常用于部署开发环境，生产环境建议使用Ubuntu。
+- [部署到 Ubuntu](/help/deploy/deploy_ubuntu.md): 部署到Ubuntu，并支持远程开发与调试。
+- [部署到 Heroku](/help/deploy/deploy_heroku.md): 利用Salesforce提供的免费云服务，部署开发环境。
+- [Docker 部署](/help/deploy/deploy_docker.md): 可选使用docker方式部署生产环境。
+- [集群部署](/help/deploy/deploy_cluster.md): 对于用户量大的系统，还可以采用多服务器集群部署模式。
+
+## 查看开发文档
 
 本教程以合同管理为例，指导你如何使用华炎魔方创建项目，配置业务对象，编程脚本，处理业务部门的各种个性化需求。您开发的新业务系统可以部署在本地运行。
 
 [如何使用华炎魔方，快速开发随需定制的管理系统？](/developer/)
-
-## 项目效果演示
-
-华炎办公是使用华炎魔方开发的SaaS版本办公平台，内置审批、公告、知识、任务、日程等常用办公管理功能，并嵌入了合同管理、CRM等标准模块。
-
-- 注册华炎云账户，在线试用[华炎办公](https://cn.steedos.com/)
-- 下载并运行[项目源码](https://github.com/steedos/steedos-project-oa)。
-- 查看[系统帮助](/help/)
-
-## 专属试用环境
-
-和我们联系，可以在我们的服务器上为您开通专属的虚拟机环境，来进行华炎魔方的体验和试用。虚拟机上已部署好华炎魔方的系统，您可以在电脑和手机上直接试用。也可以体会如何通过修改系统配置或是代码，零代码/低代码达成您的开发需求。
-
-- 在电脑端进入专属虚拟环境，试用华炎魔方；
-- 在手机端进入专属虚拟环境，试用华炎魔方；
-- 在电脑端，通过codeserver维护代码和系统。
-
-关于如何试用，请参考 [虚拟机环境试用说明](./try_vm/) 。
-
-## 克隆项目源码
-
-华炎魔方是[开源低代码开发平台](https://www.steedos.com/platform/)，我们将所有源码开源，与合作伙伴一起共建低代码开发平台生态体系。
-
-- [华炎魔方源码](https://github.com/steedos/steedos-platform)
-- [合同管理系统实例](https://github.com/steedos/steedos-contracts-app)
