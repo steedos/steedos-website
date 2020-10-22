@@ -32,7 +32,7 @@ module.exports =
     "开发文档": [
       "developer/datasource", "developer/object", 
       {
-        "字段": ["developer/object_field", "developer/complex_field", "developer/inline_field", "developer/formula_field", "developer/summary_field"]
+        "字段": ["developer/object_field", "developer/complex_field", "developer/inline_field"]
       },
       "developer/listview", "developer/object_filter_conditions", "developer/object_permission", "developer/object_action", "developer/object_form", "developer/app", "developer/object_workflow", "developer/reports", "developer/report_jsreport"
     ],
@@ -58,13 +58,13 @@ module.exports =
     "设置和维护华炎魔方": ["help/admin", 
       {
         "公司设置": ["help/organization", "help/profile", "help/permission_set", "help/permission_share", "help/workflow/admin_positions"],
-        "自定义应用": ["help/no-code/object", "help/no-code/object_subtable", "help/no-code/object_datasources", "help/no-code/object_web_forms"],
+        "自定义应用": ["help/no-code/object", "help/no-code/object_subtable", "help/no-code/formula_field", "help/no-code/summary_field"],
         "流程自动化": [{
           "批准过程": ["help/approval/approval_setup", "help/approval/approval_samples", "help/approval/approval_request", "help/approval/approval_terminology"],
-          "审批王": ["help/workflow/admin_form", "help/workflow/admin_flow", "help/workflow/admin_picturesignature", "help/no-code/object_workflows"],
+          "自定义审批": ["help/workflow/admin_form", "help/workflow/admin_flow", "help/workflow/admin_picturesignature", "help/no-code/object_workflows", "help/workflow/faq"],
         }],
-      }
-      , "help/workflow/faq"    ]
+        "系统集成": ["help/no-code/object_datasources", "help/no-code/object_web_forms"]
+      }    ]
   },
   "Steedos Help": {
     "Quick Guide": ["us/help/workflow/README", "us/help/workflow/guide_setup", "us/help/workflow/guide_user", "us/help/workflow/guide_admin", "us/help/workflow/guide_permissions", "us/help/workflow/guide_versions", "us/help/workflow/mp4", "us/help/workflow/faq"],

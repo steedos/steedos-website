@@ -1,5 +1,5 @@
 ---
-title: 零代码 - 业务对象
+title: 自定义应用 - 创建业务对象
 sidebar_label: 业务对象
 ---
 
