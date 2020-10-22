@@ -1,5 +1,5 @@
 ---
-title: 低代码开发平台解决方案手册
+title: 华炎魔方解决方案手册
 sidebar_label: 解决方案概览
 hide_table_of_contents: true
 background: /img/banner/service-overview-lg.png

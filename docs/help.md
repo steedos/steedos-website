@@ -1,6 +1,6 @@
 ---
-title: 用户手册
-sidebar_label: 概述
+title: 华炎魔方帮助文档
+sidebar_label: 帮助
 hide_table_of_contents: true
 background: /img/banner/default.png
 ---
@@ -11,26 +11,19 @@ import Card from '@site/src/components/Card';
 
 <div class="mt-12 grid gap-5 max-w-lg mx-auto md:grid-cols-2 lg:max-w-none">
 
-  <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.jpg"
-    title="华炎魔方助力企业数字化转型"
-    href="/videos/steedos-digital-transformation/"/>
+  <Card title="开通华炎魔方"
+    description="申请试用华炎魔方云服务，或是在本地服务器、云服务器安装部署华炎魔方。"
+    href="/help/deploy"/>
 
-  <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/user-contracts.jpg"
-    title="如何填单和审批"
-    href="/videos/workflow/user-contracts/"/>
+  <Card title="华炎魔方使用入门"
+    description="华炎魔方界面总览、如何管理您的数据、分析统计、和处理审批流程。"
+    href="/help/user/"/>
 
+  <Card title="设置和维护华炎魔方"
+    description="设置和维护贵公司、控制谁可以看到什么内容、自动化业务流程、创建自定义应用程序。"
+    href="/help/admin/"/>
+
+  <Card title="开发人员"
+    description="如何使用华炎魔方开发复杂业务系统：搭建开发环境、开发教程、开发文档、API接口。"
+    href="/developer/"/>
 </div>
-
-## 使用帮助
-
-- [如何下载客户端？](/help/download)
-- [如何管理人员？](/help/organization)
-
-## 流程审批
-
-- [如何填写申请单？](/help/workflow/instance_add.md)
-- [如何审批？](/help/workflow/instance_approve.md)
-- [如何设计流程？](/help/workflow/admin_flow)
-- [如何设计表单？](/help/workflow/admin_form)
-- [如何配置岗位？](/help/workflow/admin_positions)
-- [使用技巧](/help/workflow/faq)

@@ -1,5 +1,5 @@
 ---
-title: 用户手册
+title: 华炎魔方使用入门
 sidebar_label: 概述
 hide_table_of_contents: true
 background: /img/banner/default.png

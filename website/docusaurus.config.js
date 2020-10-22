@@ -133,7 +133,8 @@ module.exports = {
           items: [
             // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
             {to: 'platform/', label: '平台概览', position: 'left'},
-            {to: 'videos/', label:'视频演示',position: 'left'},
+            {to: '/videos/steedos-digital-transformation/', label:'数字化转型',position: 'left'},
+            {to: '/videos/lesson-object/', label:'零代码开发',position: 'left'},
             {to: 'pricing/platform', label:'报价',position: 'left'},
           ]
         },
@@ -152,12 +153,14 @@ module.exports = {
         // {to: 'products/oa', label: '华炎云', position: 'left'},
         {to: 'videos/', label: '视频', position: 'left',},
         {to: '/help/', label: '文档', position: 'left',
-        items: [
-          {to: '/help/user/', label: '帮助文档', position: 'left'},
-          {to: '/developer/deploy/', label:'安装部署',position: 'left'},
-          {to: '/developer/', label: '开发人员', position: 'left',},
-          {to: '/help/download', label: '下载客户端', position: 'left'},
-        ]},
+          // items: [
+          //   {to: '/help/user/', label: '帮助文档', position: 'left'},
+          //   {to: '/help/deploy/', label:'安装部署',position: 'left'},
+          //   {to: '/developer/', label: '开发人员', position: 'left',},
+          //   {to: '/help/download', label: '下载客户端', position: 'left'},
+          // ]
+        },
+        {to: 'platform/try', label:'试用',position: 'left'},
         // {to: '/platform/pricing', label: '报价', position: 'left',},
         {label: '登录', position: 'right',
           items: [

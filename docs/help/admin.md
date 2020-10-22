@@ -1,5 +1,5 @@
 ---
-title: 管理员手册
+title: 设置和维护华炎魔方
 sidebar_label: 概述
 hide_table_of_contents: true
 background: /img/banner/default.png

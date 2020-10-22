@@ -26,9 +26,6 @@ module.exports =
   "开发人员": {
     "快速向导": [
       "developer",
-      {
-         "安装": ["developer/deploy", "developer/deploy_windows", "developer/deploy_mac", "developer/deploy_ubuntu", "developer/deploy_heroku", "developer/deploy_docker", "developer/deploy_cluster"]
-      },
       "developer/steedos_server"
     ],
     "开发教程": ["developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report","developer/guide_flow","developer/guide_sync","developer/guide_companies","developer/guide_nc"],
@@ -51,17 +48,21 @@ module.exports =
       }]
   },
   "文档": {
-    "用户手册": ["help/user", "help/download",
+    "安装部署": ["help/deploy", "help/deploy/deploy_windows", "help/deploy/deploy_mac", "help/deploy/deploy_ubuntu", "help/deploy/deploy_heroku", "help/deploy/deploy_docker", "help/deploy/deploy_cluster"],
+    "使用入门": ["help/user", "help/download",
     {
-      "流程审批": ["help/workflow/instance_add", "help/workflow/instance_approve", "help/workflow/instance_carboncopy", "help/workflow/instance_distribute", "help/workflow/instance_forward", "help/workflow/instance_print", "help/workflow/instance_search", "help/workflow/instance_monitor", "help/workflow/instance_export" ],
+      "审批王": ["help/workflow/instance_add", "help/workflow/instance_approve", "help/workflow/instance_carboncopy", "help/workflow/instance_distribute", "help/workflow/instance_forward", "help/workflow/instance_print", "help/workflow/instance_search", "help/workflow/instance_monitor", "help/workflow/instance_export" ],
       "数据台账": ["help/record_list", "help/record_view", "help/record_report", "help/notifications"],  
     }
     ],
-    "管理员手册": ["help/admin", 
+    "设置和维护华炎魔方": ["help/admin", 
       {
-        "公司设置": ["help/organization", "help/profile", "help/permission_set", "help/permission_share"],
-        "流程设置": ["help/workflow/admin_form", "help/workflow/admin_flow", "help/workflow/admin_positions", "help/workflow/admin_picturesignature"],
-        "对象设置": ["help/no-code/object", "help/no-code/object_subtable", "help/no-code/object_workflows", "help/no-code/object_datasources", "help/no-code/object_web_forms"]
+        "公司设置": ["help/organization", "help/profile", "help/permission_set", "help/permission_share", "help/workflow/admin_positions"],
+        "自定义应用": ["help/no-code/object", "help/no-code/object_subtable", "help/no-code/object_datasources", "help/no-code/object_web_forms"],
+        "流程自动化": [{
+          "批准过程": ["help/approval/approval_setup", "help/approval/approval_samples", "help/approval/approval_request", "help/approval/approval_terminology"],
+          "审批王": ["help/workflow/admin_form", "help/workflow/admin_flow", "help/workflow/admin_picturesignature", "help/no-code/object_workflows"],
+        }],
       }
       , "help/workflow/faq"    ]
   },
