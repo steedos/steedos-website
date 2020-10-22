@@ -8,6 +8,11 @@ import FAQ from '@site/src/components/FAQ';
 export default function TrialForm() {
   return (
 
+<Layout
+      title="预约演示"
+      description="华炎魔方是一款随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。"
+      keywords={["低代码,低代码开发,低代码开发平台,开源低代码开发平台,快速开发平台,快速开发工具,paas,零代码,零代码开发,零代码开发平台"]}
+>
 <div class="relative bg-white container">
   <div class="absolute inset-0">
     <div class="absolute inset-y-0 left-0 w-1/2 bg-gray-50"></div>
@@ -38,11 +43,8 @@ export default function TrialForm() {
           联系我们
         </h2>
         <p class="mt-6 text-lg leading-6 text-gray-500">
-         拨打热线：400-820-1612，或微信扫描以下二维码：
+         拨打热线：400-820-1612
         </p>
-        <div className="flex lg:flex-shrink-0">
-        <img className="h-40 w-40" src="/assets/contact_by_weixin.png"/>
-        </div>
       </div>
     </div>
     <div class="bg-white py-12 px-4 sm:px-6 lg:col-span-2 lg:px-8 xl:pl-12">
@@ -104,5 +106,6 @@ export default function TrialForm() {
     </div>
   </div>
 </div>
+</Layout>
 )};
 
