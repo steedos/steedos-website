@@ -136,6 +136,7 @@ module.exports = {
             {to: '/videos/steedos-digital-transformation/', label:'数字化转型',position: 'left'},
             {to: '/videos/lesson-object/', label:'零代码开发',position: 'left'},
             {to: 'pricing/platform', label:'报价',position: 'left'},
+            {to: 'form/trial/', label:'预约演示',position: 'left'},
           ]
         },
         {label: '应用案例', position: 'left', to: 'products/oa/',
