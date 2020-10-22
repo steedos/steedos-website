@@ -122,14 +122,15 @@ module.exports = {
     navbar: {
       hideOnScroll: false,
       title: '',
+      style: 'dark',
       logo: {
         alt: '华炎魔方',
-        src: 'img/logo_platform.png',
-        srcDark:  'img/logo_platform_white.png',
+        src: 'img/logo_platform_white.png',
+        // srcDark:  'img/logo_platform_white.png',
         href: '/cn/'
       },
       items: [
-        {to: 'platform/', label: '平台', position: 'left', activeBasePath: '/platform/',
+        {to: 'platform/', label: '平台', position: 'left', activeBasePath: 'platform/none-active',
           items: [
             // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
             {to: 'platform/', label: '平台概览', position: 'left'},

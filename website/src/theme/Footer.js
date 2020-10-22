@@ -5,7 +5,7 @@ class Footer extends React.Component {
     render() {
         return (
 <>
-<div className="relative bg-blue-700">
+<div className="relative bg-gray-600">
   <div className="max-w-screen-xl mx-auto py-8 px-4 lg:py-8 lg:flex lg:items-center lg:justify-between">
     <div className="">
       <div className="text-xl mb-4 leading-6 font-semibold uppercase tracking-wider text-gray-300">
