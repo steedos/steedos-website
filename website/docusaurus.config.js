@@ -140,7 +140,7 @@ module.exports = {
             {to: 'form/trial/', label:'预约演示',position: 'left'},
           ]
         },
-        {label: '应用案例', position: 'left', to: 'products/oa/',
+        {label: '应用', position: 'left', to: 'products/oa/',
           items: [
             // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
             // {to: 'products/oa/', label: '华炎办公', position: 'left'},
@@ -154,15 +154,10 @@ module.exports = {
         },
         // {to: 'products/oa', label: '华炎云', position: 'left'},
         {to: 'videos/', label: '视频', position: 'left',},
-        {to: '/help/', label: '文档', position: 'left',
-          // items: [
-          //   {to: '/help/user/', label: '帮助文档', position: 'left'},
-          //   {to: '/help/deploy/', label:'安装部署',position: 'left'},
-          //   {to: '/developer/', label: '开发人员', position: 'left',},
-          //   {to: '/help/download', label: '下载客户端', position: 'left'},
-          // ]
-        },
+        {to: 'company/customers', label: '案例', position: 'left'},
+        {to: '/help/', label: '文档', position: 'left',},
         {to: 'platform/try', label:'试用',position: 'left'},
+        {to: 'company/contact-us', label: '联系我们', position: 'left'},
         // {to: '/platform/pricing', label: '报价', position: 'left',},
         {label: '登录', position: 'right',
           items: [
