@@ -18,10 +18,11 @@ Steedos支持以下字段类型。
 - 网址(url): 在只读时， 点击会以窗口形式打开网址。
 - 邮件地址(email): 在只读时，点击会自动打开邮件客户端，并将字段值带入收件人中。
 - 主表/子表(master_detail): 主表子表字段类型是引用字段类型的一种扩展，将当前记录链接到主表成为子记录。
-- 表格(grid)
-- 自动编号(autonumber)
-- 公式(formula)
-- 汇总(summary)
+- 表格(grid)：表格字段类型包含多个列字段，在界面上显示为一个表格。
+- 自动编号(autonumber)：设置公式formula后，无需手动输入，由系统直接生成编号值。
+- 开关(toggle): 界面生成类似勾选框的开关键。
+- 公式(formula)：设置返回值类型data_type和公式formula后，此字段无需手动输入，由系统自动计算得出。
+- 汇总(summary)：定义子表中的某个字段值，在主表中显示汇总值，主要用于数字和金额的sum累加计算。
 
 ![表单编辑效果](/assets/field_guide.png)
 
@@ -248,6 +249,16 @@ is_done:
   type: boolean
   label: 已完成
   defaultValue: false
+```
+### 开关 toggle
+
+开关类型字段，界面生成类似勾选框的开关键。
+
+```yaml
+is_enabled:
+  type: toggle
+  label: 已启用
+  defaultValue: true
 ```
 
 ### 数值 number
