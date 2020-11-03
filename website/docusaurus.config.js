@@ -136,11 +136,10 @@ module.exports = {
             {to: 'platform/', label: '平台概览', position: 'left'},
             {to: '/videos/steedos-digital-transformation/', label:'数字化转型',position: 'left'},
             {to: '/videos/lesson-object/', label:'零代码开发',position: 'left'},
-            {to: 'pricing/platform', label:'报价',position: 'left'},
             {to: 'form/trial/', label:'预约演示',position: 'left'},
           ]
         },
-        {label: '应用', position: 'left', to: 'products/oa/',
+        {label: '解决方案', position: 'left', to: 'products/oa/',
           items: [
             // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
             // {to: 'products/oa/', label: '华炎办公', position: 'left'},
@@ -152,10 +151,17 @@ module.exports = {
             {to: 'products/workflow/', label: '流程', position: 'left'},
           ]
         },
-        // {to: 'products/oa', label: '华炎云', position: 'left'},
+        {label: '资源', position: 'left', 
+          items: [
+            {to: 'help/deploy', label: '安装部署', position: 'left',},
+            {to: 'help/download/', label: '下载客户端', position: 'left',},
+            {to: 'help/user/', label: '使用手册', position: 'left',},
+            {to: 'help/admin/', label: '系统管理员', position: 'left',},
+            {to: 'developer/', label: '开发人员', position: 'left',},
+          ]
+        },
         {to: 'videos/', label: '视频', position: 'left',},
-        {to: 'company/customers', label: '案例', position: 'left'},
-        {to: '/help/', label: '文档', position: 'left',},
+        {to: 'pricing/platform', label:'报价',position: 'left'},
         {to: 'platform/try', label:'试用',position: 'left'},
         {to: 'company/contact-us', label: '联系我们', position: 'left'},
         // {to: '/platform/pricing', label: '报价', position: 'left',},
