@@ -158,6 +158,7 @@ module.exports = {
             {to: 'help/user/', label: '使用手册', position: 'left',},
             {to: 'help/admin/', label: '系统管理员', position: 'left',},
             {to: 'developer/', label: '开发人员', position: 'left',},
+            {to: 'https://github.com/steedos/steedos-platform/', label: '开源项目', position: 'left',},
           ]
         },
         {to: 'videos/', label: '视频', position: 'left',},
