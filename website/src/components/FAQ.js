@@ -38,7 +38,7 @@ class FAQ extends React.Component {
                         </dt>
                         <dd class="mt-2">
                           <p class="text-base leading-6 text-gray-500">
-                            低代码是全新的开发方式，在降低代码量的同时，大幅提升了开发效率。华炎公司希望通过开源并免费的方式，与开源社区共同打造中国最优秀的低代码开发平台。
+                            每个软件公司都需要一套低代码开发工具，但是单独开发和维护一套这样的平台成本巨大。华炎希望与开源社区共同打造中国最优秀的低代码开发平台。
                           </p>
                         </dd>
                       </div>
@@ -48,7 +48,7 @@ class FAQ extends React.Component {
                         </dt>
                         <dd class="mt-2">
                           <p class="text-base leading-6 text-gray-500">
-                            <a href="https://github.com/steedos/steedos-platform/" target="_blank" class=" text-gray-700">华炎魔方开源社区版</a>基于<a href="https://choosealicense.com/licenses/mit/" target="_blank" class=" text-gray-700">MIT协议</a>，禁用了流程引擎。基于华炎魔方开发的解决方案，可以在公司内部免费使用，也可以销售给第三方公司。
+                            <a href="https://github.com/steedos/steedos-platform/" target="_blank" class=" text-gray-700">华炎魔方开源社区版（标准版）</a>基于<a href="https://choosealicense.com/licenses/mit/" target="_blank" class=" text-gray-700">MIT协议</a>，内置华炎魔方十大引擎，完全免费。基于华炎魔方开发的解决方案，可以单独定价销售。
                           </p>
                         </dd>
                       </div>
@@ -90,7 +90,7 @@ class FAQ extends React.Component {
                         </dt>
                         <dd class="mt-2">
                           <p class="text-base leading-6 text-gray-500">
-                            华炎魔方是专业的企业管理软件开发工具，内置十大引擎，包含了业务建模、业务逻辑处理、流程审批、组织与权限管理等企业软件关键必备的功能。
+                            华炎魔方比较适合开发企业管理类的应用，例如OA、CRM、进销存、ERP、项目管理、订单管理、库存管理，也可以作为各种智能化业务系统的后台数据平台。
                           </p>
                         </dd>
                       </div>
@@ -104,5 +104,6 @@ class FAQ extends React.Component {
         )
         }
     }
+
 
 export default FAQ;
