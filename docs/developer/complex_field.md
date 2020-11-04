@@ -267,7 +267,7 @@ autonumber对象的字段包括：
     inlineHelpText: 行项目的销售价格与数量相乘。
 ```
 
-更多示例请参考[通过公式计算字段值](formula_field.md)。
+更多示例请参考[通过公式计算字段值](help/no-code/formula_field.md)。
 
 ### data_type属性
 公式的数据类型决定预期从公式返回的数据的类型。
