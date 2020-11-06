@@ -25,7 +25,7 @@ export default function TrialForm() {
         </h2>
         <div class="mt-8">
           <span class="text-xl font-extrabold leading-7 text-gray-500">
-            上海华炎软件科技有限公司
+            您可以通过以下方式联系我们，或填写右侧预约表格。
           </span>
         </div>
         <div class="mt-9">

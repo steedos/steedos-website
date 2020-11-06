@@ -50,14 +50,12 @@ export default function TrialForm() {
               上海市九新公路76号嘉和阳光大厦505
             </div>
           </div>
-          <div class="mt-4 flex">
-            <div class="flex-shrink-0">
-              <svg class="h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-            </div>
-            <div class="ml-3 text-lg leading-6 text-gray-500">
-                使用微信扫描以下二维码:
+          <h2 class="mt-8 text-2xl leading-8 font-extrabold text-gray-900 sm:text-3xl sm:leading-9">
+            在线咨询
+          </h2>
+          <div class="flex">
+            <div class="text-lg leading-6 text-gray-500">
+              请使用微信扫描以下二维码:
               <img class="mt-3" src="/assets/contact_by_weixin.png"></img>
             </div>
           </div>
@@ -66,11 +64,11 @@ export default function TrialForm() {
     </div>
     <div class="bg-white py-12 px-4 sm:px-6 lg:col-span-2 lg:px-8 xl:pl-12">
       <div class="max-w-lg mx-auto lg:max-w-none">
-        <h2 class="text-xl leading-8 tracking-tight text-gray-900 sm:leading-9">
+        <h2 class="text-2xl leading-8 tracking-tight text-gray-900 sm:leading-9">
           给我们留言
         </h2>
         <p class="leading-8 tracking-tight text-gray-900 sm:leading-9">
-          请填写以下表格，我们的产品顾问会主动与您联系。
+          填写以下表格，我们的产品顾问会主动与您联系。
           （请填写所有字段）
         </p>
 
