@@ -240,6 +240,10 @@ module.exports = {
             from: ['/solutions/workflow', '/solutions/workflow/cases', '/solutions/workflow/download', '/solutions/workflow/features', '/solutions/workflow/function', '/solutions/workflow/price', '/solutions/workflow/scenario'],
             to: '/products/workflow',
           },
+          {
+            from: ['/platform/pricing'],
+            to: '/pricing/platform',
+          },
         ],
       },
     ],
