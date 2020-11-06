@@ -21,7 +21,7 @@ export default function TrialForm() {
     <div class="bg-gray-50 py-12 px-4 sm:px-6 lg:col-span-3 lg:px-8 xl:pr-12">
     <div>
         <h2 class="text-2xl leading-8 font-extrabold text-gray-900 sm:text-3xl sm:leading-9">
-          联系我们，预约产品演示
+          联系我们
         </h2>
         <div class="mt-8">
           <span class="text-xl font-extrabold leading-7 text-gray-500">
@@ -67,7 +67,7 @@ export default function TrialForm() {
     <div class="bg-white py-12 px-4 sm:px-6 lg:col-span-2 lg:px-8 xl:pl-12">
       <div class="max-w-lg mx-auto lg:max-w-none">
         <h2 class="text-xl leading-8 tracking-tight text-gray-900 sm:leading-9">
-          预约产品演示
+          给我们留言
         </h2>
         <p class="leading-8 tracking-tight text-gray-900 sm:leading-9">
           请填写以下表格，我们的产品顾问会主动与您联系。
