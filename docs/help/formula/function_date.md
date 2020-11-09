@@ -12,8 +12,9 @@ title: 日期和时间函数
 日期、日期时间或日期、日期时间格式的文本值的合并字段或表达式
 
 ```js
-DATEVALUE(ClosedDate) 
+DATEVALUE(ClosedDate)
 ```
+
 基于结束日期时间字段值显示日期值，参数ClosedDate可以是日期、日期时间类型，也可以是日期、日期时间格式的字符串类型。
 
 
