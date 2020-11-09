@@ -105,7 +105,9 @@ NumberOfEmployees^4
 
 ## = 与 ==（等于）
 
-> 不要使用此函数进行空比较，如 MyDateTime__c == null。而应使用[ISBLANK](function_logical)。
+:::caution 注意
+不要使用此函数进行空比较，如 MyDateTime__c == null。而应使用[ISBLANK](function_logical)。
+:::
 
 计算两个值是否相等。= 和 == 运算符可以互换。
 
@@ -131,9 +133,11 @@ IF(Probability =1, ROUND(Amount*0.02, 2), 0)
 
 具有 100% Probability（可能性）和 100,000 美元 Amount（金额）的业务机会将获得 2,000 美元的佣金。
 
-## <> 与 !=（不等于）
+## <\> 与 !=（不等于）
 
-> 不要使用此函数进行空比较，如 MyDateTime__c != null。而应使用[ISBLANK](function_logical)。
+:::caution 注意
+不要使用此函数进行空比较，如 MyDateTime__c != null。而应使用[ISBLANK](function_logical)。
+:::
 
 计算两个值是否不相等。
 
@@ -162,7 +166,7 @@ IF(AnnualRevenue < 1000000, 1, 2)
 
 将值“1”赋予小于一百万的收入，将值“2”赋予大于一百万的收入。
 
-## >（大于）
+## \>（大于）
 
 计算一个值是否大于此符号后面的值。
 
@@ -190,7 +194,7 @@ IF(AnnualRevenue <= 1000000, 1, 2)
 
 将值“1”赋予小于等于一百万的收入，将值“2”赋予大于一百万的收入。
 
-## >=（大于或等于）
+## \>=（大于或等于）
 
 计算一个值是否大于或等于此符号后面的值。
 
