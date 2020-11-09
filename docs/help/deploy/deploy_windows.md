@@ -140,3 +140,9 @@ yarn start
 ```
 
 > 也可按 F5 即可使用 debug 模式启动项目
+
+### 常见问题解答
+
+#### `fibers: Command failed`
+
+通常会伴随 `gyp ERR! find Python Python is not set from command line or npm configuration` 的信息，是因为本地 python 未正常安装或者 python 命令未加入到环境变量(PATH)中
