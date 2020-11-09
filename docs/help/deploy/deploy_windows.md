@@ -35,37 +35,37 @@ yarn config set registry https://registry.npm.taobao.org
 
 ### 安装 mongodb-v4.2
 
-根据官方向导，安装最新的[mongodb4.2](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)，选择安装成 windows 服务
+根据官方向导，安装最新的[mongodb4.2](https://docs.mongodb.com/v4.2/tutorial/install-mongodb-on-windows/)，选择安装成 windows 服务
 
-- 右键以管理员身份运行mongodb-win32-x86_64-2012plus-4.2.8-signed.msi，点击Next
+- 右键以管理员身份运行 mongodb-win32-x86_64-2012plus-4.2.8-signed.msi，点击 Next
 
 ![安装mongodb](/assets/windows/mongodb_1.jpeg)
 
-- 点击I accept the terms in the license Agreement，点击Next
+- 点击 I accept the terms in the license Agreement，点击 Next
 
 ![安装mongodb](/assets/windows/mongodb_2.jpeg)
 
-- 选择默认安装路径，点击complete；自定义安装路径，点击custom，点击Next
+- 选择默认安装路径，点击 complete；自定义安装路径，点击 custom，点击 Next
 
 ![安装mongodb](/assets/windows/mongodb_3.jpeg)
 
-- 如果选择custom，点击Browse选择路径，点击Next
+- 如果选择 custom，点击 Browse 选择路径，点击 Next
 
 ![安装mongodb](/assets/windows/mongodb_4.jpeg)
 
-- Service Configuration选择默认的 Run service as Network Service User，直接点击Next
+- Service Configuration 选择默认的 Run service as Network Service User，直接点击 Next
 
 ![安装mongodb](/assets/windows/mongodb_5.jpeg)
 
-- 取消勾选Install MongoDB Compass，点击Next
+- 取消勾选 Install MongoDB Compass，点击 Next
 
 ![安装mongodb](/assets/windows/mongodb_6.jpeg)
 
-- 点击Install，开始安装
+- 点击 Install，开始安装
 
 ![安装mongodb](/assets/windows/mongodb_7.jpeg)
 
-- 点击Finish，完成安装
+- 点击 Finish，完成安装
 
 ![安装mongodb](/assets/windows/mongodb_8.jpeg)
 
@@ -84,9 +84,13 @@ replication:
 
 初始化数据库：
 
+打开命令提示符，输入`mongo`命令进入 mongodb 控制台
+
+> 如果报错 mongo 命令未找到则执行 `C:\Program Files\MongoDB\Server\4.2\bin\mongo.exe` 程序
+
+在 mongodb 控制台中输入以下命令初始化数据库
+
 ```bash
-# 首先进入mongo控制台
-mongo
 # 执行初始化函数
 rs.initiate()
 # 查看配置
