@@ -8,7 +8,7 @@ title: Windows 部署
 
 ## 搭建运行环境
 
-需要安装 [Github Desktop](https://desktop.github.com/)、[node-v12](https://nodejs.org/download/release/v12.19.0/win-x64/node.exe)、[mongodb-v4.2](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)、[Robo 3T](https://robomongo.org/)、[Visual Studio Code](https://code.visualstudio.com/)
+需要安装 [Github Desktop](https://desktop.github.com/)、[node-v12](https://nodejs.org/dist/latest-v12.x/node-v12.19.0-x64.msi)、[mongodb-v4.2](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)、[Robo 3T](https://robomongo.org/)、[Visual Studio Code](https://code.visualstudio.com/)
 
 ### 安装 Github Desktop
 
