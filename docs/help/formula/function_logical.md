@@ -71,7 +71,7 @@ BLANKVALUE(Payment_Due_Date__c, StartDate +5)
 这是一个自定义公式字段 Days Open 的示例，使用该示例可根据个案未处理的天数显示不同的文本：
 
 ```js
-CASE(Days_Open__c, 3, 
+CASE(Days_Open__c, 3,
   "Reassign", 2, "Assign Task", "Maintain")
 ```
 
@@ -89,9 +89,9 @@ CASE(Days_Open__c, 3, 
 CASE(MONTH(LastActivityDate),
 1, "January",
 2, "February",
-3, "March", 
-4, "April", 
-5, "May", 
+3, "March",
+4, "April",
+5, "May",
 6, "June",
 7, "July",
 8, "August",
@@ -161,10 +161,10 @@ IF(AND(Payment_Due_Date__c < TODAY(),​​Payment_Status__c =“UNPAID”) , �
 使用该默认值公式可根据用户所在城市设置资产的税率。使用以下默认值创建自定义百分比字段：
 
 ```js
-IF($user.city = "Napa", 0.0750, 
- IF($user.city = "Paso Robles", 0.0725, 
-  IF($user.city = "Sutter Creek", 0.0725, 
-   IF($user.city = "Los Olivos", 0.0750, 
+IF($user.city = "Napa", 0.0750,
+ IF($user.city = "Paso Robles", 0.0725,
+  IF($user.city = "Sutter Creek", 0.0725,
+   IF($user.city = "Los Olivos", 0.0750,
     IF($user.city = "Livermore", 0.0875, null
     )
    )
