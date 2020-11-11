@@ -132,9 +132,9 @@ CASE(1, IF(ISPICKVAL​ (Term__c, "12"),​ 1, 0),
 在该公式中，Term（期限）是一个选项列表字段，当它包含表示真的值 1 时，将与“每月提交量”相乘。
 
 - ■ 需包含其他结果值。
-- ■ 如果任何表达式返回一个错误，那么，即使其他表达式返回的值正确，CASE 函数也将返回一个错误。例如，在 CASE(Field\_\_c,"Partner", "P",​ "Customer", "C", LEFT(Field\_\_c, -5)) 公式中，即使其中字段的值是“Partner”（合作伙伴）或“Customer”（客户），该公式也会由于上一条语句不合逻辑而返回一个错误。
-- ■ 如果 CASE 函数中的字段为空，它将返回其他结果值。例如，如果 Days Open（未处理天数）字段为空、0 或者 2 和 3 以外的任何值，CASE(Days_Open__c, 3, "Reassign", 2,​ "Assign Task", "Maintain") 公式将显示“Maintain”（维护）。
-- ■ 使用 CASE 函数可以确定选项列表值是否等于特定的值。例如，当 Term（期限）为 12 时，CASE(Term\_\_c, "12", 12 Monthly_Commit\_\_c, "24",​ 24 * Monthly_Commit\_\_c, 0) 公式将 Monthly Commit（每月提交量）乘以 12；当 Term（期限）为 24 时，该公式将 Monthly Commit（每月提交量）乘以 24。否则，结果为零。
+- ■ 如果任何表达式返回一个错误，那么，即使其他表达式返回的值正确，`CASE`函数也将返回一个错误。例如，在`CASE(Field__c,"Partner", "P",​ "Customer", "C", LEFT(Field__c, -5))` 公式中，即使其中字段的值是“Partner”（合作伙伴）或“Customer”（客户），该公式也会由于上一条语句不合逻辑而返回一个错误。
+- ■ 如果 CASE 函数中的字段为空，它将返回其他结果值。例如，如果 Days Open（未处理天数）字段为空、0 或者 2 和 3 以外的任何值，`CASE(Days_Open__c, 3, "Reassign", 2,​ "Assign Task", "Maintain")`公式将显示“Maintain”（维护）。
+- ■ 使用 CASE 函数可以确定选项列表值是否等于特定的值。例如，当 Term（期限）为 12 时，`CASE(Term__c, "12", 12 Monthly_Commit__c, "24",​ 24 * Monthly_Commit__c, 0)` 公式将 Monthly Commit（每月提交量）乘以 12；当 Term（期限）为 24 时，该公式将 Monthly Commit（每月提交量）乘以 24。否则，结果为零。
 :::
 
 ## IF
