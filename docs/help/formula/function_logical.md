@@ -186,7 +186,7 @@ IF($user.city = "Napa", 0.0750,
 
 **参数：**
 
-- *表达式:* `text`
+- *表达式:* `text/number/date/datetime`
 用您希望计算的表达式替换表达式。
 
 ```js
@@ -203,6 +203,7 @@ IF($user.city = "Napa", 0.0750,
 
 - ■ 在新公式中使用 ISBLANK 替代 ISNULL。ISBLANK 与 ISNULL 功能相同，但还支持文本字段。公式支持 ISNULL，但是推荐使用 ISBLANK。
 - ■ 请不要用`MyDateTime__c == null`这种表达式判断空值，而应该使用`ISBLANK(MyDateTime__c)`。
+- ■ 参数支持数据类型text, number, date, datetime等，但是不支持类型boolean。
 - ■ 如果字段包含字符、空白或零，则字段不为空。例如，如果字段包含使用空格键插入的空格，则该字段不为空。
 - ■ 如果字段没有值，则使用 BLANKVALUE 函数返回指定字符串；如果您只想检查字段是否有值，则使用 ISBLANK 函数。
 - ■ 如果您对数值字段使用该函数，则字段没有值且配置将空白字段处理为空白时，该函数才返回 TRUE。
