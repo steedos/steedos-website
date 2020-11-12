@@ -19,7 +19,7 @@ title: 编写验证规则的提示
 - 使用验证规则时需要注意字段值为空的情况，请使用 ISBLANK 函数判断字段是否为空。例如，要验证自定义字段不为空且不能等于1，请使用下面的验证规则以在该字段为空白或1时显示错误：OR (ISBLANK (field__c), field__c=1)
 
 :::caution 注意
-与公式字段不同，在配置验证规则时不可以配置空值处理方式，如果公式中引用了值为空的数值类型的字段时，是按0值处理的，即 [ISBLANK(count__c)](function_logical#isblank) 这样的表达式，只要count__c字段类型是数值，任何情况下在验证规则中它的返回值都是TRUE，另一个空值处理函数 [BLANKVALUE](function_logical#blankvalue) 也类似。
+与公式字段不同，在配置验证规则时不可以配置空值处理方式，如果公式中引用了值为空的数值类型的字段时，是按0值处理的，即 [ISBLANK(count__c)](/help/formula/function_logical#isblank) 这样的表达式，只要count__c字段类型是数值，任何情况下在验证规则中它的返回值都是TRUE，另一个空值处理函数 [BLANKVALUE](/help/formula/function_logical#blankvalue) 也类似。
 :::
 
 ## 编写验证规则错误消息的提示
