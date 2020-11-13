@@ -307,8 +307,8 @@ CASE( MOD( My_Date__c - DATE(1900, 1, 7), 7),
 
 ```js
 OR (
-YEAR( My_Date__c ) <> YEAR ( TODAY() ),
-MONTH( My_Date__c ) <> MONTH ( TODAY() )
+   YEAR( My_Date__c ) <> YEAR ( TODAY() ),
+   MONTH( My_Date__c ) <> MONTH ( TODAY() )
 )
 ```
 
