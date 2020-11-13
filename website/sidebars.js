@@ -59,7 +59,9 @@ module.exports =
       {
         "公司设置": ["help/organization", "help/profile", "help/permission_set", "help/permission_share", "help/workflow/admin_positions"],
         "自定义应用": ["help/no-code/object", "help/no-code/object_subtable", "help/no-code/formula_field", "help/no-code/summary_field"],
-        "流程自动化": [{
+        "自动执行业务流程": [
+          "help/auto_process/summary",{
+          "工作流": ["help/auto_workflow/summary", "help/auto_workflow/create", "help/auto_workflow/examples"],
           "批准过程": ["help/approval/approval_summary", "help/approval/approval_setup", "help/approval/approval_samples", "help/approval/approval_request", "help/approval/approval_terminology"],
           "自定义审批": ["help/workflow/admin_form", "help/workflow/admin_flow", "help/workflow/admin_picturesignature", "help/no-code/object_workflows", "help/workflow/faq"],
         }],
