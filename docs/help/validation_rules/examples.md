@@ -24,7 +24,7 @@ AND(
 
 :::note 提示
 
-华炎魔方公式引擎暂时不支持ISNUMBER函数，可以用正规代替，请参考 [REGEX](/help/formula/functions#REGEX) ,该示例可替换为：
+华炎魔方公式引擎暂时不支持ISNUMBER函数，可以用正规代替，请参考 [REGEX](/help/formula/function_advanced#REGEX) ,该示例可替换为：
 
 ```js
 AND(
@@ -174,7 +174,7 @@ AND(
 
 :::note 提示
 
-您还可使用正则表达式来验证邮政编码；有关使用正则表达式的公式示例，请参阅[REGEX](/help/formula/functions#REGEX)
+您还可使用正则表达式来验证邮政编码；有关使用正则表达式的公式示例，请参阅[REGEX](/help/formula/function_advanced#REGEX)
 
 :::
 
@@ -636,7 +636,7 @@ HasOpportunityLineItem中主表业务机会上的字段，当其子表业务机�
 
 :::note 提示
 
-类似格式校验这种需求，用正则函数[REGEX](/help/formula/functions#REGEX)实现可能更实用，有时也更简单。
+类似格式校验这种需求，用正则函数[REGEX](/help/formula/function_advanced#REGEX)实现可能更实用，有时也更简单。
 
 :::
 
