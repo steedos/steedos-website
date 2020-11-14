@@ -189,7 +189,8 @@ git config --global user.email "your email"
 启动 code-server 服务后关闭了终端，code-server 服务访问不了，执行以下命令后重启服务器：
 
 ```bash
-sudo loginctl enable-linger username
+sudo loginctl enable-linger {username}
 ```
 
 > 来源： https://github.com/cdr/code-server/issues/1673
+> username 为登陆用户名 如 ubuntu
