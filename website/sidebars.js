@@ -59,6 +59,12 @@ module.exports =
       {
         "公司设置": ["help/organization", "help/profile", "help/permission_set", "help/permission_share", "help/workflow/admin_positions"],
         "自定义应用": ["help/no-code/object", "help/no-code/object_subtable", "help/no-code/formula_field", "help/no-code/summary_field"],
+        "通过公式计算字段值": [
+          "help/formula/summary",
+          "help/formula/create",
+          "help/formula/date",{
+          "公式中的运算符和函数": ["help/formula/functions", "help/formula/operator_math", "help/formula/operator_logical", "help/formula/operator_text", "help/formula/function_date", "help/formula/function_logical", "help/formula/function_math", "help/formula/function_text", "help/formula/function_advanced"],
+        }],
         "自动执行业务流程": [
           "help/auto_process/summary",{
           "工作流": ["help/auto_workflow/summary", "help/auto_workflow/create", "help/auto_workflow/examples"],
