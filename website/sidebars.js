@@ -64,7 +64,7 @@ module.exports =
           "help/formula/create",
           "help/formula/date",{
           "运算符和函数": ["help/formula/functions", "help/formula/operator_math", "help/formula/operator_logical", "help/formula/operator_text", "help/formula/function_date", "help/formula/function_logical", "help/formula/function_math", "help/formula/function_text", "help/formula/function_advanced"],
-        }],
+        }, "help/formula/examples"],
         "自动执行业务流程": [
           "help/auto_process/summary",{
           "工作流": ["help/auto_workflow/summary", "help/auto_workflow/create", "help/auto_workflow/examples"],
