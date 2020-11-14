@@ -62,6 +62,7 @@ module.exports =
         "通过公式计算字段值": [
           "help/formula/summary",
           "help/formula/create",
+          "help/formula/limits",
           "help/formula/best_practices",
           "help/formula/date",{
           "运算符和函数": ["help/formula/functions", "help/formula/operator_math", "help/formula/operator_logical", "help/formula/operator_text", "help/formula/function_date", "help/formula/function_logical", "help/formula/function_math", "help/formula/function_text", "help/formula/function_advanced"],
