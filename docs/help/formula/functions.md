@@ -32,14 +32,14 @@ title: 公式中的运算符和函数
 
 - [**ADDMONTHS：**](function_date#addmonths) 返回的日期是，指定日期之前或之后的指定月数。如果剩余月的天数比起始月少，函数会返回剩余月的最后一天。否则，结果包含与指定日期相同的日组件。
 - [**DATE：**](function_date#date) 从您输入的年、月和日值返回一个日期值。如果公式字段中的 DATE 函数值是无效日期，如非闰年的 2 月 29 日，公式并不会报错，而是返回数值意义上最接近的日期，比如DATE(2021,2,29)将返回2021-03-01，DATE(2021,121,29)将返回2031-01-29。
-- [**DATEVALUE：**](function_date#datevalue) 为日期/时间或文本表达式返回日期值。
+- [**DATEVALUE：**](function_date#datevalue) 为日期时间或文本表达式返回日期值。
 - [**DATETIMEVALUE：**](function_date#datetimevalue) 返回年份、月份、日和 GMT 时间值。
 - [**DAY：**](function_date#day) 以 1 与 31 之间的一个数字形式返回一个月中的某一天。
 - [**HOUR：**](function_date#hour) 以 0-23 的数字格式返回当前时间GMT时区小时值（无日期）。
 - [**MILLISECOND：**](function_date#millisecond) 以 0 与 999 之间的数字形式，返回毫秒值。
 - [**MINUTE：**](function_date#minute) 以 0 与 60 之间的数字形式，返回分钟值。
 - [**MONTH：**](function_date#month) 以给定日期的数字格式返回月份，即 1（一月）与 12（十二月）之间的一个数字。
-- [**NOW：**](function_date#now) 返回表示当前时刻的日期/时间。
+- [**NOW：**](function_date#now) 返回表示当前时刻的日期时间。
 - [**SECOND：**](function_date#second) 以 0 与 60 之间的数字形式，返回秒值。
 - [**TIMENOW：**](function_date#timenow) 返回表示当前时刻的时间值 (GMT)。如果您仅想要跟踪时间，而非日期，使用此函数，而不是 NOW 函数，华炎魔方暂时不支持时间类型，所以需要用TEXT函数输出文本值。
 - [**TIMEVALUE：**](function_date#timevalue) 返回没有日期的当地时间值，例如工作时间，华炎魔方暂时不支持时间类型，所以需要用TEXT函数输出文本值。
@@ -91,7 +91,7 @@ title: 公式中的运算符和函数
 - [**RIGHT：**](function_text#right) 返回从文本字符串右边算起的指定数量的字符。
 - [**RPAD：**](function_text#rpad) 将指定的字符插入文本字符串的右侧。
 - [**SUBSTITUTE：**](function_text#substitute) 用新文本替换文本字符串中的旧文本。
-- [**TEXT：**](function_text#text) 在使用公式的任何地方将百分比、数字、日期、日期/时间或货币类型字段转换为文本。
+- [**TEXT：**](function_text#text) 在使用公式的任何地方将百分比、数字、日期、日期时间或货币类型字段转换为文本。
 - [**TRIM：**](function_text#trim) 删除文本字符串开头和末尾处的空格和制表符。
 - [**UPPER：**](function_text#upper) 将指定文本字符串中的所有字母转换为大写。不是字母的任何字符不受此函数的影响。
 
