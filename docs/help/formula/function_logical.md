@@ -50,7 +50,7 @@ BLANKVALUE(Payment_Due_Date__c, StartDate +5)
 - ■ 因为我们的空白字段处理方式默认值是“将空白字段视为零”，所以低代码中要小心，不配置这个属性时，默认为按0值处理。零代码配置时问题不大，因为空白字段处理属性是必填的，不存在默认值问题。
 :::
 
-:::caution 注意
+:::note 注意
 该函数与[ISBLANK](function_logical#isblank)很像，但是该函数会进一步返回字段值为空时的表达式，一般来说，如果您只是想判断字段值是否为空，应该使用后者而不是该函数。
 :::
 
@@ -222,7 +222,7 @@ IF($user.city = "Napa", 0.0750,
 - *表达式:* `text`
 用您希望计算的表达式替换表达式。
 
-:::caution 重要
+:::note 重要
 在新公式中使用 ISBLANK 替代 ISNULL。ISBLANK 与 ISNULL 功能相同，但还支持文本字段。
 :::
 
@@ -256,6 +256,6 @@ IF(NOT(Status = "Closed"), ROUND(NOW()-CreatedDate, 0), null)
 - *置换表达式:* `text`
 用您希望替换任何空白值的值替换置换表达式。
 
-:::caution 重要
+:::note 重要
 在新公式中使用 BLANKVALUE 替代 NULLVALUE。BLANKVALUE 与 NULLVALUE 功能相同，但还支持文本字段。
 :::

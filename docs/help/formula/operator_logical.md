@@ -28,7 +28,7 @@ IF(Probability =1, ROUND(Amount*0.02, 2), 0)
 
 具有 100% Probability（可能性）和 100,000 美元 Amount（金额）的业务机会将获得 2,000 美元的佣金。
 
-:::caution 注意
+:::note 注意
 不要使用此函数进行空比较，如 MyDateTime__c == null。而应使用[ISBLANK](/help/formula/function_logical#isblank)。
 :::
 
@@ -47,7 +47,7 @@ IF(Maint_Amount__c + Services_Amount__c<> Amount,
 
 如果产品的维护金额和服务金额之和不等于产品金额，此公式将在产品上显示“DISCOUNTED”（已折扣金额）。否则，显示“FULL PRICE”（全价）。请注意，本示例对 Maint Amount（维护金额）和 Services Amount（服务金额）使用两个自定义金额字段。
 
-:::caution 注意
+:::note 注意
 不要使用此函数进行空比较，如 MyDateTime__c != null。而应使用[ISBLANK](/help/formula/function_logical#isblank)。
 :::
 
