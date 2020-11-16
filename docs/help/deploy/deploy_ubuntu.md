@@ -134,11 +134,10 @@ pm2 start server.js
 
 ```bash
 cd ~
-curl -SOL https://github.com/cdr/code-server/releases/download/v3.3.1/code-server_3.3.1_amd64.deb
-sudo dpkg -i code-server_3.3.1_amd64.deb
-systemctl --user enable --now code-server
-# Now code-server is running at http://127.0.0.1:8080
-# Your password is in ~/.config/code-server/config.yaml
+curl -fOL https://github.com/cdr/code-server/releases/download/v3.6.1/code-server_3.6.1_amd64.deb
+sudo dpkg -i code-server_3.6.1_amd64.deb
+sudo systemctl enable --now code-server@$USER
+# Now visit http://127.0.0.1:8080. Your password is in ~/.config/code-server/config.yaml
 ```
 
 修改配置文件，bind-addr 为`0.0.0.0`，密码也可调整：
@@ -152,7 +151,7 @@ password: 307f71d53ec2fd0995499cf4
 cert: true
 
 # 保存后重启服务
-systemctl --user restart code-server
+sudo systemctl restart code-server@$USER
 ```
 
 比如服务部署在 192.168.0.105，那么浏览器访问 https://192.168.0.108:8080 输入密码即可在浏览器中的 vs code 进行远程开发
