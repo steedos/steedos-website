@@ -71,11 +71,12 @@ module.exports =
           "help/auto_process/summary",{
           "工作流": ["help/auto_workflow/summary", "help/auto_workflow/create", "help/auto_workflow/examples"],
           "批准过程": ["help/approval/approval_summary", "help/approval/approval_setup", "help/approval/approval_samples", "help/approval/approval_request", "help/approval/approval_terminology"],
-          "自动操作": ["help/auto_actions/summary", "help/auto_actions/field_update"],
-          "自定义审批": ["help/workflow/admin_form", "help/workflow/admin_flow", "help/workflow/admin_picturesignature", "help/no-code/object_workflows", "help/workflow/faq"],
+          "自动操作": ["help/auto_actions/summary", "help/auto_actions/field_update"]
         }],
+        "审批王": ["help/workflow/admin_form", "help/workflow/admin_flow", "help/workflow/admin_picturesignature", "help/no-code/object_workflows", "help/workflow/faq"],
         "系统集成": ["help/no-code/object_datasources", "help/no-code/object_web_forms"]
-      }    ]
+      }
+    ]
   },
   "Steedos Help": {
     "Quick Guide": ["us/help/workflow/README", "us/help/workflow/guide_setup", "us/help/workflow/guide_user", "us/help/workflow/guide_admin", "us/help/workflow/guide_permissions", "us/help/workflow/guide_versions", "us/help/workflow/mp4", "us/help/workflow/faq"],
