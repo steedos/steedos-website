@@ -58,10 +58,11 @@ module.exports =
     "设置和维护华炎魔方": ["help/admin", 
       {
         "公司设置": ["help/organization", "help/profile", "help/permission_set", "help/permission_share", "help/workflow/admin_positions"],
-        "自定义应用": ["help/no-code/object", "help/no-code/object_subtable", "help/no-code/formula_field", "help/no-code/summary_field"],
+        "自定义应用": ["help/no-code/object", "help/no-code/object_subtable"],
         "通过公式计算字段值": [
           "help/formula/summary",
-          "help/formula/create",
+          "help/formula/create", 
+          "help/formula/summary_field",
           "help/formula/best_practices",
           "help/formula/date",{
           "运算符和函数": ["help/formula/functions", "help/formula/operator_math", "help/formula/operator_logical", "help/formula/operator_text", "help/formula/function_date", "help/formula/function_logical", "help/formula/function_math", "help/formula/function_text", "help/formula/function_advanced"],
