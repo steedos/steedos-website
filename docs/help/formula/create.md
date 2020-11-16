@@ -58,7 +58,7 @@ title: 构建公式字段
 - 公式中不能包含对象作为引用字段。要引用对象，请引用对象的_id字段或对象上的另一个字段。例如，`account.owner` 无效，因为它直接引用对象。`account.owner.name`或`account.owner._id` 是公式的有效引用。
 - 跨对象公式只能从公式所在对象的某个字段开始，即不可以引用无关联对象字段。
 - 请用点符号连接各个对象字段以形成引用链，理论上支持无限层次的引用，但是出于性能考虑请避免引用层级过多。
-- 可以在公式中输入$user变量来引用当前登录用户的相关信息，作为跨对象公式的一种，你也应该在其后用点符号来扩展引用链，$user指向的是space_users表而不是users表，所以只能从space_users表中相关字段开始扩展其引用链，比如`$user.organization.owner.name`。
+- 可以在公式中输入`$user`变量来引用当前登录用户的相关信息，作为跨对象公式的一种，你也应该在其后用点符号来扩展引用链，`$user`指向的是`space_users`表而不是`users`表，所以只能从 [space_users](/developer/standard_objects#员工-space_users) 表中相关字段开始扩展其引用链，比如`$user.organization.owner.name`，更多可扩展属性请参考 [space_users对象源码](https://github.com/steedos/steedos-platform/blob/master/packages/standard-objects/space_users.object.yml)。
 
 ## 关于公式级联触发的提示
 
