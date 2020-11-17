@@ -50,10 +50,10 @@ module.exports =
   "文档": {
     "安装部署": ["help/deploy", "help/deploy/deploy_windows", "help/deploy/deploy_mac", "help/deploy/deploy_ubuntu", "help/deploy/deploy_heroku", "help/deploy/deploy_docker", "help/deploy/deploy_cluster"],
     "使用入门": ["help/user", "help/download",
-    {
-      "审批王": ["help/workflow/instance_add", "help/workflow/instance_approve", "help/workflow/instance_carboncopy", "help/workflow/instance_distribute", "help/workflow/instance_forward", "help/workflow/instance_print", "help/workflow/instance_search", "help/workflow/instance_monitor", "help/workflow/instance_export" ],
-      "数据台账": ["help/record_list", "help/record_view", "help/record_report", "help/notifications"],  
-    }
+      {
+        "审批王": ["help/workflow/instance_add", "help/workflow/instance_approve", "help/workflow/instance_carboncopy", "help/workflow/instance_distribute", "help/workflow/instance_forward", "help/workflow/instance_print", "help/workflow/instance_search", "help/workflow/instance_monitor", "help/workflow/instance_export" ],
+        "数据台账": ["help/record_list", "help/record_view", "help/record_report", "help/notifications"],  
+      }
     ],
     "设置和维护华炎魔方": ["help/admin", 
       {
@@ -64,8 +64,15 @@ module.exports =
           "help/formula/create", 
           "help/formula/summary_field",
           "help/formula/date",{
-          "运算符和函数": ["help/formula/functions", "help/formula/operator_math", "help/formula/operator_logical", "help/formula/operator_text", "help/formula/function_date", "help/formula/function_logical", "help/formula/function_math", "help/formula/function_text", "help/formula/function_advanced"],
-        }, "help/formula/best_practices", "help/formula/examples"],
+            "运算符和函数": ["help/formula/functions", "help/formula/operator_math", "help/formula/operator_logical", "help/formula/operator_text", "help/formula/function_date", "help/formula/function_logical", "help/formula/function_math", "help/formula/function_text", "help/formula/function_advanced"],
+          }, 
+          "help/formula/best_practices", "help/formula/examples"
+        ],
+        "通过验证规则校验字段值": [
+          "help/validation_rules/summary",
+          "help/validation_rules/notes", 
+          "help/validation_rules/examples"
+        ],
         "自动执行业务流程": [
           "help/auto_process/summary",{
           "工作流": ["help/auto_workflow/summary", "help/auto_workflow/create", "help/auto_workflow/examples"],
