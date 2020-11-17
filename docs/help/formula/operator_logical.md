@@ -128,7 +128,7 @@ IF((Price<100 && Quantity<5),“Small”, null)
 **返回值：** 布尔
 
 ```js
-IF((ISPICKVAL(Priority , “High”)) || (ISPICKVAL(Status , “New”)), ROUND(NOW()-CreatedDate, 0), null)
+IF(Priority = "High" || Status = "New", ROUND(NOW()-CreatedDate, 0), null)
 ```
 
 如果个案 Status（状态）为“New”（新建）或 Priority（优先级）为“High”（高），则此公式返回个案未被处理的天数。如果个案是今天打开的，则该字段显示零。
