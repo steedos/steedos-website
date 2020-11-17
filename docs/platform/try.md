@@ -38,6 +38,7 @@ hide_table_of_contents: true
 - [部署到 Heroku](/help/deploy/deploy_heroku.md): 利用Salesforce提供的免费云服务，部署开发环境。
 - [Docker 部署](/help/deploy/deploy_docker.md): 可选使用docker方式部署生产环境。
 - [集群部署](/help/deploy/deploy_cluster.md): 对于用户量大的系统，还可以采用多服务器集群部署模式。
+- [部署到 VMware](/help/deploy/deploy_vmware.md): 对于想快速试用的用户，可以采用部署到VMware的模式。
 
 ## 查看开发文档
 
