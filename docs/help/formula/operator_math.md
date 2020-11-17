@@ -14,7 +14,7 @@ title: 数学运算符
 Amount + Maint_Amount__c + Services_Amount__c
 ```
 
-此公式计算产品 Amount（金额）、维护金额与服务费的总和。请注意，Maint amount（维护金额）和 Service Fees（服务费）是自定义币种字段。
+此公式计算产品 Amount（金额）、维护金额与服务费的总和。请注意，Maint amount（维护金额）和 Service Fees（服务费）是自定义金额字段。
 
 ```js
 Monday_Hours__c +
@@ -38,7 +38,7 @@ Friday_Hours__c > 40
 Amount - Discount_Amount__c
 ```
 
-此公式计算产品 Amount（金额）减去 Discount Amount（折扣金额）的差。请注意，Discount Amount（折扣金额）是一个自定义币种字段。
+此公式计算产品 Amount（金额）减去 Discount Amount（折扣金额）的差。请注意，Discount Amount（折扣金额）是一个自定义金额字段。
 
 ## *（乘）
 
@@ -66,7 +66,7 @@ Consulting_Days__c * 1200
 AnnualRevenue/ NumberOfEmployees
 ```
 
-此公式使用币种字段计算每个员工的收入金额。
+此公式使用金额字段计算每个员工的收入金额。
 
 ```js
 IF(NumberOfOpportunities > 0,
