@@ -55,9 +55,7 @@ sidebar_label: 目录
 - [**CASE：**](function_logical#case) 根据一系列值检查一个给定表达式。如果表达式等于其中一个值，则返回相应结果。如果它不等于任何值，则返回其他结果。
 - [**IF：**](function_logical#if) 确定表达式为真或为假。如果为真则返回一个给定值，如果为假则返回另一个值。
 - [**ISBLANK：**](function_logical#isblank) 判断表达式是否具有值，如果没有值则返回 TRUE（真）。如果它包含一个值，则该函数返回 FALSE（假）。
-- [**ISNULL：**](function_logical#isnull) 确定表达式是否为空（空白），如果是则返回 TRUE（真）。如果它包含一个值，则该函数返回 FALSE（假），不推荐该函数了，请用ISBLANK 替代 ISNULL。
 - [**NOT：**](function_logical#not) 对于 TRUE（真）返回 FALSE（假），对于 FALSE（假）返回 TRUE（真）。
-- [**NULLVALUE：**](function_logical#nullvalue) 确定一个表达式是否为空（空白），如果为空则返回一个置换表达式。如果表达式不为空，则返回表达式的值。
 - [**OR：**](function_logical#or) 确定表达式为真或为假。如果任何表达式为真，则返回 TRUE（真）。如果所有表达式均为假，则返回 FALSE（假）。
 
 ## 数学函数

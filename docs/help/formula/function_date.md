@@ -6,7 +6,16 @@ title: 日期和时间函数
 
 返回的日期是，指定日期之前或之后的指定月数。如果剩余月的天数比起始月少，函数会返回剩余月的最后一天。否则，结果包含与指定日期相同的日组件。
 
-**使用：** `ADDMONTHS (date，num)` ,并使用起始日期与添加的月数替换date和num。
+**使用：** `ADDMONTHS (date/datetime,number)` ,使用起始日期与添加的月数替换`date/datetime`和`number`。
+
+**参数：**
+
+- *日期、日期时间:* `date/datetime`
+日期或日期时间，表示起始日期。
+- *数字:* `number`
+数值，表示要增加的月数。
+
+**返回值：** 日期
 
 ```js
 ADDMONTHS (StartDate, 5)
@@ -14,17 +23,36 @@ ADDMONTHS (StartDate, 5)
 
 为开始日期添加 5 个月。例如，如果开始日期是 2017 年 9 月 20 日，结果日期是 2018 年 2 月 20 日；如果开始日期是 2017 年 9 月 30 日，结果日期是 2018 年 2 月 28 日。
 
+:::note 提示
+支持传入日期或日期时间类型的参数，但是返回值始终是日期类型，而不可能是日期时间类型。
+:::
+
 ## DATE
 
 从您输入的年、月和日值返回一个日期值。如果公式字段中的 DATE 函数值是无效日期，会返回错误信息。
 
 **使用：** `DATE(年,月,日)` ,用一个四位数字年份替换年，用一个两位数字月份替换月，用一个两位数字日期替换日。
 
+**参数：**
+
+- *年:* `number`
+四位数字表示的年份。
+- *月:* `number`
+表示月份值的数值。
+- *日:* `number`
+表示日部分的数值。
+
+**返回值：** 日期
+
 ```js
-DATE(2005, 01, 02)
+DATE(2005, 1, 2)
 ```
 
 创建一个 2005 年 1 月 2 日的日期字段。
+
+:::note 提示
+参数个数只能是三个，也不支持传入`2005-01-01`这种字符串。
+:::
 
 :::note 注意
 当传入的函数参数格式正确但是数值不符合规范时，并不会报错，而是会返回一个可能错误的值，比如如非闰年的DATE(2021,2,29)将返回2021-03-01，DATE(2021,121,29)将返回2031-01-29。
@@ -38,6 +66,8 @@ DATE(2005, 01, 02)
 
 **参数：** `date/datetime/text`
 日期、日期时间或日期、日期时间格式的文本值的合并字段或表达式
+
+**返回值：** 日期
 
 ```js
 DATEVALUE(ClosedDate)
@@ -66,13 +96,21 @@ DATEVALUE("2005-1-15 12:30")
 **使用：** DATETIMEVALUE（表达式）
 
 **参数：** `text`
-不带TZ字符的日期时间格式的文本值、合并字段或表达式
+不带TZ字符的日期/日期时间格式的文本值、合并字段或表达式
+
+**返回值：** 日期时间
 
 ```js
 DATETIMEVALUE(TEXT(ClosedDate))
 ```
 
 基于结束日期字段值显示日期时间值，参数ClosedDate必须是日期类型，而不可以是日期时间类型， 因为如果ClosedDate是日期时间类型，TEXT(ClosedDate)返回的会是"2020-11-04 03:45:00Z"这种带Z的字符串。
+
+```js
+DATETIMEVALUE(SUBSTITUTE(TEXT(ClosedDate), "Z", ""))
+```
+
+基于结束日期字段值显示日期时间值，参数ClosedDate可以是日期类型，也可以是时间类型，因为此示例中把最后的Z字符清除掉了。
 
 ```js
 DATETIMEVALUE("2005-11-15 17:00:00")
@@ -96,7 +134,10 @@ DATETIMEVALUE("2005-11-15 17:00:00")
 
 **使用：** DAY(日期)
 
-**参数：** 用日期字段或值（如 TODAY()）替换日期
+**参数：** date
+日期字段或值（如 TODAY()）
+
+**返回值：** 数值
 
 ```js
 DAY(Code_Freeze__c)
@@ -112,10 +153,15 @@ DAY(Code_Freeze__c)
 
 以 24数字格式（0~23）返回GMT时区小时值。
 
-**使用：** `HOUR(datetime)` ,并使用日期时间值或 DATETIMEVALUE() 等值替换 datetime，不支持传入字符串参数。
+**使用：** `HOUR(datetime)` ,使用日期时间值或 DATETIMEVALUE() 等值替换 datetime，不支持传入字符串参数。
+
+**参数：** datetime
+日期时间字段或值（如 NOW()）
+
+**返回值：** 数值
 
 ```js
-HOUR(DATETIMEVALUE(ClosedDate))
+HOUR(ClosedDate)
 ```
 
 仅根据日期时间完结字段值显示其中的小时。
@@ -130,10 +176,15 @@ HOUR(DATETIMEVALUE('2018-12-12 18:06:08'))
 
 以 0 与 999 之间的数字形式，返回毫秒值。
 
-**使用：** `MILLISECOND(datetime)` ,使用日期时间值替换 datetime，例如 NOW()。
+**使用：** `MILLISECOND(datetime)` ,使用日期时间值替换 datetime，例如 NOW()，不支持传入日期类型或字符串参数。
+
+**参数：** datetime
+日期时间字段或值（如 NOW()）
+
+**返回值：** 数值
 
 ```js
-MILLISECOND(DATETIMEVALUE(TEXT(ClosedDate)))
+MILLISECOND(DATETIMEVALUE(SUBSTITUTE(TEXT(ClosedDate), "Z", "")))
 ```
 
 仅根据完结时间字段的值显示时间字段中的毫秒值。
@@ -148,10 +199,15 @@ MILLISECOND(NOW())
 
 以 0 与 60 之间的数字形式，返回分钟值。
 
-**使用：** `MINUTE(datetime)` ,使用日期时间值替换 datetime，例如 NOW()。
+**使用：** `MINUTE(datetime)` ,使用日期时间值替换 datetime，例如 NOW()，不支持传入日期类型或字符串参数。
+
+**参数：** datetime
+日期时间字段或值（如 NOW()）
+
+**返回值：** 数值
 
 ```js
-MINUTE(DATETIMEVALUE(TEXT(ClosedDate)))
+MINUTE(DATETIMEVALUE(SUBSTITUTE(TEXT(ClosedDate), "Z", "")))
 ```
 
 仅根据完结时间字段的值显示时间字段中的分钟值。
@@ -163,8 +219,7 @@ MINUTE(NOW())
 返回当前时间的分钟值，比如12。
 
 :::note 技巧提示
-
-- MINUTE函数只授受datetime类型作为参数，不支持time,date,text类型作为参数，可以先用DATETIMEVALUE函数进行类型转换后再调用该函数。
+MINUTE函数只授受datetime类型作为参数，不支持time,date,text类型作为参数，可以先用DATETIMEVALUE函数进行类型转换后再调用该函数。
 :::
 
 ## MONTH
@@ -172,6 +227,11 @@ MINUTE(NOW())
 以给定日期的数字格式返回月份，即 1（一月）与 12（十二月）之间的一个数字。
 
 **使用：** `MONTH(日期)` ,用包含您希望返回其月份的日期的字段或表达式替换日期。
+
+**参数：** date
+日期字段或值（如 TODAY()）
+
+**返回值：** 数值
 
 ```js
 MONTH(SLAExpirationDate__c)
@@ -186,8 +246,7 @@ MONTH(TODAY())
 以数字格式返回当前月份。例如，对于月份“February”将返回值“2”。
 
 :::note 技巧提示
-
-- MONTH函数只授受date类型作为参数，不支持time,datetime,text类型作为参数，可以先用DATEVALUE函数进行类型转换后再调用该函数。
+MONTH函数只授受date类型作为参数，不支持time,datetime,text类型作为参数，可以先用DATEVALUE函数进行类型转换后再调用该函数。
 :::
 
 ## NOW
@@ -195,6 +254,8 @@ MONTH(TODAY())
 返回表示当前时刻的日期时间。
 
 **使用：** `NOW()`
+
+**返回值：** 日期时间
 
 ```js
 IF(Status = "Open", ROUND(NOW()-CreatedDate, 0), null)
@@ -217,10 +278,15 @@ IF(Status = "Open", ROUND(NOW()-CreatedDate, 0), null)
 
 以 0 与 60 之间的数字形式，返回秒值。
 
-**使用：** `SECOND(datetime)`,使用日期时间值或 DATETIMEVALUE() 等值替换 datetime，不支持传入字符串参数。
+**使用：** `SECOND(datetime)`,使用日期时间值或 DATETIMEVALUE() 等值替换 datetime，不支持传入日期类型值或字符串参数。
+
+**参数：** datetime
+日期时间字段或值（如 NOW()）
+
+**返回值：** 数值
 
 ```js
-SECOND(DATETIMEVALUE(ClosedDate))
+SECOND(ClosedDate)
 ```
 
 仅根据完结时间字段的值显示其中的秒值。
@@ -236,6 +302,8 @@ SECOND(DATETIMEVALUE('2018-12-12 18:06:08'))
 返回表示当前时刻的时间值 (GMT)。如果您仅想要跟踪时间，而非日期，使用此函数，而不是 NOW 函数。
 
 **使用：** `TIMENOW()`
+
+**返回值：** 时间
 
 ```js
 IF(Rating="Hot", TEXT(TIMENOW()), TEXT(TIMEVALUE(CreatedDate)))
@@ -258,6 +326,11 @@ IF(Rating="Hot", TEXT(TIMENOW()), TEXT(TIMEVALUE(CreatedDate)))
 
 **使用：** `TIMEVALUE(value)`,并使用时间格式的文本值、合并字段或表达式替换 value。
 
+**参数：** text
+时间格式的字符串，如17:30:45.125
+
+**返回值：** 时间
+
 ```js
 TEXT(TIMEVALUE("17:30:45.125"))
 ```
@@ -275,6 +348,8 @@ TEXT(TIMEVALUE("17:30:45.125"))
 将当前日期返回为日期数据类型。
 
 **使用：** `TODAY()`
+
+**返回值：** 日期
 
 ```js
 TODAY()-Sample_date_c
@@ -305,6 +380,11 @@ SampleDate < TODAY()
 
 **使用：** `WEEKDAY(date)`
 
+**参数：** date
+日期字段或值（如 TODAY()）
+
+**返回值：** 数值
+
 ```js
 WEEKDAY(customdate1__c)
 ```
@@ -322,6 +402,11 @@ WEEKDAY(customdate1__c)
 以给定日期的数字格式返回四位数字表示的年份。
 
 **使用：** `YEAR(日期)`，用包含您希望返回的年份的字段或表达式替换日期。
+
+**参数：** date
+日期字段或值（如 TODAY()）
+
+**返回值：** 数值
 
 ```js
 YEAR(TODAY() )- YEAR(Initial_Meeting__c )

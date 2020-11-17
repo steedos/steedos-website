@@ -17,14 +17,12 @@ title: 逻辑运算符
 如果到期日等于记录的创建日期与五天之和返回 true。
 
 ```js
-IF(Probability =1, ROUND(Amount*0.02, 2), 0)
+IF(Probability = 1, ROUND(Amount*0.02, 2), 0)
 ```
 
 此公式计算佣金金额，具有 100% 可能性的业务机会按 2% 计算佣金。所有其他业务机会的佣金值为零。
 
-```js
-具有 90% Probability（可能性）的业务机将无法获得佣金
-```
+具有 90% Probability（可能性）的业务机将无法获得佣金。
 
 具有 100% Probability（可能性）和 100,000 美元 Amount（金额）的业务机会将获得 2,000 美元的佣金。
 
@@ -36,12 +34,12 @@ IF(Probability =1, ROUND(Amount*0.02, 2), 0)
 
 计算两个值是否不相等。
 
-**使用：** `表达式1 <> 表达式2 或表达式1 != 表达式2`，用合并字段、表达式或其他数值替换每个表达式。
+**使用：** `表达式1 <> 表达式2` 或 `表达式1 != 表达式2`，用合并字段、表达式或其他数值替换每个表达式。
 
 **返回值：** 布尔
 
 ```js
-IF(Maint_Amount__c + Services_Amount__c<> Amount,
+IF(Maint_Amount__c + Services_Amount__c <> Amount,
  "DISCOUNTED", "FULL PRICE")
 ```
 

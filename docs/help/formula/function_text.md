@@ -35,6 +35,8 @@ IF(BEGINS (Product_type__c , “ICU”), “Medical”, “Technical”)
 
 **使用：** BR()
 
+**返回值：** 文本
+
 ```js
 CASE(ShippingCountry,
 "USA",
@@ -65,10 +67,10 @@ CASE(ShippingCountry,
 
 **使用：** CASESAFEID(id)
 
-**参数：**
+**参数：** `text`
+对象 ID。
 
-- *id:* `text`
-用对象 ID 替代 id。
+**返回值：** 文本
 
 ```js
 CASESAFEID (Id)
@@ -93,8 +95,11 @@ CASESAFEID (Id)
 **参数：**
 
 - *文本:* `text`
+原始文本全文。
 - *比较文本:* `text`
-使用包含比较文本的值的文本替换文本。
+用于比较的文本片断。
+
+**返回值：** 布尔
 
 ```js
 IF(CONTAINS(Product_Type__c, "part"), "Parts", "Service")
@@ -118,11 +123,13 @@ IF(CONTAINS(Product_Type__c, "part"), "Parts", "Service")
 **参数：**
 
 - *搜索文本:* `text`
-用要查找的字符串替换搜索文本。
+要查找的字符串。
 - *文本:* `text`
-用要搜索的字段或表达式替换文本。
-- *起始字符数:* `text`
-用要从左边算起的作为搜索起始位置的字符数替换起始字符数。
+要搜索的字段或表达式。
+- *起始字符数:* `number`
+要从左边算起的作为搜索起始位置的字符数。
+
+**返回值：** 数值
 
 ```js
 FIND(" ", Street)
@@ -157,12 +164,14 @@ SUBSTITUTE(Email, LEFT(Email, FIND("@", Email)), "www.")
 
 **参数：**
 
+**返回值：** 文本
+
 - *url:* `text`
-用网址替换 url。
+网址。
 - *friendly_name:* `text`
-用链接文本替换 friendly_name。
+链接文本。
 - *target:* `text`
-也可以用要在其中显示内容的窗口或帧替换 target。
+要在其中显示内容的窗口或帧。
 
 ```js
 HYPERLINK("/00U/e?
@@ -201,9 +210,11 @@ HYPERLINK("http://servername/call?id=" & Id & "&phone=" & Phone, Phone)
 **参数：**
 
 - *文本:* `text`
-用您希望返回的字段或表达式替换文本。
+您希望返回的字段或表达式。
 - *字符数:* `number`
-用您希望返回的从左边算起的字符数替换字符数。
+您希望返回的从左边算起的字符数。
+
+**返回值：** 文本
 
 ```js
 TRIM(LEFT(LastName, 5)) & “-” & TRIM(RIGHT(SSN__c, 4))
@@ -222,10 +233,10 @@ TRIM(LEFT(LastName, 5)) & “-” & TRIM(RIGHT(SSN__c, 4))
 
 **使用：** LEN(文本)
 
-**参数：**
+**参数：** `text`
+您希望返回其长度的字段或表达式。
 
-- *文本:* `text`
-用您希望返回其长度的字段或表达式替换文本。
+**返回值：** 数值
 
 ```js
 LEN(PartNumber__c)
@@ -239,10 +250,10 @@ LEN(PartNumber__c)
 
 **使用：** LOWER(text)
 
-**参数：**
+**参数：** `text`
+您要转换为小写的字段或文本。
 
-- *文本:* `text`
-用您要转换为小写的字段或文本替换 text。
+**返回值：** 文本
 
 ```js
 LOWER("MYCOMPANY.COM")
@@ -271,6 +282,12 @@ LOWER( TickerSymbol )
 - *填充字符串:* `text`
 填充字符串是应插入的字符。填充字符串是必须的，可以传入空字符串表示不填充。
 
+**返回值：** 文本
+
+***示例：***
+
+***1.字段名：截断***
+
 如果文本中值的长度超过了填充字符串，则将文本截断为填充长度的大小。
 
 ```js
@@ -279,11 +296,15 @@ LPAD(Name, 20, "")
 
 在 20 个字符后截断名称字段。例如，如果初始值为"mycompany.com"，则返回值为"mycompany.com"，如果初始值为"mycompany_is_good_in_china.com"，则返回值为"mycompany_is_good_in"。
 
+***2.My_Company: 无更改***
+
 ```js
 LPAD( 'my_company.com' , 14, 'z')
 ```
 
 返回“my_company.com”而没有更改，因为它包含 14 个字符。
+
+***3.使用 Z 填充的字段名***
 
 ```js
 LPAD("my_company.com", 15, "z")
@@ -292,8 +313,7 @@ LPAD("my_company.com", 15, "z")
 返回名称"zmy_company.com"。
 
 :::note 技巧提示
-
-- 不会忽略前置空格。
+不会忽略前置空格。
 :::
 
 ## MID
@@ -305,11 +325,13 @@ LPAD("my_company.com", 15, "z")
 **参数：**
 
 - *文本:* `text`
-用返回字符时要使用的字段或表达式替换文本。
+返回字符时要使用的字段或表达式。
 - *起始字符数:* `number`
-用从左边算起的作为起始位置的字符数替换起始字符数（作为起始位置的字符数）。
+从左边算起的作为起始位置的字符数（作为起始位置的字符数）。
 - *字符数:* `number`
-用要返回的总字符数替换字符数。
+要返回的总字符数。
+
+**返回值：** 文本
 
 ```js
 MID( Division , 3, 4)
@@ -343,9 +365,11 @@ MID("ABCDEFGH", 0, 10)
 **参数：**
 
 - *文本:* `text`
-用您希望返回的字段或表达式替换文本。
+您希望返回的字段或表达式。
 - *字符数:* `number`
-用您希望返回的从右边算起的字符数替换字符数。
+您希望返回的从右边算起的字符数。
+
+**返回值：** 文本
 
 ```js
 TRIM(LEFT(LastName, 5))&"-"&TRIM(RIGHT(SSN__c, 4))
@@ -354,8 +378,7 @@ TRIM(LEFT(LastName, 5))&"-"&TRIM(RIGHT(SSN__c, 4))
 显示名字的前五个字符和社会保险编号的后四个字符（由连字符分隔）。请注意，本示例假定您拥有名为 SSN 的文本自定义字段。
 
 :::note 技巧提示
-
-- 如果字符数值小于零，则公式会用零替换该值。
+如果字符数值小于零，则公式会用零替换该值。
 :::
 
 ## RPAD
@@ -374,17 +397,27 @@ TRIM(LEFT(LastName, 5))&"-"&TRIM(RIGHT(SSN__c, 4))
 填充字符串是应插入的字符。填充字符串是必须的，可以传入空字符串表示不填充。
 如果文本中值的长度超过了填充字符串，则将文本截断为填充长度的大小。
 
+**返回值：** 文本
+
+***示例：***
+
+***1.字段名：截断***
+
 ```js
 RPAD(Name, 20, "")
 ```
 
 在 20 个字符后截断名称字段。例如，如果初始值为"mycompany.com"，则返回值为"mycompany.com"，如果初始值为"mycompany_is_good_in_china.com"，则返回值为"mycompany_is_good_in"。
 
+***2.My_Company: 无更改***
+
 ```js
 RPAD( 'my_company.com' , 14, 'z')
 ```
 
 返回“my_company.com”而没有更改，因为它包含 14 个字符。
+
+***3.使用 Z 填充的字段名***
 
 ```js
 RPAD("my_company.com", 15, "z")
@@ -407,11 +440,13 @@ RPAD("my_company.com", 15, "z")
 **参数：**
 
 - *文本:* `text`
-用要进行值替换的字段或值替换文本，，。
+要进行值替换的字段或值。
 - *旧文本:* `text`
-用要被替换的文本替换旧文本。
+要被替换的文本。
 - *新文本:* `text`
-用要用来替换旧文本的文本替换新文本。
+要用来替换旧文本的文本。
+
+**返回值：** 文本
 
 ```js
 SUBSTITUTE(Name, "Coupon", "Discount")
@@ -437,10 +472,10 @@ SUBSTITUTE(Email, LEFT(Email, FIND("@", Email)), "www.")
 
 **使用：** TEXT(值)
 
-**参数：**
+**参数：** `text`
+您希望转换为文本格式的字段或表达式。避免在此函数中使用除小数点（句点）或负号（连字符）以外的任何特殊字符。
 
-- *值:* `text`
-用您希望转换为文本格式的字段或表达式替换值。避免在此函数中使用除小数点（句点）或负号（连字符）以外的任何特殊字符。
+**返回值：** 文本
 
 ```js
 TEXT(ExpectedRevenue)
@@ -468,10 +503,10 @@ SerialNumber &"-"& TEXT(Quantity)
 
 **使用：** TRIM(文本)
 
-**参数：**
-
-- *文本:* `text`
+**参数：** `text`
 用您希望修整的字段或表达式替换文本。
+
+**返回值：** 文本
 
 ```js
 TRIM(LEFT(LastName,5))& "-" & RIGHT(FirstName, 1)
@@ -485,10 +520,10 @@ TRIM(LEFT(LastName,5))& "-" & RIGHT(FirstName, 1)
 
 **使用：** UPPER(text)
 
-**参数：**
-
-- *text:* `text`
+**参数：** `text`
 将 text 用您要转换为大写的字段或表达式替换。
+
+**返回值：** 文本
 
 ```js
 UPPER("mycompany.com")
@@ -508,16 +543,22 @@ UPPER("Mycompany.com 123")
 
 **使用：** VALUE(文本)
 
-**参数：**
+**参数：** `text`
+您希望转换为数字的字段或表达式。
 
-- *文本:* `text`
-用您希望转换为数字的字段或表达式替换文本。
+**返回值：** 数值
+
+***示例：***
+
+***1.潜在客户编号***
 
 ```js
 VALUE( Lead_Number__c )
 ```
 
 返回自动编号字段 Lead Number（潜在客户编号）中的文本值所对应的数字。如果您希望在计算中使用 Lead Number（潜在客户编号）字段，则这可能非常有用。请注意，自动编号字段实际上是文本字段，必须转换为数字字段才能进行数值计算。
+
+***2.潜在客户循环分配***
 
 ```js
 MOD(VALUE(Lead_Number__c), 3)
