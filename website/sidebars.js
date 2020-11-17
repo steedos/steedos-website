@@ -74,6 +74,10 @@ module.exports =
         }],
         "审批王": ["help/workflow/admin_form", "help/workflow/admin_flow", "help/workflow/admin_picturesignature", "help/no-code/object_workflows", "help/workflow/faq"],
         "系统集成": ["help/no-code/object_datasources", "help/no-code/object_web_forms"]
+      },{
+        "type": "link",
+        "href": "/developer",
+        "label": "开发人员"
       }
     ]
   },
