@@ -139,7 +139,7 @@ module.exports = {
             {to: 'form/trial/', label:'预约演示',position: 'left'},
           ]
         },
-        {label: '解决方案', position: 'left', to: 'products/oa/',
+        {label: '应用市场', position: 'left', to: 'products/oa/',
           items: [
             // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
             // {to: 'products/oa/', label: '华炎办公', position: 'left'},
