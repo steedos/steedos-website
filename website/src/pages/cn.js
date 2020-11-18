@@ -147,7 +147,7 @@ export default function Landing() {
       description: "客户投诉管理、客户技术支持管理、客户服务质量跟踪管理"},
   ]}
 />
-
+{/* 
 <FeaturesWide
   header=""
   title="合同管理"
@@ -326,7 +326,7 @@ export default function Landing() {
       description: "对接办公系统，实现单点登录；对接ERP订单管理，实现采购协议与订单一体化；对接财务，实现采购的付款申请一体化。"
     },
   ]}
-/>
+/> */}
 
 <div class="bg-gray-200">
   <div class="max-w-screen-xl mx-auto text-center py-10 px-4 sm:px-6 lg:py-12 lg:px-8">
