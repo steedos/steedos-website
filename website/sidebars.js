@@ -48,7 +48,7 @@ module.exports =
       }]
   },
   "文档": {
-    "安装部署": ["help/deploy", "help/deploy/deploy_windows", "help/deploy/deploy_mac", "help/deploy/deploy_ubuntu", "help/deploy/deploy_heroku", "help/deploy/deploy_docker", "help/deploy/deploy_cluster"],
+    "安装部署": ["help/deploy", "help/deploy/deploy_windows", "help/deploy/deploy_mac", "help/deploy/deploy_ubuntu", "help/deploy/deploy_heroku", "help/deploy/deploy_docker", "help/deploy/deploy_cluster", "help/deploy/deploy_vmware"],
     "使用入门": ["help/user", "help/download",
       {
         "审批王": ["help/workflow/instance_add", "help/workflow/instance_approve", "help/workflow/instance_carboncopy", "help/workflow/instance_distribute", "help/workflow/instance_forward", "help/workflow/instance_print", "help/workflow/instance_search", "help/workflow/instance_monitor", "help/workflow/instance_export" ],
