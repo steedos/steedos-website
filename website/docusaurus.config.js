@@ -151,6 +151,7 @@ module.exports = {
           //   {to: 'products/workflow/', label: '流程', position: 'left'},
           // ]
         },
+        {to: 'pricing/platform', label:'定价',position: 'left'},
         {label: '资源', position: 'left', 
           items: [
             {to: 'help/deploy', label: '安装部署', position: 'left',},
@@ -162,7 +163,6 @@ module.exports = {
           ]
         },
         {to: 'videos/', label: '视频', position: 'left',},
-        {to: 'pricing/platform', label:'报价',position: 'left'},
         {to: 'platform/try', label:'试用',position: 'left'},
         {to: 'form/contact', label: '联系我们', position: 'left'},
         // {to: '/platform/pricing', label: '报价', position: 'left',},

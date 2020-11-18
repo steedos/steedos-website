@@ -97,16 +97,21 @@ module.exports =
   // "报价": {
   //   "报价": ["pricing/platform"],
   // },
-  // "解决方案": {
-  //   "解决方案": [
-  //     "products/oa", 
-  //     "products/contract",
-  //     "products/sales",
-  //     "products/purchase",
-  //     "products/cost",
-  //     // "products/workflow",
-  //   ],
-  // },
+  "应用市场": {
+    "应用市场": [
+      "appstore", 
+      { 
+        "标准应用": [
+          "products/oa", 
+          "products/contract",
+          "products/sales",
+          "products/purchase",
+          "products/cost",
+          "products/workflow",
+        ],
+      }
+    ],
+  },
   // "华炎魔方": {
   //   "低代码平台": [
   //     "platform", 
