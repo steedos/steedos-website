@@ -168,7 +168,7 @@ module.exports = {
         // {to: '/platform/pricing', label: '报价', position: 'left',},
         {label: '登录', position: 'right',
           items: [
-            {to: 'https://cn.steedos.com', label: '华炎办公', position: 'left'},
+            {to: 'https://cn.steedos.com', label: '华炎云', position: 'left'},
           ]
         },
         {label: 'ZH', to: 'us/', position: 'right',
