@@ -56,7 +56,7 @@ module.exports =
     }],
     "使用入门": ["help/user", "help/login", "help/interface",{
       "管理您的数据": ["help/record_search", "help/record_view", "help/record_list", "help/record_edit"],
-    }, "help/record_report", "help/notifications",{
+    }, "help/record_report",{
       "审批王": ["help/workflow/instance_add", "help/workflow/instance_approve", "help/workflow/instance_carboncopy", "help/workflow/instance_distribute", "help/workflow/instance_forward", "help/workflow/instance_print", "help/workflow/instance_search", "help/workflow/instance_monitor", "help/workflow/instance_export" ],
       "数据台账": ["help/record_list", "help/record_view", "help/record_report", "help/notifications"],  
     }],
