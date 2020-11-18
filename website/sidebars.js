@@ -48,7 +48,12 @@ module.exports =
       }]
   },
   "文档": {
-    "安装部署": ["help/deploy", "help/deploy/deploy_windows", "help/deploy/deploy_mac", "help/deploy/deploy_ubuntu", "help/deploy/deploy_heroku", "help/deploy/deploy_docker", "help/deploy/deploy_cluster"],
+    "快速向导": ["help/about", {
+      "开通华炎魔方": ["help/cloud",{
+        "本地部署": ["help/deploy", "help/deploy/deploy_windows", "help/deploy/deploy_mac", "help/deploy/deploy_ubuntu", "help/deploy/deploy_heroku", "help/deploy/deploy_docker", "help/deploy/deploy_cluster"]
+      }],
+      "客户端": ["help/download", "help/clients/desktop", "help/clients/mobile", "help/clients/wecom"]
+    }],
     "使用入门": ["help/user", "help/download",
       {
         "审批王": ["help/workflow/instance_add", "help/workflow/instance_approve", "help/workflow/instance_carboncopy", "help/workflow/instance_distribute", "help/workflow/instance_forward", "help/workflow/instance_print", "help/workflow/instance_search", "help/workflow/instance_monitor", "help/workflow/instance_export" ],

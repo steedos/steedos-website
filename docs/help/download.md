@@ -1,6 +1,6 @@
 ---
 title: 下载华炎魔方客户端
-sidebar_label: 下载客户端
+sidebar_label: 下载
 ---
 
 ## 桌面客户端
