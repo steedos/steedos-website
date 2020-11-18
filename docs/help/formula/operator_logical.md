@@ -11,7 +11,7 @@ title: 逻辑运算符
 **返回值：** 布尔
 
 ```js
-到期日 = CreatedDate + 5
+ExpiringDate = CreatedDate + 5
 ```
 
 如果到期日等于记录的创建日期与五天之和返回 true。
