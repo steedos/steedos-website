@@ -241,8 +241,8 @@ module.exports = {
             to: '/products/workflow',
           },
           {
-            from: ['/pricing/platform'],
-            to: '/platform/pricing',
+            from: ['/platform/pricing'],
+            to: '/pricing/platform',
           },
         ],
       },
