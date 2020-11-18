@@ -22,7 +22,7 @@ MONGO_URL=mongodb://127.0.0.1:27017/steedos
 
 MONGO_URL 是服务连接的数据库地址包含数据库地址及名称
 
-## 企业信息
+## 魔方ID
 
 ```env
 STEEDOS_TENANT_ID=519f004e8e296a1c5f00001d
@@ -35,8 +35,8 @@ STEEDOS_TENANT_ID 是企业 ID，值可从 设置-公司设置-许可证-复制�
 ## 邮件服务
 
 ```env
-MAIL_FROM=华炎云 <noreply@steedos.com>
-MAIL_URL=smtps://AHGDFSJ3QNISIHQ:zxcvTKasvhnafdsafFIktypJ@email-smtp.us-east-1.amazonaws.com:465/
+MAIL_FROM=华炎魔方 <noreply@steedos.com>
+MAIL_URL=smtps://username:password@email-smtp.us-east-1.amazonaws.com:465/
 ```
 
 MAIL_FROM 是邮件发送者
