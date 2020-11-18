@@ -28,7 +28,7 @@ MONGO_URL 是服务连接的数据库地址包含数据库地址及名称
 STEEDOS_TENANT_ID=519f004e8e296a1c5f00001d
 ```
 
-STEEDOS_TENANT_ID 是企业 ID，值可从 设置-公司设置-许可证-复制魔方 ID 获得:
+STEEDOS_TENANT_ID 是魔方 ID，值可从 设置-公司设置-许可证-复制魔方 ID 获得:
 
 ![安装mongodb](/assets/help/deploy/STEEDOS_TENANT_ID.png)
 
