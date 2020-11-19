@@ -20,7 +20,7 @@ class Card extends React.Component {
     let {href, target, image, category, title, description, theme} = this.props;
     return (
       <a href={href} target={target} className="block hover:no-underline">
-        <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+        <div className="flex flex-col border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200 overflow-hidden">
             {image && (
             <div className="flex-shrink-0">
             <img className="h-48 w-full object-cover" src={image} alt=""/>
