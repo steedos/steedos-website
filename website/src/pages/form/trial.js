@@ -9,7 +9,7 @@ export default function TrialForm() {
   return (
 
 <Layout
-      title="预约演示"
+      title="试用"
       description="华炎魔方是一款随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。"
       keywords={["低代码,低代码开发,低代码开发平台,开源低代码开发平台,快速开发平台,快速开发工具,paas,零代码,零代码开发,零代码开发平台"]}
 >
@@ -21,11 +21,11 @@ export default function TrialForm() {
     <div class="bg-gray-50 py-12 px-4 sm:px-6 lg:col-span-3 lg:px-8 xl:pr-12">
     <div>
         <h2 class="text-2xl leading-8 font-extrabold text-gray-900 sm:text-3xl sm:leading-9">
-          联系我们，预约产品演示
+          试用华炎魔方
         </h2>
         <div class="mt-8">
           <span class="text-xl font-extrabold leading-7 text-gray-500">
-            您可以通过以下方式联系我们，或填写右侧预约表格。
+            您可以通过以下方式联系我们，或填写右侧注册表格。
           </span>
         </div>
         <div class="mt-9">
@@ -39,7 +39,7 @@ export default function TrialForm() {
                 <a href="tel://4008201612">400-820-1612</a>
             </div>
           </div>
-          <div class="mt-4 flex">
+          {/* <div class="mt-4 flex">
             <div class="flex-shrink-0">
               <svg class="h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -49,7 +49,7 @@ export default function TrialForm() {
             <div class="ml-3 text-lg leading-6 text-gray-500">
               上海市九新公路76号嘉和阳光大厦505
             </div>
-          </div>
+          </div> */}
           <div class="mt-4 flex">
             <div class="flex-shrink-0">
               <svg class="h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -67,11 +67,10 @@ export default function TrialForm() {
     <div class="bg-white py-12 px-4 sm:px-6 lg:col-span-2 lg:px-8 xl:pl-12">
       <div class="max-w-lg mx-auto lg:max-w-none">
         <h2 class="text-xl leading-8 tracking-tight text-gray-900 sm:leading-9">
-          预约产品演示
+          注册开通华炎魔方
         </h2>
         <p class="leading-8 tracking-tight text-gray-900 sm:leading-9">
-          请填写以下表格，我们的产品顾问会主动与您联系。
-          （请填写所有字段）
+          请填写所有字段
         </p>
 
         <form action="https://huayan.my.steedos.com:8443/api/v4/leads/web_forms" class="grid grid-cols-1 row-gap-4" method="POST">
@@ -109,7 +108,7 @@ export default function TrialForm() {
             </div>
           </div>
           <div>            
-            <label for="address" class="block text-sm font-medium leading-5 text-gray-700">需求说明</label>
+            <label for="address" class="block text-sm font-medium leading-5 text-gray-700">备注</label>
             <div class="relative rounded-md shadow-sm">
               <textarea id="address" name="address" rows="3" class="bg-cool-gray-200 text-black form-input block w-full py-2 px-2 placeholder-gray-500 transition ease-in-out duration-150"></textarea>
             </div>
