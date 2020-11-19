@@ -10,8 +10,8 @@ import Card from '@site/src/components/Card';
 
 <div class="mt-12 grid gap-5 max-w-lg mx-auto md:grid-cols-1 lg:max-w-none">
 
-  <Card title="技术白皮书"
-    description="什么是低代码开发平台？什么是华炎魔方？什么是元数据生命周期管理？"
+  <Card title="华炎魔方技术白皮书"
+    description="什么是低代码开发平台；低代码开发平台的进化史；低代码开发生命周期管理；华炎魔方的开源生态；"
     href="http://oss.steedos.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E6%8A%80%E6%9C%AF%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf"
     target="_blank"/>
 
@@ -27,7 +27,7 @@ import Card from '@site/src/components/Card';
     description="华炎魔方界面总览、如何管理您的数据、分析统计、和处理审批流程。"
     href="/help/user/"/>
 
-  <Card title="设置和维护华炎魔方"
+  <Card title="如何设置和维护华炎魔方"
     description="设置和维护贵公司、控制谁可以看到什么内容、自动化业务流程、创建自定义应用程序。"
     href="/help/admin/"/>
 
