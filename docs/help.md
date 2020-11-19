@@ -12,7 +12,7 @@ import Card from '@site/src/components/Card';
 
   <Card title="华炎魔方技术白皮书"
     description="什么是低代码开发平台；低代码开发平台的进化史；低代码开发生命周期管理；华炎魔方的开源生态；"
-    href="http://oss.steedos.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E6%8A%80%E6%9C%AF%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf"
+    href="http://oss.steedos.com/apps/pdfviewer/web/viewer.html?file=http://oss.steedos.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E6%8A%80%E6%9C%AF%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf"
     target="_blank"/>
 
   <Card title="视频"
