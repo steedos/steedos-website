@@ -152,18 +152,18 @@ module.exports = {
           // ]
         },
         {to: 'pricing/platform', label:'定价',position: 'left'},
-        {label: '资源', position: 'left', 
-          items: [
-            {to: 'help/deploy', label: '安装部署', position: 'left',},
-            {to: 'help/download/', label: '下载客户端', position: 'left',},
-            {to: 'help/user/', label: '使用手册', position: 'left',},
-            {to: 'help/admin/', label: '系统管理员', position: 'left',},
-            {to: 'developer/', label: '开发人员', position: 'left',},
-            {to: 'https://github.com/steedos/steedos-platform/', label: '开源项目', position: 'left',},
-          ]
+        {to: 'help/', label: '文档', position: 'left', 
+          // items: [
+          //   {to: 'help/deploy', label: '安装部署', position: 'left',},
+          //   {to: 'help/download/', label: '下载客户端', position: 'left',},
+          //   {to: 'help/user/', label: '使用手册', position: 'left',},
+          //   {to: 'help/admin/', label: '系统管理员', position: 'left',},
+          //   {to: 'developer/', label: '开发人员', position: 'left',},
+          //   {to: 'https://github.com/steedos/steedos-platform/', label: '开源项目', position: 'left',},
+          // ]
         },
         {to: 'videos/', label: '视频', position: 'left',},
-        {to: 'platform/try', label:'试用',position: 'left'},
+        // {to: 'platform/try', label:'试用',position: 'left'},
         {to: 'form/contact', label: '联系我们', position: 'left'},
         // {to: '/platform/pricing', label: '报价', position: 'left',},
         {label: '登录', position: 'right',

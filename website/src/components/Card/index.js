@@ -9,6 +9,7 @@ class Card extends React.Component {
       title: "",
       description: "",
       theme: "green",
+      target: "_self",
   }
 
   constructor(props) {
@@ -16,9 +17,9 @@ class Card extends React.Component {
   }
 
   render() {
-    let {href, image, category, title, description, theme} = this.props;
+    let {href, target, image, category, title, description, theme} = this.props;
     return (
-      <a href={href} className="block hover:no-underline">
+      <a href={href} target={target} className="block hover:no-underline">
         <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
             {image && (
             <div className="flex-shrink-0">
