@@ -113,7 +113,7 @@ module.exports = {
 
       // Hides the switch in the navbar
       // Useful if you want to support a single color mode
-      disableSwitch: false,
+      disableSwitch: true,
 
       // Should we use the prefers-color-scheme media-query,
       // using user system preferences, instead of the hardcoded defaultMode
@@ -131,58 +131,54 @@ module.exports = {
       },
       items: [
         {to: 'platform/', label: '平台', position: 'left', activeBasePath: 'platform/none-active',
-          items: [
-            // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
-            {to: 'platform/', label: '平台概览', position: 'left'},
-            {to: '/videos/steedos-digital-transformation/', label:'数字化转型',position: 'left'},
-            {to: '/videos/lesson-object/', label:'零代码开发',position: 'left'},
-            {to: 'form/trial/', label:'预约演示',position: 'left'},
-          ]
+          // items: [
+          //   // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
+          //   {to: 'platform/', label: '平台概览', position: 'left'},
+          //   {to: '/videos/steedos-digital-transformation/', label:'数字化转型',position: 'left'},
+          //   {to: '/videos/lesson-object/', label:'零代码开发',position: 'left'},
+          //   {to: 'form/trial/', label:'预约演示',position: 'left'},
+          // ]
         },
-        {label: '应用市场', position: 'left', to: 'products/oa/',
-          items: [
-            // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
-            // {to: 'products/oa/', label: '华炎办公', position: 'left'},
-            {to: 'products/contract/', label:'合同',position: 'left'},
-            {to: 'products/sales/', label:'销售',position: 'left'},
-            {to: 'products/purchase/', label:'采购',position: 'left'},
-            // {to: 'solutions/group/', label:'集团管控',position: 'left'},
-            {to: 'products/cost/', label: '费控', position: 'left'},
-            {to: 'products/workflow/', label: '流程', position: 'left'},
-          ]
+        {label: '应用市场', position: 'left', to: 'appstore/',
+          // items: [
+          //   // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
+          //   // {to: 'products/oa/', label: '华炎办公', position: 'left'},
+          //   {to: 'products/contract/', label:'合同',position: 'left'},
+          //   {to: 'products/sales/', label:'销售',position: 'left'},
+          //   {to: 'products/purchase/', label:'采购',position: 'left'},
+          //   // {to: 'solutions/group/', label:'集团管控',position: 'left'},
+          //   {to: 'products/cost/', label: '费控', position: 'left'},
+          //   {to: 'products/workflow/', label: '流程', position: 'left'},
+          // ]
         },
-        {label: '资源', position: 'left', 
-          items: [
-            {to: 'help/deploy', label: '安装部署', position: 'left',},
-            {to: 'help/download/', label: '下载客户端', position: 'left',},
-            {to: 'help/user/', label: '使用手册', position: 'left',},
-            {to: 'help/admin/', label: '系统管理员', position: 'left',},
-            {to: 'developer/', label: '开发人员', position: 'left',},
-            {to: 'https://github.com/steedos/steedos-platform/', label: '开源项目', position: 'left',},
-          ]
+        // {to: 'pricing/platform', label:'定价',position: 'left'},
+        {to: 'help/', label: '文档', position: 'left', 
+          // items: [
+          //   {to: 'help/deploy', label: '安装部署', position: 'left',},
+          //   {to: 'help/download/', label: '下载客户端', position: 'left',},
+          //   {to: 'help/user/', label: '使用手册', position: 'left',},
+          //   {to: 'help/admin/', label: '系统管理员', position: 'left',},
+          //   {to: 'developer/', label: '开发人员', position: 'left',},
+          //   {to: 'https://github.com/steedos/steedos-platform/', label: '开源项目', position: 'left',},
+          // ]
         },
         {to: 'videos/', label: '视频', position: 'left',},
-        {to: 'pricing/platform', label:'报价',position: 'left'},
-        {to: 'platform/try', label:'试用',position: 'left'},
-        {to: 'form/contact', label: '联系我们', position: 'left'},
+        {to: 'form/trial', label:'试用',position: 'left'},
+        // {to: 'form/contact', label: '联系我们', position: 'left'},
         // {to: '/platform/pricing', label: '报价', position: 'left',},
-        {label: '登录', position: 'right',
-          items: [
-            {to: 'https://cn.steedos.com', label: '华炎云', position: 'left'},
-          ]
-        },
-        {label: 'ZH', to: 'us/', position: 'right',
-          items: [
-            {to: '/', label: '中文', position: 'left'},
-            {to: '/us', label: 'English', position: 'left'},
-          ]
-        },
-        // {
-        //   href: 'https://github.com/steedos/steedos-platform/',
-        //   position: 'right',
-        //   className: 'header-github-link',
-        //   'aria-label': 'GitHub repository',
+        {label: '登录', position: 'right', to: 'https://cn.steedos.com'},
+        // {label: 'ZH', to: 'us/', position: 'right',
+        //   items: [
+        //     {to: '/', label: '中文', position: 'left'},
+        //     {to: '/us', label: 'English', position: 'left'},
+        //   ]
         // },
+        {
+          href: 'https://github.com/steedos/steedos-platform/',
+          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
+        },
       ],
       // links_us: [
       //   {to: '/us/', label: 'Home', position: 'left'},

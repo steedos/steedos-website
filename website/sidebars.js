@@ -50,7 +50,7 @@ module.exports =
   "文档": {
     "快速向导": ["help/about", {
       "开通华炎魔方": ["help/cloud",{
-        "本地部署": ["help/deploy", "help/deploy/deploy_windows", "help/deploy/deploy_mac", "help/deploy/deploy_ubuntu", "help/deploy/deploy_heroku", "help/deploy/deploy_docker", "help/deploy/deploy_cluster"]
+        "本地部署": ["help/deploy", "help/deploy/deploy_windows", "help/deploy/deploy_mac", "help/deploy/deploy_ubuntu", "help/deploy/deploy_heroku", "help/deploy/deploy_docker", "help/deploy/deploy_cluster", "help/deploy/deploy_vmware", "help/deploy/env"]
       }],
       "客户端": ["help/download", "help/clients/desktop", "help/clients/mobile", "help/clients/wecom"]
     }],
@@ -102,27 +102,36 @@ module.exports =
   // "报价": {
   //   "报价": ["pricing/platform"],
   // },
-  // "解决方案": {
-  //   "解决方案": [
-  //     "products/oa", 
-  //     "products/contract",
-  //     "products/sales",
-  //     "products/purchase",
-  //     "products/cost",
-  //     // "products/workflow",
+  // "应用市场": {
+  //   "应用市场": [
+  //     "appstore", 
+  //     { 
+  //       "标准应用": [
+  //         "appstore/labs/contract",
+  //         "appstore/labs/sales",
+  //         "appstore/labs/purchase",
+  //         "appstore/labs/cost",
+  //         "appstore/labs/workflow",
+  //       ],
+  //     }
   //   ],
   // },
-  // "华炎魔方": {
-  //   "低代码平台": [
-  //     "platform", 
-  //     "videos", 
-  //     "platform/cases", 
-  //     "platform/pricing",
-  //     {
-  //       "type": "link",
-  //       "href": "https://github.com/steedos/steedos-platform",
-  //       "label": "开源"
-  //     }
-  //   ]
-  // }
+  "华炎魔方": {
+    "华炎魔方": [
+      "platform", 
+      {
+        "type": "link",
+        "href": "http://oss.steedos.com/apps/pdfviewer/web/viewer.html?file=http://oss.steedos.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E6%8A%80%E6%9C%AF%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf",
+        "label": "什么是低代码开发？"
+      },
+      // "videos",
+      "platform/cases", 
+      "pricing/platform", 
+      {
+        "type": "link",
+        "href": "/form/trial",
+        "label": "试用"
+      },
+    ]
+  }
 }

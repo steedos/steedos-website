@@ -23,13 +23,27 @@ import FAQ from '@site/src/components/FAQ';
 import Customers from '@site/src/components/Customers';
 import * as Icons from '@site/src/components/HeroIcons/outline';
 
+import Breadcrumb from '@site/src/components/Breadcrumb';
+
+<Breadcrumb
+  items={[
+    {
+      title: "应用市场", 
+      href: "/appstore/",
+    },
+    {
+      title: "审批王",
+      href: "/appstore/labs/workflow",
+    }
+  ]}
+/>
 <main class="flex bg-cover bg-no-repeat bg-indigo-100">
   <div class="mx-auto px-4 my-12 max-w-screen-xl">
     <div class="lg:grid lg:grid-cols-12 lg:gap-8">
       <div class="sm:text-center md:mx-auto lg:col-span-6 lg:text-left lg:self-center">
-        <div className="text-lg font-semibold uppercase tracking-wide text-gray-700 sm:text-lg xl:text-xl">
+        {/* <div className="text-lg font-semibold uppercase tracking-wide text-gray-700 sm:text-lg xl:text-xl">
           审批王
-        </div>
+        </div> */}
         <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
           
           <span class="text-indigo-600">快速部署、有效监控并持续优化各类业务流程</span>

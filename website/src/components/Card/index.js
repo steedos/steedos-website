@@ -9,6 +9,7 @@ class Card extends React.Component {
       title: "",
       description: "",
       theme: "green",
+      target: "_self",
   }
 
   constructor(props) {
@@ -16,10 +17,10 @@ class Card extends React.Component {
   }
 
   render() {
-    let {href, image, category, title, description, theme} = this.props;
+    let {href, target, image, category, title, description, theme} = this.props;
     return (
-      <a href={href} className="block hover:no-underline">
-        <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+      <a href={href} target={target} className="block hover:no-underline">
+        <div className="flex flex-col border border-gray-200 hover:border-blue-500 rounded-lg shadow-sm divide-y divide-gray-200 overflow-hidden">
             {image && (
             <div className="flex-shrink-0">
             <img className="h-48 w-full object-cover" src={image} alt=""/>
