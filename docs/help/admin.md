@@ -28,9 +28,19 @@ import Card from '@site/src/components/Card';
 
 #### 公司设置
 
-- [如何管理人员？](/help/organization)
+- [组织机构](/help/organization)
+- [简档](/help/profile)
+- [权限组](/help/permission_set)
+- [共享规则](/help/permission_share)
+- [审批岗位](/help/workflow/admin_positions)
 
-#### 流程审批
+#### 个性化设置
+
+- [通过公式计算字段值](/help/formula/summary)
+- [通过验证规则校验字段值](/help/validation_rules/summary)
+- [自动执行业务流程](/help/auto_process/summary)
+
+#### 审批王
 
 - [如何填写申请单？](/help/workflow/instance_add.md)
 - [如何审批？](/help/workflow/instance_approve.md)
@@ -38,6 +48,11 @@ import Card from '@site/src/components/Card';
 - [如何设计表单？](/help/workflow/admin_form)
 - [如何配置岗位？](/help/workflow/admin_positions)
 - [使用技巧](/help/workflow/faq)
+
+#### 系统集成
+
+- [外部数据源](/help/no-code/object_datasources)
+- [在线表单](/help/no-code/object_web_forms)
 
 #### 开发人员
 
