@@ -25,8 +25,12 @@ import Card from '@site/src/components/Card';
 
 ## 使用帮助
 
-- [如何下载客户端？](/help/download)
-- [如何管理人员？](/help/organization)
+- [用户登录](/help/login)
+- [界面总览](/help/interface)
+- [查找记录](/help/record_search)
+- [列表视图](/help/record_list)
+- [创建和更新记录](/help/record_edit)
+- [分析数据](/help/record_report)
 
 ## 流程审批
 
