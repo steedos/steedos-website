@@ -34,4 +34,9 @@ import Card from '@site/src/components/Card';
   <Card title="开发人员"
     description="如何使用华炎魔方开发复杂业务系统：搭建开发环境、开发教程、开发文档、API接口。"
     href="/developer/"/>
+
+  <Card title="开源项目"
+    description="如何使用华炎魔方开发复杂业务系统：搭建开发环境、开发教程、开发文档、API接口。"
+    target="_blank"
+    href="https://github.com/steedos/steedos-platform/"/>
 </div>

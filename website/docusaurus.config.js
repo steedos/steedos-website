@@ -113,7 +113,7 @@ module.exports = {
 
       // Hides the switch in the navbar
       // Useful if you want to support a single color mode
-      disableSwitch: false,
+      disableSwitch: true,
 
       // Should we use the prefers-color-scheme media-query,
       // using user system preferences, instead of the hardcoded defaultMode
@@ -166,23 +166,19 @@ module.exports = {
         {to: 'form/trial', label:'试用',position: 'left'},
         // {to: 'form/contact', label: '联系我们', position: 'left'},
         // {to: '/platform/pricing', label: '报价', position: 'left',},
-        {label: '登录', position: 'right',
-          items: [
-            {to: 'https://cn.steedos.com', label: '华炎云', position: 'left'},
-          ]
-        },
-        {label: 'ZH', to: 'us/', position: 'right',
-          items: [
-            {to: '/', label: '中文', position: 'left'},
-            {to: '/us', label: 'English', position: 'left'},
-          ]
-        },
-        // {
-        //   href: 'https://github.com/steedos/steedos-platform/',
-        //   position: 'right',
-        //   className: 'header-github-link',
-        //   'aria-label': 'GitHub repository',
+        {label: '登录', position: 'right', to: 'https://cn.steedos.com'},
+        // {label: 'ZH', to: 'us/', position: 'right',
+        //   items: [
+        //     {to: '/', label: '中文', position: 'left'},
+        //     {to: '/us', label: 'English', position: 'left'},
+        //   ]
         // },
+        {
+          href: 'https://github.com/steedos/steedos-platform/',
+          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
+        },
       ],
       // links_us: [
       //   {to: '/us/', label: 'Home', position: 'left'},
