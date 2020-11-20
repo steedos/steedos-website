@@ -121,12 +121,7 @@ module.exports =
       },
       // "videos",
       "platform/cases", 
-      // "platform/pricing", 
-      {
-        "type": "link",
-        "href": "/pricing/platform",
-        "label": "定价"
-      },
+      "pricing/platform", 
       {
         "type": "link",
         "href": "/form/trial",
