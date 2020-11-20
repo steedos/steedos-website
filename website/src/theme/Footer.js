@@ -189,9 +189,22 @@ class Footer extends React.Component {
       </div>
     </div>
     <div className="mt-12 border-t border-gray-200 pt-8">
-      <p className="text-base leading-6 text-gray-400 xl:text-center">
+      <p className="text-base leading-6 text-gray-500 xl:text-center">
         &copy; 2020 华炎软件. 保留所有权利.
       </p>
+
+      <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+        <div class="px-3 py-2">
+          <a href="/cn" class="text-base text-gray-500 hover:text-gray-900">
+            中文
+          </a>
+        </div>
+        <div class="px-3 py-2">
+          <a href="/us" class="text-base text-gray-500 hover:text-gray-900">
+            English
+          </a>
+        </div>
+      </nav>
     </div>
   </div>
 </div>
