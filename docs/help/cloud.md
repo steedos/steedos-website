@@ -4,7 +4,7 @@ title: 华炎魔方云服务
 
 华炎魔方提供了多租户云服务，注册账户即可免费使用。
 
-华炎魔方云服务网址为<https://cn.steedos.com/>，可以在浏览器上直接输入该网址访问，或者下载我们的[桌面客户端](/help/clients/desktop)和[手机客户端](/help/clients/mobile)配置对应的服务地址为上述云服务地址即可。
+华炎魔方云服务网址为<https://cn.steedos.com/>，可以在浏览器上直接输入该网址访问，或者下载我们的[桌面客户端](/help/clients/desktop)或[手机客户端](/help/clients/mobile)配置对应的服务地址为上述云服务地址即可。
 
 ## 创建账户
 
