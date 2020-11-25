@@ -151,7 +151,7 @@ module.exports = {
           //   {to: 'products/workflow/', label: '流程', position: 'left'},
           // ]
         },
-        // {to: 'pricing/platform', label:'定价',position: 'left'},
+        {to: 'pricing/platform', label:'定价',position: 'left'},
         {to: 'help/', label: '文档', position: 'left', 
           // items: [
           //   {to: 'help/deploy', label: '安装部署', position: 'left',},
