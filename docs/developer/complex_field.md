@@ -12,7 +12,6 @@ priority:
   label: 优先级
   options: 高:high,中:normal,低:low
   defaultValue: normal
-  filterable: true
 ```
 
 ### 多选 multiple
@@ -24,7 +23,6 @@ tags:
   type: select
   label: 类别
   options: 客户,供应商,合作伙伴,其他
-  filterable: true
   multiple: true
 ```
 
@@ -87,7 +85,6 @@ objects:
 
       return _options;
     }
-  filterable: true
 ```
 
 ### 数据存储格式
@@ -186,7 +183,6 @@ contract_type: ["id-1111111","id-2222222"]
     reference_to: accounts
     sortable: true
     name: account
-    filterable: true
 ```
 
 ![master_detail类型字段多选](/assets/field_master_detail_guide.png)
@@ -219,7 +215,6 @@ contract_type: ["id-1111111","id-2222222"]
     type: autonumber
     formula: "{YYYY}-{0000}" 
     label: 合同编号
-    filterable: true
     omit: true
     readonly: true
     searchable: true
