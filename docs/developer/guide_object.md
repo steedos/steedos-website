@@ -33,7 +33,6 @@ fields:
     formula: "{YYYY}-{000}"
     label: 合同编号
     sortable: true
-    filterable: true
     omit: true
     readonly: true
   othercompany:
@@ -45,7 +44,6 @@ fields:
     label: 登记日期
     type: date
     sortable: true
-    filterable: true
     defaultValue: "{now}"
   bop:
     type: select
