@@ -51,7 +51,6 @@ fields:
     required: true
     sortable: true
     name: contract
-    filterable: true
 ```
 
 ## 业务对象关联字段
@@ -66,7 +65,6 @@ contract:
     required: true
     sortable: true
     name: contract
-    filterable: true
 ```
 
 ## 配置默认视图和权限
