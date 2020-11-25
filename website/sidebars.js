@@ -122,7 +122,7 @@ module.exports =
       {
         "type": "link",
         "href": "http://oss.steedos.com/apps/pdfviewer/web/viewer.html?file=http://oss.steedos.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E6%8A%80%E6%9C%AF%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf",
-        "label": "什么是低代码开发？"
+        "label": "如何选择低代码平台？"
       },
       // "videos",
       "platform/cases", 
