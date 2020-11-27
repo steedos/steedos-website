@@ -45,7 +45,7 @@ username: jack # 用户名
 mobile: 1865201314 # 用户手机号
 email: 1865201314@qq.com # 用户邮箱
 utcOffset: 8 # 时区差，以小时为单位，北京时间为8
-roles: ["role_name"] # 用户属于的所有权限组
+roles: ["role_name"] # 用户属于的所有权限集
 space:
   _id: i6thCRrKWYmdjxpzt # 当前工作区Id
   name: Apple # 当前工作区名称

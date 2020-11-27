@@ -6,7 +6,7 @@ title: 对象权限
 
 ### 对象权限
 
-在以 .object.yml 结尾的[业务对象](object)描述文件中，可以为[权限组](/help/permission_set)对应的用户设定对象级别的权限。
+在以 .object.yml 结尾的[业务对象](object)描述文件中，可以为[权限集](/help/permission_set)对应的用户设定对象级别的权限。
 
 ```yml
 permission_set:
@@ -40,21 +40,21 @@ permission_set:
     unrelated_objects: []
 ```
 
-在上面的 yml 文件中，就给 user、admin 这两个权限组指定了对象权限。主要选项的意义如下：
+在上面的 yml 文件中，就给 user、admin 这两个权限集指定了对象权限。主要选项的意义如下：
 
 ![权限设置](/assets/platform/permisson_options.png)
 
-配置后，系统前台显示这一业务对象的列表视图时，会根据用户所属权限组找到对象权限集，并依此显示全部或部分记录、显示/隐藏部分操作按钮。显示对象记录详情时，也是如此。
+配置后，系统前台显示这一业务对象的列表视图时，会根据用户所属权限集找到对象权限集，并依此显示全部或部分记录、显示/隐藏部分操作按钮。显示对象记录详情时，也是如此。
 
 ![权限设置](/assets/platform/permisson_display.png)
 
-某个权限组对于某个对象的对象权限的概念，可参考如下的示意图。
+某个权限集对于某个对象的对象权限的概念，可参考如下的示意图。
 
 ![权限设置](/assets/platform/permisson_set.png)
 
 ### 对象权限叠加
 
-当一个用户属于多个权限组时，实际拥有的权限为各权限组权限的叠加。
+当一个用户属于多个权限集时，实际拥有的权限为各权限集权限的叠加。
 
 ![权限设置](/assets/platform/permisson_multiple.png)
 
@@ -68,9 +68,9 @@ permission_set:
 
 ## 对象权限的配置
 
-### 权限组 permission_set
+### 权限集 permission_set
 
-对应的权限组。
+对应的权限集。
 
 ### 允许创建 allowCreate
 

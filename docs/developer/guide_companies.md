@@ -263,7 +263,7 @@ permission_set:
 
 ### 配置权限集对应的人员
 
-在权限组里，新增权限组contract_manager（合同管理员），并加进各单位的合同管理员。
+在权限集里，新增权限集contract_manager（合同管理员），并加进各单位的合同管理员。
 
 ![单位](/assets/lesson_permissionsets.png)
 

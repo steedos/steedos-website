@@ -184,9 +184,9 @@ list_views:
 - 在移动端会识别mobile_columns来显示对应的列，如果为空则取其columns
 - columns/mobile_columns可以配置为字段名，也可以配置为对象，配置为对象时columns支持`field,width,wrap`属性，mobile_columns暂时只支持`field`属性
 
-### 权限组
+### 权限集
 
-开发人员可以配置对象的[权限组](object_permission.md)，系统上线后，系统管理员也可以在设置界面中设置对象权限。
+开发人员可以配置对象的[权限集](object_permission.md)，系统上线后，系统管理员也可以在设置界面中设置对象权限。
 
 ```yaml
 permission_set:

@@ -30,7 +30,7 @@ import Card from '@site/src/components/Card';
 
 - [组织机构](/help/organization)
 - [简档](/help/profile)
-- [权限组](/help/permission_set)
+- [权限集](/help/permission_set)
 - [共享规则](/help/permission_share)
 - [审批岗位](/help/workflow/admin_positions)
 

@@ -105,9 +105,9 @@ admin_menus:
 - true ：默认展开子节点。
 - false ：默认不展开子节点。
 
-### 权限组 permission_sets
+### 权限集 permission_sets
 
-可见此节点的权限组。
+可见此节点的权限集。
 
 ### 业务对象 object_name
 
