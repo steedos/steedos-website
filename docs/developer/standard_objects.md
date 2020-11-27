@@ -26,7 +26,7 @@ Steedos SAAS 版本可以把用户划分为不同的工作区（企业），每�
 
 ### 组织机构 organizations
 
-用于在工作区内，定义单位的组织机构。每个员工可以属于多个组织机构。
+用于在工作区内，定义公司的组织机构。每个员工可以属于多个组织机构。
 
 [源码](https://github.com/steedos/steedos-platform/blob/master/packages/standard-objects/organizations.object.yml)
 

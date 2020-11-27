@@ -245,7 +245,7 @@ relatedList:
 
 通过定义extend属性，并申明需要继承的对象名，标记此文件为对象继承文件。
 
-例如可以在项目中创建一个tasks.object.yml文件，给[标准对象](standard_objects)“任务”新增 "company_id" 字段，以实现单位级的权限管理。
+例如可以在项目中创建一个tasks.object.yml文件，给[标准对象](standard_objects)“任务”新增 "company_id" 字段，以实现分部级的权限管理。
 
 ```yaml
 extend: tasks

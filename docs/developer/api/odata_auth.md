@@ -52,17 +52,17 @@ space:
 is_space_admin: true # 是否是当前工作区管理员
 spaces: [space] # 数组，用户所属的所有工作区
 company:
-  _id: i6thCRrKWYmdjxpzt # 用户所属主单位
-  name: Apple China # 用户所属主单位名称
-  organization: xxx # 用户所属主单位关联组织id
-companies: [company] # 数组，用户所属的所有单位
-company_id: "xxx" # 用户所属主单位id值
-company_ids: ["xxx"] # 数组，用户所属的所有单位id值
+  _id: i6thCRrKWYmdjxpzt # 用户所属主分部
+  name: Apple China # 用户所属主分部名称
+  organization: xxx # 用户所属主分部关联组织id
+companies: [company] # 数组，用户所属的所有分部
+company_id: "xxx" # 用户所属主分部id值
+company_ids: ["xxx"] # 数组，用户所属的所有分部id值
 organization:
   _id: i6thCRrKWYmdjxpzt
   name: Sales # 用户所属部门
   fullname: Apple China/Sales # 用户所属部门的全称
-  company_id: xxx # 用户所属部门关联单位id
+  company_id: xxx # 用户所属部门关联分部id
 organizations: [organization] # 数组，用户所属的所有部门
 ```
 
