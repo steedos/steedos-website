@@ -17,7 +17,7 @@ mutation {
 ```json
 {
   "data": {
-    "organizations_INSERT_ONE": {
+    "organizations_UPDATE_ONE": {
       "name": "财务部",
       "_id": "5cb98489d09a343e14daae95"
     }
