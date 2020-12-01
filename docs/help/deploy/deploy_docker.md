@@ -8,7 +8,7 @@ title: Docker 部署
 
 确保本地已安装[docker](https://docs.docker.com/get-docker/)和[docker-compose](https://docs.docker.com/compose/install/)
 
-下载示例文件[docker-compose.yml](https://github.com/steedos/steedos-project-oa/blob/master/docker-compose.yml)(唯一需要的文件)到本地并编辑:
+下载示例文件[docker-compose.yml](https://github.com/steedos/steedos-project-oa/blob/docker/docker-compose.yml)(唯一需要的文件)到本地并编辑:
 
 - 编辑 environment 中的 ROOT_URL 以匹配您的域名或 IP 地址
 
