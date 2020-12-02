@@ -17,7 +17,7 @@ import Card from '@site/src/components/Card';
 
 <Card
   title="审批王"
-  description="快速部署、有效监控并持续优化各类业务流程"
+  description="快速部署、有效监控并持续优化各类业务流程。"
   href="/appstore/labs/workflow"/>
 
 <Card
@@ -40,7 +40,7 @@ import Card from '@site/src/components/Card';
 <Card
   title="项目管理"
   target="_blank"
-  description="通过项目、任务、里程碑，管理项目的整理生命周期"
+  description="通过项目、任务、里程碑，管理项目的整理生命周期。"
   href="https://github.com/steedos/app-project-management"/>
 
 <Card
