@@ -13,7 +13,7 @@ import Card from '@site/src/components/Card';
 
 <!-- ## 开源应用 -->
 
-<div class="mt-12 grid gap-5 max-w-screen-xl mx-auto md:grid-cols-3">
+<div class="mt-12 grid gap-5 max-w-screen-xl mx-auto md:grid-cols-2">
 
 <Card
   title="审批王"
