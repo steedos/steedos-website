@@ -64,6 +64,27 @@ title: 构建公式字段
 - 要在公式字段中插入文本，用引号将文本引起来。例如，要显示“CASE: 123”，使用本公式 `“CASE: “& CaseNumber__c.`
 - 在引号或反斜线之前使用反斜线 ( \ ) 字符，可在您的输出值中将其插入为文字值。例如，公式中的`“Trouble\ \Case \"Ticket\": ”` 会在详细信息页面显示 `Trouble\Case “Ticket”:`（暂不支持，即目前无法在公式中编写带引号或反斜线的字符串）
 
+## 使用布尔公式字段的提示
+
+部分函数是不支持输出boolean类型值的，已知不支持的函数有 [BLANKVALUE](/help/formula/function_logical#blankvalue), [CASE](/help/formula/function_logical#case), [IF](/help/formula/function_logical#if)。
+
+比如以下公式配置会报错：
+
+```js
+IF(location_type = 'Van', true, false)
+```
+
+应该使用`ocation_type = 'Van'`来简化该公式。
+
+同样的，以下公式配置也会报错：
+
+```js
+CASE(Days_Open__c, 1,
+  true,false)
+```
+
+应该使用`Days_Open__c = 1`来简化该公式。
+
 ## 关于跨对象公式的提示
 
 - 跨对象公式是跨越两个相关对象，并在这些对象上引用合并字段的公式。如果对象在“主表/子表”的子表一侧，跨对象公式可以从主（“父级”）对象引用合并字段。跨对象公式也可与“相关表”一起使用。
