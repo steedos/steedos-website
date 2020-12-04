@@ -44,11 +44,11 @@ class FAQ extends React.Component {
                       </div>
                       <div class="mt-12">
                         <dt class="text-lg leading-6 font-medium text-gray-900">
-                          开源社区版有什么限制？
+                          开源版有什么限制？
                         </dt>
                         <dd class="mt-2">
                           <p class="text-base leading-6 text-gray-500">
-                            <a href="https://github.com/steedos/steedos-platform/" target="_blank" class=" text-gray-700">华炎魔方开源社区版（标准版）</a>基于<a href="https://choosealicense.com/licenses/mit/" target="_blank" class=" text-gray-700">MIT协议</a>，内置华炎魔方十大引擎，完全免费。基于华炎魔方开发的解决方案，可以单独定价销售。
+                            <a href="https://github.com/steedos/steedos-platform/" target="_blank" class=" text-gray-700">华炎魔方开源版</a>基于<a href="https://choosealicense.com/licenses/mit/" target="_blank" class=" text-gray-700">MIT协议</a>，内置华炎魔方十大引擎，完全免费。基于华炎魔方开发的解决方案，可以单独定价销售。
                           </p>
                         </dd>
                       </div>
