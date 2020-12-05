@@ -200,7 +200,7 @@ class Footer extends React.Component {
           </a>
         </div>
         <div class="px-3 py-2">
-          <a href="/us" class="text-base text-gray-500 hover:text-gray-900">
+          <a href="https://www.steedos.org/" class="text-base text-gray-500 hover:text-gray-900">
             English
           </a>
         </div>
