@@ -1,5 +1,5 @@
 ---
-title: Windows 快速试用
+title: Windows 快速安装
 ---
 
 ## 下载
