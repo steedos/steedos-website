@@ -2,6 +2,16 @@
 title: Windows 快速安装
 ---
 
+## 支持平台
+
+项目支持在以下 64 位操作系统中运行：
+
+- Windows Server 2019
+- Windows 10 / Windows Server 2016
+- Windows 8.1 / Windows Server 2012 R2
+- Windows 8 / Windows Server 2012
+- Windows 7 / Windows Server 2008 R2
+
 ## 下载
 
 点击下载执行程序压缩包[steedos-project-oa-win.zip](https://server-backups.oss-cn-beijing.aliyuncs.com/steedos-trial/steedos-project-oa-win.zip)
