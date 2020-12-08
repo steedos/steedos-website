@@ -46,3 +46,11 @@ title: Windows 快速安装
 服务会自动使用默认浏览器打开地址 http://127.0.0.1:80/ ，请创建账号后使用华炎魔方
 
 如弹出防火墙询问窗口，点击允许运行即可。
+
+## 常见问题解答
+
+### 启动数据库报 `Failed to set up listener: SocketException: Address already in use`
+
+端口冲突，说明本地 27017 端口已经被占用，很有可能本地已经启动了一个 mongodb 服务，停掉即可
+
+也可以编辑 **1-启动数据库.bat** 在行尾添加 `--port {非27017端口}`，同时修改**.env.local**文件中**MONGO_URL**中的端口
