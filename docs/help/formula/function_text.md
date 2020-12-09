@@ -477,6 +477,12 @@ SUBSTITUTE(Email, LEFT(Email, FIND("@", Email)), "www.")
 
 **返回值：** 文本
 
+:::note 技巧提示
+
+- ■ `TEXT(null)`返回值为"NULL"而不是空字符串。
+- ■ `TEXT(FieldName)`参数为字段名的话，当字段值为空时，返回的是空字符串而不是"NULL"。
+:::
+
 ```js
 TEXT(ExpectedRevenue)
 ```
