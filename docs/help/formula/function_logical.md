@@ -230,28 +230,28 @@ IF函数不支持返回值为布尔类型的情况，即第二个及第三个参
 
 **使用：** ISBLANK(表达式)
 
-**参数：** `text/number/date/datetime`
+**参数：** `text`
 您希望计算的表达式。
 
 **返回值：** 布尔
 
 ```js
-(IF(ISBLANK(Maint_Amount__c), 0, 1) + ​
- IF(ISBLANK(Services_Amount__c), 0,1) + ​
-  IF(ISBLANK(Discount_Percent__c), 0, 1) + ​
-   IF(ISBLANK(Amount), 0, 1) +​
-    IF(ISBLANK(Timeline__c), 0, 1)) / 5
+(IF(ISBLANK(TEXT(Maint_Amount__c)), 0, 1) + ​
+ IF(ISBLANK(TEXT(Services_Amount__c)), 0,1) + ​
+  IF(ISBLANK(TEXT(Discount_Percent__c)), 0, 1) + ​
+   IF(ISBLANK(TEXT(Amount)), 0, 1) +​
+    IF(ISBLANK(TEXT(Timeline__c)), 0, 1)) / 5
 ```
 
 此公式可提取一组字段，并计算人员所用的百分比。此公式字段检查五个字段以查看它们是否为空。如果为空，则该字段计数为 0。对于任何包含一个值的字段计数“1”，且该总和除以五（计算的字段数）。此公式需要您选中“空白字段处理”下面的将空白字段视为空白选项，否则公式中的ISBLANK会始终返回FALSE。
 
 :::note 技巧提示
 
-- ■ 请不要用`MyDateTime__c == null`这种表达式判断空值，而应该使用`ISBLANK(MyDateTime__c)`。
-- ■ 参数支持数据类型text, number, date, datetime等，但是不支持类型boolean。
+- ■ 请不要用`MyDateTime__c == null`这种表达式判断空值，而应该使用`ISBLANK(TEXT(MyDateTime__c))`。
+- ■ 参数支持数据类型text, number, date, datetime等，但是不支持类型boolean，需要注意的是只有text类型能正常工作，其他被支持的类型虽然不会报错，但是始终返回false。
 - ■ 如果字段包含字符、空白或零，则字段不为空。例如，如果字段包含使用空格键插入的空格，则该字段不为空。
 - ■ 如果字段没有值，则使用 [BLANKVALUE](function_logical#blankvalue) 函数返回指定表达式；如果您只想检查字段是否有值，则使用 ISBLANK 函数。
-- ■ 如果您对数值字段使用该函数，则字段没有值且配置将空白字段处理为空白时，该函数才返回 TRUE。
+- ■ 如果您对数值字段使用该函数,比如`ISBLANK(TEXT(Amount))`，则字段没有值且配置将空白字段处理为空白时，该函数才返回 TRUE。
 - ■ 因为我们的空白字段处理方式默认值是“将空白字段视为零”，所以低代码中要小心，不配置这个属性时，默认为按0值处理。零代码配置时问题不大，因为空白字段处理属性是必填的，不存在默认值问题。
 :::
 

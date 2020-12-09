@@ -19,13 +19,13 @@ title: 公式最佳实践
 轻松培养将整个公式保持在一行中的习惯，特别是在公式较小时。将每个函数放在各自的行上，这将使公式更易于读取和排除故障。这些示例显示相同公式，一个是没有换行符，另一个是将每个函数放在单独行上。
 
 ```js
-IF(AND(ISBLANK(myDate_c),active_c=true),"Missing Date","Not Applicable")
+IF(AND(ISBLANK(TEXT(myDate_c)),active_c=true),"Missing Date","Not Applicable")
 ```
 
 ```js
 IF(
 AND(
-ISBLANK(myDate_c),
+ISBLANK(TEXT(myDate_c)),
 active_c=true
 ),
 "Missing Date",
@@ -42,7 +42,7 @@ active_c=true
 ```js
 IF(
   AND(
-    ISBLANK(myDate_c),
+    ISBLANK(TEXT(myDate_c)),
     active_c=true
   ),
   "Missing Date",
@@ -55,7 +55,7 @@ IF(
 ```js
 IF(
 AND(
-ISBLANK(myDate_c)
+ISBLANK(TEXT(myDate_c))
 ),
 active_c=true
 ),
@@ -69,7 +69,7 @@ active_c=true
 ```js
 IF(
   AND(
-    ISBLANK(myDate_c)
+    ISBLANK(TEXT(myDate_c))
     ),
     active_c=true
   ),
