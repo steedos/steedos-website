@@ -75,7 +75,7 @@ sudo npm install pm2 -g
 
 ## 安装 mongodb 数据库
 
-根据官方向导，安装最新的[mongodb4.2](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
+根据官方向导，安装最新的[mongodb4.2](https://docs.mongodb.com/v4.2/tutorial/install-mongodb-on-ubuntu/)
 
 ### 使用集群模式启动数据库
 
