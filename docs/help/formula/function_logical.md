@@ -65,6 +65,15 @@ BLANKVALUE(TEXT(Payment_Due_Date__c), TEXT(StartDate +5))
 该函数与[ISBLANK](function_logical#isblank)很像，但是该函数会进一步返回字段值为空时的置换表达式对应的值，一般来说，如果您只是想判断字段值是否为空，应该使用后者而不是该函数。
 :::
 
+:::note 各种字段类型判断空值的公式写法
+
+- ■ 字段类型为 `text/select` 时：`BLANKVALUE(FieldName, "替换值")`
+- ■ 字段类型为 `number/currency` 时： `VALUE(BLANKVALUE(TEXT(FieldName), TEXT(替换值)))`
+- ■ 字段类型为 `date/datetime` 时： `IF(ISBLANK(TEXT(FieldName)), ValueA, ValueB)`
+- ■ 字段类型为 `lookup/master_detail` 时： `BLANKVALUE(FieldName._id, "替换ID值")`
+- ■ 字段类型为 `boolean` 时：`IF(FieldName, ValueA, ValueB)`
+:::
+
 ## CASE
 
 根据一系列值检查一个给定表达式。如果表达式等于其中一个值，则返回相应结果。如果它不等于任何值，则返回其他结果。
@@ -257,6 +266,14 @@ IF函数不支持返回值为布尔类型的情况，即第二个及第三个参
 
 :::note 注意
 ISBLANK函数返回值为布尔类型，但是不支持参数值本身为布尔类型的情况。
+:::
+
+:::note 各种字段类型判断空值的公式写法
+
+- ■ 字段类型为 `text/select` 时：`ISBLANK(FieldName)`
+- ■ 字段类型为 `number/currency/date/datetime` 时： `ISBLANK(TEXT(FieldName))`
+- ■ 字段类型为 `lookup/master_detail` 时： `ISBLANK(FieldName._id)`
+- ■ 字段类型为 `boolean` 时：`FieldName`
 :::
 
 ## NOT
