@@ -34,7 +34,7 @@ title: 腾讯云部署
 
 ![创建账户](/assets/help/deploy/tencent/创建账户.png)
 
-华炎魔方帮助文档：https://developer.steedos.com/help/
+华炎魔方帮助文档：https://www.steedos.com/help/
 
 ## 系统开发及配置说明
 
@@ -104,8 +104,8 @@ sudo pm2 startup
 
 ### 配置文件说明
 
-**.env.local** 文件可配置服务的环境变量，方便用户自定义访问地址、连接指定数据库、使用自己的邮件及短信服务等。详细说明可访问 https://developer.steedos.com/help/deploy/env
+**.env.local** 文件可配置服务的环境变量，方便用户自定义访问地址、连接指定数据库、使用自己的邮件及短信服务等。详细说明可访问 https://www.steedos.com/help/deploy/env
 
 ### 代码开发
 
-代码开发可参考教程：https://developer.steedos.com/developer/
+代码开发可参考教程：https://www.steedos.com/developer/
