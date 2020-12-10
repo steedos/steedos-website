@@ -164,6 +164,7 @@ module.exports = {
         },
         {to: 'help/deploy', label: '安装', position: 'left'},
         {to: 'videos/', label: '视频', position: 'left',},
+        {to: 'blog', label: '动态', position: 'left'},
         {to: 'form/trial', label:'试用',position: 'left'},
         // {to: 'form/contact', label: '联系我们', position: 'left'},
         // {to: '/platform/pricing', label: '报价', position: 'left',},
