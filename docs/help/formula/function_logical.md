@@ -57,18 +57,20 @@ BLANKVALUE(TEXT(Payment_Due_Date__c), TEXT(StartDate +5))
 - ■ 如果字段包含字符、空白或零，则字段不为空。例如，如果字段包含使用空格键插入的空格，则该字段不为空。
 - ■ 如果字段没有值，则使用 BLANKVALUE 函数返回指定置换表达式对应的值；如果您只想检查字段是否有值，则使用[ISBLANK](function_logical#isblank)函数。
 - ■ 传入的参数不支持布尔类型值，且传入的两个参数值类型应该一样，否则公式将直接报错，详情可参考：[使用布尔公式字段的提示](/help/formula/create#使用布尔公式字段的提示)。
-- ■ 如果您对数值字段使用该函数，比如`VALUE(BLANKVALUE(TEXT(Amount), TEXT(1000)))`，则字段没有值且配置将空白字段处理为空白时，该函数才返回第二个参数中的指定的置换表达式值，如果字段没有值且配置将空白字段处理为0时，则按0值返回而不是返回第二个参数中的指定表达式值。
+- ■ 如果您对数值字段判断空值，比如`IF(TEXT(Amount) == "NULL", 100, Amount)`，则字段没有值且配置将空白字段处理为空白时，该公式才返回第二个参数中的指定的置换表达式值，如果字段没有值且配置将空白字段处理为0时，则按0值返回而不是返回第二个参数中的指定表达式值。
 - ■ 因为我们的空白字段处理方式默认值是“将空白字段视为零”，所以低代码中要小心，不配置这个属性时，默认为按0值处理。零代码配置时问题不大，因为空白字段处理属性是必填的，不存在默认值问题。
 :::
 
 :::note 注意
-该函数与[ISBLANK](function_logical#isblank)很像，但是该函数会进一步返回字段值为空时的置换表达式对应的值，一般来说，如果您只是想判断字段值是否为空，应该使用后者而不是该函数。
+
+- ■ 该函数与[ISBLANK](function_logical#isblank)很像，但是该函数会进一步返回字段值为空时的置换表达式对应的值，一般来说，如果您只是想判断字段值是否为空，应该使用后者而不是该函数。
+- ■ 如果您对数值字段判断空值，应该用表达式`IF(TEXT(Amount) == "NULL", 100, Amount)`，而不是`VALUE(BLANKVALUE(TEXT(Amount), TEXT(1000)))`，因为BLANKVALUE不支持数值类型字段，即使外面额外调用了TEXT函数转换也没用。
 :::
 
 :::note 各种字段类型判断空值的公式写法
 
 - ■ 字段类型为 `text/select` 时：`BLANKVALUE(FieldName, "替换值")`
-- ■ 字段类型为 `number/currency` 时： `VALUE(BLANKVALUE(TEXT(FieldName), TEXT(替换值)))`
+- ■ 字段类型为 `number/currency` 时： `IF(TEXT(FieldName) == "NULL", 替换值, FieldName)`
 - ■ 字段类型为 `date/datetime` 时： `IF(ISBLANK(TEXT(FieldName)), ValueA, ValueB)`
 - ■ 字段类型为 `lookup/master_detail` 时： `BLANKVALUE(FieldName._id, "替换ID值")`
 - ■ 字段类型为 `boolean` 时：`IF(FieldName, ValueA, ValueB)`
@@ -265,13 +267,16 @@ IF函数不支持返回值为布尔类型的情况，即第二个及第三个参
 :::
 
 :::note 注意
-ISBLANK函数返回值为布尔类型，但是不支持参数值本身为布尔类型的情况。
+
+- ■ ISBLANK函数返回值为布尔类型，但是不支持参数值本身为布尔类型的情况。
+- ■ 对于数值类型判断空值目前还不支持ISBLANK函数，即使`ISBLANK(TEXT(Maint_Amount__c)`这种写法也不生效，可以换成`TEXT(Maint_Amount__c) == "NULL"`
 :::
 
 :::note 各种字段类型判断空值的公式写法
 
 - ■ 字段类型为 `text/select` 时：`ISBLANK(FieldName)`
-- ■ 字段类型为 `number/currency/date/datetime` 时： `ISBLANK(TEXT(FieldName))`
+- ■ 字段类型为 `number/currency` 时： `TEXT(FieldName) == "NULL"`
+- ■ 字段类型为 `date/datetime` 时： `ISBLANK(TEXT(FieldName))`
 - ■ 字段类型为 `lookup/master_detail` 时： `ISBLANK(FieldName._id)`
 - ■ 字段类型为 `boolean` 时：`FieldName`
 :::
