@@ -30,7 +30,7 @@ title: 腾讯云部署
 
 待实例启动后即可通过在浏览器中输入分配的公网 IP 访问华炎魔方，创建账号。
 
-![公网IP](/assets/help/deploy/tencent/公网IP.png)
+![公网地址](/assets/help/deploy/tencent/公网地址.png)
 
 ![创建账户](/assets/help/deploy/tencent/创建账户.png)
 
@@ -62,7 +62,7 @@ title: 腾讯云部署
 
 由于是 HTTP 访问，浏览器会提示警告，请点击**访问此网站**，进入输入密码界面：
 
-![输入code-server密码](/assets/help/deploy/tencent/输入code-server密码.png)
+![输入编辑器密码](/assets/help/deploy/tencent/输入编辑器密码.png)
 
 密码需要登录进实例查看，打开本地终端输入：
 
