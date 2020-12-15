@@ -49,7 +49,7 @@ module.exports =
   },
   "文档": {
     "快速向导": ["help/about", {
-      "开通华炎魔方": ["help/cloud",{
+      "开通华炎魔方": ["help/cloud","help/license",{
         "本地部署": ["help/deploy", "help/deploy/deploy_windows", "help/deploy/deploy_windows_trial", "help/deploy/deploy_mac", "help/deploy/deploy_ubuntu", "help/deploy/deploy_heroku", "help/deploy/deploy_docker", "help/deploy/deploy_cluster", "help/deploy/deploy_vmware", "help/deploy/env"]
       }],
       "客户端": ["help/download", "help/clients/desktop", "help/clients/mobile", "help/clients/wecom"]
