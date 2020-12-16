@@ -49,7 +49,7 @@ module.exports =
   },
   "文档": {
     "快速向导": ["help/about", {
-      "开通华炎魔方": ["help/cloud","help/license",{
+      "开通华炎魔方": ["help/cloud",{
         "本地部署": ["help/deploy", "help/deploy/deploy_windows", "help/deploy/deploy_windows_trial", "help/deploy/deploy_mac", "help/deploy/deploy_ubuntu", "help/deploy/deploy_heroku", "help/deploy/deploy_docker", "help/deploy/deploy_cluster", "help/deploy/deploy_vmware", "help/deploy/env"]
       }],
       "客户端": ["help/download", "help/clients/desktop", "help/clients/mobile", "help/clients/wecom"]
@@ -62,7 +62,7 @@ module.exports =
     }],
     "设置和维护华炎魔方": ["help/admin", 
       {
-        "公司设置": ["help/organization", "help/profile", "help/permission_set", "help/permission_share", "help/workflow/admin_positions"],
+        "公司设置": ["help/organization", "help/profile", "help/permission_set", "help/permission_share", "help/workflow/admin_positions","help/license"],
         "自定义应用": ["help/no-code/object", "help/no-code/object_subtable"],
         "通过公式计算字段值": [
           "help/formula/summary",
