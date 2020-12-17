@@ -36,7 +36,7 @@ module.exports =
       },
       "developer/listview", "developer/object_filter_conditions", "developer/object_permission", "developer/object_action", "developer/object_form", "developer/app", "developer/object_workflow", "developer/reports", "developer/report_jsreport"
     ],
-    "高级开发": ["developer/steedos_config", "developer/env", "developer/objectql_connection", "developer/objectql_object", "developer/object_filter", "developer/object_trigger", "developer/object_field_formula", "developer/standard_objects"],
+    "高级开发": ["developer/steedos_config", "developer/env", "developer/objectql_connection", "developer/objectql_object", "developer/object_filter", "developer/object_trigger", "developer/standard_objects"],
     "插件": ["plugins/index",  "plugins/plugin_webapp", "plugins/plugin_webapp_functions"],
     
     "API": [
