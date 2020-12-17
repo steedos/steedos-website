@@ -1,5 +1,5 @@
 ---
-title: VMware 部署
+title: VMware 快速安装
 ---
 
 ## ubuntu 桌面版 vmware 镜像导入说明(steedos-project-oa 项目)

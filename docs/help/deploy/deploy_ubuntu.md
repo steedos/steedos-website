@@ -1,5 +1,5 @@
 ---
-title: Ubuntu 部署
+title: Ubuntu 开发环境
 ---
 
 本教程以 [steedos-project-oa](https://github.com/steedos/steedos-project-oa) 为例，指导你如何在 Ubuntu 系统中部署和运行基于华炎魔方开发的项目。
