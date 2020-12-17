@@ -38,7 +38,7 @@ sidebar_label: 安装向导
 - [华炎项目管理系统](https://github.com/steedos/project-management-app)
 - [华炎办公](https://github.com/steedos/steedos-project-oa)
 - [华炎合同管理系统](https://github.com/steedos/steedos-app-contract)
-- [华炎销售管理系统](https://github.com/steedos/steedos-app-crm)
+- [华炎客户关系管理系统](https://github.com/steedos/steedos-app-crm)
 
 更多开源项目请前往 [华炎魔方应用市场](https://www.steedos.com/appstore/)。
 
