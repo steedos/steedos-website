@@ -19,11 +19,11 @@ import Card from '@site/src/components/Card';
 
 <div class="mt-12 grid gap-5 max-w-lg mx-auto md:grid-cols-2 lg:max-w-none">
 
-  <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.jpg"
+  <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/steedos-open-source.jpg"
     title="华炎魔方助力企业数字化转型"
     description="数字化转型需要摸着石头过河，业务部门每天都有新想法，每天都盼着新需求尽快交付，"
     category="视频"
-    href="/videos/steedos-digital-transformation/"/>
+    href="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/steedos-open-source.mp4"/>
 
   <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features.jpg"
     title="华炎魔方十大引擎，开发效率提升十倍"
