@@ -7,7 +7,7 @@ sidebar_label: 安装向导
 
 ## 快速安装
 
-可以使用我们推荐的 [Windows 快速安装](/help/deploy/deploy_windows_trial) 直接开始您的华炎魔方之旅，以免去相关运行环境的安装过程。
+可以使用我们推荐的 [Windows 快速安装](/help/deploy/deploy_windows_server) 直接开始您的华炎魔方之旅，以免去相关运行环境的安装过程。
 
 我们也提供了免安装的云部署方式，请参考：
 
@@ -18,7 +18,7 @@ sidebar_label: 安装向导
 
 华炎魔方基于 [nodejs](https://nodejs.org/en/) 开发，使用 [mongodb](https://docs.mongodb.com/manual/installation/) 数据库，如果不使用我们推荐的 [快速安装](#快速安装)，则需先部署相应的运行环境。
 
-- [Windows](./deploy/deploy_windows.md): 通常用于部署开发环境，推荐使用上述 [Windows 快速安装](/help/deploy/deploy_windows_trial)，以免去相关运行环境的安装过程，生产环境建议使用Ubuntu。
+- [Windows](./deploy/deploy_windows.md): 通常用于部署开发环境，推荐使用上述 [Windows 快速安装](/help/deploy/deploy_windows_server)，以免去相关运行环境的安装过程，生产环境建议使用Ubuntu。
 - [Mac](./deploy/deploy_mac.md): 通常用于部署开发环境，生产环境建议使用Ubuntu。
 - [Ubuntu](./deploy/deploy_ubuntu.md): 部署到Ubuntu，支持远程开发与调试。
 
