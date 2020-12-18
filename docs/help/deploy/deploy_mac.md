@@ -23,8 +23,10 @@ title: Mac 开发环境
 安装完成之后打开终端安装 [yarn](https://yarnpkg.com/)：
 
 ```bash
-npm install -g yarn
+sudo npm install -g yarn
 ```
+
+Mac环境需要加上sudo可解决权限问题，命令执行后再输入电脑开机密码即可完成安装。
 
 国内用户配置[淘宝 NPM 镜像](https://developer.aliyun.com/mirror/NPM)以提高 NPM 包下载速度：
 
