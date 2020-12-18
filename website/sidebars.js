@@ -49,7 +49,7 @@ module.exports =
   },
   "文档": {
     "快速向导": ["help/about", {
-      "服务端安装部署": ["help/deploy", "help/deploy/env"],
+      "服务端安装部署": ["help/deploy", "help/deploy/steedos-config"],
       "客户端": ["help/download", "help/clients/desktop", "help/clients/mobile", "help/clients/wecom"]
     }],
     "使用入门": ["help/user", "help/login", "help/interface",{

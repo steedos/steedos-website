@@ -1,0 +1,275 @@
+---
+title: 配置文件
+---
+
+华炎魔方使用位于项目根目录的`steedos-config.yml`文件作为配置文件，可在其中配置各种参数。
+
+## 参数说明
+
+### 数据源
+
+配置当前项目需要引用的数据源，其中`default`数据源为必须配置的默认数据源，且该数据源作为系统内核数据源只能使用mongodb数据库。
+
+```yml
+datasources:
+  default:
+    connection:
+      url: mongodb://127.0.0.1/steedos
+    objectFiles:
+      - "./src/**"
+    appFiles:
+      - "./src/**"
+```
+
+在数据源中可配置要连接到哪个数据库，要加载哪些业务对象，以及要显示哪些应用。
+
+- 使用`connection`参数配置要连接到的数据库信息，可定义每个数据源的数据库连接地址、账户及密码等。
+- 使用`objectFiles`参数配置要加载该数据源下哪些业务对象，用于指定要加载的对象配置文件所在地址。
+- 使用`appFiles`参数配置要加载哪些应用，用于指定要加载的应用配置文件所在地址。
+
+:::note 提示
+
+- 业务对象通过所在数据源指定的数据库来保存数据。
+- 系统内核数据源只能使用mongodb数据库，所有华炎魔方标准对象都保存在其中。
+- 华炎魔方支持连接到其他常用数据库作为第三方数据源，目前已支持`SQL Server`、`Oracle`、`MySQL`、`PostgreSQL`、`Sqlite`。
+:::
+
+### 引用插件
+
+配置当前项目中需要启用的插件，以下配置会启用华炎客户关系管理系统和华炎合同管理系统作为插件，项目也因此会拥有这些插件内的功能。
+
+```yml
+plugins:
+  - "@steedos/app-crm"
+  - "@steedos/app-contracts"
+```
+
+:::note 提示
+请注意，在启用插件前，请确保这些插件都已经正确安装到项目中。
+:::
+
+### 登录规则
+
+配置登录界面相关参数，例如是否允许注册、是否允许修改密码、是否允许创建企业。
+
+```yml
+tenant:
+  _id:
+  name: Steedos
+  logo_url:
+  background_url:
+  saas: false
+  enable_register: true
+  enable_create_tenant: true
+  enable_password_login: true
+  enable_bind_email: false
+  enable_bind_mobile: false
+  enable_mobile_code_login: false
+  enable_email_code_login: false
+```
+
+- enable_register: 允许创建账户，默认true
+- enable_bind_mobile: 强制绑定邮箱，默认false
+- enable_bind_email: 强制绑定邮箱，默认false
+- enable_create_tenant: 允许创建企业，默认true
+- enable_password_login: 允许使用密码登录，启用时，注册和登录都默认使用密码。默认true
+- enable_mobile_code_login: 允许使用手机验证码登录，启用时，注册和登录都默认使用验证码。
+- enable_email_code_login: 允许使用邮箱验证码登录，启用时，注册和登录都默认使用验证码。
+
+### 账户相关
+
+配置账户相关参数。
+
+```yml
+accounts:
+  mobile_phone_locales: ['zh-CN']
+  mobile_regexp: '^[0-9]{11}$'
+```
+
+- mobile_phone_locales: 手机号本地化，配置为`zh-CN`表示使用中国的11位手机号，要支持其他国家手机号请参考 [validator](https://www.npmjs.com/package/validator)。
+- mobile_regexp: 手机号格式正则表达式，使用一个正则表达式来描述正确的手机号格式。
+
+:::note 提示
+当同时配置了`mobile_phone_locales`和`mobile_regexp`参数时，优先使用`mobile_phone_locales`。
+:::
+
+### Web服务URL
+
+```yml
+services:
+  steedos: /
+```
+
+### 文件存储
+
+配置附件存储的相关参数。
+
+附件可以保存在本地，也可以保存在阿里云或是AWS S3服务中。
+
+```yml
+public:
+  cfs:
+    storage: local
+cfs:
+  local:
+    folder: /storage
+  aliyun:
+    region:
+    internal: false,
+    bucket:
+    folder:
+    accessKeyId:
+    secretAccessKey:
+  aws:
+    region:
+    bucket:
+    folder:
+    accessKeyId:
+    secretAccessKey:
+```
+
+### 邮件配置
+
+配置SMTP服务的相关参数，用于系统发送推送邮件。
+
+```yml
+email:
+  host:
+  port: 465
+  username:
+  password:
+  secure: true
+  from:
+```
+
+### 发送短信配置
+
+配置手机短信服务，用于通过手机短信登录和接受账户提醒消息。
+
+```yml
+sms:
+  qcloud:
+    smsqueue_interval: 1000
+    sdkappid:
+    appkey:
+    signname:
+```
+
+### 密码规则配置
+
+配置密码的校验规则，例如最小长度，是否必须包含数字、大写字母、小写字母和字符。
+
+```yml
+password:
+  minimum_length: 10
+  lowercase: true
+  number: true
+  uppercase: true
+  symbol: true
+```
+
+### 定时任务配置
+
+配置定时任务的属性。
+
+```yml
+cron:
+  statistics: 0 0 0 * * *
+  mailqueue_interval: 1000
+  push_interval: 1000
+  calendar_dav_interval: 30000
+  calendar_remind: 60000
+  webhookqueue_interval: 1000
+  instancerecordqueue_interval: 10000
+```
+
+- statistics: 流程统计的执行时间，如上面的“0 0 0 * * *”意为每天的00:00:00 
+- mailqueue_interval: 邮件队列的轮询间隔(单位毫秒)
+- push_interval: 消息推送的轮询间隔(单位毫秒)
+- calendar_dav_interval: 日历同步的轮询间隔(单位毫秒)
+- calendar_remind: 日程提醒的轮询间隔(单位毫秒)
+- webhookqueue_interval: 流程触发器队列的轮询间隔(单位毫秒)
+- instancerecordqueue_interval: 对象流程队列的轮询间隔(单位毫秒)
+
+## 环境变量
+
+`steedos-config.yml`文件可与`.env`或`.env.local`作为环境变量配置文件一起定义整个项目相关参数。
+
+### 环境变量特定参数
+
+目前只有以下两个特定参数只能在`.env`或`.env.local`环境变量文件中定义。
+
+```yml
+ROOT_URL=http://192.168.0.95:3000
+PORT=3000
+```
+
+- ROOT_URL: 项目访问地址，通常使用ip地址加端口号来表示项目访问的网络地址，比如 `http://127.0.0.1:3000/`。
+- PORT: 项目服务所占用的服务器端口号。
+
+:::note 提示
+`127.0.0.1`为本机服务的ip地址，`http://127.0.0.1:3000/`与`http://localhost:3000/`等效。
+:::
+
+### 配合使用
+
+可以在`steedos-config.yml`中配置相关参数指向某个环境变量，比如以下配置将取环境变量MONGO_URL的值作为默认数据源的访问地址。
+
+```yml
+datasources:
+  default:
+    connection:
+      url: ${MONGO_URL}
+```
+
+### `.env`与`.env.local`区别
+
+`.env`与`.env.local`都是用来定义环境变量的，当两个文件同时存在时，如果某个环境变量同时在两个文件中定义过，会优先使用`.env.local`中的值。
+
+`.env.local`文件并不是必须的，无论是开发环境还是生产环境，通常来说你应该尽量多的把常用环境变量写入`.env`文件，并提交到代码仓库中，然后在本地开发环境或服务器生产环境中复制一份`.env`中的内容到`.env.local`文件中，并在`.env.local`文件中配置本地差异化的参数值。
+
+:::note 注意
+因为`.env`通常会提交到代码仓库中，所以该文件中不应该写入敏感信息，比如数据库密码，邮件或短信服务密码等，您应该把这些敏感信息写入到`.env.local`文件中。
+:::
+
+## 综合示例
+
+```yml
+datasources:
+  default:
+    connection:
+      url: ${MONGO_URL}
+    objectFiles:
+      - "./src/**"
+    appFiles:
+      - "./src/**"
+public:
+  cfs:
+    store: "local"
+    local: 
+      folder: "./storage"
+plugins:
+  - "@steedos/app-crm"
+  - "@steedos/app-contracts"
+tenant:
+  _id: 
+  enable_register: true
+  enable_forget_password: false
+  saas: false
+  enable_password_login: true
+  enable_mobile_code_login: false
+  enable_email_code_login: false
+  enable_bind_mobile: false
+sms:
+  qcloud:
+    smsqueue_interval: 1000
+    sdkappid: ${SMS_QCLOUD_SDKAPPID}
+    appkey: ${SMS_QCLOUD_APPKEY}
+    signname: ${SMS_QCLOUD_SIGNNAME}
+email:
+  from: 华炎魔方 <support@steedos.com>
+  url: ${MAIL_URL}
+cron:
+  instancerecordqueue_interval: 10000
+```
+
