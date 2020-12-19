@@ -68,13 +68,29 @@ tenant:
   enable_email_code_login: false
 ```
 
+- _id: 华炎魔方ID
+- name: 项目名称
+- logo_url: logo图片地址
+- background_url: 背影图片地址
+- saas: 是否开启多租户模式
 - enable_register: 允许创建账户，默认true
-- enable_bind_mobile: 强制绑定邮箱，默认false
-- enable_bind_email: 强制绑定邮箱，默认false
 - enable_create_tenant: 允许创建企业，默认true
 - enable_password_login: 允许使用密码登录，启用时，注册和登录都默认使用密码。默认true
+- enable_bind_email: 强制绑定邮箱，默认false
+- enable_bind_mobile: 强制绑定邮箱，默认false
 - enable_mobile_code_login: 允许使用手机验证码登录，启用时，注册和登录都默认使用验证码。
 - enable_email_code_login: 允许使用邮箱验证码登录，启用时，注册和登录都默认使用验证码。
+
+### 密码规则
+
+```yml
+password:
+  minimum_length:
+  lowercase:
+  number:
+  uppercase:
+  symbol:
+```
 
 ### 账户相关
 
@@ -96,7 +112,7 @@ accounts:
 ### Web服务URL
 
 ```yml
-services:
+webservices:
   steedos: /
 ```
 
@@ -104,29 +120,36 @@ services:
 
 配置附件存储的相关参数。
 
-附件可以保存在本地，也可以保存在阿里云或是AWS S3服务中。
+附件可以保存在本地，也可以保存在阿里云或AWS S3服务中。
 
 ```yml
 public:
   cfs:
-    storage: local
+    store: "local"
+    local: 
+      folder: "./storage"
 cfs:
-  local:
-    folder: /storage
   aliyun:
     region:
-    internal: false,
+    internal:
     bucket:
     folder:
     accessKeyId:
     secretAccessKey:
   aws:
-    region:
+    endpoint:
     bucket:
-    folder:
     accessKeyId:
     secretAccessKey:
+    s3ForcePathStyle:
+    signatureVersion:
+
 ```
+
+- `public.cfs.store`: 配置附件存储在什么地方，目前支持三个选项，`local`表示存储在本地，`OSS`表示存到阿里云，`S3`表示存到AWS​，默认值为`local`。
+- `public.cfs.local.folder`: 当配置附件存在本地时，需要配置文件夹路径。
+- `cfs.aliyun`: 当配置附件存在阿里云时，需要购买阿里云服务并配置相关参数。
+- `cfs.aws`: 当配置附件存在AWS时，需要购买AWS云服务并配置相关参数。
 
 ### 邮件配置
 
@@ -140,6 +163,7 @@ email:
   password:
   secure: true
   from:
+  url:
 ```
 
 ### 发送短信配置
@@ -154,6 +178,8 @@ sms:
     appkey:
     signname:
 ```
+
+使用的是腾讯云短信服务`sdkappid`是应用ID，`appkey`是分配的密钥，`signname`是短信签名显示在短信的开头，如:【华炎云】您的验证码是：8888
 
 ### 密码规则配置
 
@@ -263,9 +289,9 @@ tenant:
 sms:
   qcloud:
     smsqueue_interval: 1000
-    sdkappid: ${SMS_QCLOUD_SDKAPPID}
-    appkey: ${SMS_QCLOUD_APPKEY}
-    signname: ${SMS_QCLOUD_SIGNNAME}
+    sdkappid: ${STEEDOS_SMS_QCLOUD_SDKAPPID}
+    appkey: ${STEEDOS_SMS_QCLOUD_APPKEY}
+    signname: ${STEEDOS_SMS_QCLOUD_SIGNNAME}
 email:
   from: 华炎魔方 <support@steedos.com>
   url: ${MAIL_URL}
