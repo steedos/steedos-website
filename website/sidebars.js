@@ -79,7 +79,7 @@ module.exports =
         "自动执行业务流程": [
           "help/auto_process/summary",{
           "工作流": ["help/auto_workflow/summary", "help/auto_workflow/create", "help/auto_workflow/examples"],
-          "批准过程": ["help/approval/approval_summary", "help/approval/approval_setup", "help/approval/approval_samples", "help/approval/approval_request", "help/approval/approval_terminology"],
+          "批准过程": ["help/approval/summary", "help/approval/create", "help/approval/approval_samples", "help/approval/approval_request"],
           "自动操作": ["help/auto_actions/summary", "help/auto_actions/field_update"]
         }],
         "审批王": ["help/workflow/admin_form", "help/workflow/admin_flow", "help/workflow/admin_picturesignature", "help/no-code/object_workflows", "help/workflow/faq"],
