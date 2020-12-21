@@ -68,7 +68,7 @@ tenant:
   enable_email_code_login: false
 ```
 
-- _id: 华炎魔方ID
+- _id: 华炎魔方ID， 值可从 设置-公司设置-许可证-复制魔方ID 获得。
 - name: 项目名称
 - logo_url: logo图片地址
 - background_url: 背影图片地址
@@ -80,6 +80,13 @@ tenant:
 - enable_bind_mobile: 强制绑定邮箱，默认false
 - enable_mobile_code_login: 允许使用手机验证码登录，启用时，注册和登录都默认使用验证码。
 - enable_email_code_login: 允许使用邮箱验证码登录，启用时，注册和登录都默认使用验证码。
+
+:::note 华炎魔方ID的提示
+
+- 它是安装华炎魔方后首次注册账户时创建的团队唯一识别码，如果有多个团队每个团队也分别有自己的魔方ID。
+- 为华炎魔方购买的许可证也使用魔方ID作为识别凭证，只要创建团队就可以免费获得魔方ID，详细请参考 [许可证](/help/company/license)。
+- `logo_url`、`background_url`等功能配置需要设置华炎魔方ID值，否则不生效。
+:::
 
 ### 密码规则
 
@@ -260,7 +267,7 @@ datasources:
 
 ## 综合示例
 
-```yml
+```yml title="steedos-config.yml"
 datasources:
   default:
     connection:
@@ -278,7 +285,7 @@ plugins:
   - "@steedos/app-crm"
   - "@steedos/app-contracts"
 tenant:
-  _id: 
+  _id: {STEEDOS_TENANT_ID}
   enable_register: true
   enable_forget_password: false
   saas: false
@@ -299,3 +306,9 @@ cron:
   instancerecordqueue_interval: 10000
 ```
 
+```yml title=".env"
+MONGO_URL=mongodb://127.0.0.1:27017/steedos
+PORT=5080
+ROOT_URL=http://127.0.0.1:5080/
+STEEDOS_TENANT_ID=519f004e8e296a1c5f00001d
+```
