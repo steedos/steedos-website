@@ -65,11 +65,12 @@ module.exports =
         "通过公式计算字段值": [
           "help/formula/summary",
           "help/formula/create", 
+          "help/formula/tip", 
           "help/formula/summary_field",
           "help/formula/date",{
             "运算符和函数": ["help/formula/functions", "help/formula/operator_math", "help/formula/operator_logical", "help/formula/operator_text", "help/formula/function_date", "help/formula/function_logical", "help/formula/function_math", "help/formula/function_text", "help/formula/function_advanced"],
           }, 
-          "help/formula/best_practices", "help/formula/examples"
+          "help/formula/best_practices"//, "help/formula/examples"
         ],
         "通过验证规则校验字段值": [
           "help/validation_rules/summary",
