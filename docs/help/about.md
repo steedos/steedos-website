@@ -10,15 +10,15 @@ import Card from '@site/src/components/Card';
 
 <div class="mt-12 grid gap-5 mx-auto md:grid-cols-2 lg:max-w-none">
 
-  <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/user-contracts.jpg"
-    category="视频"
-    title="如何填单和审批"
-    href="/videos/workflow/user-contracts/"/>
-
-  <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.jpg"
+  <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/steedos-open-source.jpg"
     category="视频"
     title="华炎魔方助力企业数字化转型"
-    href="/videos/steedos-digital-transformation/"/>
+    href="/https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/steedos-open-source.mp4/"/>
+
+  <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features.jpg"
+    category="视频"
+    title="华炎魔十大引擎，开发效率提升十倍"
+    href="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features-960.mp4"/>
 
 </div>
 

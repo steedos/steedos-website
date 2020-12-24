@@ -11,11 +11,11 @@ import Card from '@site/src/components/Card';
 
 <div class="mt-12 grid gap-5 mx-auto md:grid-cols-2 lg:max-w-none">
 
-  <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/admin-contracts.jpg"
+  <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-relationship.jpg"
     category="视频"
-    title="如何配置合同审批流程"
+    title="如何定义相关表"
     description="本教程以合同管理为例，演示了如何使用华炎魔方，配置审批流程。"
-    href="/videos/workflow/admin-contracts/"/>
+    href="/videos/lesson-object-relationship/"/>
 
   <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.jpg"
     category="视频"
@@ -28,10 +28,10 @@ import Card from '@site/src/components/Card';
 
 #### 公司设置
 
-- [组织机构](/help/organization)
-- [简档](/help/profile)
-- [权限集](/help/permission_set)
-- [共享规则](/help/permission_share)
+- [组织机构](/help/company/organization)
+- [简档](/help/company/profile)
+- [权限集](/help/company/permission_set)
+- [共享规则](/help/company/permission_share)
 - [审批岗位](/help/workflow/admin_positions)
 
 #### 个性化设置
