@@ -2,7 +2,33 @@
 title: 手机客户端
 ---
 
-请先[下载](/help/download)客户端后把APP安装到手机上。
+## 手机客户端下载
+华炎办公手机客户端可以使用手机处理文件，并实现待审批文件推送提醒。请先下载客户端后把APP安装到手机上。
+
+<div className="flex items-start flex-wrap">
+<div className="w-1/2 py-6">
+
+#### iOS 客户端
+
+- 使用‘微信’，扫描二维码下载：
+
+<br/>
+
+![苹果客户端](/assets/workflow/download-ios.png)
+
+</div>
+<div className="w-1/2 py-6">
+
+#### Android 客户端
+
+- 使用‘支付宝’，扫描二维码下载：
+
+<br/>
+
+![安卓客户端](/assets/workflow/download-android.png)
+
+</div>
+</div>
 
 ## 配置服务地址
 
