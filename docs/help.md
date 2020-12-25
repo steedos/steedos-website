@@ -31,6 +31,10 @@ import Card from '@site/src/components/Card';
     description="设置和维护贵公司、控制谁可以看到什么内容、自动化业务流程、创建自定义应用程序。"
     href="/help/admin/"/>
 
+  <Card title="审批王"
+    description="自定义表单的审批流程与设计界面，提供多种表单样式模板，最大程度满足管理员设计表单的需求。"
+    href="/help/workflow/"/>
+
   <Card title="开发人员"
     description="如何使用华炎魔方开发复杂业务系统：搭建开发环境、开发教程、开发文档、API接口。"
     href="/developer/"/>

@@ -55,7 +55,6 @@ module.exports =
     "使用入门": ["help/user", "help/login", "help/interface",{
       "管理您的数据": ["help/record_search", "help/record_view", "help/record_list", "help/record_edit"],
     }, "help/record_report",{
-      "审批王": ["help/workflow/instance_add", "help/workflow/instance_approve", "help/workflow/instance_carboncopy", "help/workflow/instance_distribute", "help/workflow/instance_forward", "help/workflow/instance_print", "help/workflow/instance_search", "help/workflow/instance_monitor", "help/workflow/instance_export" ],
       // "数据台账": ["help/record_list", "help/record_view", "help/record_report", "help/notifications"],  
     }],
     "设置和维护华炎魔方": ["help/admin", 
@@ -83,10 +82,29 @@ module.exports =
           "批准过程": ["help/approval/summary", "help/approval/create", "help/approval/examples", "help/approval/request"],
           "自动操作": ["help/auto_actions/summary", "help/auto_actions/field_update"]
         }],
-        "审批王": ["help/workflow/admin_form", "help/workflow/admin_flow", "help/workflow/admin_picturesignature", "help/no-code/object_workflows", "help/workflow/faq"],
         "系统集成": ["help/no-code/object_datasources", "help/no-code/object_web_forms"]
       }
     ]
+  },
+  "审批王": {
+     "使用入门": [
+        "help/workflow",
+        "help/workflow/instance_add", 
+        "help/workflow/instance_approve", 
+        "help/workflow/instance_carboncopy", 
+        "help/workflow/instance_distribute", 
+        "help/workflow/instance_forward", 
+        "help/workflow/instance_print", 
+        "help/workflow/instance_search", 
+        "help/workflow/instance_monitor", 
+        "help/workflow/instance_export"],
+     "设置和维护审批王": [
+        "help/workflow/admin",
+        "help/workflow/admin_form", 
+        "help/workflow/admin_flow", 
+        "help/no-code/object_workflows",
+        "help/workflow/admin_picturesignature", 
+        "help/workflow/faq"]
   },
   "Steedos Help": {
     "Quick Guide": ["us/help/workflow/README", "us/help/workflow/guide_setup", "us/help/workflow/guide_user", "us/help/workflow/guide_admin", "us/help/workflow/guide_permissions", "us/help/workflow/guide_versions", "us/help/workflow/mp4", "us/help/workflow/faq"],
