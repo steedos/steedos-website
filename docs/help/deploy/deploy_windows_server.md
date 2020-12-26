@@ -49,13 +49,19 @@ title: Windows 快速安装
 
 ## 常见问题解答
 
-### 启动数据库报 `Failed to set up listener: SocketException: Address already in use`
+### 启动数据库报错
 
-端口冲突，说明本地 27017 端口已经被占用，很有可能本地已经启动了一个 mongodb 服务，停掉即可
+#### Address already in use
+
+完整错误信息：`Failed to set up listener: SocketException: Address already in use`。
+
+这是端口冲突，说明本地 27017 端口已经被占用，很有可能本地已经启动了一个 mongodb 服务，停掉即可
 
 也可以编辑 **1-启动数据库.bat** 在行尾添加 `--port {非27017端口}`，同时修改**.env.local**文件中**MONGO_URL**中的端口
 
-### 启动数据库报 `由于找不到MSVCP140.dll，无法继续执行代码。重新安装程序可能会解决此问题。`
+#### 找不到MSVCP140.dll
+
+完整错误信息：由于找不到MSVCP140.dll，无法继续执行代码。重新安装程序可能会解决此问题。
 
 缺少微软**VC++**运行库文件，去微软官网下载[最新支持的 Visual C++](https://support.microsoft.com/zh-cn/help/2977003/the-latest-supported-visual-c-downloads)
 
