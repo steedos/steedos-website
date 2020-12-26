@@ -199,7 +199,7 @@ permission_set:
     viewAllRecords: false
 ```
 
-### 相关子表
+<!-- ### 相关子表
 
 开发人员可以配置对象的相关子表。如果有定义此属性则按照此属性定义的对象显示相关子表，包括显示顺序，子表对象与主表必须通过一个 lookup 或 master_detail 字段关联。
 支持两种写法，字符串和对象，如：
@@ -231,7 +231,7 @@ relatedList:
 ```
 - 在移动端会识别mobile_columns来显示对应的列，如果为空则取其columns
 - 当只在relatedList中指定对象名称时（比如上述示例中的tasks），则在移动端优先识别相关对象默认视图下对应的mobile_columns。
-- columns/mobile_columns可以配置为字段名，也可以配置为对象，配置为对象时columns支持`field,width,wrap`属性，mobile_columns暂时只支持`field`属性
+- columns/mobile_columns可以配置为字段名，也可以配置为对象，配置为对象时columns支持`field,width,wrap`属性，mobile_columns暂时只支持`field`属性 -->
 
 ## 标准对象
 
