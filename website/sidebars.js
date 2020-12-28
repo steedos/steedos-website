@@ -60,7 +60,7 @@ module.exports =
     "设置和维护华炎魔方": ["help/admin", 
       {
         "公司设置": ["help/company/organization", "help/company/profile", "help/company/permission_set", "help/company/permission_share", "help/workflow/admin_positions","help/company/license"],
-        "自定义应用": ["help/no-code/object", "help/no-code/object_subtable"],
+        "自定义应用": ["help/no-code/object", "help/no-code/object_subtable",],
         "通过公式计算字段值": [
           "help/formula/summary",
           "help/formula/create", 
