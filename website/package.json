@@ -5,7 +5,7 @@
     "swizzle": "docusaurus swizzle",
     "serve": "docusaurus serve",
     "deploy": "docusaurus deploy",
-    "dep": "GIT_USER=hotlong && yarn deploy",
+    "dep": "export GIT_USER=hotlong && yarn deploy",
     "tailwind": "cross-env NODE_ENV=development postcss src/css/tailwind-src.css -o static/website/libs/tailwind.css",
     "tailwind.min": "cross-env NODE_ENV=production postcss src/css/tailwind-src.css -o static/website/libs/tailwind.min.css"
   },
