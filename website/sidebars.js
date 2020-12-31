@@ -62,7 +62,8 @@ module.exports =
         "公司设置": ["help/company/organization", "help/company/profile", "help/company/permission_set", "help/company/permission_share", "help/workflow/admin_positions","help/company/license"],
         "自定义应用": [
           "help/no-code/object_summary",
-          "help/no-code/create_object",
+          "help/no-code/create_object",{
+            "自定义字段": [
           "help/no-code/object_field",
           "help/no-code/create_field",
           "help/no-code/field_type",
@@ -70,8 +71,10 @@ module.exports =
           "help/no-code/related_table_fields",
           "help/no-code/selection_box_field",
           "help/no-code/auto_number_field",
-          // "help/no-code/built_in_fields",
-          "help/no-code/list_view",
+          // "help/no-code/built_in_fields", 
+        ],
+        }, 
+      "help/no-code/list_view",
         ],
         "通过公式计算字段值": [
           "help/formula/summary",
