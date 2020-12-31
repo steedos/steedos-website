@@ -97,6 +97,12 @@ module.exports =
           "批准过程": ["help/approval/summary", "help/approval/create", "help/approval/examples", "help/approval/request"],
           "自动操作": ["help/auto_actions/summary", "help/auto_actions/field_update"]
         }],
+        "打印模板": [
+          "help/word_template/summary",
+          "help/word_template/create", 
+          "help/word_template/graphql",
+          "help/word_template/script",
+          "help/word_template/examples"],
         "系统集成": ["help/no-code/object_datasources", "help/no-code/object_web_forms"]
       }
     ]
