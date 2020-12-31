@@ -70,7 +70,7 @@ module.exports =
           "help/no-code/related_table_fields",
           "help/no-code/selection_box_field",
           "help/no-code/auto_number_field",
-          "help/no-code/built_in_fields",
+          // "help/no-code/built_in_fields",
           "help/no-code/list_view",
         ],
         "通过公式计算字段值": [
