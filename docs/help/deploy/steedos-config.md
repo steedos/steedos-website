@@ -4,6 +4,14 @@ title: 配置文件
 
 华炎魔方使用位于项目根目录的`steedos-config.yml`文件作为配置文件，可在其中配置各种参数。
 
+## 必须配置的参数
+
+要使用华炎魔方，以下参数配置不可缺少否则某些功能将不能正常使用。
+
+- [ROOT_URL](#环境变量特定参数)：项目访问地址，如果该参数配置不正确，将不能正常访问服务。
+- [PORT](#环境变量特定参数)：项目占用服务器端口号，如果该参数配置不正确，将不能正常访问服务。
+- [华炎魔方ID](#登录规则)：自定义登录界面LOGO等功能，需要设置该参数，否则不生效。
+
 ## 环境变量
 
 华炎魔方使用`.env`或`.env.local`作为环境变量配置文件，它们可以与`steedos-config.yml`文件一起配合使用来定义整个项目相关参数。
@@ -133,13 +141,15 @@ tenant:
 
 ### 密码规则
 
+配置密码的校验规则，例如最小长度，是否必须包含数字、大写字母、小写字母和字符。
+
 ```yml
 password:
-  minimum_length:
-  lowercase:
-  number:
-  uppercase:
-  symbol:
+  minimum_length: 10
+  lowercase: true
+  number: true
+  uppercase: true
+  symbol: true
 ```
 
 ### 账户相关
@@ -216,7 +226,7 @@ email:
   url:
 ```
 
-### 发送短信配置
+### 发送短信
 
 配置手机短信服务，用于通过手机短信登录和接受账户提醒消息。
 
@@ -231,22 +241,9 @@ sms:
 
 使用的是腾讯云短信服务`sdkappid`是应用ID，`appkey`是分配的密钥，`signname`是短信签名显示在短信的开头，如:【华炎云】您的验证码是：8888
 
-### 密码规则配置
+### 定时任务
 
-配置密码的校验规则，例如最小长度，是否必须包含数字、大写字母、小写字母和字符。
-
-```yml
-password:
-  minimum_length: 10
-  lowercase: true
-  number: true
-  uppercase: true
-  symbol: true
-```
-
-### 定时任务配置
-
-配置定时任务的属性。
+以下是某些定时任务相关的参数。
 
 ```yml
 cron:
