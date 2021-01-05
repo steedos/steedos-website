@@ -1,11 +1,11 @@
 ---
-title: graphql脚本
-sidebar_label: graphql脚本
+title: GraphqL脚本
+sidebar_label: GraphQL脚本
 ---
 
 ## 如何编写GraphQL脚本抓取想要的数据？
 
-首先访问GraphQL客户端控制台地址，假设您已经启动了一个端口为3000的华炎魔方本地服务，那么您可以使用`http://localhost：3000/GraphQL`，在GraphQL客户端控制台中，您可以在左侧面板中输入GraphQL脚本，并通过单击页面左上角的run按钮来运行它，右侧会返回您需要打印的数据，如下图所示。您也可以参考 [Query by GraphQL](https://www.steedos.org/docs/api/graphql_query)
+首先访问GraphQL客户端控制台地址，假设您已经启动了一个端口为3000的华炎魔方本地服务，那么您可以使用`http://localhost:3000/graphql`，在GraphQL客户端控制台中，您可以在左侧面板中输入GraphQL脚本，并通过单击页面左上角的run按钮来运行它，右侧会返回您需要打印的数据，如下图所示。您也可以参考 [Query by GraphQL](https://www.steedos.org/docs/api/graphql_query)
 
 ![graphql脚本](/assets/help/word_template/graphql_script.png)
 

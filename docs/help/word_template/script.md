@@ -1,6 +1,6 @@
 ---
 title: 如何在Word模板文件中嵌入显示数据脚本？
-sidebar_label: script脚本
+sidebar_label: GraphQL脚本，引用变量
 ---
 
 在Word模板文件中嵌入显示数据脚本之前，一定要明白怎么写变量和复合变量，怎么写循环，以及`__label`后缀变量的使用规则。最后再根据GraphQL客户端控制台返回的结果，在Word模板文档里面写入变量。
