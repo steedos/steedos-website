@@ -1,8 +1,6 @@
 ---
 title: Get Started with Steedos DX
 sidebar_label: 入门指南
-hide_table_of_contents: true
-background: /img/banner/default.png
 ---
 
 ## 软件包
