@@ -4,7 +4,10 @@ title: Ubuntu 快速安装
 
 ## 支持平台
 
-项目支持在 macOS 10.12 及以上版本中运行
+项目支持以下 64 位 Ubuntu LTS（长期支持）版本 x86_64 体系结构：
+
+- 18.04 LTS (“Bionic”)
+- 16.04 LTS (“Xenial”)
 
 ## 下载
 
