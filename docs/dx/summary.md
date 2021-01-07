@@ -33,7 +33,3 @@ Steedos DX 为您提供了开箱即用的开发人员体验，同时满足使用
 
 - [非托管包](/dx/unmanaged_package)
 - [打包](/dx/package)
-
-## 开始
-
-注册开发者账户
