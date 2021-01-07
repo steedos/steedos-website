@@ -1,9 +1,6 @@
 ---
-title: Project Setup
-sidebar_label: 项目设置
+title: 项目设置
 ---
-
-## 项目设置
 
 Steedos DX为您提供了不同的选项来创建Steedos DX项目，您可以同时使用喜欢的版本控制系统，如Git，以此来管理团队的开发进程。
 
@@ -19,8 +16,6 @@ Steedos DX为您提供了不同的选项来创建Steedos DX项目，您可以同
 
 ```yml
 git clone https://github.com/steedos/steedos-app-contract.git
---or--
-git clone git@github.com:steedos/steedos-app-contract.git
 ```
 
 ### 创建Steedos DX项目
@@ -28,7 +23,7 @@ git clone git@github.com:steedos/steedos-app-contract.git
 - 1、创建名为my-app 的项目
 
 ```yml
-git clone git@github.com:steedos/steedos-app-contract.git
+npx create-steedos-app my-app
 ```
 
 - 2、切换到my-app项目目录
@@ -41,6 +36,12 @@ cd my-app
 
 ```yml
 yarn
+```
+
+- 3、启动
+
+```yml
+yarn start
 ```
 
 ### Steedos DX项目结构和源格式

@@ -1,6 +1,5 @@
 ---
-title: Steedos Extensions for Visual Studio Code
-sidebar_label: VScode扩展
+title: VScode扩展
 ---
 
 ## 入门

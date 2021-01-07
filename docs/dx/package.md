@@ -1,6 +1,5 @@
 ---
-title: Package
-sidebar_label: 打包
+title: 打包
 ---
 
 ## 生成

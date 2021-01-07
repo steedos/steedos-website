@@ -1,6 +1,5 @@
 ---
-title: Metadata And Database Synchronization
-sidebar_label: 数据同步
+title: 数据同步
 ---
 
 ## 元数据与数据库的双向同步

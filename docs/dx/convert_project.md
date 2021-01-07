@@ -1,6 +1,5 @@
 ---
-title: Convert Existing Project
-sidebar_label: 项目转化
+title: 项目转化
 ---
 
 ## 现有项目转换成新格式

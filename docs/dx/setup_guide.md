@@ -1,6 +1,5 @@
 ---
-title: Steedos CLI Setup Guide
-sidebar_label: 设置指南
+title: 设置指南
 ---
 
 

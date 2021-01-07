@@ -1,6 +1,5 @@
 ---
-title: Get Started with Steedos DX
-sidebar_label: 入门指南
+title: 入门指南
 ---
 
 ## 软件包

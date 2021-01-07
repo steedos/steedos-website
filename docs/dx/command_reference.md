@@ -1,6 +1,5 @@
 ---
-title: Steedos CLI Command Reference
-sidebar_label: 命令指南
+title: 命令指南
 ---
 
 ## source命令

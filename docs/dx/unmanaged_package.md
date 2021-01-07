@@ -1,6 +1,5 @@
 ---
-title: Unmanaged package
-sidebar_label: 非托管包
+title: 非托管包
 ---
 
 ## 准备工作

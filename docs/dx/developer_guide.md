@@ -1,6 +1,5 @@
 ---
-title: Steedos DX Developer Guide
-sidebar_label: 开发者指南
+title: 开发者指南
 ---
 
 ## Steedos将如何改变您的工作方式？
@@ -36,8 +35,6 @@ Steedos是新一代的低代码开发平台，旨在通过其强大的敏捷性�
 
 ```yml
 git clone https://github.com/steedos/steedos-app-contract.git
---or--
-git clone git@github.com:steedos/steedos-app-contract.git
 ```
 
 - 2、将源码clone到本地文件夹后，在终端或命令控制符窗口执行以下代码，切换目录. 
