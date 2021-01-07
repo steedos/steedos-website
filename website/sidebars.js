@@ -36,9 +36,30 @@ module.exports =
       },
       "developer/listview", "developer/object_filter_conditions", "developer/object_permission", "developer/object_action", "developer/object_form", "developer/app", "developer/object_workflow", "developer/reports", "developer/report_jsreport"
     ],
+
     "高级开发": ["developer/steedos_config", "developer/env", "developer/objectql_connection", "developer/objectql_object", "developer/object_filter", "developer/object_trigger", "developer/standard_objects"],
     "插件": ["plugins/index",  "plugins/plugin_webapp", "plugins/plugin_webapp_functions"],
     
+
+    "Steedos DX": ["dx/summary", 
+    {
+      "入门":[ "dx/get_start", "dx/developer_guide"]
+    },
+    {
+      "项目":[ "dx/project_setup", "dx/convert_project"]
+    },
+    {
+      "命令":[ "dx/setup_guide", "dx/command_reference"]
+    },
+    {
+      "软件包":[ "dx/package", "dx/unmanaged_package"]
+    },
+    {
+      "扩展":[ "dx/vs_extension", "dx/data_synchronization"]
+    }
+  ],
+
+
     "API": [
       "developer/api",
       {
