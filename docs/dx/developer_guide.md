@@ -16,9 +16,9 @@ Steedos是新一代的低代码开发平台，旨在通过其强大的敏捷性�
 
 ### 您准备好开始了吗？
 
-以下是使用Steedos DX工作流，这些步骤包括最常见的CLI命令，对于Steedos CLI支持的所有命令，请参阅[DX1](/help/company/organization)
+以下是使用Steedos DX工作流，这些步骤包括最常见的CLI命令，对于Steedos CLI支持的所有命令，请参阅 [命令指南](/dx/command_reference)
 
-- 安装Steedos CLI [DX2](/help/company/organization)
+- 安装Steedos CLI [设置指南](/dx/setup_guide)
 - 使用示例项目入门
 - 创建新的应用程序
 - 通过现有项目开始Steedos DX项目
@@ -62,32 +62,34 @@ yarn start
 
 从零开始创建并开发Steedos平台上运行的应用时，请遵循以下基本工作流：
 
-- 1.创建项目 [DX1](/help/company/organization)
+- 1.创建项目 [项目设置](/dx/project_setup)
 - 2.运行
-- 3.元数据与数据库的双向同步 [DX2](/help/company/organization)
+- 3.元数据与数据库的双向同步 [数据同步](/dx/data_synchronization)
 
 ### 通过现有项目开始
 
-- 1.创建项目 [DX1](/help/company/organization)
-- 2.将现有的Steedos项目转换成新格式 [DX2](/help/company/organization)
+- 1.创建项目 [项目设置](/dx/project_setup)
+- 2.将现有的Steedos项目转换成新格式 [项目转化](/dx/convert_project)
 - 3.运行
-- 4.元数据与数据库的双向同步 [DX3](/help/company/organization)
+- 4.元数据与数据库的双向同步 [数据同步](/dx/data_synchronization)
 
 ## 创建开发者账户
 
 - 开启本地服务，在公司设置下的许可证处，复制魔方ID，用于后面创建API KEY
 
-![subscription](/assets/dx/developer_guide/license_screenshot.png)
+![subscription](/assets/dx/developer_guide/developer_guide01.png)
 
 - 打开华炎魔方开发者网站注册开发者账号并创建API KEY [华炎魔方--开发者网站](/help/company/organization)
 
-![subscription](/assets/dx/developer_guide/subscription.png)
-![subscription](/assets/dx/developer_guide/add_subscription.png)
-![subscription](/assets/dx/developer_guide/subscription_details.png)
+![subscription](/assets/dx/developer_guide/developer_guide02.png)
+
+![subscription](/assets/dx/developer_guide/developer_guide03.png)
+
+![subscription](/assets/dx/developer_guide/developer_guide04.png)
 
 - 将复制的许可证添加到本地服务的公司设置中，至此开发者账户创建成功
 
-![subscription](/assets/dx/developer_guide/API_key.png)
+![subscription](/assets/dx/developer_guide/developer_guide05.png)
 
 ## 元数据覆盖率
 
@@ -146,10 +148,10 @@ yarn start
 
 ## 另请参阅
 
-- [DX1](/help/company/organization)
-- [DX2](/help/company/organization)
-- [DX3](/help/company/organization)
-- [DX4](/help/company/organization)
-- [DX5](/help/company/organization)
-- [DX6](/help/company/organization)
-- [DX7](/help/company/organization)
+- [入门指南](/dx/get_start)
+- [项目设置](/dx/project_setup)
+- [数据同步](/dx/data_synchronization)
+- [项目转化](/dx/convert_project)
+- [命令指南](/dx/command_reference)
+- [设置指南](/dx/setup_guide)
+- [Steedos DX](/dx/summary)

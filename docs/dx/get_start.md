@@ -61,10 +61,10 @@ steedos DX项目是一个源格式的元数据的本地目录结构，且允许�
 
 ## 另请参阅
 
-- [DX1](/help/company/organization)
-- [DX2](/help/company/organization)
-- [DX3](/help/company/organization)
-- [DX4](/help/company/organization)
-- [DX5](/help/company/organization)
-- [DX6](/help/company/organization)
-- [DX7](/help/company/organization)
+- [命令指南](/dx/command_reference)
+- [项目设置](/dx/project_setup)
+- [数据同步](/dx/data_synchronization)
+- [项目转化](/dx/convert_project)
+- [开发者指南](/dx/developer_guide)
+- [设置指南](/dx/setup_guide)
+- [Steedos DX](/dx/summary)
