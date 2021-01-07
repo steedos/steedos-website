@@ -5,7 +5,9 @@ sidebar_label: 数据同步
 
 ## 元数据与数据库的双向同步
 
-### 检索源数据到本地 source:retrieve
+### 检索源数据到本地
+
+#### source:retrieve
 
 从服务器获取源格式的元数据并下载到本地steedos DX项目中，该命令会直接覆盖掉您本地的文件。
 
@@ -89,7 +91,9 @@ steedos source:retrieve -p "path/to/custom/objects/myObject.object.yml"
 steedos source:retrieve -p "path/to/source/objects/myObject"
 ```
 
-### 部署元数据到服务器source:deploy
+### 部署元数据到服务器
+
+#### source:deploy
 
 将本地文件部署到服务器，您部署的数据将会覆盖原有的数据结构
 该命令包含的可选参数

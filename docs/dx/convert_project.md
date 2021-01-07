@@ -3,7 +3,9 @@ title: Convert Existing Project
 sidebar_label: 项目转化
 ---
 
-## 现有项目转换成新格式 source:convert
+## 现有项目转换成新格式
+
+### source:convert
 
 将旧文件格式转化并本地生成metadata要求的新格式yml文件
 
