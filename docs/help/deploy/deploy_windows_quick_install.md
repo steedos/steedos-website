@@ -14,7 +14,7 @@ title: Windows 快速安装
 
 ## 下载
 
-点击下载执行程序压缩包[steedos-project-mini-win-1.23.0-alpha.12.zip](https://server-backups.oss-cn-beijing.aliyuncs.com/steedos-platform/quick-installers/steedos-project-mini-win-1.23.0-alpha.12.zip)
+点击下载执行程序压缩包[steedos-project-oa-win.zip](https://server-backups.oss-cn-beijing.aliyuncs.com/steedos-trial/steedos-project-oa-win.zip)
 
 解压后目录主要结构为：
 
