@@ -195,7 +195,7 @@ METADATA_SERVER  默认是http://localhost:5000/
 METADATA_APIKEY  可通过本地服务中的个人账户设置中获取到 APIKEY
 ```
 
-## 此处暂缺一张动图
+![subscription](/assets/dx/command_reference/API_key.gif)
 
 ## package命令
 

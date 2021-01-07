@@ -92,7 +92,7 @@ METADATA_SERVER  默认是localhost:5000
 METADATA_APIKEY  可通过本地服务获取到 APIKEY
 ```
 
-## 此处暂缺一个动图
+![subscription](/assets/dx/setup_guide/API_key.gif)
 
 ### 提示
 
