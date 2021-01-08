@@ -14,7 +14,7 @@ title: 字段更新操作
 
 ## 如何创建字段更新
 
-![创建工作流规则](/assets/help/auto_workflow/创建工作流规则.png)
+![创建工作流规则](/assets/help/auto_actions/field_update_create.png)
 
 - API名称：在 API 中输入引用该组件的唯一名称。API 名称只能包含小写字母、数字，必须以字母开头，不能以下划线字符结尾或包含两个连续的下划线字符。
 - 显示名称：输入此字段更新的名称，下拉框选项或列表界面将显示该名称。
