@@ -9,7 +9,7 @@ sidebar_label: 概述
 
 ## 我应使用哪个自动化工具？
 
-华炎魔方提供多种工具，以自动执行贵组织的重复性业务流程，目前支持： [工作流](/help/auto_workflow/summary)、 [批准](/help/approval/approval_summary) 。
+华炎魔方提供多种工具，以自动执行贵组织的重复性业务流程，目前支持： [工作流](/help/auto_workflow/summary)、 [批准](/help/approval/summary) 。
 您需要的最佳自动化工具取决于您将进行自动化的业务流程的类型。
 
 ### 记录如何获得批准
