@@ -24,7 +24,7 @@ title: Windows 快速安装
 - `db` 存放数据库数据；
 - `node_modules` 存放系统运行所需二进制包；
 - `storage` 存放系统中上传的文件；
-- `steedos-packages` 存放安装的插件，如`steedos-app-crm.package`等`.package`后缀的文件；
+- `steedos-packages` 存放安装的应用，如`steedos-app-crm.package`等`.package`后缀的文件；
 - `.env` 是系统的配置文件可在此文件中配置端口、访问地址等；
 - `1-启动数据库.bat` 用于启动数据库服务；
 - `2-启动华炎魔方.exe` 用于启动华炎魔方服务；
@@ -37,6 +37,16 @@ title: Windows 快速安装
 先双击运行 `1-启动数据库.bat`保持窗口打开，看到下图信息表示启动成功：
 
 ![数据库启动](/assets/windows/数据库启动.png)
+
+## 安装应用
+
+访问应用市场： https://www.steedos.com/appstore/
+
+选择想要安装的应用，跳转至应用详细页下载 **.package** 文件到本地的 **steedos-packages**文件夹下
+
+例如：选择 **销售管理** 跳转至销售管理页面后下载 **steedos-app-crm.package** 文件到本地的 **steedos-packages**文件夹下
+
+**.package** 文件详细使用可访问 TODO
 
 ## 运行项目
 
