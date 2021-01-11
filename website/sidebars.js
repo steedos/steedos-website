@@ -116,7 +116,7 @@ module.exports =
           "help/auto_process/summary",{
           "工作流": ["help/auto_workflow/summary", "help/auto_workflow/create", "help/auto_workflow/examples"],
           "批准过程": ["help/approval/summary", "help/approval/create", "help/approval/examples", "help/approval/request"],
-          "自动操作": ["help/auto_actions/summary", "help/auto_actions/field_update"]
+          "自动操作": ["help/auto_actions/summary", "help/auto_actions/field_update", "help/auto_actions/workflow_notify"]
         }],
         "打印模板": [
           "help/word_template/summary",
