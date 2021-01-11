@@ -217,14 +217,29 @@ cfs:
 
 ```yml
 email:
+  from:
   host:
   port: 465
   username:
   password:
-  secure: true
+```
+
+或
+
+```yml
+email:
   from:
   url:
 ```
+
+- `from`: 邮件发送者账户，华炎魔方每封邮件发出去后发件人都显示为该账户。
+- `host`: 邮件服务域名地址。
+- `port`: 邮件服务端口号。
+- `username`: 邮件服务使用的账户名。
+- `password`: 邮件服务使用的账户密码。
+- `secure`: 是否
+
+其中url格式为`smtps://USERNAME:PASSWORD@HOST:PORT`，比如`smtps://username:password@email-smtp.us-east-1.amazonaws.com:465/`。
 
 ### 发送短信
 
