@@ -29,7 +29,7 @@ title: 字段更新操作
 
 ## 将操作与工作流规则和批准过程相关联
 
-您可以在[新建、编辑工作流规则](/help/auto_workflow/create)或[新建、编辑批准过程](/help/approval/approval_setup)时选择已有字段更新选项或创建新的字段更新操作来与之关联。
+您可以在[新建、编辑工作流规则](/help/auto_workflow/create)或[新建、编辑批准过程](/help/approval/create)时选择已有字段更新选项或创建新的字段更新操作来与之关联。
 
 ## 跨对象字段更新
 
