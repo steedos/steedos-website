@@ -9,14 +9,14 @@ sidebar_label: 概述
 
 ## 源代码驱动开发
 
-通过Steedos DX，您可以利用如 Git 的现代协作技术来控制整个团队的所有内容：代码、组织配置和元数据等。为了方便您导出更多元数据，定义数据导入文件、指定开发、暂存和生产环境的版本、功能和配置选项等操作，我们特提供steedos-vscode-core插件。
+通过Steedos DX，您可以利用如 Git 的现代协作技术来控制整个团队的所有内容：代码、组织配置和元数据等。为了方便您导出更多元数据，定义数据导入文件、指定开发、暂存和生产环境的版本、功能和配置选项等操作，我们特提供Steedos-Vscode-Core插件。
 
 - [VScode扩展](/dx/vs_extension)
-- [下载steedosdx-vscode-core](https://marketplace.visualstudio.com/items?itemName=Steedos.steedosdx-vscode)
+- [下载 Steedos-Vscode-Core](https://marketplace.visualstudio.com/items?itemName=Steedos.steedosdx-vscode)
 
 ## 快速测试和开发
 
-您可以在整个软件包开发生命周期内使用 steedos CLI，利用它一次性部署项目，也可用于推动开发、测试和持续集成。
+您可以在整个软件包开发生命周期内使用 Steedos CLI，利用它一次性部署项目，也可用于推动开发、测试和持续集成。
 
 - [Steedos CLI](/dx/setup_guide)
 
