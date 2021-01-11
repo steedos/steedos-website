@@ -1,6 +1,10 @@
 ---
-title: 开发者指南
+title: 入门
 ---
+
+## 什么是Steedos DX项目？
+
+steedos DX项目是一个源格式的元数据的本地目录结构，且允许使用steedos DX的工具来开发和测试。它包括配置文件和源格式的元数据，当您使用创建新的steedos DX项目时，它会为您创建项目目录结构，以此开始steedos DX项目的功能体验。
 
 ## Steedos将如何改变您的工作方式？
 
@@ -17,7 +21,7 @@ Steedos是新一代的低代码开发平台，旨在通过其强大的敏捷性�
 
 以下是使用Steedos DX工作流，这些步骤包括最常见的CLI命令，对于Steedos CLI支持的所有命令，请参阅 [命令指南](/dx/command_reference)
 
-- 安装Steedos CLI [设置指南](/dx/setup_guide)
+- 安装Steedos CLI [Steedos CLI](/dx/setup_guide)
 - 使用示例项目入门
 - 创建新的应用程序
 - 通过现有项目开始Steedos DX项目
@@ -29,48 +33,79 @@ Steedos是新一代的低代码开发平台，旨在通过其强大的敏捷性�
 - steedos platform 1.23 +
 - mongodb 4.2 +
 
-### 使用示例项目入门
+### 开始第一个项目
 
-- 1、打开终端或命令控制符窗口，克隆GITHub上的示例steedos-app-contract
+Steedos DX为您提供了不同的选项来创建Steedos DX项目，您可以同时使用喜欢的版本控制系统，如Git，以此来管理团队的开发进程。
+
+|  序号   |  创建方法   | 创建方式  |
+|  ----  |  ----  |  ----  |
+|  1   | 使用GitHub上的示例项目  | 使用示例项目来了解Steedos DX的功能 |
+|  2   | 创建Steedos DX项目  | 通过命令直接创建Steedos DX 项目 |
+|  3   | 通过现有项目创建Steedos DX  | 通过将现有项目转换成新格式开始Steedos DX项目开发 |
+
+#### 1、使用GitHub上的示例项目
+
+- 打开终端或命令控制符窗口，克隆GITHub上的示例steedos-app-contract
 
 ```yml
 git clone https://github.com/steedos/steedos-app-contract.git
 ```
 
-- 2、将源码clone到本地文件夹后，在终端或命令控制符窗口执行以下代码，切换目录. 
+- 将源码clone到本地文件夹后，在终端或命令控制符窗口执行以下代码，切换目录. 
 
 ```yml
 cd steedos-app-contract
 ```
 
-- 3、安装依赖
+- 安装依赖
 
 ```yml
 yarn
 ```
 
-- 4、启动
+- 启动
 
 ```yml
 yarn start
 ```
 
-### 创建一个应用程序
+#### 2、创建Steedos DX项目
 
-从零开始创建并开发Steedos平台上运行的应用时，请遵循以下基本工作流：
+- 创建名为my-app 的项目
 
-- 1.创建项目 [项目设置](/dx/project_setup)
-- 2.运行
-- 3.元数据与数据库的双向同步 [数据同步](/dx/data_synchronization)
+```yml
+npx create-steedos-app my-app
+```
 
-### 通过现有项目开始
+- 切换到my-app项目目录
 
-- 1.创建项目 [项目设置](/dx/project_setup)
-- 2.将现有的Steedos项目转换成新格式 [项目转化](/dx/convert_project)
-- 3.运行
-- 4.元数据与数据库的双向同步 [数据同步](/dx/data_synchronization)
+```yml
+cd my-app
+```
+
+- 安装依赖
+
+```yml
+yarn
+```
+
+- 启动
+
+```yml
+yarn start
+```
+
+steedos DX项目具有特定的项目结构和格式，项目创建后，您的项目文件结构如图所示：
+
+![subscription](/assets/dx/project_setup/project_setup01.png)
+
+#### 3、通过现有项目创建Steedos DX
+
+如果您已经是Steedos开发人员或已经在Steedos上创建了自己的应用程序，您还可以通过[项目转化](/dx/convert_project)的方式实现现有项目转为Steedos DX项目。
 
 ## 创建开发者账户
+
+项目启动后就可以
 
 - 打开华炎魔方开发者网站根据要求注册开发者账号 [华炎魔方--开发者网站](https://huayan.my.steedos.com:8443)
 
@@ -86,53 +121,11 @@ yarn start
 
 ![subscription](/assets/dx/developer_guide/developer_guide04.png)
 
-## 元数据覆盖率
+## 如何测试，构建和发布
 
-- CustomApplication
+如何测试、生成和发布包来继续开发是当前应用程序生命周期的转变，但现在可以选择软件包的开发模型。最终目标是使用易于维护、更新、安装和升级的目录创建包。您可以在整个包开发生命周期内使用 steedos CLI。持续集成 （CI） 是关于针对合并到应用程序的每组更改自动执行一致的测试运行。这一重要过程可确保在任何损坏的更改进入源存储库之前的应用程序质量。
 
-自定义应用程序，包括自定义或标准应用程序
-
-- CustomField
-
-自定义对象字段包括自定义或标准对象字段
-
-- CustomListview
-
-自定义对象列表，包括自定义或标准对象列表，如all，recent等
-
-- CustomAction
-
-自定义对象按钮，包括自定义的对象操作按钮
-
-- CustomObject
-
-自定义对象，用户自定义对象名称会自动加__c后缀，以此和系统对象进行区别
-
-- CustomPermission
-
-自定义对象权限，包括用户自定义或标准对象权限，如user，admin
-
-- CustomPermissionset
-
-自定义权限集，包括用户自定义权限集
-
-- CustomProfile
-
-自定义简档，包括用户自定义或系统标准简档，如user，customer等
-
-- CustomReport
-
-自定义报表
-
-- CustomValidationRule
-
-自定义对象验证规则
-
-- Layout
-
-- Workflow
-
-工作流规则
+尽管软件包开发是管理元数据中更改的一种有效方式，但我们仍然支持与当前方法并行的生成和部署过程。我们可以使用 steedos CLI 命令来处理生成和部署用例，source:deploy。创建并测试应用或自定义项后，即可创建部署项目。您可以部署所有源或部署已更改的文件。
 
 ## 生成并发布您的软件
 
@@ -140,13 +133,3 @@ yarn start
 
 - 元数据API生成和发布应用：通过steedos CLI命令来执行打包操作，包括JS在内的所有文件
 - 通过页面的软件包管理来生成和发布：不包括JS文件
-
-## 另请参阅
-
-- [入门指南](/dx/get_start)
-- [项目设置](/dx/project_setup)
-- [数据同步](/dx/data_synchronization)
-- [项目转化](/dx/convert_project)
-- [命令指南](/dx/command_reference)
-- [设置指南](/dx/setup_guide)
-- [Steedos DX](/dx/summary)

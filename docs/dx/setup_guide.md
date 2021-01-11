@@ -1,7 +1,9 @@
 ---
-title: 设置指南
+title: Steedos CLI
+sidebar_label: 概述
 ---
 
+我们提供的一个工具是灵活而强大的 Salesforce 命令行接口 （CLI）。您可以使用 CLI 从命令行管理包开发过程。CLI 结合了来自多个 Salesforce API 的许多功能，例如元数据 API、工具 API 和数据 （SOAP） API。它还支持 Ant 迁移工具的功能，该工具允许编写元数据任务的脚本。借助新的和改进的 CLI，所有重要 API 的所有开发任务都可在一个位置提供。您可以编写从组织创建到数据导入和导出的所有内容，这些内容是管理整个开发生命周期所需的一切。想想你可以创建的所有很酷的脚本，使重复开发任务更容易！
 
 ## 安装
 
@@ -126,7 +128,3 @@ Error: Please config with steedos source:config
 ```yml
 error: Please upgrade the platform license to Enterprise Edition
 ```
-
-## 另请参阅
-
-- [命令指南](/dx/command_reference)

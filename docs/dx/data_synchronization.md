@@ -23,6 +23,54 @@ title: 数据同步
 "CustomValidationRule","Layout","Workflow"
 ```
 
+##### 参数说明
+
+- CustomApplication
+
+自定义应用程序，包括自定义或标准应用程序
+
+- CustomField
+
+自定义对象字段包括自定义或标准对象字段
+
+- CustomListview
+
+自定义对象列表，包括自定义或标准对象列表，如all，recent等
+
+- CustomAction
+
+自定义对象按钮，包括自定义的对象操作按钮
+
+- CustomObject
+
+自定义对象，用户自定义对象名称会自动加__c后缀，以此和系统对象进行区别
+
+- CustomPermission
+
+自定义对象权限，包括用户自定义或标准对象权限，如user，admin
+
+- CustomPermissionset
+
+自定义权限集，包括用户自定义权限集
+
+- CustomProfile
+
+自定义简档，包括用户自定义或系统标准简档，如user，customer等
+
+- CustomReport
+
+自定义报表
+
+- CustomValidationRule
+
+自定义对象验证规则
+
+- Layout
+
+- Workflow
+
+工作流规则
+
 - [-p | source path]
 
 根据地址来检索获取服务器数据
@@ -126,13 +174,3 @@ steedos source:deploy -p steedos-app\main\default\object\note__c\fields\name.
 ```yml
 steedos source:deploy -p name.field.yml
 ```
-
-## 另请参阅
-
-- [项目设置](/dx/project_setup)
-- [项目转化](/dx/convert_project)
-- [开发者指南](/dx/developer_guide)
-- [设置指南](/dx/setup_guide)
-- [命令指南](/dx/command_reference)
-- [入门指南](/dx/get_start)
-- [Steedos DX](/dx/summary)

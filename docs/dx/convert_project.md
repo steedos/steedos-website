@@ -32,12 +32,3 @@ steedos source:convert -o C:\GitHub\steedos-app-contract\src -t C:\GitHub\steedo
 转换成功后，会输出“已转化文件清单”和“未转换文件清单"
 
 ![subscription](/assets/dx/convert_project/convert_project03.png)
-
-## 另请参阅
-
-- [数据同步](/dx/data_synchronization)
-- [项目设置](/dx/project_setup)
-- [开发者指南](/dx/developer_guide)
-- [命令指南](/dx/command_reference)
-- [设置指南](/dx/setup_guide)
-- [Steedos DX](/dx/summary)

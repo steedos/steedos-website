@@ -2,7 +2,19 @@
 title: VScode扩展
 ---
 
-## 入门
+VS Code的Steedos 扩展支持软件包开发模型，包括创建项目。
+软件包开发模型：允许您创建包含应用程序的软件包，该模式包括源代码管理、持续集成和部署。
+
+借助 VS（Visual Studio） 代码的steedos扩展，您可以获得强大的集成开发环境，该环境是为steedos DX自定义开发而创建的。这些扩展提供：
+
+- 与 Salesforce CLI 交互的功能
+- 为包开发创建项目的功能
+- 访问顶点语言服务器以进行语法突出显示和代码完成
+- 支持可视化强制页面和组件
+
+它还预先与 Git 集成，也可以与其他版本控制系统一起使用。
+
+## 开始
 
 在开始之前，请先在计算机上安装所需的软件。
 
@@ -18,11 +30,6 @@ title: VScode扩展
 
 ![subscription](/assets/dx/vs_extension/vs_extension02.png)
 
-## 概述
-
-VS Code的Steedos 扩展支持软件包开发模型，包括创建项目。
-软件包开发模型：允许您创建包含应用程序的软件包，该模式包括源代码管理、持续集成和部署。
-
 ## 设置默认软件包路径，用于同步数据
 
 打开命令面板，在输入框中输入“Steedos:”,则会出现可选的命令列表，选择
@@ -32,7 +39,7 @@ VS Code的Steedos 扩展支持软件包开发模型，包括创建项目。
 
 ![subscription](/assets/dx/vs_extension/vs_extension04.png)
 
-## 双向同步
+## 数据同步
 
 ### 获取源：retrieve source
 
@@ -55,6 +62,8 @@ VS Code的Steedos 扩展支持软件包开发模型，包括创建项目。
 ![subscription](/assets/dx/vs_extension/vs_extension08.png)
 
 ## 创建特殊格式文件
+
+您还能够创建特殊格式的文件，可以更加快速地开发
 
 ### 创建Trigger文件
 

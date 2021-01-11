@@ -41,21 +41,15 @@ module.exports =
     "插件": ["plugins/index",  "plugins/plugin_webapp", "plugins/plugin_webapp_functions"],
     
 
-    "Steedos DX": ["dx/summary", 
+    "Steedos DX": ["dx/summary", "dx/developer_guide", 
     {
-      "入门":[ "dx/get_start", "dx/developer_guide"]
-    },
-    {
-      "项目":[ "dx/project_setup", "dx/convert_project"]
-    },
-    {
-      "命令":[ "dx/setup_guide", "dx/command_reference"]
+      "Steedos CLI":[ "dx/setup_guide", "dx/command_reference", "dx/convert_project", "dx/data_synchronization", "dx/command_package"]
     },
     {
       "软件包":[ "dx/package", "dx/unmanaged_package"]
     },
     {
-      "扩展":[ "dx/vs_extension", "dx/data_synchronization"]
+      "扩展":[ "dx/vs_extension"]
     }
   ],
 
