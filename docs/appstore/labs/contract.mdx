@@ -22,63 +22,33 @@ import * as Icons from '@site/src/components/HeroIcons/outline';
 
 import Breadcrumb from '@site/src/components/Breadcrumb';
 
-<Breadcrumb
-  items={[
-    {
-      title: "应用市场", 
-      href: "/appstore/",
-    },
-    {
-      title: "合同管理",
-      href: "/appstore/labs/contract",
-    }
-  ]}
-/>
-<main class="flex bg-cover bg-no-repeat bg-green-50">
-  <div class="mx-auto px-4 my-12 max-w-screen-xl">
-    <div class="lg:grid lg:grid-cols-12 lg:gap-8">
-      <div class="sm:text-center md:mx-auto lg:col-span-6 lg:text-left lg:self-center">
-        
-        
-        <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
-          华炎合同管理软件
-          <br/>
-          <span class="text-green-600">轻松实现合同协作、提升合规性</span>
+
+<header class="py-6 border-b border-gray-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="md:flex md:items-center md:justify-between">
+      <div class="flex-1 min-w-0">
+        <h2 class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">
+          合同管理
         </h2>
-        <p class="mt-3 mx-auto text-lg text-gray-700 sm:text-xl md:mt-5">
-          借助华炎合同管理系统，你能够集中进行合同存储，提高合规性，自动化和加快整个合同生命周期，并获得更多其他业务优势。
-        </p>
-        <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
-          <div class="rounded-md shadow">
-            <a href="/platform/cases" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:bg-green-500 hover:text-white focus:outline-none focus:border-green-700 focus:shadow-outline-green transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
-              客户案例
-            </a>
-          </div>
-          <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-            <a href="/form/trial" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-green-600 bg-white hover:text-green-500 focus:outline-none focus:border-green-300 focus:shadow-outline-green transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
-              预约演示
-            </a>
-          </div>
-        </div>
       </div>
-      <div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-        <div class="relative mx-auto w-full">
-          <img class="relative block w-full overflow-hidden focus:outline-none focus:shadow-outline object-contain" src="/assets/contract/contract_desktop_pad_mobile.png"/>
-        </div>
+      <div class="mt-4 flex md:mt-0 md:ml-4">
+        <button type="button" class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          查看源码
+        </button>
+        <button type="button" class="ml-3 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          下载
+        </button>
       </div>
     </div>
   </div>
-</main>
-
+</header>
 
 
 <FeaturesWide
-  header="合同管理"
-  title="简单易用的中央合同存储库"
-  description="利用安全的电子存储和搜索工具，你可以按需访问合同，随时跟踪合同动态。此外，你可以使用预先批准的模板和法规条款，快速、轻松地创建合同。"
+  title="简单易用的中央合同存储库，轻松实现合同协作、提升合规性"
+  description="借助华炎合同管理系统，你能够集中进行合同存储，提高合规性，自动化和加快整个合同生命周期，并获得更多其他业务优势。"
   containerClass="bg-white"
   imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.jpg"
-  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.mp4"
   theme="green"
   items={[
     {
@@ -128,7 +98,6 @@ import Breadcrumb from '@site/src/components/Breadcrumb';
   title="规范和控制合同审批流程"
   description="华炎魔方内置专业的流程引擎，对于合同管理中的各种事项，只需简单配置，就能实现电子化审批。"
   imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/user-contracts.jpg"
-  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/user-contracts.mp4"
   containerClass="bg-gray-50"
   theme="green"
   items={[
@@ -182,15 +151,21 @@ import Breadcrumb from '@site/src/components/Breadcrumb';
   ]}
 />
 
-<FeaturesWide 
-  header="华炎魔方"
-  title="创建自定义应用程序，快速满足业务部门的个性化需求"
-  description="华炎魔方基于商业智能和模型驱动，可以快速创建自定义应用程序，应用程序可以根据业务需求随时调整、无缝迭代，帮助业务加速创新，提升竞争力。"
-  containerClass="bg-gray-50"
+
+
+<Features 
+  title="PC、移动一体化"
+  description="合同管理的各项功能，包括对流程发起、审批和监控都可以扩展到移动端，即时领导出差，一部手机，即可实现随时随地管理合同、使用签章、监控执行、预警风险。签署更高效，管理更便捷。"
+  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-mobile.jpeg"
+  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-mobile.mp4"
+  imagePosition="right"
   theme="green"
-  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.jpg"
-  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.mp4"
+  items={[
+    {title: "消息推送", description: "有新的待处理事项时，华炎魔方手机客户端会自动弹出推送提醒。"},
+    {title: "个性化手机界面", description: "只需简单配置，就能定制你的专属手机客户端。"},
+  ]}
 />
+
 
 <div class="bg-gray-200">
   <div class="max-w-screen-xl mx-auto text-center py-10 px-4 sm:px-6 lg:py-12 lg:px-8">
@@ -208,69 +183,9 @@ import Breadcrumb from '@site/src/components/Breadcrumb';
         </div>
         <div class="ml-3 rounded-md shadow">
           <a href="/form/trial" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-green-600 bg-white hover:text-green-500 focus:outline-none focus:border-green-300 focus:shadow-outline-green transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
-            预约产品演示
+            下载软件包
           </a>
         </div>
       </div>
   </div>
 </div>
-
-<Features 
-  title="只需数次点击，即可构建应用程序"
-  description="华炎魔方基于模型驱动，可以任意配置业务字段、列表视图、页面布局，即使是不懂编程的业务人员，也能快速定制。"
-  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-object.jpeg"
-  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-object.mp4"
-  imagePosition="left"
-  containerClass="bg-gray-50"
-  theme="green"
-  items={[
-    {title: "业务对象", description: "业务对象相当于数据库中的表，用于保存业务系统中的核心数据。"},
-    {title: "列表视图", description: "通过配置列表视图，最终用户可以快捷的切换多个查询条件。"},
-    {title: "页面布局", description: "页面布局控制了记录的显示方式，可以按照用户权限分配不同的页面布局。"},
-  ]}
-/>
-
-<Features 
-  title="随心定制合同审批流程"
-  description="华炎魔方内置了流程设计、管理维护、统计分析与流程优化等各类工具，帮助企业快速部署、有效监控并持续优化业务流程。"
-  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/admin-contracts.jpg"
-  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/admin-contracts.mp4"
-  imagePosition="right"
-  theme="green"
-  items={[
-    {title: "流程设计", description: "图形化流程设计工具，通过拖拽的方式就能创建业务流程。"},
-    {title: "效率统计", description: "系统会实时监控用户的审批效率数据，并进行效率分析、生成效率报表。"},
-    {title: "数据同步", description: "只需简单配置，就能实现审批单与业务台账双向同步。"},
-  ]}
-/>
-
-
-<Features 
-  title="随心定制合同统计报表"
-  description="使用华炎魔方的报表引擎，您可以快速配置统计图表，包括数据列表、分组报表、数据透视图、柱状图、饼图等，方便查看、分析和决策。"
-  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-report.jpeg"
-  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-report.mp4"
-  imagePosition="left"
-  containerClass="bg-gray-50"
-  theme="green"
-  items={[
-    {title: "报表设计", description: "可视化界面，业务人员可自主配置统计报表，分析业务数据。"},
-    {title: "报表显示", description: "自动按当前用户权限过滤报表数据，动态显示业务统计结果。"},
-    {title: "导出Excel", description: "华炎魔方中的所有数据及统计报表均可导出为Excel，以便进一步分析。"},
-  ]}
-/>
-
-<Features 
-  title="PC、移动一体化"
-  description="合同管理的各项功能，包括对流程发起、审批和监控都可以扩展到移动端，即时领导出差，一部手机，即可实现随时随地管理合同、使用签章、监控执行、预警风险。签署更高效，管理更便捷。"
-  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-mobile.jpeg"
-  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-mobile.mp4"
-  imagePosition="right"
-  theme="green"
-  items={[
-    {title: "消息推送", description: "有新的待处理事项时，华炎魔方手机客户端会自动弹出推送提醒。"},
-    {title: "个性化手机界面", description: "只需简单配置，就能定制你的专属手机客户端。"},
-  ]}
-/>
-
-<Customers/>

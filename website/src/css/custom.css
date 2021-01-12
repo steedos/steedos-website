@@ -25,6 +25,7 @@
   --ifm-spacing-horizontal: 1rem;
   --ifm-z-index-fixed: 200;
   --ifm-link-hover-decoration: none;
+  --ifm-heading-margin-bottom: 0;
   /* --ifm-link-hover-color: #03a9f4;  */
 }
 .navbar--dark {
