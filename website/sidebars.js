@@ -255,6 +255,7 @@ module.exports =
           "appstore/labs/cost",
           "appstore/labs/project",
           "appstore/labs/workflow",
+          "appstore/labs/okr"
         ],
       }
     ],
