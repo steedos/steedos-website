@@ -41,7 +41,7 @@ import Card from '@site/src/components/Card';
   title="项目管理"
   target="_blank"
   description="通过项目、任务、里程碑，管理项目的整理生命周期。"
-  href="https://github.com/steedos/app-project-management"/>
+  href="/help/appstore/project_management"/>
 
 <Card
   title="会议管理"

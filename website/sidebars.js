@@ -159,6 +159,7 @@ module.exports =
           "appstore/labs/sales",
           "appstore/labs/purchase",
           "appstore/labs/cost",
+          "appstore/labs/project",
           "appstore/labs/workflow",
         ],
       }
