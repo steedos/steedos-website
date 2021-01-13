@@ -23,140 +23,9 @@ module.exports =
   //     "href": "https://github.com/steedos/steedos-platform",
   //     "label": "开源社区版"
   // }],
-  "开发人员": {
-
-    "快速向导": [
-      "developer",
-      "developer/install/index",
-      "developer/create_project/index",
-      "developer/upgrade/index",
-      "developer/register/index"
-    ],
-    "元数据": [
-      "developer/metadata/index",
-      {
-        "对象": [
-          {
-            "字段": [
-              "developer/object_field", "developer/complex_field", "developer/inline_field"
-            ]
-          },
-          "developer/listview",
-          "developer/object_permission",
-          {
-          "验证规则": [
-            "help/validation_rules/summary",
-            "help/validation_rules/notes", 
-            "help/validation_rules/examples"
-            ]
-          }
-        ]
-      },
-      "developer/app",
-      {
-        "报表": [
-          "developer/reports",
-          "developer/report_jsreport"
-        ]
-      },
-      "developer/app",
-      {
-      "工作流": ["help/auto_workflow/summary", "help/auto_workflow/create", "help/auto_workflow/examples"],
-      },
-      {
-      "批准过程": ["help/approval/summary", "help/approval/create", "help/approval/examples", "help/approval/request"]
-      }
-    ],
-    
-    "元数据与代码同步": [
-      "developer/dx/dx_vscode_install",
-      "developer/dx/dx_vscode_config",
-      "developer/dx/dx_vscode_ synchronize"
-    ],
-
-    "服务端开发": [
-      // "developer/backend/index",
-      "developer/steedos_config",
-      "developer/env",
-      "developer/object_trigger",
-      "developer/api/router",
-      "developer/object_filter",
-      "developer/objectql_object",
-      "developer/datasource",
-      "developer/standard_objects",
-
-    ],
-
-    "服务端API": [
-      // "developer/api",
-      {
-        "身份验证": ["developer/api/api_jwt"],
-        "对象OData": [
-          "developer/api/odata",
-          // "developer/api/odata_auth", "developer/api/odata_query", "developer/api/odata_get", "developer/api/odata_add", "developer/api/odata_edit", "developer/api/odata_delete", "developer/api/odata_functions", "developer/api/odata_metadata"
-        ],
-        "对象GraphQL": [
-          "developer/api/graphql",
-          // "developer/api/graphql_auth", "developer/api/graphql_query", "developer/api/graphql_add", "developer/api/graphql_edit", "developer/api/graphql_delete"
-        ],
-        // "高级": ["developer/api/api_jwt", "developer/api/router"],
-        "审批王": [ "help/workflow/flow_webhooks"]
-      }],
-    "前端开发": [
-      // "developer/frontend/index",
-      "developer/object_action",
-      "developer/object_form",
-      {
-        "国际化": [ "developer/frontend/frontend_ internation"]
-      }
-    ],
-
-    "插件": [
-      "plugins/index",
-      "plugins/plugin_webapp",
-      "plugins/plugin_webapp_functions"
-      ],
-
-    "软件包": [
-      // "developer/package/index",
-      "developer/package/package_ visualization",
-      "developer/package/package_cli",
-    ],
-    "Steedos Cli 命令详解": [
-      "developer/cli/cli_ synchronize",
-      "developer/cli/cli_package",
-      "developer/cli/cli_ international"
-    ],
 
 
 
-    // "快速向导": [
-    //   "developer",
-    //   "developer/steedos_server"
-    // ],
-    // "开发教程": ["developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report","developer/guide_flow","developer/guide_sync","developer/guide_companies","developer/guide_nc"],
-    // "开发文档": [
-    //   "developer/datasource", "developer/object", 
-    //   {
-    //     "字段": ["developer/object_field", "developer/complex_field", "developer/inline_field"]
-    //   },
-    //   "developer/listview", "developer/object_filter_conditions", "developer/object_permission", "developer/object_action", "developer/object_form", "developer/app", "developer/object_workflow", "developer/reports", "developer/report_jsreport"
-    // ],
-
-    // "高级开发": ["developer/steedos_config", "developer/env", "developer/objectql_connection", "developer/objectql_object", "developer/object_filter", "developer/object_trigger", "developer/standard_objects"],
-    
-    
-
-    "Steedos DX": ["dx/developer_guide", 
-    {
-      "Steedos CLI":[ "dx/setup_guide", "dx/convert_project", "dx/data_synchronization", "dx/command_package", "dx/command_ internation"]
-    },
-     "dx/vs_extension"
-  ]
-
-
-    
-  },
   "文档": {
     "快速向导": ["help/about", {
       "服务端安装部署": ["help/deploy", "help/deploy/steedos-config"],
@@ -217,6 +86,129 @@ module.exports =
         "系统集成": ["help/no-code/object_datasources", "help/no-code/object_web_forms"]
       }
     ],
+
+    "开发人员": [{
+
+      "快速向导": [
+        "developer",
+        "developer/install/index",
+        "developer/create_project/index",
+        "developer/upgrade/index",
+        "developer/register/index"
+      ],
+      "元数据": [
+        // "developer/metadata/index",
+        {
+          "对象": [
+            {
+              "字段": [
+                "developer/object_field", "developer/complex_field", "developer/inline_field"
+              ]
+            },
+            "developer/listview",
+            "developer/object_permission",
+            {
+            "验证规则": [
+              "help/validation_rules/summary",
+              "help/validation_rules/notes", 
+              "help/validation_rules/examples"
+              ]
+            }
+          ]
+        },
+        "developer/app",
+        {
+          "报表": [
+            "developer/reports",
+            "developer/report_jsreport"
+          ]
+        },
+        
+      ],
+      
+      "元数据与代码同步": [
+        "developer/dx/dx_vscode_install",
+        "developer/dx/dx_vscode_config",
+        "developer/dx/dx_vscode_ synchronize"
+      ],
+  
+      "服务端开发": [
+        // "developer/backend/index",
+        "developer/steedos_config",
+        "developer/env",
+        "developer/object_trigger",
+        "developer/api/router",
+        "developer/object_filter",
+        "developer/objectql_object",
+        "developer/datasource",
+        "developer/standard_objects",
+  
+      ],
+  
+      "服务端API": [
+        // "developer/api",
+        {
+          "身份验证": ["developer/api/api_jwt"],
+          "对象OData": [
+            "developer/api/odata",
+            "developer/api/odata_auth", "developer/api/odata_query", "developer/api/odata_get", "developer/api/odata_add", "developer/api/odata_edit", "developer/api/odata_delete", "developer/api/odata_functions", "developer/api/odata_metadata"
+          ],
+          "对象GraphQL": [
+            "developer/api/graphql",
+            "developer/api/graphql_auth", "developer/api/graphql_query", "developer/api/graphql_add", "developer/api/graphql_edit", "developer/api/graphql_delete"
+          ],
+          // "高级": ["developer/api/api_jwt", "developer/api/router"],
+          "审批王": [ "help/workflow/flow_webhooks"]
+        }],
+      "前端开发": [
+        // "developer/frontend/index",
+        "developer/object_action",
+        "developer/object_form",
+        {
+          "国际化": [ "developer/frontend/frontend_ internation"]
+        }
+      ],
+  
+      "插件": [
+        "plugins/index",
+        "plugins/plugin_webapp",
+        "plugins/plugin_webapp_functions"
+        ],
+  
+      "软件包": [
+        // "developer/package/index",
+        "developer/package/package_ visualization",
+        "developer/package/package_cli",
+      ],
+      "Steedos Cli 命令详解": [
+        "developer/cli/cli_convert",
+        "developer/cli/cli_synchronize",
+        "developer/cli/cli_package",
+        "developer/cli/cli_international"
+      ],
+  
+      // "快速向导": [
+      //   "developer",
+      //   "developer/steedos_server"
+      // ],
+      // "开发教程": ["developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report","developer/guide_flow","developer/guide_sync","developer/guide_companies","developer/guide_nc"],
+      // "开发文档": [
+      //   "developer/datasource", "developer/object", 
+      //   {
+      //     "字段": ["developer/object_field", "developer/complex_field", "developer/inline_field"]
+      //   },
+      //   "developer/listview", "developer/object_filter_conditions", "developer/object_permission", "developer/object_action", "developer/object_form", "developer/app", "developer/object_workflow", "developer/reports", "developer/report_jsreport"
+      // ],
+  
+      // "高级开发": ["developer/steedos_config", "developer/env", "developer/objectql_connection", "developer/objectql_object", "developer/object_filter", "developer/object_trigger", "developer/standard_objects"],
+  
+    //   "Steedos DX": ["dx/developer_guide", 
+    //   {
+    //     "Steedos CLI":[ "dx/setup_guide", "dx/convert_project", "dx/data_synchronization", "dx/command_package", "dx/command_ internation"]
+    //   },
+    //    "dx/vs_extension"
+    // ]
+    }]
     
   },
   "审批王": {
