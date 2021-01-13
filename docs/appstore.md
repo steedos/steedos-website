@@ -23,30 +23,27 @@ import Card from '@site/src/components/Card';
 <Card
   title="合同管理"
   description="通过合同、收款、付款，管理合同的整个生命周期。"
-  target="_blank"
-  href="https://github.com/steedos/steedos-app-contract"/>
+  href="/appstore/labs/contract"/>
 
 <Card
   title="销售管理"
   description="通过客户、潜在客户、业务机会等管理销售流程。"
-  target="_blank"
-  href="https://github.com/steedos/steedos-app-crm"/>
+  href="/appstore/labs/sales"/>
 
-<!-- <Card
+<Card
   title="费控管理"
   description="将多管控方案融合，达到预算与费用一体化的目的。"
-  href="/appstore/labs/cost"/> -->
+  href="/appstore/labs/cost"/>
 
 <Card
   title="项目管理"
-  target="_blank"
   description="通过项目、任务、里程碑，管理项目的整理生命周期。"
-  href="/help/appstore/project_management"/>
+  href="/appstore/labs/project"/>
 
-<Card
+<!-- <Card
   title="会议管理"
   target="_blank"
   description="预约会议室、组织会议，会议通知、冲突提醒。"
-  href="https://github.com/steedos/steedos-app-meeting"/>
+  href="https://github.com/steedos/steedos-app-meeting"/> -->
 
 </div>
