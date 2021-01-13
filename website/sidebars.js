@@ -43,7 +43,7 @@ module.exports =
           },
           "developer/listview",
           "developer/object_permission",
-          "developer/object_filter_conditions"
+          "developer/object_filter_conditions",
         ]
       },
       "developer/app",
@@ -54,11 +54,12 @@ module.exports =
         ]
       },
       "developer/app",
-      "developer/app",
-      "developer/app",
-      "developer/app",
-      "developer/app",
-      "developer/app"
+      {
+      "工作流": ["help/auto_workflow/summary", "help/auto_workflow/create", "help/auto_workflow/examples"],
+      },
+      {
+      "批准过程": ["help/approval/summary", "help/approval/create", "help/approval/examples", "help/approval/request"]
+      }
     ],
     
     "元数据与代码同步": [
