@@ -10,31 +10,13 @@ title: 可视化打包
 STEEDOS_DEVELOPER_SERVER=https://huayan-beta.my.steedos.com:8443/
 ```
 
-### 创建API KEY
+### 开发者账户
 
-- 开启本地服务，在公司设置下的许可证处，复制魔方ID，以便于创建API KEY
+:::note 提示
+若未注册开发者账户，请先注册，否则无法正常打包
+:::
 
-![subscription](/assets/dx/unmanaged_package/unmanaged_package01.png)
-
-### 创建开发者账户
-
-- 打开华炎魔方开发者网站根据要求注册开发者账号 [华炎魔方--开发者网站](https://huayan-beta.my.steedos.com:8443)
-
-![subscription](/assets/dx/unmanaged_package/unmanaged_package02.png)
-
-- 新建订阅，根据需要选择产品、版本等信息，并将前面步骤复制的魔方ID填充并保存
-
-![subscription](/assets/dx/unmanaged_package/unmanaged_package03.png)
-
-![subscription](/assets/dx/unmanaged_package/unmanaged_package04.png)
-
-- 保存成功后，打开该订阅并复制许可证
-
-![subscription](/assets/dx/unmanaged_package/unmanaged_package05.png)
-
-- 再次打开本地服务，将复制的许可证添加到如图所示的公司设置中，至此开发者账户创建成功
-
-![subscription](/assets/dx/unmanaged_package/unmanaged_package06.png)
+- [注册开发者账户](/developer/register/index)
 
 ### 安装
 

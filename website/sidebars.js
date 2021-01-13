@@ -39,7 +39,9 @@ module.exports =
 
     "设置和维护华炎魔方": ["help/admin", 
       {
-        "公司设置": ["help/company/organization", "help/company/profile", "help/company/permission_set", "help/company/permission_share", "help/workflow/admin_positions","help/company/license"],
+        "公司设置": ["help/company/organization", "help/company/profile", "help/company/permission_set",
+        // "help/company/permission_share",
+        "help/workflow/admin_positions","help/company/license"],
         "自定义应用": [
           "help/no-code/object_summary",
           "help/no-code/create_object",{
@@ -87,50 +89,48 @@ module.exports =
       }
     ],
 
-    "开发人员": [{
+    "开发人员": [
 
-      "快速向导": [
-        "developer",
+      "developer",
+      
+      {
+      "前期准备": [
         "developer/install/summary",
         "developer/create_project/index",
-        "developer/upgrade/index",
-        "developer/register/index"
-      ],
-      "元数据": [
-        // "developer/metadata/index",
-        {
-          "对象": [
-            {
-              "字段": [
-                "developer/object_field", "developer/complex_field", "developer/inline_field"
-              ]
-            },
-            "developer/listview",
-            "developer/object_permission",
-            {
-            "验证规则": [
-              "help/validation_rules/summary",
-              "help/validation_rules/notes", 
-              "help/validation_rules/examples"
-              ]
-            }
-          ]
-        },
-        "developer/app",
-        {
-          "报表": [
-            "developer/reports",
-            "developer/report_jsreport"
-          ]
-        },
-        
+        // "developer/upgrade/index",
+        "developer/register/index",
+        "developer/cli/cli_convert",
       ],
       
       "元数据与代码同步": [
         "developer/dx/dx_vscode_install",
-        "developer/dx/dx_vscode_config",
-        "developer/dx/dx_vscode_ synchronize"
-      ],
+        // "developer/dx/dx_vscode_config",
+        "developer/dx/dx_vscode_synchronize",
+
+        {
+          "元数据": [
+          // "developer/metadata/index",
+          {
+            "对象": [
+              {
+                "字段": [
+                  "developer/object_field", "developer/complex_field", "developer/inline_field"
+                ]
+              },
+              "developer/listview",
+              "developer/object_permission",
+            ]
+          },
+          "developer/app",
+          {
+            "报表": [
+              "developer/reports",
+              "developer/report_jsreport"
+            ]
+          },   
+        ],
+      }
+    ],
   
       "服务端开发": [
         // "developer/backend/index",
@@ -145,7 +145,7 @@ module.exports =
   
       ],
   
-      "服务端API": [
+      "API": [
         // "developer/api",
         {
           "身份验证": ["developer/api/api_jwt"],
@@ -166,26 +166,33 @@ module.exports =
         "developer/object_form",
         {
           "国际化": [ "developer/frontend/frontend_ internation"]
+        },
+        {
+          "插件": [
+            "plugins/index",
+            "plugins/plugin_webapp",
+            "plugins/plugin_webapp_functions"
+            ]
         }
       ],
   
-      "插件": [
-        "plugins/index",
-        "plugins/plugin_webapp",
-        "plugins/plugin_webapp_functions"
-        ],
-  
       "软件包": [
+        "developer/package/index",
+        {
+          "打包": [
+            "developer/package/package_visualization",
+            "developer/package/package_cli",
+            ]
+        }
         // "developer/package/index",
-        "developer/package/package_ visualization",
-        "developer/package/package_cli",
+        
       ],
-      "Steedos Cli 命令详解": [
-        "developer/cli/cli_convert",
-        "developer/cli/cli_synchronize",
-        "developer/cli/cli_package",
-        "developer/cli/cli_international"
-      ],
+      // "Steedos CLI 命令详解": [
+      //   "developer/cli/cli_convert",
+      //   "developer/cli/cli_synchronize",
+      //   "developer/cli/cli_package",
+      //   "developer/cli/cli_international"
+      // ],
   
       // "快速向导": [
       //   "developer",
@@ -208,6 +215,7 @@ module.exports =
     //   },
     //    "dx/vs_extension"
     // ]
+    
     }]
     
   },

@@ -18,6 +18,30 @@ import Video from '@site/src/components/Video';
         ]}/>
 </div>
 
+## 开发流程
+
+### 1、[开发前准备](/developer/install/summary)
+
+### 2、[创建一个新项目](/developer/create_project/index)
+
+### 3、可视化建模
+
+- [注册开发者用户](/developer/register/index)
+- [自定义对象](/help/no-code/create_object)
+
+### 4、同步元数据
+
+- [安装 VS Code插件](/developer/dx/dx_vscode_install)
+- [设置环境变量](/developer/dx/dx_vscode_config)
+- [使用 VS Code 插件同步](/developer/dx/dx_vscode_synchronize)
+
+### 5、代码开发
+
+### 6、项目打包
+
+- [可视化打包](/developer/package/package_visualization)
+- [使用 steedos cli 命令打包](/developer/package/package_cli)
+
 <!-- 本教程以合同管理为例，指导你如何使用华炎魔方创建项目，配置业务对象，编程脚本，处理业务部门的各种个性化需求。您开发的新业务系统可以部署在本地运行。
 
 #### [准备：安装开发环境](/developer/deploy)
