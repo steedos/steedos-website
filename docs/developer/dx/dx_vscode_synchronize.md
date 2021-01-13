@@ -11,7 +11,7 @@ title: 使用 VS Code 插件同步
 在获取源文件时，如果 VS Code 右下角出现下图提示，请先根据提示的内容配置环境变量。
 
 ![subscription](/assets/dx/vs_extension/vs_extension06.png)
-参考[设置环境变量](/developer/dx/dx_vscode_config)
+参考 [安装 VS Code插件](/developer/dx/dx_vscode_install)
 
 - 在 VS Code 中，右键单击某一元文件或目录，然后选择 ****Steedos:retrieve source**，但仅获取当前文件或该目录包含的所有内容。
 
