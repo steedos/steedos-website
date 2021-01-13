@@ -91,7 +91,7 @@ module.exports =
 
       "快速向导": [
         "developer",
-        "developer/install/index",
+        "developer/install/summary",
         "developer/create_project/index",
         "developer/upgrade/index",
         "developer/register/index"
