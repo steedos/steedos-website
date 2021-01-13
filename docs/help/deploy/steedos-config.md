@@ -237,9 +237,7 @@ email:
 - `port`: 邮件服务端口号。
 - `username`: 邮件服务使用的账户名。
 - `password`: 邮件服务使用的账户密码。
-- `secure`: 是否
-
-其中url格式为`smtps://USERNAME:PASSWORD@HOST:PORT`，比如`smtps://username:password@email-smtp.us-east-1.amazonaws.com:465/`。
+- `url`: 邮件服务的URL地址，格式为`smtps://USERNAME:PASSWORD@HOST:PORT`，比如`smtps://username:password@email-smtp.us-east-1.amazonaws.com:465/`。
 
 ### 发送短信
 

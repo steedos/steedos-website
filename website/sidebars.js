@@ -228,20 +228,21 @@ module.exports =
   // "报价": {
   //   "报价": ["pricing/platform"],
   // },
-  // "应用市场": {
-  //   "应用市场": [
-  //     "appstore", 
-  //     { 
-  //       "标准应用": [
-  //         "appstore/labs/contract",
-  //         "appstore/labs/sales",
-  //         "appstore/labs/purchase",
-  //         "appstore/labs/cost",
-  //         "appstore/labs/workflow",
-  //       ],
-  //     }
-  //   ],
-  // },
+  "应用市场": {
+    "应用市场": [
+      "appstore", 
+      { 
+        "开源项目": [
+          "appstore/labs/contract",
+          "appstore/labs/sales",
+          "appstore/labs/purchase",
+          "appstore/labs/cost",
+          "appstore/labs/project",
+          "appstore/labs/workflow",
+        ],
+      }
+    ],
+  },
   "华炎魔方": {
     "华炎魔方": [
       "platform", 
