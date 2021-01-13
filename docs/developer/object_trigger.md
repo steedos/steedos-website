@@ -20,7 +20,7 @@ module.exports = {
 }
 ```
 
-### 文件内容说明：
+### 文件内容说明
 
 - `listenTo`: 对象名称，选填。如果没有定义此属性，则取文件名中第一个 `.` 之前的文字作为listenTo的值
 - `beforeInsert`: 数据新增前执行, 选填
@@ -31,7 +31,8 @@ module.exports = {
 - `afterUpdate`: 数据修改后执行, 选填
 - `afterDelete`: 数据删除后执行, 选填
 
-### 参数说明：
+### 参数说明
+
 所有脚本函数均为无参函数，所属数据可从`this`中获取，`this`结构如下
 
 - `id`: 记录的唯一标识[string],
@@ -44,7 +45,8 @@ module.exports = {
 - `getObject`: function(object_name: string)
 - `query`: 查询数据相关参数[json], //仅beforeFind时存在此属性
 
-### 脚本返回值：
+### 脚本返回值
+
 - 如果return的是false，则中断操作，如在before.insert里return false,则不执行insert操作。
 
 ### 触发器实例picklists.trigger.js
@@ -96,3 +98,25 @@ module.exports = {
     }
 }
 ```
+
+### 使用 DX 插件创建 Trigger 文件
+
+- 1、打开命令面板，在输入框中输入“Steedos:”,则会出现可选的命令列表，选择“Create Object trigger”
+
+![subscription](/assets/dx/vs_extension/vs_extension09.png)
+
+- 2、根据提示填写文件名称并回车
+
+![subscription](/assets/dx/vs_extension/vs_extension10.png)
+
+- 3、选择需要的trigger，可多选，点击“OK”
+
+![subscription](/assets/dx/vs_extension/vs_extension11.png)
+
+- 4、选择生成的目标目录，默认是“triggers”文件夹下，选择该目录并回车
+
+![subscription](/assets/dx/vs_extension/vs_extension12.png)
+
+- 5、生成trigger文件，内容如图
+
+![subscription](/assets/dx/vs_extension/vs_extension13.png)
