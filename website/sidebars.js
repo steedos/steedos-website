@@ -43,7 +43,13 @@ module.exports =
           },
           "developer/listview",
           "developer/object_permission",
-          "developer/object_filter_conditions",
+          {
+          "验证规则": [
+            "help/validation_rules/summary",
+            "help/validation_rules/notes", 
+            "help/validation_rules/examples"
+            ]
+          }
         ]
       },
       "developer/app",
@@ -69,7 +75,16 @@ module.exports =
     ],
 
     "服务端开发": [
-      "developer/backend/index"
+      // "developer/backend/index",
+      "developer/steedos_config",
+      "developer/env",
+      "developer/object_trigger",
+      "developer/api/router",
+      "developer/object_filter",
+      "developer/objectql_object",
+      "developer/datasource",
+      "developer/standard_objects",
+
     ],
 
     "服务端API": [
@@ -88,7 +103,12 @@ module.exports =
         "审批王": [ "help/workflow/flow_webhooks"]
       }],
     "前端开发": [
-      "developer/frontend/index"
+      // "developer/frontend/index",
+      "developer/object_action",
+      "developer/object_form",
+      {
+        "国际化": [ "developer/frontend/frontend_ internation"]
+      }
     ],
 
     "插件": [
@@ -98,7 +118,9 @@ module.exports =
       ],
 
     "软件包": [
-      "developer/package/index"
+      // "developer/package/index",
+      "developer/package/package_ visualization",
+      "developer/package/package_cli",
     ],
     "Steedos Cli 命令详解": [
       "developer/cli/cli_ synchronize",
@@ -112,16 +134,16 @@ module.exports =
     //   "developer",
     //   "developer/steedos_server"
     // ],
-    "开发教程": ["developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report","developer/guide_flow","developer/guide_sync","developer/guide_companies","developer/guide_nc"],
-    "开发文档": [
-      "developer/datasource", "developer/object", 
-      {
-        "字段": ["developer/object_field", "developer/complex_field", "developer/inline_field"]
-      },
-      "developer/listview", "developer/object_filter_conditions", "developer/object_permission", "developer/object_action", "developer/object_form", "developer/app", "developer/object_workflow", "developer/reports", "developer/report_jsreport"
-    ],
+    // "开发教程": ["developer/guide_create", "developer/guide_object","developer/guide_relationship","developer/guide_trigger","developer/guide_button","developer/guide_report","developer/guide_flow","developer/guide_sync","developer/guide_companies","developer/guide_nc"],
+    // "开发文档": [
+    //   "developer/datasource", "developer/object", 
+    //   {
+    //     "字段": ["developer/object_field", "developer/complex_field", "developer/inline_field"]
+    //   },
+    //   "developer/listview", "developer/object_filter_conditions", "developer/object_permission", "developer/object_action", "developer/object_form", "developer/app", "developer/object_workflow", "developer/reports", "developer/report_jsreport"
+    // ],
 
-    "高级开发": ["developer/steedos_config", "developer/env", "developer/objectql_connection", "developer/objectql_object", "developer/object_filter", "developer/object_trigger", "developer/standard_objects"],
+    // "高级开发": ["developer/steedos_config", "developer/env", "developer/objectql_connection", "developer/objectql_object", "developer/object_filter", "developer/object_trigger", "developer/standard_objects"],
     
     
 
@@ -145,6 +167,7 @@ module.exports =
     }, "help/record_report",{
       // "数据台账": ["help/record_list", "help/record_view", "help/record_report", "help/notifications"],  
     }],
+
     "设置和维护华炎魔方": ["help/admin", 
       {
         "公司设置": ["help/company/organization", "help/company/profile", "help/company/permission_set", "help/company/permission_share", "help/workflow/admin_positions","help/company/license"],
@@ -193,7 +216,8 @@ module.exports =
           "help/word_template/examples"],
         "系统集成": ["help/no-code/object_datasources", "help/no-code/object_web_forms"]
       }
-    ]
+    ],
+    
   },
   "审批王": {
      "使用入门": [

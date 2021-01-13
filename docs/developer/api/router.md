@@ -1,6 +1,6 @@
 ---
 title: 服务端API
-sidebar_label: API
+sidebar_label: 自定义服务端API
 ---
 在系统中，可以定义API处理相关的业务逻辑并返回结果。
 

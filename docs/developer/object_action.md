@@ -1,5 +1,6 @@
 ---
-title: 操作按钮
+title: 自定义按钮
+# title: 操作按钮
 ---
 
 系统内置三个基本操作：新增(`standard_new`)、修改(`standard_edit`)、删除(`standard_delete`)。
