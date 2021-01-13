@@ -2,7 +2,7 @@
 title: Docker 部署
 ---
 
-本教程以 [steedos-project-oa](https://github.com/steedos/steedos-project-oa)为例，指导你使用 [docker-compose](https://docs.docker.com/compose/install/) 启动项目。
+本教程以 [steedos-project-oa](https://github.com/steedos/steedos-project-oa/tree/docker)为例，指导你使用 [docker-compose](https://docs.docker.com/compose/install/) 启动项目。
 
 ## 使用 Docker Compose 启动服务
 
