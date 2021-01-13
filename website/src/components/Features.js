@@ -6,7 +6,7 @@ class Features extends React.Component {
 
 
   render() {
-    let {title, description, items, imageUrl, videoUrl, imagePosition, containerClass, theme} = this.props;
+    let {title, description, items, imageUrl, imageClass, videoUrl, imagePosition, containerClass, theme} = this.props;
 
     let textContainerClass = "lg:col-start-1"
     let imageContainerClass = "lg:col-start-2"
@@ -15,6 +15,9 @@ class Features extends React.Component {
       textContainerClass = "lg:col-start-2"
       imageContainerClass = "lg:col-start-1"
     }
+
+    if (!imageClass)
+      imageClass = "lg:max-w-xl rounded-lg shadow-lg"
 
     if (!containerClass)
       containerClass = ""
@@ -81,8 +84,8 @@ class Features extends React.Component {
           </defs>
           <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
         </svg>
-        <div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md sm:mx-4">
-          <div className="relative block w-full rounded-lg overflow-hidden focus:outline-none focus:shadow-outline">
+        <div className={"relative mx-auto w-full sm:mx-4 overflow-hidden " + imageClass}>
+          <div className="relative block w-full focus:outline-none focus:shadow-outline">
           {imageComponent}
           </div>
         </div>

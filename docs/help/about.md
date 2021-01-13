@@ -27,7 +27,7 @@ import Card from '@site/src/components/Card';
 - [如何下载客户端？](/help/download)
 - [使用入门](/help/user)
 - [设置和维护华炎魔方](/help/admin)
-
+- [如何下载许可证？](https://www.steedos.com/help/company/license)
 ## 流程审批
 
 - [如何填写申请单？](/help/workflow/instance_add.md)
