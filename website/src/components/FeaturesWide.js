@@ -6,10 +6,13 @@ class FeaturesWide extends React.Component {
 
 
   render() {
-    let {header, title, description, items, imageUrl, videoUrl, containerClass, theme} = this.props;
+    let {header, title, description, items, imageUrl, imageClass, videoUrl, containerClass, theme} = this.props;
 
     if (!containerClass)
       containerClass = ""
+
+    if (!imageClass)
+      imageClass = "lg:max-w-xl rounded-lg shadow-lg"
 
     if (!theme)
         theme = "green"
@@ -43,8 +46,8 @@ class FeaturesWide extends React.Component {
         )}
         </div>
         {imageUrl && (
-            <div className="relative mx-auto w-full lg:max-w-md mt-4">
-                <div className="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
+            <div className={"relative mx-auto w-full mt-4 overflow-hidden "  + imageClass}>
+                <div className="relative block w-full overflow-hidden focus:outline-none focus:shadow-outline">
                     {imageComponent}
                 </div>
             </div>
