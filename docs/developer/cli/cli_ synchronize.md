@@ -1,14 +1,10 @@
 ---
-title: 数据同步
+title: 对象同步
 ---
 
-![subscription](/assets/dx/dx05.png)
-
-## 元数据与数据库的双向同步
+## source:retrieve
 
 ### 检索源数据到本地
-
-#### source:retrieve
 
 从服务器获取源格式的元数据并下载到本地 Steedos DX项目中，该命令会直接覆盖掉您本地的文件。
 
@@ -25,7 +21,7 @@ title: 数据同步
 "CustomValidationRule","Layout","Workflow"
 ```
 
-##### 参数说明
+### 参数说明
 
 - CustomApplication
 
@@ -81,11 +77,11 @@ title: 数据同步
 
 根据本地配置文件（package.yml）从服务器获取所需源格式的文件
 
-#### 示例
+### 示例
 
-##### 根据metadata
+#### 根据metadata
 
-###### 获取对象  CustomObject
+##### 获取对象 CustomObject
 
 - CustomObject：*，表示获取所有对象及其包含的字段，列表，视图等
 
@@ -99,7 +95,7 @@ steedos source:retrieve -m CustomObject:*
 steedos source:retrieve -m CustomObject:accounts
 ```
 
-###### 获取某一对象的字段 Field
+##### 获取某一对象的字段 Field
 
 - CustomField:accounts.*，表示获取accounts对象的所有字段
 
@@ -120,7 +116,7 @@ steedos source:retrieve -m
 CustomField:accounts.boolean,accounts.owner
 ```
 
-##### 根据路径获取
+#### 根据路径获取
 
 - 获取该路径下所有
 
@@ -140,9 +136,9 @@ steedos source:retrieve -p "path/to/custom/objects/myObject.object.yml"
 steedos source:retrieve -p "path/to/source/objects/myObject"
 ```
 
-### 部署元数据到服务器
+## source:deploy
 
-#### source:deploy
+### 部署元数据到服务器
 
 将本地文件部署到服务器，您部署的数据将会覆盖原有的数据结构
 该命令包含的可选参数
@@ -151,7 +147,7 @@ steedos source:retrieve -p "path/to/source/objects/myObject"
 
 您需要部署到服务器的本地文件路径
 
-#### 示例
+### 示例
 
 - 部署steedos项目下所有文件到服务器
 

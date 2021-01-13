@@ -2,6 +2,10 @@
 title: VScode扩展
 ---
 
+![subscription](/assets/dx/dx07.png)
+
+![subscription](/assets/dx/dx06.png)
+
 VS Code 的 Steedos 扩展支持软件包开发模型，包括创建项目。
 软件包开发模型：允许您创建包含应用程序的软件包，该模式包括源代码管理、持续集成和部署。
 

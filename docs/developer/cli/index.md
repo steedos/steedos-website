@@ -1,14 +1,13 @@
 ---
-title: 数据同步
+title: Steedos Cli 命令详解
+sidebar_label: 概述
 ---
 
-![subscription](/assets/dx/dx05.png)
+## 对象同步
 
-## 元数据与数据库的双向同步
+### source:retrieve
 
-### 检索源数据到本地
-
-#### source:retrieve
+**检索源数据到本地**
 
 从服务器获取源格式的元数据并下载到本地 Steedos DX项目中，该命令会直接覆盖掉您本地的文件。
 
@@ -25,7 +24,7 @@ title: 数据同步
 "CustomValidationRule","Layout","Workflow"
 ```
 
-##### 参数说明
+#### 参数说明
 
 - CustomApplication
 
@@ -83,9 +82,9 @@ title: 数据同步
 
 #### 示例
 
-##### 根据metadata
+**根据metadata**
 
-###### 获取对象  CustomObject
+**获取对象 CustomObject**
 
 - CustomObject：*，表示获取所有对象及其包含的字段，列表，视图等
 
@@ -99,7 +98,7 @@ steedos source:retrieve -m CustomObject:*
 steedos source:retrieve -m CustomObject:accounts
 ```
 
-###### 获取某一对象的字段 Field
+**获取某一对象的字段 Field**
 
 - CustomField:accounts.*，表示获取accounts对象的所有字段
 
@@ -120,7 +119,7 @@ steedos source:retrieve -m
 CustomField:accounts.boolean,accounts.owner
 ```
 
-##### 根据路径获取
+**根据路径获取**
 
 - 获取该路径下所有
 
@@ -140,9 +139,9 @@ steedos source:retrieve -p "path/to/custom/objects/myObject.object.yml"
 steedos source:retrieve -p "path/to/source/objects/myObject"
 ```
 
-### 部署元数据到服务器
+### source:deploy
 
-#### source:deploy
+**部署元数据到服务器**
 
 将本地文件部署到服务器，您部署的数据将会覆盖原有的数据结构
 该命令包含的可选参数
@@ -175,4 +174,91 @@ steedos source:deploy -p steedos-app\main\default\object\note__c\fields\name.
 
 ```yml
 steedos source:deploy -p name.field.yml
+```
+
+## 打包
+
+### package:build
+
+**将本地文件打包成.package文件**
+
+该命令包含以下参数：
+
+- 【-n | packageName】打包好的package名称
+- 【-p | appPath】需要打包的本地文件地址
+- 【-l | loglevel(debug|info|warn)】可选参数，用于控制是否打印已打包文件清单，默认"warn"不打印，只打印未打包文件清单
+
+您也可以运行--help来获取 package:build 命令的更多信息：
+
+```yml
+steedos package:build --help
+```
+
+展示结果：
+
+```yml
+USAGE
+  $ steedos package:build
+OPTIONS
+-l, --loglevel=loglevel        (debug|info|warn)  [default: warn] logging level for this command invocation
+-n, --packageName=packageName  package name
+-p, --appPath=appPath          appPath
+```
+
+示例如下：
+
+```yml
+steedos package:build -n steedos-app-contract -p C:\GitHub\steedos-app-contract\steedos-app
+```
+
+在控制台同时会打印打包相关的日志：
+
+```yml
+=== Steedos Package Build: Packaged files
+TYPE                        PROJECT PATH
+──────────────────   ──────────────────────────
+CustomApplication    steedos-app\main\default\applications  
+                     \projects.app.yml    
+
+=== Steedos Package Build: Unpacked files
+TYPE                         PROJECT PATH
+──────────────────   ─────────────────────────────
+```
+
+## 国际化
+
+### steedos:i18n
+
+**生成项目下对象的国际化文件**
+
+该命令包含以下参数：
+
+- 【lng】 需要生成国际化的语言, 必填 (en | zh-CN)
+- 【-p | packageDir】打包好的package名称
+- 【-s | serverDir】项目所在路径, 默认为当前目录, 选填
+
+您也可以运行--help来获取 steedos:i18n 命令的更多信息：
+
+```yml
+Create steedos project object i18n
+```
+
+展示结果：
+
+```yml
+USAGE
+  $ steedos i18n NAME
+
+ARGUMENTS
+  NAME  language
+
+OPTIONS
+  -p, --packageDir=packageDir  Steedos Package Dir
+  -s, --serverDir=serverDir    Steedos Server Dir 
+```
+
+示例如下
+
+```yml
+steedos i18n en -s . -p ./steedos-app
 ```
