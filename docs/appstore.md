@@ -13,7 +13,7 @@ import Card from '@site/src/components/Card';
 
 <!-- ## 开源应用 -->
 
-<div class="mt-12 grid gap-5 max-w-screen-xl mx-auto md:grid-cols-2">
+<div class="mt-12 grid gap-5 max-w-screen-xl mx-auto">
 
 <Card
   title="审批王"
@@ -29,6 +29,11 @@ import Card from '@site/src/components/Card';
   title="销售管理"
   description="通过客户、潜在客户、业务机会等管理销售流程。"
   href="/appstore/labs/sales"/>
+
+<Card
+  title="采购管理"
+  description="你可以高效管理从寻源到结算的整个采购流程，同时有效控制采购支出，找到新的省钱之道，并打造健康的供应链。"
+  href="/appstore/labs/purchase"/>
 
 <Card
   title="费控管理"
