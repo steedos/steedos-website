@@ -9,7 +9,17 @@ title: 创建项目
 - Steedos Platform 1.23 +
 - Mongodb 4.2 +
 
-## 创建空项目
+## 开始第一个项目
+
+Steedos DX为您提供了不同的选项来创建Steedos DX项目，您可以同时使用喜欢的版本控制系统，如Git，以此来管理团队的开发进程。
+
+|  序号   |  创建方法   | 创建方式  |
+|  ----  |  ----  |  ----  |
+|  1   | 创建空项目  | 通过命令直接创建Steedos DX项目 |
+|  2   | 克隆模版项目  | 使用GitHub上的示例项目来了解Steedos DX的功能 |
+|  3   | 通过现有项目创建Steedos DX  | 通过将现有的旧项目转换成新格式开始Steedos DX项目开发 |
+
+## 1、创建空项目
 
 - 创建名为my-app 的项目
 
@@ -33,7 +43,7 @@ Steedos DX项目具有特定的项目结构和格式，项目创建后，您的�
 
 ![subscription](/assets/dx/project_setup/project_setup01.png)
 
-## 克隆模版项目
+## 2、克隆模版项目
 
 [GITHub 示例项目](https://github.com/steedos/awesome-steedos-apps)
 
@@ -54,6 +64,10 @@ cd steedos-app-contract
 ```yml
 yarn
 ```
+
+### 3、通过现有项目创建Steedos DX
+
+如果您已经是Steedos开发人员或已经在Steedos上创建了自己的应用程序，您还可以通过[项目转化](/developer/cli/cli_convert)的方式实现现有项目转为Steedos DX项目。
 
 ## 项目结构简介
 

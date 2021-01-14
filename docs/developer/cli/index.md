@@ -1,19 +1,34 @@
 ---
-title: Steedos Cli 命令详解
-sidebar_label: 概述
+title: Steedos Cli 命令
 ---
 
-## 对象同步
+## source命令
+
+使用source命令可以实现源数据和非源数据的双向同步, 同时本地将生成源格式的元数据文件。
+
+您也可以运行--help来获取source命令的更多信息
+
+```yml
+steedos source --help
+
+
+USAGE
+  $ steedos source:COMMAND
+COMMANDS
+  source:config
+  source:convert
+  source:delete
+  source:deploy      
+  source:retrieve  
+```
 
 ### source:retrieve
 
-**检索源数据到本地**
-
 从服务器获取源格式的元数据并下载到本地 Steedos DX项目中，该命令会直接覆盖掉您本地的文件。
 
-该命令包含的可选参数
+**该命令包含的可选参数：**
 
-- [-m | metadata]
+**1、[-m | metadata]**
 
 ```yml
 可选metadata:
@@ -24,7 +39,7 @@ sidebar_label: 概述
 "CustomValidationRule","Layout","Workflow"
 ```
 
-#### 参数说明
+**参数说明**
 
 - CustomApplication
 
@@ -72,15 +87,21 @@ sidebar_label: 概述
 
 工作流规则
 
-- [-p | source path]
+**2、[-p | source path]**
 
 根据地址来检索获取服务器数据
 
-- [-y | manifest]
+**3、[-y | manifest]**
+
+**您也可以运行--help来获取 source:retrieve 命令的更多信息：**
+
+```yml
+steedos source:retrieve --help
+```
 
 根据本地配置文件（package.yml）从服务器获取所需源格式的文件
 
-#### 示例
+#### 使用示例
 
 **根据metadata**
 
@@ -143,14 +164,19 @@ steedos source:retrieve -p "path/to/source/objects/myObject"
 
 **部署元数据到服务器**
 
-将本地文件部署到服务器，您部署的数据将会覆盖原有的数据结构
-该命令包含的可选参数
+将本地文件部署到服务器
 
-[-p | local file path]
+**该命令包含的可选参数：**
 
-您需要部署到服务器的本地文件路径
+[-p | local file path] 您需要部署到服务器的本地文件路径
 
-#### 示例
+**您也可以运行--help来获取 source:deploy 命令的更多信息：**
+
+```yml
+steedos source:deploy --help
+```
+
+#### 使用示例
 
 - 部署steedos项目下所有文件到服务器
 
@@ -176,7 +202,52 @@ steedos source:deploy -p steedos-app\main\default\object\note__c\fields\name.
 steedos source:deploy -p name.field.yml
 ```
 
-## 打包
+### source:convert
+
+**【详见-[项目转化](/developer/cli/cli_convert)】**
+
+将旧文件格式转化并本地生成metadata要求的新格式yml文件
+
+**该命令包含两个参数：**
+
+- 【-o | convertpath】需要转化的旧文件路径
+- 【-t | targetPath】新格式文件生成的路径，可选，默认生成在旧文件路径上一级目录下
+
+**您也可以运行--help来获取 source:convert 命令的更多信息：**
+
+```yml
+steedos source:convert --help
+```
+
+**示例如下：**
+
+```yml
+steedos source:convert -o C:\GitHub\steedos-app-contract\src -t C:\GitHub\steedos-app-contract
+```
+
+### source:config
+
+**【详见-[安装 VS Code 插件-设置环境变量](/developer/dx/dx_vscode_install)】**
+
+配置环境变量，同时会生成.env.local文件
+
+```yml
+steedos source:config
+
+metadata server:(http://localhost:5000/)
+metadata api key:OwOFMQOcRilzJpu0Q8ix0XOZjiJAT_B_CklKc6XULVe
+```
+
+其中：
+
+```yml
+- METADATA_SERVER  默认是http://localhost:5000/
+- METADATA_APIKEY  可通过本地服务中的个人账户设置中获取到 APIKEY
+```
+
+## package命令
+
+【详见-[使用 steedos cli 命令打包](/developer/package/package_cli)】
 
 ### package:build
 
@@ -188,15 +259,12 @@ steedos source:deploy -p name.field.yml
 - 【-p | appPath】需要打包的本地文件地址
 - 【-l | loglevel(debug|info|warn)】可选参数，用于控制是否打印已打包文件清单，默认"warn"不打印，只打印未打包文件清单
 
-您也可以运行--help来获取 package:build 命令的更多信息：
+**您也可以运行--help来获取 package:build 命令的更多信息：**
 
 ```yml
 steedos package:build --help
-```
 
-展示结果：
 
-```yml
 USAGE
   $ steedos package:build
 OPTIONS
@@ -225,7 +293,9 @@ TYPE                         PROJECT PATH
 ──────────────────   ─────────────────────────────
 ```
 
-## 国际化
+## i18n命令
+
+【详见-[生成国际化文件](/developer/frontend/frontend_internation)】
 
 ### steedos:i18n
 
@@ -237,15 +307,14 @@ TYPE                         PROJECT PATH
 - 【-p | packageDir】打包好的package名称
 - 【-s | serverDir】项目所在路径, 默认为当前目录, 选填
 
-您也可以运行--help来获取 steedos:i18n 命令的更多信息：
+**您也可以运行--help来获取 steedos:i18n 命令的更多信息：**
 
 ```yml
+steedos:i18n --help
+
+
 Create steedos project object i18n
-```
 
-展示结果：
-
-```yml
 USAGE
   $ steedos i18n NAME
 
@@ -261,4 +330,98 @@ OPTIONS
 
 ```yml
 steedos i18n en -s . -p ./steedos-app
+```
+
+## data命令
+
+### data:export
+
+导出数据库内的记录
+
+**该命令包含以下参数：**
+
+- 【-n | objectName】需要导出的对象名称
+- 【-i | ids】需要导出的对象id，多个id之间用逗号分隔
+- 【-f | fields】需要导出的对象字段名，多个字段名之间用逗号分隔
+- 【-d | outputdir】导出文件生成的目录
+- 【-x | prefix】生成文件的前缀
+- 【-p | plan】导出时生成一个plan文件及若干子文件
+
+**您也可以运行--help来获取 data:export 命令的更多信息：**
+
+```yml
+steedos data:export --help
+
+
+USAGE
+  $ steedos data:export
+OPTIONS
+  -d, --outputdir=outputdir    Directory to store        
+                               generated files.
+
+  -f, --fields=fields          fields
+
+  -i, --ids=ids                ids
+
+  -o, --objectName=objectName  objectName
+
+  -p, --plan                   Generates multiple sObject
+                               tree files and a plan     
+                               definition file for       
+                               aggregated import.        
+
+  -x, --prefix=prefix          Prefix of generated files.
+```
+
+示例如下：
+
+```yml
+steedos data:export -o contracts -p
+```
+
+### data:import
+
+导出数据库内的记录
+
+**该命令包含的可选参数：**
+
+- 【-f | sobjectfiles】需要导入的文件名或路径，需要使用sobjectfiles或者plan.
+- 【-p | plan】需要导入的plan文件名或路径，需要使用sobjectfiles或者plan.
+
+**您也可以运行--help来获取 data:export 命令的更多信息：**
+
+```yml
+steedos data:export --help
+
+
+USAGE
+  $ steedos data:export
+
+
+OPTIONS
+  -d, --outputdir=outputdir    Directory to store        
+                               generated files.
+
+  -f, --fields=fields          fields
+
+  -i, --ids=ids                ids
+
+  -o, --objectName=objectName  objectName
+
+  -p, --plan                   Generates multiple sObject
+                               tree files and a plan     
+                               definition file for       
+                               aggregated import.        
+
+  -x, --prefix=prefix          Prefix of generated files.
+```
+
+示例如下：
+
+```yml
+steedos data:import -f contracts.json
+
+or
+
+steedos data:import -p contracts-plan.json
 ```

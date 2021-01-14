@@ -28,7 +28,7 @@ module.exports =
 
   "文档": {
     "快速向导": ["help/about", {
-      "服务端安装部署": ["help/deploy", "help/deploy/steedos-config"],
+      "服务端安装部署": ["help/deploy/deploy_install_quick", "help/deploy/deploy_install_advanced", "help/deploy/steedos-config"],
       "客户端": ["help/clients/desktop", "help/clients/mobile", "help/clients/wecom"]
     }],
     "使用入门": ["help/user", "help/login", "help/interface",{
@@ -129,7 +129,8 @@ module.exports =
             ]
           },   
         ],
-      }
+      },
+      "developer/cli/index",
     ],
   
       "服务端开发": [
@@ -165,7 +166,7 @@ module.exports =
         "developer/object_action",
         "developer/object_form",
         {
-          "国际化": [ "developer/frontend/frontend_ internation"]
+          "国际化": [ "developer/frontend/frontend_internation"]
         },
         {
           "插件": [
@@ -216,7 +217,8 @@ module.exports =
     //    "dx/vs_extension"
     // ]
     
-    }]
+      },
+    ]
     
   },
   "审批王": {

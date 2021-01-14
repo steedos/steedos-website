@@ -24,7 +24,7 @@ npm i yarn --global
 
 ## 安装 Steedos Cli
 
-安装或更新steedox命令工具
+安装或更新Steedos CLI命令工具
 
 ```yml
 npm i steedos-cli@next --global
@@ -40,4 +40,4 @@ VS Code是代码编辑器。[下载VS Code](https://code.visualstudio.com)
 
 ## 安装 GitHub Desktop
 
-GitHub Desktop是GitHub桌面可视化工具。[下载GitHub Desktop](https://desktop.github.com)
+GitHub Desktop 是 GitHub 桌面可视化工具。[下载GitHub Desktop](https://desktop.github.com)
