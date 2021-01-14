@@ -12,7 +12,7 @@ sidebar_label: 安装向导
 我们也提供了免安装的云部署方式，请参考：
 
 - [部署到 腾讯云](./deploy/deploy_tencent.md): 可在腾讯云市场中购买免费的华炎魔方来部署到云上，支持远程开发与调试。
-- [部署到 阿里云](./deploy/deploy_aliyun.md): 可在腾讯云市场中购买免费的华炎魔方来部署到云上，支持远程开发与调试。
+- [部署到 阿里云](./deploy/deploy_aliyun.md): 可在阿里云市场中购买免费的华炎魔方来部署到云上，支持远程开发与调试。
 - [部署到 Heroku](./deploy/deploy_heroku.md): 利用Salesforce提供的免费云服务，部署开发环境。
 
 ## 开发环境安装
