@@ -14,23 +14,29 @@ title: Windows 快速安装
 
 ## 下载
 
-点击下载执行程序压缩包[steedos-project-oa-win.zip](https://server-backups.oss-cn-beijing.aliyuncs.com/steedos-trial/steedos-project-oa-win.zip)
+点击下载执行程序压缩包 [steedos-v1.23-win-x64.zip](https://www-steedos-com.oss-cn-beijing.aliyuncs.com/steedos/platform/steedos-v1.23-win-x64.zip)
 
-解压后目录主要结构为：
+**解压后目录主要结构为：**
 
-![目录结构](/assets/windows/目录结构.png)
+![目录结构](/assets/windows/windows01.png)
 
 - `bin` 存放系统依赖的执行程序；
 - `db` 存放数据库数据；
 - `node_modules` 存放系统运行所需二进制包；
-- `storage` 存放系统中上传的文件；
+- `public` 公共类；
+- `steedos-app` 应用层；
 - `steedos-packages` 存放安装的应用，如`steedos-app-crm.package`等`.package`后缀的文件；
+- `storage` 存放系统中上传的文件；
 - `.env` 是系统的配置文件可在此文件中配置端口、访问地址等；
+- `.gitignore` git忽略文件；
+- `.npmignore` npm忽略文件；
 - `1-启动数据库.bat` 用于启动数据库服务；
-- `2-启动华炎魔方.exe` 用于启动华炎魔方服务；
+- `2-启动华炎魔方.bat` 用于启动华炎魔方服务；
+- `package.json` 服务配置；
+- `README.md` 备注；
+- `server.js` 服务脚本；
 - `steedos-config.yml` 配合.env 文件使用的配置文件；
-- `安装说明.docx` 系统安装及启动流程说明；
-- `使用说明.docx` 系统使用说明。
+- `yarn.lock` yarn临时文件；
 
 ## 启动数据库
 
@@ -40,23 +46,34 @@ title: Windows 快速安装
 
 ## 安装应用
 
-访问应用市场： https://www.steedos.com/appstore/
+<!-- 您可以访问 [应用市场](https://www.steedos.com/appstore) 或下载示例应用 -->
+**应用列表：**
 
-选择想要安装的应用，跳转至应用详细页下载 **.package** 文件到本地的 **steedos-packages**文件夹下
+- [审批王]
+- [合同管理](https://github.com/steedos/steedos-app-contract/releases/download/v1.23.0-alpha.14/steedos-app-contract.package)
+- [销售管理]
+- [采购管理]
+- [费控管理]
+- [项目管理](https://github.com/steedos/project-management-app/releases/download/v1.23.0-alpha.16/project-management-app.package)
 
-例如：选择 **项目管理** 跳转至项目管理页面后下载 **project-management-app** 文件到本地的 **steedos-packages**文件夹下
+选择想要安装的应用，将下载好的 **.package** 文件移至本地的 **steedos-packages** 文件夹下
 
-**.package** 文件详细使用可访问 [软件包部署](/developer/package/package_deploy)
+![subscription](/assets/windows/windows02.png)
+**例如：** 选择下载项目管理，将项目管理的 **.package** 文件 **project-management-app.package** 移至本地的 **steedos-packages**文件夹下即可
+
+![subscription](/assets/windows/windows03.png)
 
 ## 运行项目
 
-然后确保数据库启动成功后，双击运行`2-启动华炎魔方.exe`保持窗口打开，看到下图信息表示服务启动成功:
+然后确保数据库启动成功后，双击运行`2-启动华炎魔方.bat`保持窗口打开，看到下图信息表示服务启动成功:
 
 ![项目启动](/assets/windows/项目启动.png)
 
-服务会自动使用默认浏览器打开地址 http://127.0.0.1:80/ ，请创建账号后使用华炎魔方
+服务会自动使用默认浏览器打开地址 **http://127.0.0.1:5000/** ，创建账号后即可使用华炎魔方
 
-如弹出防火墙询问窗口，点击允许运行即可。
+:::note 提示
+若弹出防火墙询问窗口，点击允许运行即可。
+:::
 
 ## 常见问题解答
 

@@ -2,6 +2,12 @@
 title: 高级安装
 ---
 
+## 免安装的云部署方式
+
+- [部署到 腾讯云](./deploy/deploy_tencent.md): 可在腾讯云市场中购买免费的华炎魔方来部署到云上，支持远程开发与调试。
+- [部署到 阿里云](./deploy/deploy_aliyun.md): 可在腾讯云市场中购买免费的华炎魔方来部署到云上，支持远程开发与调试。
+- [部署到 Heroku](./deploy/deploy_heroku.md): 利用Salesforce提供的免费云服务，部署开发环境。
+
 ## 开发环境安装
 
 华炎魔方基于 [nodejs](https://nodejs.org/en/) 开发，使用 [mongodb](https://docs.mongodb.com/manual/installation/) 数据库，如果不使用我们推荐的 [快速安装](#快速安装)，则需先部署相应的运行环境。
