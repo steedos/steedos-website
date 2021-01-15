@@ -184,7 +184,9 @@ module.exports =
             "developer/package/package_visualization",
             "developer/package/package_cli",
             ]
-        }
+        },
+        "developer/package/package_deploy",
+        "developer/package/package_uninstall",
         // "developer/package/index",
         
       ],

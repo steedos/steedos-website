@@ -44,9 +44,9 @@ title: Windows 快速安装
 
 选择想要安装的应用，跳转至应用详细页下载 **.package** 文件到本地的 **steedos-packages**文件夹下
 
-例如：选择 **销售管理** 跳转至销售管理页面后下载 **steedos-app-crm.package** 文件到本地的 **steedos-packages**文件夹下
+例如：选择 **项目管理** 跳转至项目管理页面后下载 **project-management-app** 文件到本地的 **steedos-packages**文件夹下
 
-**.package** 文件详细使用可访问 TODO
+**.package** 文件详细使用可访问 [软件包部署](/developer/package/package_deploy)
 
 ## 运行项目
 

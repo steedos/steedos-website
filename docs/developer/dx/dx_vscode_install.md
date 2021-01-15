@@ -11,7 +11,8 @@ title: 安装 VS Code 插件
 ![subscription](/assets/dx/vs_extension/vs_extension01.png)
 
 :::note 提示
-用Vs Code打开项目时需要从根路径打开，否则无法识别出此项目为Stedoos项目
+用Vs Code打开项目时需要从根路径打开，如果项目不在根路径下则需要以Open Workspace的方式打开，否则Vs Code无法识别此项目为Stedoos项目，详见[Multi-root Workspaces
+](https://code.visualstudio.com/docs/editor/multi-root-workspaces)
 :::
 
 ## 设置环境变量
