@@ -1,8 +1,8 @@
 ---
-title: 身份验证
+title: 接口验证
 ---
 
-有多种方式可以和 Steedos API 进行身份验证。
+有多种方式可以和 Steedos API 进行 接口验证。
 
 以下示例需确认 Steedos 服务 运行于 http://localhost:5000 。
 
@@ -19,16 +19,17 @@ POST 'http://localhost:5000/api/v4/users/login'
 ### 请求参数
 
 以 JSON 格式传入请求参数。
-|Param |Required |Type |Description |
-|:-------- |:------- |:----- |----- |
-|username |true |string |可传入用户名、邮箱或手机号。 |
-|password |true |string |用户密码。 |
-|spaceId |false |string |需要登录的工作区 Id，如果不传入，自动选中第一个工作区。 |
+
+|  Param   |  Required   | Type  | Description  |
+|  ----  |  ----  |  ----  |  ----  |
+|  username   | true  | string | 可传入用户名、邮箱或手机号 |
+|  password   | true  | string | 用户密码 |
+|  spaceId   | false  | string | 需要登录的工作区 Id，如果不传入，自动选中第一个工作区 |
 
 ```json
 {
   "username": "jack",
-  "password": "iloveu",
+  "password": "jack_pw",
   "spaceId": "i6thCRrKWYmdjxpzt"
 }
 ```
@@ -106,21 +107,3 @@ Authorization: Bearer i6thCRrKWYmdjx...bsyM287On8bTULh-GDO1sH_
 ### 返回结果
 
 如果当前用户已登录，则返回 userContext。
-
-## 注销
-
-注销当前登录的用户。
-
-### URL
-
-```js
-POST 'http://localhost:5000/accounts/logout'
-```
-
-### 请求参数
-
-无
-
-### 返回结果
-
-无

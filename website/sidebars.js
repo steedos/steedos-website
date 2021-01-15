@@ -149,7 +149,7 @@ module.exports =
       "API": [
         // "developer/api",
         {
-          "身份验证": ["developer/api/api_jwt"],
+          "身份验证": ["developer/api/api_jwt", "developer/api/api_logout"],
           "对象OData": [
             "developer/api/odata",
             "developer/api/odata_auth", "developer/api/odata_query", "developer/api/odata_get", "developer/api/odata_add", "developer/api/odata_edit", "developer/api/odata_delete", "developer/api/odata_functions", "developer/api/odata_metadata"

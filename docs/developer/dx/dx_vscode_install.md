@@ -10,6 +10,10 @@ title: 安装 VS Code 插件
 
 ![subscription](/assets/dx/vs_extension/vs_extension01.png)
 
+:::note 提示
+用Vs Code打开项目时需要从根路径打开，否则无法识别出此项目为Stedoos项目
+:::
+
 ## 设置环境变量
 
 ### 配置 APIKEY
