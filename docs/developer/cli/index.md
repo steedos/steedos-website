@@ -310,7 +310,7 @@ TYPE                         PROJECT PATH
 **您也可以运行--help来获取 steedos:i18n 命令的更多信息：**
 
 ```yml
-steedos:i18n --help
+steedos i18n --help
 
 
 Create steedos project object i18n
@@ -340,12 +340,12 @@ steedos i18n en -s . -p ./steedos-app
 
 **该命令包含以下参数：**
 
-- 【-n | objectName】需要导出的对象名称
-- 【-i | ids】需要导出的对象id，多个id之间用逗号分隔
-- 【-f | fields】需要导出的对象字段名，多个字段名之间用逗号分隔
 - 【-d | outputdir】导出文件生成的目录
-- 【-x | prefix】生成文件的前缀
+- 【-f | fields】需要导出的对象字段名，多个字段名之间用逗号分隔
+- 【-i | ids】需要导出的对象id，多个id之间用逗号分隔
+- 【-o | objectName】需要导出的对象名称
 - 【-p | plan】导出时生成一个plan文件及若干子文件
+- 【-x | prefix】生成文件的前缀
 
 **您也可以运行--help来获取 data:export 命令的更多信息：**
 
@@ -381,7 +381,7 @@ steedos data:export -o contracts -p
 
 ### data:import
 
-导出数据库内的记录
+导入数据库内的记录
 
 **该命令包含的可选参数：**
 
