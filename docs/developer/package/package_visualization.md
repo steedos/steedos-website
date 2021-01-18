@@ -2,7 +2,7 @@
 title: 可视化打包
 ---
 
-## 准备工作
+<!-- ## 准备工作
 
 ### 设置环境变量
 
@@ -10,7 +10,7 @@ title: 可视化打包
 STEEDOS_DEVELOPER_SERVER=https://huayan-beta.my.steedos.com:8443/
 ```
 
-### 开发者账户
+### 开发者账户 -->
 
 :::note 提示
 若未注册开发者账户，请先注册，否则无法正常打包
