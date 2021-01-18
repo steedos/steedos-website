@@ -11,8 +11,8 @@ title: 相关表字段类型
 
 ``` js
 function(){
-    return ("state eq 'active'");
-          }
+  return ("state eq 'active'");
+}
 ```
 
 关于该函数返回值，目前只推荐使用[oData过滤条件](https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html#sec_SystemQueryOptionfilter)格式的字符串语法。
