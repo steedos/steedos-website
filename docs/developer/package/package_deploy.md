@@ -1,6 +1,5 @@
 ---
-title: 软件包部署
-sidebar_label: 部署
+title: 使用package路径安装
 ---
 
 ### 部署步骤

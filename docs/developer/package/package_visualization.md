@@ -18,26 +18,42 @@ STEEDOS_DEVELOPER_SERVER=https://huayan-beta.my.steedos.com:8443/
 
 - [注册开发者账户](/developer/register/index)
 
-### 安装
+### 打包
 
 - 打开本地服务，进入到“软件包管理器”页面，点击“新建”
 
-![subscription](/assets/dx/unmanaged_package/unmanaged_package07.png)
+![subscription](/assets/developer/package/package07.png)
 
-- 根据要求填写软件包信息，点击“保存”
+- 软件包新建完成后，此时为空包，需要加入自定义的组件，进入该软件包的详情页面，点击左上角有“软件包组件”
 
-![subscription](/assets/dx/unmanaged_package/unmanaged_package08.png)
+![subscription](/assets/developer/package/package08.png)
 
-- 点击“上载”，按要求填写信息并点击“上载”，此时已成功上传软件包并复制软件包ID，用于后面发布操作
+- 新建“软件包组件”
 
-![subscription](/assets/dx/unmanaged_package/unmanaged_package09.png)
+![subscription](/assets/developer/package/package09.png)
 
-![subscription](/assets/dx/unmanaged_package/unmanaged_package10.png)
+- 此时可以自定义添加已定义的对象、应用、视图等，点击“保存”，带有自定义功能的软件包打包完成
+
+![subscription](/assets/developer/package/package10.png)
 
 ### 发布
 
-- 打开“已安装的软件包”，点击页面右上角”安装软件包“，填写软件包ID，点击“下一步”
+- 为了使您的软件包可以供他人使用，此时需要发布到服务器上，即“上载”，进入该软件包的详情页面，点击右上角的“上载”，填写当前版本信息后点击“保存”，即可完成发布
 
-![subscription](/assets/dx/unmanaged_package/unmanaged_package11.png)
+![subscription](/assets/developer/package/package11.png)
 
-![subscription](/assets/dx/unmanaged_package/unmanaged_package12.png)
+- 进入详情页面，点击左上角的“软件包版本”，可以查询到已发布的软件包
+
+![subscription](/assets/developer/package/package12.png)
+
+- 查看某个已发布的软件包，可以看到该软件包的ID及密码（密码为可选），根据ID及密码可以实现软件包的[可视化安装](/developer/package/package_deploy_visualization)
+
+![subscription](/assets/developer/package/package13.png)
+
+### 故障排除
+
+- 在上载时，如果API Key有误则会有如下错误提醒
+
+```yml
+Error: API Key无效
+```

@@ -181,9 +181,12 @@ module.exports =
           "打包": [
             "developer/package/package_visualization",
             "developer/package/package_cli",
-            ]
+            ],
+            "部署": [
+              "developer/package/package_deploy_visualization",
+              "developer/package/package_deploy",
+              ]
         },
-        "developer/package/package_deploy",
         "developer/package/package_uninstall",
         // "developer/package/index",
         

@@ -34,6 +34,8 @@ npm i steedos-cli@next --global
 
 Robot 3T 是 MongoDB 数据库可视化查询工具。[下载Robot 3T](https://robomongo.org)
 
+- [使用教程](/developer/install/robo3t_tutorial)
+
 ## 安装 VS Code
 
 VS Code是代码编辑器。[下载VS Code](https://code.visualstudio.com)
