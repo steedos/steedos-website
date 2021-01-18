@@ -33,9 +33,7 @@ module.exports =
     }],
     "使用入门": ["help/user", "help/login", "help/interface",{
       "管理您的数据": ["help/record_search", "help/record_view", "help/record_list", "help/record_edit", "help/record_import"],
-    }, "help/record_report",{
-      // "数据台账": ["help/record_list", "help/record_view", "help/record_report", "help/notifications"],  
-    }],
+    }, "help/record_report", "help/use/notifications"],
 
     "设置和维护华炎魔方": ["help/admin", 
       {
