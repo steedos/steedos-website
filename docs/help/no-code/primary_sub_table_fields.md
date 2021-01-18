@@ -17,8 +17,8 @@ title: 主表/子表字段类型
 
 ``` js
 function(){
-    return ("state eq 'active'");
-          }
+  return ("state eq 'active'");
+}
 ```
 
 关于该函数返回值，目前只推荐使用[oData过滤函数](https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html#sec_SystemQueryOptionfilter)格式的字符串语法。
@@ -28,13 +28,13 @@ function(){
 ``` js
 var result = [];
 var queryFilters = [["state", "=", "active"]];
-var stdosFilters = require("@stdos/filters");
-var odataFilter = stdosFilters.formatFiltersToODataQry(queryFilters);
+var steedosFilters = require("@steedos/filters");
+var odataFilter = steedosFilters.formatFiltersToODataQuery(queryFilters);
 var options = {
   $select: 'name'
 };
 options.$filter = odataFilter;
-var accounts = Creator.odata.qry('accounts', options, tr);
+var accounts = Creator.odata.query('accounts', options, true);
 accounts.forEach(function (item) {
   result.push({
     label: item.name,
