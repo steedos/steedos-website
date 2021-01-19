@@ -20,8 +20,8 @@ import Card from '@site/src/components/Card';
 <div class="mt-12 grid gap-5 max-w-lg mx-auto md:grid-cols-2 lg:max-w-none">
 
   <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/steedos-open-source.jpg"
-    title="华炎魔方助力企业数字化转型"
-    description="数字化转型需要摸着石头过河，业务部门每天都有新想法，每天都盼着新需求尽快交付，"
+    title="点击鼠标，就能编程"
+    description="在华炎魔方低代码平台，即使没有编程基础的业务人员，也能快速开发出满足业务需求的应用程序。"
     category="视频"
     href="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/steedos-open-source.mp4"/>
 
