@@ -215,8 +215,17 @@ public:
 - `public.cfs.local.folder`: 当配置附件存在本地时，需要配置文件夹路径。
 - `cfs.aliyun`: 当配置附件存在阿里云时，需要购买阿里云服务并配置相关参数。
 - `cfs.aws`: 当配置附件存在AWS时，需要购买AWS云服务并配置相关参数。
-- `public.webservices.pdfOnline.url`: PDF文件在线预览，需配置文件路径（不支持跨域）。
-- `public.webservices.officeOnline.url`: OFFICE文件在线预览，需配置文件路径（使用微软在线预览功能时，需采用域名，并使用默认端口80访问）。
+- `public.webservices.pdfOnline.url`: PDF文件在线预览，需配置文件路径。
+
+:::note 提示
+PDF文件在线预览不支持跨域
+:::
+
+- `public.webservices.officeOnline.url`: OFFICE文件在线预览，需配置文件路径。
+
+:::note 提示
+使用微软在线预览功能时，需采用域名及默认端口访问
+:::
 
 ### 邮件配置
 
