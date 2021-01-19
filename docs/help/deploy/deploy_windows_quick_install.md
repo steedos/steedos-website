@@ -123,3 +123,7 @@ Mongodb 开了 replication 之后没初始化可能会遇到以上错误，请�
 这通常是由于未设置`UNIX ulimit Settings`造成的，详细说明参考 [ulimit Considerations](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/#run-mongodb-community-edition)。
 
 `UNIX ulimit Settings`的推荐配置方式可以参考 [Recommended ulimit Settings](https://docs.mongodb.com/manual/reference/ulimit/#recommended-ulimit-settings)，里面有提到可能需要重启数据库才能生效，请不要忘记。
+
+## 另请参考
+
+- [参考文档](/help)

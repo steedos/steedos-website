@@ -188,14 +188,14 @@ public:
     store: "local"
     local: 
       folder: "./storage"
-cfs:
-  aliyun:
-    region:
-    internal:
-    bucket:
-    folder:
-    accessKeyId:
-    secretAccessKey:
+  cfs:
+    aliyun:
+      region:
+      internal:
+      bucket:
+      folder:
+      accessKeyId:
+      secretAccessKey:
   aws:
     endpoint:
     bucket:
@@ -203,6 +203,11 @@ cfs:
     secretAccessKey:
     s3ForcePathStyle:
     signatureVersion:
+  webservices:
+    pdfOnline:
+      url: "http://oss.steedos.com/apps/pdfviewer-es5/web/viewer.html?rangeChunkSize=1024&file="
+    officeOnline:
+      url: "https://view.officeapps.live.com/op/view.aspx?src="
 
 ```
 
@@ -210,6 +215,8 @@ cfs:
 - `public.cfs.local.folder`: 当配置附件存在本地时，需要配置文件夹路径。
 - `cfs.aliyun`: 当配置附件存在阿里云时，需要购买阿里云服务并配置相关参数。
 - `cfs.aws`: 当配置附件存在AWS时，需要购买AWS云服务并配置相关参数。
+- `public.webservices.pdfOnline.url`: PDF文件在线预览，需配置文件路径（不支持跨域）。
+- `public.webservices.officeOnline.url`: OFFICE文件在线预览，需配置文件路径（使用微软在线预览功能需，文件需采用域名访问）。
 
 ### 邮件配置
 

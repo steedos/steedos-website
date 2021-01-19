@@ -7,7 +7,7 @@ title: 安装开发环境
 MongoDB 是华炎魔方内置数据库引擎，需先 [下载 MongoDB](https://docs.mongodb.com/v4.2/administration/install-community) 并 [安装](/help/deploy/deploy_windows) 。
 
 :::note 提示
-安装4.2版本以上的mongodb，并以集群模式启动，才可以支持多文档事物。
+安装4.2版本以上的mongodb，并以集群模式启动，才可以支持多文档事务。
 :::
 
 ## 安装 Nodejs
