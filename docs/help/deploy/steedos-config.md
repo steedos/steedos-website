@@ -215,17 +215,42 @@ public:
 - `public.cfs.local.folder`: 当配置附件存在本地时，需要配置文件夹路径。
 - `cfs.aliyun`: 当配置附件存在阿里云时，需要购买阿里云服务并配置相关参数。
 - `cfs.aws`: 当配置附件存在AWS时，需要购买AWS云服务并配置相关参数。
-- `public.webservices.pdfOnline.url`: PDF文件在线预览服务，需配置服务路径。
+
+### 文件预览
+
+华炎魔方支持在线预览PDF及Office文件，只需要配置对应的文件预览服务地址即可。
+
+如果配置了文件预览服务，点击附件标题还是会下载附件，可以点击对应的预览按钮来直接打开文件，目前以下界面支持在线预览功能：
+
+- [审批王](/help/workflow) 的申请单详细界面的附件列表和正文文件，其附件标题旁边会显示预览按钮。
+- 华炎魔方对象记录详细界面的附件列表，比如合同详细界面的附件列表，每条附件记录右侧的下拉框列表会显示预览按钮。
 
 :::note 提示
-PDF文件在线预览不支持跨域
+如果未配置文件预览服务，只能点击附件标题来下载文件,然后在本地查看文件内容。
 :::
 
-- `public.webservices.officeOnline.url`: OFFICE文件在线预览服务，需配置服务路径。
+```yml
+public:
+  webservices:
+    pdfOnline:
+      url: "http://oss.steedos.com/apps/pdfviewer-es5/web/viewer.html?rangeChunkSize=1024&file="
+    officeOnline:
+      url: "https://view.officeapps.live.com/op/view.aspx?src="
 
-:::note 提示
-使用微软在线预览功能时，需采用域名及默认端口访问
-:::
+```
+
+- `public.webservices.pdfOnline.url`: PDF文件在线预览，需配置的预览服务地址，上述已配置的地址是华炎魔方部署到阿里云上的PDF文件在线预览服务地址。
+- `public.webservices.officeOnline.url`: Office文件在线预览，需配置的预览服务地址，上述已配置的地址是微软提供的Office文件在线预览服务地址。
+
+#### PDF文件预览注意事项
+
+因为PDF文件在线预览功能不支持跨域，如果您的华炎魔方项目不是运行于`steedos.com`域名下，需要另外配置网络代理服务才能正常使用PDF文件预览功能。
+
+比如您可以把上述配置的PDF文件预览服务地址改为`http://192.168.0.66:88/pdfview/apps/pdfviewer-es5/web/viewer.html?rangeChunkSize=1024&file=`，其中`http://192.168.0.66:88`为您的华炎魔方项目的访问地址，然后设置下nginx代理服务，把路由`pdfview`下的地址代理为`http://oss.steedos.com`即可。
+
+#### Office文件预览注意事项
+
+PDF文件预览服务是支持IP地址访问的，Office文件预览服务则与之不同，如果使用上述配置的微软在线预览服务时，需采用域名及默认端口访问，不能使用IP地址及非默认端口。
 
 ### 邮件配置
 
