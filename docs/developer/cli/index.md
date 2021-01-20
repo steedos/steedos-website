@@ -47,7 +47,7 @@ COMMANDS
 
 - CustomField
 
-自定义对象字段包括自定义或标准对象字段
+自定义对象字段，包括自定义或标准对象字段
 
 - CustomListview
 
