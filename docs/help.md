@@ -21,7 +21,7 @@ import Card from '@site/src/components/Card';
 
   <Card title="安装部署"
     description="申请试用华炎魔方云服务，或是在本地服务器、云服务器安装部署华炎魔方。"
-    href="/help/deploy"/>
+    href="/help/deploy/deploy_windows_quick_install"/>
 
   <Card title="使用入门"
     description="华炎魔方界面总览、如何管理您的数据、分析统计、和处理审批流程。"
