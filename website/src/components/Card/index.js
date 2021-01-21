@@ -36,7 +36,7 @@ class Card extends React.Component {
                     {title}
                 </h3>
                 {description && (
-                <div className="mt-3 text-base leading-6 text-gray-500">
+                <div className="mt-3 text-sm leading-6 text-gray-500 truncate">
                     {description}
                 </div>)}
             </div>

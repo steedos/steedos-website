@@ -8,7 +8,7 @@ background: /img/banner/default.png
 
 import Card from '@site/src/components/Card';
 
-<div class="mt-12 grid gap-5 max-w-lg mx-auto md:grid-cols-1 lg:max-w-none">
+<div class="mt-12 grid gap-5 max-w-lg mx-auto md:grid-cols-2 lg:max-w-none">
 
   <Card title="华炎魔方技术白皮书"
     description="什么是低代码开发平台；低代码开发平台的进化史；低代码开发生命周期管理；华炎魔方的开源生态；"
