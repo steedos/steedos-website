@@ -153,7 +153,9 @@ yarn start
 
 成功重启服务，即完成升级 **steedos-server** 版本。
 
-> [查询最新steedos-server 版本号](https://www.npmjs.com/package/steedos-server)
+:::note 提示
+[查询最新steedos-server 版本号](https://www.npmjs.com/package/steedos-server)
+:::
 
 ## 项目运行
 
