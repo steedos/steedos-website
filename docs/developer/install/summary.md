@@ -22,6 +22,12 @@ NodeJS 是华炎魔方的开发语言，必须安装NodeJS开发环境。 [下�
 npm i yarn --global
 ```
 
+:::note 提示
+当在linux中使用npm命令时，npm出于安全考试不支持以root用户运行，即使你用root用户身份运行了，npm会自动转成一个叫nobody的用户来运行，而这个用户几乎没有任何权限。这样的话如果你脚本里有一些需要权限的操作，比如写文件（尤其是写/root/.node-gyp），就会崩掉了。
+
+为了避免这种情况，要么按照npm的规则来，专门建一个用于运行npm的高权限用户；要么加 --unsafe-perm 参数，这样就不会切换到nobody上，运行时是哪个用户就是哪个用户，即使是root。
+:::
+
 ## 安装 Steedos Cli
 
 安装或更新Steedos CLI命令工具

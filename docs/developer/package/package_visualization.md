@@ -22,15 +22,15 @@ STEEDOS_DEVELOPER_SERVER=https://huayan-beta.my.steedos.com:8443/
 
 - 打开本地服务，进入到 “设置”-“应用程序”-“软件包”-“软件包管理器” 页面，点击“新建”，创建一个新的软件包
 
-![subscription](/assets/developer/package/package07.png)
+<!-- ![subscription](/assets/developer/package/package07.png) -->
 
-- 软件包新建完成后，此时为空包，需要加入自定义的组件，进入该软件包的详情页面，点击左上角有“软件包组件”
+- 当软件包新建完成后，此时为空包，需要加入自定义的组件，进入该软件包的详情页面，点击左上角有“软件包组件”
 
 ![subscription](/assets/developer/package/package08.png)
 
 - 点击右上角的“新建”按钮，创建一个新的软件包组件
 
-![subscription](/assets/developer/package/package09.png)
+<!-- ![subscription](/assets/developer/package/package09.png) -->
 
 - 此时可以自定义添加已定义的对象、应用、视图等，点击“保存”，一个带有自定义功能的软件包则打包完成
 
