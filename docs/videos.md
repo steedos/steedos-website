@@ -40,7 +40,7 @@ import Card from '@site/src/components/Card';
 
 <div class="mt-6 mb-6 grid gap-5 max-w-lg mx-auto md:grid-cols-2 lg:grid-cols-2 lg:max-w-none">
 
-  <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.jpg"
+  <Card image="http://vod.steedos.com/image/cover/D97E503BEA3441D7BD807AF1AC9A95B5-6-2.png"
     title="如何创建自定义应用程序"
     category="视频"
     href="/videos/lesson-object/"/>
