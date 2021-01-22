@@ -32,11 +32,11 @@ class Card extends React.Component {
                 <div className="text-sm leading-5 font-medium text-blue-600">
                 {category}
                 </div>)}
-                <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
+                <div className="mt-2 text-xl leading-7 font-semibold text-gray-900 truncate">
                     {title}
-                </h3>
+                </div>
                 {description && (
-                <div className="mt-3 text-sm leading-6 text-gray-500 truncate">
+                <div className="mt-2 text-sm leading-6 text-gray-500 truncate">
                     {description}
                 </div>)}
             </div>
