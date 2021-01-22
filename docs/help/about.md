@@ -13,7 +13,7 @@ import Card from '@site/src/components/Card';
   <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/steedos-open-source.jpg"
     category="视频"
     title="华炎魔方助力企业数字化转型"
-    href="/https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/steedos-open-source.mp4/"/>
+    href="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/steedos-open-source.mp4"/>
 
   <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features.jpg"
     category="视频"

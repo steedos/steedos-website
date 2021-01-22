@@ -28,7 +28,7 @@ module.exports =
 
   "文档": {
     "快速向导": ["help/about", {
-      "服务端安装部署": ["help/deploy/deploy_windows_quick_install", "help/deploy/deploy_install_advanced", "help/deploy/steedos-config"],
+      "服务端安装部署": ["help/deploy/deploy_windows_quick_install", "help/deploy", "help/deploy/steedos-config"],
       "客户端": ["help/clients/desktop", "help/clients/mobile", "help/clients/wecom"]
     }],
     "使用入门": ["help/user", "help/login", "help/interface",{

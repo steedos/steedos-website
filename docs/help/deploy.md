@@ -3,21 +3,17 @@ title: 如何安装华炎魔方？
 sidebar_label: 安装向导
 ---
 
-华炎魔方是低代码开发工具，使用华炎魔方开发的项目可以部署到本地运行，也可以部署到云平台。
-
 ## 快速安装
 
-可以使用我们推荐的 [Windows 快速安装](/help/deploy/deploy_windows_quick_install) 直接开始您的华炎魔方之旅，以免去相关运行环境的安装过程。
+- [Windows 快速安装](/help/deploy/deploy_windows_quick_install): 绿色安装版，解压缩就能运行。
 
-我们也提供了免安装的云部署方式，请参考：
+## 免安装的云部署方式
 
 - [部署到 腾讯云](./deploy/deploy_tencent.md): 可在腾讯云市场中购买免费的华炎魔方来部署到云上，支持远程开发与调试。
 - [部署到 阿里云](./deploy/deploy_aliyun.md): 可在阿里云市场中购买免费的华炎魔方来部署到云上，支持远程开发与调试。
 - [部署到 Heroku](./deploy/deploy_heroku.md): 利用Salesforce提供的免费云服务，部署开发环境。
 
 ## 开发环境安装
-
-华炎魔方基于 [nodejs](https://nodejs.org/en/) 开发，使用 [mongodb](https://docs.mongodb.com/manual/installation/) 数据库，如果不使用我们推荐的 [快速安装](#快速安装)，则需先部署相应的运行环境。
 
 - [Windows](./deploy/deploy_windows.md): 通常用于部署开发环境，推荐使用上述 [Windows 快速安装](/help/deploy/deploy_windows_quick_install)，以免去相关运行环境的安装过程，生产环境建议使用Ubuntu。
 - [Mac](./deploy/deploy_mac.md): 通常用于部署开发环境，生产环境建议使用Ubuntu。
