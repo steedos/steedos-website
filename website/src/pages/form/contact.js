@@ -72,14 +72,14 @@ export default function TrialForm() {
           （请填写所有字段）
         </p>
 
-        <form action="https://huayan.my.steedos.com:8443/api/v4/leads/web_forms" class="grid grid-cols-1 row-gap-4" method="POST">
+        <form action="https://huayan.my.steedos.com:8443/api/v4/leads/web_forms" class="grid grid-cols-1 gap-y-4" method="POST">
           <input type="hidden" name="steedos_form_id" value="BuuaurNfewcanQC73"/>
           <input type="hidden" name="return_url" value="https://www.steedos.com/form/success/"/>
           <input type="hidden" name="lead_source" value="Website"/>
           <div>
             <label for="name" class="block text-sm font-medium leading-5 text-gray-700">姓名</label>
             <div class="mt-1 relative rounded-md shadow-sm">
-              <input id="name" name="name" class="bg-cool-gray-200 text-black form-input py-2 px-2 block w-full transition ease-in-out duration-150" required/>
+              <input id="name" name="name" class="bg-gray-200 text-black form-input py-2 px-2 block w-full transition ease-in-out duration-150" required/>
             </div>
           </div>
           {/* <div>
@@ -91,25 +91,25 @@ export default function TrialForm() {
           <div>
             <label for="title" class="block text-sm font-medium leading-5 text-gray-700">职务</label>
             <div class="mt-1 relative rounded-md shadow-sm">
-              <input id="title" name="title" class="bg-cool-gray-200 text-black form-input py-2 px-2 block w-full transition ease-in-out duration-150" required/>
+              <input id="title" name="title" class="bg-gray-200 text-black form-input py-2 px-2 block w-full transition ease-in-out duration-150" required/>
             </div>
           </div>
           <div>
             <label for="company" class="block text-sm font-medium leading-5 text-gray-700">公司</label>
             <div class="mt-1 relative rounded-md shadow-sm">
-              <input id="company" name="company" class="bg-cool-gray-200 text-black form-input py-2 px-2 block w-full transition ease-in-out duration-150" required/>
+              <input id="company" name="company" class="bg-gray-200 text-black form-input py-2 px-2 block w-full transition ease-in-out duration-150" required/>
             </div>
           </div>
           <div>
             <label for="mobilephone" class="block text-sm font-medium leading-5 text-gray-700">手机</label>
             <div class="mt-1 relative rounded-md shadow-sm">
-              <input id="mobilephone" name="mobilephone" class="bg-cool-gray-200 text-black form-input py-2 px-2 block w-full transition ease-in-out duration-150" title="手机号不正确，请重新输入！" pattern="^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\d{8}$" required/>
+              <input id="mobilephone" name="mobilephone" class="bg-gray-200 text-black form-input py-2 px-2 block w-full transition ease-in-out duration-150" title="手机号不正确，请重新输入！" pattern="^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\d{8}$" required/>
             </div>
           </div>
           <div>            
             <label for="address" class="block text-sm font-medium leading-5 text-gray-700">需求说明</label>
             <div class="relative rounded-md shadow-sm">
-              <textarea id="address" name="address" rows="3" class="bg-cool-gray-200 text-black form-input block w-full py-2 px-2 placeholder-gray-500 transition ease-in-out duration-150"></textarea>
+              <textarea id="address" name="address" rows="3" class="bg-gray-200 text-black form-input block w-full py-2 px-2 placeholder-gray-500 transition ease-in-out duration-150"></textarea>
             </div>
           </div>
           <div class="">

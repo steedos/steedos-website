@@ -17,7 +17,7 @@ hide_table_of_contents: true
 
 import Card from '@site/src/components/Card';
 
-<div class="mt-12 grid gap-5 max-w-lg mx-auto md:grid-cols-2 lg:max-w-none">
+<div class="mt-12 grid gap-5 max-w-lg mx-auto md:grid-cols-2 lg:grid-cols-3 lg:max-w-none">
 
   <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/steedos-open-source.jpg"
     title="点击鼠标，就能编程"
@@ -28,7 +28,6 @@ import Card from '@site/src/components/Card';
   <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features.jpg"
     title="华炎魔方十大引擎，开发效率提升十倍"
     description="低代码开发是一种全新的开发方式，通过把标准功能组件化，业务需求配置化，改变应用交付和管理的模式，大大缩减应用交付的周期。"
-    category="视频"
     href="/videos/steedos-platform-features/"/>
 
 </div>
@@ -38,16 +37,14 @@ import Card from '@site/src/components/Card';
   低代码开发
 </p>
 
-<div class="mt-6 mb-6 grid gap-5 max-w-lg mx-auto md:grid-cols-2 lg:grid-cols-2 lg:max-w-none">
+<div class="mt-6 mb-6 grid gap-5 max-w-lg mx-auto md:grid-cols-2 lg:grid-cols-3 lg:max-w-none">
 
-  <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.jpg"
+  <Card image="http://vod.steedos.com/image/cover/D97E503BEA3441D7BD807AF1AC9A95B5-6-2.png"
     title="如何创建自定义应用程序"
-    category="视频"
     href="/videos/lesson-object/"/>
 
-  <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-relationship.jpg"
-    title="如何定义相关表"
-    category="视频"
+  <Card image="http://vod.steedos.com/image/cover/608CD349AB534EA496E649EFFB3423A1-6-2.png"
+    title="如何为自定义对象创建子表"
     href="/videos/lesson-object-relationship/"/>
     
 </div>
@@ -56,16 +53,14 @@ import Card from '@site/src/components/Card';
   流程引擎
 </p>
 
-<div class="mt-6 mb-6 grid gap-5 max-w-lg mx-auto md:grid-cols-2 lg:grid-cols-2 lg:max-w-none">
+<div class="mt-6 mb-6 grid gap-5 max-w-lg mx-auto md:grid-cols-2 lg:grid-cols-3 lg:max-w-none">
 
   <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/admin-contracts.jpg"
     title="如何设计审批流程"
-    category="视频"
     href="/videos/workflow/admin-contracts/"/>
 
   <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/user-contracts.jpg"
     title="如何填单和审批"
-    category="视频"
     href="/videos/workflow/user-contracts/"/>
 
 </div>

@@ -5,7 +5,7 @@ class Footer extends React.Component {
     render() {
         return (
             <div>
-                <div className="relative bg-gray-600">
+                {/* <div className="relative bg-gray-600">
                     <div
                         className="max-w-screen-xl mx-auto py-8 px-4 lg:py-8 lg:flex lg:items-center lg:justify-between">
                         <div className="">
@@ -32,7 +32,7 @@ class Footer extends React.Component {
                             <img className="h-48 w-48 mt-4" src="/assets/contact_by_weixin.png"/>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="bg-white">
                     <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
