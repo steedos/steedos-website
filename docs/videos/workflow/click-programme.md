@@ -8,11 +8,11 @@ background: /img/banner/service-overview-lg.png
 import Video from '@site/src/components/Video';
 
 <Video 
-    poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features.jpg"
+    poster="https://vod.steedos.com/8c3175f786ce458b94bcf0e9a3ed44b5/covers/36acc240f694498091b86b68d5dda361-00004.jpg"
     autoplay={true}
     urls={[
-        {name:"高清", url:"http://vod.steedos.com/video/175146ea-1772962056e-0000-0000-009-c59e0.mp4"},
-        {name:"标清", url:"http://vod.steedos.com/8c3175f786ce458b94bcf0e9a3ed44b5/0256e1a4410246bab15726c4b1b53954-9f0097c2e80b4d2a80342ec038914acc-ld.mp4"},
+        {name:"高清", url:"https://vod.steedos.com/video/175146ea-1772962056e-0000-0000-009-c59e0.mp4"},
+        {name:"标清", url:"https://vod.steedos.com/8c3175f786ce458b94bcf0e9a3ed44b5/0256e1a4410246bab15726c4b1b53954-9f0097c2e80b4d2a80342ec038914acc-ld.mp4"},
     ]}/>
 
 <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
