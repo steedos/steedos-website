@@ -45,8 +45,8 @@ import Card from '@site/src/components/Card';
     category="视频"
     href="/videos/lesson-object/"/>
 
-  <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-relationship.jpg"
-    title="如何定义相关表"
+  <Card image="http://vod.steedos.com/image/cover/608CD349AB534EA496E649EFFB3423A1-6-2.png"
+    title="如何为自定义对象创建子表"
     category="视频"
     href="/videos/lesson-object-relationship/"/>
     
