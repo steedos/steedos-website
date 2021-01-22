@@ -12,6 +12,6 @@ title: 快速安装
 
 ## 免安装的云部署方式
 
-- [部署到 腾讯云](./deploy/deploy_tencent.md): 可在腾讯云市场中购买免费的华炎魔方来部署到云上，支持远程开发与调试。
-- [部署到 阿里云](./deploy/deploy_aliyun.md): 可在腾讯云市场中购买免费的华炎魔方来部署到云上，支持远程开发与调试。
-- [部署到 Heroku](./deploy/deploy_heroku.md): 利用Salesforce提供的免费云服务，部署开发环境。
+- [部署到 腾讯云](/help/deploy/deploy_tencent.md): 可在腾讯云市场中购买免费的华炎魔方来部署到云上，支持远程开发与调试。
+- [部署到 阿里云](/help/deploy/deploy_aliyun.md): 可在腾讯云市场中购买免费的华炎魔方来部署到云上，支持远程开发与调试。
+- [部署到 Heroku](/help/deploy/deploy_heroku.md): 利用Salesforce提供的免费云服务，部署开发环境。
