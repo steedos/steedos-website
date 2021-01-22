@@ -6,21 +6,27 @@
     "serve": "docusaurus serve",
     "deploy": "docusaurus deploy",
     "dep": "export GIT_USER=hotlong && yarn deploy",
-    "tailwind": "cross-env NODE_ENV=development postcss src/css/tailwind-src.css -o static/website/libs/tailwind.css",
-    "tailwind.min": "cross-env NODE_ENV=production postcss src/css/tailwind-src.css -o static/website/libs/tailwind.min.css"
+    "tailwind": "cross-env NODE_ENV=development tailwindcss-cli build src/css/tailwind-src.css -o static/website/libs/tailwind.css",
+    "tailwind.min": "cross-env NODE_ENV=production tailwindcss-cli build src/css/tailwind-src.css -o static/website/libs/tailwind.min.css"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.65",
     "@docusaurus/plugin-client-redirects": "2.0.0-alpha.65",
     "@docusaurus/preset-classic": "2.0.0-alpha.65",
     "@salesforce-ux/design-system": "^2.11.0",
+    "@tailwindcss/aspect-ratio": "^0.2.0",
+    "@tailwindcss/forms": "^0.2.1",
     "@tailwindcss/ui": "^0.5.0",
     "add": "^2.0.6",
+    "autoprefixer": "^10.2.3",
     "classnames": "^2.2.6",
     "heroicons": "^0.4.0",
+    "postcss": "^8.2.4",
+    "postcss-loader": "^4.2.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "tailwindcss-dark-mode": "^1.1.6",
+    "tailwindcss": "^2.0.2",
+    "tailwindcss-cli": "^0.1.2",
     "xgplayer": "^2.9.12",
     "yarn": "^1.22.4"
   },
@@ -30,8 +36,6 @@
     "cross-env": "^5.2.0",
     "cssnano": "^4.1.10",
     "live-server": "^1.2.1",
-    "postcss-cli": "^6.1.2",
-    "tailwindcss": "^1.6.2",
     "tailwindcss-theming": "^3.0.0-beta.1"
   },
   "browserslist": {

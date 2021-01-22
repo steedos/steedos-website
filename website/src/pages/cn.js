@@ -16,7 +16,7 @@ export default function Landing() {
       keywords={["低代码,低代码开发,低代码开发平台,开源低代码开发平台,快速开发平台,快速开发工具,paas,零代码,零代码开发,零代码开发平台"]}
 >
         
-<section className="flex bg-cover bg-no-repeat bg-teal-200">
+<section className="flex bg-cover bg-no-repeat bg-blue-200">
   <div className="mx-auto max-w-screen-xl px-4 my-12">
     <div className="lg:grid lg:grid-cols-12 lg:gap-8">
       <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
@@ -26,7 +26,7 @@ export default function Landing() {
         <h2 className="mt-1 text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-6xl lg:text-5xl xl:text-6xl">
           华炎魔方
           <br className="hidden md:inline"/>
-          <span className="text-teal-700">助力企业数字化转型</span>
+          <span className="text-blue-700">助力企业数字化转型</span>
         </h2>
         <p className="mt-3 text-base text-gray-700 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
           华炎魔方特有的敏捷性、灵活性和开放性，帮助业务加速创新，提升竞争力.
@@ -34,12 +34,12 @@ export default function Landing() {
 
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
           <div className="rounded-md shadow">
-            <a href="http://oss.steedos.com/apps/pdfviewer/web/viewer.html?file=http://oss.steedos.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E6%8A%80%E6%9C%AF%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-teal-600 hover:bg-teal-500 focus:outline-none focus:border-teal-700 focus:shadow-outline-teal transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10  hover:text-white">
+            <a href="http://oss.steedos.com/apps/pdfviewer/web/viewer.html?file=http://oss.steedos.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E6%8A%80%E6%9C%AF%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-teal transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10  hover:text-white">
               技术白皮书
             </a>
           </div>
           <div className="mt-3 sm:mt-0 sm:ml-3">
-            <a href="/form/trial/" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-teal-700 bg-teal-100 hover:text-teal-600 hover:bg-teal-50 focus:outline-none focus:shadow-outline-teal focus:border-teal-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+            <a href="/form/trial/" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-700 bg-blue-100 hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:shadow-outline-teal focus:border-blue-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
               预约演示
             </a>
           </div>
