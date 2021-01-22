@@ -17,7 +17,7 @@ hide_table_of_contents: true
 
 import Card from '@site/src/components/Card';
 
-<div class="mt-12 grid gap-5 max-w-lg mx-auto md:grid-cols-2 lg:max-w-none">
+<div class="mt-12 grid gap-5 max-w-lg mx-auto md:grid-cols-2 lg:grid-cols-3 lg:max-w-none">
 
   <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/steedos-open-source.jpg"
     title="点击鼠标，就能编程"
@@ -38,7 +38,7 @@ import Card from '@site/src/components/Card';
   低代码开发
 </p>
 
-<div class="mt-6 mb-6 grid gap-5 max-w-lg mx-auto md:grid-cols-2 lg:grid-cols-2 lg:max-w-none">
+<div class="mt-6 mb-6 grid gap-5 max-w-lg mx-auto md:grid-cols-2 lg:grid-cols-3 lg:max-w-none">
 
   <Card image="http://vod.steedos.com/image/cover/D97E503BEA3441D7BD807AF1AC9A95B5-6-2.png"
     title="如何创建自定义应用程序"
@@ -56,7 +56,7 @@ import Card from '@site/src/components/Card';
   流程引擎
 </p>
 
-<div class="mt-6 mb-6 grid gap-5 max-w-lg mx-auto md:grid-cols-2 lg:grid-cols-2 lg:max-w-none">
+<div class="mt-6 mb-6 grid gap-5 max-w-lg mx-auto md:grid-cols-2 lg:grid-cols-3 lg:max-w-none">
 
   <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/admin-contracts.jpg"
     title="如何设计审批流程"
