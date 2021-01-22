@@ -22,7 +22,8 @@ import Card from '@site/src/components/Card';
   <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/steedos-open-source.jpg"
     title="点击鼠标，就能编程"
     description="在华炎魔方低代码平台，即使没有编程基础的业务人员，也能快速开发出满足业务需求的应用程序。"
-    href="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/steedos-open-source.mp4"/>
+    category="视频"
+    href="/videos/workflow/click-programme/"/>
 
   <Card image="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features.jpg"
     title="华炎魔方十大引擎，开发效率提升十倍"
