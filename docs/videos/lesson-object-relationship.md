@@ -1,19 +1,18 @@
 ---
-title: 低代码开发教程：如何创建子表
+title: 低代码开发教程：如何为自定义对象创建子表
 sidebar_label: 业务对象关联
 hide_table_of_contents: true
 hide_title: true
 background: /img/banner/service-overview-lg.png
 ---
+## 华炎魔方低代码开发教程：如何为自定义对象创建子表
 
 import Video from '@site/src/components/Video';
 
 <Video 
-    poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-relationship.jpg"
+    poster="http://vod.steedos.com/image/cover/608CD349AB534EA496E649EFFB3423A1-6-2.png"
     autoplay={true}
     urls={[
-        {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-relationship.mp4"},
+        {name:"高清", url:"http://vod.steedos.com/video/56dbfae5-17729395672-0000-0000-009-c59e0.mp4"},
+         {name:"标清", url:"http://vod.steedos.com/ddae0baa1ae645119c7fb0ffb6bd23be/e86c16c318594355871812ce3c4d5e5c-a1fff250e5ce72ef275cc366a89bcaed-ld.mp4"},
     ]}/>
-
-
-## 华炎魔方低代码开发教程：如何创建子表
