@@ -257,6 +257,20 @@ class Footer extends React.Component {
                                     </a>
                                 </div>
                             </nav>
+                            <div className="flex justify-center mt-10">
+                                <div className="text-center mr-8">
+                                    <img className="h-36 w-36 mb-2" src="/assets/github/platform/cn/QR_wechat_developers.jpg" title="开发人员微信群"/>
+                                    <div>开发人员微信群</div>
+                                </div>
+                                <div className="text-center mr-8">
+                                    <img className="h-36 w-36 mb-2" src="/assets/github/platform/cn/business_consulting.jpg" title="商务咨询"/>
+                                    <div>商务咨询</div>
+                                </div>
+                                <div className="text-center">
+                                    <img className="h-36 w-36 mb-2" src="/assets/github/platform/cn/public_number.jpg" title="微信公众号"/>
+                                    <div>微信公众号</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
