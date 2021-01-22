@@ -6,7 +6,7 @@ hide_title: true
 background: /img/banner/service-overview-lg.png
 ---
 
-# 零代码开发自定义应用程序
+## 华炎魔方低代码开发教程：如何创建自定义应用程序
 
 import Video from '@site/src/components/Video';
 
