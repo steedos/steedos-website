@@ -40,12 +40,12 @@ import Card from '@site/src/components/Card';
 
 <div class="mt-6 mb-6 grid gap-5 max-w-lg mx-auto md:grid-cols-2 lg:grid-cols-3 lg:max-w-none">
 
-  <Card image="http://vod.steedos.com/image/cover/D97E503BEA3441D7BD807AF1AC9A95B5-6-2.png"
+  <Card image="https://vod.steedos.com/image/cover/D97E503BEA3441D7BD807AF1AC9A95B5-6-2.png"
     title="如何创建自定义应用程序"
     category="视频"
     href="/videos/lesson-object/"/>
 
-  <Card image="http://vod.steedos.com/image/cover/608CD349AB534EA496E649EFFB3423A1-6-2.png"
+  <Card image="https://vod.steedos.com/image/cover/608CD349AB534EA496E649EFFB3423A1-6-2.png"
     title="如何为自定义对象创建子表"
     category="视频"
     href="/videos/lesson-object-relationship/"/>
