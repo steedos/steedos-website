@@ -22,8 +22,8 @@ class Card extends React.Component {
       <a href={href} target={target} className="block hover:no-underline">
         <div className="flex flex-col border border-gray-200 hover:border-blue-500 rounded-lg shadow-sm divide-y divide-gray-200 overflow-hidden">
             {image && (
-            <div className="flex-shrink-0">
-            <img className="h-48 w-full object-cover" src={image} alt=""/>
+            <div className="flex-shrink-0 aspect-w-3 aspect-h-2">
+            <img className="object-cover" src={image} alt=""/>
             </div>
             )}
             <div className="flex-1 bg-white p-6 flex flex-col justify-between">

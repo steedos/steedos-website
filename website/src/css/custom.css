@@ -38,7 +38,7 @@
   color: white;
 }
 .main-wrapper {
-  background-color: rgb(var(--color-cool-gray-50));
+  background-color: rgb(var(--color-gray-50));
 }
 .markdown {
   --ifm-h1-font-size: 3rem;
