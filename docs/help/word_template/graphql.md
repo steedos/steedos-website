@@ -21,13 +21,13 @@ sidebar_label: GraphQL脚本
 
 ### 编写要获取哪些字段
 
-您需要在上述GraphQL脚本中的对象名称之后用大括号来包裹要查询对象的哪些字段信息，每行一个字段并用逗号分隔每个字段，如果字段关联到其他对象则可以在其字段名称后面也加上大括号并在大括号内列出要级联查询的相关字段，依此类推，您可以自由无限扩展您希望级联查询的相关字段信息，详细请参考 [Field Structure Detail](https://www.steedos.org/docs/api/graphql_query/#field-structure-detail)。
+您需要在上述GraphQL脚本中的对象名称之后用大括号来包裹要查询对象的哪些字段信息，每行一个字段或用逗号分隔每个字段，如果字段关联到其他对象则可以在其字段名称后面也加上大括号并在大括号内列出要级联查询的相关字段，依此类推，您可以自由无限扩展您希望级联查询的相关字段信息，详细请参考 [Field Structure Detail](https://www.steedos.org/docs/api/graphql_query/#field-structure-detail)。
 
 ### 特殊字段显示格式
 
-如果GraqhQL脚本中有返回日期，日期时间，布尔型等字段类型，需要给字段名称后面加上`__label`后缀来表示希望格式化显示字段内容，否则它将直接返回数据库中保存的字段内容。
+如果GraqhQL脚本中有返回日期、日期时间、布尔、选择框等字段类型，需要给字段名称后面加上`__label`后缀来表示希望格式化显示字段内容，否则它将直接返回数据库中保存的字段内容。
 
-比如`created__label`表示创建时间，返回的结果为`2020-12-22 15:17`。如果直接写作`created`，会返回为`1608621469293`这种无语义的数据。
+比如`created__label`表示创建时间，返回的结果为`2020-12-22 15:17`。如果直接写作`created`，会返回为`1608621469293`这种无语义的数值。
 
 详情请参考 [Suffix __label](https://www.steedos.org/docs/api/graphql_query/#suffix-__label)。
 
