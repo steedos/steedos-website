@@ -211,7 +211,7 @@ steedos source:deploy -p name.field.yml
 **该命令包含两个参数：**
 
 - 【-o | convertpath】需要转化的旧文件路径
-- 【-t | targetPath】新格式文件生成的路径，可选，默认生成在旧文件路径上一级目录下
+- 【-t | targetPath】新格式文件生成的路径
 
 **您也可以运行--help来获取 source:convert 命令的更多信息：**
 
@@ -388,7 +388,7 @@ steedos data:export -o contracts -p
 - 【-f | sobjectfiles】需要导入的文件名或路径，需要使用sobjectfiles或者plan.
 - 【-p | plan】需要导入的plan文件名或路径，需要使用sobjectfiles或者plan.
 
-**您也可以运行--help来获取 data:export 命令的更多信息：**
+**您也可以运行--help来获取 data:import 命令的更多信息：**
 
 ```yml
 steedos data:export --help
