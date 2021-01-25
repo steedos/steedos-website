@@ -211,7 +211,7 @@ steedos source:deploy -p name.field.yml
 **该命令包含两个参数：**
 
 - 【-o | convertpath】需要转化的旧文件路径
-- 【-t | targetPath】新格式文件生成的路径
+- 【-t | targetPath】新格式文件生成的路径，须为绝对路径
 
 **您也可以运行--help来获取 source:convert 命令的更多信息：**
 
@@ -255,8 +255,8 @@ metadata api key:OwOFMQOcRilzJpu0Q8ix0XOZjiJAT_B_CklKc6XULVe
 
 该命令包含以下参数：
 
-- 【-n | packageName】打包好的package名称
-- 【-p | appPath】需要打包的本地文件地址
+- 【-n | packageName】可选参数，打包好的package名称
+- 【-p | appPath】需要打包的本地文件地址，绝对路径与相对路径均可
 - 【-l | loglevel(debug|info|warn)】可选参数，用于控制是否打印已打包文件清单，默认"warn"不打印，只打印未打包文件清单
 
 **您也可以运行--help来获取 package:build 命令的更多信息：**
