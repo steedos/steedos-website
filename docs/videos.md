@@ -30,6 +30,11 @@ import Card from '@site/src/components/Card';
     description="低代码开发是一种全新的开发方式，通过把标准功能组件化，业务需求配置化，改变应用交付和管理的模式，大大缩减应用交付的周期。"
     href="/videos/steedos-platform-features/"/>
 
+  <Card image="https://vod.steedos.com/image/cover/273D6FB669D94148889E5FE7A26A3D13-6-2.png"
+    title="什么是元数据？低代码平台中的元数据深度解析"
+    description="当你的业务需求发生变化时，不需要找软件公司修改代码，不需要漫长的等待，只需要点击鼠标，修改配置，应用程序就会跟着变化。"
+    href="/videos/workflow/metadate/"/>  
+
 </div>
 
 
