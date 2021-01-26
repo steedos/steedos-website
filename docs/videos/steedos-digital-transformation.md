@@ -6,13 +6,14 @@ hide_title: true
 background: /img/banner/service-overview-lg.png
 ---
 
-import Video from '@site/src/components/Video';
+## 华炎魔方助力数字化转型，帮助业务加速创新，提升竞争力
 
-# 华炎魔方助力数字化转型，帮助业务加速创新，提升竞争力
+import Video from '@site/src/components/Video';
 
 <Video 
     poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.jpg"
     autoplay={true}
     urls={[
         {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.mp4"},
+        {name:"标清", url:"https://vod.steedos.com/ef86bfc1c9314dc086e54cc934efcf75/13d008f336514d028756488d84be7d4d-c89dc504a68a67604ae88b9690fcd8f2-ld.mp4"},
     ]}/>

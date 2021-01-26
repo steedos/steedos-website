@@ -1,9 +1,12 @@
 ---
-title: 华炎魔方解决方案手册
-sidebar_label: 解决方案概览
+title: 华炎魔方十大引擎，开发效率提升十倍
+sidebar_label: 十大引擎
+hide_title: true
 hide_table_of_contents: true
 background: /img/banner/service-overview-lg.png
 ---
+
+## 华炎魔方十大引擎，开发效率提升十倍
 
 import Video from '@site/src/components/Video';
 

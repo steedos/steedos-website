@@ -1,11 +1,12 @@
 ---
-title: 低代码开发教程：如何为自定义对象创建子表
-sidebar_label: 业务对象关联
+title: 如何为自定义对象创建子表
+sidebar_label: 关联子表
 hide_table_of_contents: true
 hide_title: true
 background: /img/banner/service-overview-lg.png
 ---
-## 华炎魔方低代码开发教程：如何为自定义对象创建子表
+
+## 如何为自定义对象创建子表？
 
 import Video from '@site/src/components/Video';
 

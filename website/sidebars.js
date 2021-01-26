@@ -244,6 +244,20 @@ module.exports =
         "help/workflow/admin_picturesignature", 
         "help/workflow/faq"]
   },
+  "视频": {
+    "华炎魔方概览": [
+      "videos/steedos-digital-transformation",
+       "videos/click-programme",
+       "videos/steedos-platform-features"],
+    "低代码培训课程": [
+       "videos/lesson-object",
+       "videos/lesson-object-relationship", 
+       "videos/metadate",
+       "videos/synchronized-metadate"],
+    "审批王": [
+       "videos/workflow/admin-contracts", 
+       "videos/workflow/user-contracts"]   
+ },
   "Steedos Help": {
     "Quick Guide": ["us/help/workflow/README", "us/help/workflow/guide_setup", "us/help/workflow/guide_user", "us/help/workflow/guide_admin", "us/help/workflow/guide_permissions", "us/help/workflow/guide_versions", "us/help/workflow/mp4", "us/help/workflow/faq"],
     "How to use Steedos Workflow": ["us/help/workflow/quickguide_user", "us/help/workflow/instance_add", "us/help/workflow/instance_approve", "us/help/workflow/instance_carboncopy", "us/help/workflow/instance_forward", "us/help/workflow/instance_retrieve", "us/help/workflow/instance_reassign", "us/help/workflow/instance_relocate", "us/help/workflow/instance_attachment", "us/help/workflow/instance_search", "us/help/workflow/instance_cancel", "us/help/workflow/instance_print", "us/help/workflow/instance_monitor", "us/help/workflow/instance_export"],
