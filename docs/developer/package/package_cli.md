@@ -1,6 +1,10 @@
 ---
-title: 使用 steedos cli 命令打包
+title: 使用 Steedos Cli 命令打包
 ---
+
+:::note 提示
+若未安装Steedos Cli，请先[安装](/developer/install/summary#%E5%AE%89%E8%A3%85-steedos-cli)
+:::
 
 ## package:build
 

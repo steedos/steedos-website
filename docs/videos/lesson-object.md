@@ -11,9 +11,9 @@ background: /img/banner/service-overview-lg.png
 import Video from '@site/src/components/Video';
 
 <Video 
-    poster="http://vod.steedos.com/image/cover/D97E503BEA3441D7BD807AF1AC9A95B5-6-2.png"
+    poster="https://vod.steedos.com/image/cover/D97E503BEA3441D7BD807AF1AC9A95B5-6-2.png"
     autoplay={true}
     urls={[
-        {name:"高清", url:"http://vod.steedos.com/video/593e2774-1772933e406-0000-0000-009-c59e0.mp4"},
-        {name:"标清", url:"http://vod.steedos.com/ee84c21369c14f58affc3d73aad0f3aa/03dde2aadf164967884697473b985d06-2b35c89e35b0cb2abbca9b19bb09a7fd-ld.mp4"},
+        {name:"高清", url:"https://vod.steedos.com/video/593e2774-1772933e406-0000-0000-009-c59e0.mp4"},
+        {name:"标清", url:"https://vod.steedos.com/ee84c21369c14f58affc3d73aad0f3aa/03dde2aadf164967884697473b985d06-2b35c89e35b0cb2abbca9b19bb09a7fd-ld.mp4"},
     ]}/>

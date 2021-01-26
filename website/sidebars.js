@@ -28,7 +28,7 @@ module.exports =
 
   "文档": {
     "快速向导": ["help/about", {
-      "服务端安装部署": ["help/deploy/deploy_windows_quick_install", "help/deploy/deploy_install_advanced", "help/deploy/steedos-config"],
+      "服务端安装部署": ["help/deploy/deploy_windows_quick_install", "help/deploy", "help/deploy/steedos-config"],
       "客户端": ["help/clients/desktop", "help/clients/mobile", "help/clients/wecom"]
     }],
     "使用入门": ["help/user", "help/login", "help/interface",{
@@ -279,7 +279,7 @@ module.exports =
       {
         "type": "link",
         "href": "http://oss.steedos.com/apps/pdfviewer/web/viewer.html?file=http://oss.steedos.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E6%8A%80%E6%9C%AF%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf",
-        "label": "如何选择低代码平台？"
+        "label": "什么是低代码？"
       },
       // "videos",
       "platform/cases", 

@@ -148,3 +148,7 @@ ul, ol {
   height: 40px;
   opacity: 1;
 }
+
+xg-definition p {
+    margin-bottom: 0 !important;
+}
