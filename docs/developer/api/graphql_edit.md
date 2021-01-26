@@ -25,7 +25,7 @@ mutation {
 }
 ``` -->
 
-要通过GraphQL API在Steedos上编辑数据，需为脚本加上前缀，`mutation`而不是`query`
+在 Steedos 上通过 GraphQL API 进行数据编辑时，需要将前缀`query`替换为`mutation`
 
 示例：
 
@@ -35,11 +35,11 @@ mutation {
 }
 ```
 
-这表示您应将`tasks`上面的内容替换为要编辑记录的对象名，将上面的`_id`值替换为要编辑记录的对象名，并将`5cb98489d09a343e14daae95`上面的值`_id`替换为`{name:"Task Important"}`，需另存为的新JSON数据。
+其中，`tasks`代表要编辑记录的对象名称，`_id`的值`5cb98489d09a343e14daae95`代表要编辑的记录的`_id`，`{name:"Task Important"}`代表要更新的JSON数据。
 
-关键字`UPDATE_ONE`表示通过GraphQL API在Steedos上编辑一条记录。
+关键字`UPDATE_ONE`表示通过 GraphQL API 在 Steedos 上编辑一条记录。
 
-返回结果如下：
+结果如下：
 
 ```yml
 {
@@ -52,4 +52,4 @@ mutation {
 }
 ```
 
-当通过Steedos上的GraphQL API更新数据时，只能编辑具有更新权限的对象和字段的记录，详情见[数据权限](/developer/api/graphql)。
+当通过 Steedos 上的 GraphQL API 更新数据时，只能编辑具有更新权限的对象和字段的记录，详情见[数据权限](/developer/api/graphql)。

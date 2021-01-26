@@ -85,11 +85,11 @@ app.listen(3000)
 
 在Steedos中配置对象时，会自动为您生成[GraphQL API](https://graphql.org/)。
 
-使用GraphQL API，您可以询问您需要什么并得到确切的信息。有关更多信息，请参见[GraphQL](https://graphql.org/)。
+使用GraphQL API，您可以要求所需的确切信息。详情参考[GraphQL](https://graphql.org/)。
 
 ## 数据权限
 
-Steedos支持多种权限配置，例如[Permission Set](/docs/metadata/permission_set)，[Profile](/docs/metadata/profile)，[Permission](/docs/metadata/object/permission)等。您可以使用它们来实现不同的权限，以使不同的人有权访问不同的对象和字段，以及可以返回，插入，编辑，删除哪些数据GraphQL API的控制由这些权限配置控制。【TODO：元数据-权限集、元数据-个人资料、元数据-目的-允许 链接未加】
+Steedos支持多种权限配置，例如[Permission Set](/docs/metadata/permission_set)，[Profile](/docs/metadata/profile)，[Permission](/docs/metadata/object/permission)等。您可以使用它们来实现不同的权限，以使不同的人有权访问不同的对象和字段，以及可以返回，插入，编辑，删除哪些数据。GraphQL API的控制由这些权限配置控制。【TODO：元数据-权限集、元数据-个人资料、元数据-目的-允许 链接未加】
 
 为了支持权限控制，您应该根据要求传递`token`或`userSession`标识当前用户，请参阅[授权GraphQL API](/developer/api/graphql_auth)以获取更多信息。
 
@@ -97,7 +97,7 @@ Steedos支持多种权限配置，例如[Permission Set](/docs/metadata/permissi
 
 ## GraphQL客户端
 
-假设您已经使用端口3000启动了Steedos的本地服务，那么您可以使用来访问GraphQL客户端`http://localhost:3000/graphql`。
+假设您已经使用端口3000启动了Steedos的本地服务，那么您可以使用`http://localhost:3000/graphql`来访问GraphQL客户端。
 
 在GraphQL客户端中，您可以在左侧面板中输入GraphQL脚本，然后通过单击页面顶部的运行按钮来运行它。
 
@@ -118,7 +118,7 @@ query{
 ```
 
 :::note 提示
-您也可以省略第一个单词，其调用query如下，将具有相同的效果并返回相同的请求结果。
+您也可以省略请求头的‘query’，返回结果相同。
 
 ```yml
 {
@@ -132,7 +132,7 @@ query{
 
 :::
 
-获得可预测的结果：
+结果如下：
 
 ```yml
 {
@@ -160,7 +160,7 @@ query{
 
 ### 扩展查询
 
-您可以通过在对象名称和方括号的末尾定义字段结构信息来扩展字段以查询相关字段值。
+您可以在对象名称和括号之后定义字段结构，扩展字段并查询相关字段值。
 
 字段结构定义如下：
 
@@ -169,6 +169,7 @@ query{
   object_name{
     field1_name,
     field2_name,
+    // highlight-start
     field3_name {
       field3_field1_name {
         field3_field1_field1_name,
@@ -179,6 +180,7 @@ query{
       field3_field2_name,
       ...
     }
+    // highlight-end
     ...
   }
 }
@@ -186,13 +188,14 @@ query{
 
 返回结果如下：
 
-```yml
+```json
 {
   "data": {
     "object_name": [
       {
         "field1_name": "field1_value",
         "field2_name": "field2_value",
+        // highlight-start
         "field3_name": {
           "field3_field1_name": {
             "field3_field1_field1_name": "field3_field1_field1_value",
@@ -203,6 +206,7 @@ query{
           "field3_field2_name": "field3_field2_value"
           ...
         }
+        // highlight-end
       },
       ...
     ]
@@ -214,9 +218,11 @@ query{
 
 ### 查询数据
 
-您可以通过使用GraphQL API查询记录`filters`，`fields`，`top`，`skip`和`sort`，有关更多信息，请参见[通过GraphQL API查询数据](/developer/api/graphql_query)
+您可以通过 GraphQL API 使用 `filters`，`fields`，`top`，`skip`和`sort`查询数据的记录，详见[通过GraphQL API查询数据](/developer/api/graphql_query)
 
-以下是一个示例：请求所有潜在客户的`status`属性值为 `Qualified`。
+示例：
+
+查询所有`status`属性值为`Qualified`的线索：
 
 ```yml
 query{
@@ -228,7 +234,7 @@ query{
 }
 ```
 
-获得可预测的结果：
+结果如下：
 
 ```yml
 {
@@ -245,5 +251,5 @@ query{
 ```
 
 :::note 提示
-您也可以替换代码filters:[["status", "=" "Qualified"]]与filters:"status eq 'Qualified'"它是一个标准的[OData过滤字符串](https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html#sec_SystemQueryOptionfilter)。
+您也可以使用 filters:"status eq 'Qualified'" 替换 filters:[["status", "=" "Qualified"]]，它是一个标准的[OData过滤字符串](https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html#sec_SystemQueryOptionfilter)。
 :::

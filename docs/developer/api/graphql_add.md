@@ -25,7 +25,7 @@ mutation {
 ```
  -->
 
-要通过GraphQL API将数据插入Steedos，您应该在脚本前加上`mutation`而不是`query`
+在 Steedos 中通过 GraphQL API 进行数据插入时，需要将前缀`query`替换为`mutation`
 
 示例：
 
@@ -35,11 +35,11 @@ mutation {
 }
 ```
 
-这表示您应将`tasks`上面的内容替换为要插入记录的对象名称，并将`{name:"Task One"}`上面的内容替换为要插入的JSON数据。
+其中，`tasks`代表要插入记录的对象名称，`{name:"Task One"}`代表要插入的JSON数据
 
-关键字`INSERT_ONE`表示通过GraphQL API将一条记录插入Steedos。
+关键字`INSERT_ONE`表示通过 GraphQL API 在 Steedos 上插入一条记录。
 
-返回结果如下：
+结果如下：
 
 ```yml
 {
@@ -52,4 +52,4 @@ mutation {
 }
 ```
 
-当通过Steedos上的GraphQL API插入数据时，只能插入具有插入权限的对象的记录，详情见[数据权限](/developer/api/graphql)。
+当通过 Steedos 上的 GraphQL API 插入数据时，只能插入具有插入权限的对象的记录，详情见[数据权限](/developer/api/graphql)。

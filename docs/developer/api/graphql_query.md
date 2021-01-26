@@ -43,7 +43,7 @@ query {
 }
 ``` -->
 
-GraphQL API中的查询数据，查询条件接受以下5个参数，可以根据需要一起使用。
+GraphQL API中的数据查询，有以下5个条件参数，可根据需求一起使用。
 
 - filters: text or array
 - fields: array
@@ -51,17 +51,17 @@ GraphQL API中的查询数据，查询条件接受以下5个参数，可以根�
 - skip: number
 - sort: text
 
-如下图方框内参数所示：
+如图所示：
 
 ```yml
 leads(filters:[["status", "=", "Qualified"]], top:1, sort:"name desc")
 ```
 
-当在steedos中访问GraphQL API时，只能看到有权查看的数据，详情见[GraphQL 简介](/developer/api/graphql)。
+当在 steedos 中访问 GraphQL API 时，只能看到有权查看的数据，详情见[GraphQL 简介](/developer/api/graphql)。
 
 ## 过滤器 Filters
 
-可以将对象名称后添加查询过滤器，过滤器表达式可以是阵列作为`Steedos Filters`，类似于`[["status", "=", "Qualified"]]`或文本作为标准的[OData过滤字符串](https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html#sec_SystemQueryOptionfilter)类似于`"status eq 'Qualified'"`等。
+您可以在对象名称后添加查询过滤器，过滤器表达式可以是Steedos过滤器的数组，例如`[["status", "=", "Qualified"]]`，也可以是文本的标准[OData过滤字符串](https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html#sec_SystemQueryOptionfilter)，例如`"status eq 'Qualified'"`。
 
 示例如下：
 
@@ -89,11 +89,11 @@ query{
 
 ## 字段结构
 
-在GraphQL查询中，必须在对象名称和方括号的末尾定义字段结构信息，且可以无限扩展字段以查询相关字段值。
+在GraphQL查询中，需在对象名称和括号之后定义字段结构，且可以扩展字段以查询相关字段值。
 
 示例如下：
 
-请求所有潜在顾客记录以及属于相关对象的扩展字段信息：
+查询所有leads记录及其扩展字段的信息：
 
 ```yml
 query{
@@ -157,25 +157,25 @@ query{
 
 #### Date/DateTime
 
-例如，该`created`字段指示创建时间，它将返回非语义值（例如）`1608621469293`，但`created__label`将返回格式化后的格式`2020-12-22 15:17`（具有良好的阅读体验结果）。
+例如，`created`字段指示创建时间，它将返回非语义值（例如）`1608621469293`，但`created__label`将返回格式化后的格式`2020-12-22 15:17`（具有良好的阅读体验结果）。
 
-如果该`created`字段是一个空值，则它将返回`null`，而`created__label`则返回一个空字符串`""`。
+如果`created`字段是一个空值，则它将返回`null`，而`created__label`则返回一个空字符串`""`。
 
 #### Boolean
 
-例如，该`converted`字段指示它是否为转换后的记录，它将返回诸如`true`或`false`的字符，但是`converted__label`将会返回具有良好阅读体验的结果，如`"Yes"`或`"No"`。
+例如，`converted`字段指是否为转换后的记录，它将返回诸如`true`或`false`的字符，但是`converted__label`将会返回具有良好阅读体验的结果，如`"Yes"`或`"No"`。
 
-如果该`converted`字段为空值，则它将返回`null`，而`converted__label`则返回一个字符串`"No"`。
+如果`converted`字段为空值，则它将返回`null`，而`converted__label`则返回一个字符串`"No"`。
 
 #### Select
 
-例如，该`salutation`字段表示某人是“男性”或“女性”，它可能会返回诸如`1`或`0`的字符，但是`salutation__label`会返回具有良好阅读体验的结果，例如`"Male"`或`"Female"`。
+例如，`salutation`字段表示某人是“男性”或“女性”，它可能会返回诸如`1`或`0`的字符，但是`salutation__label`则返回具有良好阅读体验的结果，例如`"Male"`或`"Female"`。
 
-如果该`salutation`字段是一个空值，则它将返回`null`，而`salutation__label`则返回一个空字符串`""`。
+如果`salutation`字段是一个空值，则它将返回`null`，而`salutation__label`则返回一个空字符串`""`。
 
 示例：
 
-请求所有潜在客户记录，其中包含一些`__label`后缀字段：
+查询所有leads的记录，其中包含一些`__label`后缀字段：
 
 ```yml
 query{
@@ -234,7 +234,7 @@ query{
 ```
 
 :::note 提示
-如果您使用GraphQL API来获取数据并将其显示在Steedos页面中，则不应在字段名称后添加后缀`__label`，因为Steedos页面会自动将其格式化。
+如果您使用GraphQL API来获取数据并将其显示在Steedos页面中，则不应在字段名称后添加后缀`__label`，这是因为Steedos页面会自动将其格式化。
 
 仅当您想直接向客户显示字段值时，才需要在字段名称后添加后缀`__label`。
 :::
@@ -247,17 +247,14 @@ query{
 
 示例：
 
-请求所有潜在顾客记录，并带有一些`related__`前缀字段以获取每个记录的子对象记录：
+查询所有leads记录，并带有一些`related__`前缀字段，以获取每个记录的子对象记录：
 
 ```yml
 query{
   leads{
     name,
     title,
-
-
-----------------------------------------------------
-
+    // highlight-start
     related__tasks{
       name,
       assignees{
@@ -266,10 +263,7 @@ query{
       due_date,
       due_date__label
     }
-
-----------------------------------------------------
-
-
+    // highlight-end
   }
 }
 ```
@@ -283,10 +277,7 @@ query{
       {
         "name": "Lead A",
         "title": "GM",
-
-
-----------------------------------------------------
-
+        // highlight-start
         "related__tasks": [
           {
             "name": "Task 1",
@@ -299,18 +290,12 @@ query{
             "due_date__label": "2021-01-30"
           }
         ]
-
-----------------------------------------------------
-
-
+          // highlight-end
       },
       {
         "name": "Lead B",
         "title": "purchasing manager",
-
-
-----------------------------------------------------
-
+          // highlight-start
         "related__tasks": [
           {
             "name": "Task 2",
@@ -323,10 +308,7 @@ query{
             "due_date__label": "2021-01-30"
           }
         ]
-
-----------------------------------------------------
-
-
+          // highlight-end
       }
     ]
   }
@@ -341,7 +323,7 @@ query{
 
 您可以定义一个`skip`要跳过多少条记录，以及一个单词要返回多少条记录`top`。
 
-下面的查询将仅返回第二条记录。
+如下查询将仅返回第二条记录：
 
 ```yml
 query{
@@ -373,9 +355,9 @@ query{
 
 ## 字段 Fields
 
-您可以在对象名称之后添加查询字段，该字段表示要查询的对象上的字段。
+您可以在对象名称之后添加查询字段，该字段表示查询对象上的字段。
 
-默认忽略此属性，因为您必须在对象名称和方括号的末尾定义字段结构的详细信息，因此我们建议您忽略此属性。
+默认忽略此属性，因为您必须在对象名称和括号之后定义字段结构信息，因此建议忽略此属性。
 
 示例：
 

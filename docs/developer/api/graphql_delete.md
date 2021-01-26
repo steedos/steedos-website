@@ -21,7 +21,7 @@ mutation {
 }
 ``` -->
 
-要通过GraphQL API删除Steedos上的数据，应在脚本前加上前缀，`mutation`而不是`query`
+在 Steedos 中通过 GraphQL API 进行数据删除时，需将前缀`query`替换为`mutation`
 
 示例：
 
@@ -31,11 +31,11 @@ mutation {
 }
 ```
 
-这表示您应该将上面的`tasks`替换为您要删除记录的对象名，并将上面的`_id`值`5cb98489d09a343e14daae95`替换为您要删除的记录的`_id`。
+其中，`tasks`代表要删除记录的对象名，`_id`的值`5cb98489d09a343e14daae95`代表要删除的记录的`_id`
 
-关键字`DELETE_ONE`表示通过GraphQL API删除Steedos上的一条记录。
+关键字`DELETE_ONE`表示通过 GraphQL API 在 Steedos 上删除一条记录。
 
-返回结果如下：
+结果如下：
 
 ```yml
 {
@@ -45,4 +45,4 @@ mutation {
 }
 ```
 
-当通过Steedos上的GraphQL API删除记录时，只能删除具有删除权限的对象的记录，详情见[数据权限](/developer/api/graphql)。
+当通过 Steedos 上的 GraphQL API 删除记录时，只能删除具有删除权限的对象的记录，详情见[数据权限](/developer/api/graphql)。

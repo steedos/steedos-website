@@ -57,3 +57,5 @@ STEEDOS_DEVELOPER_SERVER=https://huayan-beta.my.steedos.com:8443/
 ```yml
 Error: API Key无效
 ```
+
+- 解决方案：API Key无效说明未注册开发者账户或者注册过程有误，重新[注册开发者账户](/developer/register/index)即可
