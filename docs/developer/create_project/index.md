@@ -24,7 +24,7 @@ Steedos DX为您提供了不同的选项来创建Steedos DX项目，您可以同
 - 创建名为my-app 的项目
 
 ```yml
-npx create-steedos-app my-app
+npx create-steedos-app@next my-app
 ```
 
 - 切换到my-app项目目录
