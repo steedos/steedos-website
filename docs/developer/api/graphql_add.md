@@ -31,20 +31,23 @@ mutation {
 
 ```yml
 mutation {
-  tasks_INSERT_ONE(data:{name:"Task One"})
+  tasks__insert(data:{name:"Task One"}) {
+    name
+    _id
+  }
 }
 ```
 
 其中，`tasks`代表要插入记录的对象名称，`{name:"Task One"}`代表要插入的JSON数据
 
-关键字`INSERT_ONE`表示通过 GraphQL API 在 Steedos 上插入一条记录。
+关键字`__insert`表示通过 GraphQL API 在 Steedos 上插入一条记录。
 
 结果如下：
 
 ```yml
 {
   "data": {
-    "tasks_INSERT_ONE": {
+    "tasks__insert": {
       "name": "Task One",
       "_id": "5cb98489d09a343e14daae95"
     }

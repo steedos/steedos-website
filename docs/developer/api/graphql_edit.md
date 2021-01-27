@@ -31,20 +31,23 @@ mutation {
 
 ```yml
 mutation {
-  tasks_UPDATE_ONE(_id:"5cb98489d09a343e14daae95", data:{name:"Task Important"})
+  tasks__update(_id:"5cb98489d09a343e14daae95", data:{name:"Task Important"}) {
+    name
+    _id
+  }
 }
 ```
 
 其中，`tasks`代表要编辑记录的对象名称，`_id`的值`5cb98489d09a343e14daae95`代表要编辑的记录的`_id`，`{name:"Task Important"}`代表要更新的JSON数据。
 
-关键字`UPDATE_ONE`表示通过 GraphQL API 在 Steedos 上编辑一条记录。
+关键字`__update`表示通过 GraphQL API 在 Steedos 上编辑一条记录。
 
 结果如下：
 
 ```yml
 {
   "data": {
-    "tasks_UPDATE_ONE": {
+    "tasks__update": {
       "name": "Task Important",
       "_id": "5cb98489d09a343e14daae95"
     }

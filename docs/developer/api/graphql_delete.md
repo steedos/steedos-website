@@ -27,20 +27,20 @@ mutation {
 
 ```yml
 mutation {
-  tasks_DELETE_ONE(_id:"5cb98489d09a343e14daae95")
+  tasks__delete(_id:"5cb98489d09a343e14daae95")
 }
 ```
 
 其中，`tasks`代表要删除记录的对象名，`_id`的值`5cb98489d09a343e14daae95`代表要删除的记录的`_id`
 
-关键字`DELETE_ONE`表示通过 GraphQL API 在 Steedos 上删除一条记录。
+关键字`__delete`表示通过 GraphQL API 在 Steedos 上删除一条记录。
 
 结果如下：
 
 ```yml
 {
   "data": {
-    "tasks_DELETE_ONE": null
+    "tasks__delete": 1
   }
 }
 ```
