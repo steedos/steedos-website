@@ -1,5 +1,5 @@
 ---
-title: 通过GraphQL API编辑数据
+title: 编辑
 ---
 <!-- ### 在graphql界面中编辑数据
 - 方法名格式为： {定义的object.name}_UPDATE_ONE

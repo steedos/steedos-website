@@ -1,5 +1,5 @@
 ---
-title: 通过GraphQL API插入数据
+title: 新增
 ---
 <!-- ### 在graphql界面中新增数据
 - 方法名格式为： {定义的object.name}_INSERT_ONE

@@ -1,5 +1,5 @@
 ---
-title: 通过GraphQL API删除数据
+title: 删除
 ---
 <!-- ### 在graphql界面中删除数据
 - 方法名格式为： {定义的object.name}_DELETE_ONE

@@ -1,6 +1,5 @@
 ---
-title: 授权GraphQL API
-sidebar_label: GraphQL身份验证
+title: 身份验证
 ---
 
 <!-- 每当用户想要访问受保护的路由或资源时，通常使用Authorization header。header的内容应如下所示：
