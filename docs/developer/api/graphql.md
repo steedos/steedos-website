@@ -109,10 +109,9 @@ Steedos支持多种权限配置，例如[Permission Set](/docs/metadata/permissi
 
 ```yml
 query{
-  accounts {
+  contacts {
     name,
-    industry,
-    website
+    amount
   }
 }
 ```
@@ -122,10 +121,9 @@ query{
 
 ```yml
 {
-  accounts {
+  contacts {
     name,
-    industry,
-    website
+    amount
   }
 }
 ```
@@ -139,19 +137,12 @@ query{
   "data": {
     "accounts": [
       {
-        "name": "A",
-        "industry": null,
-        "website": "www.some1.com"
+        "name": "Phase 2 Construction Contract",
+        "amount": 70000
       },
       {
-        "name": "B",
-        "industry": "Agriculture",
-        "website": "www.some2.com"
-      },
-      {
-        "name": "C",
-        "industry": "Agriculture",
-        "website": "www.some3.com"
+        "name": "2021 OA Project Maintenance Contract",
+        "amount": 89000
       }
     ]
   }
@@ -166,23 +157,18 @@ query{
 
 ```yml
 query{
-  object_name{
-    field1_name,
-    field2_name,
+  contracts {
+    name
+    amount
     // highlight-start
-    field3_name {
-      field3_field1_name {
-        field3_field1_field1_name,
-        field3_field1_field2_name{
-          ...
-        }
-      },
-      field3_field2_name,
-      ...
+    othercompany{
+      name
+      owner{
+        name
+      }
     }
     // highlight-end
-    ...
-  }
+  } 
 }
 ```
 
@@ -191,24 +177,21 @@ query{
 ```json
 {
   "data": {
-    "object_name": [
+    "contracts": [
       {
-        "field1_name": "field1_value",
-        "field2_name": "field2_value",
-        // highlight-start
-        "field3_name": {
-          "field3_field1_name": {
-            "field3_field1_field1_name": "field3_field1_field1_value",
-            "field3_field1_field2_name": {
-              ...
-            }
-          },
-          "field3_field2_name": "field3_field2_value"
-          ...
+        "name": "Phase 2 Construction Contract",
+        "amount": 70000,
+        "othercompany": {
+          "name": "3M",
+          "owner": {
+            "name": "Litant"
+          }
         }
-        // highlight-end
       },
-      ...
+      {
+        "name": "2021 OA Project Maintenance Contract",
+        "amount": 89000
+      }
     ]
   }
 }
@@ -226,7 +209,8 @@ query{
 
 ```yml
 query{
-  leads(filters:[["status", "=", "Qualified"]], top:1, sort:"name desc"){
+  leads(filters:[["status", "=", "Qualified"]], top:1,
+  sort:"name desc"){
     name,
     title,
     status
