@@ -146,16 +146,19 @@ module.exports =
   
       "API": [
         // "developer/api",
+        "developer/api/summary",
         {
-          "身份验证": ["developer/api/api_jwt", "developer/api/api_logout"],
           "对象OData": [
             "developer/api/odata",
-            "developer/api/odata_auth", "developer/api/odata_query", "developer/api/odata_get", "developer/api/odata_add", "developer/api/odata_edit", "developer/api/odata_delete", "developer/api/odata_functions", "developer/api/odata_metadata"
+            //"developer/api/odata_auth",
+            "developer/api/odata_query", "developer/api/odata_get", "developer/api/odata_add", "developer/api/odata_edit", "developer/api/odata_delete", "developer/api/odata_functions", "developer/api/odata_metadata"
           ],
           "对象GraphQL": [
             "developer/api/graphql",
-            "developer/api/graphql_auth", "developer/api/graphql_query", "developer/api/graphql_add", "developer/api/graphql_edit", "developer/api/graphql_delete"
+            //"developer/api/graphql_auth",
+            "developer/api/graphql_query", "developer/api/graphql_add", "developer/api/graphql_edit", "developer/api/graphql_delete"
           ],
+          "身份验证": ["developer/api/api_jwt", "developer/api/api_login", "developer/api/api_verify", "developer/api/api_logout"],
           // "高级": ["developer/api/api_jwt", "developer/api/router"],
           "审批王": [ "help/workflow/flow_webhooks"]
         }],
