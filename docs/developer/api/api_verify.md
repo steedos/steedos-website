@@ -15,7 +15,7 @@ title: 接口验证
 获取到 API Key 之后设置在请求头 Header 当中就可以进行接口调用了。
 
 ```yml
-Authorization : apikey,${apikey}
+Authorization : Bearer apikey,${apikey}
 ```
 
 **${apikey}**： 获取到的 API Key。
@@ -23,5 +23,5 @@ Authorization : apikey,${apikey}
 例如：
 
 ```yml
-Authorization : apikey,Gooseneoeu7ABoJC0FQq4Q5DcqNPebL87Jyc27NMCrd
+Authorization : Bearer apikey,Gooseneoeu7ABoJC0FQq4Q5DcqNPebL87Jyc27NMCrd
 ```
