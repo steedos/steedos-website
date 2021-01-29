@@ -30,7 +30,7 @@ sidebar_label: 安装向导
 
 ## 克隆并运行开源项目
 
-您可以部署以下模版项目，或是 [使用命令行创建你自己的项目](/developer/guide_create)。
+您可以部署以下模版项目，或是 [使用命令行创建你自己的项目](/developer/create_project/index)。
 
 - [华炎项目管理系统](https://github.com/steedos/project-management-app)
 - [华炎办公](https://github.com/steedos/steedos-project-oa)
