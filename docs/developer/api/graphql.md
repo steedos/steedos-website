@@ -88,17 +88,37 @@ app.listen(3000)
 
 使用GraphQL API，您可以要求所需的确切信息。详情参考[GraphQL API](https://graphql.org/)。
 
-## 数据权限
+<!-- ## 数据权限
 
 Steedos支持多种权限配置，例如[Permission Set](/docs/metadata/permission_set)，[Profile](/docs/metadata/profile)，[Permission](/docs/metadata/object/permission)等。您可以使用它们来实现不同的权限，以使不同的人有权访问不同的对象和字段，以及可以返回，插入，编辑，删除哪些数据。GraphQL API的控制由这些权限配置控制。【TODO：元数据-权限集、元数据-个人资料、元数据-目的-允许 链接未加】
 
 为了支持权限控制，您应该根据要求传递`token`或`userSession`标识当前用户，请参阅[授权GraphQL API](/developer/api/graphql_auth)以获取更多信息。
 
-您可以使用GraphQL API来[查询](/developer/api/graphql_query)，[插入](/developer/api/graphql_add)，[编辑](/developer/api/graphql_edit)和[删除](/developer/api/graphql_delete)您有权访问的数据。
+您可以使用GraphQL API来[查询](/developer/api/graphql_query)，[插入](/developer/api/graphql_add)，[编辑](/developer/api/graphql_edit)和[删除](/developer/api/graphql_delete)您有权访问的数据。 -->
 
-## GraphQL客户端
+您可以通过URL访问GraphQL接口，也可以通过客户端的方式，具体方式如下：
 
-假设您已经使用端口5000启动了Steedos的本地服务，那么您可以使用`http://localhost:5000/graphql`来访问GraphQL客户端。
+## URL访问GraphQL
+
+默认以“ip：localhost”，“端口：5000”启动服务
+
+### URL
+
+```js
+POST 'http://localhost:5000/graphql'
+```
+
+### 请求参数
+
+以 JSON 格式传入请求参数。
+
+|  Param   |  Required   | Type  | Description  |
+|  ----  |  ----  |  ----  |  ----  |
+|  query   | true  | string | 要传入的 GraphQL 脚本 |
+
+## 客户端访问GraphQL
+
+假设您已经使用端口5000启动了华炎魔方的本地服务，那么您可以使用`http://localhost:5000/graphql`来访问GraphQL客户端。
 
 在GraphQL客户端中，您可以在左侧面板中输入GraphQL脚本，然后通过单击页面顶部的运行按钮来运行它。
 
