@@ -12,8 +12,14 @@ POST 'http://localhost:5000/accounts/logout'
 
 ### 请求参数
 
-无
+通过 Header Authorization 传入 API Key 的值。
+
+例如：
+
+```shell
+Authorization : Bearer apikey,Gooseneoeu7ABoJC0FQq4Q5DcqNPebL87Jyc27NMCrd
+```
 
 ### 返回结果
 
-无
+1

@@ -1,5 +1,6 @@
 ---
-title: 概述
+title: GraphQL API
+sidebar_label: 概述
 ---
 <!-- 
 当你在 Steedos 中配置了对象以后，Steedos 为你自动生成 [GraphQL](http://www.graphql.org/) API。
@@ -85,7 +86,7 @@ app.listen(3000)
 
 在Steedos中配置对象时，会自动为您生成[GraphQL API](https://graphql.org/)。
 
-使用GraphQL API，您可以要求所需的确切信息。详情参考[GraphQL](https://graphql.org/)。
+使用GraphQL API，您可以要求所需的确切信息。详情参考[GraphQL API](https://graphql.org/)。
 
 ## 数据权限
 
@@ -97,7 +98,7 @@ Steedos支持多种权限配置，例如[Permission Set](/docs/metadata/permissi
 
 ## GraphQL客户端
 
-假设您已经使用端口3000启动了Steedos的本地服务，那么您可以使用`http://localhost:3000/graphql`来访问GraphQL客户端。
+假设您已经使用端口5000启动了Steedos的本地服务，那么您可以使用`http://localhost:5000/graphql`来访问GraphQL客户端。
 
 在GraphQL客户端中，您可以在左侧面板中输入GraphQL脚本，然后通过单击页面顶部的运行按钮来运行它。
 
