@@ -111,7 +111,7 @@ brew services restart mongodb-community@4.2
 yarn install
 ```
 
-新建配置文件.env.local，参考[.env](env): 环境变量配置文件，可以配置端口、URL 等环境变量，[steedos-config.yml](steedos_config): 项目配置文件，可以配置数据源、插件等参数。
+新建配置文件.env.local，参考[.env](env): 环境变量配置文件，可以配置端口、URL 等环境变量，[steedos-config.yml](/help/deploy/steedos-config): 项目配置文件，可以配置数据源、插件等参数。
 
 启动服务：
 

@@ -6,7 +6,7 @@ title: 对象权限
 
 ### 对象权限
 
-在以 .object.yml 结尾的[业务对象](object)描述文件中，可以为[权限集](/help/permission_set)对应的用户设定对象级别的权限。
+在以 .object.yml 结尾的[业务对象](https://www.steedos.org/docs/metadata/object/summary/)描述文件中，可以为[权限集](https://www.steedos.org/docs/metadata/permission_set)对应的用户设定对象级别的权限。
 
 ```yml
 permission_set:
