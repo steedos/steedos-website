@@ -1,11 +1,11 @@
 ---
-title: OData 简介
+title: OData API
+sidebar_label: 概述
 ---
 
 开放数据协议（Open Data Protocol，缩写OData）是一种描述如何创建和访问Restful服务的OASIS标准。该标准由微软发起，前三个版本1.0、2.0、3.0都是微软开放标准。第四个版本4.0于2014年3月17日在OASIS投票通过成为开放工业标准。
 
 Steedos API 遵循 OData 协议，开发人员定义的所有业务对象，均可自动生成标准 OData 接口。
-
 
 ## 访问地址
 
@@ -14,6 +14,7 @@ Steedos API 遵循 OData 协议，开发人员定义的所有业务对象，均�
 <!-- When using endpoints that require a user id, the string `me` can be used in place of the user id to indicate the action is to be taken for the logged in user. -->
 
 ## 接口返回状态码说明
+
 - 200：请求执行成功
 - 400：无法成功解析请求，URL在语法或语义上可能不正确
 - 401：未进行身份验证
