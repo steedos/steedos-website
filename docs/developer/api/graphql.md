@@ -116,6 +116,28 @@ POST 'http://localhost:5000/graphql'
 |  ----  |  ----  |  ----  |  ----  |
 |  query   | true  | string | 要传入的 GraphQL 脚本 |
 
+示例如下：
+
+```yml
+ curl \
+   -X POST http://192.168.0.95:5080/graphql
+   -b Authorization : Bearer apikey,Gooseneoeu7ABoJC0FQq4Q5DcqNPebL87Jyc27NMCrd
+   -d query : mutation{task__insert(data:{name:"Task One",space:"KCBjAEGRNQbfMBSpu"}){name,_id}}
+```
+
+返回结果如下：
+
+```yml
+{
+    "data": {
+        "tast__insert": {
+            "name": "Task One",
+            "_id": "60139a86a31008d9b075b74d"
+        }
+    }
+}
+```
+
 ## 客户端访问GraphQL
 
 假设您已经使用端口5000启动了华炎魔方的本地服务，那么您可以使用`http://localhost:5000/graphql`来访问GraphQL客户端。
