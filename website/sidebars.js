@@ -255,8 +255,8 @@ module.exports =
     "低代码培训课程": [
        "videos/lesson-object",
        "videos/lesson-object-relationship", 
-       "videos/metadate",
-       "videos/synchronized-metadate"],
+       "videos/lesson-metadata",
+       "videos/lesson-metadata-synchronize"],
     "审批王": [
        "videos/workflow/admin-contracts", 
        "videos/workflow/user-contracts"]   
