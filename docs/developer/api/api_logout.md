@@ -20,6 +20,16 @@ POST 'http://localhost:5000/accounts/logout'
 Authorization : Bearer apikey,Gooseneoeu7ABoJC0FQq4Q5DcqNPebL87Jyc27NMCrd
 ```
 
-### 返回结果
+示例如下：
 
-1
+```yml
+ curl \
+   -X POST：http://192.168.0.95:5080/accounts/logout
+   -b Authorization : Bearer apikey,Gooseneoeu7ABoJC0FQq4Q5DcqNPebL87Jyc27NMCrd
+```
+
+返回结果：
+
+```yml
+null
+```

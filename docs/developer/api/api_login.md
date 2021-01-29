@@ -9,7 +9,7 @@ title: 登录
 ### URL
 
 ```js
-POST 'http://localhost:5000/api/v4/users/login'
+POST 'http://localhost:5000/accounts/password/login'
 ```
 
 ### 请求参数
@@ -22,11 +22,15 @@ POST 'http://localhost:5000/api/v4/users/login'
 |  password   | true  | string | 用户密码 |
 |  spaceId   | false  | string | 需要登录的工作区 Id，如果不传入，自动选中第一个工作区 |
 
+示例如下：
+
 ```json
+POST：http://192.168.0.95:5080/accounts/password/login
+
 {
-  "username": "jack",
-  "password": "jack_pw",
-  "spaceId": "i6thCRrKWYmdjxpzt"
+  "user": "yinlianghui@hotoa.com",
+  "password": "123456",
+  "spaceId": "KCBjAEGRNQbfMBSpu"
 }
 ```
 
@@ -35,49 +39,34 @@ POST 'http://localhost:5000/api/v4/users/login'
 如果登录成功，Body 返回 userContext 对象。
 
 ```yaml
-userId: dL4KFkLSqqGAozZ6C # 用户Id
-spaceId: i6thCRrKWYmdjxpzt # 当前工作区Id
-name: Jack Zhuang # 用户姓名
-username: jack # 用户名
-mobile: 1865201314 # 用户手机号
-email: 1865201314@qq.com # 用户邮箱
-utcOffset: 8 # 时区差，以小时为单位，北京时间为8
-roles: ["role_name"] # 用户属于的所有权限集
-space:
-  _id: i6thCRrKWYmdjxpzt # 当前工作区Id
-  name: Apple # 当前工作区名称
-is_space_admin: true # 是否是当前工作区管理员
-spaces: [space] # 数组，用户所属的所有工作区
-company:
-  _id: i6thCRrKWYmdjxpzt # 用户所属主分部
-  name: Apple China # 用户所属主分部名称
-  organization: xxx # 用户所属主分部关联组织id
-companies: [company] # 数组，用户所属的所有分部
-company_id: "xxx" # 用户所属主分部id值
-company_ids: ["xxx"] # 数组，用户所属的所有分部id值
-organization:
-  _id: i6thCRrKWYmdjxpzt
-  name: Sales # 用户所属部门
-  fullname: Apple China/Sales # 用户所属部门的全称
-  company_id: xxx # 用户所属部门关联分部id
-organizations: [organization] # 数组，用户所属的所有部门
-```
-
-### Header 返回结果
-
-Header 返回 X-Space-Token。
-
-```shell
-X-Space-Token: i6thCRrKWYmdjxpzt,392mkylUmFyNTRLR3aSTbsyM287On8bTULh-GDO1sH_
-```
-
-### Cookie 返回结果
-
-如果从浏览器登录，自动为浏览器设置以下 Cookie。
-
-```shell
-X-User-Id: dL4KFkLSqqGAozZ6C
-X-Auth-Token: 392mkylUmFyNTRLR3aSTbsyM287On8bTULh-GDO1sH_
-X-Space-Id: i6thCRrKWYmdjxpzt
-X-Space-Token: i6thCRrKWYmdjxpzt,392mkylUmFyNTRLR3aSTbsyM287On8bTULh-GDO1sH_
+{
+    "sessionId": "60139cd4a31008d9b075b74e",
+    "token": "5b99cb8a226395c8c42f5ad839c2f1d3ceb738012a01c3d7f0c13c922a2969c911ac40d6ad8085cdecabf1",
+    "tokens": {
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTE4OTgwNjgsImV4cCI6MTYxMjUwMjg2OH0.gvHgtZ45J4UwgAA7UMPNnIvT9YqgE1s6DzpA3urz7_I",
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InRva2VuIjoiNWI5OWNiOGEyMjYzOTVjOGM0MmY1YWQ4MzljMmYxZDNjZWI3MzgwMTJhMDFjM2Q3ZjBjMTNjOTIyYTI5NjljOTExYWM0MGQ2YWQ4MDg1Y2RlY2FiZjEiLCJpc0ltcGVyc29uYXRlZCI6ZmFsc2UsInVzZXJJZCI6IjVmZGJlMmE2NzQ0N2ZmMTFlZDU4NTFlNSJ9LCJpYXQiOjE2MTE4OTgwNjgsImV4cCI6MTYxOTY3NDA2OH0.MFvxalr2DA3AS39Ehstq4x_4rpm66Uhxgs2tv449nyM"
+    },
+    "user": {
+        "_id": "5fdbe2a67447ff11ed5851e5",
+        "name": "Litant",
+        "locale": "zh-cn",
+        "verifyCode": "",
+        "created": "2020-12-17T22:58:46.908Z",
+        "modified": "2020-12-17T22:58:46.908Z",
+        "email": "yinlianghui@hotoa.com",
+        "email_verified": null,
+        "emails": [
+            {
+                "address": "yinlianghui@hotoa.com",
+                "verified": null
+            }
+        ],
+        "steedos_id": "5fdbe2a67447ff11ed5851e5",
+        "utcOffset": 8,
+        "last_logon": "2021-01-29T05:19:07.666Z",
+        "lockout": false,
+        "login_failed_number": 0,
+        "id": "5fdbe2a67447ff11ed5851e5"
+    }
+}
 ```
