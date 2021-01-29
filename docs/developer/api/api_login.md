@@ -18,7 +18,7 @@ POST 'http://localhost:5000/api/v4/users/login'
 
 |  Param   |  Required   | Type  | Description  |
 |  ----  |  ----  |  ----  |  ----  |
-|  username   | true  | string | 可传入用户名、邮箱或手机号 |
+|  user   | true  | string | 可传入用户名、邮箱或手机号 |
 |  password   | true  | string | 用户密码 |
 |  spaceId   | false  | string | 需要登录的工作区 Id，如果不传入，自动选中第一个工作区 |
 
