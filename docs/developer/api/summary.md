@@ -10,9 +10,7 @@ title: 总览
 
 ### 获取 API Key
 
-由于接口验证是以 API Key 作为 Token 进行验证，因此需要先获取 API Key。
-
-默认以“ip：localhost”，“端口：5000”启动本地服务后，登录并打开页面：http://localhost:5000/app/admin/api_keys/grid/all， 点击右上角“创建API Key”，然后点击“复制API Key”即可获取 API Key。
+由于接口验证是以 API Key 作为 Token 进行验证，因此需要先获取 API Key。可以在设置-个人账户设置-API Key菜单下，获取用户的API Key。
 
 ### 设置 Header
 
