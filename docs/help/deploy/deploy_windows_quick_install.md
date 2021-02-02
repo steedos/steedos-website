@@ -4,126 +4,76 @@ title: Windows 快速安装
 
 ## 支持平台
 
-项目支持在以下 64 位操作系统中运行：
-
-- Windows Server 2019
-- Windows 10 / Windows Server 2016
-- Windows 8.1 / Windows Server 2012 R2
-- Windows 8 / Windows Server 2012
-- Windows 7 / Windows Server 2008 R2
+本安装程序支持在 Windows 7 或更高版本的 64 位操作系统中运行：
 
 ## 下载
 
-点击下载执行程序压缩包 [steedos-v1.23-win-x64.zip](https://www-steedos-com.oss-cn-beijing.aliyuncs.com/steedos/platform/steedos-v1.23-win-x64.zip)
+点击下载执行程序压缩包 [steedos-v1.23-win-x64.zip](https://www-steedos-com.oss-cn-beijing.aliyuncs.com/steedos/platform/steedos-v1.23-win-x64.zip) 解压缩到服务器硬盘，即可完成安装。
 
-**解压后目录主要结构为：**
+解压后目录主要结构为：
 
-![目录结构](/assets/windows/windows01.png)
+## 项目目录
+
+```sh
+steedos-project-root
+├── bin
+│   └── start_steedos.bat
+├── db
+├── storage
+├── steedos-app
+├── steedos-packages
+├── .env
+├── .gitignore
+├── package.json
+├── README.md
+├── server.js
+├── steedos-config.yml
+└── yarn.lock
+```
 
 - `bin` 存放系统依赖的执行程序；
+- `bin\start_steedos.bat` 用于启动华炎魔方服务；
 - `db` 存放数据库数据；
-- `node_modules` 存放系统运行所需二进制包；
-- `public` 公共类；
-- `steedos-app` 应用层；
-- `steedos-packages` 存放安装的应用，如`steedos-app-crm.package`等`.package`后缀的文件；
 - `storage` 存放系统中上传的文件；
-- `.env` 是系统的配置文件可在此文件中配置端口、访问地址等；
-- `.gitignore` git忽略文件；
-- `.npmignore` npm忽略文件；
-- `1-启动数据库.bat` 用于启动数据库服务；
-- `2-启动华炎魔方.bat` 用于启动华炎魔方服务；
-- `package.json` 服务配置；
-- `README.md` 备注；
-- `server.js` 服务脚本；
-- `steedos-config.yml` 配合.env 文件使用的配置文件；
-- `yarn.lock` yarn临时文件；
-
-## 启动数据库
-
-先双击运行 `1-启动数据库.bat`保持窗口打开，看到下图信息表示启动成功：
-
-![数据库启动](/assets/windows/数据库启动.png)
-
-## 安装应用
-
-<!-- 您可以访问 [应用市场](https://www.steedos.com/appstore) 或下载示例应用 -->
-**应用列表：**
-
-- [审批王]
-- [合同管理](https://github.com/steedos/steedos-app-contract/releases/download/v1.23.0-alpha.14/steedos-app-contract.package)
-- [销售管理]
-- [采购管理]
-- [费控管理]
-- [项目管理](https://github.com/steedos/project-management-app/releases/download/v1.23.0-alpha.16/project-management-app.package)
-
-选择想要安装的应用，将下载好的 **.package** 文件移至本地的 **steedos-packages** 文件夹下
-
-![subscription](/assets/windows/windows02.png)
-**例如：** 选择下载项目管理，将项目管理的 **.package** 文件 **project-management-app.package** 移至本地的 **steedos-packages**文件夹下即可
-
-![subscription](/assets/windows/windows03.png)
+- `public`: 此文件夹用于保存静态资源文件，服务启动是会自动加载。
+- `steedos-app`: 用于保存项目元数据和源码，华炎魔方启动是会自动加载其中的元数据。使用华炎魔方DX工具同步元数据时，默认同步到此文件夹中。
+- `steedos-packages`: 当你的项目需要分包管理时，可以使用此文件夹。你也可以把第三方软件包复制到此文件夹中，华炎魔方启动时会自动加载其中的元数据。
+- `.env`: 环境变量配置文件，可以配置端口、URL等环境变量。
+- `.env.local``: 可以手工创建此文件，用于保存本地开发环境的配置。此文件不会上传到GitHub中。
+- `steedos-config.yml`: 华炎魔方配置文件，具体参考 (官方文档)[https://www.steedos.com/help/deploy/steedos-config]。
+- `package.json`: 用于配置本项目依赖的npm包。如果需要升级 steedos 内核版本，也是修改此文件。
 
 ## 运行项目
 
-然后确保数据库启动成功后，双击运行`2-启动华炎魔方.bat`保持窗口打开，看到下图信息表示服务启动成功:
+然后确保数据库启动成功后，双击运行`bin\steedos.bat`保持窗口打开。
 
-![项目启动](/assets/windows/项目启动.png)
+服务启动完成后，会自动使用默认浏览器打开地址 **http://127.0.0.1:3000/** 。
 
-服务会自动使用默认浏览器打开地址 **http://127.0.0.1:5000/** ，创建账号后即可使用华炎魔方
+系统初始安装时没有任何数据，您可以先注册一个账户、创建一个企业。您注册的账户自动会成为该企业的管理员。
 
 :::note 提示
 若弹出防火墙询问窗口，点击允许运行即可。
 :::
 
-## 常见问题解答
 
-### Address already in use
+## 数据库
 
-启动数据库报错：`Failed to set up listener: SocketException: Address already in use`。
+华炎魔方使用 MongoDB 4.2+ 数据库，快速安装版会自动下载并安装 MongoDB 本项目的 bin/mongodb 下。下载完成后自动启动数据库。数据库保存于 db 文件夹中。
 
-这是端口冲突，说明本地 27017 端口已经被占用，很有可能本地已经启动了一个 mongodb 服务，停掉即可
+> 如果你自己部署了MongoDB服务器，可以通过配置 MONGO_URL 环境变量，指定MongoDB数据库连接。
 
-也可以编辑 **1-启动数据库.bat** 在行尾添加 `--port {非27017端口}`，同时修改**.env.local**文件中**MONGO_URL**中的端口
+## 附件
 
-### 找不到 MSVCP140.dll
+华炎魔方中上传的附件默认保存在本项目的 storage 文件夹中。也可以通过修改 steedos-config 更改保存路径，或是保存到阿里云或S3存储中。
 
-启动数据库报错：由于找不到 MSVCP140.dll，无法继续执行代码。重新安装程序可能会解决此问题。
+## 参数设置
 
-缺少微软**VC++**运行库文件，去微软官网下载[最新支持的 Visual C++](https://support.microsoft.com/zh-cn/help/2977003/the-latest-supported-visual-c-downloads)
+有一些初始参数是必须设置的，具体请参考 [参数设置](/help/deploy/steedos-config) 
 
-选择 64 位执行程序下载安装，安装后重新启动数据库：
+## 了解更多
 
-![项目启动](/assets/windows/vc++.png)
-
-### cannot write to indexes
-
-启动服务，数据库报错：`MongoError: cannot write to 'steedos.system.indexes'`，报错后数据库自动停止了。
-
-Mongodb 开了 replication 之后没初始化可能会遇到以上错误，请参考 [使用集群模式启动数据库](https://developer.steedos.com/help/deploy/deploy_ubuntu#%E4%BD%BF%E7%94%A8%E9%9B%86%E7%BE%A4%E6%A8%A1%E5%BC%8F%E5%90%AF%E5%8A%A8%E6%95%B0%E6%8D%AE%E5%BA%93)，来初始化数据库。
-
-### Too many open files
-
-您有可能遇到数据库报`Too many open files`的错误，错误日志信息可能如下所示：
-
-```json
-{
-  "t": { "$date": "2020-08-04T10:58:36.840+08:00" },
-  "s": "E",
-  "c": "STORAGE",
-  "id": 22435,
-  "ctx": "initandlisten",
-  "msg": "WiredTiger error",
-  "attr": {
-    "error": 24,
-    "message": "[1596509916:840216][88959:0x10de0edc0], file:collection-0--5658530932290964009.wt, txn-recover: __wt_txn_recover, 852: Recovery failed: Too many open files"
-  }
-}
-```
-
-这通常是由于未设置`UNIX ulimit Settings`造成的，详细说明参考 [ulimit Considerations](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/#run-mongodb-community-edition)。
-
-`UNIX ulimit Settings`的推荐配置方式可以参考 [Recommended ulimit Settings](https://docs.mongodb.com/manual/reference/ulimit/#recommended-ulimit-settings)，里面有提到可能需要重启数据库才能生效，请不要忘记。
-
-## 另请参考
-
-- [参考文档](/help)
+- [视频](https://www.steedos.com/videos/)
+- [安装部署](https://www.steedos.com/help/deploy/)
+- [设置与维护华炎魔方](https://www.steedos.com/help/admin)
+- [开发文档](https://www.steedos.com/developer)
+- [华炎魔方平台源码](https://github.com/steedos/steedos-platform/)
