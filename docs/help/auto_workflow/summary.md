@@ -18,6 +18,8 @@ sidebar_label: 概述
 
 在记录满足工作流规则的所有条件时，则将会执行规则的操作，请参考[执行自动操作](/help/auto_actions/summary)来了解华炎魔方目前支持的操作。
 
+![工作流规则](/assets/help/auto_workflow/工作流规则.png)
+
 ## 工作流注意事项
 
 - 每个工作流规则适用于单个对象。
