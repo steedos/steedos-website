@@ -18,90 +18,110 @@ keywords:
 
 import Video from '@site/src/components/Video';
 import Features from '@site/src/components/Features';
+import FeaturesWide from '@site/src/components/FeaturesWide';
 import FAQ from '@site/src/components/FAQ';
 import Customers from '@site/src/components/Customers';
+import * as Icons from '@site/src/components/HeroIcons/outline';
 
-
-<section className="flex bg-cover bg-no-repeat bg-green-100">
-  <div className="mx-auto px-4 my-12 max-w-screen-xl">
-    <div className="lg:grid lg:grid-cols-10 lg:gap-8">
-      <div className="sm:text-center md:mx-auto lg:col-span-6 lg:text-left">
-        {/* <div className="text-lg font-semibold uppercase tracking-wide text-gray-700 sm:text-lg xl:text-xl">
-          描述式编程
-        </div> */}
-        <h2 className="mt-1 text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-5xl lg:text-5xl xl:text-6xl">
-          华炎魔方
-          <br className="hidden md:inline"/>
-          <span className="text-green-700">开源低代码开发平台</span>
-        </h2>
-        <p className="mt-3 text-base text-gray-700 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-          华炎魔方是基于描述式编程模型的新一代低代码开发平台，只需点击鼠标就能编程。即使是没有编程知识的人也能轻松便捷地创建智能化、移动化的企业应用程序。
-        </p>
-        <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-          <div className="rounded-md shadow">
-            <a href="http://oss.steedos.com/apps/pdfviewer/web/viewer.html?file=http://oss.steedos.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E6%8A%80%E6%9C%AF%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-teal transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10  hover:text-white">
-              技术白皮书
-            </a>
-          </div>
-          <div className="mt-3 sm:mt-0 sm:ml-3">
-            <a href="/form/trial/" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-green-700 bg-green-200 hover:text-green-600 hover:bg-green-300 focus:outline-none focus:shadow-outline-teal focus:border-green-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
-              预约演示
-            </a>
-          </div>
-        </div>
+<main class="py-12 sm:py-12 bg-gray-100">
+  <div class="text-center px-4 max-w-7xl mx-auto ">
+    <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+      <span class="">华炎魔方</span>
+      <span class="text-blue-600">开源</span>
+      <span class="">低代码平台</span>
+    </h1>
+    <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-2xl md:max-w-3xl">
+      华炎魔方基于商业智能和模型驱动，即使是不懂编程的业务人员，也能轻松便捷地创建智能化、移动化的企业应用。
+    </p>
+    <div className="mt-5 sm:mt-8 sm:flex sm:justify-center">
+      <div className="rounded-md shadow">
+        <a href="http://oss.steedos.com/apps/pdfviewer/web/viewer.html?file=http://oss.steedos.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E6%8A%80%E6%9C%AF%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-teal transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10  hover:text-white">
+          技术白皮书
+        </a>
       </div>
-      <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-4 lg:flex lg:items-center">
-        <div className="relative mx-auto w-full lg:max-w-md">
-          <div className="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
-            <Video 
-              poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/steedos-open-source.jpg"
-              autoplay={false}
-              urls={[
-                  {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/steedos-open-source.mp4"},
-              ]}/>
-          </div>
-        </div>
+      <div className="mt-3 sm:mt-0 sm:ml-3">
+        <a href="/form/trial/" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-700 bg-blue-200 hover:text-blue-600 hover:bg-blue-300 focus:outline-none focus:shadow-outline-teal focus:border-blue-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+          预约演示
+        </a>
       </div>
     </div>
-  </div>
-</section>
-<div className="py-16 bg-gray-50 overflow-hidden bg-gray-100">
-  <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
-    <svg className="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4" width="404" height="784" fill="none" viewBox="0 0 404 784">
-      <defs>
-        <pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-          <rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor" />
-        </pattern>
-      </defs>
-      <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" />
-    </svg>
-    <div className="relative">
-      <h3 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-      全新低代码开发方式，代码量减少90%，开发效率提升十倍
-      </h3>
-      <p className="mt-4 max-w-3xl mx-auto text-center text-xl leading-7 text-gray-500">
-      华炎魔方基于商业智能和模型驱动，只需编写少量代码，就能轻松便捷地创建智能化、移动化的企业应用。
-      </p>
-      <div className="relative mx-auto w-full lg:max-w-md mt-4">
-        <div className="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
-          <Video 
-            poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/lowcode.jpeg"
+    <div className="relative mx-auto w-full lg:max-w-3xl mt-4">
+      <div className="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
+        <Video 
+            poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.jpg"
             autoplay={false}
             urls={[
-                {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/lowcode.mp4"},
+                {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.mp4"},
+                {name:"标清", url:"https://vod.steedos.com/ef86bfc1c9314dc086e54cc934efcf75/13d008f336514d028756488d84be7d4d-c89dc504a68a67604ae88b9690fcd8f2-ld.mp4"},
             ]}/>
-        </div>
       </div>
     </div>
   </div>
-</div>
+</main>
+
+<Customers/>
+
+
+
+<FeaturesWide
+  header="如何实现点击鼠标、就能编程？"
+  title="华炎魔方中的元数据深度解析"
+  description="华炎魔方使用元数据定义对象，字段，配置，代码，逻辑和页面布局，元数据可以导入到华炎魔方中，可以在可视化界面中进行修改，也可以同步到源码进行深度开发。"
+  containerClass="bg-white"
+  imageUrl="https://vod.steedos.com/image/cover/273D6FB669D94148889E5FE7A26A3D13-6-2.png"
+  videoUrl="https://vod.steedos.com/video/40072181-177297095c2-0000-0000-009-c59e0.mp4"
+  theme="blue"
+  items={[
+    {
+      icon: Icons.BadgeCheck,
+      title: "数据结构", 
+      description: "创建自定义对象，以存储贵组织独有的信息。"
+    },
+    {
+      icon: Icons.Collection,
+      title: "验证规则", 
+      description: "验证用户在记录中输入的数据是否符合您的要求。"
+    },
+    {
+      icon: Icons.Bell,
+      title: "工作流规则", 
+      description: "通过工作流，您可以自动化标准的内部流程，以节省整个组织的时间。"
+    },
+    {
+      icon: Icons.CursorClick,
+      title: "自动化操作", 
+      description: "自动执行某些操作，例如更新字段或发送电子邮件。"
+    },
+    {
+      icon: Icons.ChartSquareBar,
+      title: "批准过程", 
+      description: "比工作流规则更进了一步，您可以指定批准记录所需的一系列步骤。"
+    },
+    {
+      icon: Icons.Key,
+      title: "统计报表", 
+      description: "帮助您分析和理解数据并及时采取行动。"
+    },
+    {
+      icon: Icons.LightBulb,
+      title: "数据权限", 
+      description: "定义了一套企业级的权限模型，帮助用户锁定私有数据。"
+    },
+    {
+      icon: Icons.Chip,
+      title: "代码", 
+      description: "使用代码实现高级业务逻辑，例如触发器、与第三方系统接口等。"
+    },
+  ]}
+/>
 
 <Features 
-  title="数据建模"
+  title="零代码创建自定义应用程序"
   description="华炎魔方内置功能强大的建模引擎，可以任意配置业务字段、列表视图、页面布局，即使是不懂编程的业务人员，也能快速创建智能化、移动化的企业应用程序。"
-  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-object.jpeg"
-  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-object.mp4"
-  imagePosition="left"
+  imageUrl="https://vod.steedos.com/image/cover/D97E503BEA3441D7BD807AF1AC9A95B5-6-2.png"
+  videoUrl="https://vod.steedos.com/ee84c21369c14f58affc3d73aad0f3aa/03dde2aadf164967884697473b985d06-2b35c89e35b0cb2abbca9b19bb09a7fd-ld.mp4"
+  imagePosition="left"  
+  containerClass="bg-gray-50"
   items={[
     {title: "业务对象", description: "业务对象相当于数据库中的表，用于保存业务系统中的核心数据。"},
     {title: "列表视图", description: "通过配置列表视图，最终用户可以快捷的切换多个查询条件。"},
@@ -109,23 +129,41 @@ import Customers from '@site/src/components/Customers';
   ]}
 />
 
+
 <Features 
-  title="模型驱动界面"
-  description="数据建模完成之后，业务系统的原型也就自动生成了。华炎魔方根据业务模型，动态生成业务系统的后端服务接口和前端操作界面。"
-  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-ui.jpeg"
-  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-ui.mp4"
+  title="使用公式执行自动计算"
+  description="华炎魔方内置了类似Excel的公式引擎，通过引入公式，可以为您的应用程序增加业务的自动化判断、计算和处理的过程。"
+  imageUrl="https://vod.steedos.com/image/cover/5ED534383E544E8E908BAF76FA7E0828-6-2.png"
+  videoUrl="https://vod.steedos.com/6f072b894c4045678aa2ad2d5d42a9ae/5700fb41b78241d0bbd1d33d961a215b-be9e268baac6f6619c47773d6d7284bc-ld.mp4"
+  imagePosition="right"
+  containerClass="bg-white"
   items={[
-    {title: "列表视图", description: "在列表视图中浏览、筛选、编辑业务数据。"},
-    {title: "记录查看视图", description: "显示当前记录详细信息，以及相关的子表数据。"},
+    {title: "引用相关表", description: "可以在定义公式，引用相关表的数据。"},
+    {title: "计算与条件判断", description: "通过计算与条件判断函数，实现相对复杂的业务逻辑。"},
+    {title: "累计汇总", description: "自动汇总计算子表中的相关数据。"},
   ]}
 />
 
 <Features 
-  title="低代码开发业务逻辑"
+  title="通过华炎魔方DX，实现元数据版本管理"
+  description="可视化配置的元数据可以和代码中的元数据双向同步，开发人员可以使用熟悉的工具编写代码，管理版本。"
+  imageUrl="https://vod.steedos.com/image/cover/936FB7A788854ED19E7CDCFBBF675A42-6-2.png"
+  videoUrl="https://vod.steedos.com/15b90c474b5144059fa8853c6e6c2149/b772b095c1dc409dbb3601b171e44c33-6c8da88acd355e4122795056acd0d054-ld.mp4"
+  imagePosition="left"
+  containerClass="bg-gray-50"
+  items={[
+    {title: "源码驱动开发", description: "用你熟悉和喜爱的工具（Github、VS Code、Nodejs、React 等等）进行构建。"},
+    {title: "VS Code 插件", description: "源码高亮显示、错误提示、代码段生成、Git版本管理"},
+    {title: "编码调试与测试", description: "和传统企业软件开发一样，编写触发器、服务端API、表单事件等代码，满足个性化需求。"},
+  ]}
+/>
+
+<Features 
+  title="使用代码编写高级业务逻辑"
   description="华炎魔方提供了低代码开发的入口，开发人员通过编写代码，就能实现特定条件下的自动运行、截停、回滚等业务逻辑，让业务在无人值守的情况下自动运转，驱动效率提升。"
   imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-lowcode.jpeg"
   videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-lowcode.mp4"
-  imagePosition="left"
+  imagePosition="right"
   containerClass="bg-gray-100"
   items={[
     {title: "触发器", description: "当服务端执行数据增删改查时，自动触发相关代码。"},
@@ -143,7 +181,7 @@ import Customers from '@site/src/components/Customers';
     </h2>
     <div class="mt-8 flex justify-center">
       <div class="inline-flex rounded-md shadow">
-        <a href="/form/trial" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:text-white hover:bg-green-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+        <a href="/form/trial" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:text-white hover:bg-blue-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
           预约产品演示
         </a>
       </div>
@@ -190,5 +228,4 @@ import Customers from '@site/src/components/Customers';
   ]}
 />
 
-<Customers/>
 <FAQ/>

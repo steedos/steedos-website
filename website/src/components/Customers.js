@@ -9,7 +9,7 @@ class Customers extends React.Component {
 <div class="bg-gray-100">
   <div class="py-8 lg:py-12 relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
     <h2 class="text-center text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
-      成功案例
+      20年来，深受客户信赖
     </h2>
     <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8" data-theme='light'>
       <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50">

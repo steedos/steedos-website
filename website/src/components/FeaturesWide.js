@@ -12,7 +12,7 @@ class FeaturesWide extends React.Component {
       containerClass = ""
 
     if (!imageClass)
-      imageClass = "lg:max-w-xl rounded-lg shadow-lg"
+      imageClass = "lg:max-w-3xl rounded-lg shadow-lg"
 
     if (!theme)
         theme = "green"
