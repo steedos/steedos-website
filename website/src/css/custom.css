@@ -149,6 +149,10 @@ ul, ol {
   opacity: 1;
 }
 
+.menu {
+  background: white;
+}
+
 xg-definition p {
     margin-bottom: 0 !important;
 }

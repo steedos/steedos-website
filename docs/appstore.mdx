@@ -4,7 +4,12 @@ sidebar_label: 概览
 hide_table_of_contents: true
 ---
 
-<span class="text-xl text-gray-500 sm:text-center">华炎与解决方案合作伙伴共同构建的企业应用市场，所有应用均基于华炎魔方开发，可使用华炎魔方平台免费部署运行。</span>
+<div class="text-center mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 py-12 lg:max-w-7xl">
+  <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight md:text-5xl">
+    华炎魔方应用市场
+  </p>
+</div>
+
 
 import Layout from '@theme/Layout';
 import Video from '@site/src/components/Video';
@@ -13,12 +18,8 @@ import Card from '@site/src/components/Card';
 
 <!-- ## 开源应用 -->
 
-<div class="mt-12 grid gap-5 max-w-screen-xl mx-auto">
 
-<Card
-  title="审批王"
-  description="快速部署、有效监控并持续优化各类业务流程。"
-  href="/appstore/labs/workflow"/>
+<div class="mx-auto max-w-md px-4 grid gap-8 sm:max-w-lg sm:px-6 lg:px-8 sm:grid-cols-2 lg:grid-cols-3 sm:max-w-7xl">
 
 <Card
   title="合同管理"
@@ -32,7 +33,7 @@ import Card from '@site/src/components/Card';
 
 <Card
   title="采购管理"
-  description="你可以高效管理从寻源到结算的整个采购流程，同时有效控制采购支出，找到新的省钱之道，并打造健康的供应链。"
+  description="你可以高效管理从寻源到结算的整个采购流程。"
   href="/appstore/labs/purchase"/>
 
 <Card
@@ -45,10 +46,22 @@ import Card from '@site/src/components/Card';
   description="通过项目、任务、里程碑，管理项目的整理生命周期。"
   href="/appstore/labs/project"/>
 
+<Card
+  title="审批王"
+  description="快速部署、有效监控并持续优化各类业务流程。"
+  href="/appstore/labs/workflow"/>
+
 <!-- <Card
   title="会议管理"
   target="_blank"
   description="预约会议室、组织会议，会议通知、冲突提醒。"
   href="https://github.com/steedos/steedos-app-meeting"/> -->
 
+<Card
+  title="OKR 目标管理"
+  description="帮助企业统一全体目标，激发员工积极性。"
+  href="/appstore/labs/okr"/>
+
 </div>
+
+<br/><br/>

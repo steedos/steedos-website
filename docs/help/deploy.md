@@ -1,44 +1,28 @@
 ---
 title: 如何安装华炎魔方？
 sidebar_label: 安装向导
+hide_table_of_contents: true
 ---
 
-## 快速安装
 
-- [Windows 快速安装](/help/deploy/deploy_windows_quick_install): 绿色安装版，解压缩就能运行。
+import Card from '@site/src/components/Card';
 
-## 免安装的云部署方式
+<div class="mt-10 mx-auto max-w-md grid gap-8 sm:max-w-lg lg:grid-cols-1 lg:max-w-7xl">
 
-- [部署到 腾讯云](./deploy/deploy_tencent.md): 可在腾讯云市场中购买免费的华炎魔方来部署到云上，支持远程开发与调试。
-- [部署到 阿里云](./deploy/deploy_aliyun.md): 可在阿里云市场中购买免费的华炎魔方来部署到云上，支持远程开发与调试。
-- [部署到 Heroku](./deploy/deploy_heroku.md): 利用Salesforce提供的免费云服务，部署开发环境。
+  <Card title="Windows 快速安装"
+    description="Windows 快速安装版，解压缩就能运行。也可以用于开发环境。"
+    href="/help/deploy/deploy_windows"/>
 
-## 开发环境安装
+  <Card title="Mac 安装"
+    description="在 Mac 上搭建华炎魔方开发环境。"
+    href="/help/deploy/deploy_mac"/>
 
-- [Windows](./deploy/deploy_windows.md): 通常用于部署开发环境，推荐使用上述 [Windows 快速安装](/help/deploy/deploy_windows_quick_install)，以免去相关运行环境的安装过程，生产环境建议使用Ubuntu。
-- [Mac](./deploy/deploy_mac.md): 通常用于部署开发环境，生产环境建议使用Ubuntu。
-- [Ubuntu](./deploy/deploy_ubuntu.md): 部署到Ubuntu，支持远程开发与调试。
+  <Card title="Docker 安装"
+    description="使用 Docker 运行华炎魔方"
+    href="/help/deploy/deploy_docker"/>
 
-## 生产环境安装
+  <Card title="生产环境集群部署"
+    description="使用 Docker 运行华炎魔方"
+    href="/help/deploy/deploy_cluster"/>
 
-- [Docker 部署](./deploy/deploy_docker.md): 可选使用docker方式部署生产环境。
-- [集群部署](./deploy/deploy_cluster.md): 对于用户量大的系统，还可以采用多服务器集群部署模式。
-
-## 配置文件
-
-华炎魔方使用`steedos-config.yml`作为配置文件，可在其中配置数据源、启用插件、登录规则、邮件账户等，与`.env`或`.env.local`作为环境变量配置文件一起定义整个项目的访问地址、端口号等属性，详情请参考 [配置文件](./deploy/steedos-config)。
-
-## 克隆并运行开源项目
-
-您可以部署以下模版项目，或是 [使用命令行创建你自己的项目](/developer/create_project/index)。
-
-- [华炎项目管理系统](https://github.com/steedos/project-management-app)
-- [华炎办公](https://github.com/steedos/steedos-project-oa)
-- [华炎合同管理系统](https://github.com/steedos/steedos-app-contract)
-- [华炎客户关系管理系统](https://github.com/steedos/steedos-app-crm)
-
-更多开源项目请前往 [华炎魔方应用市场](https://www.steedos.com/appstore/)。
-
-:::note 提示
-以上项目如需个性化定制，请在项目主页右上角点 [Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)，然后将Fork到个人账户下的项目克隆到本地，以便提交修改。
-:::
+</div>

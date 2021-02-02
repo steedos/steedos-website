@@ -36,7 +36,7 @@ class FeaturesWide extends React.Component {
         {header && (
             <p class={"text-base leading-6 font-semibold tracking-wide uppercase " + "text-" + theme + "-600"}>{header}</p>
         )}
-        <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+        <h3 class="mt-4 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 lg:text-5xl sm:leading-10">
             {title}
         </h3>
         {description && (

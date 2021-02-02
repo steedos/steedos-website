@@ -1,5 +1,5 @@
 ---
-title: Mac 开发环境
+title: Mac 安装
 ---
 
 本教程以 [steedos-project-oa](https://github.com/steedos/steedos-project-oa)为例，指导你如何在 Mac 系统中部署和运行基于华炎魔方开发的项目。

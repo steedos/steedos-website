@@ -25,17 +25,17 @@ class Card extends React.Component {
               <img className="object-cover" src={image} alt=""/>
             </div>
             )}
-            <div className="flex-1 bg-white p-4 flex flex-col justify-between">
+            <div className="flex-1 p-4 flex flex-col justify-between">
               <div className="flex-1">
                   {category && (
                   <div className="text-sm leading-5 font-medium text-blue-600">
                   {category}
                   </div>)}
-                  <div className="mt-1 text-xl leading-7 font-semibold text-gray-900">
+                  <div className="my-2 text-2xl leading-7 font-semibold text-gray-900">
                       {title}
                   </div>
                   {description && (
-                  <div className="mt-1 text-sm leading-6 text-gray-500">
+                  <div className="my-2 text-md leading-6 text-gray-500">
                       {description}
                   </div>)}
               </div>

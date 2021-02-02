@@ -130,7 +130,7 @@ module.exports = {
         href: '/cn/'
       },
       items: [
-        {to: 'platform/', label: '平台', position: 'left', activeBasePath: 'platform/none-active',
+        {to: 'platform/', label: '低代码平台', position: 'left', activeBasePath: 'platform/none-active',
           // items: [
           //   // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
           //   {to: 'platform/', label: '平台概览', position: 'left'},
@@ -162,10 +162,10 @@ module.exports = {
           //   {to: 'https://github.com/steedos/steedos-platform/', label: '开源项目', position: 'left',},
           // ]
         },
-        {to: 'help/deploy/', label: '安装', position: 'left'},
         {to: 'videos/', label: '视频', position: 'left',},
+        {to: 'help/deploy/', label: '本地部署', position: 'left'},
         // {to: 'blog', label: '动态', position: 'left'},
-        {to: 'form/trial', label:'试用',position: 'left'},
+        // {to: 'form/trial', label:'试用',position: 'left'},
         // {to: 'form/contact', label: '联系我们', position: 'left'},
         // {to: '/platform/pricing', label: '报价', position: 'left',},
         {label: '登录', position: 'right', to: 'https://cn.steedos.com'},
