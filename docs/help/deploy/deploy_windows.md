@@ -39,7 +39,7 @@ steedos-project-root
 - `steedos-app`: 用于保存项目元数据和源码，华炎魔方启动是会自动加载其中的元数据。使用华炎魔方DX工具同步元数据时，默认同步到此文件夹中。
 - `steedos-packages`: 当你的项目需要分包管理时，可以使用此文件夹。你也可以把第三方软件包复制到此文件夹中，华炎魔方启动时会自动加载其中的元数据。
 - `.env`: 环境变量配置文件，可以配置端口、URL等环境变量。
-- `.env.local``: 可以手工创建此文件，用于保存本地开发环境的配置。此文件不会上传到GitHub中。
+- `.env.local`: 可以手工创建此文件，用于保存本地开发环境的配置。此文件不会上传到GitHub中。
 - `steedos-config.yml`: 华炎魔方配置文件，具体参考 (官方文档)[https://www.steedos.com/help/deploy/steedos-config]。
 - `package.json`: 用于配置本项目依赖的npm包。如果需要升级 steedos 内核版本，也是修改此文件。
 
