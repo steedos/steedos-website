@@ -35,7 +35,7 @@ class Card extends React.Component {
             </div>
             )}
             
-            <div className="p-4 flex">
+            <div className="p-6 flex">
 
               {icon && (
                 <div class="flex-shrink-0 mr-4">
@@ -44,7 +44,7 @@ class Card extends React.Component {
                 </div>
               </div>
               )}
-              <div className="">
+              <div className="place-self-center">
                   {category && (
                   <div className="text-sm leading-5 font-medium text-blue-600">
                   {category}

@@ -76,8 +76,8 @@ class Hero extends React.Component {
         )}
 
         {items && (
-        <div class="mt-10">
-        <ul class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+        <div class="mt-10 text-center">
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3">
         {items.map(({ title, description, href, icon }, idx) => {
             let Icon = (<div/>)
             if (icon instanceof Function)
@@ -87,30 +87,27 @@ class Hero extends React.Component {
             else
                 Icon = (<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>);
             
-            let Title = title;
-            if (href)
-                Title = (<a href={href}>{title}</a>)
             return (
-            <li>
-            <div class="flex">
-                <div class="flex-shrink-0">
-                    <div class={"flex items-center justify-center h-12 w-12 rounded-md text-white "  + "bg-" + theme + "-500"}>
-                        {Icon}
+            <div class="pt-6">
+                <a href={href} class={`flow-root bg-gray-100 rounded-lg px-6 pb-8 border border-gray-200 hover:border-${theme}-500`}>
+                    <div class="-mt-6">
+                        <div class="">
+                            <div class={`inline-flex items-center justify-center p-3 bg-${theme}-500 rounded-md shadow-lg text-white`}>
+                                {Icon}
+                            </div>
+                        </div>
+                        <div class="mt-8 text-xl font-medium text-gray-900 tracking-tight">
+                            {title}
+                        </div>
+                        <div class="mt-5 text-base text-gray-500">
+                            {description}
+                        </div>
                     </div>
-                </div>
-                <div class="ml-4">
-                    <div class="text-lg leading-6 font-medium text-gray-900">
-                        {Title}
-                    </div>
-                    <div class="mt-2 text-base text-gray-500">
-                        {description}
-                    </div>
-                </div>
+                </a>
             </div>
-            </li>
             )}
         )}
-        </ul>
+        </div>
         </div>
         )}
     </div>
