@@ -256,6 +256,7 @@ module.exports =
        "videos/lesson-object",
        "videos/lesson-object-relationship", 
        "videos/formula-calculates",
+       "videos/validation_rules",
        "videos/lesson-metadata",
        "videos/lesson-metadata-synchronize"],
     "审批王": [

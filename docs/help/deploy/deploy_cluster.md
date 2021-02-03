@@ -2,7 +2,7 @@
 title: 集群部署
 ---
 
-本教程以 [steedos-project-oa](https://github.com/steedos/steedos-project-oa) 为例，指导你如何在 centos 中使用集群方式部署项目。
+本教程指导你如何在 centos 中使用集群方式部署项目。
 
 ## 服务器分配
 
@@ -33,15 +33,9 @@ upstream creatorws {
     # 108
     server 192.168.0.108:5040;
     server 192.168.0.108:5041;
-    server 192.168.0.108:5042;
-    server 192.168.0.108:5043;
-    server 192.168.0.108:5044;
     # 208
     server 192.168.0.208:5040;
     server 192.168.0.208:5041;
-    server 192.168.0.208:5042;
-    server 192.168.0.208:5043;
-    server 192.168.0.208:5044;
 }
 
 # app server
@@ -76,28 +70,6 @@ server {
 
 > upstream `creatorws`配置了 10 个供访问的服务实例，其中 5 个位于 108 服务器，5 个位于 208 服务器，用于负载均衡
 
-## 应用实例集群
-
-在 108 和 208 服务器上进入 steedos-project-oa 项目目录，配置.env.local 相关环境变量，如：
-
-```env
-MONGO_URL=mongodb://username:password@192.1.1.216:27017,192.1.1.217:27017,192.1.1.218:27017/yourdbname?replicaSet=steedos
-PORT=5040
-ROOT_URL=https://cn.steedos.com/
-MONGO_OPLOG_URL=mongodb://127.0.0.1:27017/local
-MULTIPLE_INSTANCES_COLLECTION_NAME=workflow_instances
-STEEDOS_CFS_STORE=local
-STEEDOS_STORAGE_DIR=./storage
-STEEDOS_WORKFLOW_URL=https://cn.steedos.com/
-STEEDOS_CREATOR_URL=https://cn.steedos.com/
-```
-
-使用[docker-compose](https://docs.docker.com/compose/install/)启动应用：
-
-```bash
-docker-compose up -d
-```
-
 ## mongodb 数据库集群
 
 使用 mongodb 的[Replication](https://docs.mongodb.com/manual/replication/)模式搭建集群
@@ -119,6 +91,55 @@ use admin
 db.createUser({user: "adminUsername", pwd: "adminPassword", roles: [ { role: "userAdminAnyDatabase", db: "admin" } ] } )
 use steedos
 db.createUser({user: "userUsername", pwd: "userPassword", roles: [ { role: " readWrite", db: "yourdbname" }, { role: " read", db: "local"} ] } )
+```
+
+## 应用实例集群
+
+在 108 和 208 服务器上进入 `/srv` 目录，新建 `.env.local` 并配置相关环境变量，如：
+
+```env
+MONGO_URL=mongodb://username:password@192.1.1.216:27017,192.1.1.217:27017,192.1.1.218:27017/yourdbname?replicaSet=steedos
+PORT=5040
+ROOT_URL=https://cn.steedos.com/
+MONGO_OPLOG_URL=mongodb://127.0.0.1:27017/local
+MULTIPLE_INSTANCES_COLLECTION_NAME=workflow_instances
+STEEDOS_CFS_STORE=local
+STEEDOS_STORAGE_DIR=./storage
+STEEDOS_WORKFLOW_URL=https://cn.steedos.com/
+STEEDOS_CREATOR_URL=https://cn.steedos.com/
+```
+
+确保本地已安装[docker](https://docs.docker.com/get-docker/)和[docker-compose](https://docs.docker.com/compose/install/)
+
+新建 docker-compose.yml：
+
+```yml
+version: "2"
+
+services:
+  steedos1:
+    build: .
+    image: steedos/steedos-project-template:1.23
+    restart: unless-stopped
+    ports:
+      - "5040:5040"
+    volumes:
+      - /srv/workflow/cfs:/storage
+      - ./.env.local:/app/.env.local
+  steedos2:
+    image: steedos/steedos-project-template:1.23
+    restart: unless-stopped
+    ports:
+      - "5041:5040"
+    volumes:
+      - /srv/workflow/cfs:/storage
+      - ./.env.local:/app/.env.local
+```
+
+使用 docker-compose 启动应用：
+
+```bash
+docker-compose up -d
 ```
 
 ## CentOS7 搭建 NTP 服务器
