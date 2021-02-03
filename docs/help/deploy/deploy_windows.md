@@ -58,7 +58,7 @@ steedos-project-root
 
 ## 数据库
 
-华炎魔方使用 MongoDB 4.2+ 数据库，快速安装版会自动下载并安装 MongoDB 本项目的 bin/mongodb 下。下载完成后自动启动数据库。数据库保存于 db 文件夹中。
+华炎魔方使用 MongoDB 4.2+ 数据库，快速安装版会自动下载并安装 MongoDB 到本项目的 bin/mongodb 下。下载完成后自动启动数据库。数据库保存于 db 文件夹中。
 
 > 如果你自己部署了MongoDB服务器，可以通过配置 MONGO_URL 环境变量，指定MongoDB数据库连接。
 

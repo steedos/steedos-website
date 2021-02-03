@@ -2,31 +2,29 @@
 title: Mac 安装
 ---
 
-本教程以 [steedos-project-oa](https://github.com/steedos/steedos-project-oa)为例，指导你如何在 Mac 系统中部署和运行基于华炎魔方开发的项目。
+本教程以 [steedos-project-template](https://github.com/steedos/steedos-project-template)为例，指导你如何在 Mac 系统中部署和运行基于华炎魔方开发的项目。
 
 部署完成后可在 Mac 环境下开发。
 
-## 搭建运行环境
+## 搭建开发环境
 
-需要安装 [Github Desktop](https://desktop.github.com/)、[node-v12.16.3](https://nodejs.org/download/release/v12.19.1/node-v12.19.1.pkg)、[mongodb-v4.2](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)、[Robo 3T](https://robomongo.org/)、[Visual Studio Code](https://code.visualstudio.com/)、[brew](https://brew.sh/)
+### 安装开发工具
 
-### 安装 Github Desktop
+[Github 客户端](https://desktop.github.com/)
 
-安装[Github 桌面客户端](https://desktop.github.com/)
+[Mongodb 数据库图形化管理工具 Robo 3T](https://robomongo.org/download)
 
-### 安装 node-v12.16.3
+[代码编辑工具 Visual Studio Code](https://code.visualstudio.com/)
 
-访问 nodejs[官网](https://nodejs.org/en/)下载并安装 node：
+### 安装运行环境
 
-![安装node](/assets/windows/安装node.png)
+下载[node-v12.19.1](https://nodejs.org/download/release/v12.19.1/node-v12.19.1.pkg)并安装：
 
 安装完成之后打开终端安装 [yarn](https://yarnpkg.com/)：
 
 ```bash
 sudo npm install -g yarn
 ```
-
-Mac环境需要加上sudo可解决权限问题，命令执行后再输入电脑开机密码即可完成安装。
 
 国内用户配置[淘宝 NPM 镜像](https://developer.aliyun.com/mirror/NPM)以提高 NPM 包下载速度：
 
@@ -35,88 +33,62 @@ npm config set registry https://registry.npm.taobao.org
 yarn config set registry https://registry.npm.taobao.org
 ```
 
-### 安装 mongodb-v4.2
-
-根据官方向导，安装最新的[mongodb4.2](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)，数据库服务默认开机启动
-
-### 使用集群模式启动数据库
-
-编辑配置文件:
-
-```bash
-vim /usr/local/etc/mongod.conf
-# 找到replication部分，去掉#并添加一行配置
-replication:
-#以下配置必须缩进两个空格
-  replSetName: rsSteedos
-```
-
-保存后重启数据库才会生效：
-
-```bash
-brew services restart mongodb-community@4.2
-```
-
-初始化数据库：
-
-```bash
-# 首先进入mongo控制台
-mongo
-# 执行初始化函数
-rs.initiate()
-# 查看配置
-rs.conf()
-# 查看集群状态，确保members里有一个primary，则表示配置成功
-rs.status()
-```
-
-### 安装 Robo 3T
-
-安装 mongodb 数据库图形化管理工具[Robo 3T](https://robomongo.org/)
-
-### 安装 Visual Studio Code
-
-安装代码编辑工具[Visual Studio Code](https://code.visualstudio.com/)
-
 ## 启动服务
-
-### 启动数据库
-
-数据库服务默认开机启动，可通过 brew 命令管理：
-
-```bash
-# 停止
-brew services stop mongodb-community@4.2
-# 启动
-brew services start mongodb-community@4.2
-# 重启
-brew services restart mongodb-community@4.2
-```
 
 ### 克隆项目
 
-请访问 https://github.com/steedos/steedos-project-oa 先在项目主页右上角点 [Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) 项目，然后将已经 fork 到自己账号下的项目 clone 到本地，以便提交修改：
-
-![clone项目](/assets/windows/clone项目.png)
+请访问 https://github.com/steedos/steedos-project-template 先在项目主页右上角点 [Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) 项目，然后将已经 fork 到自己账号下的项目 clone 到本地，以便提交修改。
 
 ### 启动应用
 
-打开 Github Desktop 使用 Visual Studio Code 打开项目：
-
-![打开项目](/assets/windows/打开项目.png)
-
-在 Visual Studio Code 的终端中安装依赖包：
+首先使用 Visual Studio Code 打开你本地的项目，并在 Visual Studio Code 的**终端(Terminal)**中安装依赖包：
 
 ```bash
 yarn install
 ```
 
-新建配置文件.env.local，参考[.env](env): 环境变量配置文件，可以配置端口、URL 等环境变量，[steedos-config.yml](/help/deploy/steedos-config): 项目配置文件，可以配置数据源、插件等参数。
-
-启动服务：
+然后启动服务：
 
 ```bash
 yarn start
 ```
 
-> 也可按 F5 即可使用 debug 模式启动项目
+> 也可按 F5 使用 debug 模式启动项目
+
+终端会打印如下信息，待服务启动完成后，会自动使用默认浏览器打开 ROOT_URL：
+
+```
+*******************************************************************
+*
+*  Initialize Steedos Server ...
+*
+*  VERSION: 1.23.20
+*  PORT: 3000
+*  ROOT_URL: http://localhost:3000
+*  MONGO_URL: mongodb://127.0.0.1:27018/steedos?replicaSet=rsSteedos
+*  PROJECT_DIR: /Users/user/Documents/GitHub/steedos-project-template
+*
+*******************************************************************
+```
+
+## 数据库
+
+华炎魔方使用 MongoDB 4.2+ 数据库，项目启动时会自动下载并安装 MongoDB 到本项目的 bin/mongodb 下。下载完成后自动启动数据库。数据库保存于 db 文件夹中。
+
+> 如果你自己部署了 MongoDB 服务器并以副本集模式启动，可以通过配置 MONGO_URL 环境变量，指定 MongoDB 数据库连接。
+
+## 附件
+
+华炎魔方中上传的附件默认保存在本项目的 storage 文件夹中。也可以通过修改 steedos-config 更改保存路径，或是保存到阿里云或 S3 存储中。
+
+## 参数设置
+
+有一些初始参数是必须设置的，具体请参考 [参数设置](/help/deploy/steedos-config)
+
+## 了解更多
+
+- [视频](https://www.steedos.com/videos/)
+- [安装部署](https://www.steedos.com/help/deploy/)
+- [设置与维护华炎魔方](https://www.steedos.com/help/admin)
+- [开发文档](https://www.steedos.com/developer)
+- [华炎魔方平台源码](https://github.com/steedos/steedos-platform/)
