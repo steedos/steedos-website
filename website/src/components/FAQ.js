@@ -5,7 +5,7 @@ class FAQ extends React.Component {
     render() {
         return (
             <div class="bg-gray-50">
-              <div class="max-w-screen-xl mx-auto pt-12 pb-16 sm:pt-16 sm:pb-20 px-4 sm:px-6 lg:pt-20 lg:pb-28 lg:px-8">
+              <div class="max-w-screen-xl mx-auto pt-12 pb-16 sm:pt-16 sm:pb-20 lg:pt-20 lg:pb-28">
                 <h2 class="text-3xl leading-9 font-extrabold text-gray-900">
                   常见问题解答
                 </h2>

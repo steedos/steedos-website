@@ -221,7 +221,6 @@ export default function Landing() {
   ]}
 />
 
-<FAQ/>
 
 
 </Layout>
