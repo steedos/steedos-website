@@ -21,7 +21,7 @@ class Card extends React.Component {
 
     let Icon = (<div/>)
     if (icon instanceof Function)
-        Icon = icon({class:"h-6 w-6"});
+        Icon = icon({class:"h-8 w-8"});
     else if (icon)
         Icon = icon;
     else
@@ -38,8 +38,8 @@ class Card extends React.Component {
             <div className="p-6 flex">
 
               {icon && (
-                <div class="flex-shrink-0 mr-4">
-                <div class={`flex items-center justify-center h-12 w-12 rounded-md bg-${theme}-500 text-white`}>
+                <div class="flex-shrink-0 mr-2">
+                <div class={`flex items-center justify-center h-8 w-8 rounded-md text-${theme}`}>
                   {Icon}
                 </div>
               </div>
