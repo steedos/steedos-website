@@ -32,7 +32,7 @@ class Hero extends React.Component {
 
 <div class={"py-10 "  + containerClass}>
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="lg:text-center">
+        <div class="md:text-center">
         {header && (
             <div class={"mb-3 text-xl leading-6 font-semibold tracking-wide uppercase " + "text-" + theme + "-600"}>{header}</div>
         )}
@@ -40,7 +40,7 @@ class Hero extends React.Component {
             {title}
         </div>
         {description && (
-        <div class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+        <div class="mt-3 max-w-md md:mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
             {description}
         </div>
         )}

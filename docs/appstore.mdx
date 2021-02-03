@@ -2,46 +2,58 @@
 title: 低代码应用
 sidebar_label: 概览
 hide_table_of_contents: true
+hide_title: true
 ---
-
-基于华炎魔方开发的低代码应用，使用元数据定义数据结构、界面和业务逻辑，您可以随心定制。
 
 import Layout from '@theme/Layout';
 import Video from '@site/src/components/Video';
 import FAQ from '@site/src/components/FAQ';
 import Card from '@site/src/components/Card';
+import * as Icons from '@site/src/components/HeroIcons/outline';
 
 <!-- ## 开源应用 -->
 
+import Hero from '@site/src/components/Hero';
+
+<Hero 
+  title="低代码应用" 
+  description="华炎魔方使用元数据定义数据结构、界面和业务逻辑。基于华炎魔方开发的低代码应用，可以轻松定制。"
+/>
 
 <div class="max-w-md grid gap-8 sm:max-w-lg  sm:grid-cols-2 lg:grid-cols-2 sm:max-w-7xl">
 
 <Card
+  icon={Icons.Cube}
   title="合同管理"
   description="通过合同、收款、付款，管理合同的整个生命周期。"
   href="/appstore/labs/contract"/>
 
 <Card
+  icon={Icons.Cube}
   title="销售管理"
   description="通过客户、潜在客户、业务机会等管理销售流程。"
   href="/appstore/labs/sales"/>
 
 <Card
+  icon={Icons.Cube}
   title="采购管理"
   description="你可以高效管理从寻源到结算的整个采购流程。"
   href="/appstore/labs/purchase"/>
 
 <Card
+  icon={Icons.Cube}
   title="费控管理"
   description="将多管控方案融合，达到预算与费用一体化的目的。"
   href="/appstore/labs/cost"/>
 
 <Card
+  icon={Icons.Cube}
   title="项目管理"
   description="通过项目、任务、里程碑，管理项目的整理生命周期。"
   href="/appstore/labs/project"/>
 
 <Card
+  icon={Icons.Cube}
   title="审批王"
   description="快速部署、有效监控并持续优化各类业务流程。"
   href="/appstore/labs/workflow"/>
@@ -53,6 +65,7 @@ import Card from '@site/src/components/Card';
   href="https://github.com/steedos/steedos-app-meeting"/> -->
 
 <Card
+  icon={Icons.Cube}
   title="OKR 目标管理"
   description="帮助企业统一全体目标，激发员工积极性。"
   href="/appstore/labs/okr"/>
