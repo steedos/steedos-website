@@ -1,4 +1,6 @@
 ---
+hide_table_of_contents: true
+hide_title: true
 title: 审批王：快速部署、有效监控并持续优化各类业务流程
 sidebar_label: 审批王
 description: 审批王是开源业务流程开发工具，提供图形化的表单与流程设计界面，可以快速地将公司各类审批业务转换为可严格执行的电子流程。
@@ -25,62 +27,17 @@ import * as Icons from '@site/src/components/HeroIcons/outline';
 
 import Breadcrumb from '@site/src/components/Breadcrumb';
 
+import Hero from '@site/src/components/Hero';
 
-<header class="py-6 border-b border-gray-200">
-  <div class="mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="md:flex md:items-center md:justify-between">
-      <div class="flex-1 min-w-0">
-        <h2 class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">
-          审批王
-        </h2>
-      </div>
-      <div class="mt-4 flex md:mt-0 md:ml-4">
-        <button type="button" class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-          查看源码
-        </button>
-        <button type="button" class="ml-3 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-          下载
-        </button>
-      </div>
-    </div>
-  </div>
-</header>
-
-<main class="flex bg-cover bg-no-repeat bg-indigo-100">
-  <div class="mx-auto px-4 my-12 max-w-screen-xl">
-    <div class="lg:grid lg:grid-cols-12 lg:gap-8">
-      <div class="sm:text-center md:mx-auto lg:col-span-6 lg:text-left lg:self-center">
-        {/* <div className="text-lg font-semibold uppercase tracking-wide text-gray-700 sm:text-lg xl:text-xl">
-          审批王
-        </div> */}
-        <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
-          
-          <span class="text-indigo-600">快速部署、有效监控并持续优化各类业务流程</span>
-        </h2>
-        <p class="mt-3 mx-auto text-lg text-gray-700 sm:text-xl md:mt-5">
-          审批王是开源工作流引擎，提供图形化的表单与流程设计界面，帮助用户快速地将公司各类审批业务转换为可严格执行的电子流程。
-        </p>
-        <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
-          <div class="rounded-md shadow">
-            <a href="https://cn.steedos.com/" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 hover:text-white focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
-              注册试用
-            </a>
-          </div>
-          <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-            <a href="https://cn.steedos.com/" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-600 bg-white hover:text-blue-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
-              客户登录
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-        <div class="relative mx-auto w-full">
-          <img class="relative block w-full overflow-hidden focus:outline-none focus:shadow-outline object-contain" src="/assets/contract/contract_workflow_desktop_pad_mobile.png"/>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
+<Hero 
+  header="华炎魔方"
+  title="审批王" 
+  description="审批王是基于华炎魔方开发的工作流引擎，提供图形化的表单与流程设计界面，帮助用户快速地将公司各类审批业务转换为可严格执行的电子流程。"
+  buttons={[
+    {title: "申请试用", href: "/form/trial", primary: true},
+    {title: "查看源码", href: "https://github.com/steedos/steedos-platform", target: "_blank"},
+  ]}
+/>
 
 
 <FeaturesWide 
@@ -89,7 +46,7 @@ import Breadcrumb from '@site/src/components/Breadcrumb';
   imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-flow.jpeg"
   videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-flow.mp4"  
   theme="indigo"
-  containerClass="bg-gray-50"
+  containerClass="rounded-lg bg-white"
   items={[
     {
       icon: Icons.CurrencyYen,
@@ -168,15 +125,6 @@ import Breadcrumb from '@site/src/components/Breadcrumb';
     {title: "表单转发、分发", description: "可以实现表单内容的复制，实现流程之间的跳转，其中相同的字段内容会复制到新的申请单上，这样可以节省用户填写表单的时间。"},
   ]}
 />
-
-<FeaturesWide 
-  title="比审批更进一步，为业务构建自定义应用程序"
-  description="华炎魔方是新一代低代码开发平台，基于商业智能和模型驱动，业务部门可以根据实际业务需求，轻松便捷的创建智能化、移动化、个性化的应用程序。"
-  containerClass="bg-white"
-  theme="indigo"  
-  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features.jpg"
-  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-platform-features.mp4"
-  />
 
 <Features 
   title="只需数次点击，即可构建应用程序"

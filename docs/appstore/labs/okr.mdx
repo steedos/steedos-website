@@ -1,6 +1,8 @@
 ---
+hide_table_of_contents: true
+hide_title: true
 title: 华炎OKR目标管理系统
-sidebar_label: OKR目标管理
+sidebar_label: 目标管理
 description: 华炎OKR目标管理系统，帮助您管理组织范围内的目标(Objectives)与关键成果(Key Results)，实时跟踪、自动汇总、全面统计。系统使用华炎魔方平台可视化配置实现，基于元数据驱动，可以快速自定义。
 keywords:
   - OKR
@@ -23,40 +25,21 @@ import * as Icons from '@site/src/components/HeroIcons/outline';
 import Breadcrumb from '@site/src/components/Breadcrumb';
 
 
-<header class="py-6 border-b border-gray-200">
-  <div class="mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="md:flex md:items-center md:justify-between">
-      <div class="flex-1 min-w-0">
-        <h2 class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">
-          华炎OKR目标管理
-        </h2>
-      </div>
-      <div class="mt-4 flex md:mt-0 md:ml-4">
-        <a href="https://github.com/steedos/okr-management-app/blob/master/README_cn.md" class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-          查看源码
-        </a>
-        <a href="https://github.com/steedos/okr-management-app/releases" class="ml-3 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-          下载软件包
-        </a>
-      </div>
-    </div>
-  </div>
-</header>
+import Hero from '@site/src/components/Hero';
 
-<div class="">
-  <div class="max-w-screen-xl mx-auto text-center py-10 px-4 sm:px-6 lg:py-12 lg:px-8">
-    <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-      从“要我做”到“我要做”，OKR正在发展为越来越多企业最认可的管理模式
-    </h2>
-     <p class="mt-10 text-xl leading-15 text-gray-500 lg:mx-auto">
-      对一个项目来说，设定目标是非常重要的，因为这决定了如何去做，以及能做到哪种程度。OKR是企业进行目标管理的一个简单有效的系统，将目标管理自上而下贯穿到基层。
-OKR全称Objectives & Key Results，即企业目标与关键成果。可理解为“为确保达成企业目标的关键结果分解与实施”。与KPI考核机制不同，KPI注重用指标来说话，不关注过程，而OKR更关注目标实现的过程，更能激发员工的主动性。从Intel、Google、Facebook到百度、华为、字节跳动，OKR这套管理工具/方法正被越来越多的卓越企业应用、推崇。
-    </p>   
-  </div>
-</div>
+<Hero 
+  header="华炎魔方"
+  title="OKR目标管理" 
+  description="从Intel、Google、Facebook到百度、华为、字节跳动，OKR这套管理方法正被越来越多的卓越企业应用和推荐。"
+  imageUrl="/assets/products/objectives.jpg"
+  buttons={[
+    {title: "申请试用", href: "/form/trial", primary: true},
+    {title: "查看源码", href: "https://github.com/steedos/steedos-app-okr", target: "_blank"},
+  ]}
+/>
 
 <FeaturesWide
-  containerClass="bg-white"
+  title="什么是OKR?"
   imageUrl="/assets/products/okrs.png"
   imageClass="lg:max-w-3xl rounded-none shadow-lg"
   theme="green"
@@ -64,8 +47,8 @@ OKR全称Objectives & Key Results，即企业目标与关键成果。可理解�
 
 
 <FeaturesWide
-  title="华炎OKR目标管理系统，帮助企业统一全体目标，激发员工积极性"
-  description="华炎OKR目标管理系统，帮助企业看到目前最主要的目标，让每个成员对目标的理解都是一致的，从而加强团队的凝聚力和企业的核心竞争力；让企业和每个成员随时都有清晰的目标，将最重要的资源聚集在最重要的事情上，避免资源成本的浪费。"
+  title="帮助企业统一全体目标，激发员工积极性"
+  description="让企业和每个成员随时都有清晰的目标，将最重要的资源聚集在最重要的事情上，避免资源成本的浪费。"
   containerClass="bg-white"
   imageUrl="/assets/products/okr.png"
   imageClass="lg:max-w-3xl rounded-none shadow-lg"
@@ -96,10 +79,8 @@ OKR全称Objectives & Key Results，即企业目标与关键成果。可理解�
 
 <FeaturesWide
   header=""
-  title="华炎OKR目标管理系统具有以下特点"
-  imageUrl="/assets/products/objectives.jpg"
+  title="定期评估目标达成情况"
   imagePosition="left"
-  theme="teal"
   items={[
     {
       icon: Icons.DocumentAdd,
@@ -120,17 +101,7 @@ OKR全称Objectives & Key Results，即企业目标与关键成果。可理解�
   ]}
 />
 
-<div class="">
-  <div class="max-w-screen-xl mx-auto text-center py-10 px-4 sm:px-6 lg:py-12 lg:px-8">
-    <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-      开发就像搭积木一样简单
-    </h2>
-     <p class="mt-10 text-xl leading-15 text-gray-500 lg:mx-auto">
-      华炎OKR目标管理系统基于华炎魔方低代码平台，通过可视化开发完成，代码量减少90%，开发效率提升十倍。你可以直接免费使用这套系统，但是每个公司业务需求不同，需要定制化开发，而传统的开发方式需要由开发人员来完成，开发成本高，周期长。在华炎魔方开发环境下，以前只能提出需求的业务人员，也可以根据业务需求，通过拖拉拽的方式，进行可视化配置来实现业务需求。下面是几个简单的例子。
-    </p>   
-  </div>
-</div>
-
+<!-- 
 
 <FeaturesWide
   title="通过公式自动计算字段值"
@@ -147,7 +118,7 @@ OKR全称Objectives & Key Results，即企业目标与关键成果。可理解�
   imageClass="lg:max-w-3xl rounded-none shadow-lg"
   theme="green"
   description="如果想要系统自动计算出目标下的每个关键成果的最新完成度百分比，以及加权后的完成度（贡献），只需要做如图所示的配置，将这些完成度（贡献）累加就是该目标的最新完成度的数值。"
-/>
+/> -->
 
 
 

@@ -1,21 +1,6 @@
----
-hide_table_of_contents: true
-title: 华炎魔方低代码开发平台官网
-sidebar_label: 概述
-description: 华炎魔方是一款随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。
-keywords: 
-  - 低代码
-  - 低代码开发
-  - 低代码开发平台
-  - 开源低代码开发平台
-  - 快速开发平台
-  - 快速开发工具
-  - paas
-  - 零代码
-  - 零代码开发
-  - 零代码开发平台
----
+import React from "react";
 
+import Layout from '@theme/Layout';
 import Video from '@site/src/components/Video';
 import Features from '@site/src/components/Features';
 import FeaturesWide from '@site/src/components/FeaturesWide';
@@ -23,6 +8,14 @@ import FAQ from '@site/src/components/FAQ';
 import Customers from '@site/src/components/Customers';
 import * as Icons from '@site/src/components/HeroIcons/outline';
 
+export default function Landing() {
+  return (
+<Layout
+      title="华炎魔方低代码开发平台官网"
+      description="华炎魔方是一款随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。"
+      keywords={["低代码,低代码开发,低代码开发平台,开源低代码开发平台,快速开发平台,快速开发工具,paas,零代码,零代码开发,零代码开发平台"]}
+>
+        
 <main class="py-12 sm:py-12 bg-gray-100">
   <div class="text-center px-4 max-w-7xl mx-auto ">
     <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
@@ -229,3 +222,8 @@ import * as Icons from '@site/src/components/HeroIcons/outline';
 />
 
 <FAQ/>
+
+
+</Layout>
+  );
+}

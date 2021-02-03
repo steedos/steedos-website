@@ -1,4 +1,6 @@
 ---
+hide_table_of_contents: true
+hide_title: true
 title: 华炎项目：随需应变的项目管理系统，满足业务部门的各种定制需求。
 sidebar_label: 项目管理
 description: 华炎合同管理系统，是国内首款基于低代码技术的合同管理解决方案，系统功能涵盖合同订立、执行、跟踪、变更、验收、付款、监督、统计的整个管理过程，并提供低代码开发工具华炎魔方，通过调整配置文件就能调整合同台账、业务字段、审批流程、统计报表等，快速满足业务部门的个性化需求。
@@ -22,33 +24,23 @@ import * as Icons from '@site/src/components/HeroIcons/outline';
 
 import Breadcrumb from '@site/src/components/Breadcrumb';
 
+import Hero from '@site/src/components/Hero';
 
-<header class="py-6 border-b border-gray-200">
-  <div class="mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="md:flex md:items-center md:justify-between">
-      <div class="flex-1 min-w-0">
-        <h2 class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">
-          项目管理
-        </h2>
-      </div>
-      <div class="mt-4 flex md:mt-0 md:ml-4">
-        <a href="https://github.com/steedos/project-management-app/blob/master/README_cn.md" class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-          查看源码
-        </a>
-        <a href="https://github.com/steedos/project-management-app/releases" class="ml-3 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-          下载软件包
-        </a>
-      </div>
-    </div>
-  </div>
-</header>
+<Hero 
+  header="华炎魔方"
+  title="项目管理" 
+  description="华炎魔方项目管理系统帮助您跟踪和管理项目，里程碑，任务，已阻止的任务，逾期任务，时间，费用预算，并具有详细的报表功能。"
+  buttons={[
+    {title: "申请试用", href: "/form/trial", primary: true},
+    {title: "查看源码", href: "https://github.com/steedos/steedos-app-project", target: "_blank"},
+  ]}
+/>
+
 
 
 <FeaturesWide
   title="高效科学的项目管理方法，能让您事半不止功倍"
-  description="华炎魔方项目管理系统帮助您跟踪和管理项目，里程碑，任务，已阻止的任务，逾期任务，时间，费用预算，并具有详细的报表功能。系统使用华炎魔方平台可视化配置实现，基于元数据驱动，可以快速自定义。
-"
-  containerClass="bg-white"
+  containerClass="bg-white rounded-lg"
   imageUrl="/assets/products/project.png"
   imageClass="lg:max-w-3xl rounded-none shadow-lg"
   theme="green"
@@ -76,10 +68,11 @@ import Breadcrumb from '@site/src/components/Breadcrumb';
   ]}
 />
 
-<Features 
-  title="华炎魔方项目管理系统功能"
+<FeaturesWide 
+  title="系统功能"
   description="华炎魔方项目管理系统已经具备完善的功能，由于每个公司业务需求不同，您可以在此基础上基于我们的源代码配置出个性化的项目管理系统。"
   imageUrl="/assets/products/project_management.png"
+  imageClass="lg:max-w-3xl rounded-none shadow-lg"
   containerClass="bg-gray-50"
   theme="green"
   items={[

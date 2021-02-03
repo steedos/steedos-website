@@ -1,4 +1,6 @@
 ---
+hide_table_of_contents: true
+hide_title: true
 title: 华炎销售管理解决方案，满足业务部门的各种定制需求。
 sidebar_label: 销售管理
 description: 华炎销售管理系统，是国内首款基于低代码技术的销售管理解决方案，系统功能涵盖销售订立、执行、跟踪、变更、验收、付款、监督、统计的整个管理过程，并提供低代码开发工具华炎魔方，通过调整配置文件就能调整销售台账、业务字段、审批流程、统计报表等，快速满足业务部门的个性化需求。
@@ -13,6 +15,8 @@ keywords:
   - 开源销售管理系统
 ---
 
+
+import Hero from '@site/src/components/Hero';
 import Video from '@site/src/components/Video';
 import Features from '@site/src/components/Features';
 import FeaturesWide from '@site/src/components/FeaturesWide';
@@ -22,63 +26,61 @@ import * as Icons from '@site/src/components/HeroIcons/outline';
 
 import Breadcrumb from '@site/src/components/Breadcrumb';
 
-<header class="py-6 border-b border-gray-200">
-  <div class="mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="md:flex md:items-center md:justify-between">
-      <div class="flex-1 min-w-0">
-        <h2 class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">
-          销售管理
-        </h2>
-      </div>
-      <div class="mt-4 flex md:mt-0 md:ml-4">
-        <button type="button" class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-          查看源码
-        </button>
-        <button type="button" class="ml-3 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-          下载
-        </button>
-      </div>
-    </div>
-  </div>
-</header>
 
-<main class="flex bg-cover bg-no-repeat bg-indigo-100">
-  <div class="mx-auto px-4 my-12 max-w-screen-xl">
-    <div class="lg:grid lg:grid-cols-10 lg:gap-8">
-      <div class="sm:text-center md:mx-auto lg:col-span-6 lg:text-left lg:self-center">
-        {/* <div className="text-lg font-semibold uppercase tracking-wide text-gray-700 sm:text-lg xl:text-xl">
-          销售管理解决方案
-        </div> */}
-        <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
-          在新冠疫情期间，<br/>
-          <span class="text-indigo-600">以更智能的方式销售，并应对任何困难。</span>
-        </h2>
-        {/* <p class="mt-3 mx-auto text-lg text-gray-700 sm:text-xl md:mt-5">
-          在与 CRM 集成的灵活应用程序开发平台上构建互联客户体验。
-        </p> */}
-        <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
-          <div class="rounded-md shadow">
-            <a href="/videos/steedos-digital-transformation/" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 hover:text-white focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
-              查看视频
-            </a>
-          </div>
-          <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-            <a href="/form/trial" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
-              预约演示
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-4 lg:flex lg:items-center">
-        <div class="relative mx-auto w-full">
-          <img class="relative block w-full overflow-hidden focus:outline-none focus:shadow-outline object-contain" src="/assets/contract/contract_desktop_pad_mobile.png"/>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
+<Hero 
+  header="华炎魔方"
+  title="销售管理" 
+  description="在新冠疫情期间，以更智能的方式销售，并应对任何困难。"
+  buttons={[
+    {title: "申请试用", href: "/form/trial", primary: true},
+    {title: "查看源码", href: "https://github.com/steedos/steedos-app-crm", target: "_blank"},
+  ]}
+  items={[
+    {
+      icon: Icons.Identification,
+      title: "360˚客户画像", 
+      description: "为每个客户建立专属的客户档案，商机、历史成交、跟进记录、信用账户等清晰可见，通过智能客户分级，实现精细化运营。"
+    },
+    {
+      icon: Icons.AcademicCap,
+      title: "商机管理", 
+      description: "通过流程引擎，定义企业标准的商机跟进阶段及动作，规范销售行为，缩短销售周期，提升商机赢率。"
+    },
+    {
+      icon: Icons.Filter,
+      title: "销售预测与销售漏斗", 
+      description: "历史数据综合分析，智能评估商机赢率，帮助企业管理者清晰了解每一个商机成交可能性，精准预测销售业绩。"
+    },
+    {
+      icon: Icons.Cube,
+      title: "产品管理", 
+      description: "产品支持SPU和SKU多规格管理，深度支持复杂商品模式，灵活应对业务需求。"
+    },
+    {
+      icon: Icons.ShoppingCart,
+      title: "订单管理", 
+      description: "支持APP、H5多端移动订货，实时下单，自主设定订单审核流程，保证订单数据有效、准确。"
+    },
+    {
+      icon: Icons.CurrencyYen,
+      title: "回款管理", 
+      description: "支持分期计划回款，清晰记录回款及账期，规范管理企业的现金流和应收账款，保障业绩准确、真实、有效"
+    },
+    {
+      icon: Icons.ThumbUp,
+      title: "目标与绩效管理", 
+      description: "定制目标考核的维度、指标，首页预置目标达成进度，可实时调整，确保目标高效达成。"
+    },
+    {
+      icon: Icons.Mail,
+      title: "邮件管理", 
+      description: "自动记录纷享邮箱中所有员工与客户的往来邮件，留存每一次触达客户的重要业务数据。"
+    },
+  ]}
+  />
+  
 
-
+<!-- 
 <FeaturesWide 
   header="按自己的方式销售"
   title="利用最先进的平台促进销量提升"
@@ -107,7 +109,7 @@ import Breadcrumb from '@site/src/components/Breadcrumb';
       description: "为您的销售团队创建自定义应用程序，让应用程序可以即刻在任何设备上使用，满足业务发展过程中的各种个性化需求。"
     },
   ]}
-/>
+/> -->
 
 
 <Features 
@@ -167,58 +169,6 @@ import Breadcrumb from '@site/src/components/Breadcrumb';
     {title: "", description: "自定义客户标签，跟踪、记录客户行为，识别高价值线索。"},
     {title: "", description: "基于移动设备的LBS、拍照功能，优化访销动作，提升访销体验与效率。"},
     {title: "", description: "自定义绩效、业绩目标，自动分析达成情况，智能预警，确保业绩目标达成。"},
-  ]}
-/>
-
-<FeaturesWide 
-  header="新一代低代码技术"
-  title="为销售部门快速构建自定义应用程序"
-  description="华炎魔方是新一代低代码开发平台，基于商业智能和模型驱动，销售部门可以根据实际业务需求，轻松便捷的创建智能化、移动化、个性化的应用程序。"
-  containerClass="bg-white"
-  theme="indigo"  
-  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/lowcode.jpeg"
-  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/lowcode.mp4"
-  items={[
-    {
-      icon: Icons.Identification,
-      title: "360˚客户画像", 
-      description: "为每个客户建立专属的客户档案，商机、历史成交、跟进记录、信用账户等清晰可见，通过智能客户分级，实现精细化运营。"
-    },
-    {
-      icon: Icons.AcademicCap,
-      title: "商机管理", 
-      description: "通过流程引擎，定义企业标准的商机跟进阶段及动作，规范销售行为，缩短销售周期，提升商机赢率。"
-    },
-    {
-      icon: Icons.Filter,
-      title: "销售预测与销售漏斗", 
-      description: "历史数据综合分析，智能评估商机赢率，帮助企业管理者清晰了解每一个商机成交可能性，精准预测销售业绩。"
-    },
-    {
-      icon: Icons.Cube,
-      title: "产品管理", 
-      description: "产品支持SPU和SKU多规格管理，深度支持复杂商品模式，灵活应对业务需求。"
-    },
-    {
-      icon: Icons.ShoppingCart,
-      title: "订单管理", 
-      description: "支持APP、H5多端移动订货，实时下单，自主设定订单审核流程，保证订单数据有效、准确。"
-    },
-    {
-      icon: Icons.CurrencyYen,
-      title: "回款管理", 
-      description: "支持分期计划回款，清晰记录回款及账期，规范管理企业的现金流和应收账款，保障业绩准确、真实、有效"
-    },
-    {
-      icon: Icons.ThumbUp,
-      title: "目标与绩效管理", 
-      description: "定制目标考核的维度、指标，首页预置目标达成进度，可实时调整，确保目标高效达成。"
-    },
-    {
-      icon: Icons.Mail,
-      title: "邮件管理", 
-      description: "自动记录纷享邮箱中所有员工与客户的往来邮件，留存每一次触达客户的重要业务数据。"
-    },
   ]}
 />
 

@@ -10,9 +10,9 @@
     "tailwind.min": "NODE_ENV=production tailwindcss-cli build src/css/tailwind-src.css -o static/website/libs/tailwind.min.css"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-alpha.65",
-    "@docusaurus/plugin-client-redirects": "2.0.0-alpha.65",
-    "@docusaurus/preset-classic": "2.0.0-alpha.65",
+    "@docusaurus/core": "2.0.0-alpha.70",
+    "@docusaurus/plugin-client-redirects": "2.0.0-alpha.70",
+    "@docusaurus/preset-classic": "2.0.0-alpha.70",
     "@salesforce-ux/design-system": "^2.11.0",
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "@tailwindcss/forms": "^0.2.1",

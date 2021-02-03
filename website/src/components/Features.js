@@ -43,16 +43,15 @@ class Features extends React.Component {
   <div className="relative mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
     <div className="relative lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
       <div className={textContainerClass}>
-        <h4 className="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight md:text-4xl sm:leading-9">
+        <div className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
           {title}
-        </h4>
-        <p className="mt-3 text-lg leading-7 text-gray-500">
+        </div>
+        <div className="mt-3 text-lg text-gray-500">
           {description}
-        </p>
+        </div>
 
-        <ul className="pl-0">
+        <dl className="mt-10 space-y-10">
         {items && items.map(({ title, description }, idx) => (
-          <li className="mt-6" key={idx}>
             <div className="flex">
               <div className="flex-shrink-0">
                 <svg className={"h-6 w-6 " + "text-" + theme + "-400"} viewBox="0 0 20 20" fill="currentColor">
@@ -61,17 +60,16 @@ class Features extends React.Component {
               </div>
               <div className="ml-4">
                 {title && (
-                <div className="text-lg mb-2 leading-6 font-medium text-gray-900">{title}</div>
+                <div className="mb-2 text-lg leading-6 font-medium text-gray-900">{title}</div>
                 )}
                 {description &&(
-                <p className="mb-0 text-base leading-6 text-gray-500">
+                <div className="text-base text-gray-500">
                   {description} 
-                </p>)}
+                </div>)}
               </div>
             </div>
-          </li>
         ))}
-        </ul>
+        </dl>
       </div>
 
       {imageUrl && (

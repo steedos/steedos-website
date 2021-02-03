@@ -139,7 +139,7 @@ module.exports = {
           //   {to: 'form/trial/', label:'预约演示',position: 'left'},
           // ]
         },
-        {label: '应用市场', position: 'left', to: 'appstore/',
+        {label: '低代码应用', position: 'left', to: 'appstore/',
           // items: [
           //   // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
           //   // {to: 'products/oa/', label: '华炎办公', position: 'left'},
@@ -188,6 +188,10 @@ module.exports = {
       //   {to: '/cn', label: '中文', position: 'right'},
       //   {to: '/us/login', label: 'Login', position: 'right'}
       // ],
+    },
+
+    footer: {
+      links: []
     },
     algolia: {
       apiKey: 'eaa8e1c86ac084b5cac664d9d996856c',
@@ -250,18 +254,18 @@ module.exports = {
   stylesheets: [
     '/website/libs/tailwind.min.css',
   ],
-  customFields: {
-    navbar_items_us: [
-      {to: '/us/', label: 'Home', position: 'left'},
-      {to: '/us/help/workflow/README', label: 'Docs', position: 'left'},
-      {to: '/us/login', label: 'Login', position: 'right'},
+  // customFields: {
+  //   navbar_items_us: [
+  //     {to: '/us/', label: 'Home', position: 'left'},
+  //     {to: '/us/help/workflow/README', label: 'Docs', position: 'left'},
+  //     {to: '/us/login', label: 'Login', position: 'right'},
      
-      {label: 'EN', to: 'us/', position: 'right',
-      items: [
-        {to: '/us', label: 'English', position: 'left'},
-        {to: '/cn', label: '中文', position: 'left'},
-      ]
-    },
-    ],
-  },
+  //     {label: 'EN', to: 'us/', position: 'right',
+  //     items: [
+  //       {to: '/us', label: 'English', position: 'left'},
+  //       {to: '/cn', label: '中文', position: 'left'},
+  //     ]
+  //   },
+  //   ],
+  // },
 };

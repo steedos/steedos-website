@@ -1,4 +1,6 @@
 ---
+hide_table_of_contents: true
+hide_title: true
 title: 华炎合同：随需应变的合同管理系统，满足业务部门的各种定制需求。
 sidebar_label: 合同管理
 description: 华炎合同管理系统，是国内首款基于低代码技术的合同管理解决方案，系统功能涵盖合同订立、执行、跟踪、变更、验收、付款、监督、统计的整个管理过程，并提供低代码开发工具华炎魔方，通过调整配置文件就能调整合同台账、业务字段、审批流程、统计报表等，快速满足业务部门的个性化需求。
@@ -13,6 +15,7 @@ keywords:
   - 开源合同管理系统
 ---
 
+import Hero from '@site/src/components/Hero';
 import Video from '@site/src/components/Video';
 import Features from '@site/src/components/Features';
 import FeaturesWide from '@site/src/components/FeaturesWide';
@@ -22,32 +25,20 @@ import * as Icons from '@site/src/components/HeroIcons/outline';
 
 import Breadcrumb from '@site/src/components/Breadcrumb';
 
-
-<header class="py-6 border-b border-gray-200">
-  <div class="mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="md:flex md:items-center md:justify-between">
-      <div class="flex-1 min-w-0">
-        <h2 class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">
-          合同管理
-        </h2>
-      </div>
-      <div class="mt-4 flex md:mt-0 md:ml-4">
-        <a href="https://github.com/steedos/steedos-app-contract" class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-          查看源码
-        </a>
-        <a href="https://github.com/steedos/steedos-app-contract/releases" class="ml-3 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-          下载软件包
-        </a>
-      </div>
-    </div>
-  </div>
-</header>
-
+<Hero 
+  header="华炎魔方"
+  title="合同管理" 
+  description="借助华炎合同管理系统，你能够集中进行合同存储，提高合规性，自动化和加快整个合同生命周期。"
+  buttons={[
+    {title: "申请试用", href: "/form/trial", primary: true},
+    {title: "查看源码", href: "https://github.com/steedos/steedos-app-contract", target: "_blank"},
+  ]}
+  />
 
 <FeaturesWide
-  title="简单易用的中央合同存储库，轻松实现合同协作、提升合规性"
-  description="借助华炎合同管理系统，你能够集中进行合同存储，提高合规性，自动化和加快整个合同生命周期，并获得更多其他业务优势。"
-  containerClass="bg-white"
+  title="简单易用的中央合同存储库"
+  description="轻松实现合同协作、提升合规性"
+  containerClass="rounded-lg bg-white"
   imageUrl="/assets/products/contracts.jpg"
   imageClass="lg:max-w-3xl rounded-none shadow-lg"
   theme="green"
@@ -95,11 +86,9 @@ import Breadcrumb from '@site/src/components/Breadcrumb';
   ]}
 />
 
-<Features 
+<FeaturesWide 
   title="规范和控制合同审批流程"
   description="华炎魔方内置专业的流程引擎，对于合同管理中的各种事项，只需简单配置，就能实现电子化审批。"
-  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/user-contracts.jpg"
-  containerClass="bg-gray-50"
   theme="green"
   items={[
     {title: "合同签署", description: "可以在电脑端和手机端发起合同审批并处理。审批过程中，会保存合同文本的所有版本。合同审批发起后，合同信息自动进入合同台账"},
@@ -113,7 +102,6 @@ import Breadcrumb from '@site/src/components/Breadcrumb';
   header=""
   title="合同范本管理"
   description="在一个中央数据库中集中维护整个企业的标准条款、合同模板和政策规则。"
-  containerClass="bg-gray-100"
   imagePosition="left"
   theme="green"
   items={[
@@ -137,12 +125,10 @@ import Breadcrumb from '@site/src/components/Breadcrumb';
 />
 
 
-<Features
+<FeaturesWide
   header=""
   title="支持电子签名，节约成本"
   description="通过添加电子签名功能，你可以省去邮寄和签署多份合同副本的步骤，节约时间和成本。"
-  containerClass="bg-white"
-  imageUrl="/img/svg/development/THG_M78_07.svg"
   imagePosition="right"
   theme="green"
   items={[
@@ -154,7 +140,7 @@ import Breadcrumb from '@site/src/components/Breadcrumb';
 
 
 
-<Features 
+<FeaturesWide 
   title="PC、移动一体化"
   description="合同管理的各项功能，包括对流程发起、审批和监控都可以扩展到移动端，即时领导出差，一部手机，即可实现随时随地管理合同、使用签章、监控执行、预警风险。签署更高效，管理更便捷。"
   imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-mobile.jpeg"
@@ -166,12 +152,10 @@ import Breadcrumb from '@site/src/components/Breadcrumb';
   ]}
 />
 
-<Features
+<FeaturesWide
   header=""
   title="收付款管理"
   description="收付款管理功能可以帮您确保数据安全，减少繁琐的手动审批环节"
-  containerClass="bg-white"
-  imageUrl="/assets/products/receipt.png"
   imageClass="lg:max-w-2xl rounded-none shadow-lg"
   imagePosition="right"
   theme="green"
@@ -183,10 +167,9 @@ import Breadcrumb from '@site/src/components/Breadcrumb';
   ]}
 />
 
-<Features 
+<FeaturesWide 
   title="发票管理"
   description="可以将业务系统和财务系统生成的各种电子发票进行统一合规的管理，完成电子发票的采集，保存，查询，归档等一系列的操作。并且严格按照国家的政策的规定，帮您预警风险。"
-  imageUrl="/img/svg/development/THG_M78_05.svg"
   imageClass="lg:max-w-xl"
   imagePosition="left"
   theme="green"
@@ -197,26 +180,12 @@ import Breadcrumb from '@site/src/components/Breadcrumb';
   ]}
 />
 
-
-<div class="bg-gray-200">
-  <div class="max-w-screen-xl mx-auto text-center py-10 px-4 sm:px-6 lg:py-12 lg:px-8">
-    <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-      开放源码、随心定制
-    </h2>
-    <p class="mt-4 text-xl leading-7 text-gray-500 lg:mx-auto">
-      华炎合同管理解决方案基于低代码技术、完全开源。可以根据业务需求随心调整、无缝迭代，帮助业务加速创新，提升竞争力。
-    </p>
-      <div class="mt-8 flex flex justify-center justify-start">
-        <div class="rounded-md shadow">
-          <a href="https://github.com/steedos/steedos-contracts-app" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:bg-green-500 hover:text-white focus:outline-none focus:border-green-700 focus:shadow-outline-green transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
-            查看源码
-          </a>
-        </div>
-        <div class="ml-3 rounded-md shadow">
-          <a href="https://github.com/steedos/steedos-app-contract/releases" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-green-600 bg-white hover:text-green-500 focus:outline-none focus:border-green-300 focus:shadow-outline-green transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
-            下载软件包
-          </a>
-        </div>
-      </div>
-  </div>
-</div>
+<FeaturesWide 
+  title="开放源码、随心定制" 
+  description="华炎合同管理解决方案基于低代码技术、完全开源。可以根据业务需求随心调整、无缝迭代，帮助业务加速创新，提升竞争力。"
+  containerClass="rounded-lg bg-gray-200"
+  buttons={[
+    {title: "申请试用", href: "/form/trial", primary: true},
+    {title: "查看源码", href: "https://github.com/steedos/steedos-app-contract", target: "_blank"},
+  ]}
+  />
