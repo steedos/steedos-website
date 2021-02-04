@@ -29,7 +29,7 @@ module.exports =
   "文档": {
     "快速向导": ["help/about", {
       "服务端安装部署": ["help/deploy", "help/deploy/deploy_windows", "help/deploy/deploy_mac", "help/deploy/deploy_docker", "help/deploy/deploy_cluster", "help/deploy/steedos-config"],
-      "客户端": ["help/clients/desktop", "help/clients/mobile", "help/clients/wecom"]
+      "客户端": ["help/clients/desktop", "help/clients/mobile", "help/clients/wecom", "help/clients/dingtalk"]
     }],
     "使用入门": ["help/user", "help/login", "help/interface",{
       "管理您的数据": ["help/record_search", "help/record_view", "help/record_list", "help/record_edit", "help/record_import"],
