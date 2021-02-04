@@ -119,13 +119,7 @@ module.exports =
               "developer/object_permission",
             ]
           },
-          "developer/app",
-          {
-            "报表": [
-              "developer/reports",
-              "developer/report_jsreport"
-            ]
-          },   
+          "developer/app" 
         ],
       },
       "developer/cli/index",
@@ -175,7 +169,8 @@ module.exports =
             "plugins/plugin_webapp",
             "plugins/plugin_webapp_functions"
             ]
-        }
+        },
+        "developer/report_jsreport"
       ],
   
       "软件包": [
