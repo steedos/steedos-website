@@ -23,7 +23,7 @@ title: 部署到 Kubernetes (k8s)
 - MINIO_VOLUMES_PER_SERVER: MinIO单个服务器的硬盘数量。
 - MINIO_VOLUME_STORAGE: MinIO单个硬盘的容量。
 
-## 创建 Namespace
+### 创建 Namespace
 
 为了实现多租户的完全隔离，我们建议为每个租户创建一个单独的 Namespace, 更安全的做法是 [创建独立的 vClusters](https://loft.sh/features/virtual-kubernetes-clusters). 
 
@@ -36,13 +36,13 @@ metadata:
   name: ${STEEDOS_TENANT_ID}
 ```
 
-使用命令加载此文件，创建一个namespace。
+使用命令或使用 Kubernetes API 加载此文件，创建一个namespace。
 
 ```sh
 kubectl create -f ./${STEEDOS_TENANT_ID}.yaml
 ```
 
-## 部署 MongoDB
+### 部署 MongoDB
 
 部署前需要先安装 MongoDB Kubernetes Operator，具体文档请参考：
 
@@ -64,13 +64,13 @@ spec:
   version: "4.2.6"
 ```
 
-使用命令加载此文件，部署 MongoDB。
+使用命令或使用 Kubernetes API 加载此文件，部署 MongoDB。
 
 ```sh
 kubectl create -f ./mongodb.yaml --namespace ${STEEDOS_TENANT_ID}
 ```
 
-## 部署 MinIO
+### 部署 MinIO
 
 部署前需要先安装 MinIO Kubernetes Operator，具体文档请参考：
 
@@ -122,13 +122,13 @@ spec:
 ```
 
 
-使用命令加载此文件，部署MinIO。
+使用命令或使用 Kubernetes API 加载此文件，部署MinIO。
 
 ```sh
 kubectl create -f ./minio.yaml --namespace ${STEEDOS_TENANT_ID}
 ```
 
-## 部署 Steedos 
+### 部署 Steedos 
 
 创建 Steedos 租户描述文件：steedos.yaml
 
@@ -151,19 +151,14 @@ spec:
         - containerPort: 3000
 ```
 
-使用命令加载此文件，部署 Steedos。
+使用命令或使用 Kubernetes API 加载此文件，部署 Steedos。
 
 ```sh
 kubectl create -f ./steedos.yaml --namespace ${STEEDOS_TENANT_ID}
 ```
 
-使用API加载此文件
-```
-curl -X POST -H 'Content-Type: application/yaml' --data '${YAML}' http://127.0.0.1:8001/apis/apps/v1/${STEEDOS_TENANT_ID}/default/deployments
 
-```
-
-## 部署 Steedos 对外访问服务
+### 部署 Steedos 对外访问服务
 
 创建服务描述文件： steedos-service.yaml
 
@@ -181,8 +176,58 @@ spec:
       targetPort: 3000
 ```
 
-使用命令加载此文件，部署 Steedos Service
+使用命令或使用 Kubernetes API 加载此文件，部署 Steedos Service
 
 ```sh
 kubectl create -f ./steedos.yaml --namespace ${STEEDOS_TENANT_ID}
+```
+
+## 使用 Kubernetes API 创建租户
+
+
+按照前述 “创建一个华炎魔方租户” 步骤，依此调用 Kubernetes API 对应的标准接口，加载相应的 yml 文件，即可实现自动化创建租户。
+
+### 部署 Steedos 
+
+HTTP 请求
+
+```
+POST /apis/apps/v1/namespaces/${STEEDOS_TENANT_ID}/deployments
+```
+
+Header 参数
+
+```
+Content-Type: application/yaml
+```
+
+Body 参数
+
+```
+body: ${YAML文件内容}
+```
+
+完整实例
+
+```shell
+$ kubectl proxy
+$ curl -X POST -H 'Content-Type: application/yaml' --data '
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: steedos
+spec:
+  replicas: ${STEEDOS_SERVERS}
+  template:
+    metadata:
+      labels: 
+        app: steedos
+    spec:     
+      containers: 
+      - name: steedos-community
+        image: steedos-community@1.23
+        ports:
+        - containerPort: 3000
+' http://127.0.0.1:8001/apis/apps/v1/namespaces/${STEEDOS_TENANT_ID}/deployments
+
 ```
