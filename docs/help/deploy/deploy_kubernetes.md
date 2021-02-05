@@ -2,7 +2,7 @@
 title: 部署到 Kubernetes (k8s)
 ---
 
-华炎魔方是Kubernetes原生的低代码开发平台。本教程指导您如何将华炎魔方租户部署到私有和公共云基础架构（“混合”云）上。
+华炎魔方是 Kubernetes 原生的低代码开发平台。本教程指导您如何将华炎魔方租户部署到私有和公共云基础架构（“混合”云）上。
 
 ## 创建一个华炎魔方租户
 
@@ -14,18 +14,18 @@ title: 部署到 Kubernetes (k8s)
 
 部署前需要考虑以下基础配置：
 
-- STEEDOS_TENANT_ID: 华炎魔方租户ID，随机生成。
-- STEEDOS_ROOT_URL: 华炎魔方对外访问的URL。
+- STEEDOS_TENANT_ID: 华炎魔方租户 ID，随机生成。
+- STEEDOS_ROOT_URL: 华炎魔方对外访问的 URL。
 - STEEDOS_PORT: 华炎魔方的服务端口。
 - STEEDOS_SERVERS: 华炎魔方服务器数量。
-- MONGODB_SERVERS: MONGODB服务器数量。
-- MINIO_SERVERS: MinIO服务器数量。
-- MINIO_VOLUMES_PER_SERVER: MinIO单个服务器的硬盘数量。
-- MINIO_VOLUME_STORAGE: MinIO单个硬盘的容量。
+- MONGODB_SERVERS: MONGODB 服务器数量。
+- MINIO_SERVERS: MinIO 服务器数量。
+- MINIO_VOLUMES_PER_SERVER: MinIO 单个服务器的硬盘数量。
+- MINIO_VOLUME_STORAGE: MinIO 单个硬盘的容量。
 
 ## 创建 Namespace
 
-为了实现多租户的完全隔离，我们建议为每个租户创建一个单独的 Namespace, 更安全的做法是 [创建独立的 vClusters](https://loft.sh/features/virtual-kubernetes-clusters). 
+为了实现多租户的完全隔离，我们建议为每个租户创建一个单独的 Namespace, 更安全的做法是 [创建独立的 vClusters](https://loft.sh/features/virtual-kubernetes-clusters).
 
 创建 Namespace 描述文件： ${STEEDOS_TENANT_ID}.yaml
 
@@ -36,7 +36,7 @@ metadata:
   name: ${STEEDOS_TENANT_ID}
 ```
 
-使用命令加载此文件，创建一个namespace。
+使用命令加载此文件，创建一个 namespace。
 
 ```sh
 kubectl create -f ./${STEEDOS_TENANT_ID}.yaml
@@ -121,14 +121,13 @@ spec:
       name: console-secret
 ```
 
-
-使用命令加载此文件，部署MinIO。
+使用命令加载此文件，部署 MinIO。
 
 ```sh
 kubectl create -f ./minio.yaml --namespace ${STEEDOS_TENANT_ID}
 ```
 
-## 部署 Steedos 
+## 部署 Steedos
 
 创建 Steedos 租户描述文件：steedos.yaml
 
@@ -141,14 +140,21 @@ spec:
   replicas: ${STEEDOS_SERVERS}
   template:
     metadata:
-      labels: 
+      labels:
         app: steedos
-    spec:     
-      containers: 
-      - name: steedos-community
-        image: steedos-community@1.23
-        ports:
-        - containerPort: 3000
+    spec:
+      containers:
+        - name: steedos-community
+          image: steedos-community@1.23
+          ports:
+            - containerPort: 3000
+        - env:
+            - name: MONGO_URL
+              value: mongodb://mongo-0.mongo,mongo-1.mongo,mongo-2.mongo:27017/steedos?replicaSet=rsSteedos
+            - name: PORT
+              value: "3000"
+            - name: ROOT_URL
+              value: http://localhost:5080
 ```
 
 使用命令加载此文件，部署 Steedos。
@@ -157,7 +163,8 @@ spec:
 kubectl create -f ./steedos.yaml --namespace ${STEEDOS_TENANT_ID}
 ```
 
-使用API加载此文件
+使用 API 加载此文件
+
 ```
 curl -X POST -H 'Content-Type: application/yaml' --data '${YAML}' http://127.0.0.1:8001/apis/apps/v1/${STEEDOS_TENANT_ID}/default/deployments
 
