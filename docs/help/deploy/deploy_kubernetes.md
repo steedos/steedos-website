@@ -157,6 +157,12 @@ spec:
 kubectl create -f ./steedos.yaml --namespace ${STEEDOS_TENANT_ID}
 ```
 
+使用API加载此文件
+```
+curl -X POST -H 'Content-Type: application/yaml' --data '${YAML}' http://127.0.0.1:8001/apis/apps/v1/${STEEDOS_TENANT_ID}/default/deployments
+
+```
+
 ## 部署 Steedos 对外访问服务
 
 创建服务描述文件： steedos-service.yaml
@@ -180,7 +186,3 @@ spec:
 ```sh
 kubectl create -f ./steedos.yaml --namespace ${STEEDOS_TENANT_ID}
 ```
-
-## 使用 Kubernetes API 创建租户
-
-以上 yaml 文件均使用 kubectl 命令加载。如需实现自动化创建租户，只需要调用 Kubernetes API，逐个 POST 以上 yaml 文件中的内容即可。
