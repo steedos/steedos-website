@@ -53,7 +53,7 @@ kubectl create -f ./${STEEDOS_TENANT_ID}.yaml
 
 创建 MongoDB 租户描述文件：mongodb.yaml
 
-```
+```yaml
 apiVersion: mongodb.com/v1
 kind: MongoDBCommunity
 metadata:
@@ -78,7 +78,7 @@ kubectl create -f ./mongodb.yaml --namespace ${STEEDOS_TENANT_ID}
 
 创建 MinIO 租户描述文件：minio.yaml
 
-```
+```yaml
 apiVersion: minio.min.io/v2
 kind: Tenant
 metadata:
@@ -132,7 +132,7 @@ kubectl create -f ./minio.yaml --namespace ${STEEDOS_TENANT_ID}
 
 创建 Steedos 租户描述文件：steedos.yaml
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -167,7 +167,7 @@ curl -X POST -H 'Content-Type: application/yaml' --data '${YAML}' http://127.0.0
 
 创建服务描述文件： steedos-service.yaml
 
-```
+```yaml
 apiVersion: v1
 kind: Service
 metadata:
