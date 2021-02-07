@@ -15,8 +15,8 @@ title: 部署到 Kubernetes (k8s)
 部署前需要考虑以下基础配置：
 
 - STEEDOS_TENANT_ID: 华炎魔方租户 ID，随机生成。
-- STEEDOS_ROOT_URL: 华炎魔方对外访问的 URL。
-- STEEDOS_PORT: 华炎魔方的服务端口。
+- STEEDOS_ROOT_URL: 华炎魔方对外访问的URL。
+- STEEDOS_PORT: 华炎魔方的对外访问的端口。
 - STEEDOS_SERVERS: 华炎魔方服务器数量。
 - MONGODB_SERVERS: MONGODB 服务器数量。
 - MINIO_SERVERS: MinIO 服务器数量。
@@ -155,7 +155,7 @@ spec:
             - name: PORT
               value: "3000"
             - name: ROOT_URL
-              value: http://localhost:5080
+              value: ${STEEDOS_ROOT_URL}
 ```
 
 使用命令或使用 Kubernetes API 加载此文件，部署 Steedos。
