@@ -92,4 +92,6 @@ title: 组织机构
 
 ![分部](/assets/workflow/company.png)
 
-> 分部，作为企业版的功能，需要在package.json中加上插件才显示："@steedos/plugin-enterprise": "^1.20.15"
+:::note 提示
+分部是企业版的功能，需要启用企业版插件`@steedos/plugin-enterprise`才会显示上述分部菜单，关于如何安装和启用插件请参考：[华炎魔方插件](/plugins/index)。
+:::
