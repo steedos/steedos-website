@@ -201,6 +201,77 @@ HYPERLINK("http://servername/call?id=" & Id & "&phone=" & Phone, Phone)
 - ■ 华炎魔方在界面上暂时不支持把该函数返回值显示为链接。
 :::
 
+## INCLUDES
+
+决定多选选项列表字段中选择的任何值是否等于您所指定的文本文字。
+
+**使用：** INCLUDES(multiselect_picklist_field, text_literal)
+
+**参数：**
+
+- *multiselect_picklist_field:* `select`
+选项列表字段名。
+- *text_literal:* `text`
+要用作比较的文本。
+
+**返回值：** 布尔
+
+***示例：***
+
+```js
+INCLUDES(Hobbies__c, "Golf")
+```
+
+如果爱好自定义多选选项列表字段中选择的某个值是“高尔夫”，则 INCLUDES(Hobbies__c, "Golf") 将返回 TRUE（真）。
+
+:::note 技巧提示
+
+- ■ 该函数只支持多选的选项列表字段，要使用单选选项列表字段请使用 [ISPICKVAL](#ispickval)。
+- ■ 可以使用 [ISBLANK](/help/formula/function_logical#isblank) 决定选项列表字段是否为空。
+- ■ 关于选项列表字段支持哪些其他函数，请参考 [使用选项列表公式字段的提示](/help/formula/tip#使用选项列表公式字段的提示)。
+:::
+
+## ISPICKVAL
+
+确定选项列表字段的值是否等于所指定的文本文字。
+
+**使用：** ISPICKVAL(picklist_field, text_literal)
+
+**参数：**
+
+- *picklist_field:* `select`
+选项列表字段名。
+- *text_literal:* `text`
+要用作比较的文本。
+
+**返回值：** 布尔
+
+***示例：***
+
+***1.合同启用***
+
+```js
+IF(ISPICKVAL( Status , "Activated"), NOW()-ActivatedDate, null)
+```
+
+计算自合同被启用以来的天数。如果合同状态不是“Activated”，则此字段为空。
+
+***2.佣金金额***
+
+```js
+IF(ISPICKVAL(StageName, "Closed Won"), 
+  ROUND(Amount *0.02, 2), 0)
+```
+
+本示例计算处于“Closed Won”（已结束并赢得客户）阶段的任何业务机会的佣金金额。该字段的值将是任何已结束／赢得客户的业务机会的金额乘以 0.02。对于未处理或已丢失的业务机会，佣金值为零。
+
+:::note 技巧提示
+
+- ■ 该函数只支持单选的选项列表字段，要使用多选选项列表字段请使用 [INCLUDES](#includes)。
+- ■ 可以使用 [ISBLANK](/help/formula/function_logical#isblank) 决定选项列表字段是否为空。
+- ■ 关于选项列表字段支持哪些其他函数，请参考 [使用选项列表公式字段的提示](/help/formula/tip#使用选项列表公式字段的提示)。
+:::
+
 ## LEFT
 
 返回从文本字符串开头算起的指定数量的字符。
@@ -472,16 +543,10 @@ SUBSTITUTE(Email, LEFT(Email, FIND("@", Email)), "www.")
 
 **使用：** TEXT(值)
 
-**参数：** `text`
-您希望转换为文本格式的字段或表达式。避免在此函数中使用除小数点（句点）或负号（连字符）以外的任何特殊字符。
+**参数：** `number/date/datetime/select`
+您希望转换为文本格式的字段或表达式。
 
 **返回值：** 文本
-
-:::note 技巧提示
-
-- ■ `TEXT(null)`返回值为"NULL"而不是空字符串。
-- ■ `TEXT(FieldName)`参数为字段名的话，当字段值为空时，返回的是空字符串而不是"NULL"。
-:::
 
 ```js
 TEXT(ExpectedRevenue)
@@ -497,10 +562,14 @@ SerialNumber &"-"& TEXT(Quantity)
 
 :::note 技巧提示
 
+- ■ `TEXT(null)`返回值为"NULL"而不是空字符串。
+- ■ `TEXT(FieldName)`参数为字段名的话，当字段值为空时，返回的是空字符串而不是"NULL"。
+- ■ 不支持传入文本类型值，否则将直接报错。
 - ■ 返回的文本未使用任何货币、百分比符号或逗号进行自动格式处理。
 - ■ 百分数以小数形式返回。
 - ■ 日期以 YYYY-MM-DD 格式（即四位数字年份、两位数字月份和两位数字日期）返回。
 - ■ 日期时间值以 YYYY-MM-DD HH:MM:SSZ 格式返回，其中 YYYY 是四位数字年份，MM 是两位数字月份，DD 是两位数字日期，HH 是两位数字小时，MM 是两位数字分钟，SS 是两位数字秒钟，Z 代表本初子午线，指示时间以 UTC 时区返回。
+- ■ 只支持传入单选的select字段，不支持多选。
 :::
 
 ## TRIM

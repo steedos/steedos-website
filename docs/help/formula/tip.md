@@ -59,6 +59,22 @@ CASE(Days_Open__c, 1,
 
 应该使用`Days_Open__c = 1`来简化该公式。
 
+## 使用选项列表公式字段的提示
+
+在公式中使用select字段类型时，有单选和多选两种，分别对应到公式中的单选选项列表`picklist`和多选选项列表`multipicklist`这两种数据类型，只有少量公式函数支持这两种数据类型。
+
+### 支持单选选项列表的函数
+
+- [ISPICKVAL](/help/formula/function_text#ispickval): 将选项列表的值与单个值进行比较。
+- [CASE](/help/formula/function_logical#case)：将选项列表的值与多个值进行比较。
+- [TEXT](/help/formula/function_text#text)：返回选项列表值的 API 名称，以便您可在支持文本值的函数（例如 CONTAINS）中使用对值的引用（即使显示值已更改）。
+- [ISBLANK](/help/formula/function_logical#isblank)：判断字段值是否为空。
+
+### 支持多选选项列表的函数
+
+- [INCLUDES](/help/formula/function_text#includes)：决定多选选项列表字段中选择的任何值是否等于您所指定的文本文字。
+- [ISBLANK](/help/formula/function_logical#isblank)：判断字段值是否为空。
+
 ## 关于跨对象公式的提示
 
 - 跨对象公式是跨越两个相关对象，并在这些对象上引用合并字段的公式。如果对象在“主表/子表”的子表一侧，跨对象公式可以从主（“父级”）对象引用合并字段。跨对象公式也可与“相关表”一起使用。

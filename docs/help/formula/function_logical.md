@@ -33,9 +33,9 @@ IF(AND(Price<1,Quantity<1),"Small", null)
 
 **参数：**
 
-- *表达式:* `text`
+- *表达式:* `text/number/date/datetime`
 您希望计算的表达式，支持除布尔类型外的常用字段类型值。
-- *置换表达式:* `text`
+- *置换表达式:* `text/number/date/datetime`
 您希望替换任何空白值的值，数据类型应该跟第一个参数一致，当不一致时将返回错误信息。
 
 **返回值：** 与传入的参数一样的数据类型
@@ -47,7 +47,7 @@ BLANKVALUE(Department, "Undesignated")
 如果部门字段包含值则此公式返回部门字段的值。如果部门字段为空，则此公式返回词语未指定。
 
 ```js
-BLANKVALUE(TEXT(Payment_Due_Date__c), TEXT(StartDate +5))
+BLANKVALUE(Payment_Due_Date__c, StartDate + 5)
 ```
 
 此公式返回当 Payment Due Date（付款到期日期）为空时，合同开始日期之后第五天的日期。Payment Due Date（付款到期日期）是自定义日期字段。
@@ -56,22 +56,25 @@ BLANKVALUE(TEXT(Payment_Due_Date__c), TEXT(StartDate +5))
 
 - ■ 如果字段包含字符、空白或零，则字段不为空。例如，如果字段包含使用空格键插入的空格，则该字段不为空。
 - ■ 如果字段没有值，则使用 BLANKVALUE 函数返回指定置换表达式对应的值；如果您只想检查字段是否有值，则使用[ISBLANK](function_logical#isblank)函数。
-- ■ 传入的参数不支持布尔类型值，且传入的两个参数值类型应该一样，否则公式将直接报错，详情可参考：[使用布尔公式字段的提示](/help/formula/create#使用布尔公式字段的提示)。
-- ■ 如果您对数值字段判断空值，比如`IF(TEXT(Amount) == "NULL", 100, Amount)`，则字段没有值且配置将空白字段处理为空白时，该公式才返回第二个参数中的指定的置换表达式值，如果字段没有值且配置将空白字段处理为0时，则按0值返回而不是返回第二个参数中的指定表达式值。
+- ■ 传入的两个参数值类型应该一样，否则公式将直接报错。
+- ■ 传入的参数不支持布尔类型值，详情可参考：[使用布尔公式字段的提示](/help/formula/tip#使用布尔公式字段的提示)。
+- ■ 传入的参数不支持select字段类型值，详情可参考：[使用选项列表公式字段的提示](/help/formula/tip#使用选项列表公式字段的提示)。
+- ■ 如果您对数值字段判断空值，比如`BLANKVALUE(Amount, 100)`，则字段没有值且配置将空白字段处理为空白时，该公式才返回第二个参数中的指定的置换表达式值，如果字段没有值且配置将空白字段处理为0时，则按0值返回而不是返回第二个参数中的指定表达式值。
 - ■ 因为我们的空白字段处理方式默认值是“将空白字段视为零”，所以低代码中要小心，不配置这个属性时，默认为按0值处理。零代码配置时问题不大，因为空白字段处理属性是必填的，不存在默认值问题。
 :::
 
 :::note 注意
 
 - ■ 该函数与[ISBLANK](function_logical#isblank)很像，但是该函数会进一步返回字段值为空时的置换表达式对应的值，一般来说，如果您只是想判断字段值是否为空，应该使用后者而不是该函数。
-- ■ 如果您对数值字段判断空值，应该用表达式`IF(TEXT(Amount) == "NULL", 100, Amount)`，而不是`VALUE(BLANKVALUE(TEXT(Amount), TEXT(1000)))`，因为BLANKVALUE不支持数值类型字段，即使外面额外调用了TEXT函数转换也没用。
+- ■ 该函数不支持传入select字段类型参数，但是如果字段是单选的，可以先用TEXT函数选把select类型转换为text类型，比如`BLANKVALUE(TEXT(Leave__c), "error")`，多选的select字段类型无法使用BLANKVALUE函数。
 :::
 
 :::note 各种字段类型判断空值的公式写法
 
-- ■ 字段类型为 `text/select` 时：`BLANKVALUE(FieldName, "替换值")`
-- ■ 字段类型为 `number/currency` 时： `IF(TEXT(FieldName) == "NULL", 替换值, FieldName)`
-- ■ 字段类型为 `date/datetime` 时： `IF(ISBLANK(TEXT(FieldName)), ValueA, ValueB)`
+- ■ 字段类型为 `text` 时：`BLANKVALUE(FieldName, "替换值")`
+- ■ 字段类型为 `select` 时：`IF(ISBLANK(FieldName), 替换值, FieldName)`
+- ■ 字段类型为 `number/currency` 时： `BLANKVALUE(FieldName, "替换值")`
+- ■ 字段类型为 `date/datetime` 时： `BLANKVALUE(FieldName, "替换值")`
 - ■ 字段类型为 `lookup/master_detail` 时： `BLANKVALUE(FieldName._id, "替换ID值")`
 - ■ 字段类型为 `boolean` 时：`IF(FieldName, ValueA, ValueB)`
 :::
@@ -84,7 +87,7 @@ BLANKVALUE(TEXT(Payment_Due_Date__c), TEXT(StartDate +5))
 
 **参数：**
 
-- *表达式:* `text/number/currency/percent/date/datetime`
+- *表达式:* `text/number/currency/percent/date/datetime/select`
 要与所指定的每个值进行比较的字段或值。
 - *值1:* `text/number/currency/percent/date/datetime`
 第一个要与第一个参数值进行比较的值。
@@ -165,9 +168,9 @@ CASE($User.Country ,​​ "Japan", "Japanese", "US", "English","unknown")
 - ■ CASE 函数中不能包含返回布尔类型，即真或假的参数值，而应当确保真或假表达式返回被支持的数据类型，例如：
 
 ```js
-CASE(1, IF(Term__c == "12",​ 1, 0),
+CASE(1, IF(ISPICKVAL(Term__c,"12"),​ 1, 0),
  12 * Monthly_Commit__c,​​
- IF(Term__c == "24", 1, 0),​​
+ IF(ISPICKVAL(Term__c,"24"), 1, 0),​​
  24 * Monthly_Commit__c, 0)
 ```
 
@@ -180,7 +183,9 @@ CASE(1, IF(Term__c == "12",​ 1, 0),
 :::
 
 :::note 注意
-CASE函数中的任何参数都不支持布尔类型值，这不只表示第一个参数及后续用于比较值的其他参数不能是布尔类型值，最后一个参数也一样不支持布尔类型值，也就是说整个函数的返回值不可能是布尔类型值，详情可参考：[使用布尔公式字段的提示](/help/formula/create#使用布尔公式字段的提示)。
+
+- ■ CASE函数中的任何参数都不支持布尔类型值，这不只表示第一个参数及后续用于比较值的其他参数不能是布尔类型值，最后一个参数也一样不支持布尔类型值，也就是说整个函数的返回值不可能是布尔类型值，详情可参考：[使用布尔公式字段的提示](/help/formula/tip#使用布尔公式字段的提示)。
+- ■ 表达式参数，即传入的第一个参数支持select字段，但是只支持单选的，如果传入多选的select将直接报错。
 :::
 
 ## IF
@@ -232,7 +237,7 @@ IF($user.city = "Napa", 0.0750,
 :::
 
 :::note 注意
-IF函数不支持返回值为布尔类型的情况，即第二个及第三个参数不能是布尔类型，详情可参考：[使用布尔公式字段的提示](/help/formula/create#使用布尔公式字段的提示)。
+IF函数不支持返回值为布尔类型的情况，即第二个及第三个参数不能是布尔类型，详情可参考：[使用布尔公式字段的提示](/help/formula/tip#使用布尔公式字段的提示)。
 :::
 
 ## ISBLANK
@@ -241,44 +246,43 @@ IF函数不支持返回值为布尔类型的情况，即第二个及第三个参
 
 **使用：** ISBLANK(表达式)
 
-**参数：** `text`
+**参数：** `text/number/date/datetime/select`
 您希望计算的表达式。
 
 **返回值：** 布尔
 
 ```js
-(IF(ISBLANK(TEXT(Maint_Amount__c)), 0, 1) + ​
- IF(ISBLANK(TEXT(Services_Amount__c)), 0,1) + ​
-  IF(ISBLANK(TEXT(Discount_Percent__c)), 0, 1) + ​
-   IF(ISBLANK(TEXT(Amount)), 0, 1) +​
-    IF(ISBLANK(TEXT(Timeline__c)), 0, 1)) / 5
+(IF(ISBLANK(Maint_Amount__c), 0, 1) + ​
+ IF(ISBLANK(Services_Amount__c), 0,1) + ​
+  IF(ISBLANK(Discount_Percent__c), 0, 1) + ​
+   IF(ISBLANK(Amount), 0, 1) +​
+    IF(ISBLANK(Timeline__c), 0, 1)) / 5
 ```
 
 此公式可提取一组字段，并计算人员所用的百分比。此公式字段检查五个字段以查看它们是否为空。如果为空，则该字段计数为 0。对于任何包含一个值的字段计数“1”，且该总和除以五（计算的字段数）。此公式需要您选中“空白字段处理”下面的将空白字段视为空白选项，否则公式中的ISBLANK会始终返回FALSE。
 
 :::note 技巧提示
 
-- ■ 请不要用`MyDateTime__c == null`这种表达式判断空值，而应该使用`ISBLANK(TEXT(MyDateTime__c))`。
-- ■ 参数支持数据类型text, number, date, datetime等，但是不支持类型boolean，需要注意的是只有text类型能正常工作，其他被支持的类型虽然不会报错，但是始终返回false。
+- ■ 请不要用`MyDateTime__c == null`这种表达式判断空值，而应该使用`ISBLANK(MyDateTime__c)`。
 - ■ 如果字段包含字符、空白或零，则字段不为空。例如，如果字段包含使用空格键插入的空格，则该字段不为空。
 - ■ 如果字段没有值，则使用 [BLANKVALUE](function_logical#blankvalue) 函数返回指定表达式；如果您只想检查字段是否有值，则使用 ISBLANK 函数。
-- ■ 如果您对数值字段使用该函数,比如`ISBLANK(TEXT(Amount))`，则字段没有值且配置将空白字段处理为空白时，该函数才返回 TRUE。
+- ■ 如果您对数值字段使用该函数,比如`ISBLANK(Amount)`，则字段没有值且配置将空白字段处理为空白时，该函数才返回 TRUE。
 - ■ 因为我们的空白字段处理方式默认值是“将空白字段视为零”，所以低代码中要小心，不配置这个属性时，默认为按0值处理。零代码配置时问题不大，因为空白字段处理属性是必填的，不存在默认值问题。
+- ■ 对于select字段类型，单选多选语法是一样的，直接传入参数值即可。
 :::
 
 :::note 注意
 
 - ■ ISBLANK函数返回值为布尔类型，但是不支持参数值本身为布尔类型的情况。
-- ■ 对于数值类型判断空值目前还不支持ISBLANK函数，即使`ISBLANK(TEXT(Maint_Amount__c)`这种写法也不生效，可以换成`TEXT(Maint_Amount__c) == "NULL"`
 :::
 
 :::note 各种字段类型判断空值的公式写法
 
-- ■ 字段类型为 `text/select` 时：`ISBLANK(FieldName)`
-- ■ 字段类型为 `number/currency` 时： `TEXT(FieldName) == "NULL"`
-- ■ 字段类型为 `date/datetime` 时： `ISBLANK(TEXT(FieldName))`
-- ■ 字段类型为 `lookup/master_detail` 时： `ISBLANK(FieldName._id)`
-- ■ 字段类型为 `boolean` 时：`FieldName`
+- ■ 字段类型为 `text/select` 时：`ISBLANK(FieldName)`。
+- ■ 字段类型为 `number/currency` 时： `ISBLANK(FieldName)`，但是只有配置将空白字段处理为空白时才有效，否则永远返回false。
+- ■ 字段类型为 `date/datetime` 时： `ISBLANK(FieldName)`。
+- ■ 字段类型为 `lookup/master_detail` 时： `ISBLANK(FieldName._id)`。
+- ■ 字段类型为 `boolean` 时：`FieldName`。
 :::
 
 ## NOT
