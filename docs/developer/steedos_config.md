@@ -141,6 +141,7 @@ cron:
   calendar_remind: 60000
   webhookqueue_interval: 1000
   instancerecordqueue_interval: 10000
+  objectwebhooksqueue_interval: 10000
 ```
 
 - statistics: 流程统计的执行时间，如上面的“0 0 0 * * *”意为每天的00:00:00 
@@ -150,3 +151,4 @@ cron:
 - calendar_remind: 日程提醒的轮询间隔(单位毫秒)
 - webhookqueue_interval: 流程触发器队列的轮询间隔(单位毫秒)
 - instancerecordqueue_interval: 对象流程队列的轮询间隔(单位毫秒)
+- objectwebhooksqueue_interval: 对象触发器队列的轮询间隔(单位毫秒)
