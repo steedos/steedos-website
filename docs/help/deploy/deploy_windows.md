@@ -83,7 +83,7 @@ steedos-project-root
 
 启动数据库报错：**由于找不到 MSVCP140.dll，无法继续执行代码。重新安装程序可能会解决此问题** 或者 **Mongod instance closed with an non-0 (or non 12 on windows) code!**。
 
-通常发生在 windows server 2012/2015/2019 上。
+通常发生在 windows server 2015/2017/2019 上。
 
 原因是缺少微软**VC++**运行库文件，去微软官网下载[最新支持的 Visual C++](https://support.microsoft.com/zh-cn/help/2977003/the-latest-supported-visual-c-downloads)
 
