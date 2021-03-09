@@ -253,6 +253,7 @@ module.exports =
        "videos/formula-calculates",
        "videos/validation_rules",
        "videos/workflow_rules",
+       "videos/approval_process",
        "videos/lesson-metadata",
        "videos/lesson-metadata-synchronize"],
     "审批王": [
