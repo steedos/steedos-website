@@ -41,3 +41,9 @@ environment 中的环境变量可根据需要参考[steedos-config.yml](/help/de
 - [设置与维护华炎魔方](https://www.steedos.com/help/admin)
 - [开发文档](https://www.steedos.com/developer)
 - [华炎魔方平台源码](https://github.com/steedos/steedos-platform/)
+
+## 常见问题解答
+
+### docker 镜像下载缓慢
+
+由于镜像存在国外，可配置阿里云[官方镜像加速](https://help.aliyun.com/document_detail/60750.html)
