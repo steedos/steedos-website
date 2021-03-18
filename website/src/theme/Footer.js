@@ -127,37 +127,51 @@ class Footer extends React.Component {
                                         <ul className="mt-4">
                                             <li className="mt-4">
                                                 <a
-                                                    href="/products/contract/"
+                                                    href="/appstore/labs/contract"
                                                     className="text-base leading-6 text-gray-500 hover:text-gray-900">
                                                     合同管理
                                                 </a>
                                             </li>
                                             <li className="mt-4">
                                                 <a
-                                                    href="/products/sales/"
+                                                    href="/appstore/labs/sales"
                                                     className="text-base leading-6 text-gray-500 hover:text-gray-900">
                                                     销售管理
                                                 </a>
                                             </li>
                                             <li className="mt-4">
                                                 <a
-                                                    href="/products/purchase/"
+                                                    href="/appstore/labs/purchase"
                                                     className="text-base leading-6 text-gray-500 hover:text-gray-900">
                                                     采购管理
                                                 </a>
                                             </li>
                                             <li className="mt-4">
                                                 <a
-                                                    href="/products/cost/"
+                                                    href="/appstore/labs/cost"
                                                     className="text-base leading-6 text-gray-500 hover:text-gray-900">
                                                     费控管理
                                                 </a>
                                             </li>
                                             <li className="mt-4">
                                                 <a
-                                                    href="/products/workflow/"
+                                                    href="/appstore/labs/project"
                                                     className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                                                    流程管理
+                                                    项目管理
+                                                </a>
+                                            </li>
+                                            <li className="mt-4">
+                                                <a
+                                                    href="/appstore/labs/workflow"
+                                                    className="text-base leading-6 text-gray-500 hover:text-gray-900">
+                                                    流程审批
+                                                </a>
+                                            </li>
+                                            <li className="mt-4">
+                                                <a
+                                                    href="/appstore/labs/okr"
+                                                    className="text-base leading-6 text-gray-500 hover:text-gray-900">
+                                                    OKR 目标管理
                                                 </a>
                                             </li>
                                         </ul>
