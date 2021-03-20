@@ -45,7 +45,7 @@ steedos-project-root
 
 ## 运行项目
 
-然后确保数据库启动成功后，双击运行`bin\steedos.bat`保持窗口打开。
+双击运行`bin\start_steedos.bat`保持窗口打开。
 
 服务启动完成后，会自动使用默认浏览器打开地址 **http://127.0.0.1:3000/** 。
 
