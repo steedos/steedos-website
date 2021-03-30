@@ -190,11 +190,6 @@ public:
     store: "local"
     local: 
       folder: "./storage"
-  webservices:
-    pdfOnline:
-      url: "http://oss.steedos.com/apps/pdfviewer-es5/web/viewer.html?rangeChunkSize=1024&file="
-    officeOnline:
-      url: "https://view.officeapps.live.com/op/view.aspx?src="
 cfs:
   aliyun:
     region:
