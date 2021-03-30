@@ -190,27 +190,26 @@ public:
     store: "local"
     local: 
       folder: "./storage"
-  cfs:
-    aliyun:
-      region:
-      internal:
-      bucket:
-      folder:
-      accessKeyId:
-      secretAccessKey:
-  aws:
-    endpoint:
-    bucket:
-    accessKeyId:
-    secretAccessKey:
-    s3ForcePathStyle:
-    signatureVersion:
   webservices:
     pdfOnline:
       url: "http://oss.steedos.com/apps/pdfviewer-es5/web/viewer.html?rangeChunkSize=1024&file="
     officeOnline:
       url: "https://view.officeapps.live.com/op/view.aspx?src="
-
+cfs:
+  aliyun:
+    region:
+    internal:
+    bucket:
+    folder:
+    accessKeyId:
+    secretAccessKey:
+aws:
+  endpoint:
+  bucket:
+  accessKeyId:
+  secretAccessKey:
+  s3ForcePathStyle:
+  signatureVersion:
 ```
 
 - `public.cfs.store`: 配置附件存储在什么地方，目前支持三个选项，`local`表示存储在本地，`OSS`表示存到阿里云，`S3`表示存到AWS​，默认值为`local`。
