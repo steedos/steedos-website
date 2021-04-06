@@ -254,9 +254,10 @@ module.exports =
        "videos/validation_rules",
        "videos/workflow_rules",
        "videos/approval_process",
-       "videos/authority_management",
        "videos/lesson-metadata",
-       "videos/lesson-metadata-synchronize"],
+       "videos/lesson-metadata-synchronize",
+       "videos/authority_management",
+       "videos/report"],
     "审批王": [
        "videos/workflow/admin-contracts", 
        "videos/workflow/user-contracts"]   
