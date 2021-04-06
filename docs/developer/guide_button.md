@@ -60,7 +60,7 @@ Creator.Objects.accounts.actions = {
   - "record_more" 为记录定义action，显示在记录查看页右上角的“更多”下拉菜单中，以及列表视图中每项的下拉菜单中
   - "list_item" 为记录定义action，只显示在列表视图中每项的下拉菜单中
   - "record_only" 为记录定义action，只显示在记录查看页右上角
-- sort: 排序号，显示时，按照从小到达顺序排列。编辑action的sort默认为0
+- sort: 排序号，显示时，按照从小到大顺序排列。编辑action的sort默认为0
 - todo: 脚本内容
 
 ## 编写按钮的执行代码

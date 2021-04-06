@@ -16,7 +16,7 @@ title: 自定义按钮
   - "list_item" 为记录定义action，只显示在列表视图中每项的下拉菜单中
   - "record_only" 为记录定义action，只显示在记录查看页右上角
   - "record_only_more" 为记录定义action，只显示在记录查看页右上角的“更多”下拉菜单中
-- sort: 排序号，显示时，按照从小到达顺序排列。编辑action的sort默认为0
+- sort: 排序号，显示时，按照从小到大顺序排列。编辑action的sort默认为0
 
 ### 声明操作按钮的动作
 `xxx.action.js`
