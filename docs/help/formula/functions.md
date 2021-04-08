@@ -93,7 +93,8 @@ sidebar_label: 目录
 - [**TEXT：**](function_text#text) 在使用公式的任何地方将百分比、数字、日期、日期时间或货币类型字段转换为文本。
 - [**TRIM：**](function_text#trim) 删除文本字符串开头和末尾处的空格和制表符。
 - [**UPPER：**](function_text#upper) 将指定文本字符串中的所有字母转换为大写。不是字母的任何字符不受此函数的影响。
-
+- [**ISPICKVAL：**](function_text#ispickval) 将选项列表的值与单个值进行比较。
+- [**INCLUDES：**](function_text#includes) 决定多选选项列表字段中选择的任何值是否等于您所指定的文本文字。
 ## 高级函数
 
 - [**REGEX：**](function_advanced#regex) 将文本字段与正则表达式进行比较，如果匹配则返回 TRUE（真）。反之，返回 FALSE（假）。正则表达式是一个字符串，它根据一定语法规则描述字符串的格式。
