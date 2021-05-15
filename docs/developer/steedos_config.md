@@ -117,15 +117,11 @@ sms:
 
 ## 密码规则配置
 
-配置密码的校验规则，例如最小长度，是否必须包含数字、大写字母、小写字母和字符。
+密码的复杂度是通过password.policy 属性来控制的，值为正则表达式。
 
 ```yml
 password:
-  minimum_length: 10
-  lowercase: true
-  number: true
-  uppercase: true
-  symbol: true
+  policy: '/[A-Za-z0-9]{10}/'
 ```
 
 ## 定时任务配置
