@@ -120,8 +120,10 @@ sms:
 密码的复杂度是通过password.policy 属性来控制的，值为正则表达式。
 
 ```yml
-password:
-  policy: '/[A-Za-z0-9]{10}/'
+public:
+  password:
+    policy: ^[A-Za-z0-9]{8,}$
+    policyerror: "密码不能少于8位"
 ```
 
 ## 定时任务配置
