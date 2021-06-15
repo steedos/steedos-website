@@ -130,7 +130,7 @@ tenant:
 - enable_create_tenant: 允许创建企业，默认true
 - enable_password_login: 允许使用密码登录，启用时，注册和登录都默认使用密码。默认true
 - enable_bind_email: 强制绑定邮箱，默认false
-- enable_bind_mobile: 强制绑定邮箱，默认false
+- enable_bind_mobile: 强制绑定手机号，默认false
 - enable_mobile_code_login: 允许使用手机验证码登录，启用时，注册和登录都默认使用验证码。
 - enable_email_code_login: 允许使用邮箱验证码登录，启用时，注册和登录都默认使用验证码。
 
