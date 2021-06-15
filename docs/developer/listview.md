@@ -64,15 +64,15 @@ columns:
 定了列表数据的排序规则，可以设定多个字段的组合排序。如果未指定，默认的排序规则是按创建时间倒序排列，也就是如下代码：
 
 ```yaml
-sort: [["modified", "asc"]]
+sort: [["create_date", "desc"]]
 ```
 
 或
 
 ```yaml
 sort:
-  - field_name: modified
-    order: asc
+  - field_name: create_date
+    order: desc
 ```
 
 ### 用户筛选字段 filter_fields
