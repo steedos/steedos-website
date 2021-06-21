@@ -1,23 +1,35 @@
----
-title: 低代码应用
-sidebar_label: 概览
-hide_table_of_contents: true
-hide_title: true
----
+import React from "react";
 
 import Layout from '@theme/Layout';
 import Video from '@site/src/components/Video';
+import Features from '@site/src/components/Features';
+import FeaturesWide from '@site/src/components/FeaturesWide';
 import FAQ from '@site/src/components/FAQ';
-import Card from '@site/src/components/Card';
+import Customers from '@site/src/components/Customers';
 import * as Icons from '@site/src/components/HeroIcons/outline';
-
-<!-- ## 开源应用 -->
-
 import Hero from '@site/src/components/Hero';
 
+export default function Landing() {
+  return (
+<Layout
+      title="解决方案"
+      description="华炎魔方是一款随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。"
+>
+  
+<div className="bg-gray-50">
+      <div className="max-w-7xl mx-auto pt-16 px-4 sm:pt-24 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+            解决方案
+          </p>
+          <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
+          华炎魔方使用元数据定义数据结构、界面和业务逻辑。基于华炎魔方开发的低代码应用，可以轻松定制。          </p>
+        </div>
+      </div>
+    </div>
 <Hero 
-  title="低代码应用" 
-  description="华炎魔方使用元数据定义数据结构、界面和业务逻辑。基于华炎魔方开发的低代码应用，可以轻松定制。"
+  title="" 
+  description=""
   items={[
     {
       icon: Icons.Cube,
@@ -65,4 +77,6 @@ import Hero from '@site/src/components/Hero';
 />
 
 
-<br/><br/>
+</Layout>
+  );
+}
