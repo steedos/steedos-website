@@ -24,22 +24,22 @@ export default function Landing() {
           新一代低代码开发平台
         </div> */}
         <h2 className="mt-1 text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-4xl lg:text-5xl xl:text-6xl">
-        高效搭建
+        高效搭建企业应用的
           <br className="hidden md:inline"/>
-          <span className="text-blue-700">企业应用的魔方</span>
+          <span className="text-green-700">神奇魔方</span>
         </h2>
         <p className="mt-3 text-base text-gray-700 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-          华炎魔方特有的敏捷性、灵活性和开放性，帮助业务加速创新，提升竞争力.
+          点击鼠标，就能编程。华炎魔方特有的敏捷性、灵活性和开放性，帮助业务加速创新，提升竞争力.
         </p>
 
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
           <div className="rounded-md shadow">
-            <a href="http://oss.steedos.com/apps/pdfviewer/web/viewer.html?file=http://oss.steedos.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E6%8A%80%E6%9C%AF%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-teal transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10  hover:text-white">
+            <a href="http://oss.steedos.com/apps/pdfviewer/web/viewer.html?file=http://oss.steedos.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E6%8A%80%E6%9C%AF%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-teal transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10  hover:text-white">
               技术白皮书
             </a>
           </div>
           <div className="mt-3 sm:mt-0 sm:ml-3">
-            <a href="/form/trial/" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-700 bg-blue-100 hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:shadow-outline-teal focus:border-blue-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+            <a href="/form/trial/" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-green-700 bg-green-100 hover:text-green-600 hover:bg-green-50 focus:outline-none focus:shadow-outline-teal focus:border-green-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
               预约演示
             </a>
           </div>
@@ -68,42 +68,42 @@ export default function Landing() {
         <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div class="lg:col-start-2">
             <h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-            企业级应用平台的魔方
+            轻松搭建、快速创新，赋能每个员工
             </h3>
             <p class="mt-3 text-lg text-gray-500">
-            借助华炎魔方平台，您可以快速创新、自信的扩展并赋能每个员工。
             </p>
 
             <dl class="mt-10 space-y-10">
                 
+            <div class="relative">
+                  <dt>
+                    <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <p class="ml-9 text-lg leading-6 text-gray-700">只需点击鼠标，就能进行应用系统的编码和设计，帮助业务人员和IT部门融合在一起，在一个平台上轻松协作。</p>
+                  </dt>
+                  <dd class="mt-2 ml-9 text-base text-gray-500">
+                  </dd>
+                </div>
+
                 <div class="relative">
                   <dt>
                     <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                     </svg>
-                    <p class="ml-9 text-lg leading-6 text-gray-900">基于领先的人工智能和现代计算技术，快速实施数字化转型，管理您的业务数据并实现自动化处理。</p>
+                    <p class="ml-9 text-lg leading-6 text-gray-700">基于领先的人工智能和现代计算技术，管理每个部门的业务并实现自动化处理，加速企业数字化转型。</p>
                   </dt>
                   <dd class="mt-2 ml-9 text-base text-gray-500">
                   </dd>
                 </div>
+              
               
                 <div class="relative">
                   <dt>
                     <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                     </svg>
-                    <p class="ml-9 text-lg leading-6 text-gray-900">只需点击鼠标，就能进行应用系统的编码和设计，帮助业务人员和IT部门融合在一起，在一个平台上轻松协作，</p>
-                  </dt>
-                  <dd class="mt-2 ml-9 text-base text-gray-500">
-                  </dd>
-                </div>
-              
-                <div class="relative">
-                  <dt>
-                    <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <p class="ml-9 text-lg leading-6 text-gray-900">提供开箱即用的安全性和治理功能，您可以在受信任、完全开源的平台上自信地扩展和构建。</p>
+                    <p class="ml-9 text-lg leading-6 text-gray-700">提供开箱即用的安全性和治理功能，您可以在受信任、完全开源的平台上自信地扩展和构建。</p>
                   </dt>
                   <dd class="mt-2 ml-9 text-base text-gray-500">
                   </dd>
@@ -209,12 +209,12 @@ export default function Landing() {
     </p>
       <div class="mt-8 flex flex justify-center justify-start">
         <div class="rounded-md shadow">
-          <a href="https://github.com/steedos/steedos-project-oa" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 hover:text-white focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+          <a href="https://github.com/steedos/steedos-project-oa" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:bg-green-500 hover:text-white focus:outline-none focus:border-green-700 focus:shadow-outline-green transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
             查看源码
           </a>
         </div>
         <div class="ml-3 rounded-md shadow">
-          <a href="/form/trial" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-600 bg-white hover:text-blue-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+          <a href="/form/trial" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-green-600 bg-white hover:text-green-500 focus:outline-none focus:border-green-300 focus:shadow-outline-green transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
             预约产品演示
           </a>
         </div>

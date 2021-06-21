@@ -163,7 +163,7 @@ module.exports = {
           // ]
         },
         {to: 'videos/', label: '视频', position: 'left',},
-        {to: 'help/deploy/', label: '本地部署', position: 'left'},
+        {to: 'help/deploy/', label: '下载', position: 'left'},
         // {to: 'blog', label: '动态', position: 'left'},
         // {to: 'form/trial', label:'试用',position: 'left'},
         // {to: 'form/contact', label: '联系我们', position: 'left'},
