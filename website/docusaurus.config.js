@@ -122,15 +122,15 @@ module.exports = {
     navbar: {
       hideOnScroll: false,
       title: '',
-      style: 'dark',
+      // style: 'dark',
       logo: {
         alt: '华炎魔方',
-        src: 'img/logo_platform_white.png',
+        src: 'img/logo_platform.png',
         // srcDark:  'img/logo_platform_white.png',
         href: '/cn/'
       },
       items: [
-        {to: 'platform/', label: '低代码平台', position: 'left', activeBasePath: 'platform/none-active',
+        {to: 'platform/', label: '平台', position: 'left', activeBasePath: 'platform/none-active',
           // items: [
           //   // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
           //   {to: 'platform/', label: '平台概览', position: 'left'},
@@ -139,7 +139,7 @@ module.exports = {
           //   {to: 'form/trial/', label:'预约演示',position: 'left'},
           // ]
         },
-        {label: '低代码应用', position: 'left', to: 'appstore/',
+        {label: '解决方案', position: 'left', to: 'appstore/',
           // items: [
           //   // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
           //   // {to: 'products/oa/', label: '华炎办公', position: 'left'},
