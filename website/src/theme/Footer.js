@@ -23,7 +23,7 @@ class Footer extends React.Component {
                             <div className="mt-3">
                                 <a
                                     href="/form/trial"
-                                    class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-black bg-blue-300 hover:bg-blue-400 hover:text-black focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                                    className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-black bg-blue-300 hover:bg-blue-400 hover:text-black focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
                                     预约产品演示
                                 </a>
                             </div>
@@ -45,7 +45,7 @@ class Footer extends React.Component {
                                 <div className="mt-8 flex">
                                     <a href="tel://4008201612" className="text-gray-400 hover:text-gray-500">
                                         <span className="sr-only">Phone</span>
-                                        <svg viewBox="0 0 20 20" fill="currentColor" class="phone w-6 h-6">
+                                        <svg viewBox="0 0 20 20" fill="currentColor" className="phone w-6 h-6">
                                             <path
                                                 d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                                         </svg>
@@ -81,8 +81,8 @@ class Footer extends React.Component {
                                     </a> */}
                                 </div>
                             </div>
-                            <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-                                <div class="md:grid md:grid-cols-2 md:gap-8">
+                            <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                                <div className="md:grid md:grid-cols-2 md:gap-8">
                                     <div>
                                         <h4
                                             className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
@@ -177,7 +177,7 @@ class Footer extends React.Component {
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="md:grid md:grid-cols-2 md:gap-8">
+                                <div className="md:grid md:grid-cols-2 md:gap-8">
                                     <div>
                                         <h4
                                             className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
@@ -254,19 +254,19 @@ class Footer extends React.Component {
                             </div>
                         </div>
                         <div className="mt-12 border-t border-gray-200 pt-8">
-                            <p className="text-base leading-6 text-gray-500 xl:text-center">
-                                &copy; 2020 华炎软件. 保留所有权利.
+                            <p className="text-base leading-6 text-gray-500 text-center">
+                                &copy; 2021 华炎软件. 保留所有权利.
                             </p>
-                            <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
-                                <div class="px-3 py-2">
-                                    <a href="/cn" class="text-base text-gray-500 hover:text-gray-900">
+                            <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+                                <div className="px-3 py-2">
+                                    <a href="/cn" className="text-base text-gray-500 hover:text-gray-900">
                                         中文
                                     </a>
                                 </div>
-                                <div class="px-3 py-2">
+                                <div className="px-3 py-2">
                                     <a
                                         href="https://www.steedos.org/"
-                                        class="text-base text-gray-500 hover:text-gray-900">
+                                        className="text-base text-gray-500 hover:text-gray-900">
                                         English
                                     </a>
                                 </div>
