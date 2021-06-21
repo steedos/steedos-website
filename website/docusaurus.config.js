@@ -207,6 +207,7 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       {
+        debug: true,
         docs: {
           // docs folder path relative to website dir.
           path: '../docs',
@@ -214,6 +215,9 @@ module.exports = {
           // sidebars file relative to website dir.
           sidebarPath: require.resolve('./sidebars.js'),
           // editUrl: 'https://github.com/steedos/steedos-website/edit/master/website/',
+        },
+        pages: {
+          path: 'src/pages',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -250,7 +254,7 @@ module.exports = {
       },
     ],
   ],
-
+  themes: ['@docusaurus/theme-live-codeblock'],
   stylesheets: [
     '/website/libs/tailwind.min.css',
   ],

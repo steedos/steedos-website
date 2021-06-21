@@ -62,3 +62,9 @@ keywords:
   - BPM
 ---
 ```
+
+## 问题处理
+
+### theme 不生效
+
+可能是 webpack 缓存所致，删除 node_modules/.cache

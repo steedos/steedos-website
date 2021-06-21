@@ -275,17 +275,17 @@ module.exports =
   // "报价": {
   //   "报价": ["pricing/platform"],
   // },
-  "低代码应用": {
-    "低代码应用": [
-          "appstore/labs/contract",
-          "appstore/labs/sales",
-          "appstore/labs/purchase",
-          "appstore/labs/cost",
-          "appstore/labs/project",
-          "appstore/labs/workflow",
-          "appstore/labs/okr"
-    ],
-  },
+  // "低代码应用": {
+  //   "低代码应用": [
+  //         "appstore/labs/contract",
+  //         "appstore/labs/sales",
+  //         "appstore/labs/purchase",
+  //         "appstore/labs/cost",
+  //         "appstore/labs/project",
+  //         "appstore/labs/workflow",
+  //         "appstore/labs/okr"
+  //   ],
+  // },
   // "华炎魔方": {
   //   "华炎魔方": [
   //     "platform", 
