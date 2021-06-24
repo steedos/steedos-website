@@ -14,6 +14,7 @@
     "@docusaurus/plugin-client-redirects": "2.0.0-beta.1",
     "@docusaurus/preset-classic": "2.0.0-beta.1",
     "@docusaurus/theme-live-codeblock": "^2.0.0-beta.1",
+    "@heroicons/react": "^1.0.1",
     "@salesforce-ux/design-system": "^2.11.0",
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "@tailwindcss/forms": "^0.2.1",

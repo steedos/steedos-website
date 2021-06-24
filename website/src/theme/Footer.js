@@ -122,7 +122,7 @@ class Footer extends React.Component {
                                     <div className="mt-12 md:mt-0">
                                         <h4
                                             className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
-                                            应用市场
+                                            解决方案
                                         </h4>
                                         <ul className="mt-4">
                                             <li className="mt-4">
@@ -255,7 +255,8 @@ class Footer extends React.Component {
                         </div>
                         <div className="mt-12 border-t border-gray-200 pt-8">
                             <p className="text-base leading-6 text-gray-500 text-center">
-                                &copy; 2021 华炎软件. 保留所有权利.
+                                &copy; 2021 华炎软件. 保留所有权利.（沪ICP备09089283号-11）
+                                
                             </p>
                             <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
                                 <div className="px-3 py-2">

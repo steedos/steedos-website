@@ -29,7 +29,7 @@ export default function Landing() {
           <span className="text-green-700">神奇魔方</span>
         </h2>
         <p className="mt-3 text-base text-gray-700 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-          点击鼠标，就能编程。华炎魔方特有的敏捷性、灵活性和开放性，帮助业务加速创新，提升竞争力.
+        华炎魔方基于商业智能和模型驱动，即使是不懂编程的业务人员，也能轻松便捷地创建智能化、移动化的企业应用。
         </p>
 
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
@@ -153,7 +153,7 @@ export default function Landing() {
               可视化设计
               </p>
               <p class="mt-3 text-base text-gray-500">
-              “拖拉拽”开发组件来完成应用程序的构建
+              可通过图形界面（而不是传统的计算机编程）来创建业务应用程序，通过拖拽式的UI组件及可视化模型来代替一部分甚至全部的编码工作。
               </p>
             </a>
           </div>
@@ -171,7 +171,7 @@ export default function Landing() {
               快速构建
               </p>
               <p class="mt-3 text-base text-gray-500">
-              可在短时间内搭建业务系统，快速实现企业数字化转型
+              使用大量的组件和封装的接口进行开发，使得低代码能够提升30%以上的开发效率，并大幅降低开发成本。可在短时间内搭建业务系统，快速实现企业数字化转型。
               </p>
             </a>
           </div>
@@ -189,7 +189,7 @@ export default function Landing() {
               灵活复用
               </p>
               <p class="mt-3 text-base text-gray-500">
-              按需定制灵活修改，伴随企业一起成长
+              企业变化是不可避免的，低代码开发平台使更改应用程序以及让它们适应新要求变得非常容易。无论是简单的审批表单还是复杂的业务需求，用户都无需编写代码即可实现。
               </p>
             </a>
           </div>
