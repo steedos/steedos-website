@@ -1,0 +1,50 @@
+---
+title: 华炎魔方文档
+sidebar_label: 文档
+hide_table_of_contents: true
+background: /img/banner/default.png
+---
+
+
+import Card from '@site/src/components/Card';
+import * as Icons from '@site/src/components/HeroIcons/outline';
+
+<div className="bg-gray-50">
+  <div className="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
+    <div className="text-center">
+      <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+        文档
+      </p>
+      <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
+        选择频道浏览文档，也可以点击右上角的搜索框搜索文档内容。
+      </p>
+    </div>
+    <div class="mt-10 max-w-md grid gap-8 sm:max-w-lg lg:grid-cols-2 lg:max-w-7xl">
+      <Card title="华炎魔方技术白皮书"
+        icon={Icons.BookOpen}
+        theme="blue"
+        href="http://oss.steedos.com/apps/pdfviewer/web/viewer.html?file=http://oss.steedos.com/docs/%E5%8D%8E%E7%82%8E%E9%AD%94%E6%96%B9%E6%8A%80%E6%9C%AF%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf"
+        target="_blank"/>
+      <Card title="安装部署"
+        icon={Icons.BookOpen}
+        theme="blue"
+        href="/help/deploy/"/>
+      <Card title="使用入门"
+        icon={Icons.BookOpen}
+        theme="blue"
+        href="/help/user/"/>
+      <Card title="如何设置和维护华炎魔方"
+        icon={Icons.BookOpen}
+        theme="blue"
+        href="/help/admin/"/>
+      <Card title="开发人员"
+        icon={Icons.BookOpen}
+        theme="blue"
+        href="/developer/"/>
+      <Card title="审批王"
+        icon={Icons.BookOpen}
+        theme="blue"
+        href="/help/workflow/"/>
+    </div>
+  </div>
+</div>

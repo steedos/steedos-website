@@ -34,9 +34,6 @@
   --ifm-menu-color: #f5f5f7;
   --ifm-menu-color-active: white; 
 }
-.navbar__toggle {
-  color: white;
-}
 .main-wrapper {
   background-color: #F9FAFB;
 }

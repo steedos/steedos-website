@@ -139,13 +139,13 @@ class Footer extends React.Component {
                                                     销售管理
                                                 </a>
                                             </li>
-                                            <li className="mt-4">
+                                            {/* <li className="mt-4">
                                                 <a
                                                     href="/appstore/labs/purchase"
                                                     className="text-base leading-6 text-gray-500 hover:text-gray-900">
                                                     采购管理
                                                 </a>
-                                            </li>
+                                            </li> */}
                                             <li className="mt-4">
                                                 <a
                                                     href="/appstore/labs/cost"
@@ -167,13 +167,13 @@ class Footer extends React.Component {
                                                     流程审批
                                                 </a>
                                             </li>
-                                            <li className="mt-4">
+                                            {/* <li className="mt-4">
                                                 <a
                                                     href="/appstore/labs/okr"
                                                     className="text-base leading-6 text-gray-500 hover:text-gray-900">
                                                     OKR 目标管理
                                                 </a>
-                                            </li>
+                                            </li> */}
                                         </ul>
                                     </div>
                                 </div>
