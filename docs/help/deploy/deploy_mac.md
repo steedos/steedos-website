@@ -2,7 +2,7 @@
 title: Mac 安装
 ---
 
-本教程以 [steedos-project-template](https://github.com/steedos/steedos-project-template)为例，指导你如何在 Mac 系统中部署和运行基于华炎魔方开发的项目。
+本教程以 [steedos-project-template](https://github.com/steedos/steedos-project-template/tree/2.0)为例，指导你如何在 Mac 系统中部署和运行基于华炎魔方2.0开发的项目。
 
 部署完成后可在 Mac 环境下开发。
 
@@ -18,9 +18,11 @@ title: Mac 安装
 
 ### 安装运行环境
 
+#### 安装node
 下载[node-v12.19.1](https://nodejs.org/download/release/v12.19.1/node-v12.19.1.pkg)并安装：
 
-安装完成之后打开终端安装 [yarn](https://yarnpkg.com/)：
+#### 安装yarn
+nodejs安装完成之后打开终端执行以下命令安装yarn：
 
 ```bash
 sudo npm install -g yarn
@@ -33,18 +35,102 @@ npm config set registry https://registry.npm.taobao.org
 yarn config set registry https://registry.npm.taobao.org
 ```
 
+#### 安装Mongodb数据库服务
+参考官方[安装文档](https://docs.mongodb.com/v4.2/tutorial/install-mongodb-on-os-x/)安装数据库，建议安装4.2及以上版本
+
+安装成功后需要修改配置文件以集群方式重启服务
+
+Intel内核配置文件地址：
+```bash
+/usr/local/etc/mongod.conf
+```
+
+Apple M1内核配置文件地址：
+```bash
+/opt/homebrew/etc/mongod.conf
+```
+
+编辑配置文件(以M1内核配置文件为例)：
+```bash
+sudo vim /opt/homebrew/etc/mongod.conf
+# 找到replication，去掉#并添加一行配置，没有replication则手动添加
+replication: 
+  # 以下配置必须缩进两个空格
+  replSetName: rsSteedos
+```
+
+保存后重启mongo服务生效
+```bash
+brew services restart mongodb-community@4.2
+```
+
+数据库初始化
+```bash
+# 首先进入mongo控制台
+mongo
+# 执行初始化函数
+rs.initiate();
+# 查看配置
+rs.conf();
+# 查看集群状态，确保members里有一个primary，则表示配置成功
+rs.status();
+```
+#### 安装Redis服务
+参考[官方文档](https://redis.io/download)安装，建议安装稳定版
+
+源码编译安装：
+```bash
+# 解压下载的安装包
+tar -zxvf redis-6.2.4.tar.gz
+# 移动到指定的目录
+sudo mv -r redis-6.2.4 /usr/local
+# 编译检测
+make test
+# 编译安装
+make install
+```
+
+brew安装：
+```bash
+# 查找redis包
+brew search redis
+# 安装指定版本redis
+brew install redis@4.0
+# 安装完成后按照提示添加环境变量
+```
+
+启用redis服务：
+```bash
+redis-server
+```
+
 ## 启动服务
 
 ### 克隆项目
 
-请访问 https://github.com/steedos/steedos-project-template 先在项目主页右上角点 [Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) 项目，然后将已经 fork 到自己账号下的项目 clone 到本地，以便提交修改。
+请访问 [steedos-project-template](https://github.com/steedos/steedos-project-template/tree/2.0) 先在项目主页右上角点 "Fork" 项目，然后将已经 fork 到自己账号下的项目 clone 到本地，以便提交修改。
 
 ### 启动应用
 
 首先使用 Visual Studio Code 打开你本地的项目，并在 Visual Studio Code 的**终端(Terminal)**中安装依赖包：
 
 ```bash
-yarn install
+yarn
+```
+
+复制.env 到.env.local
+```bash
+cp .env .env.local
+```
+
+修改配置文件，指定MongoDB地址、Redis服务地址和ROOT_URL:
+```bash
+PORT=3000
+ROOT_URL=http://localhost:3000
+MONGO_URL=mongodb://localhost:27017/steedos
+MONGO_OPLOG_URL=mongodb://localhost:27017/local
+TRANSPORTER=redis://127.0.0.1:6379
+CACHER=redis://127.0.0.1/1
 ```
 
 然后启动服务：
@@ -62,20 +148,37 @@ yarn start
 *
 *  Initialize Steedos Server ...
 *
-*  VERSION: 1.23.20
+*  VERSION: 2.0.32
 *  PORT: 3000
 *  ROOT_URL: http://localhost:3000
-*  MONGO_URL: mongodb://127.0.0.1:27018/steedos?replicaSet=rsSteedos
+*  MONGO_URL: mongodb://127.0.0.1:27017/steedos
 *  PROJECT_DIR: /Users/user/Documents/GitHub/steedos-project-template
 *
 *******************************************************************
+service ~packages-@steedos/app-oa started
+service ~packages-$packages-steedos-project-template started
+service ~packages-@steedos/app-admin started
+service ~packages-@steedos/service-charts started
+service ~packages-@steedos/app-contracts started
+service ~packages-@steedos/app-okr-management started
+service ~packages-@steedos/app-project-management started
+service ~packages-standard-objects started
+service ~packages-@steedos/workflow started
+service ~packages-@steedos/accounts started
+service ~packages-@steedos/steedos-plugin-schema-builder started
+service ~packages-@steedos/plugin-enterprise started
+service ~packages-@steedos/word-template started
+service ~packages-@steedos/plugin-qywx started
+service ~packages-@steedos/metadata-api started
+service ~packages-@steedos/plugin-dingtalk started
+service ~packages-@steedos/data-import started
+
+Project is running at http://localhost:3000
 ```
 
-## 数据库
+## 元数据同步
 
-华炎魔方使用 MongoDB 4.2+ 数据库，项目启动时会自动下载并安装 MongoDB 到本项目的 bin/mongodb 下。下载完成后自动启动数据库。数据库保存于 db 文件夹中。
-
-> 如果你自己部署了 MongoDB 服务器并以副本集模式启动，可以通过配置 MONGO_URL 环境变量，指定 MongoDB 数据库连接。
+可以通过安装VS Code插件来同步元数据，具体参考 [元数据与代码同步](/developer/dx/dx_vscode_install)
 
 ## 附件
 
