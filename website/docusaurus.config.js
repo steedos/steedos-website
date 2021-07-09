@@ -143,12 +143,12 @@ module.exports = {
           items: [
             {to: 'products/contract/', label: '合同管理', position: 'left'},
             {to: 'products/cost/', label: '费控管理', position: 'left'},
-            {to: 'products/okr/', label: '目标管理', position: 'left'},
+            // {to: 'products/okr/', label: '目标管理', position: 'left'},
             {to: 'products/project/', label: '项目管理', position: 'left'},
             {to: 'products/purchase/', label: '采购管理', position: 'left'},
             {to: 'products/sales/', label: '销售管理', position: 'left'},
-            {to: 'products/oa/', label: '协同办公', position: 'left'},
             {to: 'products/workflow/', label: '流程审批', position: 'left'},
+            // {to: 'products/oa/', label: '协同办公', position: 'left'},
           ]
         },
         {to: 'pricing/platform', label:'定价',position: 'left'},
