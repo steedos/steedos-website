@@ -132,8 +132,8 @@ module.exports = {
       items: [
         {to: 'platform/', label: '产品', position: 'left', activeBasePath: 'platform/none-active',
           items: [
-            {to: 'platform/', label: '概览', position: 'left'},
-            {to: 'appstore/', label: '应用市场', position: 'left'},
+            {to: 'platform/', label: '低代码平台', position: 'left'},
+            // {to: 'appstore/', label: '应用市场', position: 'left'},
             // {to: '/videos/steedos-digital-transformation/', label:'数字化转型',position: 'left'},
             // {to: '/videos/lesson-object/', label:'零代码开发',position: 'left'},
             // {to: 'form/trial/', label:'预约演示',position: 'left'},
@@ -141,6 +141,13 @@ module.exports = {
         },
         {label: '解决方案', position: 'left', to: 'appstore/',
           items: [
+            {to: 'products/contract/', label: '合同管理', position: 'left'},
+            {to: 'products/cost/', label: '费控管理', position: 'left'},
+            {to: 'products/okr/', label: '目标管理', position: 'left'},
+            {to: 'products/project/', label: '项目管理', position: 'left'},
+            {to: 'products/purchase/', label: '采购管理', position: 'left'},
+            {to: 'products/sales/', label: '销售管理', position: 'left'},
+            {to: 'products/oa/', label: '协同办公', position: 'left'},
             {to: 'products/workflow/', label: '流程审批', position: 'left'},
           ]
         },
