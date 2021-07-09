@@ -9,7 +9,7 @@ import Card from '@site/src/components/Card';
 
 <div class="mt-10 mx-auto max-w-md grid gap-8 sm:max-w-lg lg:grid-cols-1 lg:max-w-7xl">
 
-  <Card title="Windows 快速安装"
+  <Card title="Windows 安装"
     href="/help/deploy/deploy_windows"/>
 
   <Card title="Mac 安装"
