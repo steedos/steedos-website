@@ -156,3 +156,8 @@ xg-definition p {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
+
+/*全局搜索框会被视频给档住了*/
+.DocSearch-Container{
+  z-index: 99999999999;
+}
