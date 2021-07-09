@@ -130,26 +130,19 @@ module.exports = {
         href: '/cn/'
       },
       items: [
-        {to: 'platform/', label: '平台', position: 'left', activeBasePath: 'platform/none-active',
-          // items: [
-          //   // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
-          //   {to: 'platform/', label: '平台概览', position: 'left'},
-          //   {to: '/videos/steedos-digital-transformation/', label:'数字化转型',position: 'left'},
-          //   {to: '/videos/lesson-object/', label:'零代码开发',position: 'left'},
-          //   {to: 'form/trial/', label:'预约演示',position: 'left'},
-          // ]
+        {to: 'platform/', label: '产品', position: 'left', activeBasePath: 'platform/none-active',
+          items: [
+            {to: 'platform/', label: '概览', position: 'left'},
+            {to: 'appstore/', label: '应用市场', position: 'left'},
+            // {to: '/videos/steedos-digital-transformation/', label:'数字化转型',position: 'left'},
+            // {to: '/videos/lesson-object/', label:'零代码开发',position: 'left'},
+            // {to: 'form/trial/', label:'预约演示',position: 'left'},
+          ]
         },
         {label: '解决方案', position: 'left', to: 'appstore/',
-          // items: [
-          //   // {to: 'solutions/sales/home', label: '销售管理', position: 'left', activeBasePath: 'sales'},
-          //   // {to: 'products/oa/', label: '华炎办公', position: 'left'},
-          //   {to: 'products/contract/', label:'合同',position: 'left'},
-          //   {to: 'products/sales/', label:'销售',position: 'left'},
-          //   {to: 'products/purchase/', label:'采购',position: 'left'},
-          //   // {to: 'solutions/group/', label:'集团管控',position: 'left'},
-          //   {to: 'products/cost/', label: '费控', position: 'left'},
-          //   {to: 'products/workflow/', label: '流程', position: 'left'},
-          // ]
+          items: [
+            {to: 'products/workflow/', label: '流程审批', position: 'left'},
+          ]
         },
         {to: 'pricing/platform', label:'定价',position: 'left'},
         {to: 'help/', label: '文档', position: 'left', 

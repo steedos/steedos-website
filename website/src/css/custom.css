@@ -149,3 +149,10 @@ ul, ol {
 xg-definition p {
     margin-bottom: 0 !important;
 }
+
+.mdx-page .container.margin-vert--lg {
+  padding: 0;
+  max-width: 100%;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}

@@ -10,10 +10,11 @@
     "tailwind.min": "NODE_ENV=production tailwindcss-cli build src/css/tailwind-src.css -o static/website/libs/tailwind.min.css"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-beta.1",
-    "@docusaurus/plugin-client-redirects": "2.0.0-beta.1",
-    "@docusaurus/preset-classic": "2.0.0-beta.1",
-    "@docusaurus/theme-live-codeblock": "^2.0.0-beta.1",
+    "@docusaurus/core": "2.0.0-beta.3",
+    "@docusaurus/plugin-client-redirects": "2.0.0-beta.3",
+    "@docusaurus/preset-classic": "2.0.0-beta.3",
+    "@docusaurus/theme-live-codeblock": "^2.0.0-beta.3",
+    "@headlessui/react": "^1.3.0",
     "@heroicons/react": "^1.0.1",
     "@salesforce-ux/design-system": "^2.11.0",
     "@tailwindcss/aspect-ratio": "^0.2.0",
