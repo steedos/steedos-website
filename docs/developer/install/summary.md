@@ -12,7 +12,7 @@ MongoDB 是华炎魔方内置数据库引擎，需先 [下载 MongoDB](https://d
 
 ## 安装 Nodejs
 
-NodeJS 是华炎魔方的开发语言，必须安装NodeJS开发环境。 [下载 NodeJS](https://nodejs.org/en/)
+华炎魔方是基于NodeJS开发的，必须安装NodeJS开发环境。 [下载 NodeJS](https://nodejs.org/en/)
 
 ## 安装 yarn
 
