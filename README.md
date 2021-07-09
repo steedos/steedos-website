@@ -24,7 +24,7 @@ yarn start
 ```bash
 cd website
 yarn build
-node nginx
+yarn serve
 ```
 
 ### 发布为 steedos.github.io
