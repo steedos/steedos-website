@@ -31,6 +31,13 @@ nodejs安装完成之后打开终端执行以下命令安装yarn：
 npm install -g yarn
 ```
 
+#### 安装Steedos Cli
+安装或更新Steedos CLI命令工具
+
+```bash
+npm i steedos-cli@next --global
+```
+
 国内用户配置[淘宝 NPM 镜像](https://developer.aliyun.com/mirror/NPM)以提高 NPM 包下载速度：
 
 ```bash
@@ -193,6 +200,10 @@ Project is running at http://localhost:3000
 :::note 提示
 若弹出防火墙询问窗口，点击允许运行即可。
 :::
+
+## 元数据同步
+
+可以通过安装VS Code插件来同步元数据，具体参考 [元数据与代码同步](/developer/dx/dx_vscode_install)
 
 ## 常见问题解答
 

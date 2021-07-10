@@ -28,6 +28,13 @@ nodejs安装完成之后打开终端执行以下命令安装yarn：
 sudo npm install -g yarn
 ```
 
+#### 安装Steedos Cli
+安装或更新Steedos CLI命令工具
+
+```bash
+sudo npm i steedos-cli@next --global
+```
+
 国内用户配置[淘宝 NPM 镜像](https://developer.aliyun.com/mirror/NPM)以提高 NPM 包下载速度：
 
 ```bash
