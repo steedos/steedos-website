@@ -180,6 +180,70 @@ Project is running at http://localhost:3000
 
 可以通过安装VS Code插件来同步元数据，具体参考 [元数据与代码同步](/developer/dx/dx_vscode_install)
 
+## 常见问题解答
+
+### Mac MongoDB开启账户验证
+
+安装MongoDB服务后，系统默认不会开启账户验证，建议开启账户验证，提高服务的安全性。
+
+首先，打开系统终端窗口，执行以下操作：
+
+```bash
+# 连上数据库
+mongo;
+
+# 切换到admin
+use admin;
+
+# 创建管理员账号
+db.createUser({user: "adminUsername", pwd: "adminPassword", roles: [ { role: "userAdminAnyDatabase", db: "admin" } ] } );
+
+# 切换到steedos
+use steedos;
+
+# 创建普通用户
+db.createUser({user: "userUsername", pwd: "userPassword", roles: [ { role: "readWrite", db: "yourdbname" }, { role: "read", db: "local"} ] } );
+
+# 切换到admin查看已创建的用户
+use admin;
+db.system.users.find().pretty();
+
+# 退出数据库
+exit;
+```
+
+编辑数据库配置文件mongod.conf，执行以下操作：
+
+```bash
+# 找到security，去掉'#'并新加一行
+security:
+  # 缩进两个空格
+  authorization: enabled
+```
+
+保存修改后，执行命令重启数据库服务。
+
+```bash
+brew services restart mongodb-community@4.2 
+```
+
+
+修改华炎魔方项目的配置文件.env.local，添加mongo账户认证信息：
+
+```bash
+PORT=3000
+ROOT_URL=http://localhost:3000
+# 修改MONGO_URL和MONGO_OPLOG_URL
+MONGO_URL=mongodb://userUsername:userPassword@mongo:27017/steedos?replicaSet=rs0
+MONGO_OPLOG_URL=mongodb://userUsername:userPassword@mongo:27017/local?replicaSet=rs0&authSource=steedos
+MONGOMS_DOWNLOAD_MIRROR=https://www-steedos-com.oss-cn-beijing.aliyuncs.com/steedos/platform/bin/mongodb
+MONGOMS_DEBUG=true
+TRANSPORTER=redis://localhost:6379
+CACHER=redis://localhost/1
+```
+
+保存配置文件，并重启华炎魔方项目。
+
 ## 附件
 
 华炎魔方中上传的附件默认保存在本项目的 storage 文件夹中。也可以通过修改 steedos-config 更改保存路径，或是保存到阿里云或 S3 存储中。
