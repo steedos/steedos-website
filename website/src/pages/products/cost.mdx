@@ -25,10 +25,10 @@ import Customers from '@site/src/components/Customers';
     <div class="lg:grid lg:grid-cols-12 lg:gap-8">
       <div class="sm:text-center md:mx-auto lg:col-span-6 lg:text-left lg:self-center">
         <div className="text-lg font-semibold uppercase tracking-wide text-gray-700 sm:text-lg xl:text-xl">
-          华炎魔方
+          {/* 华炎魔方 */}
         </div>
         <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
-          费控管理解决方案
+          华炎费控
           <br/>
           <span class="text-blue-600">建立全面融合的费控管理体系</span>
         </h2>
@@ -59,13 +59,40 @@ import Customers from '@site/src/components/Customers';
 
 
 <FeaturesWide 
-  header="华炎魔方"
-  title="费控管理解决方案应用场景"
-  description="华炎费控管理解决方案，从全流程驱动到全面的集成功能，将多管控方案融合，达到预算与费用一体化的目的。系统基于商业智能和模型驱动，兼具敏捷性、灵活性和开放性，可以根据业务需求随心调整、无缝迭代，帮助业务加速创新，提升竞争力。"
+  title="费用控制过程中需要考虑的问题"
+  description=""
+  containerClass="bg-white"
+  theme="blue"
+  items={[
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="user-add w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" /></svg>),
+      title: "费用支出", 
+      description: "在费用类流程审批中了解费用支出是否在预算范围内：业务工作费用报销、行政办公费用报销、福利费用报销、经营费用支出、工资类资金拨付、税金支付"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="eye w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>),
+      title: "预算调整", 
+      description: "预算费用追加：年度预算期间，预算费用不够时，可追加预算费用；科目预算调剂：同一部门不同预算科目预算金额可以相互调剂。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="home w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>),
+      title: "费用分摊", 
+      description: "通过费用分摊流程解决公共费用的预算分摊：电话费、水电费、房租等公共费用由行政部统一支付，但需要分摊到各部门预算中去。"
+    },
+    {
+      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="document-duplicate w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" /></svg>),
+      title: "预算预提", 
+      description: "财务关帐期间，通过预提剩余预算费用确保预算费用的顺利执行。预算预提申请：财务关帐前，将未用预算提出；消耗预提预算：费用发生后，再消耗预提预算。"
+    },
+  ]}
+/>
+
+
+<FeaturesWide 
+  title="华炎费控管理解决方案"
+  description="从全流程驱动到全面的集成功能，将多管控方案融合，达到预算与费用一体化的目的。"
   containerClass="bg-gray-50"
-  theme="teal"
-  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.jpg"
-  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-object-manager.mp4"
+  theme="blue"
   items={[
     {
       icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="user-add w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" /></svg>),
@@ -114,37 +141,6 @@ import Customers from '@site/src/components/Customers';
     {title: "预算编制", description: "集团统一审批各下属单位的预算编制表格，精确控制到每一个下属单位、每个部门、每个科目，每个周期，确保从源头上控制住费用预算。"},
   ]}
 />
-
-<FeaturesWide 
-  header="华炎魔方"
-  title="费用控制过程中需要考虑的问题"
-  description=""
-  containerClass="bg-gray-50"
-  theme="teal"
-  items={[
-    {
-      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="user-add w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" /></svg>),
-      title: "费用支出", 
-      description: "在费用类流程审批中了解费用支出是否在预算范围内：业务工作费用报销、行政办公费用报销、福利费用报销、经营费用支出、工资类资金拨付、税金支付"
-    },
-    {
-      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="eye w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>),
-      title: "预算调整", 
-      description: "预算费用追加：年度预算期间，预算费用不够时，可追加预算费用；科目预算调剂：同一部门不同预算科目预算金额可以相互调剂。"
-    },
-    {
-      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="home w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>),
-      title: "费用分摊", 
-      description: "通过费用分摊流程解决公共费用的预算分摊：电话费、水电费、房租等公共费用由行政部统一支付，但需要分摊到各部门预算中去。"
-    },
-    {
-      icon: (<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="document-duplicate w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" /></svg>),
-      title: "预算预提", 
-      description: "财务关帐期间，通过预提剩余预算费用确保预算费用的顺利执行。预算预提申请：财务关帐前，将未用预算提出；消耗预提预算：费用发生后，再消耗预提预算。"
-    },
-  ]}
-/>
-
 
 
 <div class="bg-gray-200">
