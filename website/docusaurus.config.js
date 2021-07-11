@@ -139,7 +139,7 @@ module.exports = {
             // {to: 'form/trial/', label:'预约演示',position: 'left'},
           ]
         },
-        {label: '解决方案', position: 'left', to: 'appstore/',
+        {label: '解决方案', position: 'left', //to: 'appstore/',
           items: [
             {to: 'products/contract/', label: '合同管理', position: 'left'},
             {to: 'products/cost/', label: '费控管理', position: 'left'},
