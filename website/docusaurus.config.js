@@ -133,8 +133,8 @@ module.exports = {
         {label: '平台', position: 'left', 
           items: [
             {to: 'platform/', label: '产品概述', position: 'left', activeBasePath: 'platform/none-active',},
-            {to: 'platform/lowcode', label: '低代码', position: 'left'},
             {to: 'platform/cases', label: '项目案例', position: 'left'},
+            {to: 'platform/why', label: '评估向导', position: 'left'},
             // {to: 'appstore/', label: '应用市场', position: 'left'},
             // {to: '/videos/steedos-digital-transformation/', label:'数字化转型',position: 'left'},
             // {to: '/videos/lesson-object/', label:'零代码开发',position: 'left'},
