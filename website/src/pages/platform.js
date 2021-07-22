@@ -103,8 +103,59 @@ export default function Landing() {
 </main> */}
 
 
+<FeaturesWide
+  title="点击鼠标、就能编程"
+  description="华炎魔方使用元数据定义对象，字段，配置，代码，逻辑和页面布局，元数据可以导入到华炎魔方中，可以在可视化界面中进行修改，也可以同步到源码进行深度开发。"
+  containerClass="bg-white"
+  imageUrl="https://vod.steedos.com/image/cover/273D6FB669D94148889E5FE7A26A3D13-6-2.png"
+  videoUrl="https://vod.steedos.com/video/40072181-177297095c2-0000-0000-009-c59e0.mp4"
+  theme="green"
+  items={[
+    {
+      icon: Icons.BadgeCheck,
+      title: "数据结构", 
+      description: "创建自定义对象，以存储贵组织独有的信息。"
+    },
+    {
+      icon: Icons.Collection,
+      title: "验证规则", 
+      description: "验证用户在记录中输入的数据是否符合您的要求。"
+    },
+    {
+      icon: Icons.Bell,
+      title: "工作流规则", 
+      description: "通过工作流，您可以自动化标准的内部流程，以节省整个组织的时间。"
+    },
+    {
+      icon: Icons.CursorClick,
+      title: "自动化操作", 
+      description: "自动执行某些操作，例如更新字段或发送电子邮件。"
+    },
+    {
+      icon: Icons.ChartSquareBar,
+      title: "批准过程", 
+      description: "比工作流规则更进了一步，您可以指定批准记录所需的一系列步骤。"
+    },
+    {
+      icon: Icons.Key,
+      title: "统计报表", 
+      description: "帮助您分析和理解数据并及时采取行动。"
+    },
+    {
+      icon: Icons.LightBulb,
+      title: "数据权限", 
+      description: "定义了一套企业级的权限模型，帮助用户锁定私有数据。"
+    },
+    {
+      icon: Icons.Chip,
+      title: "高级业务逻辑", 
+      description: "使用代码实现高级业务逻辑，例如触发器、与第三方系统接口等。"
+    },
+  ]}
+/>
+
 <Features 
-  title="点击鼠标，就能编程"
+  title="5分钟创建自定义应用程序"
   description="华炎魔方内置功能强大的建模引擎，可以任意配置业务字段、列表视图、页面布局，即使是不懂编程的业务人员，也能快速创建智能化、移动化的企业应用程序。"
   imageUrl="https://vod.steedos.com/image/cover/D97E503BEA3441D7BD807AF1AC9A95B5-6-2.png"
   videoUrl="https://vod.steedos.com/ee84c21369c14f58affc3d73aad0f3aa/03dde2aadf164967884697473b985d06-2b35c89e35b0cb2abbca9b19bb09a7fd-ld.mp4"
@@ -190,56 +241,6 @@ export default function Landing() {
 
 
 
-<FeaturesWide
-  title="支持元数据版本管理，支撑大型企业应用开发"
-  description="华炎魔方使用元数据定义对象，字段，配置，代码，逻辑和页面布局，元数据可以导入到华炎魔方中，可以在可视化界面中进行修改，也可以同步到源码进行深度开发。"
-  containerClass="bg-white"
-  imageUrl="https://vod.steedos.com/image/cover/273D6FB669D94148889E5FE7A26A3D13-6-2.png"
-  videoUrl="https://vod.steedos.com/video/40072181-177297095c2-0000-0000-009-c59e0.mp4"
-  theme="green"
-  items={[
-    {
-      icon: Icons.BadgeCheck,
-      title: "数据结构", 
-      description: "创建自定义对象，以存储贵组织独有的信息。"
-    },
-    {
-      icon: Icons.Collection,
-      title: "验证规则", 
-      description: "验证用户在记录中输入的数据是否符合您的要求。"
-    },
-    {
-      icon: Icons.Bell,
-      title: "工作流规则", 
-      description: "通过工作流，您可以自动化标准的内部流程，以节省整个组织的时间。"
-    },
-    {
-      icon: Icons.CursorClick,
-      title: "自动化操作", 
-      description: "自动执行某些操作，例如更新字段或发送电子邮件。"
-    },
-    {
-      icon: Icons.ChartSquareBar,
-      title: "批准过程", 
-      description: "比工作流规则更进了一步，您可以指定批准记录所需的一系列步骤。"
-    },
-    {
-      icon: Icons.Key,
-      title: "统计报表", 
-      description: "帮助您分析和理解数据并及时采取行动。"
-    },
-    {
-      icon: Icons.LightBulb,
-      title: "数据权限", 
-      description: "定义了一套企业级的权限模型，帮助用户锁定私有数据。"
-    },
-    {
-      icon: Icons.Chip,
-      title: "高级业务逻辑", 
-      description: "使用代码实现高级业务逻辑，例如触发器、与第三方系统接口等。"
-    },
-  ]}
-/>
 {/* 
 <Features 
   title="支持元数据版本管理，支撑大型企业应用开发"
