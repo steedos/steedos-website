@@ -118,7 +118,7 @@ export default function Landing() {
 />
 
 
-<Features 
+{/* <Features 
   title="使用公式执行自动计算"
   description="华炎魔方内置了类似Excel的公式引擎，通过引入公式，可以为您的应用程序增加业务的自动化判断、计算和处理的过程。"
   imageUrl="https://vod.steedos.com/image/cover/5ED534383E544E8E908BAF76FA7E0828-6-2.png"
@@ -130,7 +130,7 @@ export default function Landing() {
   //   {title: "计算与条件判断", description: "通过计算与条件判断函数，实现相对复杂的业务逻辑。"},
   //   {title: "累计汇总", description: "自动汇总计算子表中的相关数据。"},
   // ]}
-/>
+/> */}
 
 <Features 
   title="从一开始就让应用程序移动化"
@@ -158,6 +158,7 @@ export default function Landing() {
 />
 
 <Features 
+  containerClass="bg-white"
   title="实时分析业务数据"
   description="使用华炎魔方的报表引擎，您可以快速配置统计图表，包括数据列表、分组报表、数据透视图、柱状图、饼图等，方便查看、分析和决策。"
   imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-report.jpeg"
@@ -190,7 +191,7 @@ export default function Landing() {
 
 
 <FeaturesWide
-  title="内核支持数十种元数据类型"
+  title="支持元数据版本管理，支撑大型企业应用开发"
   description="华炎魔方使用元数据定义对象，字段，配置，代码，逻辑和页面布局，元数据可以导入到华炎魔方中，可以在可视化界面中进行修改，也可以同步到源码进行深度开发。"
   containerClass="bg-white"
   imageUrl="https://vod.steedos.com/image/cover/273D6FB669D94148889E5FE7A26A3D13-6-2.png"
@@ -239,7 +240,7 @@ export default function Landing() {
     },
   ]}
 />
-
+{/* 
 <Features 
   title="支持元数据版本管理，支撑大型企业应用开发"
   description="可视化配置的元数据可以和代码中的元数据双向同步，开发人员可以使用熟悉的工具编写代码，管理版本。"
@@ -252,10 +253,10 @@ export default function Landing() {
   //   {title: "VS Code 插件", description: "源码高亮显示、错误提示、代码段生成、Git版本管理"},
   //   {title: "编码调试与测试", description: "和传统企业软件开发一样，编写触发器、服务端API、表单事件等代码，满足个性化需求。"},
   // ]}
-/>
+/> */}
 
 <Features 
-  title="使用熟悉的工具，本地开发、本地调试"
+  title="支持传统开发模式，处理复杂业务逻辑"
   description="华炎魔方提供了低代码开发的入口，开发人员通过编写代码，就能实现特定条件下的自动运行、截停、回滚等业务逻辑，让业务在无人值守的情况下自动运转，驱动效率提升。"
   imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-lowcode.jpeg"
   videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-lowcode.mp4"
