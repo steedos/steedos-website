@@ -5,7 +5,7 @@ const { truncate } = require('fs');
 module.exports = {
 
   title: '华炎魔方', // Title for your website.
-  tagline: '华炎魔方是一个随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。',
+  tagline: '华炎魔方将低代码技术与企业业务场景结合，助力企业在最短时间内开发数字化解决方案，帮助企业快速落地现有业务战略，以及催生未来创新。',
   url: 'https://www.steedos.com', // Your website URL
   customFields: {
     keywords: ['oa', '开发平台', '开发工具', '低代码', '快速开发平台', '开源'], 

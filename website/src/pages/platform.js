@@ -16,6 +16,56 @@ export default function Landing() {
       keywords={["低代码,低代码开发,低代码开发平台,开源低代码开发平台,快速开发平台,快速开发工具,paas,零代码,零代码开发,零代码开发平台"]}
 >
         
+
+<main class="flex bg-cover bg-no-repeat bg-blue-100">
+  <div class="mx-auto px-4 my-12 max-w-screen-xl">
+    <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+      <div class="sm:text-center md:mx-auto lg:col-span-6 lg:text-left lg:self-center">
+        <div className="text-lg font-semibold uppercase tracking-wide text-gray-700 sm:text-lg xl:text-xl">
+          {/* 华炎魔方 */}
+        </div>
+        <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
+          赋能企业
+          <br/>
+          <span class="text-blue-600">打造数字驱动型组织</span>
+        </h2>
+        <p class="mt-3 mx-auto text-lg text-gray-700 sm:text-xl md:mt-5">
+ 
+          华炎魔方将低代码技术与企业业务场景结合，
+          助力企业在最短时间内开发数字化解决方案，
+          帮助企业快速落地现有业务战略，
+          以及催生未来创新。
+
+        </p>
+        <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
+          <div class="rounded-md shadow">
+            <a href="/platform/cases" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 hover:text-white focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+              客户案例
+            </a>
+          </div>
+          <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+            <a href="/form/trial" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-600 bg-white hover:text-blue-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+              预约演示
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+        <div class="relative mx-auto w-full">
+          <Video 
+              poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.jpg"
+              autoplay={false}
+              urls={[
+                  {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.mp4"},
+                  {name:"标清", url:"https://vod.steedos.com/ef86bfc1c9314dc086e54cc934efcf75/13d008f336514d028756488d84be7d4d-c89dc504a68a67604ae88b9690fcd8f2-ld.mp4"},
+              ]}/>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{/* 
 <main class="py-12 sm:py-12 bg-gray-100">
   <div class="text-center px-4 max-w-7xl mx-auto ">
     <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
@@ -50,15 +100,97 @@ export default function Landing() {
       </div>
     </div>
   </div>
-</main>
+</main> */}
 
-<Customers/>
+
+<Features 
+  title="点击鼠标，就能编程"
+  description="华炎魔方内置功能强大的建模引擎，可以任意配置业务字段、列表视图、页面布局，即使是不懂编程的业务人员，也能快速创建智能化、移动化的企业应用程序。"
+  imageUrl="https://vod.steedos.com/image/cover/D97E503BEA3441D7BD807AF1AC9A95B5-6-2.png"
+  videoUrl="https://vod.steedos.com/ee84c21369c14f58affc3d73aad0f3aa/03dde2aadf164967884697473b985d06-2b35c89e35b0cb2abbca9b19bb09a7fd-ld.mp4"
+  imagePosition="left"  
+  containerClass="bg-gray-50"
+  // items={[
+  //   {title: "业务对象", description: "业务对象相当于数据库中的表，用于保存业务系统中的核心数据。"},
+  //   {title: "列表视图", description: "通过配置列表视图，最终用户可以快捷的切换多个查询条件。"},
+  //   {title: "页面布局", description: "页面布局控制了记录的显示方式，可以按照用户权限分配不同的页面布局。"},
+  // ]}
+/>
+
+
+<Features 
+  title="使用公式执行自动计算"
+  description="华炎魔方内置了类似Excel的公式引擎，通过引入公式，可以为您的应用程序增加业务的自动化判断、计算和处理的过程。"
+  imageUrl="https://vod.steedos.com/image/cover/5ED534383E544E8E908BAF76FA7E0828-6-2.png"
+  videoUrl="https://vod.steedos.com/6f072b894c4045678aa2ad2d5d42a9ae/5700fb41b78241d0bbd1d33d961a215b-be9e268baac6f6619c47773d6d7284bc-ld.mp4"
+  imagePosition="right"
+  containerClass="bg-white"
+  // items={[
+  //   {title: "引用相关表", description: "可以在定义公式，引用相关表的数据。"},
+  //   {title: "计算与条件判断", description: "通过计算与条件判断函数，实现相对复杂的业务逻辑。"},
+  //   {title: "累计汇总", description: "自动汇总计算子表中的相关数据。"},
+  // ]}
+/>
+
+<Features 
+  title="从一开始就让应用程序移动化"
+  description="使用移动应用程序，实现业务的全面转型。 提高员工生产力，加强客户联系，帮助合作伙伴取得更大成功。"
+  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-mobile.jpeg"
+  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-mobile.mp4"
+  containerClass="bg-gray-100"
+  // items={[
+  //   {title: "消息推送", description: "有新的待处理事项时，华炎魔方手机客户端会自动弹出推送提醒。"},
+  //   {title: "个性化手机界面", description: "只需简单配置，就能定制你的专属手机客户端。"},
+  // ]}
+/>
+
+<Features 
+  title="可视化配置业务流程"
+  description="涵盖了流程设计、流程运行、管理维护、统计分析与流程优化等各类工具，帮助企业快速部署、有效监控并持续优化业务流程。"
+  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-flow.jpeg"
+  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-flow.mp4"
+  imagePosition="left"
+  // items={[
+  //   {title: "流程设计", description: "图形化流程设计工具，通过拖拽的方式就能创建业务流程。"},
+  //   {title: "流程运行", description: "电脑、平板、手机三合一操作界面，随时随地处理待办文件。"},
+  //   {title: "数据同步", description: "只需简单配置，就能实现审批单与业务台账双向同步。"},
+  // ]}
+/>
+
+<Features 
+  title="实时分析业务数据"
+  description="使用华炎魔方的报表引擎，您可以快速配置统计图表，包括数据列表、分组报表、数据透视图、柱状图、饼图等，方便查看、分析和决策。"
+  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-report.jpeg"
+  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-report.mp4"
+  imagePosition="right"
+  // items={[
+  //   {title: "报表设计", description: "可视化界面，业务人员可自主配置统计报表，分析业务数据。"},
+  //   {title: "报表显示", description: "自动按当前用户权限过滤报表数据，动态显示业务统计结果。"},
+  //   {title: "导出Excel", description: "华炎魔方中的所有数据及统计报表均可导出为Excel，以便进一步分析。"},
+  // ]}
+/>
+
+<div class="bg-gray-200">
+  <div class="max-w-screen-xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+    <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+      想要了解更多？
+      <br/>
+      在线预约我们的技术专家，为您做产品演示。
+    </h2>
+    <div class="mt-8 flex justify-center">
+      <div class="inline-flex rounded-md shadow">
+        <a href="/form/trial" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:text-white hover:bg-green-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+          预约产品演示
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
 <FeaturesWide
-  header="如何实现点击鼠标、就能编程？"
-  title="华炎魔方元数据深度解析"
+  title="内核支持数十种元数据类型"
   description="华炎魔方使用元数据定义对象，字段，配置，代码，逻辑和页面布局，元数据可以导入到华炎魔方中，可以在可视化界面中进行修改，也可以同步到源码进行深度开发。"
   containerClass="bg-white"
   imageUrl="https://vod.steedos.com/image/cover/273D6FB669D94148889E5FE7A26A3D13-6-2.png"
@@ -109,118 +241,36 @@ export default function Landing() {
 />
 
 <Features 
-  title="零代码创建自定义应用程序"
-  description="华炎魔方内置功能强大的建模引擎，可以任意配置业务字段、列表视图、页面布局，即使是不懂编程的业务人员，也能快速创建智能化、移动化的企业应用程序。"
-  imageUrl="https://vod.steedos.com/image/cover/D97E503BEA3441D7BD807AF1AC9A95B5-6-2.png"
-  videoUrl="https://vod.steedos.com/ee84c21369c14f58affc3d73aad0f3aa/03dde2aadf164967884697473b985d06-2b35c89e35b0cb2abbca9b19bb09a7fd-ld.mp4"
-  imagePosition="left"  
-  containerClass="bg-gray-50"
-  items={[
-    {title: "业务对象", description: "业务对象相当于数据库中的表，用于保存业务系统中的核心数据。"},
-    {title: "列表视图", description: "通过配置列表视图，最终用户可以快捷的切换多个查询条件。"},
-    {title: "页面布局", description: "页面布局控制了记录的显示方式，可以按照用户权限分配不同的页面布局。"},
-  ]}
-/>
-
-
-<Features 
-  title="使用公式执行自动计算"
-  description="华炎魔方内置了类似Excel的公式引擎，通过引入公式，可以为您的应用程序增加业务的自动化判断、计算和处理的过程。"
-  imageUrl="https://vod.steedos.com/image/cover/5ED534383E544E8E908BAF76FA7E0828-6-2.png"
-  videoUrl="https://vod.steedos.com/6f072b894c4045678aa2ad2d5d42a9ae/5700fb41b78241d0bbd1d33d961a215b-be9e268baac6f6619c47773d6d7284bc-ld.mp4"
-  imagePosition="right"
-  containerClass="bg-white"
-  items={[
-    {title: "引用相关表", description: "可以在定义公式，引用相关表的数据。"},
-    {title: "计算与条件判断", description: "通过计算与条件判断函数，实现相对复杂的业务逻辑。"},
-    {title: "累计汇总", description: "自动汇总计算子表中的相关数据。"},
-  ]}
-/>
-
-<Features 
-  title="使用华炎魔方DX同步元数据"
+  title="支持元数据版本管理，支撑大型企业应用开发"
   description="可视化配置的元数据可以和代码中的元数据双向同步，开发人员可以使用熟悉的工具编写代码，管理版本。"
   imageUrl="https://vod.steedos.com/image/cover/936FB7A788854ED19E7CDCFBBF675A42-6-2.png"
   videoUrl="https://vod.steedos.com/15b90c474b5144059fa8853c6e6c2149/b772b095c1dc409dbb3601b171e44c33-6c8da88acd355e4122795056acd0d054-ld.mp4"
   imagePosition="left"
   containerClass="bg-gray-50"
-  items={[
-    {title: "源码驱动开发", description: "用你熟悉和喜爱的工具（Github、VS Code 等等）进行构建。"},
-    {title: "VS Code 插件", description: "源码高亮显示、错误提示、代码段生成、Git版本管理"},
-    {title: "编码调试与测试", description: "和传统企业软件开发一样，编写触发器、服务端API、表单事件等代码，满足个性化需求。"},
-  ]}
+  // items={[
+  //   {title: "源码驱动开发", description: "用你熟悉和喜爱的工具（Github、VS Code 等等）进行构建。"},
+  //   {title: "VS Code 插件", description: "源码高亮显示、错误提示、代码段生成、Git版本管理"},
+  //   {title: "编码调试与测试", description: "和传统企业软件开发一样，编写触发器、服务端API、表单事件等代码，满足个性化需求。"},
+  // ]}
 />
 
 <Features 
-  title="使用代码编写高级业务逻辑"
+  title="使用熟悉的工具，本地开发、本地调试"
   description="华炎魔方提供了低代码开发的入口，开发人员通过编写代码，就能实现特定条件下的自动运行、截停、回滚等业务逻辑，让业务在无人值守的情况下自动运转，驱动效率提升。"
   imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-lowcode.jpeg"
   videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-lowcode.mp4"
   imagePosition="right"
   containerClass="bg-gray-100"
-  items={[
-    {title: "触发器", description: "当服务端执行数据增删改查时，自动触发相关代码。"},
-    {title: "操作按钮", description: "基本的增删改按钮的基础上，为业务对象增加自定义的操作按钮。"},
-    {title: "服务端API", description: "自定义服务端API，编写微服务，实现自动化的业务处理。"},
-  ]}
+  // items={[
+  //   {title: "触发器", description: "当服务端执行数据增删改查时，自动触发相关代码。"},
+  //   {title: "操作按钮", description: "基本的增删改按钮的基础上，为业务对象增加自定义的操作按钮。"},
+  //   {title: "服务端API", description: "自定义服务端API，编写微服务，实现自动化的业务处理。"},
+  // ]}
 />
 
-<div class="bg-gray-200">
-  <div class="max-w-screen-xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-    <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-      想要了解更多？
-      <br/>
-      在线预约我们的技术专家，为您做产品演示。
-    </h2>
-    <div class="mt-8 flex justify-center">
-      <div class="inline-flex rounded-md shadow">
-        <a href="/form/trial" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:text-white hover:bg-green-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-          预约产品演示
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
 
 
-<Features 
-  title="从一开始就让应用程序移动化"
-  description="使用移动应用程序，实现业务的全面转型。 提高员工生产力，加强客户联系，帮助合作伙伴取得更大成功。"
-  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-mobile.jpeg"
-  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-mobile.mp4"
-  containerClass="bg-gray-100"
-  items={[
-    {title: "消息推送", description: "有新的待处理事项时，华炎魔方手机客户端会自动弹出推送提醒。"},
-    {title: "个性化手机界面", description: "只需简单配置，就能定制你的专属手机客户端。"},
-  ]}
-/>
-
-<Features 
-  title="流程引擎"
-  description="涵盖了流程设计、流程运行、管理维护、统计分析与流程优化等各类工具，帮助企业快速部署、有效监控并持续优化业务流程。"
-  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-flow.jpeg"
-  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-flow.mp4"
-  imagePosition="left"
-  items={[
-    {title: "流程设计", description: "图形化流程设计工具，通过拖拽的方式就能创建业务流程。"},
-    {title: "流程运行", description: "电脑、平板、手机三合一操作界面，随时随地处理待办文件。"},
-    {title: "数据同步", description: "只需简单配置，就能实现审批单与业务台账双向同步。"},
-  ]}
-/>
-
-<Features 
-  title="报表引擎"
-  description="使用华炎魔方的报表引擎，您可以快速配置统计图表，包括数据列表、分组报表、数据透视图、柱状图、饼图等，方便查看、分析和决策。"
-  imageUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-report.jpeg"
-  videoUrl="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-report.mp4"
-  imagePosition="right"
-  items={[
-    {title: "报表设计", description: "可视化界面，业务人员可自主配置统计报表，分析业务数据。"},
-    {title: "报表显示", description: "自动按当前用户权限过滤报表数据，动态显示业务统计结果。"},
-    {title: "导出Excel", description: "华炎魔方中的所有数据及统计报表均可导出为Excel，以便进一步分析。"},
-  ]}
-/>
-
+<Customers/>
 
 
 </Layout>

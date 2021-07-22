@@ -40,7 +40,7 @@ class Footer extends React.Component {
                             <div className="xl:col-span-1">
                                 <img className="h-10" src="/img/logo_platform.png" alt="华炎魔方"/>
                                 <p className="mt-8 text-gray-500 text-base leading-6">
-                                华炎魔方基于商业智能和模型驱动，即使是不懂编程的业务人员，也能轻松便捷地创建智能化、移动化的企业应用。
+                                华炎魔方将低代码技术与企业业务场景结合，助力企业在最短时间内开发数字化解决方案，帮助企业快速落地现有业务战略，催生未来创新。
                                 </p>
                                 <div className="mt-8 flex">
                                     <a href="tel://4008201612" className="text-gray-400 hover:text-gray-500">
