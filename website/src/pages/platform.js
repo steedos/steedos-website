@@ -50,15 +50,16 @@ export default function Landing() {
           </div>
         </div>
       </div>
-      <div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-        <div class="relative mx-auto w-full">
-          <Video 
+      <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+        <div className="relative mx-auto w-full lg:max-w-md">
+          <div className="relative block w-full rounded-lg shadow-lg overflow-hidden focus:outline-none focus:shadow-outline">
+            <Video 
               poster="https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.jpg"
               autoplay={false}
               urls={[
                   {name:"高清", url:"https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/creator/steedos-guide.mp4"},
-                  {name:"标清", url:"https://vod.steedos.com/ef86bfc1c9314dc086e54cc934efcf75/13d008f336514d028756488d84be7d4d-c89dc504a68a67604ae88b9690fcd8f2-ld.mp4"},
               ]}/>
+          </div>
         </div>
       </div>
     </div>
@@ -102,6 +103,77 @@ export default function Landing() {
   </div>
 </main> */}
 
+
+<div class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+  <div class="absolute inset-0">
+    <div class="bg-white h-1/3 sm:h-2/3"></div>
+  </div>
+  <div class="relative max-w-7xl mx-auto">
+    <div class="text-center">
+      <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+      企业级低代码的核心特点
+      </h2>
+      <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+      助力企业数字化转型
+      </p>
+    </div>
+    <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+      <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+        <div class="flex-shrink-0">
+          <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt=""/>
+        </div>
+        <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+          <div class="flex-1">
+            <a href="#" class="block mt-2">
+              <p class="text-xl font-semibold text-gray-900">
+              可视化设计
+              </p>
+              <p class="mt-3 text-base text-gray-500">
+              可通过图形界面（而不是传统的计算机编程）来创建业务应用程序，通过拖拽式的UI组件及可视化模型来代替一部分甚至全部的编码工作。
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+        <div class="flex-shrink-0">
+          <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt=""/>
+        </div>
+        <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+          <div class="flex-1">
+            <a href="#" class="block mt-2">
+              <p class="text-xl font-semibold text-gray-900">
+              快速构建
+              </p>
+              <p class="mt-3 text-base text-gray-500">
+              使用大量的组件和封装的接口进行开发，使得低代码能够提升30%以上的开发效率，并大幅降低开发成本。可在短时间内搭建业务系统，快速实现企业数字化转型。
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+        <div class="flex-shrink-0">
+          <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt=""/>
+        </div>
+        <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+          <div class="flex-1">
+            <a href="#" class="block mt-2">
+              <p class="text-xl font-semibold text-gray-900">
+              灵活复用
+              </p>
+              <p class="mt-3 text-base text-gray-500">
+              企业变化是不可避免的，低代码开发平台使更改应用程序以及让它们适应新要求变得非常容易。无论是简单的审批表单还是复杂的业务需求，用户都无需编写代码即可实现。
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <FeaturesWide
   title="点击鼠标、就能编程"
