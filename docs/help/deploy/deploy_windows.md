@@ -6,6 +6,29 @@ title: Windows 安装
 
 本教程以 steedos-project-template 为例，指导你如何在 Windows 7 或更高版本的 64 位操作系统中部署和运行基于华炎魔方2.0开发的项目。
 
+## 快速安装试用
+
+目前仅提供1.23版的Windows快速安装包，想试用最新2.0版本服务的请参考以下[开发环境](#搭建开发环境)文档，本地部署试用。
+
+点击下载执行程序压缩包 [steedos-v1.23-win-x64.zip](https://www-steedos-com.oss-cn-beijing.aliyuncs.com/steedos/platform/steedos-v1.23-win-x64.zip) 解压缩到服务器硬盘，即可完成安装。
+
+解压后，双击运行`bin\start_steedos.bat`保持窗口打开。
+
+服务启动完成后，会自动使用默认浏览器打开地址 **http://127.0.0.1:3000/** 。
+
+系统初始安装时没有任何数据，您可以先注册一个账户、创建一个企业。您注册的账户自动会成为该企业的管理员。
+
+### 数据库
+
+华炎魔方使用 MongoDB 4.2+ 数据库，快速安装版会自动下载并安装 MongoDB 到本项目的 bin/mongodb 下，下载完成后自动启动数据库，数据库保存于 db 文件夹中。
+
+> 如果你自己部署了 MongoDB 服务器，可以通过配置 MONGO_URL 环境变量，指定 MongoDB 数据库连接。
+
+### 附件
+
+华炎魔方中上传的附件默认保存在本项目的 storage 文件夹中。也可以通过修改 steedos-config 更改保存路径，或是保存到阿里云或 S3 存储中，详细配置请参考 [文件存储](/help/deploy/steedos-config/#文件存储) 。
+
+
 ## 搭建开发环境
 
 ### 安装开发工具
