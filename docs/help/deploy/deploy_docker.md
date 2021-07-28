@@ -198,6 +198,31 @@ docker ps
 docker logs -t containerId
 ```
 
+### 官方服务更新后如何升级
+
+华炎魔方后台会定期更新升级版本，对于docker部署的服务，修改本地的docker-compose.yml文件，升级版本号
+
+```bash
+steedos:
+    image: steedos/steedos-project-template:2.0.47 # 修改版本号到最新版
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./docker-volumes/steedos/storage:/app/storage"
+    environment:
+      - PORT=3000
+      - ROOT_URL=http://localhost:3000
+      - MONGO_URL=mongodb://userUsername:userPassword@mongo:27017/steedos?replicaSet=rs0 #添加普通用户和密码
+      - MONGO_OPLOG_URL=mongodb://userUsername:userPassword@mongo:27017/local?replicaSet=rs0&authSource=steedos #添加普通用户和密码
+      - STEEDOS_CFS_STORE=local
+...
+
+```
+
+修改后，执行docker-compose down，再执行docker-compose up -d启用服务。
+
+
 ## 了解更多
 
 - [视频](https://www.steedos.com/videos/)
