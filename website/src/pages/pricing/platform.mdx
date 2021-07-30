@@ -95,51 +95,59 @@ export const tiers = [
   {
     name: '自助服务',
     href: '/company/contact-us',
-    priceMonthly: 0,
+    priceMonthly: '¥0',
     description: '个人、学生、开源爱好者',
+    priceDescription: '',
     includedFeatures: [
       '开发文档', 
       'Github问题提报平台', 
     ],
   },
   {
-    name: '标准服务',
+    name: '开发支持服务',
     href: '/company/contact-us',
-    priceMonthly: 200,
-    description: '提供可视化开发相关支持服务',
+    priceMonthly: '¥1000',
+    priceDescription: '/月/开发人员',
+    description: '使用代码实现业务逻辑',
     includedFeatures: [
       '开发文档、培训视频', 
-      'Github问题提报平台', 
-      '可视化开发工具支持服务',
-      '可视化开发者微信群',
+      '开发者微信群', 
+      '可视化开发',
+      '元数据同步',
+      '自定义按钮',
+      '自定义路由',
+      '触发器',
     ],
   },
   {
-    name: '金牌服务',
+    name: '高级开发支持服务',
     href: '/company/contact-us',
-    priceMonthly: 1000,
-    description: '提供源码级开发相关支持服务',
+    priceMonthly: '¥2000',
+    priceDescription: '/月/开发人员',
+    description: '实现复杂报表、大屏',
     includedFeatures: [
       '开发文档、培训视频', 
-      'Github问题提报平台', 
-      '可视化开发工具支持服务',
-      '源码级开发工具支持服务',
-      '源码级开发者微信群',
+      '高级开发者微信群', 
+      '可视化开发',
+      '元数据同步',
+      '自定义按钮',
+      '自定义路由',
+      '触发器',
+      'jsreport',
+      'redash',
+      'node-red',
     ],
   },
   {
-    name: 'VIP服务',
+    name: '定制开发服务',
     href: '/company/contact-us',
-    priceMonthly: 2000,
-    description: '服务专员7*24小时响应',
+    priceMonthly: '联系我们',
+    priceDescription: '',
+    description: '按照客户需求，实施定制开发',
     includedFeatures: [
-      '开发文档、培训视频', 
-      'Github问题提报平台', 
-      '可视化开发工具支持服务',
-      '源码级开发工具支持服务',
-      'K8S集群架构支持服务',
-      'SaaS云服务架构支持服务',
-      'VIP微信群',
+      '调整平台内核',
+      '搭建云服务',
+      'OEM',
     ],
   },
 ]
@@ -147,7 +155,7 @@ export const tiers = [
 <div class="bg-white">
   <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
       <div className="text-left">
-        <h2 className="text-2xl font-extrabold text-gray-900 sm:text-3xl lg:text-4xl">开发者支持服务</h2>
+        <h2 className="text-2xl font-extrabold text-gray-900 sm:text-3xl lg:text-4xl">开发支持服务</h2>
         <p className="mt-4 text-xl text-gray-600">
           我们为开发团队提供低代码开发全程辅导服务，帮助您的团队快速切换到全新的低代码开发模式。
         </p>
@@ -159,8 +167,8 @@ export const tiers = [
               <h2 className="text-lg leading-6 font-medium text-gray-900">{tier.name}</h2>
               <p className="mt-4 text-sm text-gray-500">{tier.description}</p>
               <p className="mt-8">
-                <span className="text-4xl font-extrabold text-gray-900">¥{tier.priceMonthly}</span>{' '}
-                <span className="text-base font-medium text-gray-500">/月/开发人员</span>
+                <span className="text-4xl font-extrabold text-gray-900">{tier.priceMonthly}</span>{' '}
+                <span className="text-base font-medium text-gray-500">{tier.priceDescription}</span>
               </p>
               {tier.priceMonthly>0 && (<a
                 href={tier.href}
