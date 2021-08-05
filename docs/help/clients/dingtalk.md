@@ -59,7 +59,7 @@ PC端首页地址：建议配置和应用首页地址一样。
 
 签名 token: 随机生成，可随时刷新修改，生成后需要配置到华炎魔方系统-设置-公司设置-钉钉-Token
 
-请求网址: 请先确保已经将aes_key和token配置到华炎魔方系统中，然后再配置华炎魔方服务的域名地址加上`api/listen`后缀，比如`https://www.test-dingtalk.com/api/listen`，一定要配置公网域名访问地址。
+请求网址: 请先确保已经将aes_key和token配置到华炎魔方系统中，然后再配置华炎魔方服务的域名地址加上`api/dingtalk/listen`后缀，比如`https://www.test-dingtalk.com/api/dingtalk/listen`，一定要配置公网域名访问地址。
 
 ### 设置钉钉权限管理
 
@@ -101,6 +101,9 @@ PC端首页地址：建议配置和应用首页地址一样。
 修改本地steedos-config.yml文件，添加api_key和log_path，可以在设置-个人账户设置-API Key菜单下，获取用户的API Key。
 
 ```bash
+tenant:
+  _id: ${STEEDOS_TENANT_ID}
+
 dingtalk:
   api_Key: ${APIKEY} # API Key, 接口验证需要
   log_path: ${LOGPATH} # 日志文件路径，默认是./ding_server.log
@@ -126,6 +129,7 @@ dingtalk:
       - CACHER=redis://redis/1
       - APIKEY=n32D3LeG8aIq5_jiiss23ssesf023sPGe # 配置系统中的API Key
       - LOGPATH="./ding_server.log" # 日志默认路径
+      - STEEDOS_TENANT_ID=7asfxossf8sfssss # 魔方id
 ```
 
 以上所有就绪后，华炎魔方用户只要登录钉钉账户就可以在钉钉客户端上无缝使用华炎魔方服务了。
@@ -140,7 +144,9 @@ dingtalk:
 
 ### 用户同步
 
-如果钉钉上集成了上述创建的“华炎魔方合同”项目，可以通过前台调用数据同步接口将钉钉通讯录同步到华炎魔方系统中，例如调用`https://www.test-dingtalk.com/api/stockData`，同步前如果华炎魔方系统中已经存在用户，需要将用户与钉钉中对应的用户进行绑定，这样在同步时就会更新已存在用户信息。
+如果钉钉上集成了上述创建的“华炎魔方合同”项目，可以通过前台调用数据同步接口将钉钉通讯录同步到华炎魔方系统中，例如调用`https://www.test-dingtalk.com/api/dingtalk/stockData`，同步前如果华炎魔方系统中已经存在用户，需要将用户与钉钉中对应的用户进行绑定，这样在同步时就会更新已存在用户信息。
 
+### 同步钉钉账户ID
+如果钉钉上集成了上述创建的“华炎魔方合同”项目，对于只需要同步钉钉账户id到华炎魔方系统的用户，在配置完权限管理后，可以调用`https://www.test-dingtalk.com/api/sync/dingtalkId`进行同步。
 
 
