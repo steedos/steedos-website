@@ -130,7 +130,7 @@ export default function PlatformCloud() {
           {tiers.map((tier) => (
             <section key={tier.name}>
               <div className="px-4 mb-8">
-                <h2 className="text-lg leading-6 font-medium text-gray-900">{tier.name}</h2>
+                <h2 className="text-lg leading-6 font-medium text-gray-900">{tier.label}</h2>
                 <p className="mt-4">
                   <span className="text-4xl font-extrabold text-gray-900">${tier.priceMonthly}</span>
                   <span className="text-base font-medium text-gray-500">/mo</span>

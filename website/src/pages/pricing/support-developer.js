@@ -2,6 +2,8 @@ import React from "react";
 import { Fragment } from 'react'
 import { CheckIcon, ChevronDownIcon, MinusIcon } from '@heroicons/react/solid'
 import Layout from '@theme/Layout';
+import Customers from '@site/src/components/Customers';
+import FAQ from '@site/src/components/FAQ';
 
 const tiers = [
   { 
