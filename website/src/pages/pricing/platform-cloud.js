@@ -33,7 +33,7 @@ const sections = [
   {
     name: '快速构建应用程序',
     features: [
-      { name: '自定义对象', tiers: { Basic: '100个', Essential: '500个', Premium: '无限' } },
+      { name: '自定义对象', tiers: { Basic: '20个', Essential: '100个', Premium: '无限' } },
       { name: '自定义应用', tiers: { Basic: true, Essential: true, Premium: true } },
       { name: '自定义页面布局', tiers: { Basic: true, Essential: true, Premium: true } },
       { name: '应用市场', tiers: { Basic: true, Essential: true, Premium: true } },
