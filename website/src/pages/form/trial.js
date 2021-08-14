@@ -67,7 +67,7 @@ export default function TrialForm() {
     <div class="bg-white py-12 px-4 sm:px-6 lg:col-span-2 lg:px-8 xl:pl-12">
       <div class="max-w-lg mx-auto lg:max-w-none">
         <h2 class="text-xl leading-8 tracking-tight text-gray-900 sm:leading-9">
-          注册开通华炎魔方
+          申请试用华炎魔方
         </h2>
         <p class="leading-8 tracking-tight text-gray-900 sm:leading-9">
           请填写所有字段

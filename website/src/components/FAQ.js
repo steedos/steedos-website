@@ -48,7 +48,7 @@ class FAQ extends React.Component {
                         </dt>
                         <dd class="mt-2">
                           <p class="text-base leading-6 text-gray-500">
-                            <a href="https://github.com/steedos/steedos-platform/" target="_blank" class=" text-gray-700">华炎魔方开源版</a>基于<a href="https://choosealicense.com/licenses/mit/" target="_blank" class=" text-gray-700">MIT协议</a>，内置华炎魔方十大引擎，完全免费。基于华炎魔方开发的解决方案，可以单独定价销售。
+                            <a href="https://github.com/steedos/steedos-platform/" target="_blank" class=" text-gray-700">华炎魔方开源版</a>基于<a href="https://choosealicense.com/licenses/mit/" target="_blank" class=" text-gray-700">MIT协议</a>，华炎魔方私有部署完全免费。基于华炎魔方开发的解决方案，可以单独定价销售。
                           </p>
                         </dd>
                       </div>

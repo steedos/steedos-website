@@ -132,9 +132,9 @@ module.exports = {
       items: [
         {label: '平台', position: 'left', 
           items: [
-            {to: 'platform/', label: '产品概述', position: 'left', activeBasePath: 'platform/none-active',},
-            {to: 'platform/cases', label: '项目案例', position: 'left'},
-            {to: 'platform/why', label: '评估向导', position: 'left'},
+            {to: 'platform/', label: '产品概述', activeBasePath: 'platform/none-active',},
+            {to: 'platform/cases', label: '项目案例'},
+            {to: 'platform/why', label: '评估向导'},
             // {to: 'appstore/', label: '应用市场', position: 'left'},
             // {to: '/videos/steedos-digital-transformation/', label:'数字化转型',position: 'left'},
             // {to: '/videos/lesson-object/', label:'零代码开发',position: 'left'},
@@ -143,17 +143,22 @@ module.exports = {
         },
         {label: '解决方案', position: 'left', //to: 'appstore/',
           items: [
-            {to: 'products/contract/', label: '合同管理', position: 'left'},
-            {to: 'products/cost/', label: '费控管理', position: 'left'},
-            // {to: 'products/okr/', label: '目标管理', position: 'left'},
-            {to: 'products/project/', label: '项目管理', position: 'left'},
-            {to: 'products/purchase/', label: '采购管理', position: 'left'},
-            {to: 'products/sales/', label: '销售管理', position: 'left'},
-            {to: 'products/workflow/', label: '流程审批', position: 'left'},
+            {to: 'products/contract/', label: '合同管理'},
+            {to: 'products/cost/', label: '费控管理'},
+            // {to: 'products/okr/', label: '目标管理'},
+            {to: 'products/project/', label: '项目管理'},
+            {to: 'products/purchase/', label: '采购管理'},
+            {to: 'products/sales/', label: '销售管理'},
+            {to: 'products/workflow/', label: '流程审批'},
             // {to: 'products/oa/', label: '协同办公', position: 'left'},
           ]
         },
-        {to: 'pricing/platform', label:'定价',position: 'left'},
+        {to: 'pricing/platform', label:'定价', position: 'left',
+          // items: [
+          //   {to: 'pricing/platform', label: '平台'},
+          //   {to: 'pricing/developer_support', label: '开发者支持服务'}
+          // ]
+        },
         {to: 'help/', label: '文档', position: 'left', 
           // items: [
           //   {to: 'help/deploy', label: '安装部署', position: 'left',},

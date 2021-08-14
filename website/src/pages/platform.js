@@ -7,6 +7,7 @@ import FeaturesWide from '@site/src/components/FeaturesWide';
 import FAQ from '@site/src/components/FAQ';
 import Customers from '@site/src/components/Customers';
 import * as Icons from '@site/src/components/HeroIcons/outline';
+import Trial from '@site/src/components/Trial';
 
 export default function Landing() {
   return (
@@ -346,6 +347,7 @@ export default function Landing() {
 
 <Customers/>
 
+<Trial/>
 
 </Layout>
   );
