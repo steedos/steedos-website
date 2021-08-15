@@ -1,106 +1,64 @@
 import React from 'react';
 
+const faqs = [
+  {
+    id: 1,
+    question: '什么是华炎魔方平台?',
+    answer: '低代码是全新的开发模式，使用可视化工具编写代码，大幅降低应用开发门槛，提升效率。',
+  },
+  {
+    id: 2,
+    question: "华炎魔方有什么优点？",
+    answer:
+      "与无代码平台不同，华炎魔方将低代码技术与传统开发方式融合，可以通过编写代码满足各种复杂业务需求。",
+  },
+  {
+    id: 3,
+    question: '华炎魔方平台如何收费?',
+    answer:
+      '华炎魔方作为开发平台完全免费，并且我们开放所有源码。基于华炎魔方开发的应用由开发商定价收费。',
+  },
+  {
+    id: 4,
+    question: '什么是魔方应用?',
+    answer:
+      '基于华炎魔方开发的解决方案称为魔方应用，您可以自主开发应用，也可以从应用市场购买成熟的解决方案。',
+  },
+  {
+    id: 5,
+    question: "华炎魔方可以开发哪些应用?",
+    answer:
+      '华炎魔方比较适合开发数据管理类的应用，包括OA、CRM、ERP、销售管理、采购管理、库存管理、生产管理等。',
+  },
+  {
+    id: 6,
+    question: "魔方应用有什么优点?",
+    answer:
+      '魔方应用基于模型驱动，当需求变化时，可以使用可视化工具快速调整、无缝迭代，帮助业务加速创新，提升竞争力。',
+  },
+]
+
 class FAQ extends React.Component {
-  
+ 
     render() {
         return (
-            <div class="bg-gray-50">
-              <div class="max-w-screen-xl mx-auto pt-12 pb-16 sm:pt-16 sm:pb-20 lg:pt-20 lg:pb-28">
-                <h2 class="text-3xl leading-9 font-extrabold text-gray-900">
-                  常见问题解答
-                </h2>
-                <div class="mt-6 border-t-2 border-gray-100 pt-10">
-                  <dl class="md:grid md:grid-cols-2 md:gap-8">
-                    <div>
-                      <div>
-                        <dt class="text-lg leading-6 font-medium text-gray-900">
-                          什么是华炎魔方？
-                        </dt>
-                        <dd class="mt-2">
-                          <p class="text-base leading-6 text-gray-500">
-                          华炎魔方是新一代的低代码开发平台，基于商业智能和模型驱动，开发人员无需编写代码就能构建功能强大的个性化应用。
-                          </p>
-                        </dd>
-                      </div>
-                      <div class="mt-12">
-                        <dt class="text-lg leading-6 font-medium text-gray-900">
-                          华炎魔方的优势是什么？
-                        </dt>
-                        <dd class="mt-2">
-                          <p class="text-base leading-6 text-gray-500">
-                            华炎魔方创新的使用元数据定义业务模型，并可在必要时编写代码，您开发的项目源码可以保存到版本库中实现版本迭代，对于大型项目也方便多人协作。
-                          </p>
-                        </dd>
-                      </div>
-                      <div class="mt-12">
-                        <dt class="text-lg leading-6 font-medium text-gray-900">
-                          为什么开源？
-                        </dt>
-                        <dd class="mt-2">
-                          <p class="text-base leading-6 text-gray-500">
-                            每个软件公司都需要一套低代码开发工具，但是单独开发和维护一套这样的平台成本巨大。华炎希望与开源社区共同打造中国最优秀的低代码开发平台。
-                          </p>
-                        </dd>
-                      </div>
-                      <div class="mt-12">
-                        <dt class="text-lg leading-6 font-medium text-gray-900">
-                          开源版有什么限制？
-                        </dt>
-                        <dd class="mt-2">
-                          <p class="text-base leading-6 text-gray-500">
-                            <a href="https://github.com/steedos/steedos-platform/" target="_blank" class=" text-gray-700">华炎魔方开源版</a>基于<a href="https://choosealicense.com/licenses/mit/" target="_blank" class=" text-gray-700">MIT协议</a>，华炎魔方私有部署完全免费。基于华炎魔方开发的解决方案，可以单独定价销售。
-                          </p>
-                        </dd>
-                      </div>
-                    </div>
-                    <div class="mt-12 md:mt-0">
-                      <div>
-                        <dt class="text-lg leading-6 font-medium text-gray-900">
-                          传统开发方式不好吗？为什么要学习低代码开发平台？
-                        </dt>
-                        <dd class="mt-2">
-                          <p class="text-base leading-6 text-gray-500">
-                          传统模式开发企业软件系统需要大量的投资，需要业务部门提出精准的业务需求，不但初期开发成本高，一旦系统建成后，修改和升级的成本也很昂贵。
-                          </p>
-                        </dd>
-                      </div>
-                      <div class="mt-12">
-                        <dt class="text-lg leading-6 font-medium text-gray-900">
-                          什么是低代码开发平台？
-                        </dt>
-                        <dd class="mt-2">
-                          <p class="text-base leading-6 text-gray-500">
-                          低代码开发是一种全新的开发方式，通过把标准功能组件化，业务需求配置化，改变应用交付和管理的模式，大大缩减应用交付的周期。
-                          </p>
-                        </dd>
-                      </div>
-                      <div class="mt-12">
-                        <dt class="text-lg leading-6 font-medium text-gray-900">
-                          使用华炎魔方开发系统有什么好处？
-                        </dt>
-                        <dd class="mt-2">
-                          <p class="text-base leading-6 text-gray-500">
-                            使用华炎魔方开发的业务系统，基于模型驱动，兼具敏捷性、灵活性和开放性，可以根据业务需求随时调整、无缝迭代，帮助业务加速创新，提升竞争力。
-                          </p>
-                        </dd>
-                      </div>
-                      <div class="mt-12">
-                        <dt class="text-lg leading-6 font-medium text-gray-900">
-                          华炎魔方适合开发哪一类系统？
-                        </dt>
-                        <dd class="mt-2">
-                          <p class="text-base leading-6 text-gray-500">
-                            华炎魔方比较适合开发企业管理类的应用，例如OA、CRM、进销存、ERP、项目管理、订单管理、库存管理，也可以作为各种智能化业务系统的后台数据平台。
-                          </p>
-                        </dd>
-                      </div>
-                    </div>
-                  </dl>
+          
+      <div className="bg-gray-50">
+        {/* FAQ */}
+        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-extrabold text-gray-900 text-center">常见问题解答</h2>
+          <div className="mt-12">
+            <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-x-8 md:gap-y-12 lg:grid-cols-3">
+              {faqs.map((faq) => (
+                <div key={faq.id} className="space-y-2">
+                  <dt className="text-lg leading-6 font-medium text-gray-900">{faq.question}</dt>
+                  <dd className="text-base text-gray-500">{faq.answer}</dd>
                 </div>
-              </div>
-            </div>
-            
-            
+              ))}
+            </dl>
+          </div>
+        </div>
+      </div>
         )
         }
     }
