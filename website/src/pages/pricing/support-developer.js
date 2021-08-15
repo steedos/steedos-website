@@ -15,14 +15,14 @@ const tiers = [
   },
   {
     name: 'Essential',
-    label: '标准开发者服务',
+    label: '标准开发者支持服务',
     href: '#',
     priceMonthly: 1000,
     description: '帮助您的团队快速切换到全新的低代码开发模式。',
   },
   {
     name: 'Premium',
-    label: '高级开发者服务',
+    label: '高级开发者支持服务',
     href: '#',
     priceMonthly: 2000,
     description: '培训整套开发工具，转变整个组织的应用程序开发过程。',
@@ -79,18 +79,18 @@ function classNames(...classes) {
 export default function PlatformCloud() {
   return (
     <Layout
-      title="开发者支持服务定价"
+      title="开发者支持服务"
       description="华炎魔方是一款随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。"
       keywords={["低代码,低代码开发,低代码开发平台,开源低代码开发平台,快速开发平台,快速开发工具,paas,零代码,零代码开发,零代码开发平台"]}
     >
-      <div className="bg-indigo-900">
+      <div className="bg-green-900">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl">
           <div className="px-0 sm:px-4 lg:px-0 lg:flex lg:justify-between lg:items-center">
             <div className="max-w-2xl">
               <h2 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
-              开发者支持服务定价
+              开发者支持服务
               </h2>
-              <p className="mt-5 text-xl text-indigo-300">
+              <p className="mt-5 text-xl text-green-300">
               我们为开发团队提供低代码开发全程辅导服务，帮助您的团队快速切换到全新的低代码开发模式。
               </p>
             </div>

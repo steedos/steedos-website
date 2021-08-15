@@ -135,7 +135,7 @@ module.exports = {
             {to: 'platform/', label: '产品概述', activeBasePath: 'platform/none-active',},
             {to: 'platform/cases', label: '项目案例'},
             // {to: 'platform/why', label: '评估向导'},
-            {to: 'pricing/platform', label: '私有部署'},
+            {to: 'pricing/platform', label: '定价'},
             {to: 'pricing/platform-cloud', label: '云服务'},
             {to: 'pricing/support-developer', label: '开发者支持'},
             // {to: 'appstore/', label: '应用市场', position: 'left'},

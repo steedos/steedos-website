@@ -9,29 +9,29 @@ import FAQ from '@site/src/components/FAQ';
 const tiers = [
   { 
     name: 'Basic', 
-    label: '平台入门版',
-    href: '/form/buy', 
+    label: '入门版',
+    href: '/form/trial', 
     priceMonthly: 10, 
     description: '快速构建部门级自定义应用程序。' 
   },
   {
     name: 'Essential',
-    label: '平台专业版',
-    href: '/form/buy',
+    label: '专业版',
+    href: '/form/trial',
     priceMonthly: 20,
     description: '为每个部门实现业务流程数字化。',
   },
   {
     name: 'Premium',
-    label: '平台企业版',
-    href: '/form/buy',
+    label: '企业版',
+    href: '/form/trial',
     priceMonthly: 80,
     description: '转变整个组织的应用程序开发过程。',
   },
 ]
 const sections = [
   {
-    name: '快速构建应用程序',
+    name: '可视化构建应用程序',
     features: [
       { name: '自定义对象', tiers: { Basic: '20个', Essential: '100个', Premium: '无限' } },
       { name: '自定义应用', tiers: { Basic: true, Essential: true, Premium: true } },
@@ -42,7 +42,7 @@ const sections = [
     ],
   },
   {
-    name: '业务流程自动化',
+    name: '自动化业务流程',
     features: [
       { name: '审批流程', tiers: { Basic: '10个', Essential: '50个', Premium: '无限' } },
       { name: '批准过程', tiers: { Basic: true, Essential: true, Premium: true } },
@@ -92,7 +92,7 @@ export default function PlatformCloud() {
       <div className="bg-blue-600">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl">
           <div className="sm:flex sm:flex-col sm:align-center">
-            <h1 className="text-5xl font-extrabold text-white sm:text-center">华炎魔方云服务定价</h1>
+            <h1 className="text-5xl font-extrabold text-white sm:text-center">华炎魔方平台 云服务</h1>
             <p className="mt-5 text-xl text-indigo-300 sm:text-center">
             使用全新的低代码技术，助力企业在最短时间内开发数字化解决方案，快速落地现有业务战略，催生未来创新。
             </p>
@@ -297,6 +297,7 @@ export default function PlatformCloud() {
       </div>
 
       <Customers/>
+      <FAQ/>
       <Trial/>
     </Layout>
   )
