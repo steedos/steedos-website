@@ -91,33 +91,24 @@ export default function PlatformCloud() {
     >
       <div className="bg-blue-600">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl">
-          <div className="px-0 sm:px-4 lg:px-0 lg:flex lg:justify-between lg:items-center">
-            <div className="max-w-2xl">
-              <h2 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
-              华炎魔方平台 云服务定价
-              </h2>
-              <p className="mt-5 text-xl text-indigo-300">
-              点击鼠标就能开通华炎魔方。您只需使用，服务的安装、部署、升级与维护的工作交给我们。
-              </p>
-            </div>
-            <div className="mt-10 w-full max-w-xs lg:mt-0">
-              <label htmlFor="currency" className="block text-base font-medium text-indigo-300">
-                可选区域
-              </label>
-              <div className="mt-1.5 relative">
-                <select
-                  id="currency"
-                  name="currency"
-                  className="block w-full bg-none bg-indigo-400 bg-opacity-25 border border-transparent text-white focus:ring-white focus:border-white rounded-md"
-                  defaultValue="United States (USD)"
-                >
-                  <option className="bg-gray-900">亚马逊 (宁夏)</option>
-                  <option className="bg-gray-900">更多区域即将上线...</option>
-                </select>
-                <div className="pointer-events-none absolute inset-y-0 right-0 px-2 flex items-center">
-                  <ChevronDownIcon className="h-4 w-4 text-indigo-300" aria-hidden="true" />
-                </div>
-              </div> 
+          <div className="sm:flex sm:flex-col sm:align-center">
+            <h1 className="text-5xl font-extrabold text-white sm:text-center">华炎魔方云服务定价</h1>
+            <p className="mt-5 text-xl text-indigo-300 sm:text-center">
+            使用全新的低代码技术，助力企业在最短时间内开发数字化解决方案，快速落地现有业务战略，催生未来创新。
+            </p>
+            <div className="relative mt-6 bg-gray-200 rounded-lg p-1 flex self-center sm:mt-8">
+              <a
+                href='/pricing/platform'
+                className="ml-0.5 relative border border-transparent rounded-md py-2 w-1/2 text-sm font-medium text-gray-600 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-blue-500 focus:z-10 sm:w-auto sm:px-8"
+              >
+                私有部署
+              </a>
+              <a
+                href='/pricing/platform-cloud'
+                className="relative bg-white border-gray-200 rounded-md shadow-sm py-2 w-1/2 text-sm font-medium text-blue-600 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-blue-500 focus:z-10 sm:w-auto sm:px-8"
+              >
+                云服务
+              </a>
             </div>
           </div>
         </div>
