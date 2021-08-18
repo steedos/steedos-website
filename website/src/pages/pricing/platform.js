@@ -60,13 +60,13 @@ export default function PlatformCloud() {
             <div className="relative mt-6 bg-gray-200 rounded-lg p-1 flex self-center sm:mt-8">
               <a
                 href='/pricing/platform'
-                className="relative bg-white border-gray-200 rounded-md shadow-sm py-2 w-1/2 text-sm font-medium text-blue-600 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-blue-500 focus:z-10 sm:w-auto sm:px-8"
+                className="relative bg-white border-gray-200 rounded-md shadow-sm py-2 w-1/2 text-sm font-medium text-blue-600 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-blue-500 focus:z-10 w-auto px-8 text-center"
               >
                 私有部署
               </a>
               <a
                 href='/pricing/platform-cloud'
-                className="ml-0.5 relative border border-transparent rounded-md py-2 w-1/2 text-sm font-medium text-gray-600 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-blue-500 focus:z-10 sm:w-auto sm:px-8"
+                className="ml-0.5 relative border border-transparent rounded-md py-2 w-1/2 text-sm font-medium text-gray-600 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-blue-500 focus:z-10 w-auto px-8 text-center"
               >
                 云服务
               </a>
@@ -129,6 +129,27 @@ export default function PlatformCloud() {
       </div>
 
 
+      <div className="bg-cyan-600">
+        <div className="max-w-2xl mx-auto py-16 px-4 text-center sm:py-20 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+            <span className="block">客户成功计划</span>
+            <span className="block text-cyan-900"></span>
+          </h2>
+          <p className="mt-4 text-lg leading-6 text-cyan-100">
+          使用华炎魔方平台需要指导？无论是安装、实施、培训、运维，我们都可以为您提供所需支持。
+          </p>
+          <a
+            href="/pricing/support-success-plan"
+            className="mt-8 w-full bg-cyan-50 border border-transparent rounded-md py-3 px-5 inline-flex items-center justify-center text-base font-medium text-cyan-700 hover:bg-cyan-100 sm:w-auto"
+          >
+           购买客户成功计划
+          </a>
+        </div>
+      </div>
+      
+      
+      <Customers/>
+      
       {/* CTA section */}
       <div className="bg-blue-600">
         <div className="max-w-2xl mx-auto py-16 px-4 text-center sm:py-20 sm:px-6 lg:px-8">
@@ -148,9 +169,8 @@ export default function PlatformCloud() {
         </div>
       </div>
 
-      
-      <Customers/>
       <FAQ/>
+
       <Trial/>
     </Layout>
   )

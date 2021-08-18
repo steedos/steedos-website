@@ -133,11 +133,10 @@ module.exports = {
         {label: '平台', position: 'left', 
           items: [
             {to: 'platform/', label: '产品概述', activeBasePath: 'platform/none-active',},
-            {to: 'platform/cases', label: '项目案例'},
+            {to: 'platform/cases', label: '客户案例'},
             // {to: 'platform/why', label: '评估向导'},
             {to: 'pricing/platform', label: '定价'},
             {to: 'pricing/platform-cloud', label: '云服务'},
-            {to: 'pricing/support-developer', label: '开发者支持'},
             {to: 'https://github.com/steedos/steedos-platform', label: 'Github 开源'},
             // {to: 'appstore/', label: '应用市场', position: 'left'},
             // {to: '/videos/steedos-digital-transformation/', label:'数字化转型',position: 'left'},

@@ -133,8 +133,8 @@ export default function PlatformCloud() {
               <div className="px-4 mb-8">
                 <h2 className="text-lg leading-6 font-medium text-gray-900">{tier.label}</h2>
                 <p className="mt-4">
-                  <span className="text-4xl font-extrabold text-gray-900">${tier.priceMonthly}</span>
-                  <span className="text-base font-medium text-gray-500">/月</span>
+                  <span className="text-4xl font-extrabold text-gray-900">¥{tier.priceMonthly}</span>
+                  <span className="text-base font-medium text-gray-500">/月/开发人员</span>
                 </p>
                 <p className="mt-4 text-sm text-gray-500">{tier.description}</p>
                 <a
@@ -315,6 +315,24 @@ export default function PlatformCloud() {
       </div>
 
 
+      <div className="bg-cyan-600">
+        <div className="max-w-2xl mx-auto py-16 px-4 text-center sm:py-20 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+            <span className="block">客户成功计划</span>
+            <span className="block text-cyan-900"></span>
+          </h2>
+          <p className="mt-4 text-lg leading-6 text-cyan-100">
+          使用华炎魔方平台需要指导？无论是安装、实施、培训、运维，我们都可以为您提供所需支持。
+          </p>
+          <a
+            href="/pricing/support-success-plan"
+            className="mt-8 w-full bg-cyan-50 border border-transparent rounded-md py-3 px-5 inline-flex items-center justify-center text-base font-medium text-cyan-700 hover:bg-cyan-100 sm:w-auto"
+          >
+           购买客户成功计划
+          </a>
+        </div>
+      </div>
+      
       <Customers/>
       <FAQ/>
     </Layout>

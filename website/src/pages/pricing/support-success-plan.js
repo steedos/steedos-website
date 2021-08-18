@@ -3,77 +3,71 @@ import { Fragment } from 'react'
 import { CheckIcon, ChevronDownIcon, MinusIcon } from '@heroicons/react/solid'
 import Layout from '@theme/Layout';
 import Customers from '@site/src/components/Customers';
-import Trial from '@site/src/components/Trial';
 import FAQ from '@site/src/components/FAQ';
 
 const tiers = [
   { 
     name: 'Basic', 
-    label: '入门版',
-    href: '/form/trial', 
-    priceMonthly: 10, 
-    description: '快速构建部门级自定义应用程序。' 
+    label: '金牌服务套餐',
+    href: '/form/contact', 
+    priceMonthly: '2万', 
+    description: '适用于中小企业的运维服务。' 
   },
   {
     name: 'Essential',
-    label: '专业版',
-    href: '/form/trial',
-    priceMonthly: 20,
-    description: '为每个部门实现业务流程数字化。',
+    label: '铂金服务套餐',
+    href: '/form/contact',
+    priceMonthly: '5万',
+    description: '适用于核心业务系统的运维服务。',
   },
   {
     name: 'Premium',
-    label: '企业版',
-    href: '/form/trial',
-    priceMonthly: 80,
-    description: '转变整个组织的应用程序开发过程。',
+    label: '钻石服务套餐',
+    href: '/form/contact',
+    priceMonthly: '10万',
+    description: '适用于高可用集群部署版本的运维服务。',
   },
 ]
 const sections = [
   {
-    name: '可视化构建应用程序',
+    name: '自助服务',
     features: [
-      { name: '自定义对象', tiers: { Basic: '20个', Essential: '100个', Premium: '无限' } },
-      { name: '自定义应用', tiers: { Basic: true, Essential: true, Premium: true } },
-      { name: '自定义页面布局', tiers: { Basic: true, Essential: true, Premium: true } },
-      { name: '应用市场', tiers: { Basic: true, Essential: true, Premium: true } },
-      { name: '移动客户端', tiers: { Basic: true, Essential: true, Premium: true } },
-      { name: '文件存储', tiers: { Basic: '1GB/用户', Essential: '2GB/用户', Premium: '5GB/用户' } },
+      { name: '在线帮助', tiers: { Basic: true, Essential: true, Premium: true } },
+      { name: '培训视频', tiers: { Basic: true, Essential: true, Premium: true } },
+      { name: '电话咨询', tiers: { Basic: true, Essential: true, Premium: true } },
+      { name: '在线工单', tiers: { Basic: true, Essential: true, Premium: true } },
     ],
   },
   {
-    name: '自动化业务流程',
+    name: '人工服务',
     features: [
-      { name: '审批流程', tiers: { Basic: '10个', Essential: '50个', Premium: '无限' } },
-      { name: '批准过程', tiers: { Basic: true, Essential: true, Premium: true } },
-      { name: '工作流规则', tiers: { Basic: true, Essential: true, Premium: true } },
+      { name: '远程服务', tiers: { Basic: '30次', Essential: '80次', Premium: '不限次数' } },
+      { name: '现场服务', tiers: { Basic: false, Essential: '1次', Premium: '4次' } },
+      { name: '专属服务顾问', tiers: { Basic: false, Essential: false, Premium: true } },
+      { name: '服务时间', tiers: { Basic: '工作时间', Essential: '工作时间', Premium: '工作时间' } },
     ],
   },
   {
-    name: '角色与权限',
+    name: '人工服务内容',
     features: [
-      { name: '权限集与简档', tiers: { Basic: true, Essential: true, Premium: true } },
-      { name: '对象权限', tiers: { Basic: true, Essential: true, Premium: true } },
-      { name: '页面布局', tiers: { Basic: true, Essential: true, Premium: true } },
-      { name: '字段修改历史', tiers: { Basic: true, Essential: true, Premium: true } },
+      { name: '系统安装', tiers: { Basic: true, Essential: true, Premium: true } },
+      { name: '系统定期升级', tiers: { Basic: true, Essential: true, Premium: true } },
+      { name: '系统调研与实施', tiers: { Basic: '1人天', Essential: '2人天', Premium: '5人天' } },
+      { name: '系统培训', tiers: { Basic: '1人天', Essential: '2人天', Premium: '5人天' } },
+      { name: '系统备份', tiers: { Basic: '每周', Essential: '每天', Premium: '每小时' } },
+      { name: '系统重装', tiers: { Basic: false, Essential: '1次', Premium: '1次' } },
+      { name: '系统迁移', tiers: { Basic: false, Essential: '1次', Premium: '1次' } },
+      { name: '服务工作报告', tiers: { Basic: '每年', Essential: '每季度', Premium: '每月' } },
     ],
   },
   {
-    name: '报表与仪表盘',
+    name: '增值服务',
     features: [
-      { name: '自定义报表', tiers: { Basic: true, Essential: true, Premium: true } },
-      { name: '自定义图表', tiers: { Basic: true, Essential: true, Premium: true } },
-      { name: '仪表盘', tiers: { Basic: true, Essential: true, Premium: true } },
-    ],
-  },
-  {
-    name: '与外部系统集成',
-    features: [
-      { name: 'Web Services API ', tiers: { Basic: true, Essential: true, Premium: true } },
-      { name: '单点登录（企业微信、钉钉、API）', tiers: { Basic: true, Essential: true, Premium: true } },
-      { name: '组织机构同步（企业微信、钉钉、API）', tiers: { Basic: false, Essential: true, Premium: true } },
-      { name: '平台事件 API', tiers: { Essential: true, Premium: true } },
-      { name: '应用集成开发工具', tiers: { Premium: true } },
+      { name: '业务需求分析', tiers: { Basic: false, Essential: false, Premium: true } },
+      { name: '推进项目落地', tiers: { Basic: false, Essential: false, Premium: true } },
+      { name: '需求处理反馈', tiers: { Basic: false, Essential: false, Premium: true } },
+      { name: '阶段业务诊断', tiers: { Basic: false, Essential: false, Premium: true } },
+      { name: '定制化培训', tiers: { Basic: false, Essential: false, Premium: true } },
     ],
   },
 ]
@@ -85,31 +79,47 @@ function classNames(...classes) {
 export default function PlatformCloud() {
   return (
     <Layout
-      title="华炎魔方平台 云服务定价"
+      title="客户成功计划"
       description="华炎魔方是一款随需应变的管理软件开发工具，旨在通过其强大的敏捷性、灵活性和开放性帮助企业创新、扩展和集成企业业务系统。基于该平台，您可以快速创建智能化、移动化的企业应用。"
       keywords={["低代码,低代码开发,低代码开发平台,开源低代码开发平台,快速开发平台,快速开发工具,paas,零代码,零代码开发,零代码开发平台"]}
     >
-      <div className="bg-blue-600">
+      <div className="bg-cyan-900">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl">
-          <div className="sm:flex sm:flex-col sm:align-center">
-            <h1 className="text-5xl font-extrabold text-white sm:text-center">华炎魔方平台 云服务</h1>
-            <p className="mt-5 text-xl text-indigo-300 sm:text-center">
-            使用全新的低代码技术，助力企业在最短时间内开发数字化解决方案，快速落地现有业务战略，催生未来创新。
-            </p>
-            <div className="relative mt-6 bg-gray-200 rounded-lg p-1 flex self-center sm:mt-8">
-              <a
-                href='/pricing/platform'
-                className="ml-0.5 relative border border-transparent rounded-md py-2 w-1/2 text-sm font-medium text-gray-600 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-blue-500 focus:z-10 w-auto px-8 text-center"
-              >
-                私有部署
-              </a>
-              <a
-                href='/pricing/platform-cloud'
-                className="relative bg-white border-gray-200 rounded-md shadow-sm py-2 w-1/2 text-sm font-medium text-blue-600 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-blue-500 focus:z-10 w-auto px-8 text-center"
-              >
-                云服务
-              </a>
+          <div className="px-0 sm:px-4 lg:px-0 lg:flex lg:justify-between lg:items-center">
+            <div className="max-w-2xl">
+              <h2 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
+              客户成功计划
+              </h2>
+              <p className="mt-5 text-xl text-cyan-300">
+              使用华炎魔方平台需要指导？无论是安装、实施、培训、运维，我们都可以为您提供所需支持。
+              </p>
             </div>
+            {/* <div className="mt-10 w-full max-w-xs lg:mt-0">
+              <label htmlFor="currency" className="block text-base font-medium text-indigo-300">
+                Currency
+              </label>
+              <div className="mt-1.5 relative">
+                <select
+                  id="currency"
+                  name="currency"
+                  className="block w-full bg-none bg-indigo-400 bg-opacity-25 border border-transparent text-white focus:ring-white focus:border-white rounded-md"
+                  defaultValue="United States (USD)"
+                >
+                  <option className="bg-gray-900">Argentina (ARS)</option>
+                  <option className="bg-gray-900">Australia (AUD)</option>
+                  <option className="bg-gray-900">United States (USD)</option>
+                  <option className="bg-gray-900">Canada (CAD)</option>
+                  <option className="bg-gray-900">France (EUR)</option>
+                  <option className="bg-gray-900">Japan (JPY)</option>
+                  <option className="bg-gray-900">Nigeria (NGN)</option>
+                  <option className="bg-gray-900">Switzerland (CHF)</option>
+                  <option className="bg-gray-900">United Kingdom (GBP)</option>
+                </select>
+                <div className="pointer-events-none absolute inset-y-0 right-0 px-2 flex items-center">
+                  <ChevronDownIcon className="h-4 w-4 text-indigo-300" aria-hidden="true" />
+                </div>
+              </div> 
+            </div> */}
           </div>
         </div>
       </div>
@@ -123,8 +133,8 @@ export default function PlatformCloud() {
               <div className="px-4 mb-8">
                 <h2 className="text-lg leading-6 font-medium text-gray-900">{tier.label}</h2>
                 <p className="mt-4">
-                  <span className="text-4xl font-extrabold text-gray-900">¥{tier.priceMonthly}</span>
-                  <span className="text-base font-medium text-gray-500">/月</span>
+                  <span className="text-4xl font-extrabold text-gray-900">{tier.priceMonthly}</span>
+                  <span className="text-base font-medium text-gray-500">元/年</span>
                 </p>
                 <p className="mt-4 text-sm text-gray-500">{tier.description}</p>
                 <a
@@ -154,7 +164,11 @@ export default function PlatformCloud() {
                     {section.features.map((feature) => (
                       <tr key={feature.name} className="border-t border-gray-200">
                         <th className="py-5 px-4 text-sm font-normal text-gray-500 text-left" scope="row">
-                          {feature.name}
+                          {feature.href ? (
+                            <a href={feature.href} target='_blank'>{feature.name}</a>
+                          ) : (
+                            <span>{feature.name}</span>
+                          )}
                         </th>
                         <td className="py-5 pr-4">
                           {typeof feature.tiers[tier.name] === 'string' ? (
@@ -220,8 +234,8 @@ export default function PlatformCloud() {
                     <div className="h-full flex flex-col justify-between">
                       <div>
                         <p>
-                          <span className="text-4xl font-extrabold text-gray-900">¥{tier.priceMonthly}</span>
-                          <span className="text-base font-medium text-gray-500">/月/用户</span>
+                          <span className="text-4xl font-extrabold text-gray-900">{tier.priceMonthly}</span>
+                          <span className="text-base font-medium text-gray-500">元/年</span>
                         </p>
                         <p className="mt-4 text-sm text-gray-500">{tier.description}</p>
                       </div>
@@ -229,7 +243,7 @@ export default function PlatformCloud() {
                         href={tier.href}
                         className="mt-6 block w-full bg-gradient-to-r from-orange-500 to-pink-500 border border-transparent rounded-md shadow py-2 text-sm font-semibold text-white text-center hover:text-white hover:to-pink-600"
                       >
-                        免费试用 {tier.label}
+                        购买 {tier.label}
                       </a>
                     </div>
                   </td>
@@ -249,7 +263,11 @@ export default function PlatformCloud() {
                   {section.features.map((feature) => (
                     <tr key={feature.name}>
                       <th className="py-5 pl-6 pr-6 text-sm font-normal text-gray-500 text-left" scope="row">
-                        {feature.name}
+                          {feature.href ? (
+                            <a href={feature.href} target='_blank'>{feature.name}</a>
+                          ) : (
+                            <span>{feature.name}</span>
+                          )}
                       </th>
                       {tiers.map((tier) => (
                         <td key={tier.name} className="py-5 px-6">
@@ -283,10 +301,10 @@ export default function PlatformCloud() {
                 {tiers.map((tier) => (
                   <td key={tier.name} className="pt-5 px-6">
                     <a
-                      href="#"
+                      href={tier.href}
                       className="block w-full bg-gradient-to-r from-orange-500 to-pink-500 border border-transparent rounded-md shadow py-2 text-sm font-semibold text-white hover:text-white text-center hover:to-pink-600"
                     >
-                      免费试用 {tier.label}
+                      购买 {tier.label}
                     </a>
                   </td>
                 ))}
@@ -297,28 +315,6 @@ export default function PlatformCloud() {
       </div>
 
 
-      <div className="bg-cyan-600">
-        <div className="max-w-2xl mx-auto py-16 px-4 text-center sm:py-20 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-            <span className="block">客户成功计划</span>
-            <span className="block text-cyan-900"></span>
-          </h2>
-          <p className="mt-4 text-lg leading-6 text-cyan-100">
-          使用华炎魔方平台需要指导？无论是安装、实施、培训、运维，我们都可以为您提供所需支持。
-          </p>
-          <a
-            href="/pricing/support-success-plan"
-            className="mt-8 w-full bg-cyan-50 border border-transparent rounded-md py-3 px-5 inline-flex items-center justify-center text-base font-medium text-cyan-700 hover:bg-cyan-100 sm:w-auto"
-          >
-           购买客户成功计划
-          </a>
-        </div>
-      </div>
-      
-      
-      <Customers/>
-      
-      {/* CTA section */}
       <div className="bg-blue-600">
         <div className="max-w-2xl mx-auto py-16 px-4 text-center sm:py-20 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
@@ -337,8 +333,8 @@ export default function PlatformCloud() {
         </div>
       </div>
 
+      <Customers/>
       <FAQ/>
-      <Trial/>
     </Layout>
   )
 }
