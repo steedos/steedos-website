@@ -26,16 +26,47 @@ import Breadcrumb from '@site/src/components/Breadcrumb';
 
 import Hero from '@site/src/components/Hero';
 
-<Hero 
-  header="华炎魔方"
-  title="项目管理" 
-  description="华炎魔方项目管理系统帮助您跟踪和管理项目，里程碑，任务，已阻止的任务，逾期任务，时间，费用预算，并具有详细的报表功能。"
-  buttons={[
-    {title: "申请试用", href: "/form/trial", primary: true},
-    {title: "查看源码", href: "https://github.com/steedos/steedos-app-project", target: "_blank"},
-  ]}
-/>
 
+<div className="relative my-8">
+  <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
+  <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+    <div className="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
+      <div className="absolute inset-0">
+        <img
+          className="h-full w-full object-cover"
+          src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+          alt="People working on laptops"
+        />
+        <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
+      </div>
+      <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+        <div className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+          <span className="block text-white">华炎项目</span>
+          <span className="block text-indigo-200">项目执行全过程电子化</span>
+        </div>
+        <p className="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
+          华炎项目管理解决方案帮助您跟踪和管理项目，里程碑，任务，已阻止的任务，逾期任务，时间，费用预算，并具有详细的报表功能。
+        </p>
+        <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+          <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
+            {/* <a
+              href="#"
+              className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8"
+            >
+              Get started
+            </a> */}
+            <a
+              href="/form/trial"
+              className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8"
+            >
+              申请试用
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <FeaturesWide
@@ -71,7 +102,6 @@ import Hero from '@site/src/components/Hero';
 <FeaturesWide 
   title="系统功能"
   description="华炎魔方项目管理系统已经具备完善的功能，由于每个公司业务需求不同，您可以在此基础上基于我们的源代码配置出个性化的项目管理系统。"
-  imageUrl="/assets/products/project_management.png"
   imageClass="lg:max-w-3xl rounded-none shadow-lg"
   containerClass="bg-gray-50"
   theme="green"

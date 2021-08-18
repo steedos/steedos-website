@@ -9,21 +9,21 @@ const tiers = [
   { 
     name: 'Basic', 
     label: '自助服务',
-    href: '#', 
+    href: '/form/contact', 
     priceMonthly: 0, 
     description: '个人、学生、开源爱好者可以借助开发社区获得免费开发服务。' 
   },
   {
     name: 'Essential',
     label: '标准开发者支持服务',
-    href: '#',
+    href: '/form/contact',
     priceMonthly: 1000,
     description: '帮助您的团队快速切换到全新的低代码开发模式。',
   },
   {
     name: 'Premium',
     label: '高级开发者支持服务',
-    href: '#',
+    href: '/form/contact',
     priceMonthly: 2000,
     description: '培训整套开发工具，转变整个组织的应用程序开发过程。',
   },
@@ -44,20 +44,20 @@ const sections = [
     features: [
       { name: '1对1人工服务', tiers: { Basic: false, Essential: true, Premium: true } },
       { name: '专属技术顾问', tiers: { Basic: false, Essential: false, Premium: true } },
-      { name: '服务时间', tiers: { Basic: '工作时间', Essential: '工作时间', Premium: '7*24' } },
+      { name: '服务时间', tiers: { Basic: '工作时间', Essential: '工作时间', Premium: '工作时间' } },
     ],
   },
   {
     name: '人工服务内容',
     features: [
-      { name: '无代码快速创建应用程序', tiers: { Basic: true, Essential: true, Premium: true } },
-      { name: '元数据与代码同步', tiers: { Basic: false, Essential: true, Premium: true } },
+      { name: '可视化快速创建应用程序', tiers: { Basic: true, Essential: true, Premium: true } },
+      { name: '元数据与代码同步', href: '/videos/lesson-metadata-synchronize/', tiers: { Basic: false, Essential: true, Premium: true } },
       { name: '自定义按钮', tiers: { Basic: false, Essential: true, Premium: true } },
       { name: '自定义路由', tiers: { Basic: false, Essential: true, Premium: true } },
       { name: '自定义触发器', tiers: { Basic: false, Essential: true, Premium: true } },
-      { name: 'jsreport', tiers: { Basic: false, Essential: false, Premium: true } },
-      { name: 'node-red', tiers: { Basic: false, Essential: false, Premium: true } },
-      { name: 'redash', tiers: { Basic: false, Essential: false, Premium: true } },
+      { name: 'jsreport 自定义报表', href: 'https://jsreport.net/', tiers: { Basic: false, Essential: false, Premium: true } },
+      { name: 'node-red 应用集成平台', href: 'https://nodered.org/', tiers: { Basic: false, Essential: false, Premium: true } },
+      { name: 'redash 数据分析平台', href:'https://redash.io', tiers: { Basic: false, Essential: false, Premium: true} },
     ],
   },
   {
@@ -164,7 +164,11 @@ export default function PlatformCloud() {
                     {section.features.map((feature) => (
                       <tr key={feature.name} className="border-t border-gray-200">
                         <th className="py-5 px-4 text-sm font-normal text-gray-500 text-left" scope="row">
-                          {feature.name}
+                          {feature.href ? (
+                            <a href={feature.href} target='_blank'>{feature.name}</a>
+                          ) : (
+                            <span>{feature.name}</span>
+                          )}
                         </th>
                         <td className="py-5 pr-4">
                           {typeof feature.tiers[tier.name] === 'string' ? (
@@ -259,7 +263,11 @@ export default function PlatformCloud() {
                   {section.features.map((feature) => (
                     <tr key={feature.name}>
                       <th className="py-5 pl-6 pr-6 text-sm font-normal text-gray-500 text-left" scope="row">
-                        {feature.name}
+                          {feature.href ? (
+                            <a href={feature.href} target='_blank'>{feature.name}</a>
+                          ) : (
+                            <span>{feature.name}</span>
+                          )}
                       </th>
                       {tiers.map((tier) => (
                         <td key={tier.name} className="py-5 px-6">

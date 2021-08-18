@@ -138,6 +138,7 @@ module.exports = {
             {to: 'pricing/platform', label: '定价'},
             {to: 'pricing/platform-cloud', label: '云服务'},
             {to: 'pricing/support-developer', label: '开发者支持'},
+            {to: 'https://github.com/steedos/steedos-platform', label: 'Github 开源'},
             // {to: 'appstore/', label: '应用市场', position: 'left'},
             // {to: '/videos/steedos-digital-transformation/', label:'数字化转型',position: 'left'},
             // {to: '/videos/lesson-object/', label:'零代码开发',position: 'left'},
