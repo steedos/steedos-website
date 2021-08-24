@@ -53,7 +53,7 @@ export default function PlatformCloud() {
       <div className="bg-gray-800">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl">
           <div className="sm:flex sm:flex-col sm:align-center">
-            <h1 className="text-5xl font-extrabold text-white sm:text-center">华炎魔方平台 私有部署版</h1>
+            <h1 className="text-5xl font-extrabold text-white sm:text-center">华炎魔方 私有部署版</h1>
             <p className="mt-5 text-xl text-gray-300 sm:text-center">
             使用全新的低代码技术，助力企业在最短时间内开发数字化解决方案，快速落地现有业务战略，催生未来创新。
             </p>
@@ -81,7 +81,7 @@ export default function PlatformCloud() {
           <div className="pb-16 xl:flex xl:items-center xl:justify-between">
             <div>
               <h1 className="text-4xl font-extrabold sm:text-5xl sm:tracking-tight">
-                <span className="text-gray-900">华炎魔方平台 私有部署版</span>
+                <span className="text-gray-900">华炎魔方 私有部署版</span>
                 <span className="text-blue-600"> 完全免费</span>
               </h1>
               <p className="mt-5 text-xl text-gray-500">

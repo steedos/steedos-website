@@ -24,9 +24,9 @@ export default function Landing() {
           新一代低代码开发平台
         </div> */}
         <h2 className="mt-1 text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-4xl lg:text-5xl xl:text-6xl">
-        高效搭建企业应用的
+        赋能企业
           <br className="hidden md:inline"/>
-          <span className="text-green-700">神奇魔方</span>
+          <span className="text-green-700">打造数字驱动型组织</span>
         </h2>
         <p className="mt-3 text-base text-gray-700 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
         华炎魔方基于商业智能和模型驱动，即使是不懂编程的业务人员，也能轻松便捷地创建智能化、移动化的企业应用。

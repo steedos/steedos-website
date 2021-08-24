@@ -9,7 +9,7 @@ import FAQ from '@site/src/components/FAQ';
 const tiers = [
   { 
     name: 'Basic', 
-    label: '入门版',
+    label: '标准版',
     href: '/form/trial', 
     priceMonthly: 10, 
     description: '快速构建部门级自定义应用程序。' 
@@ -92,7 +92,7 @@ export default function PlatformCloud() {
       <div className="bg-blue-600">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl">
           <div className="sm:flex sm:flex-col sm:align-center">
-            <h1 className="text-5xl font-extrabold text-white sm:text-center">华炎魔方平台 云服务</h1>
+            <h1 className="text-5xl font-extrabold text-white sm:text-center">华炎魔方 云服务</h1>
             <p className="mt-5 text-xl text-indigo-300 sm:text-center">
             使用全新的低代码技术，助力企业在最短时间内开发数字化解决方案，快速落地现有业务战略，催生未来创新。
             </p>
