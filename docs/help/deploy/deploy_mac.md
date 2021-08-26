@@ -209,7 +209,7 @@ db.createUser({user: "adminUsername", pwd: "adminPassword", roles: [ { role: "us
 use steedos;
 
 # 创建普通用户
-db.createUser({user: "userUsername", pwd: "userPassword", roles: [ { role: "readWrite", db: "yourdbname" }, { role: "read", db: "local"} ] } );
+db.createUser({user: "userUsername", pwd: "userPassword", roles: [ { role: "readWrite", db: "steedos" }, { role: "read", db: "local"} ] } );
 
 # 切换到admin查看已创建的用户
 use admin;
