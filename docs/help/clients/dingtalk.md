@@ -98,7 +98,7 @@ PC端首页地址：建议配置和应用首页地址一样。
 
 系统管理员可以通知需要在钉钉中使用华炎魔方的用户前往钉钉的通讯录中查找自己的“钉钉账号”，并把它复制下来，然后在华炎魔方的“设置->个人账户设置->我的资料”界面上编辑保存其“钉钉账号”信息；也可以统一由系统管理员在华炎魔方“设置->公司设置->用户”界面上维护每个用户在钉钉通讯录上的“钉钉账号”信息。
 
-修改本地steedos-config.yml文件，添加api_key和log_path，可以在设置-个人账户设置-API Key菜单下，获取用户的API Key。
+修改本地steedos-config.yml文件，添加tenant._id、api_key和log_path，可以在设置-个人账户设置-API Key菜单下，获取用户的API Key。
 
 ```bash
 tenant:
@@ -106,10 +106,10 @@ tenant:
 
 dingtalk:
   api_Key: ${APIKEY} # API Key, 接口验证需要
-  log_path: ${LOGPATH} # 日志文件路径，默认是./ding_server.log
+  log_path: ${DING_LOGPATH} # 日志文件路径，默认是./ding_server.log
 ```
 
-如果是用docker部署的用户，请修改docker-compose.yml文件，添加APIKEY和LOGPATH环境变量：
+如果是用docker部署的用户，请修改docker-compose.yml文件，添加APIKEY和DING_LOGPATH环境变量：
 ```bash
   steedos:
     image: steedos/steedos-project-template:2.0.40
@@ -128,7 +128,7 @@ dingtalk:
       - TRANSPORTER=redis://redis:6379
       - CACHER=redis://redis/1
       - APIKEY=n32D3LeG8aIq5_jiiss23ssesf023sPGe # 配置系统中的API Key
-      - LOGPATH="./ding_server.log" # 日志默认路径
+      - DING_LOGPATH="./ding_server.log" # 日志默认路径
       - STEEDOS_TENANT_ID=7asfxossf8sfssss # 魔方id
 ```
 

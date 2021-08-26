@@ -14,6 +14,14 @@ title: 企业微信集成
 
 华炎魔方集成到企业微信后，当其绑定的华炎魔方账户有通知消息时，企业微信会弹出消息提醒，可点击该消息直接进入华炎魔方查看或处理相关消息。
 
+### 同步通讯录
+
+华炎魔方集成到企业微信后，可以将企业微信的通讯录同步到华炎魔方系统中。
+
+### 订阅通讯录事件
+
+华炎魔方集成到企业微信后，在企业微信后台配置订阅事件，当企业微信通讯录修改时，会同步修改华炎魔方系统中的相关信息。
+
 ### 支持各种客户端
 
 得益于企业微信本身支持各种手机、平板电脑、PC电脑等，华炎魔方集成进去后也可以在这些客户端上直接使用。
@@ -56,9 +64,24 @@ title: 企业微信集成
 要集成企业微信到华炎魔方，必须完成这里提到的“域名归属验证”，不排除其不支持`http`域名地址，推荐使用`https`域名地址。
 :::
 
+### 设置企业微信事件订阅
+
+请在企业微信后台，选择管理工具，点击“通讯录同步” 开启API接口同步进行相关配置。
+
+同步方式：API接口
+
+权限：API编辑通讯录
+
+Secret: 查看或者重新获取，需要配置到华炎魔方系统-设置-公司设置-企业微信-Secret
+
+设置接收事件服务器：Token和EncodingAESKey随机获取后，需要配置到华炎魔方系统-设置-公司设置-企业微信中；URL设置前请先确保已经将Token和EncodingAESKey配置到华炎魔方系统中，然后再配置华炎魔方服务的域名地址加上`api/qiyeweixin/listen`后缀，比如`https://www.test-qiyeweixin.com/api/qiyeweixin/listen`，一定要配置公网域名访问地址。
+
+
 ### 添加企业微信插件
 
-把企业微信集成到华炎魔方之前，请先在华炎魔方项目中安装和启用插件 [@steedos/plugin-qywx](https://www.npmjs.com/package/@steedos/plugin-qywx)。
+华炎魔方2.0服务默认集成了企业微信插件。
+
+华炎魔方1.23版本的服务，把企业微信集成到华炎魔方之前，请先在华炎魔方项目中安装和启用插件 [@steedos/plugin-qywx](https://www.npmjs.com/package/@steedos/plugin-qywx)。
 
 如何安装和启用插件请参考：[华炎魔方插件](/plugins/index)。
 
@@ -67,14 +90,50 @@ title: 企业微信集成
 在启用企业微信插件之后，华炎魔方管理员可以在华炎魔方的“设置->公司设置->公司”界面看到新加了一栏“企业微信”，完善这些信息即可把企业微信应用绑定到华炎魔方中。
 
 - 企业ID(CorpId)：在企业微信后台，“我的企业->企业信息”界面可以查看和复制该ID值。
-- 应用ID(AgentID)：在企业微信后台，“应用管理->华炎魔方合同”界面可以查看和复制该ID值。
-- 应用密钥(Secret)：在企业微信后台，“应用管理->华炎魔方合同”界面可以查看和复制该ID值。
+- AgentID：在企业微信后台，“应用管理->华炎魔方合同”界面可以查看和复制该ID值。
+- Secret：在企业微信后台，“应用管理->华炎魔方合同”界面可以查看和复制该ID值。
+- Token：在企业微信后台，“管理工具->通讯录同步->设置事件接受服务器”中随机生成。
+- AesKey：在企业微信后台，“管理工具->通讯录同步->设置事件接受服务器”中随机生成。
 
 ## 在企业微信中使用华炎魔方
 
 把企业微信集成到华炎魔方之后，还需要在华炎魔方中配置每个用户的“企业微信账号”才能正常在企业微信中使用华炎魔方。
 
 系统管理员可以通知需要在企业微信中使用华炎魔方的用户前往企业微信的通讯录中查找自己的“企业微信账号”，并把它复制下来，然后在华炎魔方的“设置->个人账户设置->我的资料”界面上编辑保存其“企业微信账号”信息；也可以统一由系统管理员在华炎魔方“设置->公司设置->用户”界面上维护每个用户在企业微信通讯录上的“企业微信账号”信息。
+
+修改本地steedos-config.yml文件，添加tenant._id、api_key和log_path，可以在设置-个人账户设置-API Key菜单下，获取用户的API Key。
+
+```bash
+tenant:
+  _id: ${STEEDOS_TENANT_ID}
+
+qywx:
+  api_Key: ${APIKEY} # API Key, 接口验证需要
+  log_path: ${QYWX_LOGPATH} # 日志文件路径，默认是./qywx_server.log
+```
+
+如果是用docker部署的用户，请修改docker-compose.yml文件，添加APIKEY和QYWX_LOGPATH环境变量：
+```bash
+  steedos:
+    image: steedos/steedos-project-template:2.0.40
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./docker-volumes/steedos/storage:/app/storage"
+    environment:
+      - PORT=3000
+      - ROOT_URL=http://localhost:3000
+      - MONGO_URL=mongodb://mongo:27017/steedos
+      - MONGO_OPLOG_URL=mongodb://mongo:27017/local
+      - STEEDOS_CFS_STORE=local
+      - STEEDOS_STORAGE_DIR=/app/storage
+      - TRANSPORTER=redis://redis:6379
+      - CACHER=redis://redis/1
+      - APIKEY=n32D3LeG8aIq5_jiiss23ssesf023sPGe # 配置系统中的API Key
+      - QYWX_LOGPATH="./qywx_server.log" # 日志默认路径
+      - STEEDOS_TENANT_ID=7asfxossf8sfssss # 魔方id
+```
 
 以上所有就绪后，华炎魔方用户只要登录企业微信账户就可以在企业微信客户端上无缝使用华炎魔方服务了。
 
@@ -85,3 +144,10 @@ title: 企业微信集成
 ### 消息
 
 如果企业微信上集成了上述创建的“华炎魔方合同”项目，那么只要在手机或PC客户端登录了企业微信，当其绑定的华炎魔方账户上有推送通知消息时，企业微信客户端会主动通知用户收到推送通知，也可以在其“消息”栏上直接看到来自华炎魔方的消息列表。
+
+### 用户同步
+
+如果企业微信上集成了上述创建的“华炎魔方合同”项目，可以通过前台调用数据同步接口将企业微信通讯录同步到华炎魔方系统中，例如调用`https://www.test-qiyeweixin.com/api/qiyeweixin/stockData`，同步前如果华炎魔方系统中已经存在用户，需要将用户与企业微信中对应的用户进行绑定，这样在同步时就会更新已存在用户信息。
+
+### 同步企业微信账户ID
+如果企业微信上集成了上述创建的“华炎魔方合同”项目，对于只需要同步企业微信账户id到华炎魔方系统的用户，在配置完权限管理后，可以调用`https://www.test-qiyeweixin.com/api/sync/qywxId`进行同步。
