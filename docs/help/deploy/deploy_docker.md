@@ -138,7 +138,7 @@ mongo
 use admin;
 db.createUser({user: "adminUsername", pwd: "adminPassword", roles: [ { role: "userAdminAnyDatabase", db: "admin" } ] } );
 use steedos;
-db.createUser({user: "userUsername", pwd: "userPassword", roles: [ { role: "readWrite", db: "yourdbname" }, { role: "read", db: "local"} ] } );
+db.createUser({user: "userUsername", pwd: "userPassword", roles: [ { role: "readWrite", db: "steedos" }, { role: "read", db: "local"} ] } );
 ```
 
 创建好了后，查看已创建的用户
