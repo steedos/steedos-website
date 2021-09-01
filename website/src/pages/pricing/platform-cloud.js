@@ -9,27 +9,57 @@ import FAQ from '@site/src/components/FAQ';
 const tiers = [
   { 
     name: 'Basic', 
-    label: '标准版',
+    label: '基础版',
     href: '/form/trial', 
-    priceMonthly: 10, 
-    description: '快速构建部门级自定义应用程序。' 
+    priceMonthly: 200, 
+    description: '2 vCPU 4G 内存，建议不超过20用户使用。' 
   },
   {
     name: 'Essential',
-    label: '专业版',
+    label: '标准版',
     href: '/form/trial',
-    priceMonthly: 20,
-    description: '为每个部门实现业务流程数字化。',
+    priceMonthly: 500,
+    description: '4 vCPU 8G 内存，建议不超过50用户使用。',
   },
   {
     name: 'Premium',
-    label: '企业版',
+    label: '高级版',
     href: '/form/trial',
-    priceMonthly: 80,
-    description: '转变整个组织的应用程序开发过程。',
+    priceMonthly: 2000,
+    description: '16 vCPU 32G 内存，建议不超过200用户使用。',
   },
 ]
 const sections = [
+  {
+    name: '服务器配置',
+    features: [
+      { name: 'CPU', tiers: { Basic: '2 vCPU', Essential: '4 vCPU', Premium: '16 vCPU' } },
+      { name: '内存', tiers: { Basic: '4G', Essential: '8G', Premium: '16G' } },
+      { name: '数据库存储', tiers: { Basic: '2G', Essential: '5G', Premium: '20G' } },
+      { name: '附件存储', tiers: { Basic: '200G', Essential: '500G', Premium: '2000G' } },
+      { name: '带宽', tiers: { Basic: '10M', Essential: '20M', Premium: '100M' } },
+      { name: '自动异地备份', tiers: { Basic: '每天', Essential: '每天', Premium: '每天' } },
+      { name: '数据恢复', tiers: { Basic: '7天', Essential: '15天', Premium: '30天' } },
+      { name: '版本升级', tiers: { Basic: '定期', Essential: '定期', Premium: '定期' } },
+      { name: '数据加密传输', tiers: { Basic: '支持', Essential: '支持', Premium: '支持' } },
+      { name: '自定义域名', tiers: { Basic: '支持', Essential: '支持', Premium: '支持' } },
+      { name: '迁移到私有部署', tiers: { Basic: '支持', Essential: '支持', Premium: '支持' } },
+    ],
+  },
+  {
+    name: '版本容量',
+    features: [
+      { name: '用户数限制', tiers: { Basic: '不限', Essential: '不限', Premium: '不限' } },
+      { name: '建议用户数', tiers: { Basic: '20用户以内', Essential: '50用户以内', Premium: '200用户以内' } },
+      { name: '应用数', tiers: { Basic: '不限', Essential: '不限', Premium: '不限' } },
+      { name: '可安装软件包', tiers: { Basic: '不限', Essential: '不限', Premium: '不限' } },
+      { name: '表单数据量', tiers: { Basic: '不限', Essential: '不限', Premium: '不限' } },
+      { name: '总数据量', tiers: { Basic: '不限', Essential: '不限', Premium: '不限' } },
+      { name: '自定义对象', tiers: { Basic: '不限', Essential: '不限', Premium: '不限' } },
+      { name: '自定义流程', tiers: { Basic: '不限', Essential: '不限', Premium: '不限' } },
+      { name: '自定义报表', tiers: { Basic: '不限', Essential: '不限', Premium: '不限' } },
+    ],
+  },
   {
     name: '可视化构建应用程序',
     features: [
@@ -221,7 +251,7 @@ export default function PlatformCloud() {
                       <div>
                         <p>
                           <span className="text-4xl font-extrabold text-gray-900">¥{tier.priceMonthly}</span>
-                          <span className="text-base font-medium text-gray-500">/月/用户</span>
+                          <span className="text-base font-medium text-gray-500">/月</span>
                         </p>
                         <p className="mt-4 text-sm text-gray-500">{tier.description}</p>
                       </div>
